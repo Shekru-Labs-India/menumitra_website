@@ -50,12 +50,12 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="index.html#" className="nav-link dropdown-toggle">
+                  <Link to="/client" className="nav-link dropdown-toggle">
                     Clients
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="index.html#" className="nav-link dropdown-toggle">
+                  <Link to="/pricing" className="nav-link dropdown-toggle">
                     Pricing
                   </Link>
                 </li>

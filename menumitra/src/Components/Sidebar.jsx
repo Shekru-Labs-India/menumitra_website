@@ -71,10 +71,10 @@ const Sidebar = () => {
                       <Link to="/features">Features</Link>
                     </li>
                     <li>
-                      <Link to="/">Clients</Link>
+                      <Link to="/client">Clients</Link>
                     </li>
                     <li>
-                      <Link to="/">Pricing</Link>
+                      <Link to="/pricing">Pricing</Link>
                     </li>
                   </ul>
                 </div>

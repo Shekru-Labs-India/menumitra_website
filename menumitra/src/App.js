@@ -16,6 +16,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Features from './Components/Features';
+import Pricing from './Components/Pricing';
+import Client from './Components/Client';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
     <Route path="/about" element={<About />}/>
     <Route path="/contact" element={<Contact />}/>
     <Route path="/features" element={<Features />}/>
+    <Route path="/pricing" element={<Pricing />}/>
+    <Route path="/client" element={<Client />}/>
 
     </Routes>
     
