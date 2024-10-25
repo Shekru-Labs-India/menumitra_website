@@ -1,6 +1,7 @@
 import React from 'react'
 
 import choseus from "../Assets/img/choose-us-img-four.png"
+import menumitrapng from "../Assets/img/MenuMItra Key Features.png"
 
 const Feature = () => {
   return (

@@ -20,6 +20,7 @@ import Pricing from './Components/Pricing';
 import Client from './Components/Client';
 
 
+
 function App() {
   return (
     
@@ -33,6 +34,7 @@ function App() {
     <Route path="/features" element={<Features />}/>
     <Route path="/pricing" element={<Pricing />}/>
     <Route path="/client" element={<Client />}/>
+    
 
     </Routes>
     
