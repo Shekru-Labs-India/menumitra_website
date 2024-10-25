@@ -81,7 +81,7 @@ const HomeBody = () => {
         <div className="col-lg-4 col-md-6">
           <div className="single-box">
             <div className="box-icon">
-              <i className="flaticon-pumkin" />
+            <i class="fa-solid fa-hotel"></i>
             </div>
             <h3>Contactless Order</h3>
             <p>
@@ -104,7 +104,7 @@ const HomeBody = () => {
         <div className="col-lg-4 col-md-6 icon-color">
           <div className="single-box">
             <div className="box-icon">
-              <i className="flaticon-plant" />
+            <i class="fa-solid fa-hotel"></i>
             </div>
             <h3>Inventory Management</h3>
             <p>
@@ -125,7 +125,7 @@ const HomeBody = () => {
         <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0 icon-color">
           <div className="single-box">
             <div className="box-icon">
-              <i className="flaticon-juice" />
+            <i class="fa-solid fa-hotel"></i>
             </div>
             <h3>Low Staff Cost</h3>
             <p>

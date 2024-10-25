@@ -166,7 +166,7 @@ const PricingBody = () => {
           <div className="product-details-desc">
             <h3>Menumitra with Manage Operation kitchen and Many More</h3>
             <div className="price">
-              <span className="new-price">₹14,999</span>
+              <span className="new-price">₹14,999 per year</span>
               
             </div>
             <div className="product-review">

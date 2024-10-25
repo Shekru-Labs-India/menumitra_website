@@ -1,6 +1,14 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../Assets/img/MenuMitra.png';
+import jpg1 from '../Assets/img/instagram/1.jpg'
+import jpg2 from '../Assets/img/instagram/2.jpg'
+import jpg3 from '../Assets/img/instagram/3.jpg'
+import jpg4 from '../Assets/img/instagram/4.jpg'
+import jpg5 from '../Assets/img/instagram/5.jpg'
+import jpg6 from '../Assets/img/instagram/6.jpg'
+
+
 
 const Sidebar = () => {
   const location = useLocation(); // Hook to get the current location
@@ -131,32 +139,32 @@ const Sidebar = () => {
                   <ul className="instagram">
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/1.jpg" alt="Instagram" />
+                        <img src={jpg1} alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/2.jpg" alt="Instagram" />
+                        <img src={jpg2} alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/3.jpg" alt="Instagram" />
+                        <img src={jpg3} alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/4.jpg" alt="Instagram" />
+                        <img src={jpg4} alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/5.jpg" alt="Instagram" />
+                        <img src={jpg5} alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="index.html#">
-                        <img src="assets/img/instagram/6.jpg" alt="Instagram" />
+                        <img src={jpg6} alt="Instagram" />
                       </a>
                     </li>
                   </ul>
