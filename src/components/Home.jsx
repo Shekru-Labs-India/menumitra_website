@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
+import hero from "../assets/images/Hero-img.jpg"
 const Home = () => {
   return (
     
@@ -82,7 +83,7 @@ const Home = () => {
           {/* / column */}
           <div className="col-lg-7">
             <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Hero-img.png"
+              src={hero}
               alt=""
               className="rounded rellax"
               data-rellax-speed={2}
