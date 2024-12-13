@@ -1,12 +1,64 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { Helmet } from 'react-helmet'; // Import Helmet
 
 const Billing = () => {
   return (
     
   <>
+      <Helmet>
+        {/* Meta Tags for SEO */}
+        <meta name="keywords" content="Restaurant POS, Menu Mitra, Restaurant Management, Online Ordering, CRM, Inventory Management" />
+        <meta name="description" content="Menu Mitra - Simplifying restaurant management with smart POS features. Manage orders, inventory, CRM, and reports all in one place." />
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="never" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta name="author" content="Menu Mitra" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="distribution" content="web" />
+        <meta name="rating" content="general" />
+        <meta name="robots" content="index, follow" />
+        <meta name="apple-mobile-web-app-capable" content="YES" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="identifier-url" content="https://menumitra.com" />
+        <meta name="geo.placename" content="India" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+        <link rel="canonical" href="https://menumitra.com" />
+        <link rel="shortlink" href="https://menumitra.com" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Menu Mitra | Restaurant POS and Management" />
+        <meta property="og:description" content="Menu Mitra offers smart restaurant POS features to manage orders, inventory, and customer relations, empowering restaurant owners." />
+        <meta property="og:url" content="https://menumitra.com" />
+        <meta property="og:site_name" content="Menu Mitra" />
+        <meta property="article:publisher" content="https://www.facebook.com/menumitra" />
+        <meta property="article:updated_time" content="2024-12-13" />
+        <meta property="og:image" itemprop="image" content="https://menumitra.com/assets/menu_mitra_image.jpg" />
+        <meta property="og:image:url" content="https://menumitra.com/assets/menu_mitra_image.jpg" />
+        <meta property="og:image:secure" content="https://menumitra.com/assets/menu_mitra_image.jpg" />
+        <meta property="og:image:secure_url" content="https://menumitra.com/assets/menu_mitra_image.jpg" />
+        <meta property="og:image:alt" content="Menu Mitra Image" />
+        <meta property="og:image:width" content="720" />
+        <meta property="og:image:height" content="602" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Menu Mitra | Restaurant POS and Management" />
+        <meta name="twitter:description" content="Menu Mitra offers restaurant management solutions with POS, CRM, inventory, and order management. Learn more about our services." />
+        <meta name="twitter:image" content="https://menumitra.com/assets/menu_mitra_image.jpg" />
+      </Helmet>
   <>
+
  <Header/>
 
 
@@ -44,20 +96,20 @@ const Billing = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container py-5">
+    <div className="container- py-5">
       <h2 className="text-center">
         Discover what Ciferon can do for your billing
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4 ">
+        <div className="col-md-6 col-lg-5 mb-4 ">
           <div className="card p-4 " style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Customizable-bill-format2-3.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className=" ">
               <h6 className="card-title">Customizable bill format</h6>
               <p className="card-text">
                 Creates professional, personalized bills that easily represent
@@ -67,14 +119,14 @@ const Billing = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4 ">
+        <div className="col-md-6 col-lg-5 mb-4 ">
           <div className="card p-4" style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Station-wise-KOT-printing2-1.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className="">
               <h6 className="card-title">Section-wise KOT printing</h6>
               <p className="card-text">
                 Assign items to every sections, then take orders and
@@ -87,14 +139,14 @@ const Billing = () => {
       </div>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-5 mb-4">
           <div className="card p-4" style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Multi-terminal-billing2-1.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className="">
               <h6 className="card-title">Customizable bill format</h6>
               <p className="card-text">
                 Creates professional, personalized bills that easily represent
@@ -104,14 +156,14 @@ const Billing = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-5 mb-4">
           <div className="card p-4" style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Table-and-area-management3-1.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className="">
               <h6 className="card-title">Section-wise KOT printing</h6>
               <p className="card-text">
                 Assign items to every sections, then take orders and
@@ -124,14 +176,14 @@ const Billing = () => {
       </div>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-5 mb-4">
           <div className="card p-4" style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Configure-taxes-amp-discounts2-1.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className="">
               <h6 className="card-title">Configure taxes &amp; discounts</h6>
               <p className="card-text">
                 Take control of the price plan—Customise taxes and reductions
@@ -141,14 +193,14 @@ const Billing = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-5 mb-4">
           <div className="card p-4 " style={{ backgroundColor: "#f2fbff" }}>
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Works-online-amp-offline-both-2-1.png.webp"
               alt="Card Image"
               className="card-img-top"
             />
-            <div className="card-body">
+            <div className="">
               <h6 className="card-title">Works online &amp; offline both</h6>
               <p className="card-text">
                 If your internet is down, Ciferon continues to function without
@@ -160,7 +212,7 @@ const Billing = () => {
         </div>
       </div>
     </div>
-    <section id="features" className="xl">
+    <section id="features" className="">
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-80">

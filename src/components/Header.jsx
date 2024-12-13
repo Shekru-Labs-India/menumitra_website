@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import menumitra from "../assets/images/MenuMitra.png"
 const Header = () => {
   return (
     
@@ -11,12 +11,17 @@ const Header = () => {
   className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-white"
 >
   <div className="container">
-    <a className="navbar-brand" href="index.html">
-      <img
-        src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/cropped-logo-color-1.png"
-        alt=""
-      />
-    </a>
+  <div className="navbar-brand text-black">
+  <Link to="/">
+    <img 
+      src={menumitra} 
+      alt="Menumitra-Logo" 
+    className='navbar-brand img'
+    />
+    MenuMitra
+  </Link>
+</div>
+
     <button
       className="navbar-toggler collapsed"
       type="button"
@@ -123,10 +128,69 @@ const Header = () => {
           </ul>
         </li>
         {/* Outlet Format */}
-        <li className="nav-item">
-          <Link className="nav-link" to="/outlet">
-            Outlet Format
-          </Link>
+        <li className="nav-item dropdown">
+          <a
+            className="nav-link "
+            href="#addons"  // Similar to Features, set href to # or remove it
+            id="addonsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+         Outlet Format
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
+            <li>
+              <Link className="dropdown-item" to="/captainapp">
+              New Restaurant
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/kds">
+                Fine Dine 
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/scan">
+             Food Courts
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/captainapp">
+             Pizzeria
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/kds">
+             Cafe
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/scan">
+          QSR
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/captainapp">
+             Bakeries
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/kds">
+              Icecream & Desserts
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/scan">
+            Cloud Kitchens
+              </Link>
+            </li>
+            <li>
+              <Link className="dropdown-item" to="/scan">
+           Large Chain
+              </Link>
+            </li>
+          </ul>
         </li>
         
       </ul>
