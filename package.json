@@ -12,7 +12,7 @@
     "web-vitals": "^4.2.4"
   },
 
-  "homepage": "https://Harshal-Tasgaonkar.github.io/menu",
+
 
   "scripts": {
     "start": "react-scripts start",
