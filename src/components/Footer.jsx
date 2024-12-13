@@ -202,22 +202,24 @@ const Footer = () => {
                 </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-center gap-5">
-  <div >
+            <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+  <div>
     <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
   </div>
-  <div >
+  <div>
     <Link className="text-secondary" to="/privacy_policy">Privacy Policy</Link>
   </div>
   <div>
     <Link className="text-secondary" to="/cookie_policy">Cookie Policy</Link>
   </div>
-  <div >
+  <div>
     <Link className="text-secondary" to="/request_data_removal">
       Request Data Removal
     </Link>
   </div>
 </div>
+
+
 
           </div>
           

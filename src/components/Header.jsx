@@ -8,7 +8,7 @@ const Header = () => {
   
   <nav
   id="nav-scroll"
-  className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-white"
+  className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-white shadow-xl"
 >
   <div className="container">
   <div className="navbar-brand text-black">
@@ -128,7 +128,7 @@ const Header = () => {
           </ul>
         </li>
         {/* Outlet Format */}
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown ">
           <a
             className="nav-link "
             href="#addons"  // Similar to Features, set href to # or remove it
@@ -139,6 +139,7 @@ const Header = () => {
           >
          Outlet Format
           </a>
+        
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
             <li>
               <Link className="dropdown-item" to="/captainapp">
@@ -194,6 +195,7 @@ const Header = () => {
         </li>
         
       </ul>
+      
     </div>
   </div>
   {/* / container */}

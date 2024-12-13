@@ -12645,7 +12645,7 @@ body.dark-mode {
   }
   .navbar-expand-lg > .container {
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 30px;
   }
   .navbar-expand-lg.navbar {
     padding: 1.375rem 0;
