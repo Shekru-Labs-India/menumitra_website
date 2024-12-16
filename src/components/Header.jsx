@@ -44,19 +44,25 @@ const Header = () => {
             Home
           </Link>
         </li>
+        
+      <li className="nav-item">
+          <Link className="nav-link " to="/pricing">
+        Pricing
+          </Link>
+        </li>
 
         {/* Features Dropdown */}
         <li className="nav-item dropdown">
-          <a
+          <Link
             className="nav-link  "
-            href="#features"  // This makes it non-clickable by setting href to # or simply removing it
+            to="#features"  // This makes it non-clickable by setting href to # or simply removing it
             id="featuresDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Features
-          </a>
+          </Link>
           <ul className="dropdown-menu" aria-labelledby="featuresDropdown">
             <li>
               <Link className="dropdown-item" to="/billing">
@@ -142,52 +148,52 @@ const Header = () => {
         
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
             <li>
-              <Link className="dropdown-item" to="/captainapp">
+              <Link className="dropdown-item" to="/newrestaurant">
               New Restaurant
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/kds">
+              <Link className="dropdown-item" to="/finedine">
                 Fine Dine 
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/scan">
+              <Link className="dropdown-item" to="/foodcourts">
              Food Courts
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/captainapp">
+              <Link className="dropdown-item" to="/pizzeria">
              Pizzeria
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/kds">
+              <Link className="dropdown-item" to="/cafe">
              Cafe
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/scan">
+              <Link className="dropdown-item" to="/qsr">
           QSR
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/captainapp">
+              <Link className="dropdown-item" to="/bakeries">
              Bakeries
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/kds">
+              <Link className="dropdown-item" to="/icecream">
               Icecream & Desserts
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/scan">
+              <Link className="dropdown-item" to="/cloudkitchens">
             Cloud Kitchens
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" to="/scan">
+              <Link className="dropdown-item" to="/largechain">
            Large Chain
               </Link>
             </li>

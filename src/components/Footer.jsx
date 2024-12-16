@@ -108,9 +108,7 @@ const Footer = () => {
 
         
         
-          <li className="mb-2">
-            <Link className="text-dark" to="/outlet">Outlet Format</Link>
-          </li>
+         
         </ul>
       </div>
     </div>
@@ -152,41 +150,41 @@ const Footer = () => {
                   <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Outlet</h3>
                   <ul className="links">
                     <li className="mb-2">
-                      <Link className="text-dark" to="/terms_conditions">New Restaurant</Link>
+                      <Link className="text-dark" to="/newrestaurant">New Restaurant</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/privacy_policy">Fine Dine</Link>
+                      <Link className="text-dark" to="/finedine">Fine Dine</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cookie_policy">Food Courts</Link>
+                      <Link className="text-dark" to="/foodcourts">Food Courts</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/request_data_removal">
+                      <Link className="text-dark" to="/pizzeria">
                        Pizzeria
                       </Link>
                     </li>
                    
                     <li className="mb-2">
-                      <Link className="text-dark" to="/request_data_removal">
+                      <Link className="text-dark" to="/cafe">
                        Cafe
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cookie_policy">QSR</Link>
+                      <Link className="text-dark" to="/qsr">QSR</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/request_data_removal">
+                      <Link className="text-dark" to="/bakeries">
                        Bakeries
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cookie_policy">Icecream & Desserts</Link>
+                      <Link className="text-dark" to="/icecream">Icecream & Desserts</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cookie_policy">Cloud Kitchens</Link>
+                      <Link className="text-dark" to="/cloudkitchens">Cloud Kitchens</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/request_data_removal">
+                      <Link className="text-dark" to="/largechain">
                        Large Chain
                       </Link>
                     </li>

@@ -1,0 +1,103 @@
+/* Custom styling for the feature list */
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .feature-item {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .feature-item.text-success {
+    color: green;
+  }
+  
+  .feature-item.text-danger {
+    color: red;
+  }
+  
+  /* Card layout adjustments */
+  .card {
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .card-body {
+    flex: 1;
+  }
+  
+  .card-body h5,
+  .card-body h3 {
+    font-weight: bold;
+  }
+  
+  .card-body p {
+    font-size: 0.875rem;
+  }
+  
+  .card-body .btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .card-body .btn-outline-danger {
+    border-color: #e12d39;
+    color: #e12d39;
+  }
+  
+  .card-body .btn-danger {
+    background-color: #e12d39;
+    color: white;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Layout of pricing cards for responsive design */
+  .row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: start; /* Ensure cards are centered */
+  }
+  
+  @media (max-width: 768px) {
+    /* Ensure all columns take up full width on small screens */
+    .col-lg-3, .col-md-6, .col-12 {
+      flex: 1 1 100%;
+    }
+  }
+  /* Align feature list in single line with border bottom */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .feature-list-wrapper {
+    flex: 1 1 100%; /* Align all cards equally */
+    display: flex;
+    gap: 15px;
+    /* margin-top: 10px; */
+  }
+  
+  .feature-item {
+    flex: 1;
+    text-align: center;
+    font-size: small;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  

@@ -14179,3 +14179,16 @@ body.dark-mode {
 
 /*------------- end of max-height -------------*/
 /*---------------- end of media screens ----------------*/
+.plan-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between buttons */
+  align-items: center;
+}
+.book-demo {
+  margin-top: 10px;
+  position: relative;
+}
+.show-more {
+  margin-top: 5px;
+}

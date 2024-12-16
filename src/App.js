@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 
-import { HashRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter,Routes,Route, BrowserRouter } from 'react-router-dom';
 
 import './assets/css/bootstrap.min.css'
 import './assets/css/style.css'
@@ -9,6 +9,7 @@ import './assets/css/animate.min.css'
 import './assets/css/swiper-bundle.min.css'
 import './assets/css/fontawesome-all.min.css'
 import './assets/css/glightbox.min.css'
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 
 import Header from "./components/Header";
@@ -23,7 +24,23 @@ import OutletFormat from "./components/OutletFormat";
 import OnlineOrder from "./components/OnlineOrder";
 import RestaurantReports from "./components/RestaurantReports";
 import CustomerManagement from "./components/CustomerManagement";
+import Pricing from "./components/Pricing";
+import PrivacyPolicy from "./components/PrivacyPolicy"
+import CookiePolicy from "./components/CookiePolicy"
+import TermsConditions from "./components/TermsConditions"
+import DeleteUser from "./components/DeleteUser"
+import WaiterApp from "./components/WaiterApp"
+import NewRestaurant from "./components/NewRestaurant"
+import FineDine from "./components/FineDine"
+import FoodCourts from "./components/FoodCourts"
+import Pizzeria from "./components/Pizzeria"
+import Cafe from "./components/Cafe"
+import QSR from "./components/QSR"
+import Bakeries from "./components/Bakeries"
+import LargeChain from "./components/LargeChain"
 
+import CloudKitchens from "./components/CloudKitchens"
+import IcecreamDesserts from "./components/IcecreamDesserts"
 function App() {
   return (
    
@@ -38,7 +55,7 @@ function App() {
     {/* <Menu/> */}
     {/* <CustomerFeedback/> */}
 
-    <HashRouter>
+    <BrowserRouter>
 
     <Routes>
 
@@ -50,15 +67,33 @@ function App() {
     <Route path="/inventory" element={<Inventory />} />
     <Route path="/menu" element={<Menu />} />
     <Route path="/customerfeedback" element={<CustomerFeedback />} />
-    <Route path="/outlet" element={<OutletFormat />} />
+    // <Route path="/outlet" element={<OutletFormat />} />
     <Route path="/onlineorder" element={<OnlineOrder />} />
     <Route path="/reports" element={<RestaurantReports />} />
     <Route path="/customermanagement" element={<CustomerManagement />} />
 
-     
+    <Route path="/waiterapp" element={<WaiterApp />} />
+    <Route path="/newrestaurant" element={<NewRestaurant />} />
+    <Route path="/finedine" element={<FineDine />} />
+    <Route path="/foodcourts" element={<FoodCourts />} />
+    <Route path="/pizzeria" element={<Pizzeria />} />
+    <Route path="/cafe" element={<Cafe />} />
+    <Route path="/qsr" element={<QSR />} />
+    <Route path="/bakeries" element={<Bakeries />} />
+    <Route path="/cloudkitchens" element={<CloudKitchens />} />
+    <Route path="/largechain" element={<LargeChain/>} />
+    <Route path="/icecream" element={<IcecreamDesserts />} />
+
+    <Route path="/pricing" element={<Pricing />} />
+    <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+    <Route path="/terms_conditions" element={<TermsConditions />} />
+    <Route path="/cookie_policy" element={<CookiePolicy />} />
+
+    <Route path="/request_data_removal" element={<DeleteUser />} />
+
     </Routes>
 
-    </HashRouter>
+    </BrowserRouter>
     
 
    </>
