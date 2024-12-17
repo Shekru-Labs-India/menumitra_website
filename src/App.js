@@ -53,15 +53,7 @@ function App() {
   return (
    
    <>
-   {/* <Header/> */}
-   {/* <Home/> */}
-   {/* <CaptainApp/> */}
-   {/* <KDS/> */}
-   {/* <ScanAndOrder/> */}
-   {/* <Billing/> */}
-   {/* <Inventory/> */}
-    {/* <Menu/> */}
-    {/* <CustomerFeedback/> */}
+  
 
     <BrowserRouter>
 
