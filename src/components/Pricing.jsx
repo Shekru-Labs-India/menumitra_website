@@ -118,13 +118,16 @@ transparent & affordable pricing.</p>
       {item.feature}
     </td>
     <td className={item.noBorder ? "border-0" : ""}>
-      <i className={`fa-solid fa-${item.icons[0]}`}></i>
+    <i className={`fa-solid fa-${item.icons[1]} ${item.icons[1] === 'check' ? 'text-success' : 'text-danger'}`}></i>
+
     </td>
     <td className={item.noBorder ? "border-0" : ""}>
-      <i className={`fa-solid fa-${item.icons[1]}`}></i>
+    <i className={`fa-solid fa-${item.icons[1]} ${item.icons[1] === 'check' ? 'text-success' : 'text-danger'}`}></i>
+
     </td>
     <td className={item.noBorder ? "border-0" : ""}>
-      <i className={`fa-solid fa-${item.icons[2]}`}></i>
+    <i className={`fa-solid fa-${item.icons[1]} ${item.icons[1] === 'check' ? 'text-success' : 'text-danger'}`}></i>
+
     </td>
   </tr>
   ))}
