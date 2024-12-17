@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import menumitra from "../assets/images/MenuMitra.png"
 const Header = () => {
+
   return (
     
    <>
@@ -61,7 +62,7 @@ const Header = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Features
+            Features <i class="fa-solid fa-caret-down"></i>
           </Link>
           <ul className="dropdown-menu" aria-labelledby="featuresDropdown">
             <li>
@@ -113,7 +114,7 @@ const Header = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Add-Ons
+            Add-Ons <i class="fa-solid fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
             <li>
@@ -143,13 +144,13 @@ const Header = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-         Outlet Format
+         Outlet Format <i class="fa-solid fa-caret-down"></i>
           </a>
         
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
             <li>
               <Link className="dropdown-item" to="/newrestaurant">
-              New Restaurant
+               Restaurant
               </Link>
             </li>
             <li>
@@ -201,6 +202,9 @@ const Header = () => {
         </li>
         
       </ul>
+      <Link className="btn btn-outline-dark btn-sm p-2  text-center" to="/book_demo">
+    Book A Demo
+  </Link>
       
     </div>
   </div>

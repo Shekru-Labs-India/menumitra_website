@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import  Form  from './Form'
 
 const NewRestaurant = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
    
   <>

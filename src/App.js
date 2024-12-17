@@ -20,7 +20,7 @@ import Billing from "./components/Billing";
 import Inventory from "./components/Inventory";
 import Menu from "./components/Menu";
 import CustomerFeedback from "./components/CustomerFeedback";
-import OutletFormat from "./components/OutletFormat";
+
 import OnlineOrder from "./components/OnlineOrder";
 import RestaurantReports from "./components/RestaurantReports";
 import CustomerManagement from "./components/CustomerManagement";
@@ -41,6 +41,8 @@ import LargeChain from "./components/LargeChain"
 
 import CloudKitchens from "./components/CloudKitchens"
 import IcecreamDesserts from "./components/IcecreamDesserts"
+import ResellerProgram from "./components/ResellerProgram";
+import BookDemo from "./components/BookDemo";
 function App() {
   return (
    
@@ -67,7 +69,6 @@ function App() {
     <Route path="/inventory" element={<Inventory />} />
     <Route path="/menu" element={<Menu />} />
     <Route path="/customerfeedback" element={<CustomerFeedback />} />
-    // <Route path="/outlet" element={<OutletFormat />} />
     <Route path="/onlineorder" element={<OnlineOrder />} />
     <Route path="/reports" element={<RestaurantReports />} />
     <Route path="/customermanagement" element={<CustomerManagement />} />
@@ -88,8 +89,10 @@ function App() {
     <Route path="/privacy_policy" element={<PrivacyPolicy />} />
     <Route path="/terms_conditions" element={<TermsConditions />} />
     <Route path="/cookie_policy" element={<CookiePolicy />} />
+    <Route path="/reseller_program" element={<ResellerProgram />} />
 
     <Route path="/request_data_removal" element={<DeleteUser />} />
+    <Route path="/book_demo" element={<BookDemo />} />
 
     </Routes>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 
@@ -15,6 +15,9 @@ import scheduale from '../assets/images/scheduale-form_md.jpg'
 
 
 const WaiterApp = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     
   <>

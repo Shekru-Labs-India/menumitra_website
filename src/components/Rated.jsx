@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 const Rated = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     
   <>

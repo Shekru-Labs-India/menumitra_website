@@ -14192,3 +14192,157 @@ body.dark-mode {
 .show-more {
   margin-top: 5px;
 }
+.reseller-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 60px 20px;
+}
+
+.reseller-content {
+  flex: 1;
+}
+
+.tag {
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
+}
+
+h1 {
+  font-size: 42px;
+  color: #1f2937;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+p {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.register-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #b91c1c;
+}
+
+.reseller-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseller-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .reseller-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .reseller-image {
+    margin-top: 40px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+}
+
+.partner-section {
+  padding: 0 20px 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partner-title {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 60px;
+}
+
+.partner-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.step {
+  flex: 1;
+  padding: 20px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.step h3 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.register-reseller-btn {
+  background-color: #1f2937;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-reseller-btn:hover {
+  background-color: #374151;
+}
+
+@media (max-width: 768px) {
+  .partner-steps {
+    flex-direction: column;
+  }
+  
+  .step {
+    margin-bottom: 30px;
+  }
+}

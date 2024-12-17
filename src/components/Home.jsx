@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import hero from "../assets/images/Hero-img.jpg"
+import Form from "./Form";
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     
    <>
@@ -75,10 +79,15 @@ const Home = () => {
               customer data, discount &amp; offers, accounts, reports and do lot
               more.{" "}
             </p>
-            <a href="#products" className="btn btn-primary pill mr-5">
-              <i className="fas fa-shopping-cart mr-5" />{" "}
-              <span>Book a Free Demo</span>
-            </a>
+            <a href="https://user.menumitra.com/" target='_blank' className="btn btn-primary pill mr-5">
+  <i className="fas fa-desktop me-2" /> 
+  <span> UserApp Demo </span>
+</a>
+<a href="https://youtu.be/j2e2stCcICo?si=ho4lV-CpwVRTNQtJ" target='_blank' className="btn btn-danger pill mr-5">
+  <i className="fas fa-play-circle me-2" /> 
+  <span>Watch  Demo</span>
+</a>
+
           </div>
           {/* / column */}
           <div className="col-lg-7">
@@ -99,13 +108,13 @@ const Home = () => {
     {/* / about */}
     <section className="container ">
   <div className="text-center">
-    <h2 className="mt-6">Trusted by 15,000+ outlets as</h2>
-    <h2 className="mb-80">Best Restaurant Management Software</h2>
+    <h2 className="mt-6">Trusted by 50+ outlets as</h2>
+    <h2 className="mb-80">Best Low Cost Restaurant Management Software</h2>
   </div>
   {/* / text-center */}
   <div className="row d-flex justify-content-evenly">
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+  <div className="col-6 col-md-4 col-lg-1 mb-2 ">
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/1.png" 
         alt="Brand 1"
@@ -114,7 +123,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/11.png"  
         alt="Brand 2"
@@ -123,7 +132,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/2.png"  
         alt="Brand 3"
@@ -132,7 +141,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img 
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3.png"   
         alt="Brand 4"
@@ -141,7 +150,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/5.png"  
         alt="Brand 5"
@@ -150,7 +159,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/12.png"   
         alt="Brand 6"
@@ -159,7 +168,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/4.png"  
         alt="Brand 7"
@@ -168,7 +177,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/7.png"  
         alt="Brand 8"
@@ -177,7 +186,7 @@ const Home = () => {
     </div>
   </div>
   <div className="col-6 col-md-4 col-lg-1 mb-2">
-    <div className="card" style={{ width: '120px', height: '76px' }}>
+    <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/8.png"   
         alt="Brand 9"
@@ -195,42 +204,40 @@ const Home = () => {
 
     {/* / container */}
     <div className="container mt-5">
-  <div className="row text-center">
-    <div className="col-lg-5">
-      <img
-        src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3-3.png"
-        alt="Restaurant billing software"
-        className="rounded rellax"
-        data-rellax-speed={2}
-        data-rellax-percentage="0.5"
-      />
-    </div>
-    {/* / column */}
-    <div className="col-lg-7 tablet-lg-top-30">
-      <h2 className="mb-30">Simple 3-click Restaurant billing Software</h2>
-      <p className="mb-30">
-        Create bills &amp; KOT, receive payments, split bills, merge tables,
-        apply discounts &amp; coupons, configure taxes, use multiple
-        terminals, and do a lot more.​
-      </p>
-    </div>
-    {/* / column */}
+    <div className="row text-center align-items-center">
+  <div className="col-lg-5">
+    <img
+      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3-3.png"
+      alt="Restaurant billing software"
+      className="rounded rellax"
+      data-rellax-speed={2}
+      data-rellax-percentage="0.5"
+    />
   </div>
+  {/* / column */}
+  <div className="col-lg-7 tablet-lg-top-30 d-flex flex-column justify-content-center">
+  <h2 className="mb-30">Effortless 3-Step Restaurant Billing Solution</h2>
+  <p className="mb-30">
+    Streamline your restaurant operations with features like bill and KOT generation, payment processing, bill splitting, table merging, discount and coupon application, tax configuration, multi-terminal support, and more—all in just a few clicks.
+  </p>
+</div>
+
+  {/* / column */}
+</div>
+
   {/* / row */}
 </div>
 
     {/* / container */}
     <div className="container " >
       <div className="row v-center">
-        <div className="col-lg-7 tablet-lg-top-30">
-          <h2 className="mb-30">One screen to manage all your online orders</h2>
-          <p className="mb-30">
-            Accept online orders, maintain your digital menu, and show when food
-            is ready. You can also accept payments and keep track of sales all
-            from one location. This saves you from having to flip between
-            screens.​
-          </p>
-        </div>
+      <div className="col-lg-7 tablet-lg-top-30">
+  <h2 className="mb-30">Centralized Management for All Your Online Orders</h2>
+  <p className="mb-30">
+    Seamlessly manage online orders, update your digital menu, and notify customers when food is ready. Handle payments, track sales, and streamline operations—all from a single, intuitive interface. Say goodbye to juggling multiple screens.​
+  </p>
+</div>
+
         {/* / column */}
         <div className="col-lg-5">
           <img
@@ -257,17 +264,13 @@ const Home = () => {
             data-rellax-percentage="0.5"
           />
         </div>
-        {/* / column */}
         <div className="col-lg-7 tablet-lg-top-30">
-          <h2 className="mb-30">
-            Smart inventory management software for your restaurant
-          </h2>
-          <p className="mb-30">
-            Easily keep track of your inventory with item-by-item auto-deduct,
-            fast low-stock warnings, daily closing reports, and restocking raw
-            materials as needed.​
-          </p>
-        </div>
+  <h2 className="mb-30">Intelligent Inventory Management for Restaurants</h2>
+  <p className="mb-30">
+    Effortlessly manage your inventory with automated item-by-item deductions, real-time low-stock alerts, comprehensive daily closing reports, and streamlined restocking of raw materials. Stay in control with precision and efficiency.​
+  </p>
+</div>
+
         {/* / column */}
       </div>
       {/* / row */}
@@ -275,16 +278,13 @@ const Home = () => {
     {/* / container */}
     <div className="container">
       <div className="row v-center">
-        <div className="col-lg-7 tablet-lg-top-30">
-          <h2 className="mb-30">
-            Your restaurant's menu serves as your business card.
-          </h2>
-          <p className="mb-30">
-            Make your restaurant's menu more customized for customers.
-            Incorporate compelling offers, exclusive deals, distinctive menus,
-            and flexible price options.​
-          </p>
-        </div>
+      <div className="col-lg-7 tablet-lg-top-30">
+  <h2 className="mb-30">Your Menu: The Ultimate Business Card for Your Restaurant</h2>
+  <p className="mb-30">
+    Transform your menu into a powerful branding tool. Customize it to delight your customers with exclusive offers, unique deals, signature dishes, and flexible pricing options that leave a lasting impression.​
+  </p>
+</div>
+
         {/* / column */}
         <div className="col-lg-5">
           <img
@@ -313,13 +313,12 @@ const Home = () => {
         </div>
         {/* / column */}
         <div className="col-lg-7 tablet-lg-top-30">
-          <h2 className="mb-30">Know what's going on in your outlet</h2>
-          <p className="mb-30">
-            Get real-time data for day-end sales, inventory, employee actions,
-            and other crucial business information on your owner's app and
-            WhatsApp.​
-          </p>
-        </div>
+  <h2 className="mb-30">Stay Informed with Real-Time Insights</h2>
+  <p className="mb-30">
+    Access real-time updates on daily sales, inventory levels, staff activities, and other key business metrics. Stay connected and in control through your owner's app and instant WhatsApp notifications.​
+  </p>
+</div>
+
         {/* / column */}
       </div>
       {/* / row */}
@@ -327,16 +326,13 @@ const Home = () => {
     {/* / container */}
     <div className="container">
       <div className="row v-center">
-        <div className="col-lg-7 tablet-lg-top-30">
-          <h2 className="mb-30">
-            Know everything about your customers at just one click
-          </h2>
-          <p className="mb-30">
-            With Ciferon's CRM, you can manage, keep an eye on, and reward your
-            most devoted consumers, making sure that each one of them develops a
-            special relationship with your brand.​
-          </p>
-        </div>
+      <div className="col-lg-7 tablet-lg-top-30">
+  <h2 className="mb-30">Gain Deep Insights into Your Customers</h2>
+  <p className="mb-30">
+    Leverage MenuMitra's CRM to manage and monitor your loyal customers effectively. Strengthen relationships by rewarding their loyalty and creating personalized connections that elevate your brand experience.​
+  </p>
+</div>
+
         {/* / column */}
         <div className="col-lg-5">
           <img
@@ -364,12 +360,11 @@ const Home = () => {
       padding: "50px 20px"
     }}
   >
-    <h2 className="text-white">Integrate with your favorite Apps</h2>
-    <p className="text-white mb-4">
-      Ciferon POS works with products you use every day. Seamlessly integrate
-      with more than 100 popular business apps and let POS talk the same
-      business language as yours.
-    </p>
+  <h2 className="text-white">Seamless Integration with Your Favorite Apps</h2>
+<p className="text-white mb-4">
+  MenuMitra POS connects effortlessly with over 100 leading business applications. Simplify operations by enabling your POS system to communicate seamlessly with the tools you rely on every day.​
+</p>
+
     <div className="row g-4 justify-content-center">
       <div className="col-6 col-md-4 col-lg-2">
         <div className="integrate-logo">
@@ -490,7 +485,7 @@ const Home = () => {
   <p className="text-center fw-bold">Outlet Types</p>
   <h2 className="text-center mb-4">
     Built for all types of{" "}
-    <span className="text-primary">Food Business</span>
+    <span className="text-primary ">Food Business</span>
   </h2>
   
   {/* First Row (Top 5 Cards) */}
@@ -506,7 +501,7 @@ const Home = () => {
             alt="Fine Dine Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Fine Dine</p>
+          <p className="fw-bold fs-5">Fine Dine</p>
         </div>
       </div>
     </div>
@@ -521,7 +516,7 @@ const Home = () => {
             alt="Food Court Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Food Court</p>
+          <p className="fw-bold fs-5">Food Court</p>
         </div>
       </div>
     </div>
@@ -536,7 +531,7 @@ const Home = () => {
             alt="Cafe Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Cafe</p>
+          <p className="fw-bold fs-5">Cafe</p>
         </div>
       </div>
     </div>
@@ -551,7 +546,7 @@ const Home = () => {
             alt="QSR Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">QSR</p>
+          <p className="fw-bold fs-5">QSR</p>
         </div>
       </div>
     </div>
@@ -566,7 +561,7 @@ const Home = () => {
             alt="Bar Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Bar &amp; Brewery</p>
+          <p className="fw-bold fs-5">Bar &amp; Brewery</p>
         </div>
       </div>
     </div>
@@ -585,7 +580,7 @@ const Home = () => {
             alt="Bakery Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Bakery</p>
+          <p className="fw-bold fs-5">Bakery</p>
         </div>
       </div>
     </div>
@@ -600,7 +595,7 @@ const Home = () => {
             alt="Ice Cream Shop Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Ice Cream Shop</p>
+          <p className="fw-bold fs-5">Ice Cream Shop</p>
         </div>
       </div>
     </div>
@@ -615,7 +610,7 @@ const Home = () => {
             alt="Cloud Kitchen Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Cloud Kitchen</p>
+          <p className="fw-bold fs-5">Cloud Kitchen</p>
         </div>
       </div>
     </div>
@@ -630,7 +625,7 @@ const Home = () => {
             alt="Pizzeria Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Pizzeria</p>
+          <p className="fw-bold fs-5">Pizzeria</p>
         </div>
       </div>
     </div>
@@ -645,7 +640,7 @@ const Home = () => {
             alt="Large Chain Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold">Large Chain</p>
+          <p className="fw-bold fs-5">Large Chain</p>
         </div>
       </div>
     </div>
@@ -653,179 +648,12 @@ const Home = () => {
 </div>
 
 
-      <div className="container">
-        <div className="row v-center">
-          <div className="col-lg-5 text-center">
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/1652030916333.jpeg"
-               className="rounded rellax text-center"
-              style={{ width: 313, height: 313 }}
-              alt=""
-              data-rellax-speed={2}
-              data-rellax-percentage="0.5"
-            />
-          </div>
-          {/* / column */}
-          <div className="col-lg-7 tablet-lg-top-30">
-            <p className="mb-30 mt-3">
-              "I've been a Ciferon user for two years, and it has transformed
-              how we manage all our Kamat Restaurants locations, automating
-              operations from top to bottom. The comprehensive integrations and
-              the dedicated support team have been game-changers. I highly
-              recommend Ciferon to any restaurant looking to upgrade their
-              operations."​
-            </p>
-            <h3 className="">Dr. Vikram Kamat </h3>
-            <h3>Founder &amp; Chairman, VITS Kamat Group</h3>
-          </div>
-          {/* / column */}
-        </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-      <div className="container relative mt-5">
-        <div className="row v-center">
-          <div className="col-lg-6 tablet-lg-top-45">
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/leads.png"
-              
-              style={{ width: 500, height: 520 }}
-              alt=""
-            />
-          </div>
-          {/* / column */}
-          <div className="col-lg-6">
-            <div className="promo-box p-50">
-              <h4 className="text-center mb-50">
-                Get a personalized free demo by our experts
-              </h4>
-              <form className="needs-validation" id="form-validation3" noValidate="novalidate">
-  <div className="row">
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="text"
-          className="form-control"
-          id="contact-name3"
-          name="inputName3"
-          placeholder="Full Name"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="number"
-          className="form-control"
-          id="contact-email3"
-          name="inputEmail3"
-          placeholder="Mobile Number"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="email"
-          className="form-control"
-          id="contact-email3"
-          name="inputEmail3"
-          placeholder="Email"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="text"
-          className="form-control"
-          id="contact-email3"
-          name="inputEmail3"
-          placeholder="City"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <div className="col-12">
-      <div className="form-group">
-        <input
-          type="text"
-          className="form-control"
-          id="contact-subject3"
-          name="inputSubject3"
-          placeholder="Outlet Name"
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    {/* Outlet Type and Outlet Status in one row */}
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="text"
-          className="form-control"
-          id="contact-outlet-type"
-          name="inputOutletType"
-          placeholder="Outlet Type"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <div className="col-md-6">
-      <div className="form-group">
-        <input
-          type="text"
-          className="form-control"
-          id="contact-outlet-status"
-          name="inputOutletStatus"
-          placeholder="Outlet Status"
-          required=""
-        />
-      </div>
-      {/* / form-group */}
-    </div>
-    {/* / column */}
-    
-    <button type="submit" className="btn btn-primary btn-submit">
-      Submit
-    </button>
-  </div>
-  {/* / row */}
-</form>
-
-              {/* / form-group */}
-            </div>
-            {/* / promo-box */}
-          </div>
-          {/* / column */}
-        </div>
-        {/* / row */}
-      </div>
+  
       {/* / container */}
     
   </div>
   {/* / main-container */}
-
+<Form/>
   <Footer/>
 </>
 

@@ -15,96 +15,134 @@ const Footer = () => {
     <>
       <>
         <section
-          className="footer-top-area  border border-top shadow-lg  pt-100 "
+          className="footer-top-area  bg-white border border-top shadow-lg  pt-100 "
          
         >
           <div className="container">
-            <div className="row">
-              {/* MenuMitra Section */}
-              <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
-              <div className="single-widget">
-  <div className="d-flex align-items-center">
-    <Link to="/">
-      <img src={menumitra} alt="Rimu-Logo" style={{ width: "60px", height: "60px" }} />
-    </Link>
-    <Link className="ms-3" to="/website">
-      <div className="fs-2 navbar-brand text-dark">MenuMitra</div>
-    </Link>
-  </div>
-  <p className="mt-3">
-    Your menus are available digitally and on your own website, letting you reduce costs and keeping your menu up-to-date in an easy and inexpensive way.
-  </p>
+          <div className="col-lg-12 col-sm-6 col-md-6 mb-5">
+  <div className="single-widget pb-4">
+    <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between">
+      
+      {/* Logo and Name */}
+      <div className="d-flex flex-row flex-sm-row align-items-center justify-content-center mb-3 mb-sm-0">
+        <Link to="/">
+          <img src={menumitra} alt="Rimu-Logo" style={{ width: "50px", height: "50px" }} />
+        </Link>
+        <Link className="ms-3" to="/website">
+          <div className="fs-3 navbar-brand text-dark">MenuMitra</div>
+        </Link>
+      </div>
+      
+      {/* Email */}
+      <div className="d-flex align-items-center justify-content-center mb-3 mb-sm-0">
+        <i className="fa fa-envelope me-2" />
+        <span>info@menumitra.com</span>
+      </div>
 
-  <ul className="address ps-0">
-    <li>
-      <i className="fa-solid fa-location-dot me-2" />
-      <span>
-        Muktangan English School & Jr College, office No. 6, 2 Floor manogat, Parvati, Pune, Maharashtra 411009
-      </span>
-    </li>
-    <li className="mt-3">
-      <i className="fa fa-envelope me-2" />
-      <span>info@menumitra.com</span>
-    </li>
-   
-  </ul>
-  <ul className="social-icon d-flex justify-content-left mb-3 ">
-    <li>
-      <Link to="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-facebook-f"></i>
+      {/* Social Icons */}
+      <ul className="social-icon d-flex justify-content-center ms-3 mb-3 mb-sm-0">
+        <li>
+          <Link to="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-facebook-f"></i>
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.linkedin.com/company/102429337/admin/dashboard/" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-linkedin-in ms-3"></i>
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.youtube.com/@menumitra" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-youtube ms-3"></i>
+          </Link>
+        </li>
+        <li>
+          <Link to="https://t.me/MenuMitra" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-telegram ms-3"></i>
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.instagram.com/menumitra/" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-instagram ms-3"></i>
+          </Link>
+        </li>
+      </ul>
+
+      {/* Book a Demo Button */}
+      <Link className="btn btn-outline-dark ms-3 btn-sm p-2" to="/book_demo">
+        Book a Demo
       </Link>
-    </li>
-    <li>
-      <Link to="https://www.linkedin.com/company/102429337/admin/dashboard/" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-linkedin-in ms-3"></i>
-      </Link>
-    </li>
-    <li>
-      <Link to="https://www.youtube.com/@menumitra" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-youtube ms-3"></i>
-      </Link>
-    </li>
-    <li>
-      <Link to="https://t.me/MenuMitra" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-telegram ms-3"></i>
-      </Link>
-    </li>
-    <li>
-      <Link to="https://www.instagram.com/menumitra/" target="_blank" rel="noreferrer">
-        <i className="fa-brands fa-instagram ms-3"></i>
-      </Link>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
 
-              </div>
 
-              {/* Links and Customer Section - Display Side by Side in Mobile */}
-              <div className="col-lg-4 col-sm-12 d-flex  flex-wrap">
+
+
+
+            <div className="row ">
+         <div className="col-1"></div>   
+
+   {/* Links and Customer Section - Display Side by Side in Mobile */}
+   <div className="col-lg-4 col-sm-12 d-flex  flex-wrap">
                 {/* Links Section */}
                 <div className="col-6 mb-3">
+      <div className="single-widget">
+        <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Utility</h3>
+        <ul className="links">
+          <li className="mb-2">
+            <Link className="text-dark" to="/"> <i className="fa-solid fa-check-double text-info me-1"></i>Home</Link>
+          </li>
+          <li className="mb-2">
+            <Link className="text-dark" to="/pricing"> <i className="fa-solid fa-check-double text-info me-1"></i>Pricing</Link>
+          </li>
+          <li className="mb-2">
+            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check-double text-info me-1"></i>Career</Link>
+          </li>
+          <li className="mb-2">
+            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check-double text-info me-1"></i>Support</Link>
+          </li>
+          <li className="mb-2">
+            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check-double text-info me-1"></i>About</Link>
+          </li>
+          <li className="mb-2">
+            <Link className="text-dark" to="/reseller_program"> <i className="fa-solid fa-check-double text-info me-1"></i>Become Partner(Reseller)</Link>
+          </li>
+          <li className="mb-2">
+  <Link className="btn btn-outline-dark btn-sm p-2  text-center" to="/book_demo">
+    Book A Demo
+  </Link>
+</li>
+
+        
+        
+         
+        </ul>
+      </div>
+    </div>
+    <div className="col-6 mb-3">
       <div className="single-widget">
         <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Features</h3>
         <ul className="links">
           <li className="mb-2">
-            <Link className="text-dark" to="/billing">Billing</Link>
+            <Link className="text-dark" to="/billing"> <i className="fa-solid fa-check-double text-info me-1"></i>Billing</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/inventory">Inventory</Link>
+            <Link className="text-dark" to="/inventory"> <i className="fa-solid fa-check-double text-info me-1"></i>Inventory</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark"to="/menu">Menu</Link>
+            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check-double text-info me-1"></i>Menu</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/onlineorder">Online Orde</Link>
+            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check-double text-info me-1"></i>Online Orde</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/reports">Restaurant Reports</Link>
+            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check-double text-info me-1"></i>Restaurant Reports</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/customermanagement">Customer Management</Link>
+            <Link className="text-dark" to="/customermanagement"> <i className="fa-solid fa-check-double text-info me-1"></i>Customer Management</Link>
           </li>
-          <li className="mb-2"><Link className="text-dark" to="/customerfeedback">Customer Feedback</Link></li>
+          <li className="mb-2"><Link className="text-dark" to="/customerfeedback"> <i className="fa-solid fa-check-double text-info me-1"></i>Customer Feedback</Link></li>
 
         
         
@@ -114,90 +152,94 @@ const Footer = () => {
     </div>
 
 
+              </div>
+              {/* Links and Customer Section - Display Side by Side in Mobile */}
+              <div className="col-lg-4 col-sm-12 d-flex  flex-wrap">
+                {/* Links Section */}
+       
+
+
                 {/* Customer Section */}
                 <div className="col-6 mb-3">
                   <div className="single-widget">
                     <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Customer</h3>
                     <ul className="links">
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#">Get a demo</a>
+                        <Link className="text-dark" to="/book_demo"> <i className="fa-solid fa-check-double text-info me-1"></i> Book A Demo</Link>
+                      </li>
+                     
+                      <li className="mb-2">
+                        <a className="text-dark" href="index.html#"> <i className="fa-solid fa-check-double text-info me-1"></i>Help and support</a>
                       </li>
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#">Enquiry</a>
+                        <a className="text-dark" href="index.html#">  <i className="fa-solid fa-check-double text-info me-1"></i>Order Tracking</a>
                       </li>
+                      
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#">Help and support</a>
-                      </li>
-                      <li className="mb-2">
-                        <a className="text-dark" href="index.html#">Order Tracking</a>
-                      </li>
-                      <li className="mb-2">
-                        <a className="text-dark" href="contact.html">Get a Call</a>
-                      </li>
-                      <li className="mb-2">
-                        <a className="text-dark" href="https://user.menumitra.com/user_app/Index" target="_blank">User App</a>
+                        <a className="text-dark" href="https://user.menumitra.com/user_app/Index" target="_blank">  <i className="fa-solid fa-check-double text-info me-1"></i>UserApp</a>
                       </li>
                       
                     </ul>
                   </div>
                 </div>
-              </div>
-
-              {/* Legal Section */}
-              <div className="col-lg-4 col-sm-12 d-flex  flex-wrap">
-              <div className="col-6 mb-3">
+                <div className="col-6 mb-3">
                 <div className="single-widget single-widget-4">
                   <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Outlet</h3>
                   <ul className="links">
                     <li className="mb-2">
-                      <Link className="text-dark" to="/newrestaurant">New Restaurant</Link>
+                      <Link className="text-dark" to="/newrestaurant"> <i className="fa-solid fa-check-double text-info me-1"></i>New Restaurant</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/finedine">Fine Dine</Link>
+                      <Link className="text-dark" to="/finedine"> <i className="fa-solid fa-check-double text-info me-1"></i>Fine Dine</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/foodcourts">Food Courts</Link>
+                      <Link className="text-dark" to="/foodcourts"> <i className="fa-solid fa-check-double text-info me-1"></i>Food Courts</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/pizzeria">
-                       Pizzeria
+                      <i className="fa-solid fa-check-double text-info me-1"></i>Pizzeria
                       </Link>
                     </li>
                    
                     <li className="mb-2">
                       <Link className="text-dark" to="/cafe">
-                       Cafe
+                      <i className="fa-solid fa-check-double text-info me-1"></i>Cafe
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/qsr">QSR</Link>
+                      <Link className="text-dark" to="/qsr"> <i className="fa-solid fa-check-double text-info me-1"></i>QSR</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/bakeries">
-                       Bakeries
+                      <i className="fa-solid fa-check-double text-info me-1"></i> Bakeries
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/icecream">Icecream & Desserts</Link>
+                      <Link className="text-dark" to="/icecream"> <i className="fa-solid fa-check-double text-info me-1"></i>Icecream & Desserts</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cloudkitchens">Cloud Kitchens</Link>
+                      <Link className="text-dark" to="/cloudkitchens"> <i className="fa-solid fa-check-double text-info me-1"></i>Cloud Kitchens</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/largechain">
-                       Large Chain
+                      <i className="fa-solid fa-check-double text-info me-1"></i>Large Chain
                       </Link>
                     </li>
                   </ul>
                 </div>
               </div>
+              </div>
+
+              {/* Legal Section */}
+              <div className="col-lg-3 col-sm-12 d-flex  flex-wrap">
+            
               <div className="col-6 mb-3">
                   <div className="single-widget">
                     <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Add-Ons</h3>
                     <ul className="links">
-                    <li className="mb-2"><Link className="text-dark " to="/captainapp">Captain App</Link></li>
-                <li className="mb-2"><Link className="text-dark " to="/kds">Kitchen Display System</Link></li>
-                <li className="mb-2"><Link className="text-dark" to="/scan">Scan & Order</Link></li>
+                    <li className="mb-2"><Link className="text-dark " to="/captainapp"> <i className="fa-solid fa-check-double text-info me-1"></i>Captain App</Link></li>
+                <li className="mb-2"><Link className="text-dark " to="/kds"> <i className="fa-solid fa-check-double text-info me-1"></i>Kitchen Display System</Link></li>
+                <li className="mb-2"><Link className="text-dark" to="/scan"> <i className="fa-solid fa-check-double text-info me-1"></i>Scan & Order</Link></li>
                     
           </ul>
                   </div>
@@ -230,7 +272,7 @@ const Footer = () => {
         {/* End Footer Top Area */}
         {/* Start Footer Bottom Area */}
 
-        <div className="container pb-0 mb-2 mt-2">
+        <div className="container bg-white pb-0 mb-2 mt-2">
           <div className="row ">
             <div className="col-12 text-center">
               <p className="mb-0">
@@ -251,7 +293,7 @@ const Footer = () => {
       <div className="col-lg-6 col-md-6 text-center text-lg-end">
         <p className="conditions mb-0">
           <i className="fa-solid fa-bolt"></i> Powered by
-          <span className="fw-bold ms-2">
+          <span className="ms-2">
             <Link
               to="https://www.shekruweb.com"
               target="_blank"
