@@ -92,7 +92,7 @@ const Form = () => {
    <div id="faq" className="mt-30">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-50">Frequently Asked Questions</h2>
+          <h2 className=" mb-50">Frequently Asked Questions</h2>
         </div>
         {/* / text-center */}
         <div className="row v-center">
@@ -415,7 +415,7 @@ const Form = () => {
       </div>
       {/* / container */}
     </div>
-    <section className="container mt-80" >
+    <section className="container " >
         <div className="row v-center">
           <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block">
             <img
@@ -443,7 +443,7 @@ const Form = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Full Name"
+                        placeholder="* Full Name"
                         required
                       />
                     </div>
@@ -457,7 +457,7 @@ const Form = () => {
                         name="mobile"
                         value={formData.mobile}
                         onChange={handleChange}
-                        placeholder="Mobile Number"
+                        placeholder="* Mobile Number"
                         required
                       />
                     </div>
@@ -471,7 +471,7 @@ const Form = () => {
                         name="city"
                         value={formData.city}
                         onChange={handleChange}
-                        placeholder="City"
+                        placeholder="* City"
                         required
                       />
                     </div>
@@ -487,7 +487,7 @@ const Form = () => {
                         name="outletName"
                         value={formData.outletName}
                         onChange={handleChange}
-                        placeholder="Outlet Name"
+                        placeholder="* Outlet Name"
                       />
                     </div>
                   </div>
@@ -502,7 +502,7 @@ const Form = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Outlet Type</option>
+                        <option value="">* Outlet Type</option>
                         <option value="Restaurant">Restaurant</option>
                         <option value="fine_dine">Fine Dine</option>
                         <option value="food_courts">Food Courts</option>

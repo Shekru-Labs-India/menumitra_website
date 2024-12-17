@@ -14352,3 +14352,7 @@ p {
   flex-direction: column;
   height: 100%;
 }
+.search-input {
+  border-radius: 30px !important; /* Force the border-radius */
+  padding-left: 40px !important; /* Adjust left padding to make space for the icon */
+}

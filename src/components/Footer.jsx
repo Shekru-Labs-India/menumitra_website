@@ -102,13 +102,13 @@ const Footer = () => {
             <Link className="text-dark" to="/pricing"> <i className="fa-solid fa-check text-info me-1"></i>Pricing</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check text-info me-1"></i>Career</Link>
+            <Link className="text-dark"to="/career"> <i className="fa-solid fa-check text-info me-1"></i>Career</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check text-info me-1"></i>Support</Link>
+            <Link className="text-dark" to="/support"> <i className="fa-solid fa-check text-info me-1"></i>Support</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check text-info me-1"></i>About</Link>
+            <Link className="text-dark" to="/about_us"> <i className="fa-solid fa-check text-info me-1"></i>About</Link>
           </li>
           <li className="mb-2">
             <Link className="text-dark" to="/reseller_program"> <i className="fa-solid fa-check text-info me-1"></i>Become Partner</Link>
@@ -175,7 +175,7 @@ const Footer = () => {
                       </li>
                      
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#"> <i className="fa-solid fa-check text-info me-1"></i>Help and support</a>
+                        <Link className="text-dark" to="/help_support"> <i className="fa-solid fa-check text-info me-1"></i>Help and support</Link>
                       </li>
                       <li className="mb-2">
                         <Link className="text-dark" to="/order_tracking">  <i className="fa-solid fa-check text-info me-1"></i>Order Tracking</Link>
@@ -280,7 +280,8 @@ const Footer = () => {
         {/* End Footer Top Area */}
         {/* Start Footer Bottom Area */}
 
-        <div className="container bg-white pb-0 mb-2 mt-2">
+        <footer className="footer-bottom-area">
+        <div className="container  pb-0 ">
           <div className="row ">
             <div className="col-12 text-center">
               <p className="mb-0">
@@ -291,6 +292,7 @@ const Footer = () => {
           </div>
           
         </div>
+        </footer>
         <hr className="p-0 m-0"></hr>
         <footer className="footer-bottom-area">
   <div className="container">

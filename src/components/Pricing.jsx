@@ -145,7 +145,7 @@ transparent & affordable pricing.</p>
             </div>
           </div>
         </section>
-        <div className="container ">
+        <div className="container mt-80">
   <h2 className="text-center fw-bold  "style={{marginBottom:"60px"}}>
         Simple and reliable POS for all your restaurant needs
       </h2>
@@ -210,9 +210,9 @@ transparent & affordable pricing.</p>
 
 
 {/* Testimonials Section */}
-<section className="testimonials py-5">
-  <div className="container">
-  <h2 className="text-center mb-4 fw-bold  ">
+<section className="testimonials ">
+  <div className="container ">
+  <h2 className="text-center mb-4 fw-bold mb-50  ">
   Trusted by some of the best restaurants      </h2>
     <div className="row">
       {/* First Testimonial */}

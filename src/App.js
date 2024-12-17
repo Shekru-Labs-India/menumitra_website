@@ -45,6 +45,10 @@ import ResellerProgram from "./components/ResellerProgram";
 import BookDemo from "./components/BookDemo";
 import CDS from "./components/CDS";
 import OrderTracking from "./components/OrderTracking";
+import FAQ from "./components/FAQ";
+import Aboutus from "./components/Aboutus";
+import Support from "./components/Support";
+import Career from "./components/Career";
 function App() {
   return (
    
@@ -98,7 +102,10 @@ function App() {
     <Route path="/request_data_removal" element={<DeleteUser />} />
     <Route path="/book_demo" element={<BookDemo />} />
     <Route path="/order_tracking" element={<OrderTracking />} />
-
+    <Route path="/help_support" element={<FAQ />} />
+    <Route path="/about_us" element={<Aboutus />} />
+    <Route path="/support" element={<Support />} />
+    <Route path="/career" element={<Career />} />
     </Routes>
 
     </BrowserRouter>

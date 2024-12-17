@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from './Header'
+import { Link } from "react-router-dom";
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import hero from "../assets/images/Hero-img.jpg"
@@ -66,12 +67,12 @@ const Home = () => {
    <Header/>
 
   <div className="main-container p-0">
-    <section id="about" className="bg-white lg">
+    <section id="about" className=" xl">
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5 tablet-lg-top-30">
             <h2 className="mb-30">
-              India's Best Restaurant Management Software
+              India's Best Contactless  Restaurant Management Software
             </h2>
             <p>
               Billing &amp; KOT, manage inventory &amp; central kitchen, handle
@@ -79,10 +80,14 @@ const Home = () => {
               customer data, discount &amp; offers, accounts, reports and do lot
               more.{" "}
             </p>
-            <a href="https://user.menumitra.com/" target='_blank' className="btn btn-primary pill mr-5">
+            {/* <a href="https://user.menumitra.com/" target='_blank' className="btn btn-primary pill mr-5">
   <i className="fas fa-desktop me-2" /> 
   <span> UserApp Demo </span>
-</a>
+</a> */}
+           <Link to="/book_demo"  className="btn btn-primary pill mr-5">
+  <i className="fas fa-desktop me-2" /> 
+  <span> UserApp Demo </span>
+</Link>
 <a href="https://youtu.be/j2e2stCcICo?si=ho4lV-CpwVRTNQtJ" target='_blank' className="btn btn-danger pill mr-5">
   <i className="fas fa-play-circle me-2" /> 
   <span>Watch  Demo</span>
@@ -106,14 +111,14 @@ const Home = () => {
       {/* / container */}
     </section>
     {/* / about */}
-    <section className="container ">
+    <div className="container mt-80  ">
   <div className="text-center">
     <h2 className="mt-6">Trusted by 50+ outlets as</h2>
     <h2 className="mb-80">Best Low Cost Restaurant Management Software</h2>
   </div>
   {/* / text-center */}
   <div className="row d-flex justify-content-evenly">
-  <div className="col-6 col-md-4 col-lg-1 mb-2 ">
+  <div className="col-4 col-md-4 col-lg-1 mb-2 ">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/1.png" 
@@ -122,7 +127,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/11.png"  
@@ -131,7 +136,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/2.png"  
@@ -140,7 +145,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img 
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3.png"   
@@ -149,7 +154,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/5.png"  
@@ -158,7 +163,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/12.png"   
@@ -167,7 +172,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/4.png"  
@@ -176,7 +181,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/7.png"  
@@ -185,7 +190,7 @@ const Home = () => {
       />
     </div>
   </div>
-  <div className="col-6 col-md-4 col-lg-1 mb-2">
+  <div className="col-4 col-md-4 col-lg-1 mb-2">
     <div className="card border" style={{ width: '120px', height: '76px' }}>
       <img
         src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/8.png"   
@@ -199,7 +204,7 @@ const Home = () => {
 
 
 
-</section>
+</div>
 
 
     {/* / container */}
@@ -481,7 +486,7 @@ const Home = () => {
 
 
       {/* / container */}
-      <div className="container-fluid pt-5">
+      <div className="container pt-5">
   <p className="text-center fw-bold">Outlet Types</p>
   <h2 className="text-center mb-4">
     Built for all types of{" "}

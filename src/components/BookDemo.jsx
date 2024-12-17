@@ -110,6 +110,8 @@ const BookDemo = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
+                    {/* <label htmlFor="contact-city3"><span className="text-danger">*</span>Name </label> */}
+
                       <input
                         type="text"
                         className="form-control"
@@ -117,7 +119,7 @@ const BookDemo = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Full Name"
+                        placeholder="* Full Name"
                         required
                       />
                     </div>
@@ -131,7 +133,7 @@ const BookDemo = () => {
                         name="mobile"
                         value={formData.mobile}
                         onChange={handleChange}
-                        placeholder="Mobile Number"
+                        placeholder="* Mobile Number"
                         required
                       />
                     </div>
@@ -145,7 +147,7 @@ const BookDemo = () => {
                         name="city"
                         value={formData.city}
                         onChange={handleChange}
-                        placeholder="City"
+                        placeholder="* City"
                         required
                       />
                     </div>
@@ -161,7 +163,7 @@ const BookDemo = () => {
                         name="outletName"
                         value={formData.outletName}
                         onChange={handleChange}
-                        placeholder="Outlet Name"
+                        placeholder="* Outlet Name"
                       />
                     </div>
                   </div>
@@ -176,7 +178,7 @@ const BookDemo = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Outlet Type</option>
+                        <option value="">* Outlet Type</option>
                         <option value="Restaurant">Restaurant</option>
                         <option value="fine_dine">Fine Dine</option>
                         <option value="food_courts">Food Courts</option>
