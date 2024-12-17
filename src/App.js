@@ -2,13 +2,13 @@ import Home from "./components/Home";
 
 import { HashRouter,Routes,Route, BrowserRouter } from 'react-router-dom';
 
-import './assets/css/bootstrap.min.css'
+// import './assets/css/bootstrap.min.css'
 import './assets/css/style.css'
-import './assets/css/aos.css'
-import './assets/css/animate.min.css'
-import './assets/css/swiper-bundle.min.css'
-import './assets/css/fontawesome-all.min.css'
-import './assets/css/glightbox.min.css'
+
+// import './assets/css/animate.min.css'
+
+
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 

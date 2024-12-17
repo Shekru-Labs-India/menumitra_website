@@ -14,14 +14,14 @@ const Header = () => {
   className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-white shadow-xl"
 >
   <div className="container">
-  <div className="navbar-brand text-black">
+  <div className="navbar-brand text-black fs-5">
   <Link to="/">
     <img 
       src={menumitra} 
       alt="Menumitra-Logo" 
-    className='navbar-brand img'
+    className='mg'
     />
-    MenuMitra
+  MenuMitra 
   </Link>
 </div>
 

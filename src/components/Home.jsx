@@ -71,9 +71,9 @@ const Home = () => {
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5 tablet-lg-top-30">
-            <h2 className="mb-30">
+            <h4 className="mb-30">
               India's Best Contactless  Restaurant Management Software
-            </h2>
+            </h4>
             <p>
               Billing &amp; KOT, manage inventory &amp; central kitchen, handle
               online orders, menu management, tables, captain app, collect
