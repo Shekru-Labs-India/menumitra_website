@@ -13,6 +13,7 @@ const Billing = () => {
   <>
       <Helmet>
         {/* Meta Tags for SEO */}
+        <title>Menu Mitra | Restaurant POS and Management</title>
         <meta name="keywords" content="Restaurant POS, Menu Mitra, Restaurant Management, Online Ordering, CRM, Inventory Management" />
         <meta name="description" content="Menu Mitra - Simplifying restaurant management with smart POS features. Manage orders, inventory, CRM, and reports all in one place." />
 
