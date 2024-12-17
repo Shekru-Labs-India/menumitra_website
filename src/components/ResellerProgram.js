@@ -22,8 +22,8 @@ const ResellerProgram = () => {
         </div>
       </section>
 
-      <section className="partner-section">
-        <h2 className="partner-title">Become our partner</h2>
+      <div className="partner-section mt-80">
+        <h2 className="partner-title mb-50">Become our partner</h2>
         <div className="partner-steps">
           <div className="step">
             <div className="step-number">1</div>
@@ -44,7 +44,7 @@ const ResellerProgram = () => {
           </div>
         </div>
         <button className="register-reseller-btn">Register as reseller</button>
-      </section>
+      </div>
       <Form/>
       <Footer/>
     </div>

@@ -41,7 +41,7 @@ body {
 /*------- typography -------*/
 html, body {
   color: #797d85;
-  background-color: #fafbfc;
+  background-color: #f1f4f7;
   font-size: 16px;
   font-weight: 400;
 }
@@ -755,7 +755,7 @@ table {
 
 .table thead th {
   font-weight: 500;
-  vertical-align: bottom;
+  vertical-align: middle;
   border-bottom: 1px solid #f1f4f7 !important;
 }
 
@@ -4709,7 +4709,7 @@ label.btn-file {
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.075rem;
   transition: all 0.2s ease-in-out;
@@ -7339,11 +7339,11 @@ section.big {
 }
 
 section.lg {
-  padding: 150px 0 50px 0;
+  padding: 100px 0 0 0;
 }
 
 section.xl {
-  padding: 200px 0 50px 0;
+  padding: 200px 0 0 0;
 }
 
 section.xxl {
@@ -14345,4 +14345,10 @@ p {
   .step {
     margin-bottom: 30px;
   }
+}
+
+.card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

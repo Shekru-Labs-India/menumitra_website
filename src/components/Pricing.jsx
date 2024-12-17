@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import "./Pricing.css"; // Custom CSS file
@@ -12,104 +13,126 @@ const Pricing = () => {
   return (
     <>
       <Header />
-      <div className="main-container bg-light pt-6">
+
         {/* Pricing Section */}
-        <section id="pricing-plans" className="py-5">
+        <section id="pricing-plans" className="xl">
           <div className="container-xxl">
             {/* Section Title */}
             <div className="row justify-content-start text-center mb-4">
-              <h2 className="fw-bold">Pricing Plans</h2>
-              <p>Value-packed featured at
+              <h2 className="fw-bold mb-4">Pricing Plans</h2>
+              <h4>Value-packed featured at
 Wallet-friendly cost
+</h4>
+<p>
 No hidden costs & no additional charges. Just
 transparent & affordable pricing.</p>
             </div>
 
-            {/* Pricing Table */}
-            <div className="table-responsive">
-              <table className="table table-bordered text-center">
-                <thead>
-                  <tr>
-                    <th className="fw-bold">
-                      Key Features
-                      <div className="text-small" style={{ fontSize: "0.8rem" }}>
-                        Here are the key features that highlight our three plans:
-                      </div>
-                    </th>
-                    <th className="fw-bold">
-                      Core
-                      <div className="text-small" style={{ fontSize: "2rem" }}>
-                        ₹10,000
-                      </div>
-                      <div className="text-small" style={{ fontSize: "0.8rem" }}>
-                        per year /per outlet
-                      </div>
-                    </th>
-                    <th className="fw-bold">
-                      Growth
-                      <div className="text-small" style={{ fontSize: "2rem" }}>
-                        ₹20,000
-                      </div>
-                      <div className="text-small" style={{ fontSize: "0.8rem" }}>
-                        per year /per outlet
-                      </div>
-                    </th>
-                    <th className="fw-bold">
-                      Scale
-                      <div className="text-small" style={{ fontSize: "2rem" }}>
-                        ₹30,000
-                      </div>
-                      <div className="text-small" style={{ fontSize: "0.8rem" }}>
-                        per year /per outlet
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    "Cloud billing",
-                    "Inventory module",
-                    "80+ reports",
-                    "200+ third-party integrations",
-                    "Unlimited-user rights",
-                    "Unlimited cash register",
-                    "Central kitchen module",
-                    "Multi-terminal billing",
-                    "Scan & order app",
-                    "Captain ordering app",
-                    "Petpooja loyalty",
-                    "Online order reconciliation",
-                    "24x7 support",
-                    "Free training",
-                  ].map((feature, index) => (
-                    <tr key={index}>
-                      <td>{feature}</td>
-                      <td>
-                        {index < 8 ? (
-                          <i className="fa-solid fa-check text-success"></i>
-                        ) : (
-                          <i className="fa-solid fa-xmark text-danger"></i>
-                        )}
-                      </td>
-                      <td>
-                        {index < 14 ? (
-                          <i className="fa-solid fa-check text-success"></i>
-                        ) : (
-                          <i className="fa-solid fa-xmark  text-danger"></i>
-                        )}
-                      </td>
-                      <td>
-                        {index < 14 ? (
-                          <i className="fa-solid fa-check text-success"></i>
-                        ) : (
-                          <i className="fa-solid fa-xmark  text-danger"></i>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+           {/* Pricing Table */}
+<div className="table-responsive">
+  <table className="table table-bordered text-center">
+    <thead>
+      <tr>
+        <th className="fw-bold text-start  pt-0">
+        <span className="fs-3">  Key Features </span>
+          <div className="text-small text-secondary" style={{ fontSize: "0.8rem" }}>
+            Here are the key features 
+          </div>
+          <div className="text-small text-secondary" style={{ fontSize: "0.8rem" }}>
+            that highlight our three plans:
+          </div>
+        </th>
+        <th className="fw-bold">
+        <div className="text-success fs-3 " >
+          Basic
+          </div>
+         <div className="fs-5"> ₹5,000</div>
+         
+          <div className="text-small text-secondary" style={{ fontSize: "0.8rem" }}>
+            per year /per outlet
+          </div>
+          <Link to="/book_demo">
+          <button className="btn btn-outline-dark mt-2">Book a Demo</button>
+          </Link>       </th>
+        <th className="fw-bold">
+        <div className="text-danger fs-3" >
+          Pro
+          </div>
+          <div className="fs-5"> ₹10,000</div>
+          
+          <div className="text-small text-secondary" style={{ fontSize: "0.8rem" }}>
+            per year /per outlet
+          </div>
+          <Link to="/book_demo">
+          <button className="btn btn-outline-dark mt-2">Book a Demo</button>
+          </Link>
+        </th>
+        <th className="fw-bold">
+        <div className="text-info fs-3" >
+          Max
+          </div>
+          <div className="fs-5"> ₹15,000</div>
+         
+          <div className="text-small text-secondary" style={{ fontSize: "0.8rem" }}>
+            per year /per outlet
+          </div>
+          {/* Book a Demo Button */}
+          <Link to="/book_demo">
+          <button className="btn btn-outline-dark mt-2">Book a Demo</button>
+          </Link>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+  {[
+    { feature: "User App", icons: ["check", "xmark", "check"], icon: "fa-user" },
+    { feature: "Waiter Login", icons: ["xmark", "xmark", "check"], icon: "fa-sign-in-alt" },
+    { feature: "Captain Login", icons: ["check", "xmark", "check"], icon: "fa-user-tie" },
+    { feature: "KDS", icons: ["xmark", "xmark", "check"], icon: "fa-tv" },
+    { feature: "Owner App", icons: ["check", "check", "check"], icon: "fa-home" },
+    { feature: "POS System", icons: ["check", "check", "check"], icon: "fa-cash-register" },
+    { feature: "CDS", icons: ["xmark", "xmark", "check"], icon: "fa-cogs" },
+    { feature: "MM loyalty Coupons", icons: ["xmark", "check", "check"], icon: "fa-gift" },
+    { feature: "Website & Social Media", icons: ["xmark", "check", "check"], icon: "fa-globe" },
+    { feature: "Online Order Management", icons: ["xmark", "xmark", "check"], icon: "fa-shopping-cart" },
+    { feature: "Feedback Management", icons: ["xmark", "xmark", "check"], icon: "fa-comments" },
+   
+    { feature: "Support Chat", icons: ["check", "check", "xmark"], icon: "fa-comments" },
+    { feature: "24x7 Support", icons: ["xmark", "xmark", "check"], icon: "fa-headset" },
+    { feature: "Free Training", icons: ["check", "check", "xmark"], icon: "fa-chalkboard-teacher" },
+    { feature: "AI Analysis", icons: ["xmark", "xmark", "check"], icon: "fa-brain" },
+    { feature: "Addons", icons: ["", "", ""], icon: "fa-puzzle-piece",bgLight: true },
+
+    { feature: "KDS (TV/Tab)", icons: ["", "", ""], icon: "fa-tablet-alt", noBorder: true },
+    { feature: "CDS (TV/Tab)", icons: ["", "", ""], icon: "fa-tv", noBorder: true },
+    { feature: "Waiter Attendance", icons: ["", "", ""], icon: "fa-clock", noBorder: true },
+    { feature: "Billing Machine", icons: ["", "", ""], icon: "fa-print", noBorder: true },
+  ].map((item, index) => (
+    <tr
+    key={index}
+    style={item.bgLight ? { backgroundColor: "#E8E8E880" } : {}}
+    className={`${item.noBorder ? "border-0" : ""}`}
+  >
+    <td className={`text-start ${item.noBorder ? "border-0" : ""}`}>
+      <i className={`fa-solid ${item.icon} me-4`}></i>
+      {item.feature}
+    </td>
+    <td className={item.noBorder ? "border-0" : ""}>
+      <i className={`fa-solid fa-${item.icons[0]}`}></i>
+    </td>
+    <td className={item.noBorder ? "border-0" : ""}>
+      <i className={`fa-solid fa-${item.icons[1]}`}></i>
+    </td>
+    <td className={item.noBorder ? "border-0" : ""}>
+      <i className={`fa-solid fa-${item.icons[2]}`}></i>
+    </td>
+  </tr>
+  ))}
+</tbody>
+
+  </table>
+</div>
+
 
             {/* Note */}
             <div className="container bg-white p-2 ">
@@ -124,45 +147,60 @@ transparent & affordable pricing.</p>
         Simple and reliable POS for all your restaurant needs
       </h2>
 
-      {/* Statistics Section */}
-      <div className="row text-center mt-4">
-        {/* Clients */}
-        <div className="col-md-3 mb-4">
-          <i className="fa-solid fa-users text-dark mb-2 fs-1"size="3x" />
-     
+      <div className="container">
+  <div className="row text-center mt-4 ">
+    {/* Clients */}
+    <div className="col-12 col-sm-6 col-md-3 mb-4">
+      <div className="card card-equal-height">
+        <i className="fa-solid fa-users text-dark mb-2 fs-1 mt-4" size="3x" />
+        <h3 className="text-danger fw-bold mt-2">75000+</h3>
+        <p>
+          <strong className="text-danger">Clients</strong> across India, UAE, South Africa & Canada
+        </p>
+      </div>
+    </div>
 
-          <h3 className="text-danger fw-bold mt-2">75000+</h3>
-          <p className="">
-            <strong>Clients</strong> across India, UAE, South Africa & Canada
-          </p>
-        </div>
-        <div className="col-md-3 mb-4">
-          <i  className="fa-solid fa-cart-shopping text-dark mb-2 fs-1" size="100"  />
-          <h3 className="text-danger fw-bold mt-2">44%</h3>
-          <p className="">
-            <strong>Online order volume</strong> processed by MenuMitra
-          </p>
-        </div>
+    {/* Online Order Volume */}
+    <div className="col-12 col-sm-6 col-md-3 mb-4">
+      <div className="card card-equal-height">
+        <i className="fa-solid fa-cart-shopping text-dark mb-2 fs-1 mt-4" size="100" />
+        <h3 className="text-danger fw-bold mt-2">44%</h3>
+        <p>
+          <strong className="text-danger">Online order volume</strong> processed by MenuMitra
+        </p>
+      </div>
+    </div>
 
-        {/* Bills Processed */}
-        <div className="col-md-3 mb-4">
-          <i className="fa-solid fa-receipt text-dark mb-2 fs-1"size="3x"  />
-       
-          <h3 className="text-danger fw-bold mt-2">60L+</h3>
-          <p className="">
-            <strong>Bills processed</strong> everyday hassle free with MenuMitra POS
-          </p>
-        </div>
+    {/* Bills Processed */}
+    <div className="col-12 col-sm-6 col-md-3 mb-4">
+      <div className="card card-equal-height">
+        <i className="fa-solid fa-receipt text-dark mb-2 fs-1 mt-4" size="3x" />
+        <h3 className="text-danger fw-bold mt-2">60L+</h3>
+        <p>
+          <strong className="text-danger">Bills processed</strong> everyday hassle free with MenuMitra POS
+        </p>
+      </div>
+    </div>
 
-        {/* Support */}
-        <div className="col-md-3 mb-4">
-          <i className="fa-solid fa-phone-volume text-dark mb-2 fs-1" size="3x" />
-          <h3 className="text-danger fw-bold mt-2">24/7</h3>
-          <p className="">
-            <strong>On-call</strong> and on-site support
-          </p>
-        </div>
-        </div>
+    {/* Support */}
+    <div className="col-12 col-sm-6 col-md-3 mb-4">
+      <div className="card card-equal-height">
+        <i className="fa-solid fa-phone-volume text-dark mb-2 fs-1 mt-4" size="3x" />
+        <h3 className="text-danger fw-bold mt-2">24/7</h3>
+        <p>
+          <strong className="text-danger">On-call</strong> and on-site support
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
         
 
@@ -222,7 +260,7 @@ transparent & affordable pricing.</p>
 
 {/* ... existing code ... */}
         </div>
-      </div>
+     
       <Form/>
       <Footer />
     </>

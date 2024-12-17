@@ -46,10 +46,10 @@ const Bakeries = () => {
       {/* / container */}
     </section>
 
-    <section id="features" className="xl">
+    <section id="features" className="lg">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title ">
           You've done everything to build your bakery.
           We help you take the next big step.
           </h2>

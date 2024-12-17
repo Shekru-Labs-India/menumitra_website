@@ -45,10 +45,10 @@ const CloudKitchens = () => {
       {/* / container */}
     </section>
 
-    <section id="features" className="xl">
+    <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title mb-50">
           You've done everything to build your cloud kitchen.
           We help you take the next big step.
           </h2>
@@ -95,7 +95,7 @@ const CloudKitchens = () => {
         {/* / row */}
       </div>
       {/* / container */}
-    </section>
+    </div>
 
 
     <Rated/>

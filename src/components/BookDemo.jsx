@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Form from "./Form";
 
 const BookDemo = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -17,15 +18,32 @@ const BookDemo = () => {
   }, []);
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+  
+    if (name === "mobile") {
+      // Allow only 10 digits, starting from 6-9
+      if (/^[6-9][0-9]{0,9}$/.test(value) || value === "") {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else if (name === "city") {
+      // Allow only letters and spaces, max length 20
+      if (/^[A-Za-z\s]{0,20}$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else if (name === "name") {
+      // Allow only letters and spaces
+      if (/^[A-Za-z\s]*$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     // Request data
     const data = {
       name: formData.name,
@@ -61,12 +79,17 @@ const BookDemo = () => {
     } catch (error) {
       console.error("Request failed:", error);
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   return (
     <>
       <Header />
-      <div className="container" style={{ marginTop: "100px" }}>
+      <div className="container">
+      <section id="pricing-plans" className="xl">
+
         <div className="row v-center">
           <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block">
             <img
@@ -127,7 +150,9 @@ const BookDemo = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-md-6">
+                 <div className="col-md-6"></div>
+
+   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
@@ -151,7 +176,7 @@ const BookDemo = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Select Order Type</option>
+                        <option value="">Outlet Type</option>
                         <option value="Restaurant">Restaurant</option>
                         <option value="fine_dine">Fine Dine</option>
                         <option value="food_courts">Food Courts</option>
@@ -165,19 +190,25 @@ const BookDemo = () => {
                       </select>
                     </div>
                   </div>
-
+              
                   <div className="col-12">
-                    <button type="submit" className="btn btn-primary btn-submit">
-                      Submit
-                    </button>
-                  </div>
+                  <button type="submit "disabled= {loading} className="btn btn-primary btn-submit">
+  <i className="fas fa-rocket me-2"></i> Submit
+</button>
+
+  <p className="mt-1 text-primary text-center" style={{ fontSize: '14px' }}>
+    We don’t spam  call.
+  </p>
+</div>
+
                 </div>
               </form>
             </div>
           </div>
         </div>
+      </section>
       </div>
-      <Form />
+      <Form/>
       <Footer />
     </>
   );

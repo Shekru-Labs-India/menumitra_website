@@ -481,7 +481,7 @@ const Home = () => {
 
 
       {/* / container */}
-      <div className="container-fluid py-5">
+      <div className="container-fluid pt-5">
   <p className="text-center fw-bold">Outlet Types</p>
   <h2 className="text-center mb-4">
     Built for all types of{" "}

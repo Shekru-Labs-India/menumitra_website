@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import Form from "./Form";
 const TermsConditions = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -9,10 +10,11 @@ const TermsConditions = () => {
   return (
     <div>
               <Header></Header>
+              <section id="pricing-plans" className="lg">
       <div className="main-container bg-light">
    
 
-      <div className="container bg-light ptb-100">
+      <div className="container bg-light ">
       
       {/* <h1 className="text-center mb-4">Terms and Conditions</h1> */}
 
@@ -121,6 +123,8 @@ const TermsConditions = () => {
       </p>
       </div>
       </div>
+      </section>
+      <Form/>
       <Footer></Footer>
     </div>
     

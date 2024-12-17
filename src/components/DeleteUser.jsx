@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import Form from "./Form";
 
 const DeleteUser = () => {
   const [mobile, setMobile] = useState('');
@@ -63,13 +64,13 @@ const DeleteUser = () => {
   return (
     <>
       <Header />
-      <div className="main-container bg-light">
+      <section id="pricing-plans" className="xl">
    
 
       <div className="container bg-light ">
       
-        <h2 className="text-center">Request Data Removal</h2>
-        <p className="text-center mt-5 mb-5">
+        <h2 className="text-center mb-50">Request Data Removal</h2>
+        <p className="text-center ">
           Please enter the mobile number associated with the account you wish to delete. Once confirmed, this action will permanently remove the user’s data from our system. This process is irreversible, so proceed with caution.
         </p>
 
@@ -138,7 +139,8 @@ const DeleteUser = () => {
           </div>
         )}
       </div>
-      </div>
+      </section>
+      <Form/>
       <Footer />
     </>
   );

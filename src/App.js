@@ -43,6 +43,8 @@ import CloudKitchens from "./components/CloudKitchens"
 import IcecreamDesserts from "./components/IcecreamDesserts"
 import ResellerProgram from "./components/ResellerProgram";
 import BookDemo from "./components/BookDemo";
+import CDS from "./components/CDS";
+import OrderTracking from "./components/OrderTracking";
 function App() {
   return (
    
@@ -64,6 +66,8 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/captainapp" element={<CaptainApp />} />
     <Route path="/kds" element={<KDS />} />
+    <Route path="/cds" element={<CDS />} />
+
     <Route path="/scan" element={<ScanAndOrder />} />
     <Route path="/billing" element={<Billing />} />
     <Route path="/inventory" element={<Inventory />} />
@@ -93,6 +97,7 @@ function App() {
 
     <Route path="/request_data_removal" element={<DeleteUser />} />
     <Route path="/book_demo" element={<BookDemo />} />
+    <Route path="/order_tracking" element={<OrderTracking />} />
 
     </Routes>
 

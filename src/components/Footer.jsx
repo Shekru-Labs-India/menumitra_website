@@ -33,7 +33,12 @@ const Footer = () => {
         </Link>
       </div>
       
-      {/* Email */}
+      <div className="d-flex align-items-center justify-content-center mb-3 mb-sm-0">
+  <i className="fas fa-mobile-alt me-2" />
+  <span>09172530151</span>
+</div>
+
+
       <div className="d-flex align-items-center justify-content-center mb-3 mb-sm-0">
         <i className="fa fa-envelope me-2" />
         <span>info@menumitra.com</span>
@@ -43,27 +48,27 @@ const Footer = () => {
       <ul className="social-icon d-flex justify-content-center ms-3 mb-3 mb-sm-0">
         <li>
           <Link to="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-facebook-f fs-3"></i>
           </Link>
         </li>
         <li>
           <Link to="https://www.linkedin.com/company/102429337/admin/dashboard/" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-linkedin-in ms-3"></i>
+            <i className="fa-brands fa-linkedin-in ms-3 fs-3"></i>
           </Link>
         </li>
         <li>
           <Link to="https://www.youtube.com/@menumitra" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-youtube ms-3"></i>
+            <i className="fa-brands fa-youtube ms-3 fs-3"></i>
           </Link>
         </li>
         <li>
           <Link to="https://t.me/MenuMitra" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-telegram ms-3"></i>
+            <i className="fa-brands fa-telegram ms-3 fs-3"></i>
           </Link>
         </li>
         <li>
           <Link to="https://www.instagram.com/menumitra/" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-instagram ms-3"></i>
+            <i className="fa-brands fa-instagram ms-3 fs-3"></i>
           </Link>
         </li>
       </ul>
@@ -91,22 +96,22 @@ const Footer = () => {
         <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Utility</h3>
         <ul className="links">
           <li className="mb-2">
-            <Link className="text-dark" to="/"> <i className="fa-solid fa-check-double text-info me-1"></i>Home</Link>
+            <Link className="text-dark" to="/"> <i className="fa-solid fa-check text-info me-1"></i>Home</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/pricing"> <i className="fa-solid fa-check-double text-info me-1"></i>Pricing</Link>
+            <Link className="text-dark" to="/pricing"> <i className="fa-solid fa-check text-info me-1"></i>Pricing</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check-double text-info me-1"></i>Career</Link>
+            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check text-info me-1"></i>Career</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check-double text-info me-1"></i>Support</Link>
+            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check text-info me-1"></i>Support</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check-double text-info me-1"></i>About</Link>
+            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check text-info me-1"></i>About</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/reseller_program"> <i className="fa-solid fa-check-double text-info me-1"></i>Become Partner(Reseller)</Link>
+            <Link className="text-dark" to="/reseller_program"> <i className="fa-solid fa-check text-info me-1"></i>Become Partner</Link>
           </li>
           <li className="mb-2">
   <Link className="btn btn-outline-dark btn-sm p-2  text-center" to="/book_demo">
@@ -125,27 +130,28 @@ const Footer = () => {
         <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Features</h3>
         <ul className="links">
           <li className="mb-2">
-            <Link className="text-dark" to="/billing"> <i className="fa-solid fa-check-double text-info me-1"></i>Billing</Link>
+            <Link className="text-dark" to="/billing"> <i className="fa-solid fa-check text-info me-1"></i>Billing</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/inventory"> <i className="fa-solid fa-check-double text-info me-1"></i>Inventory</Link>
+            <Link className="text-dark" to="/inventory"> <i className="fa-solid fa-check text-info me-1"></i>Inventory</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check-double text-info me-1"></i>Menu</Link>
+            <Link className="text-dark"to="/menu"> <i className="fa-solid fa-check text-info me-1"></i>Menu</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check-double text-info me-1"></i>Online Orde</Link>
+            <Link className="text-dark" to="/onlineorder"> <i className="fa-solid fa-check text-info me-1"></i>Online Orde</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check-double text-info me-1"></i>Restaurant Reports</Link>
+            <Link className="text-dark" to="/reports"> <i className="fa-solid fa-check text-info me-1"></i>Restaurant Reports</Link>
           </li>
           <li className="mb-2">
-            <Link className="text-dark" to="/customermanagement"> <i className="fa-solid fa-check-double text-info me-1"></i>Customer Management</Link>
+            <Link className="text-dark" to="/customermanagement"> <i className="fa-solid fa-check text-info me-1"></i>Customer Management</Link>
           </li>
-          <li className="mb-2"><Link className="text-dark" to="/customerfeedback"> <i className="fa-solid fa-check-double text-info me-1"></i>Customer Feedback</Link></li>
+          <li className="mb-2"><Link className="text-dark" to="/customerfeedback"> <i className="fa-solid fa-check text-info me-1"></i>Customer Feedback</Link></li>
+          <li className="mb-2"><Link className="text-dark" to="/scan"> <i className="fa-solid fa-check text-info me-1"></i>Scan &amp; Order</Link></li>
 
-        
-        
+          <li className="mb-2"><Link className="text-dark" to="/scan"> <i className="fa-solid fa-check text-info me-1"></i>Scan & Order</Link></li>
+
          
         </ul>
       </div>
@@ -165,18 +171,18 @@ const Footer = () => {
                     <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Customer</h3>
                     <ul className="links">
                       <li className="mb-2">
-                        <Link className="text-dark" to="/book_demo"> <i className="fa-solid fa-check-double text-info me-1"></i> Book A Demo</Link>
+                        <Link className="text-dark" to="/book_demo"> <i className="fa-solid fa-check text-info me-1"></i> Book A Demo</Link>
                       </li>
                      
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#"> <i className="fa-solid fa-check-double text-info me-1"></i>Help and support</a>
+                        <a className="text-dark" href="index.html#"> <i className="fa-solid fa-check text-info me-1"></i>Help and support</a>
                       </li>
                       <li className="mb-2">
-                        <a className="text-dark" href="index.html#">  <i className="fa-solid fa-check-double text-info me-1"></i>Order Tracking</a>
+                        <Link className="text-dark" to="/order_tracking">  <i className="fa-solid fa-check text-info me-1"></i>Order Tracking</Link>
                       </li>
                       
                       <li className="mb-2">
-                        <a className="text-dark" href="https://user.menumitra.com/user_app/Index" target="_blank">  <i className="fa-solid fa-check-double text-info me-1"></i>UserApp</a>
+                        <a className="text-dark" href="https://user.menumitra.com/user_app/Index" target="_blank">  <i className="fa-solid fa-check text-info me-1"></i>UserApp</a>
                       </li>
                       
                     </ul>
@@ -184,45 +190,45 @@ const Footer = () => {
                 </div>
                 <div className="col-6 mb-3">
                 <div className="single-widget single-widget-4">
-                  <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Outlet</h3>
+                  <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Outlet Type</h3>
                   <ul className="links">
                     <li className="mb-2">
-                      <Link className="text-dark" to="/newrestaurant"> <i className="fa-solid fa-check-double text-info me-1"></i>New Restaurant</Link>
+                      <Link className="text-dark" to="/newrestaurant"> <i className="fa-solid fa-check text-info me-1"></i>New Restaurant</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/finedine"> <i className="fa-solid fa-check-double text-info me-1"></i>Fine Dine</Link>
+                      <Link className="text-dark" to="/finedine"> <i className="fa-solid fa-check text-info me-1"></i>Fine Dine</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/foodcourts"> <i className="fa-solid fa-check-double text-info me-1"></i>Food Courts</Link>
+                      <Link className="text-dark" to="/foodcourts"> <i className="fa-solid fa-check text-info me-1"></i>Food Courts</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/pizzeria">
-                      <i className="fa-solid fa-check-double text-info me-1"></i>Pizzeria
+                      <i className="fa-solid fa-check text-info me-1"></i>Pizzeria
                       </Link>
                     </li>
                    
                     <li className="mb-2">
                       <Link className="text-dark" to="/cafe">
-                      <i className="fa-solid fa-check-double text-info me-1"></i>Cafe
+                      <i className="fa-solid fa-check text-info me-1"></i>Cafe
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/qsr"> <i className="fa-solid fa-check-double text-info me-1"></i>QSR</Link>
+                      <Link className="text-dark" to="/qsr"> <i className="fa-solid fa-check text-info me-1"></i>QSR</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/bakeries">
-                      <i className="fa-solid fa-check-double text-info me-1"></i> Bakeries
+                      <i className="fa-solid fa-check text-info me-1"></i> Bakeries
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/icecream"> <i className="fa-solid fa-check-double text-info me-1"></i>Icecream & Desserts</Link>
+                      <Link className="text-dark" to="/icecream"> <i className="fa-solid fa-check text-info me-1"></i>Icecream & Desserts</Link>
                     </li>
                     <li className="mb-2">
-                      <Link className="text-dark" to="/cloudkitchens"> <i className="fa-solid fa-check-double text-info me-1"></i>Cloud Kitchens</Link>
+                      <Link className="text-dark" to="/cloudkitchens"> <i className="fa-solid fa-check text-info me-1"></i>Cloud Kitchens</Link>
                     </li>
                     <li className="mb-2">
                       <Link className="text-dark" to="/largechain">
-                      <i className="fa-solid fa-check-double text-info me-1"></i>Large Chain
+                      <i className="fa-solid fa-check text-info me-1"></i>Large Chain
                       </Link>
                     </li>
                   </ul>
@@ -237,9 +243,11 @@ const Footer = () => {
                   <div className="single-widget">
                     <h3 className="ms-3 text-info" style={{ fontSize: "19px" }}>Add-Ons</h3>
                     <ul className="links">
-                    <li className="mb-2"><Link className="text-dark " to="/captainapp"> <i className="fa-solid fa-check-double text-info me-1"></i>Captain App</Link></li>
-                <li className="mb-2"><Link className="text-dark " to="/kds"> <i className="fa-solid fa-check-double text-info me-1"></i>Kitchen Display System</Link></li>
-                <li className="mb-2"><Link className="text-dark" to="/scan"> <i className="fa-solid fa-check-double text-info me-1"></i>Scan & Order</Link></li>
+                    <li className="mb-2"><Link className="text-dark " to="/captainapp"> <i className="fa-solid fa-check text-info me-1"></i>Captain App</Link></li>
+                    <li className="mb-2"><Link className="text-dark " to="/waiterapp"> <i className="fa-solid fa-check text-info me-1"></i>Waiter App</Link></li>
+                <li className="mb-2"><Link className="text-dark " to="/kds"> <i className="fa-solid fa-check text-info me-1"></i>Kitchen Display System (KDS)</Link></li>
+           
+                <li className="mb-2"><Link className="text-dark " to="/cds"> <i className="fa-solid fa-check text-info me-1"></i>Customer Display System (CDS)</Link></li>
                     
           </ul>
                   </div>

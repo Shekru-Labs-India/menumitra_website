@@ -98,8 +98,8 @@ const Inventory = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container py-5">
-      <h2 className="text-center">
+    <div className="container mt-80">
+      <h2 className="text-center mb-50">
         Discover what Ciferon can do for your inventory
       </h2>
       <div className="row justify-content-center">
@@ -139,7 +139,7 @@ const Inventory = () => {
           </div>
         </div>
       </div>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center m-0 p-0">
         {/* Card 1 */}
         <div className="col-md-6 col-lg-4 mb-4">
           <div className="card p-4 " style={{ backgroundColor: "#ecf7ec" }}>
@@ -216,10 +216,10 @@ const Inventory = () => {
         </div>
       </div>
     </div>
-    <section id="features" className="xl">
+    <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title mb-50">
             Ciferon is more than just a inventory software
           </h2>
         </div>
@@ -260,7 +260,7 @@ const Inventory = () => {
         {/* / row */}
       </div>
       {/* / container */}
-    </section>
+    </div>
    
    
   </div>

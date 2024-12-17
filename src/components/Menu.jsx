@@ -98,8 +98,8 @@ const Menu = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container py-5">
-      <h2 className="text-center">
+    <div className="container mt-80">
+      <h2 className="text-center mb-50">
         Discover what Ciferon can do for your menu management
       </h2>
       <div className="row justify-content-center">
@@ -226,10 +226,10 @@ const Menu = () => {
         </div>
       </div>
     </div>
-    <section id="features" className="xl">
+    <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title mb-50">
             Ciferon is more than just a menu management software
           </h2>
         </div>
@@ -270,7 +270,7 @@ const Menu = () => {
         {/* / row */}
       </div>
       {/* / container */}
-    </section>
+    </div>
     
   </div>
   {/* / main-container */}

@@ -45,10 +45,10 @@ const IcecreamDesserts = () => {
       {/* / container */}
     </section>
 
-    <section id="features" className="xl">
+    <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title mb-50">
           Access benefits designed just for you
           </h2>
         </div>
@@ -93,7 +93,7 @@ const IcecreamDesserts = () => {
         {/* / row */}
       </div>
       {/* / container */}
-    </section>
+    </div>
 
    
 

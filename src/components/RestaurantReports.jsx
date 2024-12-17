@@ -95,8 +95,8 @@ const RestaurantReports = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container py-5">
-      <h2 className="text-center">
+    <div className="container mt-80">
+      <h2 className="text-center mb-50">
       Discover what Ciferon can do for your reports
       </h2>
       <div className="row justify-content-center">
@@ -207,10 +207,10 @@ const RestaurantReports = () => {
       </div>
 
     </div>
-    <section id="features" className="xl">
+    <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-title mb-80">
+          <h2 className="section-title mb-50">
           Ciferon is more than just
           a reporting software
           </h2>
@@ -257,7 +257,7 @@ const RestaurantReports = () => {
         {/* / row */}
       </div>
       {/* / container */}
-    </section>
+    </div>
     {/* / features */}
    </div>
 <Form/>

@@ -47,9 +47,9 @@ const NewRestaurant = () => {
       {/* / container */}
     </section>
   
-  <section id="why-us" className="xl ">
-  <div className="container py-5">
-      <h2 className="text-center mb-4">
+  <div id="why-us" className="mt-80">
+  <div className="container ">
+      <h2 className="text-center mb-50">
       Discover what Ciferon can do for your online order management
       </h2>
       <div className="row justify-content-center">
@@ -200,7 +200,7 @@ less than 5 Seconds
       
 
     </div>
-    </section>
+    </div>
 
    <Form/>
 
