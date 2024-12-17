@@ -10,7 +10,7 @@
     "primeicons": "^7.0.0",
     "primereact": "^10.8.5",
     "react": "^19.0.0",
-    "react-autocomplete": "^1.8.1",
+    
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^7.0.2",
