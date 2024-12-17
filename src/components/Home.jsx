@@ -489,7 +489,7 @@ const Home = () => {
 
       {/* / container */}
       <div className="container pt-5">
-  <p className="text-center fw-bold">Outlet Types</p>
+ 
   <h2 className="text-center mb-4">
     Built for all types of{" "}
     <span className="text-primary ">Food Business</span>
@@ -497,161 +497,115 @@ const Home = () => {
   
   {/* First Row (Top 5 Cards) */}
   <div className="row row-cols-2 row-cols-md-5 g-0">
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0 "
-        style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/finedine.svg"
-            alt="Fine Dine Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Fine Dine</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/foodcourt.svg"
-            alt="Food Court Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5 text-nowrap">Food Court</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/cafe.svg"
-            alt="Cafe Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Cafe</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/qsr.svg"
-            alt="QSR Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">QSR</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#e0f7fa", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/bar.svg"
-            alt="Bar Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Bar &amp; Brewery</p>
-        </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-utensils fs-1 mb-3" style={{ color: "#d81b60" ,fontSize: "3rem"}}></i>
+        <p className="fw-bold fs-5">Fine Dine</p>
       </div>
     </div>
   </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-store fs-1 mb-3" style={{ color: "#0288d1",fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5 text-nowrap">Food Court</p>
+      </div>
+    </div>
+  </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-coffee fs-1 mb-3" style={{ color: "#fbc02d" ,fontSize: "3rem"}}></i>
+        <p className="fw-bold fs-5">Cafe</p>
+      </div>
+    </div>
+  </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-concierge-bell fs-1 mb-3" style={{ color: "#8e24aa" ,fontSize: "3rem"}}></i>
+        <p className="fw-bold fs-5">QSR</p>
+      </div>
+    </div>
+  </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#e0f7fa", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-beer fs-1 mb-3" style={{ color: "#388e3c",fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5">Bar & Brewery</p>
+      </div>
+    </div>
+  </div>
+</div>
+
   
-  {/* Second Row (Bottom 5 Cards) */}
   <div className="row row-cols-2 row-cols-md-5 g-0 pt-0">
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/bakery.svg"
-            alt="Bakery Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Bakery</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#e8f5e9", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/ice-cream.svg"
-            alt="Ice Cream Shop Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Ice Cream Shop</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/cloud.svg"
-            alt="Cloud Kitchen Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Cloud Kitchen</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/pizzeria.svg"
-            alt="Pizzeria Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Pizzeria</p>
-        </div>
-      </div>
-    </div>
-    <div className="col mb-2">
-      <div
-        className="card text-center border-0"
-        style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
-      >
-        <div className="card-body">
-          <img
-            src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/large-chain.svg"
-            alt="Large Chain Icon"
-            className="img-fluid mb-3"
-          />
-          <p className="fw-bold fs-5">Large Chain</p>
-        </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-bread-slice mb-3" style={{ color: "#8e24aa", fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5">Bakery</p>
       </div>
     </div>
   </div>
+
+ 
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-pizza-slice mb-3" style={{ color: "#0288d1", fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5">Pizzeria</p>
+      </div>
+    </div>
+  </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-cloud mb-3" style={{ color: "#d81b60", fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5">Cloud Kitchen</p>
+      </div>
+    </div>
+  </div>
+  <div className="col mb-2">
+    <div
+      className="card text-center border-0"
+      style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
+    >
+      <div className="card-body">
+        <i className="fas fa-store mb-3" style={{ color: "#fbc02d", fontSize: "3rem" }}></i>
+        <p className="fw-bold fs-5">Large Chain</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </div>
 
 
