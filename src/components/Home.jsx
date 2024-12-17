@@ -84,14 +84,16 @@ const Home = () => {
   <i className="fas fa-desktop me-2" /> 
   <span> UserApp Demo </span>
 </a> */}
-           <Link to="/book_demo"  className="btn btn-primary pill mr-5">
-  <i className="fas fa-desktop me-2" /> 
-  <span> UserApp Demo </span>
-</Link>
-<a href="https://youtu.be/j2e2stCcICo?si=ho4lV-CpwVRTNQtJ" target='_blank' className="btn btn-danger pill mr-5">
-  <i className="fas fa-play-circle me-2" /> 
-  <span>Watch  Demo</span>
-</a>
+           <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+  <Link to="/book_demo" className="btn btn-primary pill mb-2 mb-md-0 mr-md-3">
+    <i className="fas fa-desktop me-2" />
+    <span>UserApp Demo</span>
+  </Link>
+  <a href="https://youtu.be/j2e2stCcICo?si=ho4lV-CpwVRTNQtJ" target="_blank" className="btn btn-danger pill">
+    <i className="fas fa-play-circle me-2" />
+    <span>Watch Demo</span>
+  </a>
+</div>
 
           </div>
           {/* / column */}
@@ -497,7 +499,7 @@ const Home = () => {
   <div className="row row-cols-2 row-cols-md-5 g-0">
     <div className="col mb-2">
       <div
-        className="card text-center border-0"
+        className="card text-center border-0 "
         style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
       >
         <div className="card-body">
@@ -521,7 +523,7 @@ const Home = () => {
             alt="Food Court Icon"
             className="img-fluid mb-3"
           />
-          <p className="fw-bold fs-5">Food Court</p>
+          <p className="fw-bold fs-5 text-nowrap">Food Court</p>
         </div>
       </div>
     </div>

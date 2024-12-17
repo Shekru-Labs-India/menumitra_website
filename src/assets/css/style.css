@@ -14356,3 +14356,10 @@ p {
   border-radius: 30px !important; /* Force the border-radius */
   padding-left: 40px !important; /* Adjust left padding to make space for the icon */
 }
+
+@media (max-width: 576px) {
+  /* For mobile view */
+  .card {
+    height: auto; /* Allow flexibility on smaller screens */
+  }
+}
