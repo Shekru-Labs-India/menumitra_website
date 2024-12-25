@@ -32,24 +32,26 @@ const DeleteUser = () => {
   const closeModal = () => {
     setShowModal(false);
   };
-
-  // Function to handle delete action
   const handleDelete = async () => {
     try {
-      // Sending a DELETE request to the API
-      const response = await axios.post(`https://men4u.xyz/user_api/user_delete`, {
-        mobile: mobile,
+      // Sending a DELETE request with mobile number in the request body
+      const response = await axios.request({
+        method: 'DELETE',
+        url: `https://men4u.xyz/website_api/delete_user`,
+        data: {
+          mobile: mobile, // Pass mobile in the body
+        },
+        headers: {
+          'Content-Type': 'application/json', // Ensure JSON format
+        },
       });
-
+  
       // Handle the response
       if (response.status === 200) {
-       
       } else {
-        
       }
     } catch (error) {
       console.error('Error deleting user:', error);
-     
     } finally {
       // Clear the input field and close the modal
       setMobile('');
@@ -57,6 +59,7 @@ const DeleteUser = () => {
       closeModal();
     }
   };
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
