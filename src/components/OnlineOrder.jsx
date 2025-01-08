@@ -3,6 +3,16 @@ import Footer from './Footer'
 import Header from './Header'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
+
+// menumitra brand images
+import brand1 from "../assets/images/mm_brand/01.png";
+import brand2 from "../assets/images/mm_brand/02.png";
+import brand3 from "../assets/images/mm_brand/03.png";
+import brand4 from "../assets/images/mm_brand/04.png";
+import brand5 from "../assets/images/mm_brand/05.png";
+import brand6 from "../assets/images/mm_brand/06.png";
+
+
 const OnlineOrder = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +78,7 @@ const OnlineOrder = () => {
         <div className="row v-center">
           <div className="col-lg-5">
             <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/6-1.png"
+              src={brand1}
               alt=""
               className="rounded rellax"
               data-rellax-speed={2}
