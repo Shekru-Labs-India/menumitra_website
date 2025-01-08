@@ -618,13 +618,13 @@ const Home = () => {
 
           {/* / container */}
           <div className="container pt-5">
-            <h2 className="text-center mb-4">
+            <h2 className="text-center mb-80 mt-80 ">
               Built for all types of{" "}
               <span className="text-primary ">Food Business</span>
             </h2>
 
             {/* First Row (Top 5 Cards) */}
-            <div className="row row-cols-2 row-cols-md-5 g-0">
+            <div className="row row-cols-2 row-cols-md-5 g-3">
               <div className="col mb-2">
                 <div
                   className="card text-center border-0"
@@ -697,7 +697,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="row row-cols-2 row-cols-md-5 g-0 pt-0">
+            <div className="row row-cols-2 row-cols-md-5 g-3 pt-0">
               <div className="col mb-2">
                 <div
                   className="card text-center border-0"
