@@ -158,15 +158,15 @@ const Home = () => {
     <i className="fas fa-play-circle me-2" />
     <span>Watch Demo</span>
   </a> */}
-                    <div class="ratio ratio-16x9 shadow-lg">
+                    <div className="ratio ratio-16x9 shadow-lg">
                       <iframe
-                        src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1"
+                        src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
                         title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
                         className="shadow-lg"
-                        style={{ borderRadius: "10px", width: "100%"}}
+                        style={{ borderRadius: "10px", width: "100%" }}
                       ></iframe>
                     </div>
                   </div>
