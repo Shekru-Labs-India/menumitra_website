@@ -186,112 +186,112 @@ const Home = () => {
               </h2>
             </div>
             {/* / text-center */}
-            <div className="row d-flex justify-content-evenly">
+            <div className="row d-flex justify-content-evenly mb-80">
               <div className="col-4 col-md-4 col-lg-1 mb-2 ">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={arjunCoffeeHouse}
                     alt="Brand 1"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={balajiBhojnalay}
                     alt="Brand 2"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={cafeDelicia}
                     alt="Brand 3"
-                    className="card-img-top"
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={hotelJagdamba}
                     alt="Brand 4"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={klingPakoda}
                     alt="Brand 5"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={mrPakodi}
                     alt="Brand 6"
-                    className="card-img-top"
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={cafeGoodluck}
                     alt="Brand 7"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={hotelAathvan}
                     alt="Brand 8"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border"
-                  style={{ width: "120px", height: "76px" }}
+                  style={{ width: "120px", height: "120px" }}
                 >
                   <img
                     src={gavranChaha}
                     alt="Brand 9"
-                    className="card-img-top "
+                    className="card-img-top img-fluid img-thumbnail rounded-4 object-fit-cover"
                   />
                 </div>
               </div>
