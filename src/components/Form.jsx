@@ -86,337 +86,316 @@ const Form = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    
-   <>
-   {/* / container */}
-   <div id="faq" className="mt-30">
-      <div className="container">
-        <div className="text-center">
-          <h2 className=" mb-50">Frequently Asked Questions</h2>
-        </div>
-        {/* / text-center */}
-        <div className="row v-center">
-          <div className="col-lg-8 tablet-lg-top-30">
-            <div
-              className="accordion minimal-accordion"
-              id="minimal-accordionExample"
-            >
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="minimal-collapseOne"
-                  >
-                    How much time it will take to setup my Ciferon Account?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="minimal-headingOne"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Getting started with Ciferon is super quick! Our onboarding
-                    team is speedy, and all it takes is about 60 minutes to set
-                    up your account. Just share the info we need, and you’ll be
-                    good to go on your Ciferon adventure!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseTwo"
-                  >
-                    Can I track my orders in real time?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingTwo"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Absolutely! With Ciferon, you can keep tabs on all your
-                    orders in real-time, no matter where you are. Just make sure
-                    your outlet has a good internet connection, and you’re all
-                    set!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    Does it required continues internet to punch the bills?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    No worries! Ciferon uses a cool hybrid technology that works
-                    both online and offline. Even if you’re not connected to the
-                    internet, your orders are still recorded. Once you get back
-                    online, all your unsynced orders will automatically update,
-                    ensuring your data stays safe!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    Which printer is best suitable with Ciferon POS?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Ciferon is awesome because it’s built without any hardware
-                    hassles! It plays nice with all the printers out there in
-                    the market, so you can use it seamlessly without any
-                    compatibility issues. How cool is that?
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    Is my data safe with Ciferon POS?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Absolutely, and it’s a firm commitment from us! We value
-                    transparency and strong work ethics. Your entire data is in
-                    good hands and kept safe and secure in the Ciferon clouds.
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    What if I am switching from another POS?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    You’re making one of the best decisions for your life! Trust
-                    us, it’s a straightforward process. Just share your menu and
-                    the info you want to move forward with, and our onboarding
-                    team will take care of everything for you. Easy-peasy!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    I have an android machine, can I use it for billing?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Absolutely! Ciferon POS gets along with all operating
-                    systems—Windows, iOS, and Android. It’s like a tech-friendly
-                    chameleon!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    Does Ciferon team help me to upload my menu?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    It’s on us, and we’d love to help! Whether it’s during
-                    onboarding or anytime later, feel free to reach out to our
-                    support team. They’ll gladly assist you in updating your
-                    menu whenever you need. We’ve got your back!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="minimal-headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#minimal-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="minimal-collapseThree"
-                  >
-                    What about the support?
-                    <span>
-                      <i className="fas fa-chevron-down" />
-                    </span>
-                  </button>
-                </h2>
-                {/* / accordion-header */}
-                <div
-                  id="minimal-collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="minimal-headingThree"
-                  data-bs-parent="#minimal-accordionExample"
-                >
-                  <div className="accordion-body">
-                    Count on it! Ciferon’s support is like your 24/7 superhero,
-                    always there for you. Day or night, even on holidays and
-                    during festivals, our support team is ready to help you and
-                    your team. It’s a promise we’re proud to keep!
-                  </div>
-                  {/* / accordion-body */}
-                </div>
-                {/* / collapse */}
-              </div>
-              {/* / accordion-item */}
-            </div>
-            {/* / accordion */}
-          </div>
-          {/* / column */}
-        </div>
-        {/* / row */}
-      </div>
+    <>
       {/* / container */}
-    </div>
-    <section className="container " >
-        <div className="row v-center">
+      <div id="faq" className="mt-30">
+        <div className="container">
+          <div className="text-center">
+            <h2 className=" mb-50">Frequently Asked Questions</h2>
+          </div>
+          {/* / text-center */}
+          <div className="row v-center">
+            <div className="col-lg-6 tablet-lg-top-30">
+              <div
+                className="accordion minimal-accordion"
+                id="minimal-accordionExample1"
+              >
+                {/* First 5 accordion items */}
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingOne">
+                    <button
+                      className="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="minimal-collapseOne"
+                    >
+                      How much time it will take to setup my Ciferon Account?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseOne"
+                    className="accordion-collapse collapse show"
+                    aria-labelledby="minimal-headingOne"
+                    data-bs-parent="#minimal-accordionExample1"
+                  >
+                    <div className="accordion-body">
+                      Getting started with Ciferon is super quick! Our
+                      onboarding team is speedy, and all it takes is about 60
+                      minutes to set up your account. Just share the info we
+                      need, and you'll be good to go on your Ciferon adventure!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingTwo">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseTwo"
+                    >
+                      Can I track my orders in real time?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseTwo"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingTwo"
+                    data-bs-parent="#minimal-accordionExample1"
+                  >
+                    <div className="accordion-body">
+                      Absolutely! With Ciferon, you can keep tabs on all your
+                      orders in real-time, no matter where you are. Just make
+                      sure your outlet has a good internet connection, and
+                      you're all set!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingThree">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseThree"
+                    >
+                      Does it required continues internet to punch the bills?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseThree"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingThree"
+                    data-bs-parent="#minimal-accordionExample1"
+                  >
+                    <div className="accordion-body">
+                      No worries! Ciferon uses a cool hybrid technology that
+                      works both online and offline. Even if you're not
+                      connected to the internet, your orders are still recorded.
+                      Once you get back online, all your unsynced orders will
+                      automatically update, ensuring your data stays safe!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingFour">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseFour"
+                    >
+                      Which printer is best suitable with Ciferon POS?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseFour"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingFour"
+                    data-bs-parent="#minimal-accordionExample1"
+                  >
+                    <div className="accordion-body">
+                      Ciferon is awesome because it's built without any hardware
+                      hassles! It plays nice with all the printers out there in
+                      the market, so you can use it seamlessly without any
+                      compatibility issues. How cool is that?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6 tablet-lg-top-30">
+              <div
+                className="accordion minimal-accordion"
+                id="minimal-accordionExample2"
+              >
+                {/* Second 5 accordion items */}
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingSix">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseSix"
+                    >
+                      What if I am switching from another POS?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseSix"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingSix"
+                    data-bs-parent="#minimal-accordionExample2"
+                  >
+                    <div className="accordion-body">
+                      You're making one of the best decisions for your life!
+                      Trust us, it's a straightforward process. Just share your
+                      menu and the info you want to move forward with, and our
+                      onboarding team will take care of everything for you.
+                      Easy-peasy!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingSeven">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseSeven"
+                    >
+                      I have an android machine, can I use it for billing?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseSeven"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingSeven"
+                    data-bs-parent="#minimal-accordionExample2"
+                  >
+                    <div className="accordion-body">
+                      Absolutely! Ciferon POS gets along with all operating
+                      systems—Windows, iOS, and Android. It's like a
+                      tech-friendly chameleon!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingEight">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseEight"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseEight"
+                    >
+                      Does Ciferon team help me to upload my menu?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseEight"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingEight"
+                    data-bs-parent="#minimal-accordionExample2"
+                  >
+                    <div className="accordion-body">
+                      It's on us, and we'd love to help! Whether it's during
+                      onboarding or anytime later, feel free to reach out to our
+                      support team. They'll gladly assist you in updating your
+                      menu whenever you need. We've got your back!
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingNine">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseNine"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseNine"
+                    >
+                      What about the support?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseNine"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingNine"
+                    data-bs-parent="#minimal-accordionExample2"
+                  >
+                    <div className="accordion-body">
+                      Count on it! Ciferon's support is like your 24/7
+                      superhero, always there for you. Day or night, even on
+                      holidays and during festivals, our support team is ready
+                      to help you and your team. It's a promise we're proud to
+                      keep!
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="minimal-headingFive">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#minimal-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="minimal-collapseFive"
+                    >
+                      Is my data safe with Ciferon POS?
+                      <span>
+                        <i className="fas fa-chevron-down" />
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="minimal-collapseFive"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="minimal-headingFive"
+                    data-bs-parent="#minimal-accordionExample1"
+                  >
+                    <div className="accordion-body">
+                      Absolutely, and it's a firm commitment from us! We value
+                      transparency and strong work ethics. Your entire data is
+                      in good hands and kept safe and secure in the Ciferon
+                      clouds.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* / container */}
+      </div>
+      <section className="container ">
+        <div className="row h-center">
           <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block">
             <img
               src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/leads.png"
@@ -426,7 +405,9 @@ const Form = () => {
           </div>
           <div className="col-lg-6">
             <div className="promo-box p-50">
-              <h4 className="text-start mb-50">Get an Instant demo by our experts</h4>
+              <h4 className="text-start mb-50">
+                Get an Instant demo by our experts
+              </h4>
               <form
                 className="needs-validation"
                 id="form-validation3"
@@ -476,9 +457,9 @@ const Form = () => {
                       />
                     </div>
                   </div>
-                 <div className="col-md-6"></div>
+                  <div className="col-md-6"></div>
 
-   <div className="col-md-6">
+                  <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
@@ -516,17 +497,23 @@ const Form = () => {
                       </select>
                     </div>
                   </div>
-              
+
                   <div className="col-12">
-                  <button type="submit "disabled= {loading} className="btn btn-primary btn-submit">
-  <i className="fas fa-rocket me-2"></i> Submit
-</button>
+                    <button
+                      type="submit "
+                      disabled={loading}
+                      className="btn btn-primary btn-submit"
+                    >
+                      <i className="fas fa-rocket me-2"></i> Submit
+                    </button>
 
-  <p className="mt-1 text-primary text-center" style={{ fontSize: '14px' }}>
-    We don’t spam  call.
-  </p>
-</div>
-
+                    <p
+                      className="mt-1 text-primary text-center"
+                      style={{ fontSize: "14px" }}
+                    >
+                      We don't spam call.
+                    </p>
+                  </div>
                 </div>
               </form>
             </div>
@@ -534,9 +521,8 @@ const Form = () => {
         </div>
       </section>
       {/* / container */}
-   </>
-
-  )
+    </>
+  );
 }
 
 export default Form
