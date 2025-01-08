@@ -158,16 +158,17 @@ const Home = () => {
     <i className="fas fa-play-circle me-2" />
     <span>Watch Demo</span>
   </a> */}
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1"
-                      title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
+                    <div class="ratio ratio-16x9 shadow-lg">
+                      <iframe
+                        src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1"
+                        title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        className="shadow-lg"
+                        style={{ borderRadius: "10px", width: "100%"}}
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
                 {/* / column */}
