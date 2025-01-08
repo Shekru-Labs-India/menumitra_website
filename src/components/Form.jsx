@@ -94,7 +94,7 @@ const Form = () => {
             <h2 className=" mb-50">Frequently Asked Questions</h2>
           </div>
           {/* / text-center */}
-          <div className="row v-center">
+          <div className="row h-center">
             <div className="col-lg-6 tablet-lg-top-30">
               <div
                 className="accordion minimal-accordion"

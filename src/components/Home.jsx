@@ -312,7 +312,7 @@ const Home = () => {
             <div className="row text-center align-items-center">
               <div className="col-lg-5">
                 <img
-                  src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3-3.png"
+                  src={brand3}
                   alt="Restaurant billing software"
                   className="rounded rellax"
                   data-rellax-speed={2}

@@ -20,7 +20,7 @@ const Header = () => {
     <img 
       src={menumitra} 
       alt="Menumitra-Logo" 
-      className="mg"
+      className="mg me-3"
     />
     MenuMitra
   </Link>
