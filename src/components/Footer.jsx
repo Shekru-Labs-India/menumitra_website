@@ -53,7 +53,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-brands fa-facebook fs-3 border border-primary rounded-circle p-2 mx-3"></i>
+                        <i className="fa-brands fa-facebook fs-3 border rounded-circle p-2 mx-3" style={{ color: '#1877F2', borderColor: '#1877F2' }}></i>
                       </Link>
                     </li>
                     <li>
@@ -62,7 +62,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-brands fa-linkedin ms-3 fs-3 border border-primary rounded-circle p-2 mx-3"></i>
+                        <i className="fa-brands fa-linkedin ms-3 fs-3 border rounded-circle p-2 mx-3" style={{ color: '#0A66C2', borderColor: '#0A66C2' }}></i>
                       </Link>
                     </li>
                     <li>
@@ -71,7 +71,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-brands fa-youtube ms-3 fs-3 border border-primary rounded-circle p-2 mx-3"></i>
+                        <i className="fa-brands fa-youtube ms-3 fs-3 border rounded-circle p-2 mx-3" style={{ color: '#FF0000', borderColor: '#FF0000' }}></i>
                       </Link>
                     </li>
                     <li>
@@ -80,7 +80,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-brands fa-telegram ms-3 fs-3 border border-primary rounded-circle p-2 mx-3"></i>
+                        <i className="fa-brands fa-telegram ms-3 fs-3 border rounded-circle p-2 mx-3" style={{ color: '#26A5E4', borderColor: '#26A5E4' }}></i>
                       </Link>
                     </li>
                     <li>
@@ -89,7 +89,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-brands fa-instagram ms-3 fs-3 border border-primary rounded-circle p-2 mx-3"></i>
+                        <i className="fa-brands fa-instagram ms-3 fs-3 border rounded-circle p-2 mx-3" style={{ color: '#E4405F', borderColor: '#E4405F' }}></i>
                       </Link>
                     </li>
                   </ul>
