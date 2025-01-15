@@ -49,7 +49,18 @@ import FAQ from "./components/FAQ";
 import Aboutus from "./components/Aboutus";
 import Support from "./components/Support";
 import Career from "./components/Career";
+import { useEffect } from 'react';
+
 function App() {
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    const userAppPattern = /https:\/\/menumitra\.com\/user_app\/\d+\/1/;
+
+    if (userAppPattern.test(currentUrl)) {
+      window.location.href = 'https://menumitra-testing.netlify.app/';
+    }
+  }, []);
+
   return (
    
    <>
