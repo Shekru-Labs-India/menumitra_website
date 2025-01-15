@@ -57,7 +57,8 @@ function App() {
     const userAppPattern = /https:\/\/menumitra\.com\/user_app\/\d+\/1/;
 
     if (userAppPattern.test(currentUrl)) {
-      window.location.href = 'https://menumitra-testing.netlify.app/';
+      window.location.href =
+        "https://menumitra-testing.netlify.app/user_app/978247/1/103";
     }
   }, []);
 
