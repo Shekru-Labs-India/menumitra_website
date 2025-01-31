@@ -176,6 +176,13 @@ const Header = () => {
             </li>
            
           </ul>
+          
+        </li>
+        <li className="nav-item">
+          <Link                   className={`nav-link ${isActive('/') ? 'active text-primary' : ''}`}
+ to="/devices">
+            Devices
+          </Link>
         </li>
         {/* Outlet Format */}
         <li className="nav-item dropdown ">

@@ -170,6 +170,13 @@ const Footer = () => {
                         Become Partner
                       </Link>
                     </li>
+                    <li className="mb-2">
+                      <Link className="text-dark" to="/devices">
+                        {" "}
+                        <i className="fa-solid fa-angle-right text-info me-2"></i>
+                        Devices
+                      </Link>
+                    </li>
                     {/* <li className="mb-2">
                       <Link
                         className="btn btn-outline-dark btn-sm p-2  text-center"

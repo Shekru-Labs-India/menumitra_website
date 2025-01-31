@@ -49,6 +49,7 @@ import FAQ from "./components/FAQ";
 import Aboutus from "./components/Aboutus";
 import Support from "./components/Support";
 import Career from "./components/Career";
+import Devices from "./components/Devices";
 import { useEffect } from 'react';
 
 function App() {
@@ -110,6 +111,7 @@ function App() {
     <Route path="/about_us" element={<Aboutus />} />
     <Route path="/support" element={<Support />} />
     <Route path="/career" element={<Career />} />
+    <Route path="/devices" element={<Devices />} />
     </Routes>
 
     </BrowserRouter>
