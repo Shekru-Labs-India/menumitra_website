@@ -412,6 +412,37 @@ const Footer = () => {
         {/* End Footer Top Area */}
         {/* Start Footer Bottom Area */}
 
+
+
+        <footer className="footer-bottom-area bg-light py-4 border-top shadow-sm">
+  <div className="container text-center">
+    <ul className="list-inline mb-0">
+      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" href="/CaptainProduction.apk" download>
+          📲  <strong>Captain App</strong>
+        </a>
+      </li>
+      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" href="/OwnerProduction.apk" download>
+          📲  <strong>Owner App</strong>
+        </a>
+      </li>
+      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" href="/WaiterProduction.apk" download>
+          📲  <strong>Waiter App</strong>
+        </a>
+      </li>
+      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" href="/MenuMitra POS.zip" download>
+          💻  <strong>POS Software</strong> (ZIP)
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+
         <footer className="footer-bottom-area">
           <div className="container  pb-0 ">
             <div className="row ">
