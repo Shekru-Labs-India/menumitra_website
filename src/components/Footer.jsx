@@ -427,18 +427,19 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="https://menumitra.com/downloads/CaptainProduction.apk"
+           href="/downloads/CaptainProduction.apk"
            download="MenuMitra-Captain.apk"
            onClick={(e) => {
+             e.preventDefault();
              fetch(e.currentTarget.href)
                .then(response => {
-                 if (!response.ok) {
-                   e.preventDefault();
+                 if (response.ok) {
+                   window.location.href = e.currentTarget.href;
+                 } else {
                    alert('Download link is currently unavailable. Please try again later.');
                  }
                })
                .catch(() => {
-                 e.preventDefault();
                  alert('Download link is currently unavailable. Please try again later.');
                });
            }}>
@@ -447,18 +448,19 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="https://menumitra.com/downloads/OwnerProduction.apk"
+           href="/downloads/OwnerProduction.apk"
            download="MenuMitra-Owner.apk"
            onClick={(e) => {
+             e.preventDefault();
              fetch(e.currentTarget.href)
                .then(response => {
-                 if (!response.ok) {
-                   e.preventDefault();
+                 if (response.ok) {
+                   window.location.href = e.currentTarget.href;
+                 } else {
                    alert('Download link is currently unavailable. Please try again later.');
                  }
                })
                .catch(() => {
-                 e.preventDefault();
                  alert('Download link is currently unavailable. Please try again later.');
                });
            }}>
@@ -467,18 +469,19 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="https://menumitra.com/downloads/WaiterProduction.apk"
+           href="/downloads/WaiterProduction.apk"
            download="MenuMitra-Waiter.apk"
            onClick={(e) => {
+             e.preventDefault();
              fetch(e.currentTarget.href)
                .then(response => {
-                 if (!response.ok) {
-                   e.preventDefault();
+                 if (response.ok) {
+                   window.location.href = e.currentTarget.href;
+                 } else {
                    alert('Download link is currently unavailable. Please try again later.');
                  }
                })
                .catch(() => {
-                 e.preventDefault();
                  alert('Download link is currently unavailable. Please try again later.');
                });
            }}>
@@ -487,18 +490,19 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="https://menumitra.com/downloads/MenuMitra-POS.zip"
+           href="/downloads/MenuMitra POS.zip"
            download="MenuMitra-POS.zip"
            onClick={(e) => {
+             e.preventDefault();
              fetch(e.currentTarget.href)
                .then(response => {
-                 if (!response.ok) {
-                   e.preventDefault();
+                 if (response.ok) {
+                   window.location.href = e.currentTarget.href;
+                 } else {
                    alert('Download link is currently unavailable. Please try again later.');
                  }
                })
                .catch(() => {
-                 e.preventDefault();
                  alert('Download link is currently unavailable. Please try again later.');
                });
            }}>
