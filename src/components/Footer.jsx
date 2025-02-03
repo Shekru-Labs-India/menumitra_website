@@ -427,33 +427,53 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/CaptainProduction.apk" 
+           href={process.env.PUBLIC_URL + "/CaptainProduction.apk"}
            download="MenuMitra-Captain.apk"
-           type="application/vnd.android.package-archive">
+           onClick={(e) => {
+             if (!e.currentTarget.href.includes('CaptainProduction.apk')) {
+               e.preventDefault();
+               alert('Download link is currently unavailable. Please try again later.');
+             }
+           }}>
           📲  <strong>Captain App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/OwnerProduction.apk" 
+           href={process.env.PUBLIC_URL + "/OwnerProduction.apk"}
            download="MenuMitra-Owner.apk"
-           type="application/vnd.android.package-archive">
+           onClick={(e) => {
+             if (!e.currentTarget.href.includes('OwnerProduction.apk')) {
+               e.preventDefault();
+               alert('Download link is currently unavailable. Please try again later.');
+             }
+           }}>
           📲  <strong>Owner App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/WaiterProduction.apk" 
+           href={process.env.PUBLIC_URL + "/WaiterProduction.apk"}
            download="MenuMitra-Waiter.apk"
-           type="application/vnd.android.package-archive">
+           onClick={(e) => {
+             if (!e.currentTarget.href.includes('WaiterProduction.apk')) {
+               e.preventDefault();
+               alert('Download link is currently unavailable. Please try again later.');
+             }
+           }}>
           📲  <strong>Waiter App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/MenuMitra POS.zip" 
+           href={process.env.PUBLIC_URL + "/MenuMitra POS.zip"}
            download="MenuMitra-POS.zip"
-           type="application/zip">
+           onClick={(e) => {
+             if (!e.currentTarget.href.includes('MenuMitra POS.zip')) {
+               e.preventDefault();
+               alert('Download link is currently unavailable. Please try again later.');
+             }
+           }}>
           💻  <strong>POS Software</strong> (ZIP)
         </a>
       </li>
