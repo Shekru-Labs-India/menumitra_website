@@ -417,75 +417,28 @@ const Footer = () => {
         <footer className="footer-bottom-area bg-light py-4 border-top shadow-sm">
   <div className="container text-center">
     <ul className="list-inline mb-0">
-      <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" 
-           href="https://user.menumitra.com" 
-           target="_blank"
-           rel="noopener noreferrer">
+    <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" href="https://user.menumitra.com" target="_blank">
           📲  <strong>User App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" 
-           href={`${process.env.PUBLIC_URL}/downloads/CaptainProduction.apk`}
-           download
-           onClick={(e) => {
-             e.preventDefault();
-             const link = document.createElement('a');
-             link.href = e.currentTarget.href;
-             link.download = 'MenuMitra-Captain.apk';
-             document.body.appendChild(link);
-             link.click();
-             document.body.removeChild(link);
-           }}>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/CaptainProduction.apk" download>
           📲  <strong>Captain App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" 
-           href={`${process.env.PUBLIC_URL}/downloads/OwnerProduction.apk`}
-           download
-           onClick={(e) => {
-             e.preventDefault();
-             const link = document.createElement('a');
-             link.href = e.currentTarget.href;
-             link.download = 'MenuMitra-Owner.apk';
-             document.body.appendChild(link);
-             link.click();
-             document.body.removeChild(link);
-           }}>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/OwnerProduction.apk" download>
           📲  <strong>Owner App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" 
-           href={`${process.env.PUBLIC_URL}/downloads/WaiterProduction.apk`}
-           download
-           onClick={(e) => {
-             e.preventDefault();
-             const link = document.createElement('a');
-             link.href = e.currentTarget.href;
-             link.download = 'MenuMitra-Waiter.apk';
-             document.body.appendChild(link);
-             link.click();
-             document.body.removeChild(link);
-           }}>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/WaiterProduction.apk" download>
           📲  <strong>Waiter App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" 
-           href={`${process.env.PUBLIC_URL}/downloads/MenuMitra POS.zip`}
-           download
-           onClick={(e) => {
-             e.preventDefault();
-             const link = document.createElement('a');
-             link.href = e.currentTarget.href;
-             link.download = 'MenuMitra-POS.zip';
-             document.body.appendChild(link);
-             link.click();
-             document.body.removeChild(link);
-           }}>
+        <a className="btn btn-outline-primary px-3 py-2" href="/POS.zip" download>
           💻  <strong>POS Software</strong> (ZIP)
         </a>
       </li>
