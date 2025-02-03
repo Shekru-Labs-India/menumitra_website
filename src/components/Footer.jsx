@@ -427,84 +427,64 @@ const Footer = () => {
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/downloads/CaptainProduction.apk"
-           download="MenuMitra-Captain.apk"
+           href={`${process.env.PUBLIC_URL}/downloads/CaptainProduction.apk`}
+           download
            onClick={(e) => {
              e.preventDefault();
-             fetch(e.currentTarget.href)
-               .then(response => {
-                 if (response.ok) {
-                   window.location.href = e.currentTarget.href;
-                 } else {
-                   alert('Download link is currently unavailable. Please try again later.');
-                 }
-               })
-               .catch(() => {
-                 alert('Download link is currently unavailable. Please try again later.');
-               });
+             const link = document.createElement('a');
+             link.href = e.currentTarget.href;
+             link.download = 'MenuMitra-Captain.apk';
+             document.body.appendChild(link);
+             link.click();
+             document.body.removeChild(link);
            }}>
           📲  <strong>Captain App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/downloads/OwnerProduction.apk"
-           download="MenuMitra-Owner.apk"
+           href={`${process.env.PUBLIC_URL}/downloads/OwnerProduction.apk`}
+           download
            onClick={(e) => {
              e.preventDefault();
-             fetch(e.currentTarget.href)
-               .then(response => {
-                 if (response.ok) {
-                   window.location.href = e.currentTarget.href;
-                 } else {
-                   alert('Download link is currently unavailable. Please try again later.');
-                 }
-               })
-               .catch(() => {
-                 alert('Download link is currently unavailable. Please try again later.');
-               });
+             const link = document.createElement('a');
+             link.href = e.currentTarget.href;
+             link.download = 'MenuMitra-Owner.apk';
+             document.body.appendChild(link);
+             link.click();
+             document.body.removeChild(link);
            }}>
           📲  <strong>Owner App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/downloads/WaiterProduction.apk"
-           download="MenuMitra-Waiter.apk"
+           href={`${process.env.PUBLIC_URL}/downloads/WaiterProduction.apk`}
+           download
            onClick={(e) => {
              e.preventDefault();
-             fetch(e.currentTarget.href)
-               .then(response => {
-                 if (response.ok) {
-                   window.location.href = e.currentTarget.href;
-                 } else {
-                   alert('Download link is currently unavailable. Please try again later.');
-                 }
-               })
-               .catch(() => {
-                 alert('Download link is currently unavailable. Please try again later.');
-               });
+             const link = document.createElement('a');
+             link.href = e.currentTarget.href;
+             link.download = 'MenuMitra-Waiter.apk';
+             document.body.appendChild(link);
+             link.click();
+             document.body.removeChild(link);
            }}>
           📲  <strong>Waiter App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
-           href="/downloads/MenuMitra POS.zip"
-           download="MenuMitra-POS.zip"
+           href={`${process.env.PUBLIC_URL}/downloads/MenuMitra POS.zip`}
+           download
            onClick={(e) => {
              e.preventDefault();
-             fetch(e.currentTarget.href)
-               .then(response => {
-                 if (response.ok) {
-                   window.location.href = e.currentTarget.href;
-                 } else {
-                   alert('Download link is currently unavailable. Please try again later.');
-                 }
-               })
-               .catch(() => {
-                 alert('Download link is currently unavailable. Please try again later.');
-               });
+             const link = document.createElement('a');
+             link.href = e.currentTarget.href;
+             link.download = 'MenuMitra-POS.zip';
+             document.body.appendChild(link);
+             link.click();
+             document.body.removeChild(link);
            }}>
           💻  <strong>POS Software</strong> (ZIP)
         </a>
