@@ -438,7 +438,7 @@ const Footer = () => {
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" href="/POS.zip" download>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/POS.zip" download>
           💻  <strong>POS Software</strong> (ZIP)
         </a>
       </li>
