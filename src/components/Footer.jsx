@@ -428,28 +428,32 @@ const Footer = () => {
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
            href="/CaptainProduction.apk" 
-           download="MenuMitra-Captain.apk">
+           download="MenuMitra-Captain.apk"
+           type="application/vnd.android.package-archive">
           📲  <strong>Captain App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
            href="/OwnerProduction.apk" 
-           download="MenuMitra-Owner.apk">
+           download="MenuMitra-Owner.apk"
+           type="application/vnd.android.package-archive">
           📲  <strong>Owner App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
            href="/WaiterProduction.apk" 
-           download="MenuMitra-Waiter.apk">
+           download="MenuMitra-Waiter.apk"
+           type="application/vnd.android.package-archive">
           📲  <strong>Waiter App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" 
            href="/MenuMitra POS.zip" 
-           download="MenuMitra-POS.zip">
+           download="MenuMitra-POS.zip"
+           type="application/zip">
           💻  <strong>POS Software</strong> (ZIP)
         </a>
       </li>
