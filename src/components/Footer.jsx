@@ -418,22 +418,38 @@ const Footer = () => {
   <div className="container text-center">
     <ul className="list-inline mb-0">
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" href="/CaptainProduction.apk" download>
+        <a className="btn btn-outline-primary px-3 py-2" 
+           href="https://user.menumitra.com" 
+           target="_blank"
+           rel="noopener noreferrer">
+          📲  <strong>User App</strong>
+        </a>
+      </li>
+      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+        <a className="btn btn-outline-primary px-3 py-2" 
+           href="/CaptainProduction.apk" 
+           download="MenuMitra-Captain.apk">
           📲  <strong>Captain App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" href="/OwnerProduction.apk" download>
+        <a className="btn btn-outline-primary px-3 py-2" 
+           href="/OwnerProduction.apk" 
+           download="MenuMitra-Owner.apk">
           📲  <strong>Owner App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" href="/WaiterProduction.apk" download>
+        <a className="btn btn-outline-primary px-3 py-2" 
+           href="/WaiterProduction.apk" 
+           download="MenuMitra-Waiter.apk">
           📲  <strong>Waiter App</strong>
         </a>
       </li>
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
-        <a className="btn btn-outline-primary px-3 py-2" href="/MenuMitra POS.zip" download>
+        <a className="btn btn-outline-primary px-3 py-2" 
+           href="/MenuMitra POS.zip" 
+           download="MenuMitra-POS.zip">
           💻  <strong>POS Software</strong> (ZIP)
         </a>
       </li>
