@@ -422,21 +422,21 @@ const Footer = () => {
           📲  <strong>User App</strong>
         </a>
       </li>
-      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+      {/* <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" href="/downloads/CaptainProduction.apk" download>
           📲  <strong>Captain App</strong>
         </a>
-      </li>
+      </li> */}
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" href="/downloads/OwnerProduction.apk" download>
           📲  <strong>Owner App</strong>
         </a>
       </li>
-      <li className="list-inline-item mx-2 mb-2 mb-md-0">
+      {/* <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" href="/downloads/WaiterProduction.apk" download>
           📲  <strong>Waiter App</strong>
         </a>
-      </li>
+      </li> */}
       <li className="list-inline-item mx-2 mb-2 mb-md-0">
         <a className="btn btn-outline-primary px-3 py-2" href="/downloads/POS.zip" download>
           💻  <strong>POS Software</strong> (ZIP)
