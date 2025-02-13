@@ -15,7 +15,7 @@ const Header = () => {
 >
   <div className="container">
   <div className="navbar-brand text-black ">
-    <div className='fs-3'>
+    <div className='fs-5'>
   <Link to="/">
     <img 
       src={menumitra} 
@@ -42,18 +42,18 @@ const Header = () => {
       <span className="icon-bar bottom-bar" />
     </button>
     {/* / navbar-toggler */}
-    <div className="collapse navbar-collapse" id="navbar-toggle-nav-center">
-      <ul className="navbar-nav ml-auto">
+    <div className="collapse navbar-collapse fs-5" id="navbar-toggle-nav-center">
+      <ul className="navbar-nav ml-auto fs-5">
 
-      <li className="nav-item">
-          <Link                   className={`nav-link ${isActive('/') ? 'active text-primary' : ''}`}
+      <li className="nav-item ">
+          <Link                   className={`nav-link fs-5 ${isActive('/') ? 'active text-primary' : ''}`}
  to="/">
             Home
           </Link>
         </li>
         
       <li className="nav-item">
-          <Link                   className={`nav-link ${isActive('/pricing') ? 'active text-primary' : ''}`}
+          <Link                   className={`nav-link fs-5 ${isActive('/pricing') ? 'active text-primary' : ''}`}
  to="/pricing">
         Pricing
           </Link>
@@ -62,14 +62,15 @@ const Header = () => {
         {/* Features Dropdown */}
         <li className="nav-item dropdown">
           <Link
-            className="nav-link  "
+            className="nav-link fs-5  "
             to="#features"  // This makes it non-clickable by setting href to # or simply removing it
             id="featuresDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Features <i class="fa-solid fa-caret-down"></i>
+            Features 
+            <i class="fa-solid fa-caret-down"></i>
           </Link>
           <ul className="dropdown-menu" aria-labelledby="featuresDropdown">
             <li>
@@ -135,14 +136,15 @@ const Header = () => {
         {/* Add-Ons Dropdown */}
         <li className="nav-item dropdown">
           <a
-            className="nav-link "
+            className="nav-link fs-5 "
             href="#addons"  // Similar to Features, set href to # or remove it
             id="addonsDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Add-Ons <i class="fa-solid fa-caret-down"></i>
+            Add-Ons 
+            <i class="fa-solid fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
             <li>
@@ -179,7 +181,7 @@ const Header = () => {
           
         </li>
         <li className="nav-item">
-          <Link                   className={`nav-link ${isActive('/') ? 'active text-primary' : ''}`}
+          <Link                   className={`nav-link fs-5 ${isActive('/') ? 'active text-primary' : ''}`}
  to="/devices">
             Devices
           </Link>
@@ -187,14 +189,15 @@ const Header = () => {
         {/* Outlet Format */}
         <li className="nav-item dropdown ">
           <a
-            className="nav-link "
+            className="nav-link fs-5 "
             href="#addons"  // Similar to Features, set href to # or remove it
             id="addonsDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-         Outlet Type <i class="fa-solid fa-caret-down"></i>
+         Outlet Type 
+         <i class="fa-solid fa-caret-down"></i>
           </a>
         
           <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
@@ -303,7 +306,7 @@ const Header = () => {
         </li>
         
       </ul>
-      <Link   className="btn btn-outline-dark btn-sm p-2 text-center disabled-link"
+      <Link   className="btn btn-outline-dark btn-sm p-1 text-center disabled-link"
   to="/book_demo">
     Book A Demo
   </Link>
