@@ -181,7 +181,7 @@ const Header = () => {
           
         </li>
         <li className="nav-item">
-          <Link                   className={`nav-link fs-5 ${isActive('/') ? 'active text-primary' : ''}`}
+          <Link                   className={`nav-link fs-5 ${isActive('/devices') ? 'active text-primary' : ''}`}
  to="/devices">
             Devices
           </Link>
