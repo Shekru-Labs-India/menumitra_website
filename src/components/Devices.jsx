@@ -259,44 +259,44 @@ const Devices = () => {
 
 
 
-    <div className="container-fluid p-0">
-      <div className="row">
+    <div className="container-fluid p-0 overflow-hidden">
+      <div className="row g-0 min-vh-100">
         {/* Left side (Text) */}
         <div
-          className="col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center p-5 position-relative"
+          className="col-lg-6 col-md-12 d-flex flex-column justify-content-center p-4 p-lg-5"
           style={{ backgroundColor: '#FF4D00' }}
         >
-          <div className="text-center me-5">
-            <h6 className="subtitle text-white">QUICK CHECKOUTS</h6>
-            <h1 className="title text-white">Complete sales <br /> management</h1>
-            <p className="para text-white">
-              Bill your customers and keep tabs on every <br /> sale. Whether it's cash or credit, it's all on one <br /> system.
-              Menumitra allows you to scan item <br /> barcodes via your mobile device's camera and <br /> helps you bill your customers on the go
-              (with <br /> Menumitra counter app, available for mobile).
+          <div className="text-center text-lg-start">
+            <h6 className="subtitle text-white mb-3">QUICK CHECKOUTS</h6>
+            <h1 className="title text-white mb-4">Complete sales <br /> management</h1>
+            <p className="para text-white mb-4">
+              Bill your customers and keep tabs on every sale. Whether it's cash or credit, it's all on one system.
+              Menumitra allows you to scan item barcodes via your mobile device's camera and helps you bill your customers on the go
+              (with Menumitra counter app, available for mobile).
             </p>
           </div>
 
           {/* Image placed below text in mobile view */}
-          <img
-            src="https://oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zh-home-zakya-check-out-3.svg"
-            alt="Quick Checkout"
-            className="border border-5 border-dark mb-4 mb-md-0"
-            style={{
-              width: '293px',
-              height: '626px',
-              borderRadius: '20px',
-              zIndex: 2,
-            }}
-          />
+          <div className="text-center mt-4">
+            <img
+              src="https://oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zh-home-zakya-check-out-3.svg"
+              alt="Quick Checkout"
+              className="img-fluid border border-3 border-dark"
+              style={{
+                maxWidth: '293px',
+                borderRadius: '20px',
+              }}
+            />
+          </div>
         </div>
 
         {/* Right side (Image) - Hidden on mobile */}
-        <div className="col-lg-6 col-md-12 p-0 d-none d-lg-block">
+        <div className="col-lg-6 col-md-12 p-0 d-none d-lg-block position-relative">
           <img
-            src="https://oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zh_home_zakya_mobile_scan_bg_2x.webp" // Replace with your actual image URL
+            src="https://oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zh_home_zakya_mobile_scan_bg_2x.webp"
             alt="Quick Checkout"
-            className="img-fluid"
-            style={{ objectFit: 'cover', height: '100%' }}
+            className="position-absolute w-100 h-100"
+            style={{ objectFit: 'cover', top: 0, left: 0 }}
           />
         </div>
       </div>
