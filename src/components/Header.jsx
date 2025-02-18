@@ -1,325 +1,136 @@
-import React from 'react'
-import { Link ,useLocation} from 'react-router-dom'
-import menumitra from "../assets/images/MenuMitra.png"
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import menumitra from "../assets/images/MenuMitra.png";
 const Header = () => {
   const location = useLocation(); // Get the current location
 
   const isActive = (path) => location.pathname === path; // Helper function
   return (
-    
-   <>
-  
-  <nav
-  id="nav-scroll"
-  className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top bg-white shadow-xl"
->
-  <div className="container">
-  <div className="navbar-brand text-black ">
-    <div className='fs-5'>
-  <Link to="/">
-    <img 
-      src={menumitra} 
-      alt="Menumitra-Logo" 
-      className="mg me-3"
-    />
-    MenuMitra
-  </Link>
-  </div>
-</div>
-
-
-    <button
-      className="navbar-toggler collapsed"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbar-toggle-nav-center"
-      aria-controls="navbar-toggle-nav-center"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="icon-bar top-bar" />
-      <span className="icon-bar middle-bar" />
-      <span className="icon-bar bottom-bar" />
-    </button>
-    {/* / navbar-toggler */}
-    <div className="collapse navbar-collapse fs-5" id="navbar-toggle-nav-center">
-      <ul className="navbar-nav ml-auto fs-5">
-
-      <li className="nav-item ">
-          <Link                   className={`nav-link fs-5 ${isActive('/') ? 'active text-primary' : ''}`}
- to="/">
-            Home
+    <>
+      <nav
+        id="nav-scroll"
+        className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-2"
+      >
+        <div className="container position-relative">
+          {/* Brand */}
+          <Link to="/" className="navbar-brand d-flex align-items-center">
+            <img src={menumitra} alt="Menumitra-Logo" className="me-2" width="35" height="35" />
+            <span className="fs-5">MenuMitra</span>
           </Link>
-        </li>
-        
-      <li className="nav-item">
-          <Link                   className={`nav-link fs-5 ${isActive('/pricing') ? 'active text-primary' : ''}`}
- to="/pricing">
-        Pricing
-          </Link>
-        </li>
 
-        {/* Features Dropdown */}
-        <li className="nav-item dropdown">
-          <Link
-            className="nav-link fs-5  "
-            to="#features"  // This makes it non-clickable by setting href to # or simply removing it
-            id="featuresDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
+          {/* Toggler */}
+          <button
+            className="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-toggle-nav-center"
+            aria-controls="navbar-toggle-nav-center"
             aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            Features 
-            <i class="fa-solid fa-caret-down"></i>
-          </Link>
-          <ul className="dropdown-menu" aria-labelledby="featuresDropdown">
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/billing') ? 'active text-primary' : ''
-                      }`} to="/billing">
-                Billing
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/inventory') ? 'active text-primary' : ''
-                      }`} to="/inventory">
-                Inventory
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/menu') ? 'active text-primary' : ''
-                      }`} to="/menu">
-                Menu
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/onlineorder') ? 'active text-primary' : ''
-                      }`}to="/onlineorder">
-                Online Order
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/reports') ? 'active text-primary' : ''
-                      }`} to="/reports">
-              Restaurant Reports
-              
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/customermanaagement') ? 'active text-primary' : ''
-                      }`} to="/customermanagement">
-              Customer Management
-              
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/customerfeedback') ? 'active text-primary' : ''
-                      }`} to="/customerfeedback">
-                Customer Feedback
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/scan') ? 'active text-primary' : ''
-                      }`} to="/scan">
-                Scan &amp; Order
-              </Link>
-            </li>
-          </ul>
-        </li>
-        {/* Add-Ons Dropdown */}
-        <li className="nav-item dropdown">
-          <a
-            className="nav-link fs-5 "
-            href="#addons"  // Similar to Features, set href to # or remove it
-            id="addonsDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Add-Ons 
-            <i class="fa-solid fa-caret-down"></i>
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/captainapp') ? 'active text-primary' : ''
-                      }`} to="/captainapp">
-                Captain App
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/waiterapp') ? 'active text-primary' : ''
-                      }`} to="/waiterapp">
-                Waiter App
-              </Link>
-            </li>
-           
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/kds') ? 'active text-primary' : ''
-                      }`} to="/kds">
-                Kitchen Display System
-              </Link>
-            </li>
-            <li>
-              <Link className={`dropdown-item ${
-                        isActive('/cds') ? 'active text-primary' : ''
-                      }`} to="/cds">
-                Customer Display System
-              </Link>
-            </li>
-           
-          </ul>
-          
-        </li>
-        <li className="nav-item">
-          <Link                   className={`nav-link fs-5 ${isActive('/devices') ? 'active text-primary' : ''}`}
- to="/devices">
-            Devices
-          </Link>
-        </li>
-        {/* Outlet Format */}
-        <li className="nav-item dropdown ">
-          <a
-            className="nav-link fs-5 "
-            href="#addons"  // Similar to Features, set href to # or remove it
-            id="addonsDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-         Outlet Type 
-         <i class="fa-solid fa-caret-down"></i>
-          </a>
-        
-          <ul className="dropdown-menu" aria-labelledby="addonsDropdown">
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/newrestaurant') ? 'active text-primary' : ''
-      }`}
-      to="/newrestaurant"
-    >
-      <i className="fa-solid fa-utensils me-2"></i>Restaurant
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/finedine') ? 'active text-primary' : ''
-      }`}
-      to="/finedine"
-    >
-      <i className="fa-solid fa-wine-glass me-2"></i>Fine Dine
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/foodcourts') ? 'active text-primary' : ''
-      }`}
-      to="/foodcourts"
-    >
-      <i className="fa-solid fa-burger me-2"></i>Food Courts
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/pizzeria') ? 'active text-primary' : ''
-      }`}
-      to="/pizzeria"
-    >
-      <i className="fa-solid fa-pizza-slice me-2"></i>Pizzeria
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/cafe') ? 'active text-primary' : ''
-      }`}
-      to="/cafe"
-    >
-      <i className="fa-solid fa-coffee me-2"></i>Cafe
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/qsr') ? 'active text-primary' : ''
-      }`}
-      to="/qsr"
-    >
-      <i className="fa-solid fa-store me-2"></i>QSR
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/bakeries') ? 'active text-primary' : ''
-      }`}
-      to="/bakeries"
-    >
-      <i className="fa-solid fa-bread-slice me-2"></i>Bakeries
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/icecream') ? 'active text-primary' : ''
-      }`}
-      to="/icecream"
-    >
-      <i className="fa-solid fa-ice-cream me-2"></i>Icecream & Desserts
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/cloudkitchens') ? 'active text-primary' : ''
-      }`}
-      to="/cloudkitchens"
-    >
-      <i className="fa-solid fa-cloud me-2"></i>Cloud Kitchens
-    </Link>
-  </li>
-  <li>
-    <Link
-      className={`dropdown-item ${
-        isActive('/largechain') ? 'active text-primary' : ''
-      }`}
-      to="/largechain"
-    >
-      <i className="fa-solid fa-building me-2"></i>Large Chain
-    </Link>
-  </li>
-</ul>
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-        </li>
-        
-      </ul>
-      <Link   className="btn btn-outline-dark btn-sm p-1 text-center disabled-link"
-  to="/book_demo">
-    Book A Demo
-  </Link>
-      
-    </div>
-  </div>
-  {/* / container */}
-</nav>
+          {/* Navigation Items */}
+          <div className="collapse navbar-collapse justify-content-between" id="navbar-toggle-nav-center">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className={`nav-link ${isActive("/") ? "active text-primary" : ""}`} to="/">
+                  Home
+                </Link>
+              </li>
 
+              <li className="nav-item">
+                <Link className={`nav-link ${isActive("/pricing") ? "active text-primary" : ""}`} to="/pricing">
+                  Pricing
+                </Link>
+              </li>
 
-   </>
+              {/* Features Dropdown */}
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </Link>
+                <ul className="dropdown-menu">
+                  <li><Link className={`dropdown-item ${isActive("/billing") ? "active" : ""}`} to="/billing">Billing</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/inventory") ? "active" : ""}`} to="/inventory">Inventory</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/menu") ? "active" : ""}`} to="/menu">Menu</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/onlineorder") ? "active" : ""}`} to="/onlineorder">Online Order</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/reports") ? "active" : ""}`} to="/reports">Restaurant Reports</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/customermanagement") ? "active" : ""}`} to="/customermanagement">Customer Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/customerfeedback") ? "active" : ""}`} to="/customerfeedback">Customer Feedback</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/scan") ? "active" : ""}`} to="/scan">Scan & Order</Link></li>
+                </ul>
+              </li>
 
-  )
-}
+              {/* Add-Ons Dropdown */}
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Add-Ons
+                </Link>
+                <ul className="dropdown-menu">
+                  <li><Link className={`dropdown-item ${isActive("/captainapp") ? "active" : ""}`} to="/captainapp">Captain App</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/waiterapp") ? "active" : ""}`} to="/waiterapp">Waiter App</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/kds") ? "active" : ""}`} to="/kds">Kitchen Display System</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/cds") ? "active" : ""}`} to="/cds">Customer Display System</Link></li>
+                </ul>
+              </li>
 
-export default Header
+              <li className="nav-item">
+                <Link className={`nav-link ${isActive("/devices") ? "active text-primary" : ""}`} to="/devices">
+                  Devices
+                </Link>
+              </li>
+
+              {/* Outlet Type Dropdown */}
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Outlet Type
+                </Link>
+                <ul className="dropdown-menu">
+                  <li><Link className={`dropdown-item ${isActive("/newrestaurant") ? "active" : ""}`} to="/newrestaurant"><i className="fa-solid fa-utensils me-2"></i>Restaurant</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/finedine") ? "active" : ""}`} to="/finedine"><i className="fa-solid fa-wine-glass me-2"></i>Fine Dine</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/foodcourts") ? "active" : ""}`} to="/foodcourts"><i className="fa-solid fa-burger me-2"></i>Food Courts</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/pizzeria") ? "active" : ""}`} to="/pizzeria"><i className="fa-solid fa-pizza-slice me-2"></i>Pizzeria</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/cafe") ? "active" : ""}`} to="/cafe"><i className="fa-solid fa-coffee me-2"></i>Cafe</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/qsr") ? "active" : ""}`} to="/qsr"><i className="fa-solid fa-store me-2"></i>QSR</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/bakeries") ? "active" : ""}`} to="/bakeries"><i className="fa-solid fa-bread-slice me-2"></i>Bakeries</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/icecream") ? "active" : ""}`} to="/icecream"><i className="fa-solid fa-ice-cream me-2"></i>Icecream & Desserts</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/cloudkitchens") ? "active" : ""}`} to="/cloudkitchens"><i className="fa-solid fa-cloud me-2"></i>Cloud Kitchens</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/largechain") ? "active" : ""}`} to="/largechain"><i className="fa-solid fa-building me-2"></i>Large Chain</Link></li>
+                </ul>
+              </li>
+            </ul>
+
+            {/* Book Demo Button */}
+            <div className="d-flex align-items-center">
+              <Link className="btn btn-outline-primary px-4 py-2" to="/book_demo">
+                Book A Demo
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Header;
