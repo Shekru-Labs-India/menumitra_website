@@ -5,7 +5,7 @@ import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import hero from "../assets/images/Hero-img.jpg"
 import Form from "./Form";
-import './Home.css';
+
 
 import arjunCoffeeHouse from "../assets/images/outlets/arjun_coffee_house.jpg";
 import balajiBhojnalay from "../assets/images/outlets/balaji_bhojnalay.jpeg";
@@ -132,42 +132,62 @@ const Home = () => {
         <Header />
 
         <div className="main-container p-0">
-          <section id="about" className="xl">
-            <div className="container mt-80">
-              <div className="row align-items-end">
+          <section id="about" className=" xl">
+            <div className="container">
+              <div className="row v-center">
                 <div className="col-lg-5 tablet-lg-top-30">
                   <h4 className="mb-30">
                     India's Best Contactless Restaurant Management Software
                   </h4>
-                  <p className="mb-4">
+                  <p>
                     Billing &amp; KOT, manage inventory &amp; central kitchen,
                     handle online orders, menu management, tables, captain app,
                     collect customer data, discount &amp; offers, accounts,
-                    reports and do lot more.
+                    reports and do lot more.{" "}
                   </p>
-                  <div className="video-container mb-4 mb-lg-0">
-                    <div className="ratio ratio-16x9">
+                  {/* <a href="https://user.menumitra.com/" target='_blank' className="btn btn-primary pill mr-5">
+  <i className="fas fa-desktop me-2" /> 
+  <span> UserApp Demo </span>
+</a> */}
+                  <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                    {/* <Link to="/book_demo" className="btn btn-primary pill mb-2 mb-md-0 mr-md-3">
+    <i className="fas fa-desktop me-2" />
+    <span>UserApp Demo</span>
+  </Link>
+  <a href="https://youtu.be/j2e2stCcICo?si=ho4lV-CpwVRTNQtJ" target="_blank" className="btn btn-danger pill">
+    <i className="fas fa-play-circle me-2" />
+    <span>Watch Demo</span>
+  </a> */}
+                    <div className="ratio ratio-16x9 shadow-lg">
                       <iframe
                         src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
                         title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
-                        className="rounded-3 shadow-lg"
+                        className="shadow-lg"
+                        style={{ borderRadius: "10px", width: "100%" }}
                       ></iframe>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-7 d-flex align-items-end">
+                {/* / column */}
+                <div className="col-lg-7">
                   <img
                     src={hero}
-                    alt="MenuMitra Hero"
-                    className="img-fluid rounded w-100"
+                    alt=""
+                    className="rounded rellax"
+                    data-rellax-speed={2}
+                    data-rellax-percentage="0.5"
                   />
                 </div>
+                {/* / column */}
               </div>
+              {/* / row */}
             </div>
+            {/* / container */}
           </section>
+          {/* / about */}
           <div className="container mt-80  ">
             <div className="text-center">
               <h2 className="mt-6">Trusted by 50+ outlets as</h2>
@@ -175,6 +195,7 @@ const Home = () => {
                 Best Low Cost Restaurant Management Software
               </h2>
             </div>
+            {/* / text-center */}
             <div className="row d-flex justify-content-evenly mb-80">
               <div className="col-4 col-md-4 col-lg-1 mb-2 ">
                 <div
@@ -287,6 +308,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* / container */}
           <div className="container mt-5">
             <div className="row text-center align-items-center">
               <div className="col-lg-5">
@@ -298,6 +320,7 @@ const Home = () => {
                   data-rellax-percentage="0.5"
                 />
               </div>
+              {/* / column */}
               <div className="col-lg-7 tablet-lg-top-30 d-flex flex-column justify-content-center">
                 <h2 className="mb-30">
                   Effortless 3-Step Restaurant Billing Solution
@@ -309,9 +332,14 @@ const Home = () => {
                   multi-terminal support, and more—all in just a few clicks.
                 </p>
               </div>
+
+              {/* / column */}
             </div>
+
+            {/* / row */}
           </div>
 
+          {/* / container */}
           <div className="container ">
             <div className="row v-center">
               <div className="col-lg-7 tablet-lg-top-30">
@@ -326,6 +354,7 @@ const Home = () => {
                 </p>
               </div>
 
+              {/* / column */}
               <div className="col-lg-5">
                 <img
                   src={brand1}
@@ -335,8 +364,11 @@ const Home = () => {
                   data-rellax-percentage="0.5"
                 />
               </div>
+              {/* / column */}
             </div>
+            {/* / row */}
           </div>
+          {/* / container */}
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
@@ -359,8 +391,12 @@ const Home = () => {
                   Stay in control with precision and efficiency.​
                 </p>
               </div>
+
+              {/* / column */}
             </div>
+            {/* / row */}
           </div>
+          {/* / container */}
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-7 tablet-lg-top-30">
@@ -375,6 +411,7 @@ const Home = () => {
                 </p>
               </div>
 
+              {/* / column */}
               <div className="col-lg-5">
                 <img
                   src={brand2}
@@ -384,8 +421,11 @@ const Home = () => {
                   data-rellax-percentage="0.5"
                 />
               </div>
+              {/* / column */}
             </div>
+            {/* / row */}
           </div>
+          {/* / container */}
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
@@ -397,6 +437,7 @@ const Home = () => {
                   data-rellax-percentage="0.5"
                 />
               </div>
+              {/* / column */}
               <div className="col-lg-7 tablet-lg-top-30">
                 <h2 className="mb-30">Stay Informed with Real-Time Insights</h2>
                 <p className="mb-30">
@@ -406,8 +447,12 @@ const Home = () => {
                   WhatsApp notifications.​
                 </p>
               </div>
+
+              {/* / column */}
             </div>
+            {/* / row */}
           </div>
+          {/* / container */}
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-7 tablet-lg-top-30">
@@ -422,6 +467,7 @@ const Home = () => {
                 </p>
               </div>
 
+              {/* / column */}
               <div className="col-lg-5">
                 <img
                   src={brand4}
@@ -431,8 +477,11 @@ const Home = () => {
                   data-rellax-percentage="0.5"
                 />
               </div>
+              {/* / column */}
             </div>
+            {/* / row */}
           </div>
+          {/* / container */}
 
           <>
             <div
@@ -565,14 +614,17 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/* / container */}
           </>
 
+          {/* / container */}
           <div className="container pt-5">
             <h2 className="text-center mb-80 mt-80 ">
               Built for all types of{" "}
               <span className="text-primary ">Food Business</span>
             </h2>
 
+            {/* First Row (Top 5 Cards) */}
             <div className="row row-cols-2 row-cols-md-5 g-3">
               <div className="col mb-2">
                 <div
@@ -706,7 +758,10 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* / container */}
         </div>
+        {/* / main-container */}
         <Form />
         <Footer />
       </>

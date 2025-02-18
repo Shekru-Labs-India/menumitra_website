@@ -1,0 +1,105 @@
+.accordion {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: none;
+}
+
+.minimal-accordion {
+  padding: 1.75rem 2.25rem 2rem 5.5rem;
+  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.03);
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.75rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #111724;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #f1f4f7;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0978f5;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background-image: none;
+  transform: none;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-item .accordion-button {
+  border-color: #f1f4f7;
+}
+
+.accordion-item .accordion-button:focus {
+  border-color: #f1f4f7;
+}
+
+.accordion-button.collapsed i {
+  color: #111724;
+  transform: rotate(-360deg) !important;
+  transition: ease-in-out 0.3s;
+}
+
+.accordion-button i {
+  color: #0978f5;
+  position: absolute;
+  right: 1.75rem;
+  transform: rotate(-180deg) !important;
+  transition: ease-in-out 0.3s;
+}
+
+.accordion-collapse {
+  border: solid #f1f4f7;
+  border-width: 0 1px;
+}
+
+.accordion-body {
+  padding: 2rem 1.75rem;
+}
+
+.minimal-accordion .accordion-collapse {
+  border: none;
+}
+
+.minimal-accordion .accordion-button {
+  background-color: transparent;
+  border: none;
+  padding: 2rem 1.75rem;
+}
+
+.minimal-accordion .accordion-button i {
+  position: static;
+  line-height: 56px;
+}
+
+.minimal-accordion .accordion-button span {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  left: -3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.03);
+}
+
+.minimal-accordion .accordion-body {
+  padding-top: 0px;
+} 
