@@ -133,7 +133,7 @@ const Home = () => {
 
         <div className="main-container p-0">
           <section id="about" className="xl">
-            <div className="container mt-80">
+            <div className="container">
               <div className="row align-items-end">
                 <div className="col-lg-5 tablet-lg-top-30">
                   <h4 className="mb-30">
