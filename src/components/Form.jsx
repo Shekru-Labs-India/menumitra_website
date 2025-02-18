@@ -9,6 +9,7 @@ const Form = () => {
     city: "",
     outletName: "",
     orderType: "",
+    email: "",
   });
 
   useEffect(() => {
@@ -33,6 +34,9 @@ const Form = () => {
       if (/^[A-Za-z\s]*$/.test(value)) {
         setFormData({ ...formData, [name]: value });
       }
+    } else if (name === "email") {
+      // Allow all input for email - validation will happen on submit
+      setFormData({ ...formData, [name]: value });
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -42,42 +46,72 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    // Request data
+
+    // Validate email format before submission
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address");
+      setLoading(false);
+      return;
+    }
+
+    // Request data - only include email if API supports it
     const data = {
       name: formData.name,
       mobile: formData.mobile,
       outlet_name: formData.outletName,
       outlet_type: formData.orderType,
-      city: formData.city,  // Add city to the request data
+      city: formData.city,
     };
 
+    // Optionally add email if API supports it
     try {
+      // First try with email
       const response = await fetch("https://men4u.xyz/website_api/create_booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, email: formData.email }),
       });
 
-      const result = await response.json();
+      // If API doesn't accept email (400/500 error), retry without email
+      if (!response.ok && (response.status === 400 || response.status === 500)) {
+        const retryResponse = await fetch("https://men4u.xyz/website_api/create_booking", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
 
-      if (response.ok) {
-        setFormData({
+        if (retryResponse.ok) {
+          // Success without email
+          setFormData({
             name: "",
             mobile: "",
             city: "",
             outletName: "",
             orderType: "",
+            email: "",
           });
-      } else {
-        // Handle error response
-        console.error("Error:", result);
+        } else {
+          console.error("Error:", await retryResponse.json());
+        }
+      } else if (response.ok) {
+        // Success with email
+        setFormData({
+          name: "",
+          mobile: "",
+          city: "",
+          outletName: "",
+          orderType: "",
+          email: "",
+        });
       }
     } catch (error) {
       console.error("Request failed:", error);
-    }
-    finally {
+    } finally {
       setLoading(false);
     }
   };
@@ -446,6 +480,22 @@ const Form = () => {
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
+                        type="email"
+                        className="form-control"
+                        id="contact-email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="* Email Address"
+                        required
+                        autoComplete="email"
+                      />
+                    </div>
+                  </div>
+                
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
                         type="text"
                         className="form-control"
                         id="contact-email3"
@@ -457,8 +507,7 @@ const Form = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-md-6"></div>
-
+                
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
