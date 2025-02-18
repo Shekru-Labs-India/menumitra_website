@@ -50,7 +50,7 @@ const Header = () => {
               {/* Features Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -81,7 +81,7 @@ const Header = () => {
               {/* Add-Ons Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -110,7 +110,7 @@ const Header = () => {
               {/* Outlet Type Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
