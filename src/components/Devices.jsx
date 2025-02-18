@@ -420,14 +420,17 @@ const Devices = () => {
       <div className="row align-items-center">
         {/* Left Side: Video */}
         <div className="col-md-6 mb-4 mb-md-0 rounded-3">
-          <div className="embed-responsive embed-responsive-16by9">
-            <iframe
-              className="embed-responsive-item"
-              style={{ width: '100%', height: '100%', borderRadius: '10px' }}
-              src="https://player.vimeo.com/video/916717252?autopause=1&amp;dnt=1&amp;autoplay=1&amp;quality=1080p&amp;texttrack=en"
-              title="Video"
-              allowFullScreen
-            ></iframe>
+          <div className="video-container mb-4 mb-lg-0">
+            <div className="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+                title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="rounded-3 shadow-lg"
+              ></iframe>
+            </div>
           </div>
         </div>
 
