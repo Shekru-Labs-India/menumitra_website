@@ -1,0 +1,145 @@
+/* Footer Top Area */
+.footer-top-area {
+  padding: 50px 0;
+}
+
+/* Top Section Responsive Layout */
+.footer-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Social Icons Container */
+.social-icon {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-icon li {
+  margin: 0;
+}
+
+/* Links Section */
+.single-widget {
+  height: 100%;
+}
+
+.single-widget h3 {
+  font-size: 19px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.links a, 
+.links a:hover {
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0d6efd;
+}
+
+/* Bottom App Links */
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-info-wrapper {
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .footer-info-wrapper > div {
+    width: 100%;
+  }
+
+  .social-icon {
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+
+  .single-widget {
+    text-align: left !important;
+    margin-bottom: 2rem;
+  }
+
+  .single-widget h3 {
+    text-align: left !important;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    text-align: left !important;
+  }
+
+  .links li {
+    margin-bottom: 0;
+  }
+
+  .links a {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  /* Adjust spacing for mobile */
+  .footer-top-area {
+    padding: 30px 0;
+  }
+
+  /* Make buttons more touchable on mobile */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Preserve Desktop Layout */
+@media (min-width: 769px) {
+  .footer-info-wrapper {
+    flex-direction: row;
+  }
+
+  .single-widget {
+    text-align: left;
+  }
+
+  .social-icon {
+    justify-content: flex-end;
+  }
+
+  .btn {
+    width: auto;
+  }
+} 
