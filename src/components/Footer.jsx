@@ -72,8 +72,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
-
       {/* Footer Links */}
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top">
         <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
@@ -81,6 +79,8 @@ const Footer = () => {
         <Link className="text-secondary" to="/cookie_policy">Cookie Policy</Link>
         <Link className="text-secondary" to="/request_data_removal">Request Data Removal</Link>
       </div>
+      </section>
+
 
       {/* App Downloads Section */}
       <section className="bg-light py-4 border-top shadow-sm">
