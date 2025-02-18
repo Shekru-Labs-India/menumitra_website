@@ -50,13 +50,13 @@ const Header = () => {
               {/* Features Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center"
+                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Features
+                  Features <i className="fa-solid fa-chevron-down fs-5"></i>
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link className={`dropdown-item ${isActive("/billing") ? "active" : ""}`} to="/billing">
@@ -81,13 +81,13 @@ const Header = () => {
               {/* Add-Ons Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center"
+                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Add-Ons
+                  Add-Ons <i className="fa-solid fa-chevron-down fs-5"></i>
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link className={`dropdown-item ${isActive("/captainapp") ? "active" : ""}`} to="/captainapp">
@@ -110,13 +110,13 @@ const Header = () => {
               {/* Outlet Type Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle d-flex align-items-center"
+                  className="nav-link dropdown-toggle d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Outlet Type
+                  Outlet Type <i className="fa-solid fa-chevron-down fs-5"></i>
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link className={`dropdown-item ${isActive("/newrestaurant") ? "active" : ""}`} to="/newrestaurant">
