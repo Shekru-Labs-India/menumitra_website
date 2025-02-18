@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <section className="footer-top-area bg-white border border-top shadow-lg">
-        <div className="container">
+          <div className="container">
           {/* Links Sections */}
           <div className="row">
             <div className="col-12 col-md-3">
@@ -21,7 +21,7 @@ const Footer = () => {
                   <li><Link to="/about_us"><i className="fa-solid fa-chevron-right me-2"></i>About</Link></li>
                   <li><Link to="/reseller_program"><i className="fa-solid fa-chevron-right me-2"></i>Become Partner</Link></li>
                   <li><Link to="/devices"><i className="fa-solid fa-chevron-right me-2"></i>Devices</Link></li>
-                </ul>
+                  </ul>
               </div>
             </div>
 
@@ -37,9 +37,9 @@ const Footer = () => {
                   <li><Link to="/customermanagement"><i className="fa-solid fa-chevron-right me-2"></i>Customer Management</Link></li>
                   <li><Link to="/customerfeedback"><i className="fa-solid fa-chevron-right me-2"></i>Customer Feedback</Link></li>
                   <li><Link to="/scan"><i className="fa-solid fa-chevron-right me-2"></i>Scan & Order</Link></li>
-                </ul>
+                  </ul>
+                </div>
               </div>
-            </div>
 
             <div className="col-12 col-md-3">
               <div className="footer-widget">
@@ -49,9 +49,9 @@ const Footer = () => {
                   <li><Link to="/help_support"><i className="fa-solid fa-chevron-right me-2"></i>Help and support</Link></li>
                   <li><Link to="/order_tracking"><i className="fa-solid fa-chevron-right me-2"></i>Order Tracking</Link></li>
                   <li><a href="https://user.menumitra.com/user_app/Index" target="_blank" rel="noreferrer"><i className="fa-solid fa-chevron-right me-2"></i>UserApp</a></li>
-                </ul>
+                  </ul>
+                </div>
               </div>
-            </div>
 
             <div className="col-12 col-md-3">
               <div className="footer-widget">
@@ -67,19 +67,19 @@ const Footer = () => {
                   <li><Link to="/icecream"><i className="fa-solid fa-chevron-right me-2"></i>Icecream & Desserts</Link></li>
                   <li><Link to="/cloudkitchens"><i className="fa-solid fa-chevron-right me-2"></i>Cloud Kitchens</Link></li>
                   <li><Link to="/largechain"><i className="fa-solid fa-chevron-right me-2"></i>Large Chain</Link></li>
-                </ul>
+                  </ul>
               </div>
             </div>
           </div>
-        </div>
+            </div>
       {/* Footer Links */}
       <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top">
         <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
         <Link className="text-secondary" to="/privacy_policy">Privacy Policy</Link>
         <Link className="text-secondary" to="/cookie_policy">Cookie Policy</Link>
         <Link className="text-secondary" to="/request_data_removal">Request Data Removal</Link>
-      </div>
-      </section>
+          </div>
+        </section>
 
 
       {/* App Downloads Section */}
@@ -89,20 +89,20 @@ const Footer = () => {
             <li className="list-inline-item mx-2 mb-3">
               <a className="btn btn-outline-primary px-3 py-2" href="https://user.menumitra.com" target="_blank" rel="noreferrer">
                 📲 <strong>User App</strong>
-              </a>
-            </li>
+        </a>
+      </li>
             <li className="list-inline-item mx-2 mb-3">
-              <a className="btn btn-outline-primary px-3 py-2" href="/downloads/OwnerProduction.apk" download>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/OwnerProduction.apk" download>
                 📲 <strong>Owner App</strong>
-              </a>
-            </li>
+        </a>
+      </li>
             <li className="list-inline-item mx-2 mb-3">
-              <a className="btn btn-outline-primary px-3 py-2" href="/downloads/POS.zip" download>
+        <a className="btn btn-outline-primary px-3 py-2" href="/downloads/POS.zip" download>
                 💻 <strong>POS Software</strong> (ZIP)
-              </a>
-            </li>
-          </ul>
-        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
       </section>
 
       {/* Copyright Section */}
@@ -114,18 +114,18 @@ const Footer = () => {
           <hr className="my-3" />
           <div className="row align-items-center">
             <div className="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
-              <p className="mb-0">Copyright © 2024</p>
-            </div>
+                <p className="mb-0">Copyright © 2024</p>
+              </div>
             <div className="col-12 col-lg-6 text-center text-lg-end">
               <p className="mb-0">
-                <i className="fa-solid fa-bolt"></i> Powered by
+                  <i className="fa-solid fa-bolt"></i> Powered by
                 <Link to="https://www.shekruweb.com" target="_blank" rel="noopener noreferrer" className="text-primary ms-2">
-                  Shekru Labs India Pvt. Ltd.
-                </Link>
-              </p>
+                      Shekru Labs India Pvt. Ltd.
+                    </Link>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );
