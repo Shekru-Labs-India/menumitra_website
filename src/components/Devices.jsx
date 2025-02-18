@@ -14,11 +14,11 @@ const Devices = () => {
         <>
       <Header/>
 
-      <div className="container-fluid bg-dark text-white d-flex flex-column justify-content-center min-vh-100">
+      <div className="container-fluid bg-dark text-white d-flex flex-column justify-content-center min-vh-100 mt-5 pt-5">
         <div className="container py-5">
           <div className="row align-items-center">
             {/* Left Side Text */}
-            <div className="col-lg-6 col-md-12 text-center text-lg-start mb-5 mb-lg-0">
+            <div className="col-lg-6 col-md-12 text-center text-lg-start mb-5 mb-lg-0 pt-5 mt-5">
               <h1 className="display-5 fw-bold mb-4 text-white">
                 Beyond sales. <br /> 
                 Beyond walls. In <br /> 
