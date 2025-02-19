@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const Bakeries = () => {
   useEffect(() => {
@@ -34,10 +35,10 @@ const Bakeries = () => {
             <p className="mb-30">
             Boost Your Bakery's Business Growth Effortlessly: Let Ciferon POS Software Manage All Your Operations While You Focus on Baking Magic!
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+              </Link>
           </div>
           {/* / column */}
         </div>

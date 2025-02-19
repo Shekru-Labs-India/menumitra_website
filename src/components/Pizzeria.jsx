@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import  Form from './Form'
 import Rated from './Rated'
+import { Link } from 'react-router-dom';
 
 const Pizzeria = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const Pizzeria = () => {
             <p className="mb-30">
             With Ciferon POS, manage all your operations from a single dashboard for Pizzeria or Pizza shop
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

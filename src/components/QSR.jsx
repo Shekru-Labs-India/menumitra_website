@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const QSR = () => {
     useEffect(() => {
@@ -33,10 +34,10 @@ const QSR = () => {
             <p className="mb-30">
             Stay out of the weeds with a system that’s designed for quick service. Now you can serve more guests faster without hiring extra hands.
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

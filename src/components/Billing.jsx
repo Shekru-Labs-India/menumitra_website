@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'; // Import Helmet
 import Form from "./Form";
-
+import { Link } from 'react-router-dom';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -99,10 +99,10 @@ const Billing = () => {
               tables, apply discounts &amp; coupons, configure taxes, use
               multiple terminals, and do a lot more.​
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
               <i className="fas fa-shopping-cart mr-5" />{" "}
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

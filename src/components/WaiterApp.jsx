@@ -12,7 +12,7 @@ import labourcost from '../assets/images/Reduce-labour-costs.jpg'
 import varun from '../assets/images/Varun.jpg'
 import scheduale from '../assets/images/scheduale-form_md.jpg'
 import Form from "./Form";
-
+import { Link } from 'react-router-dom';
 
 
 const WaiterApp = () => {
@@ -34,10 +34,10 @@ const WaiterApp = () => {
             <p>
             Simplify customer management with a small stylish device that allows them to ask for waiter, water or bill whenever they want.
             </p>
-            <a href="#products" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
               
               <span>Book a Free Demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
           <div className="col-lg-7">

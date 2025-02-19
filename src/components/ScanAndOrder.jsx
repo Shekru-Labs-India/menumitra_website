@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
+import { Link } from 'react-router-dom';
 const ScanAndOrder = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,9 +87,9 @@ const ScanAndOrder = () => {
               using QR codes. Take orders directly on your POS and automate your
               order taking process.​
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
               <i className="fas fa-shopping-cart mr-5" /> <span>Book a Free Demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

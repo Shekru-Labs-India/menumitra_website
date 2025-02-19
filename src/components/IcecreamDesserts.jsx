@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const IcecreamDesserts = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const IcecreamDesserts = () => {
             <p className="mb-30">
             Sweet billing interface so that your staff can manage magical operations such as icecream inventory, cone status, reports and much more
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

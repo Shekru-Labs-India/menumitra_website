@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
+import { Link } from 'react-router-dom';
 const CustomerManagement = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,10 +84,10 @@ const CustomerManagement = () => {
             <p className="mb-30">
             In-built Customer Management Software that helps your earn customer loyalty, Regulate customer retention, Synced customer information, Track customer behaviour and many more
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
         
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

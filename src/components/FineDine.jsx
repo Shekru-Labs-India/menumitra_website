@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import  Form  from './Form'
 import Rated from './Rated'
+import { Link } from 'react-router-dom';
 
 const FineDine = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const FineDine = () => {
             <p className="mb-30">
             Step up to a platform designed for the nuances of fine dining so you can deliver an exceptional dining service from first course to last
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

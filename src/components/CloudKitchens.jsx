@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const CloudKitchens = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const CloudKitchens = () => {
             <p className="mb-30">
             Effortlessly handle your Cloud Kitchen's online food orders, deliveries, menu, and prices with Ciferon POS.
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

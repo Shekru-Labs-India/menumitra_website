@@ -3,6 +3,7 @@ import Header from './Header'
 import scan from "../assets/images/scan.jpg"
 import Footer from './Footer'
 import Form from "./Form";
+import { Link } from 'react-router-dom';
 
 const CDS = () => {
   useEffect(() => {
@@ -36,10 +37,10 @@ const CDS = () => {
               ticket-keeping process with Ciferon's CDS. This will help you
               serve customers quickly.​
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
               <i className="fas fa-shopping-cart mr-5" />{" "}
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

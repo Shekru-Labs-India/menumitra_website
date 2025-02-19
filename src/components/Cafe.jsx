@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const Cafe = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const Cafe = () => {
             <p className="mb-30">
             Elevate your customers' morning coffee experience with Ciferon Cafe POS Software, your all-in-one solution for seamless café management.
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import { Link } from 'react-router-dom';
 
 const LargeChain = () => {
   useEffect(() => {
@@ -33,10 +34,10 @@ const LargeChain = () => {
             <p className="mb-30">
             Track all the activities of all outets from centralised dashboard central kitchen & raw material, purchase orders, ERP integration, centralized menu management, e-invoicing and much more
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>

@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Header from './Header'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
-
+import { Link } from 'react-router-dom';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -94,10 +94,10 @@ const RestaurantReports = () => {
             <p className="mb-30">
             The best restaurant reports software to manage your restaurant reports and analytics of daily sales, monthly sales, profits, taxes, online orders, and GST in real-time.
             </p>
-            <a href="#x" className="btn btn-primary pill mr-5">
+            <Link to="/book_demo" className="btn btn-primary pill mr-5">
               
               <span>Book a free demo</span>
-            </a>
+            </Link>
           </div>
           {/* / column */}
         </div>
