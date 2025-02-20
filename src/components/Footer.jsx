@@ -150,7 +150,7 @@ const Footer = () => {
       </section>
 
       {/* App Downloads Section */}
-      <section className="bg-light py-4 border-top shadow-sm">
+      {/* <section className="bg-light py-4 border-top shadow-sm">
         <div className="container">
           <ul className="list-inline mb-0 text-center">
             <li className="list-inline-item mx-2 mb-3">
@@ -170,7 +170,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
 
       {/* Copyright Section */}
       <section className="py-3">
