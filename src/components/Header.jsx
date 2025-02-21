@@ -33,7 +33,7 @@ const Header = () => {
           </button>
 
           {/* Navigation Items */}
-          <div className="collapse navbar-collapse justify-content-between text-truncate" id="navbar-toggle-nav-center">
+          <div className="collapse navbar-collapse justify-content-between" id="navbar-toggle-nav-center">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className={`nav-link ${isActive("/") ? "active text-primary" : ""}`} to="/">
@@ -50,15 +50,15 @@ const Header = () => {
               {/* Features Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link d-flex align-items-center"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Features <i className="fa-solid fa-chevron-down"></i>
+                  Features <i className="bi bi-chevron-down fs-7 dropdown-toggle-icon"></i>
                 </Link>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu shadow-sm border-0">
                   <li><Link className={`dropdown-item ${isActive("/billing") ? "active" : ""}`} to="/billing">
                     <i className="fa-solid fa-receipt me-2"></i>Billing</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/inventory") ? "active" : ""}`} to="/inventory">
@@ -81,15 +81,15 @@ const Header = () => {
               {/* Add-Ons Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link d-flex align-items-center"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  AddOns <i className="fa-solid fa-chevron-down"></i>
+                  AddOns <i className="bi bi-chevron-down fs-7 dropdown-toggle-icon"></i>
                 </Link>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu shadow-sm border-0">
                   <li><Link className={`dropdown-item ${isActive("/captainapp") ? "active" : ""}`} to="/captainapp">
                     <i className="fa-solid fa-mobile-screen me-2"></i>Captain App</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/waiterapp") ? "active" : ""}`} to="/waiterapp">
@@ -110,15 +110,15 @@ const Header = () => {
               {/* Outlet Type Dropdown */}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link d-flex align-items-center px-1"
+                  className="nav-link d-flex align-items-center gap-1"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Outlet Type <i className="fa-solid fa-chevron-down"></i>
+                  Outlet Type <i className="bi bi-chevron-down fs-7 dropdown-toggle-icon"></i>
                 </Link>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu shadow-sm border-0">
                   <li><Link className={`dropdown-item ${isActive("/newrestaurant") ? "active" : ""}`} to="/newrestaurant">
                     <i className="fa-solid fa-store me-2"></i>Restaurant</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/finedine") ? "active" : ""}`} to="/finedine">
@@ -133,8 +133,6 @@ const Header = () => {
                     <i className="fa-solid fa-burger me-2"></i>QSR</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/bakeries") ? "active" : ""}`} to="/bakeries">
                     <i className="fa-solid fa-bread-slice me-2"></i>Bakeries</Link></li>
-                  <li><Link className={`dropdown-item ${isActive("/icecream") ? "active" : ""}`} to="/icecream">
-                    <i className="fa-solid fa-ice-cream me-2"></i>Icecream & Desserts</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/cloudkitchens") ? "active" : ""}`} to="/cloudkitchens">
                     <i className="fa-solid fa-cloud me-2"></i>Cloud Kitchens</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/largechain") ? "active" : ""}`} to="/largechain">
@@ -155,6 +153,38 @@ const Header = () => {
 
       <style>
         {`
+          .navbar .dropdown-menu {
+            margin-top: 0.5rem;
+            border-radius: 0.5rem;
+            min-width: 220px;
+          }
+
+          .navbar .dropdown-item {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+          }
+
+          .navbar .dropdown-item:hover {
+            background-color: #f8f9fa;
+          }
+
+          .navbar .dropdown-item.active {
+            background-color: #e9ecef;
+            color: var(--bs-primary);
+          }
+
+          .fs-7 {
+            font-size: 0.875rem;
+          }
+
+          .dropdown-toggle-icon {
+            transition: transform 0.2s ease;
+          }
+
+          .show .dropdown-toggle-icon {
+            transform: rotate(180deg);
+          }
+
           @media (max-width: 991.98px) {
             .navbar-collapse {
               max-height: calc(100vh - 72px);
@@ -172,6 +202,21 @@ const Header = () => {
             
             .navbar-collapse::-webkit-scrollbar-track {
               background: transparent;
+            }
+
+            .navbar .dropdown-menu {
+              border: none;
+              box-shadow: none;
+              margin-top: 0;
+              padding-left: 1.5rem;
+            }
+
+            .navbar .dropdown-item {
+              padding: 0.5rem 0;
+            }
+
+            .nav-link::after {
+              display: none !important;
             }
           }
         `}
