@@ -485,111 +485,111 @@ const Home = () => {
                 every day.​
               </p>
 
-              <div className="row g-4 justify-content-center">
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+              <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/zomato-3.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Zomato"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/swiggy-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Swiggy"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/thrive-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Thrive"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/ondc-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="ONDC"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
-                      src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Dunzo-2.png"
-                      className="rounded-5"
+                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Dunzo-2.png"
+                      className="img-fluid rounded-4"
                       alt="Dunzo"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/upi-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="UPI"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Phonepe-1.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="PhonePe"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Paytm-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Paytm"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Pine-labs-1.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Pine Labs"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/razorpay-1.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Razorpay"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
                       src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/shadowfax-2.png"
-                      className="rounded-5"
+                      className="img-fluid rounded-4"
                       alt="Shadowfax"
                     />
                   </div>
                 </div>
-                <div className="col-6 col-md-4 col-lg-2">
-                  <div className="integrate-logo">
+                <div className="col">
+                  <div className="integrate-logo p-2">
                     <img
-                      src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/porter-2.png"
-                      className="rounded-5"
+                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/porter-2.png"
+                      className="img-fluid rounded-4"
                       alt="Porter"
                     />
                   </div>
