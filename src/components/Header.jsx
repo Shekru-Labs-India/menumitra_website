@@ -48,7 +48,7 @@ const Header = () => {
               </li>
 
               {/* Features Dropdown */}
-              <li className="nav-item dropdown ">
+              <li className="nav-item dropdown">
                 <Link
                   className="nav-link d-flex align-items-center"
                   to="#"
@@ -152,6 +152,30 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
+      <style>
+        {`
+          @media (max-width: 991.98px) {
+            .navbar-collapse {
+              max-height: calc(100vh - 72px);
+              overflow-y: auto;
+            }
+            
+            .navbar-collapse::-webkit-scrollbar {
+              width: 4px;
+            }
+            
+            .navbar-collapse::-webkit-scrollbar-thumb {
+              background-color: rgba(0,0,0,.2);
+              border-radius: 4px;
+            }
+            
+            .navbar-collapse::-webkit-scrollbar-track {
+              background: transparent;
+            }
+          }
+        `}
+      </style>
     </>
   );
 };
