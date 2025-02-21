@@ -606,138 +606,96 @@ const Home = () => {
               <span className="text-primary ">Food Business</span>
             </h2>
 
-            {/* First Row (Top 5 Cards) */}
-            <div className="row row-cols-2 row-cols-md-5 g-3">
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-utensils fs-1 mb-3"
-                      style={{ color: "#d81b60", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Fine Dine</p>
+            {/* All Cards in a single container */}
+            <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 g-md-4">
+              {[
+                {
+                  icon: "fas fa-utensils",
+                  text: "Fine Dine",
+                  bg: "#fce4ec",
+                  color: "#d81b60"
+                },
+                {
+                  icon: "fas fa-store",
+                  text: "Food Court",
+                  bg: "#e3f2fd", 
+                  color: "#0288d1"
+                },
+                {
+                  icon: "fas fa-coffee",
+                  text: "Cafe",
+                  bg: "#fff9c4",
+                  color: "#fbc02d"
+                },
+                {
+                  icon: "fas fa-concierge-bell",
+                  text: "QSR",
+                  bg: "#ede7f6",
+                  color: "#8e24aa"
+                },
+                {
+                  icon: "fas fa-beer",
+                  text: "Bar & Brewery",
+                  bg: "#e0f7fa",
+                  color: "#388e3c"
+                },
+                {
+                  icon: "fas fa-bread-slice",
+                  text: "Bakery",
+                  bg: "#ede7f6",
+                  color: "#8e24aa"
+                },
+                {
+                  icon: "fas fa-pizza-slice",
+                  text: "Pizzeria",
+                  bg: "#e3f2fd",
+                  color: "#0288d1"
+                },
+                {
+                  icon: "fas fa-cloud",
+                  text: "Cloud Kitchen",
+                  bg: "#fce4ec",
+                  color: "#d81b60"
+                },
+                {
+                  icon: "fas fa-store",
+                  text: "Large Chain",
+                  bg: "#fff9c4",
+                  color: "#fbc02d"
+                }
+              ].map((item, index) => (
+                <div className="col px-2 mb-3" key={index}>
+                  <div 
+                    className="card text-center border-0 h-100 mx-auto shadow-sm"
+                    style={{ 
+                      backgroundColor: item.bg, 
+                      borderRadius: 15,
+                      aspectRatio: "1/1",
+                      width: "100%",
+                      minHeight: "150px"
+                    }}
+                  >
+                    <div className="card-body d-flex flex-column justify-content-center align-items-center p-2 p-md-3">
+                      <i
+                        className={`${item.icon} mb-2`}
+                        style={{ 
+                          color: item.color, 
+                          fontSize: "calc(1.5rem + 1vw)"
+                        }}
+                      ></i>
+                      <p 
+                        className="fw-bold mb-0 text-break"
+                        style={{
+                          fontSize: "calc(0.9rem + 0.3vw)",
+                          lineHeight: 1.2
+                        }}
+                      >
+                        {item.text}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-store fs-1 mb-3"
-                      style={{ color: "#0288d1", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5 text-nowrap">Food Court</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-coffee fs-1 mb-3"
-                      style={{ color: "#fbc02d", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Cafe</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-concierge-bell fs-1 mb-3"
-                      style={{ color: "#8e24aa", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">QSR</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#e0f7fa", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-beer fs-1 mb-3"
-                      style={{ color: "#388e3c", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Bar & Brewery</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row row-cols-2 row-cols-md-5 g-3 pt-0">
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#ede7f6", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-bread-slice mb-3"
-                      style={{ color: "#8e24aa", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Bakery</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#e3f2fd", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-pizza-slice mb-3"
-                      style={{ color: "#0288d1", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Pizzeria</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#fce4ec", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-cloud mb-3"
-                      style={{ color: "#d81b60", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Cloud Kitchen</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col mb-2">
-                <div
-                  className="card text-center border-0"
-                  style={{ backgroundColor: "#fff9c4", borderRadius: 10 }}
-                >
-                  <div className="card-body">
-                    <i
-                      className="fas fa-store mb-3"
-                      style={{ color: "#fbc02d", fontSize: "3rem" }}
-                    ></i>
-                    <p className="fw-bold fs-5">Large Chain</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
