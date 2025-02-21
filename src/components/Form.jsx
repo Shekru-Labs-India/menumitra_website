@@ -548,7 +548,10 @@ const Form = () => {
                     </div>
                   </div>
 
-                  <div className="col-12">
+                 
+                </div>
+                <div className="row justify-content-center">
+                  <div className="col-12 text-start">
                     <button
                       type="submit "
                       disabled={loading}

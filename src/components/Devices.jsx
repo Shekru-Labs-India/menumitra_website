@@ -79,7 +79,7 @@ const Devices = () => {
                       <a href="#" className="text-warning text-decoration-none">Privacy Policy</a>
                     </label>
                   </div>
-                  <button type="submit" className="btn btn-warning btn-lg w-100 mb-3 text-uppercase fw-bold">
+                  <button type="submit" className="btn btn-warning w-100 mb-3 text-uppercase fw-bold">
                     Sign up for free
                   </button>
                   <p className="text-center text-secondary mb-0">
