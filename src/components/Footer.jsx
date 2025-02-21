@@ -22,7 +22,7 @@ const Footer = () => {
                       />
                     </Link>
                     <Link className="ms-3" to="/">
-                      <div className="fs-3 navbar-brand text-dark">
+                      <div className="fs-16 navbar-brand text-dark">
                         MenuMitra
                       </div>
                     </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top">
+          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top fs-16">
             <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
             <Link className="text-secondary" to="/privacy_policy">Privacy Policy</Link>
             <Link className="text-secondary" to="/cookie_policy">Cookie Policy</Link>
@@ -176,16 +176,16 @@ const Footer = () => {
       <section className="py-3">
         <div className="container">
           <div className="text-center mb-3">
-            <p className="mb-0">All trademarks and logos belong to their respective owners and are hereby acknowledged.</p>
+            <p className="mb-0 fs-16">All trademarks and logos belong to their respective owners and are hereby acknowledged.</p>
           </div>
           <hr className="my-3" />
           <div className="row align-items-center">
-            <div className="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
-              <p className="mb-0">Copyright © 2024</p>
+            <div className="col-4 col-lg-6 text-center text-lg-start mb-3 mb-lg-0 ">
+              <p className="mb-0 fs-16">Copyright © 2024</p>
             </div>
-            <div className="col-12 col-lg-6 text-center text-lg-end">
-              <p className="mb-0">
+            <div className="col-8 col-lg-6 text-center text-lg-end fs-16">
                 <i className="fa-solid fa-bolt"></i> Powered by
+              <p className="mb-0 fs-16">
                 <Link to="https://www.shekruweb.com" target="_blank" rel="noopener noreferrer" className="text-primary ms-2">
                   Shekru Labs India Pvt. Ltd.
                 </Link>
