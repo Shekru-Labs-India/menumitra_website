@@ -439,7 +439,7 @@ const Form = () => {
             />
           </div>
           <div className="col-lg-6">
-            <div className="promo-box p-50">
+            <div className="promo-box">
               <h4 className="text-start mb-50">
                 Get an Instant demo by our experts
               </h4>
@@ -555,7 +555,7 @@ const Form = () => {
                     <button
                       type="submit "
                       disabled={loading}
-                      className="btn btn-primary btn-submit"
+                      className="btn btn-primary btn-submit px-2"
                     >
                       <i className="fas fa-rocket me-2"></i> Submit
                     </button>
