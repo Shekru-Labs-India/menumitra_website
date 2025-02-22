@@ -179,17 +179,25 @@ const Footer = () => {
             <p className="mb-0 fs-16">All trademarks and logos belong to their respective owners and are hereby acknowledged.</p>
           </div>
           <hr className="my-3" />
-          <div className="row align-items-center">
-            <div className="col-4 col-lg-6 text-center text-lg-start mb-3 mb-lg-0 ">
-              <p className="mb-0 fs-16">Copyright © 2024</p>
+          <div className="row justify-content-between align-items-center">
+            <div className="col-12 col-lg-4 text-center text-lg-start">
+              <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
+                <span className="fs-16">Copyright © 2024</span>
+              </div>
             </div>
-            <div className="col-8 col-lg-6 text-center text-lg-end fs-16">
-                <i className="fa-solid fa-bolt"></i> Powered by
-              <p className="mb-0 fs-16">
-                <Link to="https://www.shekruweb.com" target="_blank" rel="noopener noreferrer" className="text-primary ms-2">
+            <div className="col-12 col-lg-8 text-center text-lg-end mt-2 mt-lg-0">
+              <div className="d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap gap-2">
+                <i className="fa-solid fa-bolt"></i>
+                <span>Powered by</span>
+                <Link 
+                  to="https://www.shekruweb.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-primary text-nowrap"
+                >
                   Shekru Labs India Pvt. Ltd.
                 </Link>
-              </p>
+              </div>
             </div>
           </div>
         </div>
