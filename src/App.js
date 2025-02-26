@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 
-import { HashRouter,Routes,Route, BrowserRouter } from 'react-router-dom';
+import { HashRouter,Routes,Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 // import './assets/css/bootstrap.min.css'
 import './assets/css/style.css'
@@ -68,7 +68,7 @@ function App() {
    <>
   
 
-    <BrowserRouter>
+    <BrowserRouter basename="/">
 
     <Routes>
 
@@ -99,7 +99,7 @@ function App() {
     <Route path="/icecream" element={<IcecreamDesserts />} />
 
     <Route path="/pricing" element={<Pricing />} />
-    <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+    <Route path="/privacy" element={<PrivacyPolicy />} />
     <Route path="/terms_conditions" element={<TermsConditions />} />
     <Route path="/cookie_policy" element={<CookiePolicy />} />
     <Route path="/reseller_program" element={<ResellerProgram />} />
@@ -112,6 +112,7 @@ function App() {
     <Route path="/support" element={<Support />} />
     <Route path="/career" element={<Career />} />
     <Route path="/devices" element={<Devices />} />
+    <Route path="/privacy_policy" element={<Navigate to="/privacy" replace />} />
     </Routes>
 
     </BrowserRouter>
