@@ -59,7 +59,7 @@ function App() {
 
     if (userAppPattern.test(currentUrl)) {
       window.location.href =
-        "https://menumitra-testing.netlify.app/user_app/978247/1/103";
+        "https://menumitra-testing.netlify.app/user_app/890792/1/168";
     }
   }, []);
 
