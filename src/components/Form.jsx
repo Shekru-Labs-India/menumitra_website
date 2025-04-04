@@ -466,7 +466,7 @@ const BookingForm = ({
                     </button>
 
                     <p
-                      className="mt-1 text-primary text-center"
+                      className="mt-1 text-dark text-center"
                       style={{ fontSize: "14px" }}
                     >
                       We don't spam call.
