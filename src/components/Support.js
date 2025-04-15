@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from './Header'
 import Footer from './Footer'
 
-import waiter from '../assets/images/waiter-calling-device-hero_lg.jpg'
 import button3 from '../assets/images/3-buttons.jpg'
 import meter20 from '../assets/images/20-meters.jpg'
 import durable from '../assets/images/Durable-and-sturdy.jpg'
 import integrated from '../assets/images/Integrated-with-Petpooja.jpg'
 import recharge from '../assets/images/Rechargeable.jpg'
 import labourcost from '../assets/images/Reduce-labour-costs.jpg'
-import varun from '../assets/images/Varun.jpg'
-import scheduale from '../assets/images/scheduale-form_md.jpg'
+
 import Form from "./Form";
 
 

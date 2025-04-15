@@ -76,26 +76,13 @@ const Inventory = () => {
           content="https://www.facebook.com/menumitra"
         />
         <meta property="article:updated_time" content="2024-12-13" />
-        <meta
-          property="og:image"
-          itemprop="image"
-          content="https://menumitra.com/assets/menu_mitra_image.jpg"
-        />
-        <meta
-          property="og:image:url"
-          content="https://menumitra.com/assets/menu_mitra_image.jpg"
-        />
-        <meta
-          property="og:image:secure"
-          content="https://menumitra.com/assets/menu_mitra_image.jpg"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://menumitra.com/assets/menu_mitra_image.jpg"
-        />
-        <meta property="og:image:alt" content="Menu Mitra Image" />
-        <meta property="og:image:width" content="720" />
-        <meta property="og:image:height" content="602" />
+        <meta property="og:image" itemprop="image" content="%PUBLIC_URL%/logo192.png" />
+      <meta property="og:image:url" content="%PUBLIC_URL%/logo192.png" />
+      <meta property="og:image:secure" content="%PUBLIC_URL%/logo192.png "/>
+      <meta property= "og:image:secure_url" content="%PUBLIC_URL%/logo192.png" />
+      <meta property="og:image:alt" content="Menu Mitra Logo" />
+      <meta property="og:image:width" content="720" />
+      <meta property="og:image:height" content="602" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -109,7 +96,7 @@ const Inventory = () => {
         />
         <meta
           name="twitter:image"
-          content="https://menumitra.com/assets/menu_mitra_image.jpg"
+          content="%PUBLIC_URL%/logo192.png"
         />
       </Helmet>
       <>
