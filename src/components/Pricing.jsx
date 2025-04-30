@@ -44,12 +44,12 @@ const Pricing = () => {
                       className="text-small text-secondary"
                       style={{ fontSize: "0.8rem" }}
                     >
-                      that highlight our three plans:
+                      that highlight our four plans:
                     </div>
                   </th>
                   <th className="fw-bold">
-                    <div className="text-success fs-3 ">Basic</div>
-                    <div className="fs-5"> ₹5,000</div>
+                    <div className="text-secondary fs-3 ">Silver</div>
+                    <div className="fs-5"> ₹3,999K</div>
                     <div
                       className="text-small text-secondary"
                       style={{ fontSize: "0.8rem" }}
@@ -63,9 +63,8 @@ const Pricing = () => {
                     </Link>{" "}
                   </th>
                   <th className="fw-bold">
-                    <div className="text-danger fs-3">Pro</div>
-                    <div className="fs-5"> ₹10,000</div>
-
+                    <div className="text-warning fs-3">Golden</div>
+                    <div className="fs-5"> ₹6,999K</div>
                     <div
                       className="text-small text-secondary"
                       style={{ fontSize: "0.8rem" }}
@@ -79,16 +78,29 @@ const Pricing = () => {
                     </Link>
                   </th>
                   <th className="fw-bold">
-                    <div className="text-info fs-3">Max</div>
-                    <div className="fs-5"> ₹15,000</div>
-
+                    <div className="text-info fs-3">Platinum</div>
+                    <div className="fs-5"> ₹12,999K</div>
                     <div
                       className="text-small text-secondary"
                       style={{ fontSize: "0.8rem" }}
                     >
                       per year /per outlet
                     </div>
-                    {/* Book a Demo Button */}
+                    <Link to="/book_demo">
+                      <button className="btn btn-outline-dark mt-2">
+                        Book a Demo
+                      </button>
+                    </Link>
+                  </th>
+                  <th className="fw-bold">
+                    <div className="text-primary fs-3">Diamond</div>
+                    <div className="fs-5"> ₹22,999K</div>
+                    <div
+                      className="text-small text-secondary"
+                      style={{ fontSize: "0.8rem" }}
+                    >
+                      per year /per outlet
+                    </div>
                     <Link to="/book_demo">
                       <button className="btn btn-outline-dark mt-2">
                         Book a Demo
@@ -99,154 +111,42 @@ const Pricing = () => {
               </thead>
               <tbody>
                 {[
-                  {
-                    feature: "User App",
-                    icons: ["circle-check", "xmark", "circle-check"],
-                    icon: "fa-user",
-                  },
-                  {
-                    feature: "Waiter Login",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-sign-in-alt",
-                  },
-                  {
-                    feature: "Captain Login",
-                    icons: ["circle-check", "xmark", "circle-check"],
-                    icon: "fa-user-tie",
-                  },
-                  {
-                    feature: "KDS",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-tv",
-                  },
-                  {
-                    feature: "Owner App",
-                    icons: ["circle-check", "circle-check", "circle-check"],
-                    icon: "fa-home",
-                  },
-                  {
-                    feature: "POS System",
-                    icons: ["circle-check", "circle-check", "circle-check"],
-                    icon: "fa-cash-register",
-                  },
-                  {
-                    feature: "CDS",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-cogs",
-                  },
-                  {
-                    feature: "MM loyalty Coupons",
-                    icons: ["xmark", "circle-check", "circle-check"],
-                    icon: "fa-gift",
-                  },
-                  {
-                    feature: "Website & Social Media",
-                    icons: ["xmark", "circle-check", "circle-check"],
-                    icon: "fa-globe",
-                  },
-                  {
-                    feature: "Online Order Management",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-shopping-cart",
-                  },
-                  {
-                    feature: "Feedback Management",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-comments",
-                  },
-
-                  {
-                    feature: "Support Chat",
-                    icons: ["circle-check", "circle-check", "xmark"],
-                    icon: "fa-comments",
-                  },
-                  {
-                    feature: "24x7 Support",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-headset",
-                  },
-                  {
-                    feature: "Free Training",
-                    icons: ["circle-check", "circle-check", "xmark"],
-                    icon: "fa-chalkboard-teacher",
-                  },
-                  {
-                    feature: "AI Analysis",
-                    icons: ["xmark", "xmark", "circle-check"],
-                    icon: "fa-brain",
-                  },
-                  {
-                    feature: "Addons",
-                    icons: ["", "", ""],
-                    icon: "fa-puzzle-piece",
-                    bgLight: true,
-                  },
-
-                  {
-                    feature: "KDS (TV/Tab)",
-                    icons: ["", "", ""],
-                    icon: "fa-tablet-alt",
-                    noBorder: true,
-                  },
-                  {
-                    feature: "CDS (TV/Tab)",
-                    icons: ["", "", ""],
-                    icon: "fa-tv",
-                    noBorder: true,
-                  },
-                  {
-                    feature: "Waiter Attendance",
-                    icons: ["", "", ""],
-                    icon: "fa-clock",
-                    noBorder: true,
-                  },
-                  {
-                    feature: "Billing Machine",
-                    icons: ["", "", ""],
-                    icon: "fa-print",
-                    noBorder: true,
-                  },
+                  { feature: "Cloud billing", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-cloud" },
+                  { feature: "Reports", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-file-invoice" },
+                  { feature: "User app (unlimited)", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-mobile-alt" },
+                  { feature: "Owner app", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-user-tie" },
+                  { feature: "Call support", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-phone" },
+                  { feature: "Table reservation", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-calendar-check" },
+                  { feature: "KOT", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-receipt" },
+                  { feature: "Table switch", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-random" },
+                  { feature: "2 layer security", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-lock" },
+                  { feature: "Order tracking", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-route" },
+                  { feature: "Account activity log", icons: ["circle-check", "circle-check", "circle-check", "circle-check"], icon: "fa-list-alt" },
+                  { feature: "Inventory module", icons: ["xmark", "circle-check", "circle-check", "circle-check"], icon: "fa-boxes" },
+                  { feature: "POS", icons: ["xmark", "circle-check", "circle-check", "circle-check"], icon: "fa-cash-register" },
+                  { feature: "Third party integration", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-plug" },
+                  { feature: "Waiter", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-user-friends", note: ["", "", "(5)", "(Unlimited)"] },
+                  { feature: "Captain", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-user-tie", note: ["", "", "(1)", "(Unlimited)"] },
+                  { feature: "KDS/CDS", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-tv" },
+                  { feature: "Owner dashboard", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-tachometer-alt", note: ["", "", "(Without AI)", "(With AI)"] },
+                  { feature: "Personal training", icons: ["xmark", "xmark", "circle-check", "circle-check"], icon: "fa-chalkboard-teacher" },
+                  { feature: "Visit support", icons: ["xmark", "xmark", "xmark", "circle-check"], icon: "fa-user-check" },
+                  { feature: "Website", icons: ["xmark", "xmark", "xmark", "circle-check"], icon: "fa-globe" },
+                  { feature: "AI menu generation", icons: ["xmark", "xmark", "xmark", "circle-check"], icon: "fa-robot" },
                 ].map((item, index) => (
-                  <tr
-                    key={index}
-                    style={item.bgLight ? { backgroundColor: "#E8E8E880" } : {}}
-                    className={`${item.noBorder ? "border-0" : ""}`}
-                  >
-                    <td
-                      className={`text-start ${
-                        item.noBorder ? "border-0" : ""
-                      }`}
-                    >
+                  <tr key={index}>
+                    <td className="text-start">
                       <i className={`fa-solid ${item.icon} me-4`}></i>
                       {item.feature}
                     </td>
-                    <td className={item.noBorder ? "border-0" : ""}>
-                      <i
-                        className={`fa-solid fa-${item.icons[1]} ${
-                          item.icons[1] === "circle-check"
-                            ? "text-success"
-                            : "text-secondary"
-                        }`}
-                      ></i>
-                    </td>
-                    <td className={item.noBorder ? "border-0" : ""}>
-                      <i
-                        className={`fa-solid fa-${item.icons[1]} ${
-                          item.icons[1] === "circle-check"
-                            ? "text-success"
-                            : "text-secondary"
-                        }`}
-                      ></i>
-                    </td>
-                    <td className={item.noBorder ? "border-0" : ""}>
-                      <i
-                        className={`fa-solid fa-${item.icons[1]} ${
-                          item.icons[1] === "circle-check"
-                            ? "text-success"
-                            : "text-secondary"
-                        }`}
-                      ></i>
-                    </td>
+                    {item.icons.map((icon, i) => (
+                      <td key={i}>
+                        <i className={`fa-solid fa-${icon} ${icon === "circle-check" ? "text-success" : "text-secondary"}`}></i>
+                        {item.note && item.note[i] && (
+                          <span className="ms-1 text-secondary" style={{ fontSize: "0.8rem" }}>{item.note[i]}</span>
+                        )}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
