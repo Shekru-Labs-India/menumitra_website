@@ -73,6 +73,7 @@ function App() {
     <Routes>
 
     <Route path="/" element={<Home />} />
+    <Route path="*" element={<Home />} />
     <Route path="/captainapp" element={<CaptainApp />} />
     <Route path="/kds" element={<KDS />} />
     <Route path="/cds" element={<CDS />} />
@@ -108,7 +109,7 @@ function App() {
     <Route path="/book_demo" element={<BookDemo />} />
     <Route path="/order_tracking" element={<OrderTracking />} />
     <Route path="/help_support" element={<FAQ />} />
-    <Route path="/about_us" element={<Aboutus />} />
+    {/* <Route path="/about_us" element={<Aboutus />} /> */}
     <Route path="/support" element={<Support />} />
     <Route path="/career" element={<Career />} />
     <Route path="/devices" element={<Devices />} />
