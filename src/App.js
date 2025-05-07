@@ -50,6 +50,7 @@ import Aboutus from "./components/Aboutus";
 import Support from "./components/Support";
 import Career from "./components/Career";
 import Devices from "./components/Devices";
+import WhatsAppFAB from "./components/WhatsAppFAB";
 import { useEffect } from 'react';
 
 function App() {
@@ -116,6 +117,7 @@ function App() {
     <Route path="/privacy_policy" element={<Navigate to="/privacy" replace />} />
     </Routes>
 
+    <WhatsAppFAB />
     </BrowserRouter>
     
 
