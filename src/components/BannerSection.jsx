@@ -39,12 +39,12 @@ const BannerSection = () => {
             ...prevStyles.zhInrBg,
             borderRadius: '0',
           },
-          video: {
+          iframe: {
             ...prevStyles.video,
             borderRadius: '9px',
             border: '4px solid rgba(255, 255, 255, 0.5)',
             width: '100%', // Make video width 100% for mobile
-            height: 'auto', // Maintain aspect ratio
+            height: '100%', // Maintain aspect ratio
           }
         }));
       }
@@ -60,19 +60,16 @@ const BannerSection = () => {
     <div style={styles.zhInrSec}>
       <div style={styles.zhInrBg}></div>
       <div style={styles.zhBnrImgSec}>
-        <video 
-          style={styles.video}
-          width="100%" // Ensure it stretches fully on all screens
-          height="auto"
-          autoPlay
-          loop
-          preload="auto"
-          muted
-          playsInline
-          poster="http://oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zh_home_zakya_banner_product_img_lazy.png"
-        >
-          <source src="//oweb.zohowebstatic.com/sites/oweb/images/zakya/images/zakya_web_anim.mp4" />
-        </video>
+        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+          <iframe 
+            style={{...styles.video, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+            src="https://www.youtube.com/embed/j2e2stCcICo?list=TLGG3vUbEoDSIB4wNzA1MjAyNQ&autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+            title="Menu Mitra Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
