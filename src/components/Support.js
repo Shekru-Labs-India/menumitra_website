@@ -5,7 +5,7 @@ import Footer from './Footer'
 import button3 from '../assets/images/3-buttons.jpg'
 import meter20 from '../assets/images/20-meters.jpg'
 import durable from '../assets/images/Durable-and-sturdy.jpg'
-import integrated from '../assets/images/Integrated-with-MenuMitra.jpg'
+import integrated from '../assets/images/Integrated-with-Petpooja.jpg'
 import recharge from '../assets/images/Rechargeable.jpg'
 import labourcost from '../assets/images/Reduce-labour-costs.jpg'
 
