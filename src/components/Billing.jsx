@@ -11,6 +11,8 @@ import brand3 from "../assets/images/mm_brand/03.png";
 import brand4 from "../assets/images/mm_brand/04.png";
 import brand5 from "../assets/images/mm_brand/05.png";
 import brand6 from "../assets/images/mm_brand/06.png";
+import image01 from "../assets/images/01.jpg";
+import image02 from "../assets/images/02.jpg";
 
 
 const Billing = () => {
@@ -119,7 +121,7 @@ const Billing = () => {
         <div className="col-md-6 col-lg-5 mb-4 ">
           <div className="card p-4 " style={{ backgroundColor: "#f2fbff" }}>
             <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Customizable-bill-format2-3.png.webp"
+              src={image01}
               alt="Card Image"
               className="card-img-top"
             />
@@ -210,7 +212,7 @@ const Billing = () => {
         <div className="col-md-6 col-lg-5 mb-4">
           <div className="card p-4 " style={{ backgroundColor: "#f2fbff" }}>
             <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Works-online-amp-offline-both-2-1.png.webp"
+              src={image02}
               alt="Card Image"
               className="card-img-top"
             />
@@ -254,7 +256,7 @@ const Billing = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-file-invoice feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Reports & Analytics</h5>
-                <p style={{ color: '#666' }} className="feature-description">Receive instant reports on your owner’s app & WhatsApp for day-end sales, inventory, staff activities, and other vital business insights.</p>
+                <p style={{ color: '#666' }} className="feature-description">Receive instant reports on your owner's app & WhatsApp for day-end sales, inventory, staff activities, and other vital business insights.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
