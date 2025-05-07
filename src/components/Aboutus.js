@@ -18,7 +18,7 @@ const Aboutus = () => {
   We deliver products that ensure revenue growth and the best customer experience for all types of restaurant partners
   
   <div className="position-relative mt-50">
-    <img src='https://d28ewddc5mocr5.cloudfront.net/images/about/about-us-hero-new_xl.webp' className='rounded-10'></img>
+    <img src='https://t3.ftcdn.net/jpg/06/48/40/66/360_F_648406683_fpR6PUMcTBFtOGK0qnbDvI65EwY2i4sR.jpg' className='rounded-10'></img>
   </div>
 </div>
 
