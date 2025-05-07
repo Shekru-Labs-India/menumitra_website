@@ -5,7 +5,7 @@ import Footer from './Footer'
 import button3 from '../assets/images/3-buttons.jpg'
 import meter20 from '../assets/images/20-meters.jpg'
 import durable from '../assets/images/Durable-and-sturdy.jpg'
-import integrated from '../assets/images/Integrated-with-Petpooja.jpg'
+import integrated from '../assets/images/Integrated-with-MenuMitra.jpg'
 import recharge from '../assets/images/Rechargeable.jpg'
 import labourcost from '../assets/images/Reduce-labour-costs.jpg'
 
@@ -30,7 +30,7 @@ const Support = () => {
             Hi! We are here to help Support
             </h2>
             <p>
-            Get relevant and instant solutions for your Petpooja POS-related troubles!            </p>
+            Get relevant and instant solutions for your MenuMitra POS-related troubles!            </p>
             <a href="#products" className="btn btn-danger pill mr-5">
               
               <span>Connect With Us</span>
@@ -86,7 +86,7 @@ const Support = () => {
             </div>
             <div className="col-md-4 mb-4">
                <img src={integrated} alt="" style={{ width: '140px', height: '140px' }} />
-                <h5 style={{ fontWeight: 500, marginBottom: '10px' }} className="feature-title">Integrated with Petpooja POS and Captain app</h5>
+                <h5 style={{ fontWeight: 500, marginBottom: '10px' }} className="feature-title">Integrated with MenuMitra POS and Captain app</h5>
                 
             </div>
             <div className="col-md-4 mb-4">

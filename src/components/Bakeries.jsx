@@ -33,7 +33,7 @@ const Bakeries = () => {
             The Powerful Bakery POS Software for Happy Baking
             </h2>
             <p className="mb-30">
-            Boost Your Bakery's Business Growth Effortlessly: Let Ciferon POS Software Manage All Your Operations While You Focus on Baking Magic!
+            Boost Your Bakery's Business Growth Effortlessly: Let MenuMitra POS Software Manage All Your Operations While You Focus on Baking Magic!
             </p>
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
@@ -66,18 +66,18 @@ const Bakeries = () => {
             <div className="col-md-4 mb-4">
                 <img src="		https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/QR-Code-Based-Ordering-4.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Scan & Order</h5>
-                <p style={{ color: '#666' }} className="feature-description">Customer can see offers, place order, make payment! you can also add his plugin to your website for more orders with Ciferon Bakery POS Software</p>
+                <p style={{ color: '#666' }} className="feature-description">Customer can see offers, place order, make payment! you can also add his plugin to your website for more orders with MenuMitra Bakery POS Software</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Aggregator-Integrations-7.png	" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Ordering Integrations</h5>
-                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from Ciferon Bakery POS Software</p>
+                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from MenuMitra Bakery POS Software</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Central-Kitchen-Module-10.png" alt="" />
                 
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Central Kitchen</h5>
-                <p style={{ color: '#666' }} className="feature-description">Centralise recipes, items controls, purchase order, indent, material transfer, and do lot more with Ciferon Bakery POS Software</p>
+                <p style={{ color: '#666' }} className="feature-description">Centralise recipes, items controls, purchase order, indent, material transfer, and do lot more with MenuMitra Bakery POS Software</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Inventory-Management-6.png" alt="" />

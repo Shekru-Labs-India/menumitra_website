@@ -18,7 +18,7 @@ const ResellerProgram = () => {
           <button className="register-btn">Register now</button>
         </div>
         <div className="reseller-image">
-          <img src="https://d28ewddc5mocr5.cloudfront.net/images/Reseller-Program_md.webp" alt="Illustration showing Reseller Program for Petpooja POS" />
+          <img src="https://d28ewddc5mocr5.cloudfront.net/images/Reseller-Program_md.webp" alt="Illustration showing Reseller Program for MenuMitra POS" />
         </div>
       </section>
 

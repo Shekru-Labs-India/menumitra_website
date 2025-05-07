@@ -74,7 +74,7 @@ const FineDine = () => {
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Spilt-Bills.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Spilt Bills</h5>
-                <p style={{ color: '#666' }} className="feature-description">Split issues? with Ciferon split your bills easily by item, amount or discount</p>
+                <p style={{ color: '#666' }} className="feature-description">Split issues? with MenuMitra split your bills easily by item, amount or discount</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Employee-Reporting.png" alt="" />

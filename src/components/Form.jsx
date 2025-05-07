@@ -42,7 +42,7 @@ const FAQ = () => (
                       aria-expanded="true"
                       aria-controls="minimal-collapseOne"
                     >
-                      How much time it will take to setup my Ciferon Account?
+                      How much time it will take to setup my MenuMitra Account?
                       <span>
                         <i className="fas fa-chevron-down" />
                       </span>
@@ -55,10 +55,10 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample1"
                   >
                     <div className="accordion-body">
-                      Getting started with Ciferon is super quick! Our
+                      Getting started with MenuMitra is super quick! Our
                       onboarding team is speedy, and all it takes is about 60
                       minutes to set up your account. Just share the info we
-                      need, and you'll be good to go on your Ciferon adventure!
+                      need, and you'll be good to go on your MenuMitra adventure!
                     </div>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample1"
                   >
                     <div className="accordion-body">
-                      Absolutely! With Ciferon, you can keep tabs on all your
+                      Absolutely! With MenuMitra, you can keep tabs on all your
                       orders in real-time, no matter where you are. Just make
                       sure your outlet has a good internet connection, and
                       you're all set!
@@ -117,7 +117,7 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample1"
                   >
                     <div className="accordion-body">
-                      No worries! Ciferon uses a cool hybrid technology that
+                      No worries! MenuMitra uses a cool hybrid technology that
                       works both online and offline. Even if you're not
                       connected to the internet, your orders are still recorded.
                       Once you get back online, all your unsynced orders will
@@ -136,7 +136,7 @@ const FAQ = () => (
                       aria-expanded="false"
                       aria-controls="minimal-collapseFour"
                     >
-                      Which printer is best suitable with Ciferon POS?
+                      Which printer is best suitable with MenuMitra POS?
                       <span>
                         <i className="fas fa-chevron-down" />
                       </span>
@@ -149,7 +149,7 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample1"
                   >
                     <div className="accordion-body">
-                      Ciferon is awesome because it's built without any hardware
+                      MenuMitra is awesome because it's built without any hardware
                       hassles! It plays nice with all the printers out there in
                       the market, so you can use it seamlessly without any
                       compatibility issues. How cool is that?
@@ -220,7 +220,7 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample2"
                   >
                     <div className="accordion-body">
-                      Absolutely! Ciferon POS gets along with all operating
+                      Absolutely! MenuMitra POS gets along with all operating
                       systems—Windows, iOS, and Android. It's like a
                       tech-friendly chameleon!
                     </div>
@@ -237,7 +237,7 @@ const FAQ = () => (
                       aria-expanded="false"
                       aria-controls="minimal-collapseEight"
                     >
-                      Does Ciferon team help me to upload my menu?
+                      Does MenuMitra team help me to upload my menu?
                       <span>
                         <i className="fas fa-chevron-down" />
                       </span>
@@ -281,7 +281,7 @@ const FAQ = () => (
                     data-bs-parent="#minimal-accordionExample2"
                   >
                     <div className="accordion-body">
-                      Count on it! Ciferon's support is like your 24/7
+                      Count on it! MenuMitra's support is like your 24/7
                       superhero, always there for you. Day or night, even on
                       holidays and during festivals, our support team is ready
                       to help you and your team. It's a promise we're proud to
@@ -299,7 +299,7 @@ const FAQ = () => (
                       aria-expanded="false"
                       aria-controls="minimal-collapseFive"
                     >
-                      Is my data safe with Ciferon POS?
+                      Is my data safe with MenuMitra POS?
                       <span>
                         <i className="fas fa-chevron-down" />
                       </span>
@@ -314,7 +314,7 @@ const FAQ = () => (
                     <div className="accordion-body">
                       Absolutely, and it's a firm commitment from us! We value
                       transparency and strong work ethics. Your entire data is
-                      in good hands and kept safe and secure in the Ciferon
+                      in good hands and kept safe and secure in the MenuMitra
                       clouds.
                     </div>
                   </div>

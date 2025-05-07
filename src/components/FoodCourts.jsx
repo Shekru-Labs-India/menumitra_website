@@ -60,12 +60,12 @@ const FoodCourts = () => {
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Customer-Account-Top-up-Redemption-1.png"  alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Customer Account Top-up & Redemption</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/QR-Code-Based-Ordering-3.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">QR-Code Based Ordering</h5>
-                <p style={{ color: '#666' }} className="feature-description">No more food counter hopping after shopping! With Ciferon's QR-code, your customers can order & pay from their table.</p>
+                <p style={{ color: '#666' }} className="feature-description">No more food counter hopping after shopping! With MenuMitra's QR-code, your customers can order & pay from their table.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Royalty-Management-2.png	" alt="" />

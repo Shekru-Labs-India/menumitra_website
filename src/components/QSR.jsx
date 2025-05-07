@@ -65,7 +65,7 @@ const QSR = () => {
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Aggregator-Integrations-4.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Order Integrations</h5>
-                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from Ciferon POS directly.</p>
+                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Station-wise-KOT-4.png	" alt="" />

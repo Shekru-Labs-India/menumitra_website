@@ -29,10 +29,10 @@ const Pizzeria = () => {
           {/* / column */}
           <div className="col-lg-7 tablet-lg-top-30">
             <h2 className="mb-30">
-            Ciferon POS for pizza shop to make every topping right
+            MenuMitra POS for pizza shop to make every topping right
             </h2>
             <p className="mb-30">
-            With Ciferon POS, manage all your operations from a single dashboard for Pizzeria or Pizza shop
+            With MenuMitra POS, manage all your operations from a single dashboard for Pizzeria or Pizza shop
             </p>
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
@@ -64,7 +64,7 @@ const Pizzeria = () => {
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/QR-Code-Based-Ordering-3.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Combos. Offers & Discounts</h5>
-                <p style={{ color: '#666' }} className="feature-description">Apply offers, create combos, customise discount options, Ciferon will handle everything easily.</p>
+                <p style={{ color: '#666' }} className="feature-description">Apply offers, create combos, customise discount options, MenuMitra will handle everything easily.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Multiple-Outlet-Monitoring-2.png	" alt="" />
@@ -79,7 +79,7 @@ const Pizzeria = () => {
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Aggregator-Integrations-4.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Order Integrations</h5>
-                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from Ciferon POS directly.</p>
+                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Employee-Reporting-4.png" alt="" />

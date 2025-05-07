@@ -112,7 +112,7 @@ const Billing = () => {
     </section>
     <div className="container- mt-80">
       <h2 className="text-center mb-50">
-        Discover what Ciferon can do for your billing
+        Discover what MenuMitra can do for your billing
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -217,7 +217,7 @@ const Billing = () => {
             <div className="">
               <h6 className="card-title">Works online &amp; offline both</h6>
               <p className="card-text">
-                If your internet is down, Ciferon continues to function without
+                If your internet is down, MenuMitra continues to function without
                 a hitch. It works offline and syncs data to the cloud once
                 you're reconnected.​
               </p>
@@ -230,7 +230,7 @@ const Billing = () => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-50">
-            Ciferon is more than just a billing software
+            MenuMitra is more than just a billing software
           </h2>
         </div>
         {/* / text-center */}
@@ -259,7 +259,7 @@ const Billing = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Customer Engagement</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
             </div>
            
         </div>

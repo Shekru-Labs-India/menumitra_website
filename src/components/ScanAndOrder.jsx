@@ -101,7 +101,7 @@ const ScanAndOrder = () => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-50">
-            Discover what Ciferon Scan &amp; Orders can do for your outlet
+            Discover what MenuMitra Scan &amp; Orders can do for your outlet
           </h2>
         </div>
         {/* / text-center */}

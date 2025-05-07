@@ -138,7 +138,7 @@ const Inventory = () => {
           </section>
           <div className="container mt-80">
             <h2 className="text-center mb-50">
-              Discover what Ciferon can do for your inventory
+              Discover what MenuMitra can do for your inventory
             </h2>
             <div className="row justify-content-center">
               {/* Card 1 */}
@@ -259,7 +259,7 @@ const Inventory = () => {
                     <h6 className="card-title">Live Food Costing Reports</h6>
                     <p className="card-text">
                       The potato cost is not fixed, it changes every week! so
-                      that your recipe cost will affect. Ciferon gives you a
+                      that your recipe cost will affect. MenuMitra gives you a
                       clear knowledge about the food cost, so you can increase
                       your profits​
                     </p>
@@ -272,7 +272,7 @@ const Inventory = () => {
             <div className="container">
               <div className="text-center">
                 <h2 className="section-title mb-50">
-                  Ciferon is more than just a inventory software
+                  MenuMitra is more than just a inventory software
                 </h2>
               </div>
               {/* / text-center */}
@@ -323,7 +323,7 @@ const Inventory = () => {
                       style={{ color: "#666" }}
                       className="feature-description"
                     >
-                      Ciferon's restaurant POS makes it easy to take orders,
+                      MenuMitra's restaurant POS makes it easy to take orders,
                       create bills, and generate KOT. You can accept payments,
                       split bills, merge tables, and apply discounts and coupons
                       effortlessly.
@@ -398,7 +398,7 @@ const Inventory = () => {
                       style={{ color: "#666" }}
                       className="feature-description"
                     >
-                      Ciferon's CRM enables you to monitor, handle, and reward
+                      MenuMitra's CRM enables you to monitor, handle, and reward
                       loyal customers, ensuring that your brand forms a unique
                       connection with each customer.
                     </p>

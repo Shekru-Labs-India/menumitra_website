@@ -32,7 +32,7 @@ const Cafe = () => {
             Best Cafe POS Software to brew success with every click
             </h2>
             <p className="mb-30">
-            Elevate your customers' morning coffee experience with Ciferon Cafe POS Software, your all-in-one solution for seamless café management.
+            Elevate your customers' morning coffee experience with MenuMitra Cafe POS Software, your all-in-one solution for seamless café management.
             </p>
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
@@ -65,7 +65,7 @@ const Cafe = () => {
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Station-wise-KOT-3.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Station wise KOT</h5>
-                <p style={{ color: '#666' }} className="feature-description">No stress with separate food & drink stations! Just create, assign with Ciferon cafe POS Software, and relax as everything falls into place.</p>
+                <p style={{ color: '#666' }} className="feature-description">No stress with separate food & drink stations! Just create, assign with MenuMitra cafe POS Software, and relax as everything falls into place.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Item-Variations-Addons-5.png	" alt="" />
@@ -76,7 +76,7 @@ const Cafe = () => {
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Aggregator-Integrations-4.png" alt="" />
                 
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Order Integrations</h5>
-                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from Ciferon Cafe POS Softwaredirectly.</p>
+                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from MenuMitra Cafe POS Softwaredirectly.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Inventory-Management-6.png" alt="" />

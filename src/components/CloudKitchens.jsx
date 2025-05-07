@@ -32,7 +32,7 @@ const CloudKitchens = () => {
             A powerful Cloud POS Software for your Cloud Kitchen
             </h2>
             <p className="mb-30">
-            Effortlessly handle your Cloud Kitchen's online food orders, deliveries, menu, and prices with Ciferon POS.
+            Effortlessly handle your Cloud Kitchen's online food orders, deliveries, menu, and prices with MenuMitra POS.
             </p>
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
@@ -60,12 +60,12 @@ const CloudKitchens = () => {
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Order-Integration-11.png"  alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Order Integrations</h5>
-                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from Ciferon POS directly.</p>
+                <p style={{ color: '#666' }} className="feature-description">Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Virtual-Brands-1.png" alt="" />
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Virtual Brands</h5>
-                <p style={{ color: '#666' }} className="feature-description">Multiple brands? manage every brand fro one Ciferon POS, by managing menus, prices, integrations, brand wise reports and everything</p>
+                <p style={{ color: '#666' }} className="feature-description">Multiple brands? manage every brand fro one MenuMitra POS, by managing menus, prices, integrations, brand wise reports and everything</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Item-Variations-Addons-5.png	" alt="" />

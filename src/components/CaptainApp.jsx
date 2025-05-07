@@ -85,7 +85,7 @@ const CaptainApp = () => {
               Captain Ordering App to take punch instantly
             </h2>
             <p className="mb-30">
-              Introducing the Captain Ordering App by Ciferon—an Android
+              Introducing the Captain Ordering App by MenuMitra—an Android
               application empowering your staff to seamlessly take customer
               orders, process payments directly at the table, and provide
               intelligent food recommendations.​

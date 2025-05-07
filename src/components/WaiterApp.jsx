@@ -6,7 +6,7 @@ import waiter from '../assets/images/waiter-calling-device-hero_lg.jpg'
 import button3 from '../assets/images/3-buttons.jpg'
 import meter20 from '../assets/images/20-meters.jpg'
 import durable from '../assets/images/Durable-and-sturdy.jpg'
-import integrated from '../assets/images/Integrated-with-Petpooja.jpg'
+import integrated from '../assets/images/Integrated-with-MenuMitra.jpg'
 import recharge from '../assets/images/Rechargeable.jpg'
 import labourcost from '../assets/images/Reduce-labour-costs.jpg'
 
@@ -87,7 +87,7 @@ const WaiterApp = () => {
             </div>
             <div className="col-md-4 mb-4">
                <img src={integrated} alt="" style={{ width: '140px', height: '140px' }} />
-                <h5 style={{ fontWeight: 500, marginBottom: '10px' }} className="feature-title">Integrated with Petpooja POS and Captain app</h5>
+                <h5 style={{ fontWeight: 500, marginBottom: '10px' }} className="feature-title">Integrated with MenuMitra POS and Captain app</h5>
                 
             </div>
             <div className="col-md-4 mb-4">

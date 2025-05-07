@@ -107,7 +107,7 @@ const RestaurantReports = () => {
     </section>
     <div className="container mt-80">
       <h2 className="text-center mb-50">
-      Discover what Ciferon can do for your reports
+      Discover what MenuMitra can do for your reports
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -123,7 +123,7 @@ const RestaurantReports = () => {
               Single Dashboard Monitoring
               </h6>
               <p className="card-text">
-              No more juggling between dashboards. By consolidating all of your sales data from dine-in, QR codes, Zomato/Swiggy, and your website onto a single dashboard, Ciferon makes your life easier. Without any difficulty, get a complete, real-time view of your restaurant!
+              No more juggling between dashboards. By consolidating all of your sales data from dine-in, QR codes, Zomato/Swiggy, and your website onto a single dashboard, MenuMitra makes your life easier. Without any difficulty, get a complete, real-time view of your restaurant!
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const RestaurantReports = () => {
             <div className="card-body">
               <h6 className="card-title">Compressive Tax Reports</h6>
               <p className="card-text">
-              Your tax-related difficulties are over! With just one click, you can access detailed tax reports for all of your outlets with Ciferon.
+              Your tax-related difficulties are over! With just one click, you can access detailed tax reports for all of your outlets with MenuMitra.
                Put an end to gathering information from multiple sources and concentrate only on efficiently filing your taxes!
               </p>
             </div>
@@ -158,7 +158,7 @@ const RestaurantReports = () => {
             <div className="card-body">
               <h6 className="card-title">Web & App</h6>
               <p className="card-text">
-              Ciferon makes it easy to keep track of your restaurant! You can view our dashboard as an iOS or Android app, or as a webpage on your computer. Keep easy control over your restaurant's operations from anywhere, using any device.
+              MenuMitra makes it easy to keep track of your restaurant! You can view our dashboard as an iOS or Android app, or as a webpage on your computer. Keep easy control over your restaurant's operations from anywhere, using any device.
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ const RestaurantReports = () => {
             <div className="card-body">
               <h6 className="card-title">Head Office Module with Clusters</h6>
               <p className="card-text">
-              Are you feeling overburdened by running several outlets? Monitor sales across all locations on a single screen with Ciferon's Head Office module, which is part of the subscription. Establish zones according to cities, regions, or channels to have the information you require at your fingertips (e.g., Zomato sales for the Western Region). Use Ciferon to streamline supervision!
+              Are you feeling overburdened by running several outlets? Monitor sales across all locations on a single screen with MenuMitra's Head Office module, which is part of the subscription. Establish zones according to cities, regions, or channels to have the information you require at your fingertips (e.g., Zomato sales for the Western Region). Use MenuMitra to streamline supervision!
               </p>
             </div>
           </div>
@@ -193,7 +193,7 @@ const RestaurantReports = () => {
             <div className="card-body">
               <h6 className="card-title">User rights management</h6>
               <p className="card-text">
-              Ciferon allows you to take control! By giving particular roles and rights to the admin panel and the billing app, you can customize what your employees see. You have complete control over your outlet's operations, which are all centralized for your convenience, from changing bills to seeing reports and operating the cash drawer.
+              MenuMitra allows you to take control! By giving particular roles and rights to the admin panel and the billing app, you can customize what your employees see. You have complete control over your outlet's operations, which are all centralized for your convenience, from changing bills to seeing reports and operating the cash drawer.
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@ const RestaurantReports = () => {
             <div className="card-body">
               <h6 className="card-title">Set Automate WhatsApp Report</h6>
               <p className="card-text">
-              Did you miss today's reports? We've got you covered, no worries! You can select which reports to receive in your WhatsApp and when with Ciferon WhatsApp Reports. Easily stay up to date!
+              Did you miss today's reports? We've got you covered, no worries! You can select which reports to receive in your WhatsApp and when with MenuMitra WhatsApp Reports. Easily stay up to date!
               </p>
             </div>
           </div>
@@ -221,7 +221,7 @@ const RestaurantReports = () => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-50">
-          Ciferon is more than just
+          MenuMitra is more than just
           a reporting software
           </h2>
         </div>
@@ -253,13 +253,13 @@ const RestaurantReports = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Billing & Kot</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
             </div>
 
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Customer Engagement</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
             </div>
            
         </div>

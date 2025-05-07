@@ -76,7 +76,7 @@ const LargeChain = () => {
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/ERP-Integration-1.png" alt="" />
                 
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">ERP Integration</h5>
-                <p style={{ color: '#666' }} className="feature-description">Different accounting software? no worries, take the all files from Ciferon dashboard and upload it on ERP, it's tat simple.</p>
+                <p style={{ color: '#666' }} className="feature-description">Different accounting software? no worries, take the all files from MenuMitra dashboard and upload it on ERP, it's tat simple.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2…4/01/Centralized-Aggregator-Menu-Management-2.png" alt="" />
@@ -85,9 +85,9 @@ const LargeChain = () => {
                 <p style={{ color: '#666' }} className="feature-description">Tak the control of all own & franchise outlets in your hand, add, edit or delete items globally or locally from head office</p>
             </div>
             <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Ciferon-Analytical-Dashboard-2.png" alt="" />
+                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/MenuMitra-Analytical-Dashboard-2.png" alt="" />
                 
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Ciferon Analytical Dashboard​</h5>
+                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">MenuMitra Analytical Dashboard​</h5>
                 <p style={{ color: '#666' }} className="feature-description">Use data visualisations & cross functional reports to customisation it to your specifications, make data-driven decisions to improve brand</p>
             </div>
         </div>

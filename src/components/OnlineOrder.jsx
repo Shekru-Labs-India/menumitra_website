@@ -107,7 +107,7 @@ const OnlineOrder = () => {
     </section>
     <div className="container mt-80">
       <h2 className="text-center mb-50">
-      Discover what Ciferon can do for your online order management
+      Discover what MenuMitra can do for your online order management
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -123,7 +123,7 @@ const OnlineOrder = () => {
               Online Order Integration
               </h6>
               <p className="card-text">
-              Integrate easily with any food aggregator with Ciferon, and manage your order from single dashboard, accept, mark food ready, deliver. as simple it that
+              Integrate easily with any food aggregator with MenuMitra, and manage your order from single dashboard, accept, mark food ready, deliver. as simple it that
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const OnlineOrder = () => {
             <div className="card-body">
               <h6 className="card-title">Menu Updations & Changes</h6>
               <p className="card-text">
-              Manage online menu directly from Ciferon POS, add, update, modify whenever you want! customise menu timing, add images and more
+              Manage online menu directly from MenuMitra POS, add, update, modify whenever you want! customise menu timing, add images and more
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ const OnlineOrder = () => {
             <div className="card-body">
               <h6 className="card-title">Toggle Your Items & Outlet On/Off</h6>
               <p className="card-text">
-              Running out of stock? manage your menu online status from Ciferon POS. Turn item or category on/off as per your availability
+              Running out of stock? manage your menu online status from MenuMitra POS. Turn item or category on/off as per your availability
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ const OnlineOrder = () => {
             <div className="card-body">
               <h6 className="card-title">Customisable Charges & Add-Ons</h6>
               <p className="card-text">
-              Add customised charges such as packaging charge, container charge, discounts or offer from Ciferon admin panel. No more juggling between here or there
+              Add customised charges such as packaging charge, container charge, discounts or offer from MenuMitra admin panel. No more juggling between here or there
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ const OnlineOrder = () => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-50">
-          Ciferon is more than just
+          MenuMitra is more than just
           a online order management software
           </h2>
         </div>
@@ -197,7 +197,7 @@ const OnlineOrder = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Billing & Kot</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
             </div>
 
             <div className="col-md-4 mb-4">
@@ -220,7 +220,7 @@ const OnlineOrder = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Customer Engagement</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
             </div>
            
         </div>

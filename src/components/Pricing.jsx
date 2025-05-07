@@ -244,7 +244,7 @@ const Pricing = () => {
                     "MenuMitra has been the POS solution for our 90+ outlets for
                     over two years. And these numbers are proof of how content
                     we are with their services. Especially for a large chain
-                    like us, Petpooja is the one-point data bridge between all
+                    like us, MenuMitra is the one-point data bridge between all
                     the outlets and the owner. Kudos to the team. Recommending
                     MenuMitra to everyone!"
                   </p>

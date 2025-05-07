@@ -50,7 +50,7 @@ const NewRestaurant = () => {
   <div id="why-us" className="mt-80">
   <div className="container ">
       <h2 className="text-center mb-50">
-      Discover what Ciferon can do for your online order management
+      Discover what MenuMitra can do for your online order management
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -60,7 +60,7 @@ const NewRestaurant = () => {
           <div className="card-body">
 
           <p className="card-text text-center">
-              Ciferon Billing POS
+              MenuMitra Billing POS
               </p>
 
               <h6 className="card-title text-center">

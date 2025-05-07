@@ -96,7 +96,7 @@ const CustomerManagement = () => {
     </section>
     <div className="container mt-80">
       <h2 className="text-center mb-50">
-      Discover what Ciferon can do for your customers
+      Discover what MenuMitra can do for your customers
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -112,7 +112,7 @@ const CustomerManagement = () => {
               Track customer behaviour
               </h6>
               <p className="card-text">
-              The customer wants to place an order, but you are clueless about what they often get. Here Ciferon's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer.
+              The customer wants to place an order, but you are clueless about what they often get. Here MenuMitra's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer.
                Give your biller additional information for a customized experience that will increase client satisfaction.
               </p>
             </div>
@@ -147,7 +147,7 @@ const CustomerManagement = () => {
             <div className="card-body">
               <h6 className="card-title">Regulate customer retention</h6>
               <p className="card-text">
-              Use customized SMS to increase customer interaction directly from the Ciferon Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes.
+              Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ const CustomerManagement = () => {
             <div className="card-body">
               <h6 className="card-title">Customer Feedbacks</h6>
               <p className="card-text">
-              With Ciferon's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links.
+              With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links.
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@ const CustomerManagement = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Billing & Kot</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
             </div>
 
             

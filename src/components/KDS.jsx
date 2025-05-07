@@ -34,7 +34,7 @@ const KDS = () => {
             <p className="mb-30">
               Allow your chef to focus on flavour rather than chasing orders.
               Keep your kitchen running smoothly. Automate the entire
-              ticket-keeping process with Ciferon's KDS. This will help you
+              ticket-keeping process with MenuMitra's KDS. This will help you
               serve customers quickly.​
             </p>
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
@@ -61,7 +61,7 @@ const KDS = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Display Orders directly on the kitchen screen</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's KDS allows you to display both online and dine-in orders immediately on your kitchen screen, avoiding confusion.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's KDS allows you to display both online and dine-in orders immediately on your kitchen screen, avoiding confusion.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book-open feature-icon"></i>
@@ -71,7 +71,7 @@ const KDS = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Works on Android and Windows</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's KDS works flawlessly on both Android and Windows, allowing you to use whichever platform best suits you and your brand.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's KDS works flawlessly on both Android and Windows, allowing you to use whichever platform best suits you and your brand.</p>
             </div>
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-file-invoice feature-icon"></i>

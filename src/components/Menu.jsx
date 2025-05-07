@@ -110,7 +110,7 @@ const Menu = () => {
     </section>
     <div className="container mt-80">
       <h2 className="text-center mb-50">
-        Discover what Ciferon can do for your menu management
+        Discover what MenuMitra can do for your menu management
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
@@ -126,7 +126,7 @@ const Menu = () => {
                 Item, Category, Variations &amp; Add-Ons
               </h6>
               <p className="card-text">
-                Use Ciferon to your creative advantage! Your menu items can be
+                Use MenuMitra to your creative advantage! Your menu items can be
                 easily arranged and customized with distinct prices for
                 variations and add-ons. For a large pizza, charge extra for
                 those extra toppings. Keep it flavorful and lively!
@@ -146,7 +146,7 @@ const Menu = () => {
               <h6 className="card-title">Aggregator Menu Management</h6>
               <p className="card-text">
                 Are you sick of waiting around for Zomato and Swiggy's menu
-                updates? Here you can use Ciferon to amend your menu, adjust
+                updates? Here you can use MenuMitra to amend your menu, adjust
                 prices, and turn items on and off directly from the POS. Avoid
                 the line and effortlessly maintain your menu current and fresh!
               </p>
@@ -167,7 +167,7 @@ const Menu = () => {
               <h6 className="card-title">Short-Codes For Quick Billing</h6>
               <p className="card-text">
                 Are you still using outdated shortcodes for menu items? Enjoy
-                the comfort of familiarity with Ciferon! Give Pav Bhaji Butter
+                the comfort of familiarity with MenuMitra! Give Pav Bhaji Butter
                 simple codes like PBB to increase software adoption and expedite
                 checkout. Keep things quick and easy!
               </p>
@@ -185,7 +185,7 @@ const Menu = () => {
             <div className="card-body">
               <h6 className="card-title">Multiple Menus</h6>
               <p className="card-text">
-                Customize your products to fit niche markets! Using Ciferon,
+                Customize your products to fit niche markets! Using MenuMitra,
                 manage your menu and prices for online orders differently than
                 in-house eating. Set your prices for services and commissions
                 across all channels to maintain control and increase revenue!​
@@ -209,7 +209,7 @@ const Menu = () => {
                 "Extra spicy, please!" And "No tomatoes, please!" These are
                 regular requests from customers. You can save servers time and
                 advise clients about customization options by creating prepared
-                instructions with Ciferon's special notes.
+                instructions with MenuMitra's special notes.
               </p>
             </div>
           </div>
@@ -227,7 +227,7 @@ const Menu = () => {
               <p className="card-text">
                 No breakfast after 11:00 a.m. or Chef de pastry begins at 4:00
                 p.m. You can manage the availability of particular menu items
-                using Ciferon, whether they are for dine-in or on aggregator
+                using MenuMitra, whether they are for dine-in or on aggregator
                 platforms. Choose the ideal time for a flawless eating
                 experience!​
               </p>
@@ -240,7 +240,7 @@ const Menu = () => {
       <div className="container">
         <div className="text-center">
           <h2 className="section-title mb-50">
-            Ciferon is more than just a menu management software
+            MenuMitra is more than just a menu management software
           </h2>
         </div>
         {/* / text-center */}
@@ -255,7 +255,7 @@ const Menu = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Billing & Kot</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
             </div>
 
             <div className="col-md-4 mb-4">
@@ -272,7 +272,7 @@ const Menu = () => {
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
                 <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Customer Engagement</h5>
-                <p style={{ color: '#666' }} className="feature-description">Ciferon's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
+                <p style={{ color: '#666' }} className="feature-description">MenuMitra's CRM enables you to monitor, handle, and reward loyal customers, ensuring that your brand forms a unique connection with each customer.</p>
             </div>
            
         </div>
