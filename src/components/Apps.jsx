@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import menumitra from "../assets/images/MenuMitra.png";
 
 const Apps = () => {
   useEffect(() => {
@@ -56,21 +57,34 @@ const Apps = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-white border-0 rounded-4 p-4">
                 <div className="d-flex align-items-center mb-3">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
-                    <i className="fa-solid fa-mobile-screen text-white px-2 py-1"></i>
+                  <div className="bg-opacity-10 rounded-circle me-3" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={menumitra} alt="MenuMitra" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
                   <h3 className="h5 mb-0">Captain App</h3>
                 </div>
                 <div className="mb-3">
-                  {/* <h4 className="h2 fw-bold mb-0">2,500+</h4> */}
-                  <p className="text-secondary mb-2">
-                    Take orders, manage tables, and streamline your restaurant operations with our powerful Captain App.
+                  <p className="text-secondary mb-2 ">
+                    Download our Android Captain App to take orders, manage tables, and streamline your restaurant operations on the go.
                   </p>
-                  <p className="text-secondary small mb-0">Active Installations</p>
+                  <div className="d-flex align-items-center gap-2 mb-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Free Download</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Android 6.0 and above</span>
+                  </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
-                 
-                  <Link to="/captainapp" className="btn btn-link text-primary p-0">Download Now</Link>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-success"
+                  >
+                    <i className="fa-brands fa-google-play me-2"></i>
+                    Get it on Play Store
+                  </a>
                 </div>
               </div>
             </div>
