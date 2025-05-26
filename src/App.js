@@ -70,7 +70,7 @@ function App() {
    <>
   
 
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
 
     <Routes>
 
@@ -120,7 +120,7 @@ function App() {
     </Routes>
 
     <WhatsAppFAB />
-    </BrowserRouter>
+    </HashRouter>
     
 
    </>
