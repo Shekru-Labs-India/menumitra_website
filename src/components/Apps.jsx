@@ -89,21 +89,37 @@ const Apps = () => {
               </div>
             </div>
             
-            {/* <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-3">
               <div className="card bg-white border-0 rounded-4 p-4">
                 <div className="d-flex align-items-center mb-3">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
-                    <i className="fa-solid fa-person text-primary"></i>
+                  <div className="bg-opacity-10 rounded-circle me-3" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={menumitra} alt="Waiter App" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
                   <h3 className="h5 mb-0">Waiter App</h3>
                 </div>
                 <div className="mb-3">
-                  <h4 className="h2 fw-bold mb-0">12,849</h4>
-                  <p className="text-secondary small mb-0">Active Users</p>
+                  <p className="text-secondary mb-2">
+                    Streamline your restaurant service with our Waiter App. Take orders, manage tables, and enhance customer experience efficiently.
+                  </p>
+                  <div className="d-flex align-items-center gap-2 mb-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Free Download</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Android 6.0 and above</span>
+                  </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
-                  <span className="badge bg-success-subtle text-success px-3 py-2">+9.2%</span>
-                  <Link to="/waiterapp" className="btn btn-link text-primary p-0">Learn More →</Link>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.waiterapp" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-success"
+                  >
+                    <i className="fa-brands fa-google-play me-2"></i>
+                    Get it on Play Store
+                  </a>
                 </div>
               </div>
             </div>
@@ -111,18 +127,34 @@ const Apps = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-white border-0 rounded-4 p-4">
                 <div className="d-flex align-items-center mb-3">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
-                    <i className="fa-solid fa-desktop text-primary"></i>
+                  <div className="bg-opacity-10 rounded-circle me-3" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={menumitra} alt="Kitchen Display" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
                   <h3 className="h5 mb-0">Kitchen Display</h3>
                 </div>
                 <div className="mb-3">
-                  <h4 className="h2 fw-bold mb-0">1,483</h4>
-                  <p className="text-secondary small mb-0">Daily Orders</p>
+                  <p className="text-secondary mb-2">
+                    Optimize your kitchen operations with our Kitchen Display System. Manage orders, track preparation time, and improve efficiency.
+                  </p>
+                  <div className="d-flex align-items-center gap-2 mb-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Free Download</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Android 6.0 and above</span>
+                  </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
-                  <span className="badge bg-success-subtle text-success px-3 py-2">+11.9%</span>
-                  <Link to="/kds" className="btn btn-link text-primary p-0">Learn More →</Link>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.kds" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-success"
+                  >
+                    <i className="fa-brands fa-google-play me-2"></i>
+                    Get it on Play Store
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,21 +162,37 @@ const Apps = () => {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-white border-0 rounded-4 p-4">
                 <div className="d-flex align-items-center mb-3">
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
-                    <i className="fa-solid fa-tv text-primary"></i>
+                  <div className="bg-opacity-10 rounded-circle me-3" style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={menumitra} alt="Customer Display" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                   </div>
                   <h3 className="h5 mb-0">Customer Display</h3>
                 </div>
                 <div className="mb-3">
-                  <h4 className="h2 fw-bold mb-0">84.5%</h4>
-                  <p className="text-secondary small mb-0">Customer Satisfaction</p>
+                  <p className="text-secondary mb-2">
+                    Enhance customer experience with our Customer Display System. Show order status, estimated time, and improve transparency.
+                  </p>
+                  <div className="d-flex align-items-center gap-2 mb-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Free Download</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <i className="fa-solid fa-circle-check text-success"></i>
+                    <span className="small">Android 6.0 and above</span>
+                  </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
-                  <span className="badge bg-success-subtle text-success px-3 py-2">+5.7%</span>
-                  <Link to="/cds" className="btn btn-link text-primary p-0">Learn More →</Link>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.cds" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-success"
+                  >
+                    <i className="fa-brands fa-google-play me-2"></i>
+                    Get it on Play Store
+                  </a>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
