@@ -20,6 +20,7 @@ import Billing from "./components/Billing";
 import Inventory from "./components/Inventory";
 import Menu from "./components/Menu";
 import CustomerFeedback from "./components/CustomerFeedback";
+import Apps from "./components/Apps";
 
 import OnlineOrder from "./components/OnlineOrder";
 import RestaurantReports from "./components/RestaurantReports";
@@ -78,6 +79,7 @@ function App() {
     <Route path="/captainapp" element={<CaptainApp />} />
     <Route path="/kds" element={<KDS />} />
     <Route path="/cds" element={<CDS />} />
+    <Route path="/apps" element={<Apps />} />
 
     <Route path="/scan" element={<ScanAndOrder />} />
     <Route path="/billing" element={<Billing />} />
