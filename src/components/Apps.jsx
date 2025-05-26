@@ -63,6 +63,9 @@ const Apps = () => {
                 </div>
                 <div className="mb-3">
                   {/* <h4 className="h2 fw-bold mb-0">2,500+</h4> */}
+                  <p className="text-secondary mb-2">
+                    Take orders, manage tables, and streamline your restaurant operations with our powerful Captain App.
+                  </p>
                   <p className="text-secondary small mb-0">Active Installations</p>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
