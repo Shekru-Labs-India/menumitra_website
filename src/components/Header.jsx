@@ -33,22 +33,27 @@ const Header = () => {
           </button>
 
           {/* Navigation Items */}
-          <div className="collapse navbar-collapse justify-content-between" id="navbar-toggle-nav-center">
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+          <div className="collapse navbar-collapse" id="navbar-toggle-nav-center">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li className="nav-item mx-lg-2">
                 <Link className={`nav-link ${isActive("/") ? "active text-primary" : ""}`} to="/">
                   Home
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item mx-lg-2">
                 <Link className={`nav-link ${isActive("/pricing") ? "active text-primary" : ""}`} to="/pricing">
                   Pricing
                 </Link>
               </li>
+              <li className="nav-item mx-lg-2">
+                <Link className={`nav-link ${isActive("/pricing") ? "active text-primary" : ""}`} to="/pricing">
+                  Apps
+                </Link>
+              </li>
 
               {/* Features Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-lg-2">
                 <Link
                   className="nav-link d-flex align-items-center gap-1"
                   to="#"
@@ -79,7 +84,7 @@ const Header = () => {
               </li>
 
               {/* Add-Ons Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-lg-2">
                 <Link
                   className="nav-link d-flex align-items-center gap-1"
                   to="#"
@@ -101,14 +106,10 @@ const Header = () => {
                 </ul>
               </li>
 
-              <li className="nav-item">
-                <Link className={`nav-link ${isActive("/devices") ? "active text-primary" : ""}`} to="/devices">
-                  Devices
-                </Link>
-              </li>
+              
 
               {/* Outlet Type Dropdown */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-lg-2">
                 <Link
                   className="nav-link d-flex align-items-center gap-1"
                   to="#"
@@ -139,10 +140,15 @@ const Header = () => {
                     <i className="fa-solid fa-building me-2"></i>Large Chain</Link></li>
                 </ul>
               </li>
+              <li className="nav-item mx-lg-2">
+                <Link className={`nav-link ${isActive("/devices") ? "active text-primary" : ""}`} to="/devices">
+                  Devices
+                </Link>
+              </li>
             </ul>
 
             {/* Book Demo Button */}
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center ms-lg-3">
               <Link className="btn btn-outline-primary px-4 py-2" to="/book_demo">
                 Book A Demo
               </Link>
