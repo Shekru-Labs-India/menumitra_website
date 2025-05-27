@@ -84,7 +84,7 @@ const Apps = () => {
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
-                    Download APK
+                    Download for Android
                   </a>
                 </div>
               </div>
@@ -116,7 +116,7 @@ const Apps = () => {
                     href="https://menumitra.com/downloads/pos-system.exe" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="btn btn-primary"
+                    className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
                     Download for Windows
@@ -154,7 +154,7 @@ const Apps = () => {
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
-                    Download APK
+                    Download for Android
                   </a>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const Apps = () => {
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
-                    Download APK
+                    Download for Android
                   </a>
                 </div>
               </div>
@@ -224,7 +224,7 @@ const Apps = () => {
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
-                    Download APK
+                    Download for Android
                   </a>
                 </div>
               </div>
