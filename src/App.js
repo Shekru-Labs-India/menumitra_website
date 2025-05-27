@@ -2,7 +2,11 @@ import Home from "./components/Home";
 
 import { HashRouter,Routes,Route, BrowserRouter, Navigate } from 'react-router-dom';
 
+// Import Bootstrap CSS first
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import './assets/css/bootstrap.min.css'
+
+// Then import custom styles
 import './assets/css/style.css'
 
 // import './assets/css/animate.min.css'
