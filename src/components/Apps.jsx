@@ -14,7 +14,7 @@ const Apps = () => {
     <>
       <Header />
       <div className="mt-100">
-        <section className="py-5 py-xl-8">
+        <section className="py-5 py-xl-8 d-none d-lg-block">
           <div className="container">
             <div className="row align-items-center gy-5">
               <div className="col-12 col-lg-5">
