@@ -18,7 +18,7 @@ const Apps = () => {
           <div className="container">
             <div className="row align-items-center gy-5">
               <div className="col-12 col-lg-5">
-                <div className="video-container position-relative rounded-4 shadow-lg overflow-hidden mb-4 mb-lg-0">
+                <div className="video-container mb-4 mb-lg-0">
                   <div className="ratio ratio-16x9">
                     <iframe
                       src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
@@ -26,7 +26,7 @@ const Apps = () => {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
-                      className="position-absolute top-0 start-0 w-100 h-100 border-0"
+                      className="rounded-3 shadow-lg border-0"
                     ></iframe>
                   </div>
                 </div>
@@ -35,7 +35,7 @@ const Apps = () => {
                 <h2 className="display-5 fw-bold mb-4">
                   India's Best Contactless Restaurant Management Software
                 </h2>
-                <p className="lead text-secondary mb-4">
+                <p className="lead text-dark mb-4">
                   Billing &amp; KOT, manage inventory &amp; central kitchen,
                   handle online orders, menu management, tables, captain app,
                   collect customer data, discount &amp; offers, accounts,
@@ -50,7 +50,7 @@ const Apps = () => {
           <div className="container">
             <div className="text-center mb-5">
               <h2 className="display-5 fw-bold mb-3">Our Restaurant Management Apps</h2>
-              <p className="text-secondary fs-5">Complete ecosystem for your restaurant operations</p>
+              <p className="text-dark fs-5">Complete ecosystem for your restaurant operations</p>
             </div>
             
             <div className="apps-grid">

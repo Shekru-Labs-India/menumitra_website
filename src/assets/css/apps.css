@@ -2,6 +2,36 @@
   padding: 2rem;
 }
 
+/* Video Container Styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--bs-light);
+}
+
+.video-container .ratio {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .video-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .video-container iframe {
+    border-radius: 0.5rem;
+  }
+}
+
 .app-card {
   height: 100%;
   transition: transform 0.2s ease-in-out;
