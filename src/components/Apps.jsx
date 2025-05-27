@@ -71,10 +71,7 @@ const Apps = () => {
                     Take control of your restaurant business with our Owner App. Monitor sales, manage inventory, and track performance in real-time.
                   </p>
                   <ul className="list-unstyled mb-4">
-                    <li className="mb-2">
-                      <i className="fa-solid fa-circle-check text-success me-2"></i>
-                      <span className="small">Free Download</span>
-                    </li>
+                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
@@ -86,8 +83,8 @@ const Apps = () => {
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
-                    <i className="fa-brands fa-google-play me-2"></i>
-                    Get it on Play Store
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download APK
                   </a>
                 </div>
               </div>
@@ -109,10 +106,7 @@ const Apps = () => {
                     Streamline your billing and order management with our powerful POS system. Easy to use, feature-rich desktop application.
                   </p>
                   <ul className="list-unstyled mb-4">
-                    <li className="mb-2">
-                      <i className="fa-solid fa-circle-check text-success me-2"></i>
-                      <span className="small">Free Download</span>
-                    </li>
+                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Windows 7 and above</span>
@@ -147,10 +141,7 @@ const Apps = () => {
                     Download our Android Captain App to take orders, manage tables, and streamline your restaurant operations on the go.
                   </p>
                   <ul className="list-unstyled mb-4">
-                    <li className="mb-2">
-                      <i className="fa-solid fa-circle-check text-success me-2"></i>
-                      <span className="small">Free Download</span>
-                    </li>
+                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
@@ -162,8 +153,8 @@ const Apps = () => {
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
-                    <i className="fa-brands fa-google-play me-2"></i>
-                    Get it on Play Store
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download APK
                   </a>
                 </div>
               </div>
@@ -185,10 +176,7 @@ const Apps = () => {
                     Streamline your restaurant service with our Waiter App. Take orders, manage tables, and enhance customer experience efficiently.
                   </p>
                   <ul className="list-unstyled mb-4">
-                    <li className="mb-2">
-                      <i className="fa-solid fa-circle-check text-success me-2"></i>
-                      <span className="small">Free Download</span>
-                    </li>
+                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
@@ -200,11 +188,47 @@ const Apps = () => {
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
-                    <i className="fa-brands fa-google-play me-2"></i>
-                    Get it on Play Store
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download APK
                   </a>
                 </div>
               </div>
+
+            {/* Waiter App */}
+            <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      
+                        <img src={menumitra} alt="Waiter App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                     
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <h3 className="card-title h5 mb-0">Partner App</h3>
+                    </div>
+                  </div>
+                  <p className="card-text">
+                    Empower your restaurant partners with our Partner App. Manage orders, track deliveries, and streamline operations for enhanced efficiency and growth.
+                  </p>
+                  <ul className="list-unstyled mb-4">
+                   
+                    <li>
+                      <i className="fa-solid fa-circle-check text-success me-2"></i>
+                      <span className="small">Android 6.0 and above</span>
+                    </li>
+                  </ul>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-success"
+                  >
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download APK
+                  </a>
+                </div>
+              </div>
+              
             </div>
           </div>
         </section>
