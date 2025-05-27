@@ -59,9 +59,9 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-primary bg-opacity-10 rounded-circle p-3" style={{ width: '64px', height: '64px' }}>
-                        <img src={menumitra} alt="Owner App" className="img-fluid" />
-                      </div>
+                      
+                        <img src={menumitra} alt="Owner App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                      
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h3 className="card-title h5 mb-0">Owner App</h3>
@@ -97,9 +97,9 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-primary bg-opacity-10 rounded-circle p-3" style={{ width: '64px', height: '64px' }}>
-                        <img src={menumitra} alt="POS System" className="img-fluid" />
-                      </div>
+                     
+                        <img src={menumitra} alt="POS System" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                      
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h3 className="card-title h5 mb-0">POS System</h3>
@@ -135,9 +135,9 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-primary bg-opacity-10 rounded-circle p-3" style={{ width: '64px', height: '64px' }}>
-                        <img src={menumitra} alt="Captain App" className="img-fluid" />
-                      </div>
+                   
+                        <img src={menumitra} alt="Captain App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                     
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h3 className="card-title h5 mb-0">Captain App</h3>
@@ -173,9 +173,9 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-primary bg-opacity-10 rounded-circle p-3" style={{ width: '64px', height: '64px' }}>
-                        <img src={menumitra} alt="Waiter App" className="img-fluid" />
-                      </div>
+                      
+                        <img src={menumitra} alt="Waiter App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                     
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h3 className="card-title h5 mb-0">Waiter App</h3>
