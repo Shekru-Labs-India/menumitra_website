@@ -67,9 +67,7 @@ const Apps = () => {
                       <h3 className="card-title h5 mb-0">Owner App</h3>
                     </div>
                   </div>
-                  <p className="card-text">
-                    Take control of your restaurant business with our Owner App. Monitor sales, manage inventory, and track performance in real-time.
-                  </p>
+                 
                   <ul className="list-unstyled mb-4">
                     
                     <li>
@@ -102,9 +100,7 @@ const Apps = () => {
                       <h3 className="card-title h5 mb-0">POS System</h3>
                     </div>
                   </div>
-                  <p className="card-text">
-                    Streamline your billing and order management with our powerful POS system. Easy to use, feature-rich desktop application.
-                  </p>
+                  
                   <ul className="list-unstyled mb-4">
                     
                     <li>
@@ -137,9 +133,7 @@ const Apps = () => {
                       <h3 className="card-title h5 mb-0">Captain App</h3>
                     </div>
                   </div>
-                  <p className="card-text">
-                    Download our Android Captain App to take orders, manage tables, and streamline your restaurant operations on the go.
-                  </p>
+                  
                   <ul className="list-unstyled mb-4">
                     
                     <li>
@@ -172,9 +166,7 @@ const Apps = () => {
                       <h3 className="card-title h5 mb-0">Waiter App</h3>
                     </div>
                   </div>
-                  <p className="card-text">
-                    Streamline your restaurant service with our Waiter App. Take orders, manage tables, and enhance customer experience efficiently.
-                  </p>
+                 
                   <ul className="list-unstyled mb-4">
                     
                     <li>
@@ -207,9 +199,7 @@ const Apps = () => {
                       <h3 className="card-title h5 mb-0">Partner App</h3>
                     </div>
                   </div>
-                  <p className="card-text">
-                    Empower your restaurant partners with our Partner App. Manage orders, track deliveries, and streamline operations for enhanced efficiency and growth.
-                  </p>
+                 
                   <ul className="list-unstyled mb-4">
                    
                     <li>
