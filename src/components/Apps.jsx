@@ -78,7 +78,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    href="https://menusmitra.xyz/website/owner_app.apk" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-success"
@@ -113,7 +113,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menumitra.com/downloads/pos-system.exe" 
+                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-success"
@@ -148,7 +148,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    href="https://menusmitra.xyz/website/captain_app.apk" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-success"
@@ -183,7 +183,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    href="https://menusmitra.xyz/website/waiter_app.apk" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-success"
@@ -194,8 +194,8 @@ const Apps = () => {
                 </div>
               </div>
 
-            {/* Waiter App */}
-            <div className="app-card">
+              {/* Partner App */}
+              <div className="app-card">
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
@@ -218,7 +218,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://play.google.com/store/apps/details?id=com.shekrulabs.menumitra" 
+                    href="https://menusmitra.xyz/website/partner_app.apk" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-success"
