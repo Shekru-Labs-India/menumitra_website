@@ -104,7 +104,14 @@ const Apps = () => {
                       
                     </div>
                     <div className="flex-grow-1 ms-3">
-                      <h3 className="card-title h5 mb-0">POS System</h3>
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">POS System</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v1.3</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
@@ -137,7 +144,14 @@ const Apps = () => {
                      
                     </div>
                     <div className="flex-grow-1 ms-3">
-                      <h3 className="card-title h5 mb-0">Captain App</h3>
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Captain App</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v1.3</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
@@ -170,7 +184,14 @@ const Apps = () => {
                      
                     </div>
                     <div className="flex-grow-1 ms-3">
-                      <h3 className="card-title h5 mb-0">Waiter App</h3>
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Waiter App</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v1.3</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                  
@@ -203,7 +224,14 @@ const Apps = () => {
                      
                     </div>
                     <div className="flex-grow-1 ms-3">
-                      <h3 className="card-title h5 mb-0">Partner App</h3>
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Partner App</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v1.3</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                  
