@@ -40,6 +40,11 @@ const Footer = () => {
 
                   {/* Social Icons */}
                   <ul className="social-icon d-flex align-items-center m-0 gap-2">
+                  <li>
+                      <Link to="https://www.google.com/search?q=MenuMitra" target="_blank" rel="noreferrer">
+                        <i className="fa-brands fa-google fs-3 border rounded-circle p-2 mx-3" style={{ color: "#4285F4", borderColor: "#4285F4" }}></i>
+                      </Link>
+                    </li>
                     <li>
                       <Link to="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-facebook fs-3 border rounded-circle p-2 mx-3" style={{ color: "#1877F2", borderColor: "#1877F2" }}></i>
@@ -57,6 +62,7 @@ const Footer = () => {
                         <i className="fa-brands fa-instagram fs-3 border rounded-circle p-2 mx-3" style={{ color: "#E4405F", borderColor: "#E4405F" }}></i>
                       </Link>
                     </li>
+                    
                   </ul>
 
                   {/* Book Demo Button */}
