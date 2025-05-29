@@ -83,8 +83,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/owner_app.apk" 
-                    target="_blank" 
+                    href="https://menusmitra.xyz/website/owner_app.apk"  
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
@@ -123,8 +122,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe" 
-                    target="_blank" 
+                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe"  
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
@@ -163,8 +161,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/captain_app.apk" 
-                    target="_blank" 
+                    href="https://menusmitra.xyz/website/captain_app.apk"  
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
@@ -203,8 +200,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/waiter_app.apk" 
-                    target="_blank" 
+                    href="https://menusmitra.xyz/website/waiter_app.apk"  
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
@@ -243,8 +239,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/partner_app.apk" 
-                    target="_blank" 
+                    href="https://menusmitra.xyz/website/partner_app.apk"  
                     rel="noopener noreferrer" 
                     className="btn btn-success"
                   >
