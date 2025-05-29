@@ -30,12 +30,12 @@ const Footer = () => {
 
                   <div className="d-flex align-items-center">
                     <i className="fas fa-mobile-alt me-2" />
-                    <span>09172530151</span>
+                    <span><a href="tel:09172530151">09172530151</a></span>
                   </div>
 
                   <div className="d-flex align-items-center">
                     <i className="fa fa-envelope me-2" />
-                    <span>info@menumitra.com</span>
+                    <span><a href="mailto:info@menumitra.com">info@menumitra.com</a></span>
                   </div>
 
                   {/* Social Icons */}
@@ -45,21 +45,13 @@ const Footer = () => {
                         <i className="fa-brands fa-facebook fs-3 border rounded-circle p-2 mx-3" style={{ color: "#1877F2", borderColor: "#1877F2" }}></i>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="https://www.linkedin.com/company/102429337/admin/dashboard/" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-linkedin fs-3 border rounded-circle p-2 mx-3" style={{ color: "#0A66C2", borderColor: "#0A66C2" }}></i>
-                      </Link>
-                    </li>
+                 
                     <li>
                       <Link to="https://www.youtube.com/@menumitra" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-youtube fs-3 border rounded-circle p-2 mx-3" style={{ color: "#FF0000", borderColor: "#FF0000" }}></i>
                       </Link>
                     </li>
-                    <li>
-                      <Link to="https://t.me/MenuMitra" target="_blank" rel="noreferrer">
-                        <i className="fa-brands fa-telegram fs-3 border rounded-circle p-2 mx-3" style={{ color: "#26A5E4", borderColor: "#26A5E4" }}></i>
-                      </Link>
-                    </li>
+                   
                     <li>
                       <Link to="https://www.instagram.com/menumitra/" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-instagram fs-3 border rounded-circle p-2 mx-3" style={{ color: "#E4405F", borderColor: "#E4405F" }}></i>
