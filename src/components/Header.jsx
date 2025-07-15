@@ -111,13 +111,14 @@ const Header = () => {
               {/* Outlet Type Dropdown */}
               <li className="nav-item dropdown mx-lg-2">
                 <Link
-                  className="nav-link d-flex align-items-center gap-1"
+                  className="nav-link d-flex justify-content-between align-items-center"
                   to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Outlet Type <i className="bi bi-chevron-down fs-7 dropdown-toggle-icon"></i>
+                  <span className="text-nowrap">Outlet Type</span> 
+                  <i className="bi bi-chevron-down fs-7 dropdown-toggle-icon ms-1"></i>
                 </Link>
                 <ul className="dropdown-menu shadow-sm border-0">
                   <li><Link className={`dropdown-item ${isActive("/newrestaurant") ? "active" : ""}`} to="/newrestaurant">
@@ -223,6 +224,21 @@ const Header = () => {
 
             .nav-link::after {
               display: none !important;
+            }
+
+            /* Add these new styles */
+            .nav-link {
+              white-space: nowrap;
+              padding: 0.5rem 0;
+              width: 100%;
+            }
+
+            .navbar .nav-item.dropdown {
+              width: 100%;
+            }
+
+            .dropdown-toggle-icon {
+              margin-left: auto;
             }
           }
         `}
