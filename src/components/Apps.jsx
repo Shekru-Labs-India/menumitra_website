@@ -250,6 +250,92 @@ const Apps = () => {
               </div>
               
             </div>
+
+            <hr />
+            
+            <div className="apps-grid">
+              {/* Owner App */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      
+                        <img src={menumitra} alt="Owner App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                      
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Owner App</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <ul className="list-unstyled mb-4">
+                    
+                    <li>
+                      <i className="fa-solid fa-circle-check text-success me-2"></i>
+                      <span className="small">Android 6.0 and above</span>
+                    </li>
+                  </ul>
+                  <a 
+                    href="https://menusmitra.xyz/website/owner_app.apk"  
+                    rel="noopener noreferrer" 
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download for Android
+                  </a>
+                </div>
+              </div>
+
+              {/* POS System */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                     
+                        <img src={menumitra} alt="POS System" className="img-fluid" style={{ width: '40px', height: '40px' }} />
+                      
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">POS System</h3>
+                        </div>
+                        <div className="col-auto">
+                          <span className="">v2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <ul className="list-unstyled mb-4">
+                    
+                    <li>
+                      <i className="fa-solid fa-circle-check text-success me-2"></i>
+                      <span className="small">Windows 7 and above</span>
+                    </li>
+                  </ul>
+                  <a 
+                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe"  
+                    rel="noopener noreferrer" 
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-download me-2"></i>
+                    Download for Windows
+                  </a>
+                </div>
+              </div>
+
+             
+              
+            </div>
+
           </div>
         </section>
       </div>
