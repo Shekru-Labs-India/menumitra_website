@@ -252,7 +252,9 @@ const Apps = () => {
             </div>
 
             <hr />
-            
+
+
+            {/* v2 Apps */}
             <div className="apps-grid">
               {/* Owner App */}
               <div className="app-card">
@@ -283,7 +285,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/owner_app.apk"  
+                    href="https://menusmitra.xyz/website/owner_app_v2.apk"  
                     rel="noopener noreferrer" 
                     className="btn btn-info"
                   >
@@ -322,7 +324,7 @@ const Apps = () => {
                     </li>
                   </ul>
                   <a 
-                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe"  
+                    href="https://menusmitra.xyz/website/menumitra_pos_system_v2.exe"  
                     rel="noopener noreferrer" 
                     className="btn btn-info"
                   >
