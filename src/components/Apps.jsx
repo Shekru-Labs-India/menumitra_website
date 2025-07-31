@@ -53,6 +53,11 @@ const Apps = () => {
               <p className="text-dark fs-5">Complete ecosystem for your restaurant operations</p>
             </div>
             
+            {/* Version 1.3 Apps */}
+            <div className="text-center mb-4">
+              <h3 className="h4 fw-bold text-primary">Version 1.3</h3>
+            </div>
+            
             <div className="apps-grid">
               {/* Owner App */}
               <div className="app-card">
@@ -253,6 +258,10 @@ const Apps = () => {
 
             <hr />
 
+            {/* Version 2.0 Apps */}
+            <div className="text-center mb-4">
+              <h3 className="h4 fw-bold text-info">Version 2.0</h3>
+            </div>
 
             {/* v2 Apps */}
             <div className="apps-grid">
