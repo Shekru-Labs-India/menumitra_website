@@ -287,10 +287,13 @@ const Apps = () => {
                   </div>
                  
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-calendar text-info me-2"></i>
+                      <span className="small">Released: 28 July 2025</span>
                     </li>
                   </ul>
                   <a 
@@ -326,10 +329,13 @@ const Apps = () => {
                   </div>
                   
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Windows 7 and above</span>
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-calendar text-info me-2"></i>
+                      <span className="small">Released: 31 July 2025</span>
                     </li>
                   </ul>
                   <a 
