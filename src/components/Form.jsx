@@ -338,9 +338,9 @@ const BookingForm = ({
         <div className="row h-center">
           <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block">
             <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/leads.png"
+              src={require("../assets/images/scheduale-form_md.jpg")}
               className="img-fluid w-75 h-auto"
-          alt="Booking illustration"
+              alt="Booking illustration"
             />
           </div>
           <div className="col-lg-6">
