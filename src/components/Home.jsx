@@ -26,6 +26,20 @@ import brand4 from "../assets/images/mm_brand/04.png";
 import brand5 from "../assets/images/mm_brand/05.png";
 import brand6 from "../assets/images/mm_brand/06.png";
 
+// integration logos
+import zomatoLogo from "../assets/images/integrations/zomato.png";
+import swiggyLogo from "../assets/images/integrations/swiggy.png";
+import thriveLogo from "../assets/images/integrations/thrive.png";
+import ondcLogo from "../assets/images/integrations/ondc.png";
+import dunzoLogo from "../assets/images/integrations/dunzo.png";
+import upiLogo from "../assets/images/integrations/upi.png";
+import phonepeLogo from "../assets/images/integrations/phonepe.png";
+import paytmLogo from "../assets/images/integrations/paytm.png";
+import pinelabsLogo from "../assets/images/integrations/pinelabs.png";
+import razorpayLogo from "../assets/images/integrations/razorpay.png";
+import shadowfaxLogo from "../assets/images/integrations/shadowfax.png";
+import porterLogo from "../assets/images/integrations/porter.png";
+
 
 
 
@@ -476,7 +490,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/zomato-3.png"
+                      src={zomatoLogo}
                       className="img-fluid rounded-4"
                       alt="Zomato"
                     />
@@ -485,7 +499,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/swiggy-2.png"
+                      src={swiggyLogo}
                       className="img-fluid rounded-4"
                       alt="Swiggy"
                     />
@@ -494,7 +508,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/thrive-2.png"
+                      src={thriveLogo}
                       className="img-fluid rounded-4"
                       alt="Thrive"
                     />
@@ -503,7 +517,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/ondc-2.png"
+                      src={ondcLogo}
                       className="img-fluid rounded-4"
                       alt="ONDC"
                     />
@@ -512,7 +526,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Dunzo-2.png"
+                      src={dunzoLogo}
                       className="img-fluid rounded-4"
                       alt="Dunzo"
                     />
@@ -521,7 +535,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/upi-2.png"
+                      src={upiLogo}
                       className="img-fluid rounded-4"
                       alt="UPI"
                     />
@@ -530,7 +544,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Phonepe-1.png"
+                      src={phonepeLogo}
                       className="img-fluid rounded-4"
                       alt="PhonePe"
                     />
@@ -539,7 +553,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Paytm-2.png"
+                      src={paytmLogo}
                       className="img-fluid rounded-4"
                       alt="Paytm"
                     />
@@ -548,7 +562,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Pine-labs-1.png"
+                      src={pinelabsLogo}
                       className="img-fluid rounded-4"
                       alt="Pine Labs"
                     />
@@ -557,7 +571,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/razorpay-1.png"
+                      src={razorpayLogo}
                       className="img-fluid rounded-4"
                       alt="Razorpay"
                     />
@@ -566,7 +580,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/shadowfax-2.png"
+                      src={shadowfaxLogo}
                       className="img-fluid rounded-4"
                       alt="Shadowfax"
                     />
@@ -575,7 +589,7 @@ const Home = () => {
                 <div className="col">
                   <div className="integrate-logo p-2">
                     <img
-                      src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/porter-2.png"
+                      src={porterLogo}
                       className="img-fluid rounded-4"
                       alt="Porter"
                     />
