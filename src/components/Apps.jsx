@@ -374,43 +374,53 @@ const Apps = () => {
               <h3 className="h4 fw-bold text-info">Apps - Production and Testing</h3>
             </div>
             <div className="row">
-              <div className="col-12 col-md-6 mb-4 mb-md-0">
+              <div className="col-12 col-md-6 mb-4 mb-md-0 text-center">
                 <h4 className="fw-bold mb-3">Production</h4>
                 <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <a href="https://stats-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Stats</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Stats</div>
+                    <a className="small text-primary" href="https://stats-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://stats-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://admin-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Admin</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Admin</div>
+                    <a className="small text-primary" href="https://admin-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://admin-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://kds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra KDS</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra KDS</div>
+                    <a className="small text-primary" href="https://kds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://kds-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://cds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra CDS</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra CDS</div>
+                    <a className="small text-primary" href="https://cds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://cds-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://customer-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Customer</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Customer</div>
+                    <a className="small text-primary" href="https://customer-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://customer-v2.menumitra.com</a>
                   </li>
                 </ul>
               </div>
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-6 text-center">
                 <h4 className="fw-bold mb-3">Testing</h4>
                 <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <a href="https://test-menumitra-stats-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Stats (Test)</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Stats (Test)</div>
+                    <a className="small text-primary" href="https://test-menumitra-stats-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-stats-v2.netlify.app</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://test-menumitra-admin-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Admin (Test)</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Admin (Test)</div>
+                    <a className="small text-primary" href="https://test-menumitra-admin-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-admin-v2.netlify.app</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://test-menumitra-kds-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra KDS (Test)</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra KDS (Test)</div>
+                    <a className="small text-primary" href="https://test-menumitra-kds-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-kds-v2.netlify.app</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://test-menumitra-cds-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra CDS (Test)</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra CDS (Test)</div>
+                    <a className="small text-primary" href="https://test-menumitra-cds-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-cds-v2.netlify.app</a>
                   </li>
-                  <li className="mb-2">
-                    <a href="https://test-menumitra-customer-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Customer (Test)</a>
+                  <li className="mb-3">
+                    <div className="fw-medium">Menumitra Customer (Test)</div>
+                    <a className="small text-primary" href="https://test-menumitra-customer-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-customer-v2.netlify.app</a>
                   </li>
                 </ul>
               </div>
