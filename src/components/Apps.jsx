@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Header from './Header';
-import Footer from './Footer';
+import Header from "./Header";
+import Footer from "./Footer";
 import Form from "./Form";
 import menumitra from "../assets/images/MenuMitra.png";
-import '../assets/css/apps.css';
+import "../assets/css/apps.css";
 
 const Apps = () => {
   useEffect(() => {
@@ -49,24 +49,31 @@ const Apps = () => {
         <section className="py-5 py-xl-8 bg-light">
           <div className="container">
             <div className="text-center mb-5">
-              <h2 className="display-5 fw-bold mb-3">Our Restaurant Management Apps</h2>
-              <p className="text-dark fs-5">Complete ecosystem for your restaurant operations</p>
+              <h2 className="display-5 fw-bold mb-3">
+                Our Restaurant Management Apps
+              </h2>
+              <p className="text-dark fs-5">
+                Complete ecosystem for your restaurant operations
+              </p>
             </div>
-            
+
             {/* Version 1.3 Apps */}
             <div className="text-center mb-4">
               <h3 className="h4 fw-bold text-primary">Version 1.3</h3>
             </div>
-            
+
             <div className="apps-grid">
               {/* Owner App */}
               <div className="app-card">
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      
-                        <img src={menumitra} alt="Owner App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                      
+                      <img
+                        src={menumitra}
+                        alt="Owner App"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -79,17 +86,16 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                 
+
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/owner_app.apk"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/owner_app.apk"
+                    rel="noopener noreferrer"
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -103,9 +109,12 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                     
-                        <img src={menumitra} alt="POS System" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                      
+                      <img
+                        src={menumitra}
+                        alt="POS System"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -118,17 +127,16 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Windows 7 and above</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/menumitra_pos_system.exe"
+                    rel="noopener noreferrer"
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -142,9 +150,12 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                   
-                        <img src={menumitra} alt="Captain App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                     
+                      <img
+                        src={menumitra}
+                        alt="Captain App"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -157,17 +168,16 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/captain_app.apk"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/captain_app.apk"
+                    rel="noopener noreferrer"
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -181,9 +191,12 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      
-                        <img src={menumitra} alt="Waiter App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                     
+                      <img
+                        src={menumitra}
+                        alt="Waiter App"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -196,17 +209,16 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                 
+
                   <ul className="list-unstyled mb-4">
-                    
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/waiter_app.apk"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/waiter_app.apk"
+                    rel="noopener noreferrer"
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -220,9 +232,12 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      
-                        <img src={menumitra} alt="Waiter App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                     
+                      <img
+                        src={menumitra}
+                        alt="Waiter App"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -235,17 +250,16 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                 
+
                   <ul className="list-unstyled mb-4">
-                   
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
                       <span className="small">Android 6.0 and above</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/partner_app.apk"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/partner_app.apk"
+                    rel="noopener noreferrer"
                     className="btn btn-success"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -253,7 +267,6 @@ const Apps = () => {
                   </a>
                 </div>
               </div>
-              
             </div>
 
             <hr />
@@ -262,17 +275,19 @@ const Apps = () => {
             <div className="text-center mb-4">
               <h3 className="h4 fw-bold text-info">Version 2.0</h3>
             </div>
-
-            {/* v2 Apps */}
-            <div className="apps-grid">
+{/* v2 Apps */}
+<div className="apps-grid">
               {/* Owner App */}
               <div className="app-card">
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      
-                        <img src={menumitra} alt="Owner App" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                      
+                      <img
+                        src={menumitra}
+                        alt="Owner App"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -285,7 +300,7 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                 
+
                   <ul className="list-unstyled mb-4">
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
@@ -296,9 +311,9 @@ const Apps = () => {
                       <span className="small">Released: 28 July 2025</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/owner_app_v2.apk"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/owner_app_v2.apk"
+                    rel="noopener noreferrer"
                     className="btn btn-info"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -312,9 +327,12 @@ const Apps = () => {
                 <div className="card-body">
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                     
-                        <img src={menumitra} alt="POS System" className="img-fluid" style={{ width: '40px', height: '40px' }} />
-                      
+                      <img
+                        src={menumitra}
+                        alt="POS System"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <div className="row align-items-center">
@@ -327,7 +345,7 @@ const Apps = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <ul className="list-unstyled mb-4">
                     <li>
                       <i className="fa-solid fa-circle-check text-success me-2"></i>
@@ -338,9 +356,9 @@ const Apps = () => {
                       <span className="small">Released: 31 July 2025</span>
                     </li>
                   </ul>
-                  <a 
-                    href="https://menusmitra.xyz/website/menumitra_pos_system_v2.exe"  
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://menusmitra.xyz/website/menumitra_pos_system_v2.exe"
+                    rel="noopener noreferrer"
                     className="btn btn-info"
                   >
                     <i className="fa-solid fa-download me-2"></i>
@@ -348,11 +366,176 @@ const Apps = () => {
                   </a>
                 </div>
               </div>
-
-             
-              
             </div>
+         
+            <hr />
+            {/* Production Apps */}
+            <div className="text-center mb-4">
+              <h3 className="h4 fw-bold text-info">Production Apps</h3>
+            </div>
+               {/* v2 Apps */}
+               <div className="apps-grid">
+              {/* stats-v2.menumitra.com */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={menumitra}
+                        alt="stats-v2.menumitra.com"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Menumitra Stats</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://stats-v2.menumitra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-up-right-from-square me-2"></i>
+                    Open
+                  </a>
+                </div>
+              </div>
 
+              {/* admin-v2.menumitra.com */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={menumitra}
+                        alt="admin-v2.menumitra.com"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Menumitra Admin</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://admin-v2.menumitra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-up-right-from-square me-2"></i>
+                    Open
+                  </a>
+                </div>
+              </div>
+
+              {/* kds-v2.menumitra.com */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={menumitra}
+                        alt="kds-v2.menumitra.com"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Menumitra KDS</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://kds-v2.menumitra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-up-right-from-square me-2"></i>
+                    Open
+                  </a>
+                </div>
+              </div>
+
+              {/* cds-v2.menumitra.com */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={menumitra}
+                        alt="cds-v2.menumitra.com"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Menumitra CDS</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://cds-v2.menumitra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-up-right-from-square me-2"></i>
+                    Open
+                  </a>
+                </div>
+              </div>
+
+              {/* customer-v2.menumitra.com */}
+              <div className="app-card">
+                <div className="card-body">
+                  <div className="d-flex align-items-center mb-4">
+                    <div className="flex-shrink-0">
+                      <img
+                        src={menumitra}
+                        alt="customer-v2.menumitra.com"
+                        className="img-fluid"
+                        style={{ width: "40px", height: "40px" }}
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <div className="row align-items-center">
+                        <div className="col">
+                          <h3 className="card-title h5 mb-0">Menumitra Customer</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://customer-v2.menumitra.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-info"
+                  >
+                    <i className="fa-solid fa-up-right-from-square me-2"></i>
+                    Open
+                  </a>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </section>
       </div>
