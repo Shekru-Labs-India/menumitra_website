@@ -15,7 +15,7 @@ const Pricing = () => {
       <Header />
 
       {/* Pricing Section */}
-      <section id="pricing-plans" className="xl">
+      <section id="pricing-plans" className="xl pb-100">
         <div className="container-xxl">
           {/* Section Title */}
           <div className="row justify-content-start text-center mb-4">
@@ -162,6 +162,59 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+
+{/* here we need to add partner program 
+we will show our partner program here , show an table ui
+two rows in the table , first row is to show how much outlets partner if he onboards outlets , second row is to show how much he will get in commission
+*/}
+
+      {/* Partner Program Section */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="text-center mb-5">
+                <h2 className="fw-bold">MenuMitra Partner Program</h2>
+                <p className="text-dark">Join our partner program and earn attractive commissions</p>
+              </div>
+              
+              <div className="card shadow-sm">
+                <div className="card-body p-4">
+                  <div className="table-responsive">
+                                         <table className="table table-hover table-bordered text-center">
+                       <thead className="table-primary">
+                         <tr>
+                           <th scope="col" className="fw-bold fs-3">Outlets</th>
+                           <th scope="col" className="fw-bold fs-3">Commission</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td className="fw-bold fs-3">8</td>
+                           <td className="fw-bold fs-3 text-success">₹20,000/-</td>
+                         </tr>
+                         <tr>
+                           <td className="fw-bold fs-3">16</td>
+                           <td className="fw-bold fs-3 text-success">₹42,000/-</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                  </div>
+                  
+                  <div className="text-center mt-4">
+                    <p className="text-dark mb-3">Ready to become a partner?</p>
+                    <button className="btn btn-primary btn-lg px-4">
+                      Join Partner Program
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <div className="container mt-80">
         <h2 className="text-center fw-bold  " style={{ marginBottom: "60px" }}>
           Simple and reliable POS for all your restaurant needs
