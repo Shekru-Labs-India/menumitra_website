@@ -369,170 +369,50 @@ const Apps = () => {
             </div>
          
             <hr />
-            {/* Production Apps */}
+            {/* Apps - Production and Testing */}
             <div className="text-center mb-4">
-              <h3 className="h4 fw-bold text-info">Production Apps</h3>
+              <h3 className="h4 fw-bold text-info">Apps - Production and Testing</h3>
             </div>
-               {/* v2 Apps */}
-               <div className="apps-grid">
-              {/* stats-v2.menumitra.com */}
-              <div className="app-card">
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={menumitra}
-                        alt="stats-v2.menumitra.com"
-                        className="img-fluid"
-                        style={{ width: "40px", height: "40px" }}
-                      />
-                    </div>
-                    <div className="flex-grow-1 ms-3">
-                      <div className="row align-items-center">
-                        <div className="col">
-                          <h3 className="card-title h5 mb-0">Menumitra Stats</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://stats-v2.menumitra.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-info"
-                  >
-                    <i className="fa-solid fa-up-right-from-square me-2"></i>
-                    Open
-                  </a>
-                </div>
+            <div className="row">
+              <div className="col-12 col-md-6 mb-4 mb-md-0">
+                <h4 className="fw-bold mb-3">Production</h4>
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <a href="https://stats-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Stats</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://admin-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Admin</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://kds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra KDS</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://cds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra CDS</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://customer-v2.menumitra.com" target="_blank" rel="noopener noreferrer">Menumitra Customer</a>
+                  </li>
+                </ul>
               </div>
-
-              {/* admin-v2.menumitra.com */}
-              <div className="app-card">
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={menumitra}
-                        alt="admin-v2.menumitra.com"
-                        className="img-fluid"
-                        style={{ width: "40px", height: "40px" }}
-                      />
-                    </div>
-                    <div className="flex-grow-1 ms-3">
-                      <div className="row align-items-center">
-                        <div className="col">
-                          <h3 className="card-title h5 mb-0">Menumitra Admin</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://admin-v2.menumitra.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-info"
-                  >
-                    <i className="fa-solid fa-up-right-from-square me-2"></i>
-                    Open
-                  </a>
-                </div>
-              </div>
-
-              {/* kds-v2.menumitra.com */}
-              <div className="app-card">
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={menumitra}
-                        alt="kds-v2.menumitra.com"
-                        className="img-fluid"
-                        style={{ width: "40px", height: "40px" }}
-                      />
-                    </div>
-                    <div className="flex-grow-1 ms-3">
-                      <div className="row align-items-center">
-                        <div className="col">
-                          <h3 className="card-title h5 mb-0">Menumitra KDS</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://kds-v2.menumitra.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-info"
-                  >
-                    <i className="fa-solid fa-up-right-from-square me-2"></i>
-                    Open
-                  </a>
-                </div>
-              </div>
-
-              {/* cds-v2.menumitra.com */}
-              <div className="app-card">
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={menumitra}
-                        alt="cds-v2.menumitra.com"
-                        className="img-fluid"
-                        style={{ width: "40px", height: "40px" }}
-                      />
-                    </div>
-                    <div className="flex-grow-1 ms-3">
-                      <div className="row align-items-center">
-                        <div className="col">
-                          <h3 className="card-title h5 mb-0">Menumitra CDS</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://cds-v2.menumitra.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-info"
-                  >
-                    <i className="fa-solid fa-up-right-from-square me-2"></i>
-                    Open
-                  </a>
-                </div>
-              </div>
-
-              {/* customer-v2.menumitra.com */}
-              <div className="app-card">
-                <div className="card-body">
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        src={menumitra}
-                        alt="customer-v2.menumitra.com"
-                        className="img-fluid"
-                        style={{ width: "40px", height: "40px" }}
-                      />
-                    </div>
-                    <div className="flex-grow-1 ms-3">
-                      <div className="row align-items-center">
-                        <div className="col">
-                          <h3 className="card-title h5 mb-0">Menumitra Customer</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://customer-v2.menumitra.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-info"
-                  >
-                    <i className="fa-solid fa-up-right-from-square me-2"></i>
-                    Open
-                  </a>
-                </div>
+              <div className="col-12 col-md-6">
+                <h4 className="fw-bold mb-3">Testing</h4>
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <a href="https://test-menumitra-stats-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Stats (Test)</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://test-menumitra-admin-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Admin (Test)</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://test-menumitra-kds-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra KDS (Test)</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://test-menumitra-cds-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra CDS (Test)</a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="https://test-menumitra-customer-v2.netlify.app" target="_blank" rel="noopener noreferrer">Menumitra Customer (Test)</a>
+                  </li>
+                </ul>
               </div>
             </div>
             
