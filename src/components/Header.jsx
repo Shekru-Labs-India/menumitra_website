@@ -47,8 +47,8 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item mx-lg-2">
-                <Link className={`nav-link ${isActive("/apps") ? "active text-primary" : ""}`} to="/apps">
-                  Apps
+                <Link className={`nav-link ${isActive("/apps") ? "active text-primary" : ""}`} to="/products">
+                  Products
                 </Link>
               </li>
 

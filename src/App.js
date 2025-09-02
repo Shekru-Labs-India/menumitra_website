@@ -83,7 +83,7 @@ function App() {
     <Route path="/captainapp" element={<CaptainApp />} />
     <Route path="/kds" element={<KDS />} />
     <Route path="/cds" element={<CDS />} />
-    <Route path="/apps" element={<Apps />} />
+    <Route path="/products" element={<Apps />} />
 
     <Route path="/scan" element={<ScanAndOrder />} />
     <Route path="/billing" element={<Billing />} />
