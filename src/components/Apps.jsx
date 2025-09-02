@@ -371,7 +371,7 @@ const Apps = () => {
             <hr />
             {/* Apps - Production and Testing */}
             <div className="text-center mb-4">
-              <h3 className="h4 fw-bold text-info">Apps - Production and Testing</h3>
+              <h3 className="h4 fw-bold text-info">V2 Products</h3>
             </div>
             <div className="row">
               <div className="col-12 col-md-6 mb-4 mb-md-0 text-center">
