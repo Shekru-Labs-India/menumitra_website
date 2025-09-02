@@ -173,12 +173,21 @@ two rows in the table , first row is to show how much outlets partner if he onbo
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              <div className="text-center mb-5">
-                <h2 className="fw-bold">MenuMitra Partner Program</h2>
-                <p className="text-dark">Join our partner program and earn attractive commissions</p>
-              </div>
-              
-              <div className="card shadow-sm">
+                             <div className="text-center mb-5">
+                 <h2 className="fw-bold">MenuMitra Partner Program</h2>
+                 <p className="text-dark">Join our partner program and earn attractive commissions</p>
+               </div>
+               
+               {/* Partner Program Description */}
+               <div className="text-center mb-4">
+                 <p className="text-dark">
+                   Become a MenuMitra partner and help restaurants digitize their operations. 
+                   The more outlets you onboard, the higher your commission rewards. 
+                   Start your journey with us and grow your income while helping businesses thrive.
+                 </p>
+               </div>
+               
+               <div className="card shadow-sm">
                 <div className="card-body p-4">
                   <div className="table-responsive">
                                          <table className="table table-hover table-bordered text-center">
