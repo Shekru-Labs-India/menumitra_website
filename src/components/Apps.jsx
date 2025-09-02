@@ -377,23 +377,23 @@ const Apps = () => {
               <div className="col-12 col-md-6 mb-4 mb-md-0 text-center">
                 <h4 className="fw-bold mb-3">Production</h4>
                 <ul className="list-unstyled">
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Stats</div>
                     <a className="small text-primary" href="https://stats-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://stats-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Admin</div>
                     <a className="small text-primary" href="https://admin-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://admin-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra KDS</div>
                     <a className="small text-primary" href="https://kds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://kds-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra CDS</div>
                     <a className="small text-primary" href="https://cds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://cds-v2.menumitra.com</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Customer</div>
                     <a className="small text-primary" href="https://customer-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://customer-v2.menumitra.com</a>
                   </li>
@@ -402,23 +402,23 @@ const Apps = () => {
               <div className="col-12 col-md-6 text-center">
                 <h4 className="fw-bold mb-3">Testing</h4>
                 <ul className="list-unstyled">
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Stats (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-stats-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-stats-v2.netlify.app</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Admin (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-admin-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-admin-v2.netlify.app</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra KDS (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-kds-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-kds-v2.netlify.app</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra CDS (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-cds-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-cds-v2.netlify.app</a>
                   </li>
-                  <li className="mb-3">
+                  <li className="mb-5">
                     <div className="fw-medium">Menumitra Customer (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-customer-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-customer-v2.netlify.app</a>
                   </li>
