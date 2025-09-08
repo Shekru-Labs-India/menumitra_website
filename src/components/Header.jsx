@@ -141,11 +141,6 @@ const Header = () => {
                     <i className="fa-solid fa-building me-2"></i>Large Chain</Link></li>
                 </ul>
               </li>
-              <li className="nav-item mx-lg-2">
-                <Link className={`nav-link ${isActive("/devices") ? "active text-primary" : ""}`} to="/devices">
-                  Devices
-                </Link>
-              </li>
             </ul>
 
             {/* Book Demo Button */}
