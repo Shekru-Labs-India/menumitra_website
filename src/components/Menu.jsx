@@ -114,14 +114,9 @@ const Menu = () => {
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Item-Category-Variations-_-Add-Ons.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">
                 Item, Category, Variations &amp; Add-Ons
               </h6>
@@ -135,14 +130,9 @@ const Menu = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Aggregator-Menu-Management-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Aggregator Menu Management</h6>
               <p className="card-text">
                 Are you sick of waiting around for Zomato and Swiggy's menu
@@ -153,17 +143,10 @@ const Menu = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 3 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Short-Codes-For-Quick-Billing-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Short-Codes For Quick Billing</h6>
               <p className="card-text">
                 Are you still using outdated shortcodes for menu items? Enjoy
@@ -174,15 +157,10 @@ const Menu = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 4 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Multiple-Menus-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Multiple Menus</h6>
               <p className="card-text">
                 Customize your products to fit niche markets! Using MenuMitra,
@@ -195,15 +173,10 @@ const Menu = () => {
         </div>
       </div>
       <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 5 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Configurable-Special-Notes-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Configurable Special Notes</h6>
               <p className="card-text">
                 "Extra spicy, please!" And "No tomatoes, please!" These are
@@ -214,15 +187,10 @@ const Menu = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 6 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Customizable-Menu-Timing-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Customizable Menu Timing</h6>
               <p className="card-text">
                 No breakfast after 11:00 a.m. or Chef de pastry begins at 4:00
