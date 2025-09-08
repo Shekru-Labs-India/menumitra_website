@@ -14642,6 +14642,56 @@ p {
   line-height: 1.5;
 }
 
+/* Feature Tags Styles */
+.feature-tags {
+  margin-top: 20px;
+}
+
+.feature-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inventory-tag {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.ai-tag {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-color: rgba(33, 150, 243, 0.3);
+}
+
+.integration-tag {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-color: rgba(255, 152, 0, 0.3);
+}
+
+.tag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
 .register-reseller-btn {
   background-color: #1f2937;
   color: white;

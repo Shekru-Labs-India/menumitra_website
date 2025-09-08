@@ -184,6 +184,28 @@ const Home = () => {
                       <span className="shape shape-4"></span>
                     </div>
                   </div>
+                  
+                  {/* Feature Tags */}
+                  <div className="feature-tags mt-4 d-flex flex-wrap justify-content-center gap-3">
+                    <div className="feature-tag inventory-tag">
+                      <div className="tag-icon">
+                        <i className="fas fa-boxes" style={{ fontSize: "20px", color: "#4CAF50" }}></i>
+                      </div>
+                      <span className="tag-text">Inventory</span>
+                    </div>
+                    <div className="feature-tag ai-tag">
+                      <div className="tag-icon">
+                        <i className="fas fa-robot" style={{ fontSize: "20px", color: "#2196F3" }}></i>
+                      </div>
+                      <span className="tag-text">AI</span>
+                    </div>
+                    <div className="feature-tag integration-tag">
+                      <div className="tag-icon">
+                        <i className="fas fa-plug" style={{ fontSize: "20px", color: "#FF9800" }}></i>
+                      </div>
+                      <span className="tag-text">3rd Party Integrations</span>
+                    </div>
+                  </div>
                 </div>
               </div>{" "}
               {/* <div className="row d-flex justify-content-evenly ">
