@@ -133,43 +133,46 @@ const Home = () => {
         <Header />
 
         <div className="main-container p-0">
-          <section id="about" className="xl">
+          {/*================== Hero Area Section Start ==================*/}
+          <section className="hero-area section">
             <div className="container">
-              <div className="row align-items-end">
-                <div className="col-lg-5 tablet-lg-top-30">
-                  <h4 className="mb-30">
-                    India's Best Contactless Restaurant Management Software
-                  </h4>
-                  <p className="mb-4">
-                    Billing &amp; KOT, manage inventory &amp; central kitchen,
-                    handle online orders, menu management, tables, captain app,
-                    collect customer data, discount &amp; offers, accounts,
-                    reports and do lot more.
-                  </p>
-                  <div className="video-container mb-4 mb-lg-0">
-                    <div className="ratio ratio-16x9">
-                      <iframe
-                        src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
-                        title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                        className="rounded-3 shadow-lg"
-                      ></iframe>
+              <div className="row align-items-center">
+                <div className="col-lg-6">
+                  <div className="hero-content">
+                    <p className="hero-intro mb-3">Welcome to MenuMitra</p>
+                    <h1 className="hero-title mb-4">India's Leading Restaurant Management & POS Solution</h1>
+                    <p className="hero-description mb-5">
+                      Streamline your restaurant operations with our cloud-based POS system. 
+                      Manage billing, inventory, online orders, customer relationships, and analytics 
+                      from anywhere, anytime. Built for modern restaurants that demand efficiency and growth.
+                    </p>
+                    <a href="#contact" className="btn btn-primary btn-lg">Start Free Trial</a>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="hero-image-wrapper">
+                    <img src={hero} alt="MenuMitra Restaurant Management Software" className="img-fluid hero-main-image" />
+                    <div className="hero-shapes">
+                      <span className="shape shape-1"></span>
+                      <span className="shape shape-2"></span>
+                      <span className="shape shape-3"></span>
+                      <span className="shape shape-4"></span>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-7 d-flex align-items-end justify-content-end">
-                  <img
-                    src={hero}
-                    alt="MenuMitra Hero"
-                    className="img-fluid rounded w-100"
-                    style={{ marginBottom: "-2rem" }}
-                  />
-                </div>
               </div>
             </div>
+            <div className="has-circle">
+              <span className="circle circle-1"></span>
+              <span className="circle circle-2"></span>
+              <span className="circle circle-3"></span>
+              <span className="circle circle-4"></span>
+              <span className="circle circle-5"></span>
+              <span className="circle circle-6"></span>
+              <span className="circle circle-7"></span>
+            </div>
           </section>
+          {/*================== Hero Area Section End ==================*/}
           {/* / about */}
           <div className="container mt-80  ">
             <div className="text-center">
