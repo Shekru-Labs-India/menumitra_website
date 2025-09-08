@@ -142,17 +142,12 @@ const Inventory = () => {
             </h2>
             <div className="row justify-content-center">
               {/* Card 1 */}
-              <div className="col-md-6 col-lg-4 mb-4">
+              <div className="col-md-6 col-lg-3 mb-4">
                 <div
-                  className="card p-4 "
+                  className="card p-4"
                   style={{ backgroundColor: "#ecf7ec" }}
                 >
-                  <img
-                    src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Raw-Material-Management-2.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+                  <div className="card-body p-1">
                     <h6 className="card-title">Raw Material Management</h6>
                     <p className="card-text">
                       Create material list, assign vendors to them, check the
@@ -163,17 +158,12 @@ const Inventory = () => {
                 </div>
               </div>
               {/* Card 2 */}
-              <div className="col-md-6 col-lg-4 mb-4">
+              <div className="col-md-6 col-lg-3 mb-4">
                 <div
-                  className="card p-4 "
+                  className="card p-4"
                   style={{ backgroundColor: "#ecf7ec" }}
                 >
-                  <img
-                    src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Multi-Stage-Recipe-Management-1.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+                  <div className="card-body p-1">
                     <h6 className="card-title">
                       Multi-Stage Recipe Management
                     </h6>
@@ -185,20 +175,13 @@ const Inventory = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row justify-content-center m-0 p-0">
-              {/* Card 1 */}
-              <div className="col-md-6 col-lg-4 mb-4">
+              {/* Card 3 */}
+              <div className="col-md-6 col-lg-3 mb-4">
                 <div
-                  className="card p-4 "
+                  className="card p-4"
                   style={{ backgroundColor: "#ecf7ec" }}
                 >
-                  <img
-                    src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Central-Kitchen-Module-1.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+                  <div className="card-body p-1">
                     <h6 className="card-title">Central Kitchen Module</h6>
                     <p className="card-text">
                       Centralise recipes, items controls, vendors lists,
@@ -209,15 +192,13 @@ const Inventory = () => {
                   </div>
                 </div>
               </div>
-              {/* Card 2 */}
-              <div className="col-md-6 col-lg-4 mb-4">
-                <div className="card" style={{ backgroundColor: "#ecf7ec" }}>
-                  <img
-                    src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Purchase-Order-1.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+              {/* Card 4 */}
+              <div className="col-md-6 col-lg-3 mb-4">
+                <div
+                  className="card p-4"
+                  style={{ backgroundColor: "#ecf7ec" }}
+                >
+                  <div className="card-body p-1">
                     <h6 className="card-title">Purchase Order</h6>
                     <p className="card-text">
                       you can create the purchase orders, send to the vendors or
@@ -229,15 +210,13 @@ const Inventory = () => {
               </div>
             </div>
             <div className="row justify-content-center">
-              {/* Card 1 */}
-              <div className="col-md-6 col-lg-4 mb-4">
-                <div className="card" style={{ backgroundColor: "#ecf7ec" }}>
-                  <img
-                    src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Minimum-Stock-Alerts-1.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+              {/* Card 5 */}
+              <div className="col-md-6 col-lg-3 mb-4">
+                <div
+                  className="card p-4"
+                  style={{ backgroundColor: "#ecf7ec" }}
+                >
+                  <div className="card-body p-1">
                     <h6 className="card-title">Minimum Stock Alerts</h6>
                     <p className="card-text">
                       Running out of stock? we can save you from this, set the
@@ -247,15 +226,13 @@ const Inventory = () => {
                   </div>
                 </div>
               </div>
-              {/* Card 2 */}
-              <div className="col-md-6 col-lg-4 mb-4">
-                <div className="card " style={{ backgroundColor: "#ecf7ec" }}>
-                  <img
-                    src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Live-Food-Costing-Reports.png"
-                    alt="Card Image"
-                    className="card-img-top"
-                  />
-                  <div className="card-body">
+              {/* Card 6 */}
+              <div className="col-md-6 col-lg-3 mb-4">
+                <div
+                  className="card p-4"
+                  style={{ backgroundColor: "#ecf7ec" }}
+                >
+                  <div className="card-body p-1">
                     <h6 className="card-title">Live Food Costing Reports</h6>
                     <p className="card-text">
                       The potato cost is not fixed, it changes every week! so
