@@ -186,7 +186,7 @@ const Home = () => {
                   </div>
                   
                   {/* Feature Tags */}
-                  <div className="feature-tags mt-4 d-flex flex-wrap justify-content-center gap-3">
+                  <div className="feature-tags-container mt-4 d-flex flex-wrap justify-content-center gap-5">
                     <div className="feature-tag inventory-tag">
                       <div className="tag-icon">
                         <i className="fas fa-boxes" style={{ fontSize: "20px", color: "#4CAF50" }}></i>
@@ -328,7 +328,7 @@ const Home = () => {
                 </div>
               </div> */}
 
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
