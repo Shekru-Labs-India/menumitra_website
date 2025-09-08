@@ -29,16 +29,16 @@ import brand6 from "../assets/images/mm_brand/06.png";
 // integration logos
 import zomatoLogo from "../assets/images/integrations/zomato.png";
 import swiggyLogo from "../assets/images/integrations/swiggy.png";
-import thriveLogo from "../assets/images/integrations/thrive.png";
-import ondcLogo from "../assets/images/integrations/ondc.png";
-import dunzoLogo from "../assets/images/integrations/dunzo.png";
-import upiLogo from "../assets/images/integrations/upi.png";
-import phonepeLogo from "../assets/images/integrations/phonepe.png";
+import thriveLogo from "../assets/images/integrations/thrive-2.png";
+import ondcLogo from "../assets/images/integrations/ondc-2.png";
+import dunzoLogo from "../assets/images/integrations/dunzo-2.png";
+import upiLogo from "../assets/images/integrations/upi-2.png";
+import phonepeLogo from "../assets/images/integrations/phonepe-1.png";
 import paytmLogo from "../assets/images/integrations/paytm.png";
-import pinelabsLogo from "../assets/images/integrations/pinelabs.png";
-import razorpayLogo from "../assets/images/integrations/razorpay.png";
-import shadowfaxLogo from "../assets/images/integrations/shadowfax.png";
-import porterLogo from "../assets/images/integrations/porter.png";
+import pinelabsLogo from "../assets/images/integrations/pine-labs-1.png";
+import razorpayLogo from "../assets/images/integrations/razorpay-1.png";
+import shadowfaxLogo from "../assets/images/integrations/shadowfax-2.png";
+import porterLogo from "../assets/images/integrations/porter-2.png";
 
 
 
