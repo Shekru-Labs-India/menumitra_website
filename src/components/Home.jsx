@@ -142,7 +142,7 @@ const Home = () => {
           {/*================== Hero Area Section Start ==================*/}
           <section className="hero-area section">
             <div className="container">
-              <div className="row align-items-center">
+              <div className="row align-items-start">
                 <div className="col-lg-6">
                   <div className="hero-content">
                     <h1 className="hero-title mb-4">
@@ -306,7 +306,7 @@ const Home = () => {
                 </div>
               </div> */}
 
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4">
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
