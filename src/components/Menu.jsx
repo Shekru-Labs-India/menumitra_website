@@ -4,6 +4,7 @@ import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import FeatureCards from './FeatureCards';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -17,6 +18,51 @@ const Menu = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Menu feature cards data
+  const menuCards = [
+    {
+      icon: "fas fa-list-alt",
+      title: "Item, Category, Variations & Add-Ons",
+      description: "Use MenuMitra to your creative advantage! Your menu items can be easily arranged and customized with distinct prices for variations and add-ons. For a large pizza, charge extra for those extra toppings. Keep it flavorful and lively!"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      title: "Aggregator Menu Management",
+      description: "Are you sick of waiting around for Zomato and Swiggy's menu updates? Here you can use MenuMitra to amend your menu, adjust prices, and turn items on and off directly from the POS. Avoid the line and effortlessly maintain your menu current and fresh!"
+    },
+    {
+      icon: "fas fa-keyboard",
+      title: "Short-Codes For Quick Billing",
+      description: "Are you still using outdated shortcodes for menu items? Enjoy the comfort of familiarity with MenuMitra! Give Pav Bhaji Butter simple codes like PBB to increase software adoption and expedite checkout. Keep things quick and easy!"
+    },
+    {
+      icon: "fas fa-layer-group",
+      title: "Multiple Menus",
+      description: "Customize your products to fit niche markets! Using MenuMitra, manage your menu and prices for online orders differently than in-house eating. Set your prices for services and commissions across all channels to maintain control and increase revenue!"
+    },
+    {
+      icon: "fas fa-sticky-note",
+      title: "Configurable Special Notes",
+      description: "\"Extra spicy, please!\" And \"No tomatoes, please!\" These are regular requests from customers. You can save servers time and advise clients about customization options by creating prepared instructions with MenuMitra's special notes."
+    },
+    {
+      icon: "fas fa-clock",
+      title: "Customizable Menu Timing",
+      description: "No breakfast after 11:00 a.m. or Chef de pastry begins at 4:00 p.m. You can manage the availability of particular menu items using MenuMitra, whether they are for dine-in or on aggregator platforms. Choose the ideal time for a flawless eating experience!"
+    },
+    {
+      icon: "fas fa-tags",
+      title: "Dynamic Pricing & Promotions",
+      description: "Boost your sales with smart pricing strategies! Set different prices for peak hours, happy hours, or special occasions. Create promotional offers, combo deals, and seasonal pricing to maximize revenue and attract more customers."
+    },
+    {
+      icon: "fas fa-chart-bar",
+      title: "Menu Performance Analytics",
+      description: "Make data-driven menu decisions! Track which items are bestsellers, identify slow-moving dishes, analyze profit margins, and understand customer preferences. Use these insights to optimize your menu and increase profitability."
+    }
+  ];
+
   return (
     
   <>
@@ -108,102 +154,11 @@ const Menu = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container mt-80">
-      <h2 className="text-center mb-50">
-        Discover what MenuMitra can do for your menu management
-      </h2>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">
-                Item, Category, Variations &amp; Add-Ons
-              </h6>
-              <p className="card-text">
-                Use MenuMitra to your creative advantage! Your menu items can be
-                easily arranged and customized with distinct prices for
-                variations and add-ons. For a large pizza, charge extra for
-                those extra toppings. Keep it flavorful and lively!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Aggregator Menu Management</h6>
-              <p className="card-text">
-                Are you sick of waiting around for Zomato and Swiggy's menu
-                updates? Here you can use MenuMitra to amend your menu, adjust
-                prices, and turn items on and off directly from the POS. Avoid
-                the line and effortlessly maintain your menu current and fresh!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Short-Codes For Quick Billing</h6>
-              <p className="card-text">
-                Are you still using outdated shortcodes for menu items? Enjoy
-                the comfort of familiarity with MenuMitra! Give Pav Bhaji Butter
-                simple codes like PBB to increase software adoption and expedite
-                checkout. Keep things quick and easy!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 4 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Multiple Menus</h6>
-              <p className="card-text">
-                Customize your products to fit niche markets! Using MenuMitra,
-                manage your menu and prices for online orders differently than
-                in-house eating. Set your prices for services and commissions
-                across all channels to maintain control and increase revenue!​
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row justify-content-center">
-        {/* Card 5 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Configurable Special Notes</h6>
-              <p className="card-text">
-                "Extra spicy, please!" And "No tomatoes, please!" These are
-                regular requests from customers. You can save servers time and
-                advise clients about customization options by creating prepared
-                instructions with MenuMitra's special notes.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 6 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Customizable Menu Timing</h6>
-              <p className="card-text">
-                No breakfast after 11:00 a.m. or Chef de pastry begins at 4:00
-                p.m. You can manage the availability of particular menu items
-                using MenuMitra, whether they are for dine-in or on aggregator
-                platforms. Choose the ideal time for a flawless eating
-                experience!​
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <FeatureCards
+      title="Discover what MenuMitra can do for your menu management"
+      cards={menuCards}
+      colorTheme="orange"
+    />
     <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">

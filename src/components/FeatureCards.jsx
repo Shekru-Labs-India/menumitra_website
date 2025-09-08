@@ -3,15 +3,41 @@ import React from 'react';
 const FeatureCards = ({ 
   title, 
   cards, 
-  cardClassName = "inventory-card",
+  cardClassName = "feature-card",
   containerClassName = "container mt-80",
-  titleClassName = "text-center mb-50"
+  titleClassName = "text-center mb-50",
+  colorTheme = "green" // "green" or "orange"
 }) => {
+  // Dynamic styles based on color theme
+  const getThemeStyles = () => {
+    if (colorTheme === "orange") {
+      return {
+        cardBackground: "linear-gradient(135deg, #faf2eb 0%, #f5e6d3 100%)",
+        iconBackground: "linear-gradient(135deg, #ff8c00, #ff6b35)",
+        iconShadow: "rgba(255, 140, 0, 0.2)",
+        iconHoverShadow: "rgba(255, 140, 0, 0.4)",
+        borderColor: "#ff8c00",
+        topBar: "linear-gradient(90deg, #ff8c00, #ff6b35)"
+      };
+    } else {
+      return {
+        cardBackground: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)",
+        iconBackground: "linear-gradient(135deg, #28a745, #20c997)",
+        iconShadow: "rgba(40, 167, 69, 0.2)",
+        iconHoverShadow: "rgba(40, 167, 69, 0.4)",
+        borderColor: "#28a745",
+        topBar: "linear-gradient(90deg, #28a745, #20c997)"
+      };
+    }
+  };
+
+  const theme = getThemeStyles();
+
   // Default styles for feature cards
   const cardStyles = `
     <style>
       .feature-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        background: ${theme.cardBackground};
         border: 2px solid #e9ecef;
         border-radius: 28px;
         padding: 2.5rem 2rem;
@@ -30,7 +56,7 @@ const FeatureCards = ({
         left: 0;
         right: 0;
         height: 4px;
-        background: linear-gradient(90deg, #28a745, #20c997);
+        background: ${theme.topBar};
         opacity: 0;
         transition: opacity 0.3s ease;
       }
@@ -38,14 +64,14 @@ const FeatureCards = ({
       .feature-card:hover {
         transform: translateY(-12px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
-        border: 2px solid #28a745;
+        border: 2px solid ${theme.borderColor};
         border-radius: 32px;
       }
       
       .feature-card-icon {
         width: 70px;
         height: 70px;
-        background: linear-gradient(135deg, #28a745, #20c997);
+        background: ${theme.iconBackground};
         border-radius: 22px;
         border: 2px solid rgba(255, 255, 255, 0.3);
         display: flex;
@@ -53,7 +79,7 @@ const FeatureCards = ({
         justify-content: center;
         margin-bottom: 2rem;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+        box-shadow: 0 4px 12px ${theme.iconShadow};
       }
       
       .feature-card-icon i {
@@ -63,7 +89,7 @@ const FeatureCards = ({
       
       .feature-card:hover .feature-card-icon {
         transform: scale(1.15);
-        box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+        box-shadow: 0 8px 20px ${theme.iconHoverShadow};
       }
       
       .feature-card-content {
