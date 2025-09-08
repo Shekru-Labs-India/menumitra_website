@@ -4,6 +4,7 @@ import Header from './Header'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import FeatureCards from './FeatureCards';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -17,6 +18,31 @@ const OnlineOrder = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Online order feature cards data
+  const onlineOrderCards = [
+    {
+      icon: "fas fa-plug",
+      title: "Online Order Integration",
+      description: "Integrate easily with any food aggregator with MenuMitra, and manage your order from single dashboard, accept, mark food ready, deliver. As simple as that!"
+    },
+    {
+      icon: "fas fa-edit",
+      title: "Menu Updates & Changes",
+      description: "Manage online menu directly from MenuMitra POS, add, update, modify whenever you want! Customize menu timing, add images and more."
+    },
+    {
+      icon: "fas fa-toggle-on",
+      title: "Toggle Your Items & Outlet On/Off",
+      description: "Running out of stock? Manage your menu online status from MenuMitra POS. Turn item or category on/off as per your availability."
+    },
+    {
+      icon: "fas fa-plus-circle",
+      title: "Customizable Charges & Add-Ons",
+      description: "Add customized charges such as packaging charge, container charge, discounts or offers from MenuMitra admin panel. No more juggling between here or there."
+    }
+  ];
+
   return (
     
     <>
@@ -105,60 +131,11 @@ const OnlineOrder = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container mt-80">
-      <h2 className="text-center mb-50">
-      Discover what MenuMitra can do for your online order management
-      </h2>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">
-              Online Order Integration
-              </h6>
-              <p className="card-text">
-              Integrate easily with any food aggregator with MenuMitra, and manage your order from single dashboard, accept, mark food ready, deliver. as simple it that
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Menu Updations & Changes</h6>
-              <p className="card-text">
-              Manage online menu directly from MenuMitra POS, add, update, modify whenever you want! customise menu timing, add images and more
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Toggle Your Items & Outlet On/Off</h6>
-              <p className="card-text">
-              Running out of stock? manage your menu online status from MenuMitra POS. Turn item or category on/off as per your availability
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 4 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Customisable Charges & Add-Ons</h6>
-              <p className="card-text">
-              Add customised charges such as packaging charge, container charge, discounts or offer from MenuMitra admin panel. No more juggling between here or there
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
+    <FeatureCards
+      title="Discover what MenuMitra can do for your online order management"
+      cards={onlineOrderCards}
+      colorTheme="orange"
+    />
     <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">

@@ -1,13 +1,39 @@
-  import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import FeatureCards from './FeatureCards';
 const CustomerManagement = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Customer management feature cards data
+  const customerCards = [
+    {
+      icon: "fas fa-chart-line",
+      title: "Track Customer Behavior",
+      description: "The customer wants to place an order, but you are clueless about what they often get. Here MenuMitra's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer. Give your biller additional information for a customized experience that will increase client satisfaction."
+    },
+    {
+      icon: "fas fa-sync-alt",
+      title: "Synced Customer Information",
+      description: "Flawless customer understanding! Information captured on the POS is immediately linked to the cloud. Get information instantly, including address, email, birthdays, anniversaries, and more, in addition to names and numbers. Gain a thorough grasp of your clients with ease!"
+    },
+    {
+      icon: "fas fa-heart",
+      title: "Regulate Customer Retention",
+      description: "Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes."
+    },
+    {
+      icon: "fas fa-comment-dots",
+      title: "Customer Feedbacks",
+      description: "With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links."
+    }
+  ];
+
   return (
     
    <>
@@ -87,61 +113,11 @@ const CustomerManagement = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container mt-80">
-      <h2 className="text-center mb-50">
-      Discover what MenuMitra can do for your customers
-      </h2>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">
-              Track customer behaviour
-              </h6>
-              <p className="card-text">
-              The customer wants to place an order, but you are clueless about what they often get. Here MenuMitra's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer.
-               Give your biller additional information for a customized experience that will increase client satisfaction.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Synced customer information</h6>
-              <p className="card-text">
-              Flawless customer understanding! Information captured on the POS is immediately linked to the cloud. Get information instantly, including address, email, birthdays, anniversaries, and more, in addition to names and numbers. Gain a thorough grasp of your clients with ease!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Regulate customer retention</h6>
-              <p className="card-text">
-              Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 4 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Customer Feedbacks</h6>
-              <p className="card-text">
-              With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
+    <FeatureCards
+      title="Discover what MenuMitra can do for your customers"
+      cards={customerCards}
+      colorTheme="green"
+    />
     <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">

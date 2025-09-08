@@ -6,7 +6,7 @@ const FeatureCards = ({
   cardClassName = "feature-card",
   containerClassName = "container mt-80",
   titleClassName = "text-center mb-50",
-  colorTheme = "green" // "green" or "orange"
+  colorTheme = "green" // "green", "orange", or "yellow"
 }) => {
   // Dynamic styles based on color theme
   const getThemeStyles = () => {
@@ -18,6 +18,15 @@ const FeatureCards = ({
         iconHoverShadow: "rgba(255, 140, 0, 0.4)",
         borderColor: "#ff8c00",
         topBar: "linear-gradient(90deg, #ff8c00, #ff6b35)"
+      };
+    } else if (colorTheme === "yellow") {
+      return {
+        cardBackground: "linear-gradient(135deg, #fffbf0 0%, #fef7e0 100%)",
+        iconBackground: "linear-gradient(135deg, #ffc107, #ffb300)",
+        iconShadow: "rgba(255, 193, 7, 0.2)",
+        iconHoverShadow: "rgba(255, 193, 7, 0.4)",
+        borderColor: "#ffc107",
+        topBar: "linear-gradient(90deg, #ffc107, #ffb300)"
       };
     } else {
       return {

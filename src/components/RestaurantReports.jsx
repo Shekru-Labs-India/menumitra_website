@@ -4,6 +4,7 @@ import Header from './Header'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import FeatureCards from './FeatureCards';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -17,6 +18,41 @@ const RestaurantReports = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Restaurant reports feature cards data
+  const reportsCards = [
+    {
+      icon: "fas fa-tachometer-alt",
+      title: "Single Dashboard Monitoring",
+      description: "No more juggling between dashboards. By consolidating all of your sales data from dine-in, QR codes, Zomato/Swiggy, and your website onto a single dashboard, MenuMitra makes your life easier. Without any difficulty, get a complete, real-time view of your restaurant!"
+    },
+    {
+      icon: "fas fa-file-invoice-dollar",
+      title: "Comprehensive Tax Reports",
+      description: "Your tax-related difficulties are over! With just one click, you can access detailed tax reports for all of your outlets with MenuMitra. Put an end to gathering information from multiple sources and concentrate only on efficiently filing your taxes!"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      title: "Web & App",
+      description: "MenuMitra makes it easy to keep track of your restaurant! You can view our dashboard as an iOS or Android app, or as a webpage on your computer. Keep easy control over your restaurant's operations from anywhere, using any device."
+    },
+    {
+      icon: "fas fa-building",
+      title: "Head Office Module with Clusters",
+      description: "Are you feeling overburdened by running several outlets? Monitor sales across all locations on a single screen with MenuMitra's Head Office module, which is part of the subscription. Establish zones according to cities, regions, or channels to have the information you require at your fingertips."
+    },
+    {
+      icon: "fas fa-user-shield",
+      title: "User Rights Management",
+      description: "MenuMitra allows you to take control! By giving particular roles and rights to the admin panel and the billing app, you can customize what your employees see. You have complete control over your outlet's operations, which are all centralized for your convenience."
+    },
+    {
+      icon: "fas fa-comments",
+      title: "Set Automated WhatsApp Reports",
+      description: "Did you miss today's reports? We've got you covered, no worries! You can select which reports to receive in your WhatsApp and when with MenuMitra WhatsApp Reports. Easily stay up to date!"
+    }
+  ];
+
   return (
     
   <>
@@ -105,86 +141,11 @@ const RestaurantReports = () => {
       </div>
       {/* / container */}
     </section>
-    <div className="container mt-80">
-      <h2 className="text-center mb-50">
-      Discover what MenuMitra can do for your reports
-      </h2>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">
-              Single Dashboard Monitoring
-              </h6>
-              <p className="card-text">
-              No more juggling between dashboards. By consolidating all of your sales data from dine-in, QR codes, Zomato/Swiggy, and your website onto a single dashboard, MenuMitra makes your life easier. Without any difficulty, get a complete, real-time view of your restaurant!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Compressive Tax Reports</h6>
-              <p className="card-text">
-              Your tax-related difficulties are over! With just one click, you can access detailed tax reports for all of your outlets with MenuMitra.
-               Put an end to gathering information from multiple sources and concentrate only on efficiently filing your taxes!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 3 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Web & App</h6>
-              <p className="card-text">
-              MenuMitra makes it easy to keep track of your restaurant! You can view our dashboard as an iOS or Android app, or as a webpage on your computer. Keep easy control over your restaurant's operations from anywhere, using any device.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 4 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Head Office Module with Clusters</h6>
-              <p className="card-text">
-              Are you feeling overburdened by running several outlets? Monitor sales across all locations on a single screen with MenuMitra's Head Office module, which is part of the subscription. Establish zones according to cities, regions, or channels to have the information you require at your fingertips (e.g., Zomato sales for the Western Region). Use MenuMitra to streamline supervision!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="row justify-content-center">
-        {/* Card 5 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">User rights management</h6>
-              <p className="card-text">
-              MenuMitra allows you to take control! By giving particular roles and rights to the admin panel and the billing app, you can customize what your employees see. You have complete control over your outlet's operations, which are all centralized for your convenience, from changing bills to seeing reports and operating the cash drawer.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Card 6 */}
-        <div className="col-md-6 col-lg-3 mb-4">
-          <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <div className="card-body p-4">
-              <h6 className="card-title">Set Automate WhatsApp Report</h6>
-              <p className="card-text">
-              Did you miss today's reports? We've got you covered, no worries! You can select which reports to receive in your WhatsApp and when with MenuMitra WhatsApp Reports. Easily stay up to date!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <FeatureCards
+      title="Discover what MenuMitra can do for your reports"
+      cards={reportsCards}
+      colorTheme="yellow"
+    />
     <div id="features" className="mt-80">
       <div className="container">
         <div className="text-center">
