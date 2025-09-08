@@ -3,7 +3,6 @@ import Header from './Header'
 import { Link } from "react-router-dom";
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
-import hero from "../assets/images/Hero-img.jpg"
 import Form from "./Form";
 
 
@@ -161,7 +160,24 @@ const Home = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="hero-image-wrapper">
-                    <img src={hero} alt="MenuMitra Restaurant Management Software" className="img-fluid hero-main-image" />
+                    <iframe 
+                      width="100%" 
+                      height="315" 
+                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo" 
+                      title="MenuMitra Restaurant Management Software" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                      className="hero-main-video"
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                        aspectRatio: "16/9",
+                        borderRadius: "20px",
+                        boxShadow: "0 20px 40px rgba(0, 0, 0, 0.1)",
+                        transition: "transform 0.3s ease"
+                      }}
+                    ></iframe>
                     <div className="hero-shapes">
                       <span className="shape shape-1"></span>
                       <span className="shape shape-2"></span>
