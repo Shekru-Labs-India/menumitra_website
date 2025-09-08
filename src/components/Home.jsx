@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Header from './Header'
+import Header from "./Header";
 import { Link } from "react-router-dom";
-import Footer from './Footer'
-import { Helmet } from 'react-helmet'
+import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 import Form from "./Form";
-
 
 import arjunCoffeeHouse from "../assets/images/outlets/arjun_coffee_house.jpg";
 import balajiBhojnalay from "../assets/images/outlets/balaji_bhojnalay.jpeg";
@@ -23,7 +22,6 @@ import friendsCafe from "../assets/images/outlets/friends_cafe.png";
 import creamyNutsCafe from "../assets/images/outlets/creamy_nuts_cafe.jpg";
 import garva from "../assets/images/outlets/garva.jpg";
 import hotelBoshal from "../assets/images/outlets/hotel_boshal.png";
-
 
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
@@ -46,9 +44,6 @@ import pinelabsLogo from "../assets/images/integrations/pine-labs-1.png";
 import razorpayLogo from "../assets/images/integrations/razorpay-1.png";
 import shadowfaxLogo from "../assets/images/integrations/shadowfax-2.png";
 import porterLogo from "../assets/images/integrations/porter-2.png";
-
-
-
 
 const Home = () => {
   useEffect(() => {
@@ -113,13 +108,20 @@ const Home = () => {
           content="https://www.facebook.com/menumitra"
         />
         <meta property="article:updated_time" content="2024-12-13" />
-        <meta property="og:image" itemprop="image" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:url" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:secure" content="%PUBLIC_URL%/logo192.png "/>
-      <meta property= "og:image:secure_url" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:alt" content="Menu Mitra Logo" />
-      <meta property="og:image:width" content="720" />
-      <meta property="og:image:height" content="602" />
+        <meta
+          property="og:image"
+          itemprop="image"
+          content="%PUBLIC_URL%/logo192.png"
+        />
+        <meta property="og:image:url" content="%PUBLIC_URL%/logo192.png" />
+        <meta property="og:image:secure" content="%PUBLIC_URL%/logo192.png " />
+        <meta
+          property="og:image:secure_url"
+          content="%PUBLIC_URL%/logo192.png"
+        />
+        <meta property="og:image:alt" content="Menu Mitra Logo" />
+        <meta property="og:image:width" content="720" />
+        <meta property="og:image:height" content="602" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -131,10 +133,7 @@ const Home = () => {
           name="twitter:description"
           content="Menu Mitra offers restaurant management solutions with POS, CRM, inventory, and order management. Learn more about our services."
         />
-        <meta
-          name="twitter:image"
-          content="%PUBLIC_URL%/logo192.png"
-        />
+        <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
       </Helmet>
       <>
         <Header />
@@ -146,27 +145,27 @@ const Home = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="hero-content">
-                    <h1 className="hero-title mb-4">India's Leading Restaurant Management & POS Solution</h1>
+                    <h1 className="hero-title mb-4">
+                      India's Leading Restaurant Management & POS Solution
+                    </h1>
                     <p className="hero-description mb-5">
-                      Streamline your restaurant operations with our cloud-based POS system. 
-                      Manage billing, inventory, online orders, customer relationships, and analytics 
-                      from anywhere, anytime. Built for modern restaurants that demand efficiency and growth.
+                      Streamline your restaurant operations with our cloud-based
+                      POS system. Manage billing, inventory, online orders,
+                      customer relationships, and analytics from anywhere,
+                      anytime. Built for modern restaurants that demand
+                      efficiency and growth.
                     </p>
-                    <a href="/book_demo" className="btn btn-primary btn-lg">
-                      <i className="fas fa-calendar-alt me-2"></i>
-                      Book a Demo
-                    </a>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="hero-image-wrapper">
-                    <iframe 
-                      width="100%" 
-                      height="315" 
-                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo" 
-                      title="MenuMitra Restaurant Management Software" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      width="100%"
+                      height="315"
+                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+                      title="MenuMitra Restaurant Management Software"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="hero-main-video"
                       style={{
@@ -175,7 +174,7 @@ const Home = () => {
                         aspectRatio: "16/9",
                         borderRadius: "20px",
                         boxShadow: "0 20px 40px rgba(0, 0, 0, 0.1)",
-                        transition: "transform 0.3s ease"
+                        transition: "transform 0.3s ease",
                       }}
                     ></iframe>
                     <div className="hero-shapes">
@@ -186,155 +185,132 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="has-circle">
-              <span className="circle circle-1"></span>
-              <span className="circle circle-2"></span>
-              <span className="circle circle-3"></span>
-              <span className="circle circle-4"></span>
-              <span className="circle circle-5"></span>
-              <span className="circle circle-6"></span>
-              <span className="circle circle-7"></span>
-            </div>
-          </section>
-          {/*================== Hero Area Section End ==================*/}
-          {/* / about */}
-          <div className="container mt-80  ">
-            <div className="text-center">
-              <h2 className="mt-6">Trusted by 50+ outlets as</h2>
-              <h2 className="mb-80">
-                Best Low Cost Restaurant Management Software
-              </h2>
-            </div>
-            {/* / text-center */}
-            {/* First Row */}
-            <div className="row d-flex justify-content-evenly ">
-              <div className="col-4 col-md-4 col-lg-1 mb-2 ">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={arjunCoffeeHouse}
-                    alt="Brand 1"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+              </div>{" "}
+              {/* <div className="row d-flex justify-content-evenly ">
+                <div className="col-4 col-md-4 col-lg-1 mb-2 ">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={arjunCoffeeHouse}
+                      alt="Brand 1"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={balajiBhojnalay}
-                    alt="Brand 2"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={balajiBhojnalay}
+                      alt="Brand 2"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={cafeDelicia}
-                    alt="Brand 3"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={cafeDelicia}
+                      alt="Brand 3"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={hotelJagdamba}
-                    alt="Brand 4"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={hotelJagdamba}
+                      alt="Brand 4"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={klingPakoda}
-                    alt="Brand 5"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={klingPakoda}
+                      alt="Brand 5"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={mrPakodi}
-                    alt="Brand 6"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={mrPakodi}
+                      alt="Brand 6"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={cafeGoodluck}
-                    alt="Brand 7"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={cafeGoodluck}
+                      alt="Brand 7"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={hotelAathvan}
-                    alt="Brand 8"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={hotelAathvan}
+                      alt="Brand 8"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
-                <div
-                  className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
-                >
-                  <img
-                    src={gavranChaha}
-                    alt="Brand 9"
-                    className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
-                  />
+                <div className="col-4 col-md-4 col-lg-1 mb-2">
+                  <div
+                    className="card border d-flex align-items-center justify-content-center"
+                    style={{ width: "120px", height: "120px" }}
+                  >
+                    <img
+                      src={gavranChaha}
+                      alt="Brand 9"
+                      className="img-fluid rounded-4 object-fit-contain"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
 
-            {/* Second Row - New Images */}
             <div className="row d-flex justify-content-evenly">
               <div className="col-4 col-md-4 col-lg-1 mb-2 ">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={hotelGanesh}
@@ -347,7 +323,7 @@ const Home = () => {
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={cafeDurga}
@@ -360,7 +336,7 @@ const Home = () => {
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={friendsCafe}
@@ -373,7 +349,7 @@ const Home = () => {
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={creamyNutsCafe}
@@ -386,7 +362,7 @@ const Home = () => {
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={garva}
@@ -399,7 +375,7 @@ const Home = () => {
               <div className="col-4 col-md-4 col-lg-1 mb-2">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "120px", height: "120px" }}
+                  style={{ width: "180px", height: "120px" }}
                 >
                   <img
                     src={hotelBoshal}
@@ -410,7 +386,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+            <div className="has-circle">
+              <span className="circle circle-1"></span>
+              <span className="circle circle-2"></span>
+              <span className="circle circle-3"></span>
+              <span className="circle circle-4"></span>
+              <span className="circle circle-5"></span>
+              <span className="circle circle-6"></span>
+              <span className="circle circle-7"></span>
+            </div>
+          </section>
+          {/*================== Hero Area Section End ==================*/}
+          
 
           {/* / container */}
           <div className="container mt-5">
@@ -735,81 +723,81 @@ const Home = () => {
                   icon: "fas fa-utensils",
                   text: "Fine Dine",
                   bg: "#fce4ec",
-                  color: "#d81b60"
+                  color: "#d81b60",
                 },
                 {
                   icon: "fas fa-store",
                   text: "Food Court",
-                  bg: "#e3f2fd", 
-                  color: "#0288d1"
+                  bg: "#e3f2fd",
+                  color: "#0288d1",
                 },
                 {
                   icon: "fas fa-coffee",
                   text: "Cafe",
                   bg: "#fff9c4",
-                  color: "#fbc02d"
+                  color: "#fbc02d",
                 },
                 {
                   icon: "fas fa-concierge-bell",
                   text: "QSR",
                   bg: "#ede7f6",
-                  color: "#8e24aa"
+                  color: "#8e24aa",
                 },
                 {
                   icon: "fas fa-beer",
                   text: "Bar & Brewery",
                   bg: "#e0f7fa",
-                  color: "#388e3c"
+                  color: "#388e3c",
                 },
                 {
                   icon: "fas fa-bread-slice",
                   text: "Bakery",
                   bg: "#ede7f6",
-                  color: "#8e24aa"
+                  color: "#8e24aa",
                 },
                 {
                   icon: "fas fa-pizza-slice",
                   text: "Pizzeria",
                   bg: "#e3f2fd",
-                  color: "#0288d1"
+                  color: "#0288d1",
                 },
                 {
                   icon: "fas fa-cloud",
                   text: "Cloud Kitchen",
                   bg: "#fce4ec",
-                  color: "#d81b60"
+                  color: "#d81b60",
                 },
                 {
                   icon: "fas fa-store",
                   text: "Large Chain",
                   bg: "#fff9c4",
-                  color: "#fbc02d"
-                }
+                  color: "#fbc02d",
+                },
               ].map((item, index) => (
                 <div className="col px-2 mb-3" key={index}>
-                  <div 
+                  <div
                     className="card text-center border-0 h-100 mx-auto shadow-sm"
-                    style={{ 
-                      backgroundColor: item.bg, 
+                    style={{
+                      backgroundColor: item.bg,
                       borderRadius: 15,
                       aspectRatio: "1/1",
                       width: "100%",
-                      minHeight: "150px"
+                      minHeight: "150px",
                     }}
                   >
                     <div className="card-body d-flex flex-column justify-content-center align-items-center p-2 p-md-3">
                       <i
                         className={`${item.icon} mb-2`}
-                        style={{ 
-                          color: item.color, 
-                          fontSize: "calc(1.5rem + 1vw)"
+                        style={{
+                          color: item.color,
+                          fontSize: "calc(1.5rem + 1vw)",
                         }}
                       ></i>
-                      <p 
+                      <p
                         className="fw-bold mb-0 text-break"
                         style={{
                           fontSize: "calc(0.9rem + 0.3vw)",
-                          lineHeight: 1.2
+                          lineHeight: 1.2,
                         }}
                       >
                         {item.text}
@@ -829,6 +817,6 @@ const Home = () => {
       </>
     </>
   );
-}
+};
 
-export default Home
+export default Home;
