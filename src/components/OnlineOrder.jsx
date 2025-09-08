@@ -111,14 +111,9 @@ const OnlineOrder = () => {
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Online-Order-Integration2-1.png.webp"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">
               Online Order Integration
               </h6>
@@ -129,14 +124,9 @@ const OnlineOrder = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Menu-Updations-Changes-2.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Menu Updations & Changes</h6>
               <p className="card-text">
               Manage online menu directly from MenuMitra POS, add, update, modify whenever you want! customise menu timing, add images and more
@@ -144,17 +134,10 @@ const OnlineOrder = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 3 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/2-4.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Toggle Your Items & Outlet On/Off</h6>
               <p className="card-text">
               Running out of stock? manage your menu online status from MenuMitra POS. Turn item or category on/off as per your availability
@@ -162,15 +145,10 @@ const OnlineOrder = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 4 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Customisable-Charges-Add-Ons-4.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Customisable Charges & Add-Ons</h6>
               <p className="card-text">
               Add customised charges such as packaging charge, container charge, discounts or offer from MenuMitra admin panel. No more juggling between here or there

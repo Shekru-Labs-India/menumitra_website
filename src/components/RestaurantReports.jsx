@@ -111,14 +111,9 @@ const RestaurantReports = () => {
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Single-Dashboard-Monitoring-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">
               Single Dashboard Monitoring
               </h6>
@@ -129,14 +124,9 @@ const RestaurantReports = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Compressive-Tax-Reports22-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Compressive Tax Reports</h6>
               <p className="card-text">
               Your tax-related difficulties are over! With just one click, you can access detailed tax reports for all of your outlets with MenuMitra.
@@ -145,17 +135,10 @@ const RestaurantReports = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 3 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/placeholder-56.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Web & App</h6>
               <p className="card-text">
               MenuMitra makes it easy to keep track of your restaurant! You can view our dashboard as an iOS or Android app, or as a webpage on your computer. Keep easy control over your restaurant's operations from anywhere, using any device.
@@ -163,15 +146,10 @@ const RestaurantReports = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 4 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Head-Office-Module-with-Clusters-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Head Office Module with Clusters</h6>
               <p className="card-text">
               Are you feeling overburdened by running several outlets? Monitor sales across all locations on a single screen with MenuMitra's Head Office module, which is part of the subscription. Establish zones according to cities, regions, or channels to have the information you require at your fingertips (e.g., Zomato sales for the Western Region). Use MenuMitra to streamline supervision!
@@ -182,15 +160,10 @@ const RestaurantReports = () => {
       </div>
       
       <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 5 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/User-rights-management-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">User rights management</h6>
               <p className="card-text">
               MenuMitra allows you to take control! By giving particular roles and rights to the admin panel and the billing app, you can customize what your employees see. You have complete control over your outlet's operations, which are all centralized for your convenience, from changing bills to seeing reports and operating the cash drawer.
@@ -198,15 +171,10 @@ const RestaurantReports = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 6 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Set-Automate-WhatsApp-Report-2.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Set Automate WhatsApp Report</h6>
               <p className="card-text">
               Did you miss today's reports? We've got you covered, no worries! You can select which reports to receive in your WhatsApp and when with MenuMitra WhatsApp Reports. Easily stay up to date!

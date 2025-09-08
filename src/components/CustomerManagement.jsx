@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+  import React, { useEffect, useState } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
@@ -100,14 +100,9 @@ const CustomerManagement = () => {
       </h2>
       <div className="row justify-content-center">
         {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card " style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Track-customer-behaviour-3.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">
               Track customer behaviour
               </h6>
@@ -119,14 +114,9 @@ const CustomerManagement = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Synced-customer-information-3.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Synced customer information</h6>
               <p className="card-text">
               Flawless customer understanding! Information captured on the POS is immediately linked to the cloud. Get information instantly, including address, email, birthdays, anniversaries, and more, in addition to names and numbers. Gain a thorough grasp of your clients with ease!
@@ -134,17 +124,10 @@ const CustomerManagement = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row justify-content-center">
-        {/* Card 1 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 3 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Regulate-customer-retention-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Regulate customer retention</h6>
               <p className="card-text">
               Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes.
@@ -152,15 +135,10 @@ const CustomerManagement = () => {
             </div>
           </div>
         </div>
-        {/* Card 2 */}
-        <div className="col-md-6 col-lg-4 mb-4">
+        {/* Card 4 */}
+        <div className="col-md-6 col-lg-3 mb-4">
           <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Customer-Feedbacks-1.png"
-              alt="Card Image"
-              className="card-img-top"
-            />
-            <div className="card-body">
+            <div className="card-body p-4">
               <h6 className="card-title">Customer Feedbacks</h6>
               <p className="card-text">
               With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links.
