@@ -306,11 +306,11 @@ const Home = () => {
                 </div>
               </div> */}
 
-            <div className="row d-flex justify-content-evenly">
-              <div className="col-4 col-md-4 col-lg-1 mb-2 ">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={hotelGanesh}
@@ -320,10 +320,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={cafeDurga}
@@ -333,10 +333,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={friendsCafe}
@@ -346,10 +346,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={creamyNutsCafe}
@@ -359,10 +359,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={garva}
@@ -372,10 +372,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="col-4 col-md-4 col-lg-1 mb-2">
+              <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "180px", height: "120px" }}
+                  style={{ width: "160px", height: "120px" }}
                 >
                   <img
                     src={hotelBoshal}
