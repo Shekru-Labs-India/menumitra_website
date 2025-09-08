@@ -4,6 +4,7 @@ import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import FeatureCards from './FeatureCards';
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -18,116 +19,49 @@ const Inventory = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Add custom styles for inventory cards
-  const cardStyles = `
-    <style>
-      .inventory-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-        border: 2px solid #e9ecef;
-        border-radius: 28px;
-        padding: 2.5rem 2rem;
-        height: 100%;
-        transition: all 0.3s ease;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08), 0 3px 10px rgba(0, 0, 0, 0.05);
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 1rem;
-      }
-      
-      .inventory-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #28a745, #20c997);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
-      .inventory-card:hover {
-        transform: translateY(-12px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
-        border: 2px solid #28a745;
-        border-radius: 32px;
-      }
-      
-      // .inventory-card:hover::before {
-      //   opacity: 1;
-      // }
-      
-      .card-icon {
-        width: 70px;
-        height: 70px;
-        background: linear-gradient(135deg, #28a745, #20c997);
-        border-radius: 22px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2rem;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
-      }
-      
-      .card-icon i {
-        font-size: 28px;
-        color: white;
-      }
-      
-      .inventory-card:hover .card-icon {
-        transform: scale(1.15);
-        box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
-      }
-      
-      .card-content {
-        text-align: left;
-        padding: 1rem;
-      }
-      
-      .card-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #2c3e50;
-        margin-bottom: 1.2rem;
-        line-height: 1.4;
-      }
-      
-      .card-text {
-        color: #6c757d;
-        font-size: 1rem;
-        line-height: 1.7;
-        margin: 0;
-        padding-right: 0.5rem;
-      }
-      
-      @media (max-width: 768px) {
-        .inventory-card {
-          padding: 2rem 1.5rem;
-        }
-        
-        .card-icon {
-          width: 60px;
-          height: 60px;
-          margin-bottom: 1.5rem;
-        }
-        
-        .card-icon i {
-          font-size: 24px;
-        }
-        
-        .card-title {
-          font-size: 1.1rem;
-          margin-bottom: 1rem;
-        }
-        
-        .card-text {
-          font-size: 0.95rem;
-        }
-      }
-    </style>
-  `;
+  // Inventory feature cards data
+  const inventoryCards = [
+    {
+      icon: "fas fa-boxes",
+      title: "Raw Material Management",
+      description: "Create material list, assign vendors to them, check the real-time stock status, get the alerts of low stock and reports"
+    },
+    {
+      icon: "fas fa-utensils",
+      title: "Multi-Stage Recipe Management",
+      description: "Something partially cooked? No worries, prepare recipes for that then add those recipe to the menu item, it will automatically handle the entire inventory"
+    },
+    {
+      icon: "fas fa-building",
+      title: "Central Kitchen Module",
+      description: "Centralise recipes, items controls, vendors lists, accounting & balances, purchase order, indent, material transfer, good receipt notes (GRN) and do lot more"
+    },
+    {
+      icon: "fas fa-file-invoice",
+      title: "Purchase Order",
+      description: "You can create the purchase orders, send to the vendors or central kitchen, track & control their status, convert to invoice and process"
+    },
+    {
+      icon: "fas fa-bell",
+      title: "Minimum Stock Alerts",
+      description: "Running out of stock? We can save you from this, set the minimum level of each material, so whenever it hits the level, assigned person or owner will get an instant alert"
+    },
+    {
+      icon: "fas fa-chart-line",
+      title: "Live Food Costing Reports",
+      description: "The potato cost is not fixed, it changes every week! So that your recipe cost will affect. MenuMitra gives you a clear knowledge about the food cost, so you can increase your profits"
+    },
+    {
+      icon: "fas fa-recycle",
+      title: "Waste Management & Tracking",
+      description: "Track food waste, expired items, and spoilage to minimize losses. Get detailed reports on waste patterns and optimize your inventory ordering to reduce unnecessary costs"
+    },
+    {
+      icon: "fas fa-sync-alt",
+      title: "Automated Reorder System",
+      description: "Never run out of essential ingredients again! Set up automatic reorder points and let MenuMitra generate purchase orders automatically when stock levels reach predefined thresholds"
+    }
+  ];
 
   return (
     <>
@@ -210,7 +144,6 @@ const Inventory = () => {
           name="twitter:image"
           content="%PUBLIC_URL%/logo192.png"
         />
-        <style>{cardStyles}</style>
       </Helmet>
       <>
         <Header />
@@ -249,148 +182,11 @@ const Inventory = () => {
             </div>
             {/* / container */}
           </section>
-          <div className="container mt-80">
-            <h2 className="text-center mb-50">
-              Discover what MenuMitra can do for your inventory
-            </h2>
-            <div className="row justify-content-center">
-              {/* Card 1 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-boxes"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Raw Material Management</h6>
-                    <p className="card-text">
-                      Create material list, assign vendors to them, check the
-                      real-time stock status, get the alerts of low stock and
-                      reports
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 2 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-utensils"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">
-                      Multi-Stage Recipe Management
-                    </h6>
-                    <p className="card-text">
-                      Something partially cooked? No worries, prepare recipes
-                      for that then add those recipe to the menu item, it will
-                      automatically handle the entire inventory
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 3 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-building"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Central Kitchen Module</h6>
-                    <p className="card-text">
-                      Centralise recipes, items controls, vendors lists,
-                      accounting & balances, purchase order, indent,
-                      material transfer, good receipt notes (GRN) and do lot
-                      more
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 4 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-file-invoice"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Purchase Order</h6>
-                    <p className="card-text">
-                      You can create the purchase orders, send to the vendors or
-                      central kitchen, track & control their status, convert
-                      to invoice and process
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              {/* Card 5 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-bell"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Minimum Stock Alerts</h6>
-                    <p className="card-text">
-                      Running out of stock? We can save you from this, set the
-                      minimum level of each material, so whenever it hits the
-                      level, assigned person or owner will get an instant alert
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 6 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-chart-line"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Live Food Costing Reports</h6>
-                    <p className="card-text">
-                      The potato cost is not fixed, it changes every week! So
-                      that your recipe cost will affect. MenuMitra gives you a
-                      clear knowledge about the food cost, so you can increase
-                      your profits
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 7 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-recycle"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Waste Management & Tracking</h6>
-                    <p className="card-text">
-                      Track food waste, expired items, and spoilage to minimize
-                      losses. Get detailed reports on waste patterns and optimize
-                      your inventory ordering to reduce unnecessary costs
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Card 8 */}
-              <div className="col-md-6 col-lg-3 mb-4">
-                <div className="inventory-card">
-                  <div className="card-icon">
-                    <i className="fas fa-sync-alt"></i>
-                  </div>
-                  <div className="card-content">
-                    <h6 className="card-title">Automated Reorder System</h6>
-                    <p className="card-text">
-                      Never run out of essential ingredients again! Set up
-                      automatic reorder points and let MenuMitra generate purchase
-                      orders automatically when stock levels reach predefined
-                      thresholds
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FeatureCards
+            title="Discover what MenuMitra can do for your inventory"
+            cards={inventoryCards}
+            cardClassName="feature-card"
+          />
           <div id="features" className="mt-80">
             <div className="container">
               <div className="text-center">
