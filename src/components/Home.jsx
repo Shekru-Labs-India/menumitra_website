@@ -139,14 +139,16 @@ const Home = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="hero-content">
-                    <p className="hero-intro mb-3">Welcome to MenuMitra</p>
                     <h1 className="hero-title mb-4">India's Leading Restaurant Management & POS Solution</h1>
                     <p className="hero-description mb-5">
                       Streamline your restaurant operations with our cloud-based POS system. 
                       Manage billing, inventory, online orders, customer relationships, and analytics 
                       from anywhere, anytime. Built for modern restaurants that demand efficiency and growth.
                     </p>
-                    <a href="#contact" className="btn btn-primary btn-lg">Start Free Trial</a>
+                    <a href="/book_demo" className="btn btn-primary btn-lg">
+                      <i className="fas fa-calendar-alt me-2"></i>
+                      Book a Demo
+                    </a>
                   </div>
                 </div>
                 <div className="col-lg-6">

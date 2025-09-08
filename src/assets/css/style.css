@@ -66,6 +66,19 @@
   z-index: 1;
 }
 
+/* Position circles specifically behind the image area */
+.hero-area .has-circle {
+  z-index: 1;
+}
+
+.hero-area .has-circle .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  opacity: 0.08;
+  animation: float 8s ease-in-out infinite;
+}
+
 .has-circle .circle {
   position: absolute;
   border-radius: 50%;
@@ -77,31 +90,31 @@
 .has-circle .circle-1 {
   width: 200px;
   height: 200px;
-  top: 10%;
-  left: 10%;
+  top: 15%;
+  right: 5%;
   animation-delay: 0s;
 }
 
 .has-circle .circle-2 {
   width: 150px;
   height: 150px;
-  top: 20%;
-  right: 15%;
+  top: 25%;
+  right: 20%;
   animation-delay: 2s;
 }
 
 .has-circle .circle-3 {
   width: 100px;
   height: 100px;
-  bottom: 30%;
-  left: 20%;
+  bottom: 25%;
+  right: 10%;
   animation-delay: 4s;
 }
 
 .has-circle .circle-4 {
   width: 80px;
   height: 80px;
-  bottom: 20%;
+  bottom: 15%;
   right: 30%;
   animation-delay: 1s;
 }
@@ -110,23 +123,23 @@
   width: 120px;
   height: 120px;
   top: 50%;
-  left: 5%;
+  right: 35%;
   animation-delay: 3s;
 }
 
 .has-circle .circle-6 {
   width: 90px;
   height: 90px;
-  top: 60%;
-  right: 10%;
+  top: 70%;
+  right: 15%;
   animation-delay: 5s;
 }
 
 .has-circle .circle-7 {
   width: 70px;
   height: 70px;
-  bottom: 10%;
-  left: 50%;
+  bottom: 35%;
+  right: 25%;
   animation-delay: 2.5s;
 }
 
@@ -169,6 +182,7 @@
 .hero-image-wrapper {
   position: relative;
   text-align: center;
+  z-index: 2;
 }
 
 .hero-main-image {
@@ -285,7 +299,7 @@
 
 @media (max-width: 768px) {
   .hero-area {
-    padding: 60px 0;
+    padding: 100px 0;
   }
   
   .hero-area h1 {
