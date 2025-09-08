@@ -85,7 +85,6 @@ const Footer = () => {
                     <li><Link to="/support"><i className="fa-solid fa-chevron-right me-2"></i>Support</Link></li>
                     <li><Link to="/about_us"><i className="fa-solid fa-chevron-right me-2"></i>About</Link></li>
                     <li><Link to="/reseller_program"><i className="fa-solid fa-chevron-right me-2"></i>Become Partner</Link></li>
-                    <li><Link to="/devices"><i className="fa-solid fa-chevron-right me-2"></i>Devices</Link></li>
                   </ul>
                 </div>
               </div>

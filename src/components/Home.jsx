@@ -180,7 +180,7 @@ const Home = () => {
             </div>
             {/* / text-center */}
             {/* First Row */}
-            <div className="row d-flex justify-content-evenly mb-4">
+            <div className="row d-flex justify-content-evenly ">
               <div className="col-4 col-md-4 col-lg-1 mb-2 ">
                 <div
                   className="card border"
@@ -292,7 +292,7 @@ const Home = () => {
             </div>
 
             {/* Second Row - Copies */}
-            <div className="row d-flex justify-content-evenly mb-80">
+            <div className="row d-flex justify-content-evenly">
               <div className="col-4 col-md-4 col-lg-1 mb-2 ">
                 <div
                   className="card border"
