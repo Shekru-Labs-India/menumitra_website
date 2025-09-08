@@ -65,24 +65,17 @@ const CustomerManagement = () => {
    <div className="main-container p-0">
     <section id="why-us" className="xl bg-gradient-body">
       <div className="container">
-        <div className="row v-center">
-          <div className="col-lg-5">
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/Customer-Relationship-Management4-1.png"
-              alt=""
-              className="rounded rellax"
-              data-rellax-speed={2}
-              data-rellax-percentage="0.5"
-            />
-          </div>
-          {/* / column */}
-          <div className="col-lg-7 tablet-lg-top-30">
+        <div className="row v-center pb-30">
+          <div className="col-lg-5 tablet-lg-top-30">
             <h2 className="mb-30">
             Know everything about your customers in just one click!
             </h2>
             <p className="mb-30">
             In-built Customer Management Software that helps your earn customer loyalty, Regulate customer retention, Synced customer information, Track customer behaviour and many more
             </p>
+          </div>
+          {/* / column */}
+          <div className="col-lg-7">
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
         
               <span>Book a free demo</span>
