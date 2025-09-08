@@ -16,18 +16,8 @@ const FoodCourts = () => {
 
   <section id="why-us" className="xl ">
       <div className="container">
-        <div className="row v-center">
-          <div className="col-lg-5">
-            <img
-              src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/02/3-1.png"
-              alt=""
-              className="rounded rellax "
-              data-rellax-speed={2}
-              data-rellax-percentage="0.5"
-            />
-          </div>
-          {/* / column */}
-          <div className="col-lg-7 tablet-lg-top-30">
+        <div className="row v-center pb-30">
+          <div className="col-lg-5 tablet-lg-top-30">
             <h2 className="mb-30">
             Centralise POS
             is all you need for multiple counters
@@ -35,6 +25,9 @@ const FoodCourts = () => {
             <p className="mb-30">
             Effortlessly handle your Chat, Chinese, Rajasthani, and 20 other food counters using just one billing software.
             </p>
+          </div>
+          {/* / column */}
+          <div className="col-lg-7">
             <Link to="/book_demo" className="btn btn-primary pill mr-5">
              
               <span>Book a free demo</span>
@@ -56,36 +49,62 @@ const FoodCourts = () => {
         </div>
         {/* / text-center */}
         <div className="container py-5">
-        <div className="row text-center">
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Customer-Account-Top-up-Redemption-1.png"  alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Customer Account Top-up & Redemption</h5>
-                <p style={{ color: '#666' }} className="feature-description">MenuMitra offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later.</p>
+        <div className="row justify-content-center">
+            {/* Card 1 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">Customer Account Top-up & Redemption</h6>
+                        <p className="card-text">MenuMitra offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later.</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/QR-Code-Based-Ordering-3.png" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">QR-Code Based Ordering</h5>
-                <p style={{ color: '#666' }} className="feature-description">No more food counter hopping after shopping! With MenuMitra's QR-code, your customers can order & pay from their table.</p>
+            {/* Card 2 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">QR-Code Based Ordering</h6>
+                        <p className="card-text">No more food counter hopping after shopping! With MenuMitra's QR-code, your customers can order & pay from their table.</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Royalty-Management-2.png	" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Royalty Management</h5>
-                <p style={{ color: '#666' }} className="feature-description">Track sales of individual counters, pre define royalties, download reports. no more hassle</p>
+            {/* Card 3 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">Royalty Management</h6>
+                        <p className="card-text">Track sales of individual counters, pre define royalties, download reports. no more hassle</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Online-Order-Integration-10.png" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Online Order Integration</h5>
-                <p style={{ color: '#666' }} className="feature-description">Manage online aggregators separately by their counters, under a single umbrella</p>
+            {/* Card 4 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">Online Order Integration</h6>
+                        <p className="card-text">Manage online aggregators separately by their counters, under a single umbrella</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Counter-wise-Report-3.png" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Counter wise Report</h5>
-                <p style={{ color: '#666' }} className="feature-description">Track orders & sales of individual counters, separate app for counter owners to track their business at free of cost</p>
+        </div>
+        <div className="row justify-content-center">
+            {/* Card 5 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">Counter wise Report</h6>
+                        <p className="card-text">Track orders & sales of individual counters, separate app for counter owners to track their business at free of cost</p>
+                    </div>
+                </div>
             </div>
-            <div className="col-md-4 mb-4">
-                <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Waiter-Performance-Reporting-3.png" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Waiter Reporting</h5>
-                <p style={{ color: '#666' }} className="feature-description">Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime.</p>
+            {/* Card 6 */}
+            <div className="col-md-6 col-lg-3 mb-4">
+                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
+                    <div className="card-body p-4">
+                        <h6 className="card-title">Waiter Reporting</h6>
+                        <p className="card-text">Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
