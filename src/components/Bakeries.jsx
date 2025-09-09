@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const Bakeries = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Bakery feature cards data
+  const bakeryCards = [
+    {
+      icon: "fas fa-calendar-check",
+      iconColor: "#007bff",
+      title: "Advance Ordering",
+      titleColor: "text-primary",
+      description: "Birthday Cake? cookies? take advance orders by punching guest details, location, amount, delivery time-date, also you can upload the reference images"
+    },
+    {
+      icon: "fas fa-qrcode",
+      iconColor: "#28a745",
+      title: "Scan & Order",
+      titleColor: "text-success",
+      description: "Customer can see offers, place order, make payment! you can also add his plugin to your website for more orders with MenuMitra Bakery POS Software"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      iconColor: "#fd7e14",
+      title: "Online Ordering Integrations",
+      titleColor: "text-warning",
+      description: "Accept orders, mark food ready, control menu status, and everything from MenuMitra Bakery POS Software"
+    },
+    {
+      icon: "fas fa-home",
+      iconColor: "#6f42c1",
+      title: "Central Kitchen",
+      titleColor: "text-info",
+      description: "Centralise recipes, items controls, purchase order, indent, material transfer, and do lot more with MenuMitra Bakery POS Software"
+    },
+    {
+      icon: "fas fa-warehouse",
+      iconColor: "#dc3545",
+      title: "Inventory Management",
+      titleColor: "text-danger",
+      description: "Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything"
+    },
+    {
+      icon: "fas fa-user-tie",
+      iconColor: "#20c997",
+      title: "Waiter Reporting",
+      titleColor: "text-success",
+      description: "Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime"
+    }
+  ];
   return (
     
     <>
@@ -40,81 +87,17 @@ const Bakeries = () => {
       {/* / container */}
     </section>
 
-    <section id="features" className="lg">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title ">
-          You've done everything to build your bakery.
-          We help you take the next big step.
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Advance Ordering​</h6>
-                        <p className="card-text">Birthday Cake? cookies? take advance orders by punching guest details, location, amount, delivery time-date, also you can upload the reference images</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Scan & Order</h6>
-                        <p className="card-text">Customer can see offers, place order, make payment! you can also add his plugin to your website for more orders with MenuMitra Bakery POS Software</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Online Ordering Integrations</h6>
-                        <p className="card-text">Accept orders, mark food ready, control menu status, and everything from MenuMitra Bakery POS Software</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Central Kitchen</h6>
-                        <p className="card-text">Centralise recipes, items controls, purchase order, indent, material transfer, and do lot more with MenuMitra Bakery POS Software</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Inventory Management</h6>
-                        <p className="card-text">Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Waiter Reporting</h6>
-                        <p className="card-text">Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </section>
-
-
+    <FeatureCards 
+      title="You've done everything to build your bakery. We help you take the next big step."
+      subtitle="Bakery management features for sweet success"
+      cards={bakeryCards}
+      ctaTitle="Ready to Bake Your Way to Success?"
+      ctaDescription="Transform your bakery business with MenuMitra's specialized POS solution. Book a free demo and discover how we can help your bakery thrive."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 

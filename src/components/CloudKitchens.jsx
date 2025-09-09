@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const CloudKitchens = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Cloud kitchen feature cards data
+  const cloudKitchenCards = [
+    {
+      icon: "fas fa-mobile-alt",
+      iconColor: "#007bff",
+      title: "Online Order Integrations",
+      titleColor: "text-primary",
+      description: "Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly"
+    },
+    {
+      icon: "fas fa-store",
+      iconColor: "#28a745",
+      title: "Virtual Brands",
+      titleColor: "text-success",
+      description: "Multiple brands? manage every brand fro one MenuMitra POS, by managing menus, prices, integrations, brand wise reports and everything"
+    },
+    {
+      icon: "fas fa-plus-circle",
+      iconColor: "#fd7e14",
+      title: "Item Variations & Addons",
+      titleColor: "text-warning",
+      description: "No milk? Want hazelnut syrup? Handle every customization effortlessly by creating variations and adding extras with ease"
+    },
+    {
+      icon: "fas fa-cube",
+      iconColor: "#6f42c1",
+      title: "Raw Material Management",
+      titleColor: "text-info",
+      description: "Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!"
+    },
+    {
+      icon: "fas fa-warehouse",
+      iconColor: "#dc3545",
+      title: "Inventory Management",
+      titleColor: "text-danger",
+      description: "Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything"
+    },
+    {
+      icon: "fas fa-home",
+      iconColor: "#20c997",
+      title: "Central Kitchen",
+      titleColor: "text-success",
+      description: "Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise"
+    }
+  ];
   return (
     
   <>
@@ -39,80 +86,17 @@ const CloudKitchens = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          You've done everything to build your cloud kitchen.
-          We help you take the next big step.
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Online Order Integrations</h6>
-                        <p className="card-text">Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Virtual Brands</h6>
-                        <p className="card-text">Multiple brands? manage every brand fro one MenuMitra POS, by managing menus, prices, integrations, brand wise reports and everything</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Item Variations & Addons</h6>
-                        <p className="card-text">No milk? Want hazelnut syrup? Handle every customization effortlessly by creating variations and adding extras with ease.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Raw Material Management</h6>
-                        <p className="card-text">Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Inventory Management</h6>
-                        <p className="card-text">Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Central Kitchen</h6>
-                        <p className="card-text">Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
+    <FeatureCards 
+      title="You've done everything to build your cloud kitchen. We help you take the next big step."
+      subtitle="Cloud kitchen management features for digital success"
+      cards={cloudKitchenCards}
+      ctaTitle="Ready to Scale Your Cloud Kitchen?"
+      ctaDescription="Streamline your cloud kitchen operations with MenuMitra's powerful POS solution. Book a free demo and see how we can help your digital kitchen thrive."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 

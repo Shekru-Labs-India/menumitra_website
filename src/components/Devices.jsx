@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import BannerSection from './BannerSection'
+import FeatureCards from './FeatureCards'
 
 
 const Devices = () => {
@@ -9,6 +10,31 @@ const Devices = () => {
      useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
+
+  // Devices feature cards data
+  const deviceCards = [
+    {
+      icon: "fas fa-store",
+      iconColor: "#007bff",
+      title: "Sell better",
+      titleColor: "text-primary",
+      description: "Sell beyond your physical store with a powerful mobile app that allows customers to order even when your store is not open"
+    },
+    {
+      icon: "fas fa-cogs",
+      iconColor: "#28a745",
+      title: "Manage your entire business",
+      titleColor: "text-success",
+      description: "Inventory, sales and billing, customers, suppliers, credit payments, and more, all on one platform"
+    },
+    {
+      icon: "fas fa-share-alt",
+      iconColor: "#fd7e14",
+      title: "Join the digital revolution",
+      titleColor: "text-warning",
+      description: "Menumitra helps your business transform digitally and go where your customers are"
+    }
+  ];
 
     return (
         <>
@@ -107,46 +133,18 @@ const Devices = () => {
 
             <div className="container-fluid bg-dark text-white  py-5">
                 <div className='container'>
-                    <h1 className="mb-4 text-white text-center">You've done everything to build your <br /> business. We help you take the next big step.</h1>
-                    <div className="row">
-                        <div className="col-md-4 mb-4">
-                            <div className="card  text-white" style={{ backgroundColor: '#242424' }}>
-                                <div className="card-body">
-                                    <div className="mb-3">
-                                        <i className="fas fa-store fa-3x"></i>
-                                    </div>
-                                    <h5 className="card-title text-white">Sell better</h5>
-                                    <p className="card-text text-white">Sell beyond your physical store <br /> with a powerful mobile app that <br /> allows customers to order even <br /> when your store is not open.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card  text-white" style={{ backgroundColor: '#242424' }}>
-                                <div className="card-body">
-                                    <div className="mb-3">
-                                        <i className="fas fa-cogs fa-3x"></i>
-                                    </div>
-                                    <h5 className="card-title text-white">Manage your entire business</h5>
-                                    <p className="card-text text-white">Inventory, sales and billing,<br /> customers, suppliers, credit <br /> payments, and more, all on one <br />
-                                     platform.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <div className="card  text-white" style={{ backgroundColor: '#242424' }}>
-                                <div className="card-body">
-                                    <div className="mb-3">
-                                        <i className="fas fa-share-alt fa-3x"></i>
-                                    </div>
-                                    <h5 className="card-title text-white">Join the digital revolution</h5>
-                                    <p className="card-text text-white">Menumitra helps your business <br /> transform digitally and go where <br /> your customers are.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-
+                    <FeatureCards 
+                      title="You've done everything to build your business. We help you take the next big step."
+                      subtitle="Modern retail POS features for business growth"
+                      cards={deviceCards}
+                      ctaTitle="Ready to Transform Your Retail Business?"
+                      ctaDescription="Join thousands of businesses using MenuMitra's modern retail POS solution. Book a free demo and discover how we can help your business grow."
+                      ctaButtonText="Book Free Demo"
+                      ctaButtonLink="/book_demo"
+                      ctaButtonIcon="fas fa-calendar-alt"
+                      showCta={true}
+                      className="bg-dark text-white"
+                    />
                     </div>
                 </div>
                 

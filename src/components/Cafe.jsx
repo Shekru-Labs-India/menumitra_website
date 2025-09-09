@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const Cafe = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Cafe feature cards data
+  const cafeCards = [
+    {
+      icon: "fas fa-bolt",
+      iconColor: "#007bff",
+      title: "Quick Billing",
+      titleColor: "text-primary",
+      description: "Quickly process bills in 5 seconds, create shortcuts, and view favorites easily with our fast cafe POS software"
+    },
+    {
+      icon: "fas fa-list-alt",
+      iconColor: "#28a745",
+      title: "Station wise KOT",
+      titleColor: "text-success",
+      description: "No stress with separate food & drink stations! Just create, assign with MenuMitra cafe POS Software, and relax as everything falls into place"
+    },
+    {
+      icon: "fas fa-plus-circle",
+      iconColor: "#fd7e14",
+      title: "Item Variations & Addons",
+      titleColor: "text-warning",
+      description: "No milk? Want hazelnut syrup? Handle every customization effortlessly by creating variations and adding extras with ease"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      iconColor: "#6f42c1",
+      title: "Online Order Integrations",
+      titleColor: "text-info",
+      description: "Accept orders, mark food ready, control menu status, and everything from MenuMitra Cafe POS Software directly"
+    },
+    {
+      icon: "fas fa-warehouse",
+      iconColor: "#dc3545",
+      title: "Inventory Management",
+      titleColor: "text-danger",
+      description: "Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything"
+    },
+    {
+      icon: "fas fa-user-tie",
+      iconColor: "#20c997",
+      title: "Waiter Reporting",
+      titleColor: "text-success",
+      description: "Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime"
+    }
+  ];
   return (
    
     <>
@@ -39,80 +86,17 @@ const Cafe = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          You've done everything to build your cafe,
-          We help you take the next big step.
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Quick Billing</h6>
-                        <p className="card-text">Quickly process bills in 5 seconds, create shortcuts, and view favorites easily with our fast cafe POS software.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Station wise KOT</h6>
-                        <p className="card-text">No stress with separate food & drink stations! Just create, assign with MenuMitra cafe POS Software, and relax as everything falls into place.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Item Variations & Addons</h6>
-                        <p className="card-text">No milk? Want hazelnut syrup? Handle every customization effortlessly by creating variations and adding extras with ease.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Online Order Integrations</h6>
-                        <p className="card-text">Accept orders, mark food ready, control menu status, and everything from MenuMitra Cafe POS Software directly.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Inventory Management</h6>
-                        <p className="card-text">Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Waiter Reporting</h6>
-                        <p className="card-text">Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
+    <FeatureCards 
+      title="You've done everything to build your cafe, We help you take the next big step."
+      subtitle="Cafe management features for brewing success"
+      cards={cafeCards}
+      ctaTitle="Ready to Brew Success in Your Cafe?"
+      ctaDescription="Elevate your cafe experience with MenuMitra's specialized POS solution. Book a free demo and discover how we can help your cafe business flourish."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 
