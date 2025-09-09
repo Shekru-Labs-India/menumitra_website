@@ -5,8 +5,8 @@
 }
 
 .minimal-accordion {
-  padding: 1.75rem 0rem 2rem 2.5rem;
-  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.03);
+  padding: 0.5rem 0rem 1rem 1rem;
+  box-shadow: 0px 2px 8px rgba(0, 30, 60, 0.02);
 }
 
 .accordion-button {
@@ -14,10 +14,10 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1.75rem 2rem;
+  padding: 0.75rem 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 15px;
   color: #111724;
   text-align: left;
   background-color: transparent;
@@ -68,8 +68,9 @@
 }
 
 .accordion-body {
-  padding: 2rem 1.75rem;
-  font-size: 16px;
+  padding: 1rem 1.25rem;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .minimal-accordion .accordion-collapse {
@@ -79,30 +80,78 @@
 .minimal-accordion .accordion-button {
   background-color: transparent;
   border: none;
-  padding: 2rem 1.75rem;
+  padding: 0.75rem 1rem;
 }
 
 .minimal-accordion .accordion-button span {
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
-  left: -3.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
+  left: -1.75rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.5);
+  box-shadow: 0px 2px 6px rgba(0, 30, 60, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .minimal-accordion .accordion-button span i {
-  font-size: 10px;
+  font-size: 8px;
   line-height: 1;
 }
 
 
 .minimal-accordion .accordion-body {
   padding-top: 0px;
-} 
+  padding-bottom: 0.5rem;
+}
+
+/* Additional minimal spacing adjustments */
+.minimal-accordion .accordion-item {
+  margin-bottom: 0.5rem;
+}
+
+.minimal-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Reduce spacing in FAQ section */
+#faq .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#faq h2 {
+  margin-bottom: 2rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .minimal-accordion {
+    padding: 0.25rem 0rem 0.5rem 0.5rem;
+  }
+  
+  .minimal-accordion .accordion-button {
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+  }
+  
+  .minimal-accordion .accordion-button span {
+    left: -1.25rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    line-height: 0.875rem;
+  }
+  
+  .minimal-accordion .accordion-button span i {
+    font-size: 7px;
+  }
+  
+  .accordion-body {
+    padding: 0.5rem 0.75rem;
+    font-size: 13px;
+  }
+}

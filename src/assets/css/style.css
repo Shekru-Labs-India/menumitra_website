@@ -6410,7 +6410,7 @@ label.btn-file {
 
 /* minimal accordion */
 .minimal-accordion {
-  padding: 1.75rem 2.25rem 2rem 5.5rem;
+  padding: 1.75rem 2.25rem 2rem 3rem;
   box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.03);
 }
 
@@ -6431,14 +6431,14 @@ label.btn-file {
 
 .minimal-accordion .accordion-button span {
   position: absolute;
-  background: rgba(255, 255, 255, 0.5);
-  left: -3.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  left: -1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   line-height: 3.5rem;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.03);
+  box-shadow: 0px 3px 12px rgba(0, 30, 60, 0.2);
 }
 
 .minimal-accordion .accordion-body {
