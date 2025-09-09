@@ -1,0 +1,212 @@
+/* NewRestaurant Component Specific Styles */
+/* Override global CSS conflicts */
+
+/* Fix section title styling */
+.new-restaurant-section .section-title {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #212529 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: none !important;
+}
+
+/* Fix card styling overrides */
+.new-restaurant-section .feature-card {
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+  min-height: auto !important;
+}
+
+.new-restaurant-section .feature-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Fix card body padding */
+.new-restaurant-section .feature-card .card-body {
+  padding: 1.5rem !important;
+}
+
+/* Fix card title styling */
+.new-restaurant-section .feature-card .card-title {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.75rem !important;
+  color: inherit !important;
+}
+
+/* Fix card text styling */
+.new-restaurant-section .feature-card .card-text {
+  font-size: 0.875rem !important;
+  margin: 0 0 0.75rem 0 !important;
+  color: #6c757d !important;
+}
+
+/* Fix card subtitle styling */
+.new-restaurant-section .feature-card .card-subtitle {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
+  color: #212529 !important;
+}
+
+/* Fix icon wrapper styling */
+.new-restaurant-section .feature-icon-wrapper {
+  margin-bottom: 1rem !important;
+}
+
+.new-restaurant-section .feature-icon {
+  font-size: 3rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Fix CTA section styling */
+.new-restaurant-section .cta-section {
+  background: #007bff !important;
+  color: #fff !important;
+  border-radius: 0.5rem !important;
+  padding: 2rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 123, 255, 0.25) !important;
+}
+
+.new-restaurant-section .cta-section h4 {
+  color: #fff !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.new-restaurant-section .cta-section p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.new-restaurant-section .cta-section .btn {
+  background: #fff !important;
+  color: #007bff !important;
+  border: none !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 0.375rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.new-restaurant-section .cta-section .btn:hover {
+  background: #f8f9fa !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix lead text styling */
+.new-restaurant-section .lead {
+  font-size: 1.125rem !important;
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Ensure 3 cards per row on larger screens */
+.new-restaurant-section .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+/* Target both col-md-6 and col-lg-4 classes with higher specificity */
+.new-restaurant-section .row .col-md-6.col-lg-4 {
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
+  width: 33.333333% !important;
+}
+
+.new-restaurant-section .row .col-lg-4 {
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
+  width: 33.333333% !important;
+}
+
+/* Additional override for Bootstrap's col-md-6 */
+.new-restaurant-section .col-md-6 {
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
+  width: 33.333333% !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .new-restaurant-section .row .col-md-6.col-lg-4 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+  
+  .new-restaurant-section .row .col-lg-4 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+  
+  .new-restaurant-section .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-restaurant-section .row .col-md-6.col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .new-restaurant-section .row .col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .new-restaurant-section .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .new-restaurant-section .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .new-restaurant-section .feature-card .card-body {
+    padding: 1rem !important;
+  }
+  
+  .new-restaurant-section .feature-icon {
+    font-size: 2.5rem !important;
+  }
+  
+  .new-restaurant-section .cta-section {
+    padding: 1.5rem !important;
+  }
+  
+  .new-restaurant-section .cta-section h4 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-restaurant-section .section-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .new-restaurant-section .feature-card .card-body {
+    padding: 0.75rem !important;
+  }
+  
+  .new-restaurant-section .feature-icon {
+    font-size: 2rem !important;
+  }
+}
