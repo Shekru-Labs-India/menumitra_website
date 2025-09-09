@@ -29,7 +29,7 @@ import Apps from "./components/Apps";
 import OnlineOrder from "./components/OnlineOrder";
 import RestaurantReports from "./components/RestaurantReports";
 import CustomerManagement from "./components/CustomerManagement";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import PrivacyPolicy from "./components/PrivacyPolicy"
 import CookiePolicy from "./components/CookiePolicy"
 import TermsConditions from "./components/TermsConditions"
@@ -106,7 +106,7 @@ function App() {
     <Route path="/largechain" element={<LargeChain/>} />
     <Route path="/icecream" element={<IcecreamDesserts />} />
 
-    <Route path="/pricing" element={<Pricing />} />
+    {/* <Route path="/pricing" element={<Pricing />} /> */}
     <Route path="/privacy" element={<PrivacyPolicy />} />
     <Route path="/terms_conditions" element={<TermsConditions />} />
     <Route path="/cookie_policy" element={<CookiePolicy />} />
