@@ -40,12 +40,12 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-
+{/* 
               <li className="nav-item mx-lg-2">
                 <Link className={`nav-link ${isActive("/pricing") ? "active text-primary" : ""}`} to="/pricing">
                   Pricing
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item mx-lg-2">
                 <Link className={`nav-link ${isActive("/apps") ? "active text-primary" : ""}`} to="/products">
                   Products

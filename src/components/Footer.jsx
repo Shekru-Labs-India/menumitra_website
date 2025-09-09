@@ -80,7 +80,7 @@ const Footer = () => {
                   <h3 className="text-primary mb-4">Utility</h3>
                   <ul className="footer-links">
                     <li><Link to="/"><i className="fa-solid fa-chevron-right me-2"></i>Home</Link></li>
-                    <li><Link to="/pricing"><i className="fa-solid fa-chevron-right me-2"></i>Pricing</Link></li>
+                    {/* <li><Link to="/pricing"><i className="fa-solid fa-chevron-right me-2"></i>Pricing</Link></li> */}
                     <li><Link to="/career"><i className="fa-solid fa-chevron-right me-2"></i>Career</Link></li>
                     <li><Link to="/support"><i className="fa-solid fa-chevron-right me-2"></i>Support</Link></li>
                     <li><Link to="/about_us"><i className="fa-solid fa-chevron-right me-2"></i>About</Link></li>
