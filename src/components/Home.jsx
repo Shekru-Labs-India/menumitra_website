@@ -16,12 +16,17 @@ import hotelAathvan from "../assets/images/outlets/hotel_aathvan.jpg";
 import gavranChaha from "../assets/images/outlets/gavran_chaha.jpg";
 
 // New outlet images for second row
-import hotelGanesh from "../assets/images/outlets/hotel_ganesh.png";
+import hotelGaneshShakaahari from "../assets/images/outlets/hotel_ganesh_shakaahari.png";
 import cafeDurga from "../assets/images/outlets/cafe_durga.png";
 import friendsCafe from "../assets/images/outlets/friends_cafe.png";
 import creamyNutsCafe from "../assets/images/outlets/creamy_nuts_cafe.jpg";
-import garva from "../assets/images/outlets/garva.jpg";
-import hotelBoshal from "../assets/images/outlets/hotel_boshal.png";
+import garvaOrder from "../assets/images/outlets/garva_order.jpg";
+import hotelAudumbar from "../assets/images/outlets/hotel_audumbar.png";
+import hotelBorulAtitthi from "../assets/images/outlets/hotel_borul_atitthi.png";
+import hotelDongarmath from "../assets/images/outlets/hotel_dongarmath.png";
+import hotelNewJagdamba from "../assets/images/outlets/hotel_new_jagdamba.png";
+import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.png";
+import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
 
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
@@ -330,82 +335,147 @@ const Home = () => {
                 </div>
               </div> */}
 
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 mt-4">
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
-                    src={hotelGanesh}
-                    alt="Hotel Ganesh"
+                    src={hotelGaneshShakaahari}
+                    alt="Hotel Ganesh Shakaahari"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
                     src={cafeDurga}
                     alt="Cafe Durga"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "80%", maxHeight: "80%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
                     src={friendsCafe}
                     alt="Friends Cafe"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
                     src={creamyNutsCafe}
                     alt="Creamy Nuts Cafe"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "80%", maxHeight: "80%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
-                    src={garva}
-                    alt="Garva"
+                    src={garvaOrder}
+                    alt="Garva Order"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "160px", height: "120px" }}
+                  style={{ width: "140px", height: "110px" }}
                 >
                   <img
-                    src={hotelBoshal}
-                    alt="Hotel Boshal"
+                    src={hotelAudumbar}
+                    alt="Hotel Audumbar"
                     className="img-fluid rounded-4 object-fit-contain"
-                    style={{ maxWidth: "80%", maxHeight: "80%" }}
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px" }}
+                >
+                  <img
+                    src={hotelBorulAtitthi}
+                    alt="Hotel Borul Atitthi"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px" }}
+                >
+                  <img
+                    src={hotelDongarmath}
+                    alt="Hotel Dongarmath"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px" }}
+                >
+                  <img
+                    src={hotelNewJagdamba}
+                    alt="Hotel New Jagdamba"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px" }}
+                >
+                  <img
+                    src={sudasMisalHouse}
+                    alt="Sudamas Misal House"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px" }}
+                >
+                  <img
+                    src={aaiTuljaBhavani}
+                    alt="Aai Tulja Bhavani"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
                 </div>
               </div>
