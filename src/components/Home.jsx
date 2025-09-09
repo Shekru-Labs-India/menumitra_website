@@ -27,6 +27,7 @@ import hotelDongarmath from "../assets/images/outlets/hotel_dongarmath.png";
 import hotelNewJagdamba from "../assets/images/outlets/hotel_new_jagdamba.png";
 import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.png";
 import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
+import hotelRasika from "../assets/images/outlets/hotel_rasika.jpg";
 
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
@@ -339,7 +340,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={hotelGaneshShakaahari}
@@ -352,7 +353,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={cafeDurga}
@@ -365,7 +366,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={friendsCafe}
@@ -378,7 +379,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={creamyNutsCafe}
@@ -391,7 +392,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={garvaOrder}
@@ -404,7 +405,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={hotelAudumbar}
@@ -417,7 +418,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={hotelBorulAtitthi}
@@ -430,7 +431,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={hotelDongarmath}
@@ -443,7 +444,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={hotelNewJagdamba}
@@ -456,7 +457,7 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={sudasMisalHouse}
@@ -469,11 +470,24 @@ const Home = () => {
               <div className="client-card">
                 <div
                   className="card border d-flex align-items-center justify-content-center"
-                  style={{ width: "140px", height: "110px" }}
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
                     src={aaiTuljaBhavani}
                     alt="Aai Tulja Bhavani"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={hotelRasika}
+                    alt="Hotel Rasika"
                     className="img-fluid rounded-4 object-fit-contain"
                     style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
