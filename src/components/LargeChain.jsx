@@ -16,7 +16,7 @@ const LargeChain = () => {
     {
       icon: "fas fa-tachometer-alt",
       iconColor: "#007bff",
-      title: "Centralize Monitoring (HO Dashboard)",
+      title: "Centralize Monitoring",
       titleColor: "text-primary",
       description: "Monitor sales, orders, stock, reports, performance, royalty, and everything of all outlets from your head office"
     },
