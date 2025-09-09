@@ -177,23 +177,9 @@ const Footer = () => {
           </div>
           <hr className="my-3" />
           <div className="row justify-content-between align-items-center">
-            <div className="col-12 col-lg-4 text-center text-lg-start">
-              <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-                <span className="fs-16">Copyright © 2024</span>
-              </div>
-            </div>
-            <div className="col-12 col-lg-8 text-center text-lg-end mt-2 mt-lg-0">
-              <div className="d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap gap-2">
-                <i className="fa-solid fa-bolt"></i>
-                <span>Powered by</span>
-                <Link 
-                  to="https://www.shekruweb.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-primary text-nowrap"
-                >
-                  Shekru Labs India Pvt. Ltd.
-                </Link>
+            <div className="col-12 text-center">
+              <div className="d-flex align-items-center justify-content-center">
+                <span className="fs-16">Copyright © 2025</span>
               </div>
             </div>
           </div>
