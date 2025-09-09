@@ -56,6 +56,12 @@ import Support from "./components/Support";
 import Career from "./components/Career";
 import Devices from "./components/Devices";
 import WhatsAppFAB from "./components/WhatsAppFAB";
+import StoreManagement from "./components/StoreManagement";
+import RecipeManagement from "./components/RecipeManagement";
+import SocialMediaManagement from "./components/SocialMediaManagement";
+import UtilityManagement from "./components/UtilityManagement";
+import StaffManagement from "./components/StaffManagement";
+import ChainManagement from "./components/ChainManagement";
 import { useEffect } from 'react';
 
 function App() {
@@ -120,6 +126,12 @@ function App() {
     <Route path="/support" element={<Support />} />
     <Route path="/career" element={<Career />} />
     <Route path="/devices" element={<Devices />} />
+    <Route path="/storemanagement" element={<StoreManagement />} />
+    <Route path="/recipemanagement" element={<RecipeManagement />} />
+    <Route path="/socialmediamanagement" element={<SocialMediaManagement />} />
+    <Route path="/utilitymanagement" element={<UtilityManagement />} />
+    <Route path="/staffmanagement" element={<StaffManagement />} />
+    <Route path="/chainmanagement" element={<ChainManagement />} />
     <Route path="/privacy_policy" element={<Navigate to="/privacy" replace />} />
     </Routes>
 

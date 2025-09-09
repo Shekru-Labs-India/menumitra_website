@@ -80,6 +80,18 @@ const Header = () => {
                     <i className="fa-solid fa-star me-2"></i>Customer Feedback</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/scan") ? "active" : ""}`} to="/scan">
                     <i className="fa-solid fa-qrcode me-2"></i>Scan & Order</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/storemanagement") ? "active" : ""}`} to="/storemanagement">
+                    <i className="fa-solid fa-store me-2"></i>Store Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/recipemanagement") ? "active" : ""}`} to="/recipemanagement">
+                    <i className="fa-solid fa-book me-2"></i>Recipe Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/socialmediamanagement") ? "active" : ""}`} to="/socialmediamanagement">
+                    <i className="fa-solid fa-share-nodes me-2"></i>Social Media Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/utilitymanagement") ? "active" : ""}`} to="/utilitymanagement">
+                    <i className="fa-solid fa-tools me-2"></i>Utility Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/staffmanagement") ? "active" : ""}`} to="/staffmanagement">
+                    <i className="fa-solid fa-user-tie me-2"></i>Staff Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/chainmanagement") ? "active" : ""}`} to="/chainmanagement">
+                    <i className="fa-solid fa-link me-2"></i>Chain Management</Link></li>
                 </ul>
               </li>
 
