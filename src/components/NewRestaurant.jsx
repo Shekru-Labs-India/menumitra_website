@@ -29,7 +29,7 @@ const NewRestaurant = () => {
 
             
            
-<a href="#products" className="btn btn-primary pill mr-5">
+<a href="/book_demo" className="btn btn-primary pill mr-5">
   
   <span>Book a Free Demo</span>
 </a>
@@ -52,18 +52,15 @@ const NewRestaurant = () => {
         </p>
       </div>
       
-      <div className="row g-5">
+      <div className="row g-5 mb-5">
         {/* Card 1 - Billing POS */}
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-cash-register feature-icon" style={{ fontSize: '48px', color: '#007bff' }}></i>
               </div>
               <h5 className="card-title mb-3 text-primary">Billing POS</h5>
-              <p className="card-text text-muted mb-3">
-                MenuMitra Billing POS
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Punch your bills in less than 5 seconds
               </h6>
@@ -75,13 +72,10 @@ const NewRestaurant = () => {
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-boxes feature-icon" style={{ fontSize: '48px', color: '#28a745' }}></i>
               </div>
               <h5 className="card-title mb-3 text-success">Inventory Management</h5>
-              <p className="card-text text-muted mb-3">
-                Smart Inventory Software
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Track your inventory in less than 15 minutes
               </h6>
@@ -93,13 +87,10 @@ const NewRestaurant = () => {
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-mobile-alt feature-icon" style={{ fontSize: '48px', color: '#fd7e14' }}></i>
               </div>
               <h5 className="card-title mb-3 text-warning">Online Orders</h5>
-              <p className="card-text text-muted mb-3">
-                Online Order Management
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Manage all your orders from one dashboard
               </h6>
@@ -111,13 +102,10 @@ const NewRestaurant = () => {
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-users feature-icon" style={{ fontSize: '48px', color: '#6f42c1' }}></i>
               </div>
               <h5 className="card-title mb-3 text-info">Customer Management</h5>
-              <p className="card-text text-muted mb-3">
-                Customer Relationship Management
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Know everything about your customers in one click
               </h6>
@@ -129,13 +117,10 @@ const NewRestaurant = () => {
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-chart-line feature-icon" style={{ fontSize: '48px', color: '#dc3545' }}></i>
               </div>
               <h5 className="card-title mb-3 text-danger">Reports & Analytics</h5>
-              <p className="card-text text-muted mb-3">
-                Real-time Business Insights
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Stay connected with your outlet, wherever you are
               </h6>
@@ -147,13 +132,10 @@ const NewRestaurant = () => {
         <div className="col-md-6 col-lg-4">
           <div className="card h-100 border-0 shadow-sm feature-card">
             <div className="card-body p-4 text-center">
-              <div className="feature-icon-wrapper mb-3">
+              <div className="feature-icon-wrapper mb-5">
                 <i className="fas fa-book-open feature-icon" style={{ fontSize: '48px', color: '#20c997' }}></i>
               </div>
               <h5 className="card-title mb-3 text-success">Menu Management</h5>
-              <p className="card-text text-muted mb-3">
-                Digital Menu Solutions
-              </p>
               <h6 className="card-subtitle mb-0 fw-bold">
                 Transform your restaurant menu into digital format
               </h6>
@@ -163,7 +145,7 @@ const NewRestaurant = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center mt-5">
+      <div className="text-center">
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="cta-section">
@@ -172,7 +154,7 @@ const NewRestaurant = () => {
                 Get started with MenuMitra's complete restaurant management solution. 
                 Book a free demo and see how we can help your new outlet succeed.
               </p>
-              <a href="#products" className="btn btn-light btn-lg px-4">
+              <a href="/book_demo" className="btn btn-light btn-lg px-4">
                 <i className="fas fa-calendar-alt me-2"></i>
                 Book Free Demo
               </a>
