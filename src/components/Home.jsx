@@ -28,7 +28,8 @@ import hotelNewJagdamba from "../assets/images/outlets/hotel_new_jagdamba.png";
 import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.png";
 import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
 import hotelRasika from "../assets/images/outlets/hotel_rasika.jpg";
-
+import newJagdambaVegNonveg from "../assets/images/outlets/new_jagdamba_veg_nonveg.jpg";
+import hotelSanskar from "../assets/images/outlets/hotel_sanskar.jpg";
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -488,6 +489,32 @@ const Home = () => {
                   <img
                     src={hotelRasika}
                     alt="Hotel Rasika"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={newJagdambaVegNonveg}
+                    alt="New Jagdamba Veg Non Veg"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={hotelSanskar}
+                    alt="Hotel Sanskar"
                     className="img-fluid rounded-4 object-fit-contain"
                     style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
