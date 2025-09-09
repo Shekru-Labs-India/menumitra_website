@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const FoodCourts = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Food courts feature cards data
+  const foodCourtCards = [
+    {
+      icon: "fas fa-credit-card",
+      iconColor: "#007bff",
+      title: "Customer Account Top-up & Redemption",
+      titleColor: "text-primary",
+      description: "MenuMitra offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later"
+    },
+    {
+      icon: "fas fa-qrcode",
+      iconColor: "#28a745",
+      title: "QR-Code Based Ordering",
+      titleColor: "text-success",
+      description: "No more food counter hopping after shopping! With MenuMitra's QR-code, your customers can order & pay from their table"
+    },
+    {
+      icon: "fas fa-crown",
+      iconColor: "#fd7e14",
+      title: "Royalty Management",
+      titleColor: "text-warning",
+      description: "Track sales of individual counters, pre define royalties, download reports. no more hassle"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      iconColor: "#6f42c1",
+      title: "Online Order Integration",
+      titleColor: "text-info",
+      description: "Manage online aggregators separately by their counters, under a single umbrella"
+    },
+    {
+      icon: "fas fa-chart-bar",
+      iconColor: "#dc3545",
+      title: "Counter wise Report",
+      titleColor: "text-danger",
+      description: "Track orders & sales of individual counters, separate app for counter owners to track their business at free of cost"
+    },
+    {
+      icon: "fas fa-user-tie",
+      iconColor: "#20c997",
+      title: "Waiter Reporting",
+      titleColor: "text-success",
+      description: "Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime"
+    }
+  ];
   return (
     
   <>
@@ -40,80 +87,17 @@ const FoodCourts = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          Access benefits designed just for you
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Customer Account Top-up & Redemption</h6>
-                        <p className="card-text">MenuMitra offers a smooth credit flow! Easy to load, order, and pay. Use the remaining funds now or later.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">QR-Code Based Ordering</h6>
-                        <p className="card-text">No more food counter hopping after shopping! With MenuMitra's QR-code, your customers can order & pay from their table.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Royalty Management</h6>
-                        <p className="card-text">Track sales of individual counters, pre define royalties, download reports. no more hassle</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Online Order Integration</h6>
-                        <p className="card-text">Manage online aggregators separately by their counters, under a single umbrella</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Counter wise Report</h6>
-                        <p className="card-text">Track orders & sales of individual counters, separate app for counter owners to track their business at free of cost</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Waiter Reporting</h6>
-                        <p className="card-text">Waiters performance are important so that their tips! Assign waiter to every table, and see the reports, download for free anytime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
-  
+    <FeatureCards 
+      title="Access benefits designed just for you"
+      subtitle="Food court management features for multiple counters"
+      cards={foodCourtCards}
+      ctaTitle="Ready to Streamline Your Food Court Operations?"
+      ctaDescription="Manage multiple counters effortlessly with MenuMitra's centralized POS solution. Book a free demo and see how we can optimize your food court business."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
    <Rated/>
 

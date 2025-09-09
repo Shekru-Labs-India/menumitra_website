@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const LargeChain = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Large chain feature cards data
+  const largeChainCards = [
+    {
+      icon: "fas fa-tachometer-alt",
+      iconColor: "#007bff",
+      title: "Centralize Monitoring (HO Dashboard)",
+      titleColor: "text-primary",
+      description: "Monitor sales, orders, stock, reports, performance, royalty, and everything of all outlets from your head office"
+    },
+    {
+      icon: "fas fa-home",
+      iconColor: "#28a745",
+      title: "Central Kitchen & Raw Material",
+      titleColor: "text-success",
+      description: "Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise"
+    },
+    {
+      icon: "fas fa-shopping-cart",
+      iconColor: "#fd7e14",
+      title: "Purchase Order Management",
+      titleColor: "text-warning",
+      description: "track all purchase orders submitted by outlets, define rates, add quantity, assign GRN, purchase invoice and e way bills"
+    },
+    {
+      icon: "fas fa-plug",
+      iconColor: "#6f42c1",
+      title: "ERP Integration",
+      titleColor: "text-info",
+      description: "Different accounting software? no worries, take the all files from MenuMitra dashboard and upload it on ERP, it's tat simple"
+    },
+    {
+      icon: "fas fa-utensils",
+      iconColor: "#dc3545",
+      title: "Centralized Aggregator Menu Management",
+      titleColor: "text-danger",
+      description: "Tak the control of all own & franchise outlets in your hand, add, edit or delete items globally or locally from head office"
+    },
+    {
+      icon: "fas fa-chart-line",
+      iconColor: "#20c997",
+      title: "MenuMitra Analytical Dashboard​",
+      titleColor: "text-success",
+      description: "Use data visualisations & cross functional reports to customisation it to your specifications, make data-driven decisions to improve brand"
+    }
+  ];
   return (
    
     <>
@@ -39,80 +86,17 @@ const LargeChain = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          Access benefits designed just for you
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Centralize Monitoring (HO Dashboard)</h6>
-                        <p className="card-text">Monitor sales, orders, stock, reports, performance, royalty, and everything of all outlets from your head office.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Central Kitchen & Raw Material</h6>
-                        <p className="card-text">Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Purchase Order Management</h6>
-                        <p className="card-text">track all purchase orders submitted by outlets, define rates, add quantity, assign GRN, purchase invoice and e way bills.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">ERP Integration</h6>
-                        <p className="card-text">Different accounting software? no worries, take the all files from MenuMitra dashboard and upload it on ERP, it's tat simple.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Centralized Aggregator Menu Management</h6>
-                        <p className="card-text">Tak the control of all own & franchise outlets in your hand, add, edit or delete items globally or locally from head office</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">MenuMitra Analytical Dashboard​</h6>
-                        <p className="card-text">Use data visualisations & cross functional reports to customisation it to your specifications, make data-driven decisions to improve brand</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
-   
+    <FeatureCards 
+      title="Access benefits designed just for you"
+      subtitle="Large chain restaurant management features"
+      cards={largeChainCards}
+      ctaTitle="Ready to Scale Your Restaurant Chain?"
+      ctaDescription="Take control of your entire restaurant chain with MenuMitra's unified POS solution. Book a free demo and see how we can help you manage multiple outlets efficiently."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 

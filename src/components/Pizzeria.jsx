@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import  Form from './Form'
 import Rated from './Rated'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const Pizzeria = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Pizzeria feature cards data
+  const pizzeriaCards = [
+    {
+      icon: "fas fa-bolt",
+      iconColor: "#007bff",
+      title: "Quick Billing with Customizations",
+      titleColor: "text-primary",
+      description: "Such the bills in 5 secs, with toppings, addons, offers, and more. Just the way you like it!"
+    },
+    {
+      icon: "fas fa-tags",
+      iconColor: "#28a745",
+      title: "Combos. Offers & Discounts",
+      titleColor: "text-success",
+      description: "Apply offers, create combos, customise discount options, MenuMitra will handle everything easily"
+    },
+    {
+      icon: "fas fa-building",
+      iconColor: "#fd7e14",
+      title: "Multiple Outlet Monitoring",
+      titleColor: "text-warning",
+      description: "1, 2, 3, 4...500! no worries, track & manage all outlets from your head office from admin panel and owners app"
+    },
+    {
+      icon: "fas fa-search",
+      iconColor: "#6f42c1",
+      title: "Raw Material Tracking",
+      titleColor: "text-info",
+      description: "Track all raw materials, such as tomatoes, onions, sauces. mark purchase entries, and see stock status. it's that easy!"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      iconColor: "#dc3545",
+      title: "Online Order Integrations",
+      titleColor: "text-danger",
+      description: "Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly"
+    },
+    {
+      icon: "fas fa-users",
+      iconColor: "#20c997",
+      title: "Employee Reporting",
+      titleColor: "text-success",
+      description: "Create shifts, assign caisher, track cash, and online payment before handover. no more pains!"
+    }
+  ];
   return (
     
    <>
@@ -39,80 +86,17 @@ const Pizzeria = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          Access benefits designed just for you
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row justify-content-center">
-            {/* Card 1 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Quick Billing with Customizations</h6>
-                        <p className="card-text">Such the bills in 5 secs, with toppings, addons, offers, and more. Just the way you like it!</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Combos. Offers & Discounts</h6>
-                        <p className="card-text">Apply offers, create combos, customise discount options, MenuMitra will handle everything easily.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Multiple Outlet Monitoring</h6>
-                        <p className="card-text">1, 2, 3, 4...500! no worries, track & manage all outlets from your head office from admin panel and owners app.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Raw Material Tracking</h6>
-                        <p className="card-text">Track all raw materials, such as tomatoes, onions, sauces. mark purchase entries, and see stock status. it's that easy!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="row justify-content-center">
-            {/* Card 5 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Online Order Integrations</h6>
-                        <p className="card-text">Accept orders, mark food ready, control menu status, and everything from MenuMitra POS directly.</p>
-                    </div>
-                </div>
-            </div>
-            {/* Card 6 */}
-            <div className="col-md-6 col-lg-3 mb-4">
-                <div className="card" style={{ backgroundColor: "#faf2eb" }}>
-                    <div className="card-body p-4">
-                        <h6 className="card-title">Employee Reporting</h6>
-                        <p className="card-text">Create shifts, assign caisher, track cash, and online payment before handover. no more pains!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
-    
+    <FeatureCards 
+      title="Access benefits designed just for you"
+      subtitle="Pizzeria management features for pizza shops"
+      cards={pizzeriaCards}
+      ctaTitle="Ready to Perfect Your Pizza Business?"
+      ctaDescription="Make every pizza order perfect with MenuMitra's specialized POS solution for pizzerias. Book a free demo and see how we can help your pizza shop succeed."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 

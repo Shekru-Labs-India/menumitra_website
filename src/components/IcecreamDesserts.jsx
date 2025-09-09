@@ -3,12 +3,59 @@ import Header from './Header'
 import Footer from './Footer'
 import Rated from './Rated'
 import  Form from './Form'
+import FeatureCards from './FeatureCards'
 import { Link } from 'react-router-dom';
 
 const IcecreamDesserts = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Ice cream & desserts feature cards data
+  const iceCreamCards = [
+    {
+      icon: "fas fa-clock",
+      iconColor: "#dc3545",
+      title: "Item Expiry Monitoring",
+      titleColor: "text-danger",
+      description: "Add items with expiry dates, track details of every raw material and end products"
+    },
+    {
+      icon: "fas fa-boxes",
+      iconColor: "#28a745",
+      title: "Material Management with Low Stock Alerts",
+      titleColor: "text-success",
+      description: "Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!"
+    },
+    {
+      icon: "fas fa-plus-circle",
+      iconColor: "#007bff",
+      title: "Variation & Addons",
+      titleColor: "text-primary",
+      description: "No milk, add hazelnut syrup and so on. every customisation can be handle easily by creating variations and assigning addons"
+    },
+    {
+      icon: "fas fa-cube",
+      iconColor: "#fd7e14",
+      title: "Raw Material Management",
+      titleColor: "text-warning",
+      description: "Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!"
+    },
+    {
+      icon: "fas fa-warehouse",
+      iconColor: "#6f42c1",
+      title: "Inventory Management",
+      titleColor: "text-info",
+      description: "Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything."
+    },
+    {
+      icon: "fas fa-home",
+      iconColor: "#20c997",
+      title: "Central Kitchen",
+      titleColor: "text-success",
+      description: "Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise."
+    }
+  ];
   return (
     
    <>
@@ -46,57 +93,17 @@ const IcecreamDesserts = () => {
       {/* / container */}
     </section>
 
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          Access benefits designed just for you
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row text-center">
-            <div className="col-md-4 mb-4">
-                <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Advance-Ordering-2.png"  alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Item Expiry Monitoring</h5>
-                <p style={{ color: '#666' }} className="feature-description">Add items with expiry dates, track details of every raw material and end products</p>
-            </div>
-            <div className="col-md-4 mb-4">
-                <img src="	https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Raw-Material-Tracking-6.png" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Material Management with Low Stock Alerts</h5>
-                <p style={{ color: '#666' }} className="feature-description">Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!</p>
-            </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Item-Variations-Addons-7.png	" alt="" />
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Variation & Addons</h5>
-                <p style={{ color: '#666' }} className="feature-description">No milk, add hazelnut syrup and so on. every customisation can be handle easily by creating variations and assigning addons</p>
-            </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Raw-Material-Management-4.png" alt="" />
-                
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Raw Material Management</h5>
-                <p style={{ color: '#666' }} className="feature-description">Add raw materials, make recipes, add purchases, set minimum level alerts of materials, manage operation stressfree!</p>
-            </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Inventory-Management-6.png" alt="" />
-                
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Inventory Management</h5>
-                <p style={{ color: '#666' }} className="feature-description">Keep the track of every beans and raw materials! purchase invoices, recipes, stock status, wastage control, low stock alerts, and everything.</p>
-            </div>
-            <div className="col-md-4 mb-4">
-                <img src="https://02adc572.rocketcdn.me/wp-content/uploads/2024/01/Central-Kitchen-Module-2-1.png" alt="" />
-                
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title mt-2">Central Kitchen</h5>
-                <p style={{ color: '#666' }} className="feature-description">Process purchase orders, create GRN, see outlet inventory, manage stock by vendors & category wise.</p>
-            </div>
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-
-   
+    <FeatureCards 
+      title="Access benefits designed just for you"
+      subtitle="Ice cream & desserts management features"
+      cards={iceCreamCards}
+      ctaTitle="Ready to Sweeten Your Ice Cream Business?"
+      ctaDescription="Turn your ice cream shop into a sweet success with MenuMitra's specialized POS solution. Book a free demo and discover how we can help your dessert business thrive."
+      ctaButtonText="Book Free Demo"
+      ctaButtonLink="/book_demo"
+      ctaButtonIcon="fas fa-calendar-alt"
+      showCta={true}
+    />
 
     <Rated/>
 
