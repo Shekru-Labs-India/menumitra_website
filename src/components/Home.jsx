@@ -536,7 +536,7 @@ const Home = () => {
           
 
           {/* / container */}
-          <div className="container mt-5">
+          <div className="container mt-5 ">
             <div className="row text-center align-items-center">
               <div className="col-lg-5">
                 <img
