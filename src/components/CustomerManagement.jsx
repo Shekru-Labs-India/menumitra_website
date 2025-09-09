@@ -31,6 +31,16 @@ const CustomerManagement = () => {
       icon: "fas fa-comment-dots",
       title: "Customer Feedbacks",
       description: "With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links."
+    },
+    {
+      icon: "fas fa-users",
+      title: "Customer Segmentation & Targeting",
+      description: "Segment your customers based on their spending patterns, visit frequency, and preferences. Create targeted marketing campaigns for different customer groups to maximize engagement and increase repeat visits."
+    },
+    {
+      icon: "fas fa-gift",
+      title: "Loyalty Programs & Rewards",
+      description: "Build customer loyalty with automated reward systems. Set up points-based programs, tier memberships, and special privileges for your most valuable customers. Keep them coming back with personalized offers and exclusive benefits."
     }
   ];
 

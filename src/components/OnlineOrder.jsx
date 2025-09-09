@@ -41,6 +41,16 @@ const OnlineOrder = () => {
       icon: "fas fa-plus-circle",
       title: "Customizable Charges & Add-Ons",
       description: "Add customized charges such as packaging charge, container charge, discounts or offers from MenuMitra admin panel. No more juggling between here or there."
+    },
+    {
+      icon: "fas fa-chart-line",
+      title: "Real-Time Order Analytics",
+      description: "Track your online order performance with detailed analytics. Monitor peak hours, popular items, customer preferences, and optimize your menu for better sales."
+    },
+    {
+      icon: "fas fa-bell",
+      title: "Smart Order Notifications",
+      description: "Get instant notifications for new orders, order modifications, and delivery updates. Never miss an order with MenuMitra's smart notification system."
     }
   ];
 

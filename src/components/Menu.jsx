@@ -52,16 +52,6 @@ const Menu = () => {
       title: "Customizable Menu Timing",
       description: "No breakfast after 11:00 a.m. or Chef de pastry begins at 4:00 p.m. You can manage the availability of particular menu items using MenuMitra, whether they are for dine-in or on aggregator platforms. Choose the ideal time for a flawless eating experience!"
     },
-    {
-      icon: "fas fa-tags",
-      title: "Dynamic Pricing & Promotions",
-      description: "Boost your sales with smart pricing strategies! Set different prices for peak hours, happy hours, or special occasions. Create promotional offers, combo deals, and seasonal pricing to maximize revenue and attract more customers."
-    },
-    {
-      icon: "fas fa-chart-bar",
-      title: "Menu Performance Analytics",
-      description: "Make data-driven menu decisions! Track which items are bestsellers, identify slow-moving dishes, analyze profit margins, and understand customer preferences. Use these insights to optimize your menu and increase profitability."
-    }
   ];
 
   return (

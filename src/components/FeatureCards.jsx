@@ -39,9 +39,9 @@ const FeatureCards = ({
                   <h5 className={`card-title mb-3 ${card.titleColor || 'text-primary'}`}>
                     {card.title}
                   </h5>
-                  <h6 className="card-subtitle mb-0 fw-bold">
+                  <p className="card-subtitle mb-0 fw-normal">
                     {card.description}
-                  </h6>
+                  </p>
                 </div>
               </div>
             </div>

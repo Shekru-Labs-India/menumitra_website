@@ -52,16 +52,6 @@ const Inventory = () => {
       title: "Live Food Costing Reports",
       description: "The potato cost is not fixed, it changes every week! So that your recipe cost will affect. MenuMitra gives you a clear knowledge about the food cost, so you can increase your profits"
     },
-    {
-      icon: "fas fa-recycle",
-      title: "Waste Management & Tracking",
-      description: "Track food waste, expired items, and spoilage to minimize losses. Get detailed reports on waste patterns and optimize your inventory ordering to reduce unnecessary costs"
-    },
-    {
-      icon: "fas fa-sync-alt",
-      title: "Automated Reorder System",
-      description: "Never run out of essential ingredients again! Set up automatic reorder points and let MenuMitra generate purchase orders automatically when stock levels reach predefined thresholds"
-    }
   ];
 
   return (
