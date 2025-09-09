@@ -162,7 +162,7 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top fs-16">
+          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 pt-4 border-top fs-16">
             <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
             <Link className="text-secondary" to="/privacy_policy">Privacy Policy</Link>
             <Link className="text-secondary" to="/cookie_policy">Cookie Policy</Link>
