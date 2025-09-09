@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <nav
         id="nav-scroll"
-        className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-2"
+        className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
       >
         <div className="container position-relative">
           {/* Brand */}
