@@ -62,6 +62,12 @@ import SocialMediaManagement from "./components/SocialMediaManagement";
 import UtilityManagement from "./components/UtilityManagement";
 import StaffManagement from "./components/StaffManagement";
 import ChainManagement from "./components/ChainManagement";
+import PointOfSale from "./components/PointOfSale";
+import SmartMobileApp from "./components/SmartMobileApp";
+import MoneyManagement from "./components/MoneyManagement";
+import CustomerApp from "./components/CustomerApp";
+import CustomisedSolution from "./components/CustomisedSolution";
+import HotelManagement from "./components/HotelManagement";
 import { useEffect } from 'react';
 
 function App() {
@@ -132,6 +138,12 @@ function App() {
     <Route path="/utilitymanagement" element={<UtilityManagement />} />
     <Route path="/staffmanagement" element={<StaffManagement />} />
     <Route path="/chainmanagement" element={<ChainManagement />} />
+    <Route path="/pos" element={<PointOfSale />} />
+    <Route path="/smartmobileapp" element={<SmartMobileApp />} />
+    <Route path="/moneymanagement" element={<MoneyManagement />} />
+    <Route path="/customerapp" element={<CustomerApp />} />
+    <Route path="/customisedsolution" element={<CustomisedSolution />} />
+    <Route path="/hotelmanagement" element={<HotelManagement />} />
     <Route path="/privacy_policy" element={<Navigate to="/privacy" replace />} />
     </Routes>
 

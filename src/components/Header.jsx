@@ -115,6 +115,18 @@ const Header = () => {
                     <i className="fa-solid fa-desktop me-2"></i>Kitchen Display System</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/cds") ? "active" : ""}`} to="/cds">
                     <i className="fa-solid fa-tv me-2"></i>Customer Display System</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/pos") ? "active" : ""}`} to="/pos">
+                    <i className="fa-solid fa-cash-register me-2"></i>Point of Sale</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/smartmobileapp") ? "active" : ""}`} to="/smartmobileapp">
+                    <i className="fa-solid fa-mobile-screen-button me-2"></i>Smart Mobile App</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/moneymanagement") ? "active" : ""}`} to="/moneymanagement">
+                    <i className="fa-solid fa-coins me-2"></i>Money Management</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/customerapp") ? "active" : ""}`} to="/customerapp">
+                    <i className="fa-solid fa-user-group me-2"></i>Customer App</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/customisedsolution") ? "active" : ""}`} to="/customisedsolution">
+                    <i className="fa-solid fa-cogs me-2"></i>Customised Solution</Link></li>
+                  <li><Link className={`dropdown-item ${isActive("/hotelmanagement") ? "active" : ""}`} to="/hotelmanagement">
+                    <i className="fa-solid fa-building-columns me-2"></i>Hotel Management</Link></li>
                 </ul>
               </li>
 
