@@ -289,7 +289,7 @@ const FAQ = () => (
                     </div>
                   </div>
                 </div>
-                <div className="accordion-item">
+                {/* <div className="accordion-item">
                   <h2 className="accordion-header" id="minimal-headingFive">
                     <button
                       className="accordion-button collapsed"
@@ -318,7 +318,7 @@ const FAQ = () => (
                       clouds.
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

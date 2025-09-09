@@ -761,12 +761,12 @@ const Home = () => {
                   bg: "#fff9c4",
                   color: "#fbc02d",
                 },
-                {
-                  icon: "fas fa-concierge-bell",
-                  text: "QSR",
-                  bg: "#ede7f6",
-                  color: "#8e24aa",
-                },
+                // {
+                //   icon: "fas fa-concierge-bell",
+                //   text: "QSR",
+                //   bg: "#ede7f6",
+                //   color: "#8e24aa",
+                // },
                 {
                   icon: "fas fa-beer",
                   text: "Bar & Brewery",
