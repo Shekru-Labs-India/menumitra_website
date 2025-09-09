@@ -188,24 +188,24 @@ const Home = () => {
                   </div>
                   
                   {/* Feature Tags */}
-                  <div className="feature-tags-container mt-4 d-flex flex-wrap justify-content-center gap-5">
+                  <div className="feature-tags-container mt-4 d-flex flex-nowrap justify-content-center gap-3 gap-md-4 gap-lg-5">
                     <div className="feature-tag inventory-tag">
                       <div className="tag-icon">
                         <i className="fas fa-boxes" style={{ fontSize: "20px", color: "#4CAF50" }}></i>
                       </div>
-                      <span className="tag-text">Inventory</span>
+                      <span className="tag-text ms-1">Inventory</span>
                     </div>
                     <div className="feature-tag ai-tag">
                       <div className="tag-icon">
                         <i className="fas fa-robot" style={{ fontSize: "20px", color: "#2196F3" }}></i>
                       </div>
-                      <span className="tag-text">AI</span>
+                      <span className="tag-text ms-1">AI</span>
                     </div>
                     <div className="feature-tag integration-tag">
                       <div className="tag-icon">
                         <i className="fas fa-plug" style={{ fontSize: "20px", color: "#FF9800" }}></i>
                       </div>
-                      <span className="tag-text">3rd Party Integrations</span>
+                      <span className="tag-text text-nowrap ms-1">3rd Party Integrations</span>
                     </div>
                   </div>
                 </div>
