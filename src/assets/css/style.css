@@ -14821,6 +14821,76 @@ p {
   }
 }
 
+/* Tablet and Mobile Responsive Styles for Feature Tags */
+@media (max-width: 1024px) {
+  .feature-tags-container {
+    gap: 10px;
+    padding: 15px 0;
+  }
+  
+  .feature-tag {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+  
+  .tag-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .tag-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-tags-container {
+    gap: 8px;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .feature-tag {
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 20px;
+  }
+  
+  .tag-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .tag-text {
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-tags-container {
+    gap: 6px;
+    padding: 8px 0;
+  }
+  
+  .feature-tag {
+    padding: 4px 8px;
+    gap: 4px;
+    border-radius: 15px;
+  }
+  
+  .tag-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .tag-text {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
 .register-reseller-btn {
   background-color: #1f2937;
   color: white;
