@@ -1,9 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import menumitra from '../assets/images/MenuMitra.png';
+import mmSupp from '../assets/images/mm_supp.png';
 import './Footer.css';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleSupportClick = () => {
+    navigate('/support');
+  };
+
   return (
     <>
       <section className="footer-top-area bg-white border border-top shadow-lg pt-50">
@@ -137,6 +144,19 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Support Section */}
+          <div className="row mt-5 pt-4 border-top">
+            <div className="col-12 text-center">
+              <img 
+                src={mmSupp} 
+                alt="MenuMitra 24/7 Support" 
+                className="img-fluid"
+                style={{ maxHeight: "80px", objectFit: "contain", cursor: "pointer" }}
+                onClick={handleSupportClick}
+              />
+            </div>
+          </div>
+
           {/* Footer Links */}
           <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-4 pt-4 border-top fs-16">
             <Link className="text-secondary" to="/terms_conditions">Terms and Conditions</Link>
@@ -172,15 +192,12 @@ const Footer = () => {
       {/* Copyright Section */}
       <section className="py-3">
         <div className="container">
-          <div className="text-center mb-3">
-            <p className="mb-0 fs-16">All trademarks and logos belong to their respective owners and are hereby acknowledged.</p>
-          </div>
-          <hr className="my-3" />
-          <div className="row justify-content-between align-items-center">
-            <div className="col-12 text-center">
-              <div className="d-flex align-items-center justify-content-center">
-                <span className="fs-16">Copyright © 2025</span>
-              </div>
+          <div className="d-flex justify-content-center align-items-center gap-3 mb-3">
+            <div className="text-center">
+              <p className="mb-0 fs-16">All trademarks and logos belong to their respective owners and are hereby acknowledged.</p>
+            </div>
+            <div className="text-center">
+              <p className="mb-0 fs-16">Copyright © 2025</p>
             </div>
           </div>
         </div>
