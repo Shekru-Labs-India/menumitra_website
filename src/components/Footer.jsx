@@ -30,7 +30,7 @@ const Footer = () => {
 
                   <div className="d-flex align-items-center">
                     <i className="fas fa-mobile-alt me-2" />
-                    <span><a href="tel:09172530151">09172530151</a></span>
+                    <span><a href="tel:+919317818283">+91 93178 18283</a></span>
                   </div>
 
                   <div className="d-flex align-items-center">
