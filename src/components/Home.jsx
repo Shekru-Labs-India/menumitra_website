@@ -147,7 +147,7 @@ const Home = () => {
 
         <div className="main-container p-0">
           {/*================== Hero Area Section Start ==================*/}
-          <section className="hero-area section">
+          <section className="hero-area section border border-bottom ">
             <div className="container">
               <div className="row align-items-start">
                 <div className="col-lg-6">

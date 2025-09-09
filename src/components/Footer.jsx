@@ -148,8 +148,8 @@ const Footer = () => {
           <div className="row mt-5 pt-4 border-top">
             <div className="col-12 d-flex justify-content-end align-items-center">
               <div 
-                className="card border-0 shadow-sm p-3"
-                style={{ cursor: "pointer", }}
+                className="card border-0 shadow-sm p-3 border-bottom"
+                style={{ cursor: "pointer" }}
                 onClick={handleSupportClick}
               >
                 <img 
