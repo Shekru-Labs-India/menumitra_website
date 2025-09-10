@@ -249,7 +249,7 @@ const ManagementPageLayout = ({
                         />
                         <div>
                           <h6 className="mb-0">{story.name}</h6>
-                          <small className="text-muted">{story.location}</small>
+                          <small className="text-dark">{story.location}</small>
                         </div>
                       </div>
                       <p className="text-dark">"{story.testimonial}"</p>
@@ -259,7 +259,7 @@ const ManagementPageLayout = ({
                             <i key={i} className="fas fa-star"></i>
                           ))}
                         </div>
-                        <small className="text-muted">{story.rating} Rating</small>
+                        <small className="text-dark">{story.rating} Rating</small>
                       </div>
                     </div>
                   </div>
