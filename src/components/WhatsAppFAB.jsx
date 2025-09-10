@@ -24,6 +24,7 @@ const WhatsAppFAB = () => {
     position: 'fixed',
     bottom: isMobile ? '16px' : '20px',
     right: isMobile ? '16px' : '20px',
+    bottom: isMobile ? '150px' : '20px',
     width: isMobile ? '50px' : '60px',
     height: isMobile ? '50px' : '60px',
     backgroundColor: '#25D366',

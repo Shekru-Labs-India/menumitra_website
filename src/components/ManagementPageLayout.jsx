@@ -171,7 +171,7 @@ const ManagementPageLayout = ({
         </section>
 
         {/* Intelligence Section */}
-        <section className="py-5 business-intelligence-section">
+        <section className="business-intelligence-section">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -184,7 +184,7 @@ const ManagementPageLayout = ({
               <div className="col-lg-6">
                 <h2 className="mb-4 text-gradient">{intelligenceTitle}</h2>
                 <p className="lead text-dark mb-4">{intelligenceDescription}</p>
-                <div className="row g-3">
+                <div className="row g-3 mb-5">
                   {intelligenceFeatures.map((feature, index) => (
                     <div key={index} className="col-md-6">
                       <div className="d-flex align-items-center bi-card">

@@ -142,7 +142,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
+
 
           {/* Support Section */}
           <div className="row mt-5 pt-4 border-top">
@@ -159,6 +159,7 @@ const Footer = () => {
                 />
               </div>
             </div>
+          </div>
           </div>
 
           {/* Footer Links */}
