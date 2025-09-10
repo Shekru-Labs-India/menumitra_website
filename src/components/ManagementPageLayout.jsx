@@ -72,7 +72,7 @@ const ManagementPageLayout = ({
           <div className="container">
             <div className="text-center">
               <h2 className="section-title mb-50">{featuresTitle}</h2>
-              <p className="lead text-muted mb-5">{featuresSubtitle}</p>
+              <p className="lead text-dark mb-5">{featuresSubtitle}</p>
             </div>
             <div className="container py-5">
               <div className="row text-center">
@@ -116,12 +116,12 @@ const ManagementPageLayout = ({
           <div className="container">
             <div className="text-center mb-5">
               <h2 className="section-title mb-3">{operationsTitle}</h2>
-              <p className="lead text-muted">{operationsSubtitle}</p>
+              <p className="lead text-dark">{operationsSubtitle}</p>
             </div>
             <div className="row g-4">
               <div className="row">
                 {operations.slice(0, 2).map((operation, index) => (
-                  <div key={index} className="col-6">
+                  <div key={index} className="col-lg-6 col-md-6 col-12">
                     <div className="operation-card-item">
                       <div className="d-flex align-items-start">
                         <div className="flex-shrink-0 me-4">
@@ -146,7 +146,7 @@ const ManagementPageLayout = ({
             <div className="row g-4 mt-30">
               <div className="row">
                 {operations.slice(2, 4).map((operation, index) => (
-                  <div key={index + 2} className="col-6">
+                  <div key={index + 2} className="col-lg-6 col-md-6 col-12">
                     <div className="operation-card-item">
                       <div className="d-flex align-items-start">
                         <div className="flex-shrink-0 me-4">
@@ -183,7 +183,7 @@ const ManagementPageLayout = ({
               </div>
               <div className="col-lg-6">
                 <h2 className="mb-4 text-gradient">{intelligenceTitle}</h2>
-                <p className="lead mb-4">{intelligenceDescription}</p>
+                <p className="lead text-dark mb-4">{intelligenceDescription}</p>
                 <div className="row g-3">
                   {intelligenceFeatures.map((feature, index) => (
                     <div key={index} className="col-md-6">
@@ -237,8 +237,8 @@ const ManagementPageLayout = ({
             </div>
             <div className="row g-3">
               {successStories.map((story, index) => (
-                <div key={index} className="col-lg-4">
-                  <div className="card border-0 shadow-sm h-100 success-story-card">
+                <div key={index} className="col-lg-4 col-md-6 mb-4">
+                  <div className="card border-0 shadow-sm success-story-card">
                     <div className="card-body p-4">
                       <div className="d-flex align-items-center mb-3">
                         <img

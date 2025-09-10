@@ -14988,6 +14988,9 @@ p {
   transition: all 0.3s ease !important;
   padding: 1.5rem !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
 }
 
 .management-page .operation-card-item:hover {
@@ -15016,11 +15019,25 @@ p {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   transition: all 0.3s ease;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .management-page .success-story-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.management-page .success-story-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.management-page .success-story-card .card-body p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .management-page .bi-card {

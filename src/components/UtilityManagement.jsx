@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 import { Helmet } from "react-helmet";
-import Form from "./Form";
-import { Link } from "react-router-dom";
+import ManagementPageLayout from "./ManagementPageLayout";
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -17,93 +14,167 @@ const UtilityManagement = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const utilityData = {
+    title: "Utility Management",
+    description: "Utility management solutions for restaurants",
+    keywords: "Utility Management, Restaurant Utilities, Menu Mitra, Energy Management, Cost Control",
+    heroImage: brand4,
+    heroTitle: "Comprehensive Utility Management Solution",
+    heroDescription: "Optimize your restaurant's utility consumption and reduce operational costs with our advanced utility management system. Monitor electricity, water, gas usage, and implement smart energy-saving strategies.",
+    featuresTitle: "Advanced Utility Management Features",
+    featuresSubtitle: "Complete control over your restaurant's utility consumption and costs",
+    features: [
+      {
+        icon: "fas fa-bolt",
+        color: "#ffc107",
+        title: "Energy Monitoring",
+        description: "Track electricity consumption in real-time with smart meters and identify areas for energy optimization and cost reduction."
+      },
+      {
+        icon: "fas fa-tint",
+        color: "#17a2b8",
+        title: "Water Management",
+        description: "Monitor water usage patterns, detect leaks, and implement conservation strategies to reduce utility bills and environmental impact."
+      },
+      {
+        icon: "fas fa-fire",
+        color: "#dc3545",
+        title: "Gas Usage Tracking",
+        description: "Monitor gas consumption for cooking equipment and heating systems to optimize usage and ensure safety compliance."
+      },
+      {
+        icon: "fas fa-chart-line",
+        color: "#28a745",
+        title: "Cost Analytics",
+        description: "Analyze utility costs and trends with detailed reports to make informed decisions about energy efficiency investments."
+      },
+      {
+        icon: "fas fa-bell",
+        color: "#6f42c1",
+        title: "Smart Alerts",
+        description: "Receive real-time alerts for unusual consumption patterns, equipment malfunctions, and maintenance needs."
+      },
+      {
+        icon: "fas fa-leaf",
+        color: "#20c997",
+        title: "Sustainability Reporting",
+        description: "Generate comprehensive sustainability reports to track your restaurant's environmental impact and carbon footprint."
+      }
+    ],
+    operationsTitle: "Advanced Utility Operations",
+    operationsSubtitle: "Streamline utility management with intelligent automation and monitoring",
+    operations: [
+      {
+        icon: "fas fa-thermometer-half",
+        bgColor: "bg-primary",
+        title: "Smart HVAC Control",
+        description: "Automatically adjust heating, ventilation, and air conditioning based on occupancy and weather conditions to optimize energy usage."
+      },
+      {
+        icon: "fas fa-lightbulb",
+        bgColor: "bg-success",
+        title: "Lighting Automation",
+        description: "Control lighting systems with motion sensors, timers, and daylight harvesting to reduce electricity consumption."
+      },
+      {
+        icon: "fas fa-cogs",
+        bgColor: "bg-warning",
+        title: "Equipment Optimization",
+        description: "Monitor and optimize kitchen equipment performance to ensure maximum efficiency and minimal energy waste."
+      },
+      {
+        icon: "fas fa-shield-alt",
+        bgColor: "bg-secondary",
+        title: "Predictive Maintenance",
+        description: "Use AI-powered analytics to predict equipment failures and schedule maintenance before costly breakdowns occur."
+      }
+    ],
+    intelligenceTitle: "Utility Intelligence Dashboard",
+    intelligenceDescription: "Make data-driven decisions with comprehensive utility analytics and performance insights designed for restaurant cost optimization.",
+    intelligenceImage: brand5,
+    intelligenceFeatures: [
+      {
+        icon: "fas fa-chart-pie",
+        color: "text-primary",
+        title: "Usage Analytics",
+        description: "Detailed breakdown of utility consumption patterns"
+      },
+      {
+        icon: "fas fa-dollar-sign",
+        color: "text-success",
+        title: "Cost Optimization",
+        description: "Identify opportunities for cost reduction"
+      },
+      {
+        icon: "fas fa-clock",
+        color: "text-warning",
+        title: "Peak Usage Management",
+        description: "Optimize usage during peak and off-peak hours"
+      },
+      {
+        icon: "fas fa-trophy",
+        color: "text-info",
+        title: "Efficiency Benchmarking",
+        description: "Compare performance against industry standards"
+      }
+    ],
+    integrationTitle: "Seamless Utility Integration & Scalability",
+    integrationSubtitle: "Connect with existing systems and scale across multiple locations",
+    integrationFeatures: [
+      {
+        icon: "fas fa-plug",
+        title: "Smart Meter Integration",
+        description: "Connect with smart meters, IoT sensors, and building management systems for comprehensive utility monitoring."
+      },
+      {
+        icon: "fas fa-expand-arrows-alt",
+        title: "Multi-Location Management",
+        description: "Monitor and manage utilities across multiple restaurant locations with centralized control and reporting."
+      },
+      {
+        icon: "fas fa-cloud",
+        title: "Cloud-Based Analytics",
+        description: "Access utility data anywhere with secure cloud storage, real-time monitoring, and automated reporting."
+      }
+    ],
+    successStoriesTitle: "Success Stories",
+    successStoriesSubtitle: "See how restaurants are reducing costs and improving efficiency with MenuMitra",
+    successStories: [
+      {
+        image: brand1,
+        name: "Fine Dining Restaurant",
+        location: "Metropolitan Area",
+        testimonial: "MenuMitra's utility management helped us reduce electricity costs by 35% and water usage by 28% through smart monitoring and automation.",
+        rating: "5.0"
+      },
+      {
+        image: brand2,
+        name: "Restaurant Chain",
+        location: "12+ Locations",
+        testimonial: "Centralized utility monitoring across all locations has saved us over $50,000 annually in utility costs and improved our sustainability metrics.",
+        rating: "4.9"
+      },
+      {
+        image: brand3,
+        name: "QSR Franchise",
+        location: "30+ Outlets",
+        testimonial: "Predictive maintenance alerts have prevented costly equipment failures and reduced downtime by 60% across our franchise network.",
+        rating: "4.8"
+      }
+    ],
+    ctaTitle: "Ready to Optimize Your Utility Costs?",
+    ctaDescription: "Join thousands of restaurants already using MenuMitra to reduce utility costs, improve efficiency, and enhance sustainability.",
+    pageClassName: "utility-management-page"
+  };
+
   return (
     <>
       <Helmet>
         <title>Utility Management - MenuMitra</title>
-        <meta name="description" content="Utility management solutions for restaurants" />
-        <meta name="keywords" content="Utility Management, Restaurant Utilities, Menu Mitra, Energy Management, Cost Control" />
+        <meta name="description" content={utilityData.description} />
+        <meta name="keywords" content={utilityData.keywords} />
       </Helmet>
-      <Header />
-      
-      <div className="main-container p-0">
-        <section id="why-us" className="xl bg-gradient-body">
-          <div className="container">
-            <div className="row v-center">
-              <div className="col-lg-5">
-                <img
-                  src={brand4}
-                  alt="Utility Management System"
-                  className="rounded rellax"
-                  data-rellax-speed={2}
-                  data-rellax-percentage="0.5"
-                />
-              </div>
-              <div className="col-lg-7 tablet-lg-top-30">
-                <h2 className="mb-30">
-                  Comprehensive Utility Management Solution
-                </h2>
-                <p className="mb-30">
-                  Optimize your restaurant's utility consumption and reduce operational costs with our 
-                  advanced utility management system. Monitor electricity, water, gas usage, and 
-                  implement smart energy-saving strategies.
-                </p>
-                <Link to="/book_demo" className="btn btn-primary pill mr-5">
-                  <i className="fas fa-shopping-cart mr-5" />
-                  <span>Book a free demo</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div id="features" className="mt-80">
-          <div className="container">
-            <div className="text-center">
-              <h2 className="section-title mb-50">
-                Utility Management Features
-              </h2>
-            </div>
-            <div className="container py-5">
-              <div className="row text-center">
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-bolt feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Energy Monitoring</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Track electricity consumption in real-time and identify areas for energy optimization and cost reduction.</p>
-                </div>
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-tint feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Water Management</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Monitor water usage patterns and implement conservation strategies to reduce utility bills.</p>
-                </div>
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-fire feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Gas Usage Tracking</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Monitor gas consumption for cooking equipment and heating systems to optimize usage.</p>
-                </div>
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-chart-line feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Cost Analytics</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Analyze utility costs and trends to make informed decisions about energy efficiency investments.</p>
-                </div>
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-bell feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Smart Alerts</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Receive alerts for unusual consumption patterns, equipment malfunctions, and maintenance needs.</p>
-                </div>
-                <div className="col-md-4 mb-4">
-                  <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-leaf feature-icon"></i>
-                  <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Sustainability Reporting</h5>
-                  <p style={{ color: '#666' }} className="feature-description">Generate sustainability reports to track your restaurant's environmental impact and carbon footprint.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Form />
-      <Footer />
+      <ManagementPageLayout {...utilityData} />
     </>
   );
 };
