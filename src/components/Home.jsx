@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import Form from "./Form";
+import BlurText from "./BlurText";
 
 
 // New outlet images for second row
@@ -49,6 +50,7 @@ import pinelabsLogo from "../assets/images/integrations/pine-labs-1.png";
 import razorpayLogo from "../assets/images/integrations/razorpay-1.png";
 import shadowfaxLogo from "../assets/images/integrations/shadowfax-2.png";
 import porterLogo from "../assets/images/integrations/porter-2.png";
+
 
 const Home = () => {
   useEffect(() => {
@@ -151,7 +153,14 @@ const Home = () => {
                 <div className="col-lg-6">
                   <div className="hero-content">
                     <h1 className="hero-title mb-4">
-                      India's Leading Restaurant Management & POS Solution
+                      <BlurText
+                        text="India's Leading Restaurant Management & POS Solution"
+                        delay={150}
+                        animateBy="words"
+                        direction="top"
+                        stepDuration={0.4}
+                        className="hero-text fs-1 fw-bolder text-black"
+                      />
                     </h1>
                     <p className="hero-description mb-5">
                       Streamline your restaurant operations with our cloud-based
