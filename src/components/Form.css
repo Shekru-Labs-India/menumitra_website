@@ -155,3 +155,23 @@
     font-size: 13px;
   }
 }
+
+/* Submit button styling */
+.btn-submit {
+  transition: all 0.3s ease;
+}
+
+.btn-submit:disabled {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #ffffff !important;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn-submit:disabled:hover {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #ffffff !important;
+  opacity: 0.8;
+}

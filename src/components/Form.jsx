@@ -337,7 +337,8 @@ const BookingForm = ({
   recaptchaValue,
   handleRecaptchaChange,
   handleRecaptchaExpired,
-  handleRecaptchaError
+  handleRecaptchaError,
+  isFormValid
 }) => (
   <section className={className}>
         <div className="row h-center">
@@ -474,8 +475,8 @@ const BookingForm = ({
                   <div className="col-12 text-start">
                     <button
                       type="submit "
-                      disabled={loading || !recaptchaValue}
-                      className="btn btn-primary btn-submit px-2"
+                      disabled={loading || !isFormValid()}
+                      className={`btn ${isFormValid() ? "btn-primary" : "btn-light"} btn-submit px-2`}
                     >
                       <i className="fas fa-rocket me-2"></i> Submit
                     </button>
@@ -528,6 +529,22 @@ const Form = () => {
     orderType: "",
     email: "",
   });
+
+  // Form validation function
+  const isFormValid = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    return (
+      formData.name.trim().length > 0 &&
+      formData.mobile.trim().length === 10 &&
+      formData.email.trim().length > 0 &&
+      emailRegex.test(formData.email) &&
+      formData.city.trim().length > 0 &&
+      formData.outletName.trim().length > 0 &&
+      formData.orderType.trim().length > 0 &&
+      recaptchaValue !== null
+    );
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -667,6 +684,7 @@ const Form = () => {
         handleRecaptchaChange={handleRecaptchaChange}
         handleRecaptchaExpired={handleRecaptchaExpired}
         handleRecaptchaError={handleRecaptchaError}
+        isFormValid={isFormValid}
       />
     </>
   );
