@@ -119,7 +119,7 @@ const Footer = () => {
                     <li><Link to="/book_demo"><i className="fa-solid fa-chevron-right me-2"></i>Book A Demo</Link></li>
                     <li><Link to="/help_support"><i className="fa-solid fa-chevron-right me-2"></i>Help and support</Link></li>
                     <li><Link to="/order_tracking"><i className="fa-solid fa-chevron-right me-2"></i>Order Tracking</Link></li>
-                    <li><a href="https://user.menumitra.com/user_app/Index" target="_blank" rel="noreferrer"><i className="fa-solid fa-chevron-right me-2"></i>UserApp</a></li>
+                    <li><a href="https://user.menumitra.com/user_app/Index" target="_blank" rel="noreferrer"><i className="fa-solid fa-chevron-right me-2"></i>Customer App</a></li>
                   </ul>
                 </div>
               </div>
