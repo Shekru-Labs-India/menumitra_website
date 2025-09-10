@@ -445,16 +445,13 @@ const BookingForm = ({
                         required
                       >
                         <option value="">* Outlet Type</option>
-                        <option value="Restaurant">Restaurant</option>
-                        <option value="fine_dine">Fine Dine</option>
-                        <option value="food_courts">Food Courts</option>
-                        <option value="pizzeria">Pizzeria</option>
+                        <option value="bakery">Bakery</option>
                         <option value="cafe">Cafe</option>
-                        <option value="qsr">QSR</option>
-                        <option value="bakeries">Bakeries</option>
-                        <option value="icecream">Icecream & Desserts</option>
-                        <option value="cloud_kitchens">Cloud Kitchens</option>
-                        <option value="large_chain">Large Chain</option>
+                        <option value="cake_shop">Cake Shop</option>
+                        <option value="canteen">Canteen</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="mess">Mess</option>
+                        <option value="outlet">Outlet</option>
                       </select>
                     </div>
                   </div>
@@ -541,8 +538,7 @@ const Form = () => {
       emailRegex.test(formData.email) &&
       formData.city.trim().length > 0 &&
       formData.outletName.trim().length > 0 &&
-      formData.orderType.trim().length > 0 &&
-      recaptchaValue !== null
+      formData.orderType.trim().length > 0
     );
   };
 
@@ -597,60 +593,27 @@ const Form = () => {
       return;
     }
 
-    // Check if reCAPTCHA is completed
-    if (!recaptchaValue) {
-      alert("Please complete the reCAPTCHA verification");
-      setLoading(false);
-      return;
-    }
-
-    // Request data - only include email if API supports it
+    // Request data
     const data = {
       name: formData.name,
       mobile: formData.mobile,
       outlet_name: formData.outletName,
       outlet_type: formData.orderType,
       city: formData.city,
-      recaptcha_token: recaptchaValue,
+      email: formData.email,
     };
 
-    // Optionally add email if API supports it
     try {
-      // First try with email
-      const response = await fetch("https://men4u.xyz/website_api/create_booking", {
+      const response = await fetch("https://men4u.xyz/v2/website_api/create_booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...data, email: formData.email }),
+        body: JSON.stringify(data),
       });
 
-      // If API doesn't accept email (400/500 error), retry without email
-      if (!response.ok && (response.status === 400 || response.status === 500)) {
-        const retryResponse = await fetch("https://men4u.xyz/website_api/create_booking", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        });
-
-        if (retryResponse.ok) {
-          // Success without email
-          setFormData({
-            name: "",
-            mobile: "",
-            city: "",
-            outletName: "",
-            orderType: "",
-            email: "",
-          });
-          setRecaptchaValue(null);
-        } else {
-          console.error("Error:", await retryResponse.json());
-        }
-      } else if (response.ok) {
-        // Success with email
+      if (response.ok) {
+        // Success - reset form
         setFormData({
           name: "",
           mobile: "",
@@ -659,7 +622,10 @@ const Form = () => {
           orderType: "",
           email: "",
         });
-        setRecaptchaValue(null);
+      } else {
+        // Handle error response
+        const errorData = await response.json();
+        console.error("Error:", errorData);
       }
     } catch (error) {
       console.error("Request failed:", error);
