@@ -132,7 +132,7 @@ function App() {
     <Route path="/support" element={<Support />} />
     <Route path="/career" element={<Career />} />
     <Route path="/devices" element={<Devices />} />
-    <Route path="/storemanagement" element={<StoreManagement />} />
+    <Route path="/store-management" element={<StoreManagement />} />
     <Route path="/recipemanagement" element={<RecipeManagement />} />
     <Route path="/socialmediamanagement" element={<SocialMediaManagement />} />
     <Route path="/utilitymanagement" element={<UtilityManagement />} />

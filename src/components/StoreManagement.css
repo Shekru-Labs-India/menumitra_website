@@ -46,13 +46,7 @@
   line-height: 1.5 !important;
 }
 
-/* Advanced Operations Cards - New Structure */
-.store-management-page .operation-cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
+/* Advanced Operations Cards - 2 Column Layout */
 .store-management-page .operation-card-item {
   background: #fff !important;
   border: none !important;
@@ -62,6 +56,7 @@
   padding: 1.5rem !important;
   position: relative;
   overflow: hidden;
+  height: 100%;
   animation: slideInFromLeft 0.6s ease forwards;
   opacity: 0;
   transform: translateX(-30px);
@@ -276,12 +271,9 @@
     padding: 1rem !important;
   }
   
-  .store-management-page .operation-cards-container {
-    gap: 1rem;
-  }
-  
   .store-management-page .operation-card-item {
     padding: 1rem !important;
+    margin-bottom: 1rem;
   }
   
   .store-management-page .operation-icon {
@@ -325,12 +317,9 @@
     padding: 1rem !important;
   }
   
-  .store-management-page .operation-cards-container {
-    gap: 0.75rem;
-  }
-  
   .store-management-page .operation-card-item {
     padding: 0.75rem !important;
+    margin-bottom: 0.75rem;
   }
   
   .store-management-page .operation-icon {
