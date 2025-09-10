@@ -121,8 +121,8 @@ const ManagementPageLayout = ({
             <div className="row g-4">
               <div className="row">
                 {operations.slice(0, 2).map((operation, index) => (
-                  <div key={index} className="col-lg-6 col-md-6 col-12">
-                    <div className="operation-card-item">
+                  <div key={index} className="col-lg-6 col-md-6 mb-4">
+                    <div className="operation-card-item mb-4">
                       <div className="d-flex align-items-start">
                         <div className="flex-shrink-0 me-4">
                           <div
@@ -146,7 +146,7 @@ const ManagementPageLayout = ({
             <div className="row g-4 mt-30">
               <div className="row">
                 {operations.slice(2, 4).map((operation, index) => (
-                  <div key={index + 2} className="col-lg-6 col-md-6 col-12">
+                  <div key={index + 2} className="col-lg-6 col-md-6 mb-4">
                     <div className="operation-card-item">
                       <div className="d-flex align-items-start">
                         <div className="flex-shrink-0 me-4">
