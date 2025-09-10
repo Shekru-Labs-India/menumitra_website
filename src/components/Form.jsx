@@ -312,11 +312,18 @@ const BookingForm = ({
 }) => (
   <section className={className}>
         <div className="row h-center">
-          <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block">
+          <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block d-flex justify-content-center align-items-center">
             <img
-              src={require("../assets/images/scheduale-form_md.jpg")}
-              className="img-fluid w-75 h-auto"
-              alt="Booking illustration"
+              src={require("../assets/images/demo-booking-illustration.png")}
+              className="img-fluid"
+              alt="Book Demo Illustration"
+              style={{
+                maxWidth: '500px',
+                width: '100%',
+                height: 'auto',
+                imageRendering: 'crisp-edges',
+                backgroundColor: 'transparent'
+              }}
             />
           </div>
           <div className="col-lg-6">
