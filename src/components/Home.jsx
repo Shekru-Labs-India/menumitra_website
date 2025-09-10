@@ -5,15 +5,6 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import Form from "./Form";
 
-import arjunCoffeeHouse from "../assets/images/outlets/arjun_coffee_house.jpg";
-import balajiBhojnalay from "../assets/images/outlets/balaji_bhojnalay.jpeg";
-import cafeDelicia from "../assets/images/outlets/cafe_delicia.jpeg";
-import hotelJagdamba from "../assets/images/outlets/hotel_jagdamba.png";
-import klingPakoda from "../assets/images/outlets/kling_pakoda_express.png";
-import mrPakodi from "../assets/images/outlets/mr_pakodi.jpeg";
-import cafeGoodluck from "../assets/images/outlets/cafe_goodluck.jpg";
-import hotelAathvan from "../assets/images/outlets/hotel_aathvan.jpg";
-import gavranChaha from "../assets/images/outlets/gavran_chaha.jpg";
 
 // New outlet images for second row
 import hotelGaneshShakaahari from "../assets/images/outlets/hotel_ganesh_shakaahari.png";
@@ -29,7 +20,6 @@ import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.png";
 import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
 import hotelRasika from "../assets/images/outlets/hotel_rasika.jpg";
 import newJagdambaVegNonveg from "../assets/images/outlets/new_jagdamba_veg_nonveg.jpg";
-import hotelSanskar from "../assets/images/outlets/hotel_sanskar.jpg";
 // New outlet images
 import hotelNandiniPureVeg from "../assets/images/outlets/hotel_nandini_pure_veg.png";
 import hotelSanskrutiPureVeg from "../assets/images/outlets/hotel_sanskruti_pure_veg.png";
