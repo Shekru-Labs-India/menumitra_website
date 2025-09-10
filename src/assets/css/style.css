@@ -14933,4 +14933,159 @@ p {
   }
 }
 
+/* Management Page Layout Styles */
+.management-page {
+  position: relative;
+}
+
+.management-page .feature-card {
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.management-page .feature-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.management-page .feature-card .feature-icon {
+  margin-bottom: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.management-page .feature-card:hover .feature-icon {
+  transform: scale(1.05) !important;
+}
+
+.management-page .feature-card .feature-title {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.75rem !important;
+  color: #212529 !important;
+}
+
+.management-page .feature-card .feature-description {
+  font-size: 0.875rem !important;
+  margin-bottom: 0 !important;
+  color: #6c757d !important;
+  line-height: 1.5 !important;
+}
+
+.management-page .operation-card-item {
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.3s ease !important;
+  padding: 1.5rem !important;
+  height: 100% !important;
+}
+
+.management-page .operation-card-item:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.management-page .operation-card-item h5 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #212529 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.management-page .operation-card-item p {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  color: #6c757d !important;
+  margin-bottom: 0 !important;
+}
+
+.management-page .success-story-card {
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.management-page .success-story-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.management-page .bi-card {
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.management-page .bi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.management-page .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.management-page .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+.management-page .text-gradient {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .management-page .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .management-page .feature-card,
+  .management-page .operation-card-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .management-page .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .management-page .feature-card,
+  .management-page .operation-card-item {
+    padding: 0.75rem;
+  }
+}
+
 
