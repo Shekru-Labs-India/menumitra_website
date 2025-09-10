@@ -44,7 +44,7 @@ const ManagementPageLayout = ({
       <div className={`main-container p-0 management-page ${pageClassName}`}>
         {/* Hero Section */}
         <section id="why-us" className="xl bg-gradient-body">
-          <div className="container">
+          <div className="container pt-50">
             <div className="row v-center">
               <div className="col-lg-5">
                 <img
@@ -171,8 +171,8 @@ const ManagementPageLayout = ({
         </section>
 
         {/* Intelligence Section */}
-        <section className="business-intelligence-section">
-          <div className="container">
+        <section className="business-intelligence-section py-5">
+          <div className="container ">
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <img

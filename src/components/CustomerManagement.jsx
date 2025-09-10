@@ -1,55 +1,194 @@
-import React, { useEffect, useState } from "react";
-import Header from './Header'
-import Footer from './Footer'
+import React, { useEffect } from "react";
 import { Helmet } from 'react-helmet'
-import Form from "./Form";
-import { Link } from 'react-router-dom';
-import FeatureCards from './FeatureCards';
+import ManagementPageLayout from './ManagementPageLayout';
+import heroImage from '../assets/images/Hero-img.jpg';
+import varunImage from '../assets/images/Varun.jpg';
+
 const CustomerManagement = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Customer management feature cards data
-  const customerCards = [
-    {
-      icon: "fas fa-chart-line",
-      title: "Track Customer Behavior",
-      description: "The customer wants to place an order, but you are clueless about what they often get. Here MenuMitra's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer. Give your biller additional information for a customized experience that will increase client satisfaction."
-    },
-    {
-      icon: "fas fa-sync-alt",
-      title: "Synced Customer Information",
-      description: "Flawless customer understanding! Information captured on the POS is immediately linked to the cloud. Get information instantly, including address, email, birthdays, anniversaries, and more, in addition to names and numbers. Gain a thorough grasp of your clients with ease!"
-    },
-    {
-      icon: "fas fa-heart",
-      title: "Regulate Customer Retention",
-      description: "Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes."
-    },
-    {
-      icon: "fas fa-comment-dots",
-      title: "Customer Feedbacks",
-      description: "With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links."
-    },
-    {
-      icon: "fas fa-users",
-      title: "Customer Segmentation & Targeting",
-      description: "Segment your customers based on their spending patterns, visit frequency, and preferences. Create targeted marketing campaigns for different customer groups to maximize engagement and increase repeat visits."
-    },
-    {
-      icon: "fas fa-gift",
-      title: "Loyalty Programs & Rewards",
-      description: "Build customer loyalty with automated reward systems. Set up points-based programs, tier memberships, and special privileges for your most valuable customers. Keep them coming back with personalized offers and exclusive benefits."
-    }
-  ];
+  // Customer management data for ManagementPageLayout
+  const customerManagementData = {
+    title: "Customer Management",
+    description: "Know everything about your customers in just one click!",
+    keywords: "Restaurant POS, Menu Mitra, Restaurant Management, Online Ordering, CRM, Inventory Management",
+    
+    // Hero Section
+    heroImage: heroImage,
+    heroTitle: "Know everything about your customers in just one click!",
+    heroDescription: "In-built Customer Management Software that helps your earn customer loyalty, Regulate customer retention, Synced customer information, Track customer behaviour and many more",
+    heroButtonText: "Book a free demo",
+    heroButtonIcon: "fas fa-shopping-cart",
+    heroButtonLink: "/book_demo",
+    
+    // Core Features
+    featuresTitle: "Discover what MenuMitra can do for your customers",
+    featuresSubtitle: "Comprehensive customer management tools to boost loyalty and retention",
+    features: [
+      {
+        icon: "fas fa-chart-line",
+        title: "Track Customer Behavior",
+        description: "The customer wants to place an order, but you are clueless about what they often get. Here MenuMitra's order tracking module comes in handy, On the billing tab, you can quickly review the order history of your customer. Give your biller additional information for a customized experience that will increase client satisfaction.",
+        color: "#28a745"
+      },
+      {
+        icon: "fas fa-sync-alt",
+        title: "Synced Customer Information",
+        description: "Flawless customer understanding! Information captured on the POS is immediately linked to the cloud. Get information instantly, including address, email, birthdays, anniversaries, and more, in addition to names and numbers. Gain a thorough grasp of your clients with ease!",
+        color: "#007bff"
+      },
+      {
+        icon: "fas fa-heart",
+        title: "Regulate Customer Retention",
+        description: "Use customized SMS to increase customer interaction directly from the MenuMitra Dashboard! Customize messages according to birthdays, anniversaries, purchasing history, and other factors. To entice your devoted consumers to return, send them exclusive deals or discount codes.",
+        color: "#dc3545"
+      },
+      {
+        icon: "fas fa-comment-dots",
+        title: "Customer Feedbacks",
+        description: "With MenuMitra's Feedback Management System, you can find out what customers truly think about your restaurant and services! Gather frank feedback about your staff, food, and service by using a tablet or smartphone app, QR codes, or SMS links.",
+        color: "#ffc107"
+      },
+      {
+        icon: "fas fa-users",
+        title: "Customer Segmentation & Targeting",
+        description: "Segment your customers based on their spending patterns, visit frequency, and preferences. Create targeted marketing campaigns for different customer groups to maximize engagement and increase repeat visits.",
+        color: "#6f42c1"
+      },
+      {
+        icon: "fas fa-gift",
+        title: "Loyalty Programs & Rewards",
+        description: "Build customer loyalty with automated reward systems. Set up points-based programs, tier memberships, and special privileges for your most valuable customers. Keep them coming back with personalized offers and exclusive benefits.",
+        color: "#fd7e14"
+      }
+    ],
+    
+    // Advanced Operations
+    operationsTitle: "Much more than just a CRM software",
+    operationsSubtitle: "Complete restaurant management solution with customer insights",
+    operations: [
+      {
+        icon: "fas fa-qrcode",
+        title: "Online Orders",
+        description: "Receive online orders, handle your digital menu, indicate when food is ready, process payments, and track revenue—all in one place without switching between multiple screens.",
+        bgColor: "bg-primary"
+      },
+      {
+        icon: "fas fa-book",
+        title: "Billing & Kot",
+        description: "MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.",
+        bgColor: "bg-success"
+      },
+      {
+        icon: "fas fa-book-open",
+        title: "Inventory Management",
+        description: "Smartly manage your inventory with instant low-stock alerts, item-wise auto-deduct, create daily closing reports and much more",
+        bgColor: "bg-info"
+      },
+      {
+        icon: "fas fa-file-invoice",
+        title: "Reports & Analytics",
+        description: "Receive instant reports on your owner's app & WhatsApp for day-end sales, inventory, staff activities, and other vital business insights.",
+        bgColor: "bg-warning"
+      }
+    ],
+    
+    // Intelligence Section
+    intelligenceTitle: "Smart Customer Analytics",
+    intelligenceDescription: "Get deep insights into customer behavior and preferences to make data-driven decisions that boost your restaurant's success.",
+    intelligenceImage: heroImage,
+    intelligenceFeatures: [
+      {
+        icon: "fas fa-chart-bar",
+        title: "Customer Analytics",
+        description: "Track spending patterns and preferences",
+        color: "text-primary"
+      },
+      {
+        icon: "fas fa-bell",
+        title: "Smart Notifications",
+        description: "Automated alerts for customer events",
+        color: "text-success"
+      },
+      {
+        icon: "fas fa-target",
+        title: "Targeted Marketing",
+        description: "Personalized campaigns for each segment",
+        color: "text-info"
+      },
+      {
+        icon: "fas fa-star",
+        title: "Loyalty Tracking",
+        description: "Monitor customer retention metrics",
+        color: "text-warning"
+      }
+    ],
+    
+    // Integration Features
+    integrationTitle: "Seamless Integration & Scalability",
+    integrationSubtitle: "Connect with your existing systems and scale as you grow",
+    integrationFeatures: [
+      {
+        icon: "fas fa-plug",
+        title: "Easy Integration",
+        description: "Connect with existing POS systems and third-party applications seamlessly."
+      },
+      {
+        icon: "fas fa-expand-arrows-alt",
+        title: "Scalable Solution",
+        description: "Grows with your business from single outlet to multi-location chains."
+      },
+      {
+        icon: "fas fa-cloud",
+        title: "Cloud-Based",
+        description: "Access your customer data from anywhere, anytime with cloud technology."
+      }
+    ],
+    
+    // Success Stories
+    successStoriesTitle: "Success Stories",
+    successStoriesSubtitle: "See how restaurants are transforming their customer experience",
+    successStories: [
+      {
+        name: "Spice Garden Restaurant",
+        location: "Mumbai",
+        testimonial: "MenuMitra's customer management helped us increase repeat customers by 40% through personalized offers and loyalty programs.",
+        rating: "4.8",
+        image: varunImage
+      },
+      {
+        name: "Cafe Delight",
+        location: "Delhi",
+        testimonial: "The customer feedback system has been a game-changer. We can now address issues immediately and improve our service quality.",
+        rating: "4.9",
+        image: varunImage
+      },
+      {
+        name: "Pizza Palace",
+        location: "Bangalore",
+        testimonial: "Customer segmentation features helped us create targeted marketing campaigns that increased our average order value by 25%.",
+        rating: "4.7",
+        image: varunImage
+      }
+    ],
+    
+    // Call to Action
+    ctaTitle: "Ready to Transform Your Customer Experience?",
+    ctaDescription: "Join thousands of restaurants already using MenuMitra to build stronger customer relationships and boost loyalty.",
+    ctaButtonText: "Book Free Demo",
+    ctaButtonIcon: "fas fa-calendar-alt",
+    ctaButtonLink: "/book_demo",
+    
+    pageClassName: "customer-management"
+  };
 
   return (
-    
-   <>
-     <Helmet>
+    <>
+      <Helmet>
         {/* Meta Tags for SEO */}
-        <meta name="keywords" content="Restaurant POS, Menu Mitra, Restaurant Management, Online Ordering, CRM, Inventory Management" />
+        <meta name="keywords" content={customerManagementData.keywords} />
         <meta name="description" content="Menu Mitra - Simplifying restaurant management with smart POS features. Manage orders, inventory, CRM, and reports all in one place." />
 
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -84,110 +223,21 @@ const CustomerManagement = () => {
         <meta property="article:publisher" content="https://www.facebook.com/menumitra" />
         <meta property="article:updated_time" content="2024-12-13" />
         <meta property="og:image" itemprop="image" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:url" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:secure" content="%PUBLIC_URL%/logo192.png "/>
-      <meta property= "og:image:secure_url" content="%PUBLIC_URL%/logo192.png" />
-      <meta property="og:image:alt" content="Menu Mitra Logo" />
-      <meta property="og:image:width" content="720" />
-      <meta property="og:image:height" content="602" />
+        <meta property="og:image:url" content="%PUBLIC_URL%/logo192.png" />
+        <meta property="og:image:secure" content="%PUBLIC_URL%/logo192.png "/>
+        <meta property= "og:image:secure_url" content="%PUBLIC_URL%/logo192.png" />
+        <meta property="og:image:alt" content="Menu Mitra Logo" />
+        <meta property="og:image:width" content="720" />
+        <meta property="og:image:height" content="602" />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Menu Mitra | Restaurant POS and Management" />
         <meta name="twitter:description" content="Menu Mitra offers restaurant management solutions with POS, CRM, inventory, and order management. Learn more about our services." />
         <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
       </Helmet>
-   <Header/>
-
-   <div className="main-container p-0">
-    <section id="why-us" className="xl bg-gradient-body">
-      <div className="container">
-        <div className="row v-center pb-30">
-          <div className="col-lg-5 tablet-lg-top-30">
-            <h2 className="mb-30">
-            Know everything about your customers in just one click!
-            </h2>
-            <p className="mb-30">
-            In-built Customer Management Software that helps your earn customer loyalty, Regulate customer retention, Synced customer information, Track customer behaviour and many more
-            </p>
-          </div>
-          {/* / column */}
-          <div className="col-lg-7">
-            <Link to="/book_demo" className="btn btn-primary pill mr-5">
-        
-              <span>Book a free demo</span>
-            </Link>
-          </div>
-          {/* / column */}
-        </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </section>
-    <FeatureCards
-      title="Discover what MenuMitra can do for your customers"
-      cards={customerCards}
-      colorTheme="green"
-    />
-    <div id="features" className="mt-80">
-      <div className="container">
-        <div className="text-center">
-          <h2 className="section-title mb-50">
-          Much more than just
-          a CRM software
-          </h2>
-        </div>
-        {/* / text-center */}
-        <div className="container py-5">
-        <div className="row text-center">
-            
-        <div className="col-md-4 mb-4">
-                <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-qrcode feature-icon"></i>
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Online Orders</h5>
-                <p style={{ color: '#666' }} className="feature-description">Receive online orders, handle your digital menu, indicate when food is ready, process payments, and track revenue—all in one place without switching between multiple screens.</p>
-            </div>
-
-            <div className="col-md-4 mb-4">
-                <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Billing & Kot</h5>
-                <p style={{ color: '#666' }} className="feature-description">MenuMitra's restaurant POS makes it easy to take orders, create bills, and generate KOT. You can accept payments, split bills, merge tables, and apply discounts and coupons effortlessly.</p>
-            </div>
-
-            
-
-            <div className="col-md-4 mb-4">
-                <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book-open feature-icon"></i>
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Inventory Management</h5>
-                <p style={{ color: '#666' }} className="feature-description">Smartly manage your inventory with instant low-stock alerts, item-wise auto-deduct, create daily closing reports and much more</p>
-            </div>
-            
-            <div className="col-md-4 mb-4">
-                <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-file-invoice feature-icon"></i>
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Reports & Analytics</h5>
-                <p style={{ color: '#666' }} className="feature-description">Receive instant reports on your owner’s app & WhatsApp for day-end sales, inventory, staff activities, and other vital business insights.</p>
-            </div>
-            
-
-            <div className="col-md-4 mb-4">
-                <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
-                <h5 style={{ fontWeight: 600, marginBottom: '10px' }} className="feature-title">Menu Management</h5>
-                <p style={{ color: '#666' }} className="feature-description">Personalize your restaurant menu to make it better for customers. Add exciting extras, special offers, unique menus, and dynamic pricing options.</p>
-            </div>
-           
-        </div>
-    </div>
-        {/* / row */}
-      </div>
-      {/* / container */}
-    </div>
-    {/* / features */}
-
-    
-  </div>
-  <Form/>
-
-   <Footer/>
-   </>
-
+      
+      <ManagementPageLayout {...customerManagementData} />
+    </>
   )
 }
 
