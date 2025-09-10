@@ -130,56 +130,63 @@ const StoreManagement = () => {
                 Streamline complex operations with intelligent automation
               </p>
             </div>
-            <div className="row g-4">
-              <div className="col-lg-6">
-                <div className="d-flex align-items-start operation-card">
-                  <div className="flex-shrink-0 me-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '60px', height: '60px' }}>
-                      <i className="fas fa-cash-register fa-lg"></i>
+            <div className="row justify-content-center">
+              <div className="col-lg-8">
+                <div className="operation-cards-container">
+                  <div className="operation-card-item">
+                    <div className="d-flex align-items-start">
+                      <div className="flex-shrink-0 me-4">
+                        <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '70px', height: '70px' }}>
+                          <i className="fas fa-cash-register fa-lg"></i>
+                        </div>
+                      </div>
+                      <div className="flex-grow-1">
+                        <h5 className="mb-2 fw-bold">Smart POS Integration</h5>
+                        <p className="text-muted mb-0">Seamlessly integrate with multiple POS terminals across all stores. Centralized billing, payment processing, and transaction management.</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex-grow-1">
-                    <h5 className="mb-2">Smart POS Integration</h5>
-                    <p className="text-muted mb-0">Seamlessly integrate with multiple POS terminals across all stores. Centralized billing, payment processing, and transaction management.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="d-flex align-items-start operation-card">
-                  <div className="flex-shrink-0 me-3">
-                    <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '60px', height: '60px' }}>
-                      <i className="fas fa-boxes fa-lg"></i>
+                  
+                  <div className="operation-card-item">
+                    <div className="d-flex align-items-start">
+                      <div className="flex-shrink-0 me-4">
+                        <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '70px', height: '70px' }}>
+                          <i className="fas fa-boxes fa-lg"></i>
+                        </div>
+                      </div>
+                      <div className="flex-grow-1">
+                        <h5 className="mb-2 fw-bold">Centralized Inventory</h5>
+                        <p className="text-muted mb-0">Manage inventory across all locations with automated stock transfers, low-stock alerts, and centralized procurement.</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex-grow-1">
-                    <h5 className="mb-2">Centralized Inventory</h5>
-                    <p className="text-muted mb-0">Manage inventory across all locations with automated stock transfers, low-stock alerts, and centralized procurement.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="d-flex align-items-start operation-card">
-                  <div className="flex-shrink-0 me-3">
-                    <div className="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '60px', height: '60px' }}>
-                      <i className="fas fa-users fa-lg"></i>
+                  
+                  <div className="operation-card-item">
+                    <div className="d-flex align-items-start">
+                      <div className="flex-shrink-0 me-4">
+                        <div className="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '70px', height: '70px' }}>
+                          <i className="fas fa-users fa-lg"></i>
+                        </div>
+                      </div>
+                      <div className="flex-grow-1">
+                        <h5 className="mb-2 fw-bold">Staff Management</h5>
+                        <p className="text-muted mb-0">Manage staff across multiple locations with role-based access, attendance tracking, and performance monitoring.</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex-grow-1">
-                    <h5 className="mb-2">Staff Management</h5>
-                    <p className="text-muted mb-0">Manage staff across multiple locations with role-based access, attendance tracking, and performance monitoring.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="d-flex align-items-start operation-card">
-                  <div className="flex-shrink-0 me-3">
-                    <div className="bg-info text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '60px', height: '60px' }}>
-                      <i className="fas fa-shopping-cart fa-lg"></i>
+                  
+                  <div className="operation-card-item">
+                    <div className="d-flex align-items-start">
+                      <div className="flex-shrink-0 me-4">
+                        <div className="bg-info text-white rounded-circle d-flex align-items-center justify-content-center operation-icon" style={{ width: '70px', height: '70px' }}>
+                          <i className="fas fa-shopping-cart fa-lg"></i>
+                        </div>
+                      </div>
+                      <div className="flex-grow-1">
+                        <h5 className="mb-2 fw-bold">Order Management</h5>
+                        <p className="text-muted mb-0">Handle online and offline orders with delivery management, customer service, and unified platform control across all stores.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-grow-1">
-                    <h5 className="mb-2">Order Management</h5>
-                    <p className="text-muted mb-0">Handle online orders, delivery management, and customer service across all stores from a unified platform.</p>
                   </div>
                 </div>
               </div>
