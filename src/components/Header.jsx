@@ -80,7 +80,7 @@ const Header = () => {
                     <i className="fa-solid fa-star me-2"></i>Customer Feedback</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/scan") ? "active" : ""}`} to="/scan">
                     <i className="fa-solid fa-qrcode me-2"></i>Scan & Order</Link></li>
-                  <li><Link className={`dropdown-item ${isActive("/storemanagement") ? "active" : ""}`} to="/storemanagement">
+                  <li><Link className={`dropdown-item ${isActive("/store-management") ? "active" : ""}`} to="/store-management">
                     <i className="fa-solid fa-store me-2"></i>Store Management</Link></li>
                   <li><Link className={`dropdown-item ${isActive("/recipemanagement") ? "active" : ""}`} to="/recipemanagement">
                     <i className="fa-solid fa-book me-2"></i>Recipe Management</Link></li>

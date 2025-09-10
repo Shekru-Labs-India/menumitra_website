@@ -380,7 +380,7 @@ const StoreManagement = () => {
                 <img
                   src={brand2}
                   alt="Business Intelligence Dashboard"
-                  className="img-fluid rounded shadow-lg"
+                  className="img-fluid rounded"
                 />
               </div>
               <div className="col-lg-6">
@@ -397,7 +397,7 @@ const StoreManagement = () => {
                       <i className="fas fa-chart-bar text-primary me-3 fa-lg"></i>
                       <div>
                         <h6 className="mb-1">Sales Analytics</h6>
-                        <small className="text-muted">
+                        <small className="text-dark">
                           Track performance across all stores
                         </small>
                       </div>
@@ -408,7 +408,7 @@ const StoreManagement = () => {
                       <i className="fas fa-trending-up text-success me-3 fa-lg"></i>
                       <div>
                         <h6 className="mb-1">Growth Metrics</h6>
-                        <small className="text-muted">
+                        <small className="text-dark">
                           Monitor business growth patterns
                         </small>
                       </div>
@@ -419,7 +419,7 @@ const StoreManagement = () => {
                       <i className="fas fa-clock text-warning me-3 fa-lg"></i>
                       <div>
                         <h6 className="mb-1">Peak Hours</h6>
-                        <small className="text-muted">
+                        <small className="text-dark">
                           Identify busy periods and trends
                         </small>
                       </div>
@@ -430,18 +430,12 @@ const StoreManagement = () => {
                       <i className="fas fa-star text-info me-3 fa-lg"></i>
                       <div>
                         <h6 className="mb-1">Customer Insights</h6>
-                        <small className="text-muted">
+                        <small className="text-dark">
                           Understand customer behavior
                         </small>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="mt-4">
-                  <Link to="/book_demo" className="btn btn-primary btn-lg">
-                    <i className="fas fa-chart-line me-2"></i>
-                    View Analytics Demo
-                  </Link>
                 </div>
               </div>
             </div>
@@ -459,7 +453,7 @@ const StoreManagement = () => {
                 Connect with your existing tools and scale as you grow
               </p>
             </div>
-            <div className="row g-4">
+            <div className="row g-3">
               <div className="col-md-4">
                 <div className="text-center">
                   <div
@@ -514,12 +508,12 @@ const StoreManagement = () => {
           <div className="container">
             <div className="text-center mb-5">
               <h2 className="section-title mb-3">Success Stories</h2>
-              <p className="lead text-muted">
+              <p className="lead text-dark">
                 See how restaurants are transforming their operations with
                 MenuMitra
               </p>
             </div>
-            <div className="row g-4">
+            <div className="row g-3">
               <div className="col-lg-4">
                 <div className="card border-0 shadow-sm h-100 success-story-card">
                   <div className="card-body p-4">
@@ -535,7 +529,7 @@ const StoreManagement = () => {
                         <small className="text-muted">15+ Locations</small>
                       </div>
                     </div>
-                    <p className="text-muted">
+                    <p className="text-dark">
                       "MenuMitra helped us reduce operational costs by 30% and
                       improve customer satisfaction across all our locations."
                     </p>
@@ -564,10 +558,10 @@ const StoreManagement = () => {
                       />
                       <div>
                         <h6 className="mb-0">QSR Franchise</h6>
-                        <small className="text-muted">50+ Outlets</small>
+                        <small className="text-dark">50+ Outlets</small>
                       </div>
                     </div>
-                    <p className="text-muted">
+                    <p className="text-dark">
                       "Centralized management across all outlets has improved
                       our efficiency and reduced training time for new staff."
                     </p>
@@ -579,7 +573,7 @@ const StoreManagement = () => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
                       </div>
-                      <small className="text-muted">4.9 Rating</small>
+                      <small className="text-dark">4.9 Rating</small>
                     </div>
                   </div>
                 </div>
@@ -596,10 +590,10 @@ const StoreManagement = () => {
                       />
                       <div>
                         <h6 className="mb-0">Cafe Chain</h6>
-                        <small className="text-muted">25+ Locations</small>
+                        <small className="text-dark">25+ Locations</small>
                       </div>
                     </div>
-                    <p className="text-muted">
+                    <p className="text-dark">
                       "Real-time analytics and inventory management have helped
                       us reduce waste and increase profitability significantly."
                     </p>
@@ -611,7 +605,7 @@ const StoreManagement = () => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
                       </div>
-                      <small className="text-muted">4.8 Rating</small>
+                      <small className="text-dark">4.8 Rating</small>
                     </div>
                   </div>
                 </div>
@@ -640,13 +634,6 @@ const StoreManagement = () => {
                 >
                   <i className="fas fa-calendar-alt me-2"></i>
                   Book Free Demo
-                </Link>
-                <Link
-                  to="/pricing"
-                  className="btn btn-outline-light btn-lg mb-2"
-                >
-                  <i className="fas fa-tags me-2"></i>
-                  View Pricing
                 </Link>
               </div>
             </div>
