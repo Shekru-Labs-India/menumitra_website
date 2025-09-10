@@ -290,36 +290,6 @@ const FAQ = () => (
                     </div>
                   </div>
                 </div>
-                {/* <div className="accordion-item">
-                  <h2 className="accordion-header" id="minimal-headingFive">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#minimal-collapseFive"
-                      aria-expanded="false"
-                      aria-controls="minimal-collapseFive"
-                    >
-                      Is my data safe with MenuMitra POS?
-                      <span>
-                        <i className="fas fa-chevron-down" />
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="minimal-collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="minimal-headingFive"
-                    data-bs-parent="#minimal-accordionExample1"
-                  >
-                    <div className="accordion-body">
-                      Absolutely, and it's a firm commitment from us! We value
-                      transparency and strong work ethics. Your entire data is
-                      in good hands and kept safe and secure in the MenuMitra
-                      clouds.
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -350,9 +320,9 @@ const BookingForm = ({
             />
           </div>
           <div className="col-lg-6">
-            <div className="promo-box">
-              <h4 className="text-start mb-50">
-                Get an Instant demo by our experts
+            <div className="promo-box pb-0">
+              <h4 className="text-center mb-4">
+                Book Your Free Demo Today
               </h4>
               <form
                 className="needs-validation"
@@ -457,8 +427,8 @@ const BookingForm = ({
                   </div>
 
                   {/* reCAPTCHA */}
-                  <div className="col-md-12">
-                    <div className="form-group">
+                  <div className="col-md-12 ">
+                    <div className="form-group d-flex justify-content-center">
                       <ReCAPTCHA
                         sitekey="6LfDN8QrAAAAACkV7GESHNgzTB5C6jKWNVMBACkR"
                         onChange={handleRecaptchaChange}
@@ -493,6 +463,35 @@ const BookingForm = ({
       </section>
 );
 
+// Notification Component
+const NotificationToast = ({ notification, onClose }) => {
+  if (!notification) return null;
+
+  const { type, message, bookingId } = notification;
+  const isSuccess = type === 'success';
+  
+  return (
+    <div className={`notification-toast ${isSuccess ? 'success' : 'error'}`}>
+      <div className="notification-content">
+        <div className="notification-icon">
+          <i className={`fas ${isSuccess ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i>
+        </div>
+        <div className="notification-text">
+          <div className="notification-title">
+            {isSuccess ? 'Booking Successful!' : 'Booking Failed'}
+          </div>
+          <div className="notification-message">
+            {message}
+          </div>
+        </div>
+        <button className="notification-close" onClick={onClose}>
+          <i className="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  );
+};
+
 // Styles object
 const styles = {
   bookDemoContainer: `
@@ -511,6 +510,100 @@ const styles = {
         --spacing-top: 100px;
       }
     }
+
+    .notification-toast {
+      position: fixed;
+      top: 120px;
+      right: 20px;
+      z-index: 9999;
+      max-width: 400px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      animation: slideIn 0.3s ease-out;
+    }
+
+    .notification-toast.success {
+      border-left: 4px solid #28a745;
+    }
+
+    .notification-toast.error {
+      border-left: 4px solid #dc3545;
+    }
+
+    .notification-content {
+      display: flex;
+      align-items: flex-start;
+      padding: 16px;
+    }
+
+    .notification-icon {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+
+    .notification-toast.success .notification-icon {
+      color: #28a745;
+    }
+
+    .notification-toast.error .notification-icon {
+      color: #dc3545;
+    }
+
+    .notification-text {
+      flex: 1;
+    }
+
+    .notification-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    .notification-message {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .booking-id {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #28a745;
+    }
+
+    .notification-close {
+      background: none;
+      border: none;
+      color: #999;
+      cursor: pointer;
+      padding: 4px;
+      margin-left: 8px;
+    }
+
+    .notification-close:hover {
+      color: #666;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .notification-toast {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+      }
+    }
   `
 };
 
@@ -518,6 +611,7 @@ const Form = () => {
   const { showFAQ, isBookDemoPage } = usePageLayout();
   const [loading, setLoading] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const [notification, setNotification] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -581,6 +675,19 @@ const Form = () => {
     setRecaptchaValue(null);
   };
 
+  // Notification handlers
+  const showNotification = (type, message, bookingId = null) => {
+    setNotification({ type, message, bookingId });
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      setNotification(null);
+    }, 5000);
+  };
+
+  const hideNotification = () => {
+    setNotification(null);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -613,7 +720,10 @@ const Form = () => {
       });
 
       if (response.ok) {
-        // Success - reset form
+        // Success - reset form and show success notification
+        const responseData = await response.json();
+        const bookingId = responseData.detail?.booking_id;
+        
         setFormData({
           name: "",
           mobile: "",
@@ -622,13 +732,39 @@ const Form = () => {
           orderType: "",
           email: "",
         });
+        
+        showNotification(
+          'success', 
+          'Thank you! Your demo booking has been submitted successfully. Our team will contact you soon.',
+          bookingId
+        );
       } else {
         // Handle error response
         const errorData = await response.json();
         console.error("Error:", errorData);
+        
+        let errorMessage = 'Something went wrong. Please try again.';
+        
+        // Handle specific error cases
+        if (response.status === 400) {
+          if (errorData.detail && typeof errorData.detail === 'string') {
+            errorMessage = errorData.detail;
+          } else if (errorData.detail && typeof errorData.detail === 'object') {
+            // Handle validation errors
+            const firstError = Object.values(errorData.detail)[0];
+            if (Array.isArray(firstError)) {
+              errorMessage = firstError[0];
+            }
+          }
+        } else if (response.status === 500) {
+          errorMessage = 'Server error. Please try again later.';
+        }
+        
+        showNotification('error', errorMessage);
       }
     } catch (error) {
       console.error("Request failed:", error);
+      showNotification('error', 'Network error. Please check your internet connection and try again.');
     } finally {
       setLoading(false);
     }
@@ -637,6 +773,11 @@ const Form = () => {
   return (
     <>
       <style>{styles.bookDemoContainer}</style>
+      
+      <NotificationToast 
+        notification={notification} 
+        onClose={hideNotification} 
+      />
       
       {showFAQ && <FAQ />}
       
