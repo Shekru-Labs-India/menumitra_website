@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Form.css';
 import { useLocation } from "react-router-dom";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 // Constants
 const ROUTES = {
@@ -332,7 +333,11 @@ const BookingForm = ({
   formData, 
   loading, 
   handleChange, 
-  handleSubmit 
+  handleSubmit,
+  recaptchaValue,
+  handleRecaptchaChange,
+  handleRecaptchaExpired,
+  handleRecaptchaError
 }) => (
   <section className={className}>
         <div className="row h-center">
@@ -453,13 +458,23 @@ const BookingForm = ({
                     </div>
                   </div>
 
-                 
+                  {/* reCAPTCHA */}
+                  <div className="col-md-12">
+                    <div className="form-group">
+                      <ReCAPTCHA
+                        sitekey="6LfDN8QrAAAAACkV7GESHNgzTB5C6jKWNVMBACkR"
+                        onChange={handleRecaptchaChange}
+                        onExpired={handleRecaptchaExpired}
+                        onError={handleRecaptchaError}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="row justify-content-center">
                   <div className="col-12 text-start">
                     <button
                       type="submit "
-                      disabled={loading}
+                      disabled={loading || !recaptchaValue}
                       className="btn btn-primary btn-submit px-2"
                     >
                       <i className="fas fa-rocket me-2"></i> Submit
@@ -504,6 +519,7 @@ const styles = {
 const Form = () => {
   const { showFAQ, isBookDemoPage } = usePageLayout();
   const [loading, setLoading] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -538,7 +554,19 @@ const Form = () => {
       setFormData({ ...formData, [name]: value });
     }
   };
-  
+
+  // reCAPTCHA handlers
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
+
+  const handleRecaptchaExpired = () => {
+    setRecaptchaValue(null);
+  };
+
+  const handleRecaptchaError = () => {
+    setRecaptchaValue(null);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -552,6 +580,13 @@ const Form = () => {
       return;
     }
 
+    // Check if reCAPTCHA is completed
+    if (!recaptchaValue) {
+      alert("Please complete the reCAPTCHA verification");
+      setLoading(false);
+      return;
+    }
+
     // Request data - only include email if API supports it
     const data = {
       name: formData.name,
@@ -559,6 +594,7 @@ const Form = () => {
       outlet_name: formData.outletName,
       outlet_type: formData.orderType,
       city: formData.city,
+      recaptcha_token: recaptchaValue,
     };
 
     // Optionally add email if API supports it
@@ -592,6 +628,7 @@ const Form = () => {
             orderType: "",
             email: "",
           });
+          setRecaptchaValue(null);
         } else {
           console.error("Error:", await retryResponse.json());
         }
@@ -605,6 +642,7 @@ const Form = () => {
           orderType: "",
           email: "",
         });
+        setRecaptchaValue(null);
       }
     } catch (error) {
       console.error("Request failed:", error);
@@ -625,6 +663,10 @@ const Form = () => {
         loading={loading}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
+        recaptchaValue={recaptchaValue}
+        handleRecaptchaChange={handleRecaptchaChange}
+        handleRecaptchaExpired={handleRecaptchaExpired}
+        handleRecaptchaError={handleRecaptchaError}
       />
     </>
   );
