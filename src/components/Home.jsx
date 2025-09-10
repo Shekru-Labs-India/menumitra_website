@@ -30,6 +30,14 @@ import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
 import hotelRasika from "../assets/images/outlets/hotel_rasika.jpg";
 import newJagdambaVegNonveg from "../assets/images/outlets/new_jagdamba_veg_nonveg.jpg";
 import hotelSanskar from "../assets/images/outlets/hotel_sanskar.jpg";
+// New outlet images
+import hotelNandiniPureVeg from "../assets/images/outlets/hotel_nandini_pure_veg.png";
+import hotelSanskrutiPureVeg from "../assets/images/outlets/hotel_sanskruti_pure_veg.png";
+import hotelPpPatil from "../assets/images/outlets/hotel_pp_patil.png";
+import npsChineseHub from "../assets/images/outlets/nps_chinese_hub.png";
+import shreePureVeg from "../assets/images/outlets/shree_pure_veg.png";
+import houseOfSchezwam from "../assets/images/outlets/house_of_schezwam.png";
+import hotelPpPatil2 from "../assets/images/outlets/hotel_pp_patil_2.png";
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.png";
 import brand2 from "../assets/images/mm_brand/02.png";
@@ -216,126 +224,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
-              {/* <div className="row d-flex justify-content-evenly ">
-                <div className="col-4 col-md-4 col-lg-1 mb-2 ">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={arjunCoffeeHouse}
-                      alt="Brand 1"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={balajiBhojnalay}
-                      alt="Brand 2"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={cafeDelicia}
-                      alt="Brand 3"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={hotelJagdamba}
-                      alt="Brand 4"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={klingPakoda}
-                      alt="Brand 5"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={mrPakodi}
-                      alt="Brand 6"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={cafeGoodluck}
-                      alt="Brand 7"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={hotelAathvan}
-                      alt="Brand 8"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-                <div className="col-4 col-md-4 col-lg-1 mb-2">
-                  <div
-                    className="card border d-flex align-items-center justify-content-center"
-                    style={{ width: "120px", height: "120px" }}
-                  >
-                    <img
-                      src={gavranChaha}
-                      alt="Brand 9"
-                      className="img-fluid rounded-4 object-fit-contain"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
-                    />
-                  </div>
-                </div>
-              </div> */}
+              </div>
 
             <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 mt-4">
               <div className="client-card">
@@ -513,8 +402,86 @@ const Home = () => {
                   style={{ width: "140px", height: "110px", borderRadius: "15px" }}
                 >
                   <img
-                    src={hotelSanskar}
-                    alt="Hotel Sanskar"
+                    src={hotelNandiniPureVeg}
+                    alt="Hotel Nandini Pure Veg"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={hotelSanskrutiPureVeg}
+                    alt="Hotel Sanskruti Pure Veg"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={hotelPpPatil}
+                    alt="Hotel PP Patil"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={npsChineseHub}
+                    alt="NPS Chinese Hub"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={shreePureVeg}
+                    alt="Shree Pure Veg"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={houseOfSchezwam}
+                    alt="House of Schezwam"
+                    className="img-fluid rounded-4 object-fit-contain"
+                    style={{ maxWidth: "90%", maxHeight: "90%" }}
+                  />
+                </div>
+              </div>
+              <div className="client-card">
+                <div
+                  className="card border d-flex align-items-center justify-content-center"
+                  style={{ width: "140px", height: "110px", borderRadius: "15px" }}
+                >
+                  <img
+                    src={hotelPpPatil2}
+                    alt="Hotel PP Patil 2"
                     className="img-fluid rounded-4 object-fit-contain"
                     style={{ maxWidth: "90%", maxHeight: "90%" }}
                   />
