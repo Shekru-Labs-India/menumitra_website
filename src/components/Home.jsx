@@ -152,16 +152,19 @@ const Home = () => {
               <div className="row align-items-start">
                 <div className="col-lg-6">
                   <div className="hero-content">
-                    <h1 className="hero-title mb-4">
+                    <p className="hero-title mb-4">
                       <BlurText
                         text="India's Leading Restaurant Management & POS Solution"
                         delay={150}
                         animateBy="words"
-                        direction="top"
+                        direction="bottom"
                         stepDuration={0.4}
-                        className="hero-text fs-1 fw-bolder text-black"
+                        className="fs-1 fw-bolder text-black"
+                        threshold={0.2}
+                        rootMargin="5px"
+                        easing={(t) => t * t * (3 - 2 * t)}
                       />
-                    </h1>
+                    </p>
                     <p className="hero-description mb-5">
                       Streamline your restaurant operations with our cloud-based
                       POS system. Manage billing, inventory, online orders,
