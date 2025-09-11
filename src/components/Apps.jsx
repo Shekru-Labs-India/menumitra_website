@@ -277,8 +277,8 @@ const Apps = () => {
             <div className="text-center mb-4">
               <h3 className="h4 fw-bold text-info">Version 2.0</h3>
             </div>
-{/* v2 Apps */}
-<div className="apps-grid">
+            
+            <div className="apps-grid">
               {/* Owner App */}
               <div className="app-card">
                 <div className="card-body">
