@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 // Import Bootstrap CSS and JS first
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// Import Bootstrap Icons
-import 'bootstrap-icons/font/bootstrap-icons.css';
 // Import custom styles after Bootstrap to override
 import './index.css';
 import App from './App';
