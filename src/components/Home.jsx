@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
-import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import Form from "./Form";
 import BlurText from "./BlurText";
 import HorizontalRule from "./HorizontalRule";
 import LazyYouTube from "./LazyYouTube";
-import LazyImage from "./LazyImage";
+import OptimizedImage from "./OptimizedImage";
 
 
 // New outlet images for second row
@@ -510,10 +509,11 @@ const Home = () => {
           <div className="container mt-5 ">
             <div className="row text-center align-items-center">
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand3}
                   alt="Restaurant billing software"
                   className="rounded rellax"
+                  priority={true}
                   data-rellax-speed={2}
                   data-rellax-percentage="0.5"
                 />
@@ -554,7 +554,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand1}
                   alt=""
                   className="rounded rellax"
@@ -571,7 +571,7 @@ const Home = () => {
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand6}
                   alt=""
                   className="rounded rellax"
@@ -613,7 +613,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand2}
                   alt=""
                   className="rounded rellax"
@@ -630,7 +630,7 @@ const Home = () => {
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand5}
                   alt=""
                   className="rounded rellax"
@@ -671,7 +671,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <LazyImage
+                <OptimizedImage
                   src={brand4}
                   alt=""
                   className="rounded rellax"
@@ -711,7 +711,7 @@ const Home = () => {
               <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={zomatoLogo}
                       className="img-fluid rounded-4"
                       alt="Zomato"
@@ -720,7 +720,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={swiggyLogo}
                       className="img-fluid rounded-4"
                       alt="Swiggy"
@@ -729,7 +729,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={thriveLogo}
                       className="img-fluid rounded-4"
                       alt="Thrive"
@@ -738,7 +738,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={ondcLogo}
                       className="img-fluid rounded-4"
                       alt="ONDC"
@@ -747,7 +747,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={dunzoLogo}
                       className="img-fluid rounded-4"
                       alt="Dunzo"
@@ -756,7 +756,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={upiLogo}
                       className="img-fluid rounded-4"
                       alt="UPI"
@@ -765,7 +765,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={phonepeLogo}
                       className="img-fluid rounded-4"
                       alt="PhonePe"
@@ -774,7 +774,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={paytmLogo}
                       className="img-fluid rounded-4"
                       alt="Paytm"
@@ -783,7 +783,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={pinelabsLogo}
                       className="img-fluid rounded-4"
                       alt="Pine Labs"
@@ -792,7 +792,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={razorpayLogo}
                       className="img-fluid rounded-4"
                       alt="Razorpay"
@@ -801,7 +801,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={shadowfaxLogo}
                       className="img-fluid rounded-4"
                       alt="Shadowfax"
@@ -810,7 +810,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <LazyImage
+                    <OptimizedImage
                       src={porterLogo}
                       className="img-fluid rounded-4"
                       alt="Porter"
