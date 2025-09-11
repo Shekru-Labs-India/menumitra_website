@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import Form from "./Form";
 import BlurText from "./BlurText";
+import HorizontalRule from "./HorizontalRule";
 
 
 // New outlet images for second row
@@ -534,7 +535,7 @@ const Home = () => {
 
             {/* / row */}
           </div>
-<hr />
+<HorizontalRule className="5" />
           {/* / container */}
           <div className="container ">
             <div className="row v-center">
@@ -564,7 +565,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
-          <hr />
+          <HorizontalRule className="5" />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -593,7 +594,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
-          <hr />
+          <HorizontalRule className="5" />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -623,7 +624,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
-          <hr />
+          <HorizontalRule className="5" />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -651,7 +652,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
-          <hr />
+          <HorizontalRule className="5" />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -682,7 +683,7 @@ const Home = () => {
             {/* / row */}
           </div>
 
-          <hr />
+          <HorizontalRule className="5" />
           {/* / container */}
 
         
@@ -817,11 +818,11 @@ const Home = () => {
               </div>
             </div>
             {/* / container */}
-            <hr />
+            <HorizontalRule className="5" />
 
           {/* / container */}
           <div className="container pt-5">
-            <h2 className="text-center mb-80 mt-80 ">
+            <h2 className="text-center mb-80 mt-20 ">
               Built for all types of{" "}
               <span className="text-primary ">Food Business</span>
             </h2>
@@ -917,7 +918,8 @@ const Home = () => {
                 </div>
               ))}
             </div>
-          </div><hr />
+          </div>
+          <HorizontalRule className="5" />
 
           {/* / container */}
         </div>
