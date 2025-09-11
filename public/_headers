@@ -1,0 +1,75 @@
+# Optimized Cache Headers for MenuMitra
+# This file will be processed by Netlify to set proper cache headers
+
+# HTML files - short cache for updates
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Static assets - long cache for performance
+/static/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/static/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Images - long cache with revalidation
+/*.jpg
+  Cache-Control: public, max-age=2592000, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/*.jpeg
+  Cache-Control: public, max-age=2592000, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/*.png
+  Cache-Control: public, max-age=2592000, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/*.webp
+  Cache-Control: public, max-age=2592000, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/*.svg
+  Cache-Control: public, max-age=2592000, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Fonts - very long cache
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/*.eot
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Service Worker - no cache
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Manifest - medium cache
+/manifest.json
+  Cache-Control: public, max-age=86400
+  X-Content-Type-Options: nosniff
+
+# Favicon - medium cache
+/favicon.ico
+  Cache-Control: public, max-age=86400
+  X-Content-Type-Options: nosniff
+
+# Security headers for all files
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
