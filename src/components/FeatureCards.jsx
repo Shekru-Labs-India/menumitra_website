@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeatureCards.css';
+import HorizontalRule from './HorizontalRule';
 
 const FeatureCards = ({ 
   title = "Complete Restaurant Management Solution",
@@ -68,7 +69,7 @@ const FeatureCards = ({
           </div>
         )}
       </div>
-        <hr />
+        <HorizontalRule className="5" />
     </div>
   );
 };

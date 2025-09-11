@@ -5,6 +5,7 @@ import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import HorizontalRule from "./HorizontalRule";
 
 const CustomerFeedback = () => {
   useEffect(() => {
@@ -68,7 +69,7 @@ const CustomerFeedback = () => {
   <Header/>
 
   <div className="main-container p-0">
-    <section id="why-us" className="xl bg-gradient-body">
+    <section id="why-us" className="xl bg-gradient-body border-bottom" style={{paddingBottom: "50px"}}>
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5">
@@ -107,7 +108,7 @@ const CustomerFeedback = () => {
           </h2>
         </div>
         {/* / text-center */}
-        <div className="container py-5">
+        <div className="container">
         <div className="row text-center">
             <div className="col-md-4 mb-4">
                 <i style={{ fontSize: '48px', color: '#333', marginBottom: '15px' }} className="fas fa-book feature-icon"></i>
@@ -145,7 +146,7 @@ const CustomerFeedback = () => {
       </div>
       {/* / container */}
     </div>
- 
+    <HorizontalRule className="5" />
   </div>
   {/* / main-container */}
 <Form/>

@@ -12,6 +12,7 @@ import labourcost from '../assets/images/Reduce-labour-costs.jpg'
 
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import HorizontalRule from "./HorizontalRule";
 
 
 const WaiterApp = () => {
@@ -23,7 +24,7 @@ const WaiterApp = () => {
   <>
   <Header/>
 
-  <section id="about" className="bg-white xl">
+  <section id="about" className="bg-white xl border-bottom"  style={{paddingBottom: "50px", marginTop: "50px"}}>
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5 tablet-lg-top-30">
@@ -97,9 +98,9 @@ const WaiterApp = () => {
             </div>
         </div>
     </div>
-
         {/* / row */}
       </div>
+    <HorizontalRule className="5" />
       {/* / container */}
     </div>
 

@@ -4,6 +4,7 @@ import scan from "../assets/images/scan.jpg"
 import Footer from './Footer'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import HorizontalRule from "./HorizontalRule";
 
 const KDS = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const KDS = () => {
   <Header/>
 
   <div className="main-container p-0">
-    <section id="why-us" className="xl bg-gradient-body">
+    <section id="why-us" className="xl bg-gradient-body border-bottom" style={{paddingBottom: "50px"}}>
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5">
@@ -95,7 +96,7 @@ const KDS = () => {
       {/* / container */}
     </div>
     {/* / features */}
-    
+    <HorizontalRule className="5" />
   </div>
   {/* / main-container */}
 <Form/>

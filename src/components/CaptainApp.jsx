@@ -5,6 +5,7 @@ import Footer from './Footer'
 import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
+import HorizontalRule from "./HorizontalRule";
 
 const CaptainApp = () => {
   useEffect(() => {
@@ -67,7 +68,7 @@ const CaptainApp = () => {
   <Header/>
 
   <div className="main-container p-0">
-    <section id="why-us" className="xl bg-gradient-body">
+    <section id="why-us" className="xl bg-gradient-body border-bottom" style={{paddingBottom: "50px"}}>
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5">
@@ -147,7 +148,7 @@ const CaptainApp = () => {
       </div>
       {/* / container */}
     </div>
-   
+    <HorizontalRule className="5" />
   </div>
   {/* / main-container */}
 <Form/>

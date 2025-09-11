@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Form from "./Form";
 import { Link } from "react-router-dom";
+import HorizontalRule from "./HorizontalRule";
 
 const ManagementPageLayout = ({
   title,
@@ -43,7 +44,7 @@ const ManagementPageLayout = ({
 
       <div className={`main-container p-0 management-page ${pageClassName}`}>
         {/* Hero Section */}
-        <section id="why-us" className="xl bg-gradient-body">
+        <section id="why-us" className="xl bg-gradient-body border-bottom" style={{paddingBottom: "50px"}}>
           <div className="container pt-50">
             <div className="row v-center">
               <div className="col-lg-5">
@@ -72,9 +73,9 @@ const ManagementPageLayout = ({
           <div className="container">
             <div className="text-center">
               <h2 className="section-title mb-50">{featuresTitle}</h2>
-              <p className="lead text-dark mb-5">{featuresSubtitle}</p>
+              <p className="lead text-dark">{featuresSubtitle}</p>
             </div>
-            <div className="container py-5">
+            <div className="container">
               <div className="row text-center">
                 {features.map((feature, index) => (
                   <div key={index} className="col-md-4 mb-4">
@@ -110,9 +111,10 @@ const ManagementPageLayout = ({
             </div>
           </div>
         </div>
+        <HorizontalRule className="5" />
 
         {/* Advanced Operations */}
-        <section className="py-5 bg-light">
+        <section className="bg-light">
           <div className="container">
             <div className="text-center mb-5">
               <h2 className="section-title mb-3">{operationsTitle}</h2>
@@ -169,6 +171,10 @@ const ManagementPageLayout = ({
             </div>
           </div>
         </section>
+
+
+
+        <HorizontalRule className="5" />
 
         {/* Intelligence Section */}
         <section className="business-intelligence-section py-5">
