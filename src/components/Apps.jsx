@@ -45,7 +45,7 @@ const Apps = () => {
             </div>
           </div>
         </section>
-
+        <hr />
         <section className="py-5 py-xl-8 bg-light">
           <div className="container">
             <div className="text-center mb-5">
@@ -56,6 +56,7 @@ const Apps = () => {
                 Complete ecosystem for your restaurant operations
               </p>
             </div>
+            
 
             {/* Version 1.3 Apps */}
             <div className="text-center mb-4">
@@ -427,6 +428,7 @@ const Apps = () => {
             </div>
             
           </div>
+              <hr />
         </section>
       </div>
       <Form />

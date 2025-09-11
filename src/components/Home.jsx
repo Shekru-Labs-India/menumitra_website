@@ -534,7 +534,7 @@ const Home = () => {
 
             {/* / row */}
           </div>
-
+<hr />
           {/* / container */}
           <div className="container ">
             <div className="row v-center">
@@ -564,6 +564,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
+          <hr />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -592,6 +593,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
+          <hr />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -621,6 +623,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
+          <hr />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -648,6 +651,7 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
+          <hr />
           {/* / container */}
           <div className="container">
             <div className="row v-center">
@@ -677,9 +681,11 @@ const Home = () => {
             </div>
             {/* / row */}
           </div>
+
+          <hr />
           {/* / container */}
 
-          <>
+        
             <div
               className="container rounded-5"
               style={{
@@ -811,7 +817,7 @@ const Home = () => {
               </div>
             </div>
             {/* / container */}
-          </>
+            <hr />
 
           {/* / container */}
           <div className="container pt-5">
@@ -911,11 +917,12 @@ const Home = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div><hr />
 
           {/* / container */}
         </div>
         {/* / main-container */}
+        
         <Form />
         <Footer />
       </>

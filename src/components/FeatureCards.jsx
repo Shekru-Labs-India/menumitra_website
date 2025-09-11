@@ -14,8 +14,8 @@ const FeatureCards = ({
   className = ""
 }) => {
   return (
-    <div id="features" className={`mt-80 bg-light feature-cards-section ${className}`}>
-      <div className="container py-5">
+    <div id="features" className={`mt-80 bg-light feature-cards-section  ${className}`}>
+      <div className="container mb-5">
         <div className="text-center mb-5">
           <h2 className="section-title mb-3">
             {title}
@@ -68,6 +68,7 @@ const FeatureCards = ({
           </div>
         )}
       </div>
+        <hr />
     </div>
   );
 };

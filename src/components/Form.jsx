@@ -295,6 +295,7 @@ const FAQ = () => (
           </div>
         </div>
         {/* / container */}
+        <hr />
       </div>
 );
 
@@ -502,21 +503,6 @@ const NotificationToast = ({ notification, onClose }) => {
 // Styles object
 const styles = {
   bookDemoContainer: `
-    .form-container {
-      margin-top: var(--spacing-top, 0);
-    }
-    
-    @media (max-width: 768px) {
-      .form-container {
-        --spacing-top: 80px;
-      }
-    }
-    
-    @media (min-width: 769px) {
-      .form-container {
-        --spacing-top: 100px;
-      }
-    }
 
     .notification-toast {
       position: fixed;

@@ -46,6 +46,7 @@ const FeatureSection = () => {
         </div>
         {/* / row */}
       </div>
+        <hr/>
       {/* / container */}
     </div>
   );

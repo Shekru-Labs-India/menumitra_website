@@ -80,7 +80,7 @@ const Billing = () => {
 
 
   <div className="main-container p-0">
-    <section id="why-us" className="xl bg-gradient-body">
+    <section id="why-us" className="xl bg-gradient-body border-bottom">
       <div className="container">
         <div className="row v-center">
           <div className="col-lg-5">
@@ -113,7 +113,7 @@ const Billing = () => {
       </div>
       {/* / container */}
     </section>
-   
+  
     <FeatureSection />
   
    
