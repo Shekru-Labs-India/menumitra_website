@@ -46,7 +46,7 @@ import LargeChain from "./components/LargeChain"
 
 import CloudKitchens from "./components/CloudKitchens"
 import IcecreamDesserts from "./components/IcecreamDesserts"
-import ResellerProgram from "./components/ResellerProgram";
+
 import BookDemo from "./components/BookDemo";
 import CDS from "./components/CDS";
 import OrderTracking from "./components/OrderTracking";
@@ -122,15 +122,11 @@ function App() {
     <Route path="/privacy" element={<PrivacyPolicy />} />
     <Route path="/terms_conditions" element={<TermsConditions />} />
     <Route path="/cookie_policy" element={<CookiePolicy />} />
-    <Route path="/reseller_program" element={<ResellerProgram />} />
 
     <Route path="/request_data_removal" element={<DeleteUser />} />
     <Route path="/book_demo" element={<BookDemo />} />
-    <Route path="/order_tracking" element={<OrderTracking />} />
-    <Route path="/help_support" element={<FAQ />} />
     <Route path="/about_us" element={<Aboutus />} />
     <Route path="/support" element={<Support />} />
-    <Route path="/career" element={<Career />} />
     <Route path="/devices" element={<Devices />} />
     <Route path="/store-management" element={<StoreManagement />} />
     <Route path="/recipemanagement" element={<RecipeManagement />} />
