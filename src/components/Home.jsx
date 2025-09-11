@@ -178,7 +178,8 @@ const Home = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="hero-image-wrapper">
-                    <LazyYouTube
+                    {/* TESTING: Commented out YouTube video to test LCP impact */}
+                    {/* <LazyYouTube
                       videoId="j2e2stCcICo"
                       title="MenuMitra Restaurant Management Software"
                       className="hero-main-video"
@@ -196,7 +197,28 @@ const Home = () => {
                         position: "relative",
                         zIndex: 2,
                       }}
-                    />
+                    /> */}
+                    
+                    {/* Temporary placeholder for testing */}
+                    <div 
+                      className="hero-main-video d-flex align-items-center justify-content-center"
+                      style={{
+                        maxWidth: "100%",
+                        height: "400px",
+                        aspectRatio: "16/9",
+                        borderRadius: "20px",
+                        backgroundColor: "#f8f9fa",
+                        border: "2px dashed #dee2e6",
+                        color: "#6c757d",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        transition: "transform 0.3s ease",
+                        position: "relative",
+                        zIndex: 2,
+                      }}
+                    >
+                      📹 YouTube Video Temporarily Disabled for Performance Testing
+                    </div>
                     <div className="hero-shapes">
                       <span className="shape shape-1"></span>
                       <span className="shape shape-2"></span>
