@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Form from "./Form";
-import menumitra from "../assets/images/MenuMitra.webp";
+import menumitra from "../assets/images/MenuMitra.png";
 import "../assets/css/apps.css";
 import HorizontalRule from "./HorizontalRule";
 import LazyYouTube from "./LazyYouTube";

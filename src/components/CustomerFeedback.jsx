@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import scan from "../assets/images/scan.webp";
 import Header from './Header'
 import Footer from './Footer'
