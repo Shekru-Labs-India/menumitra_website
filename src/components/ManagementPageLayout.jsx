@@ -209,24 +209,24 @@ const ManagementPageLayout = ({
         </section>
 
         {/* Integration & Scalability */}
-        <section className="py-5 bg-gradient-primary text-white">
+        <section className="py-5 text-primary" style={{backgroundColor: "#dfeeff"}}>
           <div className="container">
             <div className="text-center mb-5">
-              <h2 className="text-white mb-3">{integrationTitle}</h2>
-              <p className="lead text-white-50">{integrationSubtitle}</p>
+              <h2 className="text-dark mb-3">{integrationTitle}</h2>
+              <p className="lead text-dark">{integrationSubtitle}</p>
             </div>
             <div className="row g-3">
               {integrationFeatures.map((feature, index) => (
                 <div key={index} className="col-md-4">
                   <div className="text-center">
                     <div
-                      className="bg-white text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                      className="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
                       style={{ width: "80px", height: "80px" }}
                     >
                       <i className={`${feature.icon} fa-2x`}></i>
                     </div>
-                    <h5 className="text-white mb-3">{feature.title}</h5>
-                    <p className="text-white-50">{feature.description}</p>
+                    <h5 className="text-dark mb-3">{feature.title}</h5>
+                    <p className="text-dark">{feature.description}</p>
                   </div>
                 </div>
               ))}
@@ -276,15 +276,15 @@ const ManagementPageLayout = ({
         </section>
 
         {/* Call to Action */}
-        <section className="py-5 bg-primary text-white">
+        <section className="py-5 text-primary" style={{backgroundColor: "#dfeeff"}}>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-8">
-                <h2 className="text-white mb-3">{ctaTitle}</h2>
-                <p className="lead text-white-50 mb-0">{ctaDescription}</p>
+                <h2 className="text-dark mb-3">{ctaTitle}</h2>
+                <p className="lead text-dark mb-0">{ctaDescription}</p>
               </div>
               <div className="col-lg-4 text-lg-end">
-                <Link to={ctaButtonLink} className="btn btn-light btn-lg me-3 mb-2">
+                <Link to={ctaButtonLink} className="btn btn-primary btn-lg me-3 mb-2">
                   <i className={`${ctaButtonIcon} me-2`}></i>
                   {ctaButtonText}
                 </Link>

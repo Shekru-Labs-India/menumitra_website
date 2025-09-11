@@ -61,7 +61,7 @@ const FoodCourts = () => {
   <>
   <Header/>
 
-  <section id="why-us" className="xl ">
+  <section id="why-us" className="bg-white xl mt-50">
       <div className="container">
         <div className="row v-center pb-30">
           <div className="col-lg-5 tablet-lg-top-30">

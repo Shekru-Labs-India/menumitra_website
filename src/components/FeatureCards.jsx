@@ -54,9 +54,9 @@ const FeatureCards = ({
           <div className="text-center">
             <div className="row justify-content-center">
               <div className="col-lg-8">
-                <div className="cta-section">
-                  <h4 className="mb-3">{ctaTitle}</h4>
-                  <p className="mb-4">
+                <div className="cta-section border">
+                  <h4 className="mb-3 text-dark">{ctaTitle}</h4>
+                  <p className="mb-4 text-dark">
                     {ctaDescription}
                   </p>
                   <a href={ctaButtonLink} className="btn btn-light btn-lg px-4">
