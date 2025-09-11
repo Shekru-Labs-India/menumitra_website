@@ -192,7 +192,7 @@ const Home = () => {
                         height: "auto",
                         aspectRatio: "16/9",
                         borderRadius: "20px",
-                        boxShadow: "0 20px 40px rgba(0, 0, 0, 0.1)",
+                        // boxShadow: "0 20px 40px rgba(0, 0, 0, 0.1)", 
                         transition: "transform 0.3s ease",
                         position: "relative",
                         zIndex: 2,
