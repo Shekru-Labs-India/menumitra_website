@@ -63,7 +63,7 @@ const BannerSection = () => {
         <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
           <iframe 
             style={{...styles.video, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-            src="https://www.youtube.com/embed/j2e2stCcICo?list=TLGG3vUbEoDSIB4wNzA1MjAyNQ&autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+            src="https://www.youtube.com/embed/j2e2stCcICo?list=TLGG3vUbEoDSIB4wNzA1MjAyNQ&loop=1&playlist=j2e2stCcICo"
             title="Menu Mitra Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

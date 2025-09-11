@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import Header from './Header'
 import Footer from './Footer'
 
-import button3 from '../assets/images/3-buttons.jpg'
-import meter20 from '../assets/images/20-meters.jpg'
-import durable from '../assets/images/Durable-and-sturdy.jpg'
-import integrated from '../assets/images/Integrated-with-Petpooja.jpg'
-import recharge from '../assets/images/Rechargeable.jpg'
-import labourcost from '../assets/images/Reduce-labour-costs.jpg'
+import button3 from "../assets/images/3-buttons.webp";
+import meter20 from "../assets/images/20-meters.webp";
+import durable from "../assets/images/Durable-and-sturdy.webp";
+import integrated from "../assets/images/Integrated-with-Petpooja.webp";
+import recharge from "../assets/images/Rechargeable.webp";
+import labourcost from "../assets/images/Reduce-labour-costs.webp";
 
 import Form from "./Form";
 

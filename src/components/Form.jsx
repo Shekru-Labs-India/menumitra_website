@@ -314,7 +314,7 @@ const BookingForm = ({
       <div className="fs-1 fw-bold text-dark text-center pb-4">Book Your Free Demo Today</div>
       <div className="col-lg-6 tablet-lg-top-45 d-none d-sm-block d-flex justify-content-center align-items-center">
         <img
-          src={require("../assets/images/demo-booking-illustration.png")}
+          src={require("../assets/images/demo-booking-illustration.webp")}
           className="img-fluid"
           alt="Book Demo Illustration"
           style={{

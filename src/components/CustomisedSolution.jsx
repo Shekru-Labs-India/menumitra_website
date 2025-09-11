@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ManagementPageLayout from './ManagementPageLayout';
-import brand5 from "../assets/images/mm_brand/05.png";
-import varunImage from "../assets/images/Varun.jpg";
+import brand5 from "../assets/images/mm_brand/05.webp";
+import varunImage from "../assets/images/Varun.webp";
 
 const CustomisedSolution = () => {
   useEffect(() => {

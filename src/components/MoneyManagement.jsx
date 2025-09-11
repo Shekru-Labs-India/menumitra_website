@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ManagementPageLayout from './ManagementPageLayout';
-import brand3 from "../assets/images/mm_brand/03.png";
-import varunImage from "../assets/images/Varun.jpg";
+import brand3 from "../assets/images/mm_brand/03.webp";
+import varunImage from "../assets/images/Varun.webp";
 
 const MoneyManagement = () => {
   useEffect(() => {

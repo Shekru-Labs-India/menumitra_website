@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import menumitra from '../assets/images/MenuMitra.png';
-import mmSupp from '../assets/images/mm_supp.png';
+import menumitra from "../assets/images/MenuMitra.webp";
+import mmSupp from "../assets/images/mm_supp.webp";
 import './Footer.css';
 
 const Footer = () => {

@@ -9,48 +9,48 @@ import HorizontalRule from "./HorizontalRule";
 
 
 // New outlet images for second row
-import hotelGaneshShakaahari from "../assets/images/outlets/hotel_ganesh_shakaahari.png";
-import cafeDurga from "../assets/images/outlets/cafe_durga.png";
-import friendsCafe from "../assets/images/outlets/friends_cafe.png";
-import creamyNutsCafe from "../assets/images/outlets/creamy_nuts_cafe.jpg";
-import garvaOrder from "../assets/images/outlets/garva_order.jpg";
-import hotelAudumbar from "../assets/images/outlets/hotel_audumbar.png";
-import hotelBorulAtitthi from "../assets/images/outlets/hotel_borul_atitthi.png";
-import hotelDongarmath from "../assets/images/outlets/hotel_dongarmath.png";
-import hotelNewJagdamba from "../assets/images/outlets/hotel_new_jagdamba.png";
-import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.png";
-import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.jpg";
-import hotelRasika from "../assets/images/outlets/hotel_rasika.jpg";
-import newJagdambaVegNonveg from "../assets/images/outlets/new_jagdamba_veg_nonveg.jpg";
+import hotelGaneshShakaahari from "../assets/images/outlets/hotel_ganesh_shakaahari.webp";
+import cafeDurga from "../assets/images/outlets/cafe_durga.webp";
+import friendsCafe from "../assets/images/outlets/friends_cafe.webp";
+import creamyNutsCafe from "../assets/images/outlets/creamy_nuts_cafe.webp";
+import garvaOrder from "../assets/images/outlets/garva_order.webp";
+import hotelAudumbar from "../assets/images/outlets/hotel_audumbar.webp";
+import hotelBorulAtitthi from "../assets/images/outlets/hotel_borul_atitthi.webp";
+import hotelDongarmath from "../assets/images/outlets/hotel_dongarmath.webp";
+import hotelNewJagdamba from "../assets/images/outlets/hotel_new_jagdamba.webp";
+import sudasMisalHouse from "../assets/images/outlets/sudamas_misal_house.webp";
+import aaiTuljaBhavani from "../assets/images/outlets/aai_tulja_bhavani.webp";
+import hotelRasika from "../assets/images/outlets/hotel_rasika.webp";
+import newJagdambaVegNonveg from "../assets/images/outlets/new_jagdamba_veg_nonveg.webp";
 // New outlet images
-import hotelNandiniPureVeg from "../assets/images/outlets/hotel_nandini_pure_veg.png";
-import hotelSanskrutiPureVeg from "../assets/images/outlets/hotel_sanskruti_pure_veg.png";
-import hotelPpPatil from "../assets/images/outlets/hotel_pp_patil.png";
-import npsChineseHub from "../assets/images/outlets/nps_chinese_hub.png";
-import shreePureVeg from "../assets/images/outlets/shree_pure_veg.png";
-import houseOfSchezwam from "../assets/images/outlets/house_of_schezwam.png";
-import hotelPpPatil2 from "../assets/images/outlets/hotel_pp_patil_2.png";
+import hotelNandiniPureVeg from "../assets/images/outlets/hotel_nandini_pure_veg.webp";
+import hotelSanskrutiPureVeg from "../assets/images/outlets/hotel_sanskruti_pure_veg.webp";
+import hotelPpPatil from "../assets/images/outlets/hotel_pp_patil.webp";
+import npsChineseHub from "../assets/images/outlets/nps_chinese_hub.webp";
+import shreePureVeg from "../assets/images/outlets/shree_pure_veg.webp";
+import houseOfSchezwam from "../assets/images/outlets/house_of_schezwam.webp";
+import hotelPpPatil2 from "../assets/images/outlets/hotel_pp_patil_2.webp";
 // menumitra brand images
-import brand1 from "../assets/images/mm_brand/01.png";
-import brand2 from "../assets/images/mm_brand/02.png";
-import brand3 from "../assets/images/mm_brand/03.png";
-import brand4 from "../assets/images/mm_brand/04.png";
-import brand5 from "../assets/images/mm_brand/05.png";
-import brand6 from "../assets/images/mm_brand/06.png";
+import brand1 from "../assets/images/mm_brand/01.webp";
+import brand2 from "../assets/images/mm_brand/02.webp";
+import brand3 from "../assets/images/mm_brand/03.webp";
+import brand4 from "../assets/images/mm_brand/04.webp";
+import brand5 from "../assets/images/mm_brand/05.webp";
+import brand6 from "../assets/images/mm_brand/06.webp";
 
 // integration logos
-import zomatoLogo from "../assets/images/integrations/zomato.png";
-import swiggyLogo from "../assets/images/integrations/swiggy.png";
-import thriveLogo from "../assets/images/integrations/thrive-2.png";
-import ondcLogo from "../assets/images/integrations/ondc-2.png";
-import dunzoLogo from "../assets/images/integrations/dunzo-2.png";
-import upiLogo from "../assets/images/integrations/upi-2.png";
-import phonepeLogo from "../assets/images/integrations/phonepe-1.png";
-import paytmLogo from "../assets/images/integrations/paytm.png";
-import pinelabsLogo from "../assets/images/integrations/pine-labs-1.png";
-import razorpayLogo from "../assets/images/integrations/razorpay-1.png";
-import shadowfaxLogo from "../assets/images/integrations/shadowfax-2.png";
-import porterLogo from "../assets/images/integrations/porter-2.png";
+import zomatoLogo from "../assets/images/integrations/zomato.webp";
+import swiggyLogo from "../assets/images/integrations/swiggy.webp";
+import thriveLogo from "../assets/images/integrations/thrive-2.webp";
+import ondcLogo from "../assets/images/integrations/ondc-2.webp";
+import dunzoLogo from "../assets/images/integrations/dunzo-2.webp";
+import upiLogo from "../assets/images/integrations/upi-2.webp";
+import phonepeLogo from "../assets/images/integrations/phonepe-1.webp";
+import paytmLogo from "../assets/images/integrations/paytm.webp";
+import pinelabsLogo from "../assets/images/integrations/pine-labs-1.webp";
+import razorpayLogo from "../assets/images/integrations/razorpay-1.webp";
+import shadowfaxLogo from "../assets/images/integrations/shadowfax-2.webp";
+import porterLogo from "../assets/images/integrations/porter-2.webp";
 
 
 const Home = () => {
@@ -180,7 +180,7 @@ const Home = () => {
                     <iframe
                       width="100%"
                       height="315"
-                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+                      src="https://www.youtube.com/embed/j2e2stCcICo?loop=1&playlist=j2e2stCcICo"
                       title="MenuMitra Restaurant Management Software"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

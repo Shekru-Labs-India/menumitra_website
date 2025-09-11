@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import menumitra from "../assets/images/MenuMitra.png";
+import menumitra from "../assets/images/MenuMitra.webp";
 
 const Header = () => {
   const location = useLocation(); // Get the current location

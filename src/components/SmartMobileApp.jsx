@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ManagementPageLayout from './ManagementPageLayout';
-import brand2 from "../assets/images/mm_brand/02.png";
-import varunImage from "../assets/images/Varun.jpg";
+import brand2 from "../assets/images/mm_brand/02.webp";
+import varunImage from "../assets/images/Varun.webp";
 
 const SmartMobileApp = () => {
   useEffect(() => {

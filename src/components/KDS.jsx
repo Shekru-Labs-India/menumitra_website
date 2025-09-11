@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from './Header'
-import scan from "../assets/images/scan.jpg"
+import scan from "../assets/images/scan.webp";
 import Footer from './Footer'
 import Form from "./Form";
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import scan from "../assets/images/scan.jpg"
+import scan from "../assets/images/scan.webp";
 import Header from './Header'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'

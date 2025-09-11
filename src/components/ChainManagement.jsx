@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ManagementPageLayout from './ManagementPageLayout';
-import brand6 from "../assets/images/mm_brand/06.png";
-import varunImage from "../assets/images/Varun.jpg";
+import brand6 from "../assets/images/mm_brand/06.webp";
+import varunImage from "../assets/images/Varun.webp";
 
 const ChainManagement = () => {
   useEffect(() => {

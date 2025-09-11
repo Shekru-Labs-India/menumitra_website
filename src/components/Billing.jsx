@@ -6,14 +6,14 @@ import Form from "./Form";
 import FeatureSection from "./FeatureSection";
 import { Link } from 'react-router-dom';
 // menumitra brand images
-import brand1 from "../assets/images/mm_brand/01.png";
-import brand2 from "../assets/images/mm_brand/02.png";
-import brand3 from "../assets/images/mm_brand/03.png";
-import brand4 from "../assets/images/mm_brand/04.png";
-import brand5 from "../assets/images/mm_brand/05.png";
-import brand6 from "../assets/images/mm_brand/06.png";
-import image01 from "../assets/images/01.jpg";
-import image02 from "../assets/images/02.jpg";
+import brand1 from "../assets/images/mm_brand/01.webp";
+import brand2 from "../assets/images/mm_brand/02.webp";
+import brand3 from "../assets/images/mm_brand/03.webp";
+import brand4 from "../assets/images/mm_brand/04.webp";
+import brand5 from "../assets/images/mm_brand/05.webp";
+import brand6 from "../assets/images/mm_brand/06.webp";
+import image01 from "../assets/images/01.webp";
+import image02 from "../assets/images/02.webp";
 
 
 const Billing = () => {
