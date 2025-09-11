@@ -443,13 +443,14 @@ const BookingForm = ({
               </div>
             </div>
             <div className="row justify-content-center">
-              <div className="col-12 text-start">
+              <div className="col-12 text-center">
                 <button
                   type="submit "
                   disabled={loading || !isFormValid()}
                   className={`btn rounded-pill ${
                     isFormValid() ? "btn-primary" : "btn-light"
-                  } btn-submit px-2`}
+                  } btn-submit px-4 py-2 w-100`}
+                  style={{ maxWidth: "300px" }}
                 >
                   <i className="fas fa-rocket me-2"></i> Submit
                 </button>
