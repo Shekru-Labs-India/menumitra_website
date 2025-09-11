@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
+import { Helmet } from 'react-helmet';
 import Footer from './Footer'
 import Header from './Header'
-import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import FeatureSection from "./FeatureSection";
 import { Link } from 'react-router-dom';

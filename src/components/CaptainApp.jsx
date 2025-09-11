@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
+import { Helmet } from 'react-helmet';
 import scan from "../assets/images/scan.webp";
 import Header from './Header'
 import Footer from './Footer'
-import { Helmet } from 'react-helmet'
 import Form from "./Form";
 import { Link } from 'react-router-dom';
 import HorizontalRule from "./HorizontalRule";

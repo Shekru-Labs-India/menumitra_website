@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>MenuMitra </title>
 
@@ -114,38 +115,88 @@
       .z-index-2{z-index:2!important}
     </style>
     
-    <!-- Non-critical CSS loaded asynchronously -->
+    <!-- Non-critical CSS loaded asynchronously with higher priority -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Defer main CSS to prevent render blocking -->
+    <link rel="preload" href="/static/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- Fallback for browsers that don't support preload -->
     <noscript>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/static/css/main.css" rel="stylesheet">
     </noscript>
     
     <!-- Additional critical styles -->
     <style>
-      /* Critical CSS for initial render */
-      body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      /* Critical CSS for initial render with optimized font loading */
+      body { 
+        margin: 0; 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+        -webkit-font-smoothing: antialiased; 
+        -moz-osx-font-smoothing: grayscale;
+        font-display: swap;
+      }
       #root { min-height: 100vh; }
       .loading { display: flex; justify-content: center; align-items: center; height: 100vh; font-size: 18px; color: #666; }
       
       /* Critical header styles */
       .navbar { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
       .hero-section { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+      
+      /* Critical above-the-fold styles */
+      .hero-main-video { max-width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transition: transform 0.3s ease; position: relative; z-index: 2; }
+      .btn-primary { background-color: #007bff; border-color: #007bff; color: #fff; }
+      .btn-primary:hover { background-color: #0056b3; border-color: #0056b3; }
+      .text-white { color: #fff !important; }
+      .mb-4 { margin-bottom: 1.5rem !important; }
+      .mt-4 { margin-top: 1.5rem !important; }
+      .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+      .px-4 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+      
+      /* Critical responsive styles */
+      @media (max-width: 768px) {
+        .hero-section { min-height: 80vh; }
+        .hero-main-video { border-radius: 15px; }
+        .py-5 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+      }
     </style>
     
     <!-- Preload critical images -->
     <link rel="preload" as="image" href="https://img.youtube.com/vi/j2e2stCcICo/maxresdefault.jpg">
     
-    <!-- Optimized font loading with font-display: swap -->
+    <!-- Optimized font loading with font-display: swap and system font fallbacks -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Preload critical fonts with font-display: swap -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Fallback for browsers that don't support preload -->
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </noscript>
+    
+    <!-- System font fallback styles -->
+    <style>
+      /* System font stack for immediate rendering */
+      body, .font-system {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
+      
+      /* Poppins font with system fallback */
+      .font-poppins {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
+      
+      /* Font display optimization for all fonts */
+      @font-face {
+        font-family: 'Bootstrap Icons';
+        font-display: swap;
+      }
+    </style>
  
 
    

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 import ManagementPageLayout from './ManagementPageLayout';
 import heroImage from "../assets/images/Hero-img.webp";
 import varunImage from "../assets/images/Varun.webp";

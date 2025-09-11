@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 import menumitra from "../assets/images/MenuMitra.png";
 
 const Header = () => {
