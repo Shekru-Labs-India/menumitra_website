@@ -71,25 +71,94 @@
   z-index: 0;
 }
 
-.hero-area .has-circle .circle {
+.bg-circle {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, #007bff, #ff9900);
   opacity: 0.15;
-  animation: float 8s ease-in-out infinite;
-  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+  animation: float 12s ease-in-out infinite, 
+             gradientShift 15s linear infinite,
+             randomMove 25s ease-in-out infinite;
+}
+
+.bg-circle:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.3);
+  animation-delay: 0s;
+}
+
+.bg-circle:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.3);
+  animation-delay: 3s;
+}
+
+.bg-circle:nth-child(3) {
+  top: 80%;
+  left: 20%;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.3);
+  animation-delay: 6s;
+}
+
+.bg-circle:nth-child(4) {
+  top: 30%;
+  left: 70%;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 20px rgba(50, 205, 50, 0.3);
+  animation-delay: 9s;
+}
+
+.bg-circle:nth-child(5) {
+  top: 45%;
+  left: 5%;
+  width: 160px;
+  height: 160px;
+  box-shadow: 0 0 28px rgba(255, 69, 0, 0.3);
+  animation-delay: 12s;
+}
+
+.bg-circle:nth-child(6) {
+  top: 10%;
+  left: 60%;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 0 22px rgba(147, 112, 219, 0.3);
+  animation-delay: 15s;
 }
 
 .has-circle .circle {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, #007bff, #ff9900);
-  opacity: 0.05;
-  animation: float 8s ease-in-out infinite;
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* pastel aqua → blush pink */
+  opacity: 0.08; /* very subtle */
+  animation: float 12s ease-in-out infinite, 
+             gradientShift 25s ease-in-out infinite;
+}
+
+/* gentle floating like a sine wave */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-25px); }
+}
+
+/* smooth gradient morphing */
+@keyframes gradientShift {
+  0%   { background: linear-gradient(135deg, #a8edea, #fed6e3); } /* aqua → blush */
+  33%  { background: linear-gradient(135deg, #d4fc79, #96e6a1); } /* lime → mint */
+  66%  { background: linear-gradient(135deg, #cfd9df, #e2ebf0); } /* silver → soft blue */
+  100% { background: linear-gradient(135deg, #a8edea, #fed6e3); } /* back to aqua → blush */
 }
 
 .has-circle .circle-1 {
-  width: 180px;
+  width: 180px; 
   height: 180px;
   top: 10%;
   left: 5%;
@@ -144,13 +213,29 @@
   animation-delay: 2.5s;
 }
 
+/* floating effect */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-  }
+  0%, 100% { transform: translate(-50%, -50%) translateY(0) scale(1); }
+  50%      { transform: translate(-50%, -50%) translateY(-40px) scale(1.1); }
+}
+
+/* gradient color shifting with fresh vibrant colors */
+@keyframes gradientShift {
+  0%   { background: linear-gradient(45deg, #ff1493, #00ffff); }
+  20%  { background: linear-gradient(45deg, #ff4500, #9370db); }
+  40%  { background: linear-gradient(45deg, #32cd32, #ff69b4); }
+  60%  { background: linear-gradient(45deg, #ffd700, #ff1493); }
+  80%  { background: linear-gradient(45deg, #00bfff, #ff6347); }
+  100% { background: linear-gradient(45deg, #ff1493, #00ffff); }
+}
+
+/* random movement animation for scattered circles */
+@keyframes randomMove {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  25%  { transform: translate(-50%, -50%) translateX(50px) translateY(-30px) scale(1.1); }
+  50%  { transform: translate(-50%, -50%) translateX(-30px) translateY(40px) scale(0.9); }
+  75%  { transform: translate(-50%, -50%) translateX(40px) translateY(20px) scale(1.05); }
+  100% { transform: translate(-50%, -50%) scale(1); }
 }
 
 /* New Hero Section Layout Styles */
