@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Form from "./Form";
 import menumitra from "../assets/images/MenuMitra.png";
 import "../assets/css/apps.css";
+import HorizontalRule from "./HorizontalRule";
 
 const Apps = () => {
   useEffect(() => {
@@ -45,8 +46,8 @@ const Apps = () => {
             </div>
           </div>
         </section>
-        <hr />
-        <section className="py-5 py-xl-8 bg-light">
+        <HorizontalRule className="5" />
+        <section className="bg-light">
           <div className="container">
             <div className="text-center mb-5">
               <h2 className="display-5 fw-bold mb-3">
@@ -270,7 +271,7 @@ const Apps = () => {
               </div>
             </div>
 
-            <hr />
+            <HorizontalRule className="5" />
 
             {/* Version 2.0 Apps */}
             <div className="text-center mb-4">
@@ -369,7 +370,7 @@ const Apps = () => {
               </div>
             </div>
          
-            <hr />
+            <HorizontalRule className="5" />
             {/* Apps - Production and Testing */}
             <div className="text-center mb-4">
               <h3 className="h4 fw-bold text-info">V2 Products</h3>
@@ -428,7 +429,7 @@ const Apps = () => {
             </div>
             
           </div>
-              <hr />
+             <HorizontalRule className="5" />
         </section>
       </div>
       <Form />

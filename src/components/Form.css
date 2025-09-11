@@ -80,13 +80,13 @@
 .minimal-accordion .accordion-button {
   background-color: transparent;
   border: none;
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
 }
 
 .minimal-accordion .accordion-button span {
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
-  left: -1.75rem;
+  left: 0rem;
   width: 1rem;
   height: 1rem;
   line-height: 1rem;
@@ -125,7 +125,7 @@
 }
 
 #faq h2 {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 /* Mobile responsive adjustments */
