@@ -447,7 +447,7 @@ const BookingForm = ({
                 <button
                   type="submit "
                   disabled={loading || !isFormValid()}
-                  className={`btn ${
+                  className={`btn rounded-pill ${
                     isFormValid() ? "btn-primary" : "btn-light"
                   } btn-submit px-2`}
                 >

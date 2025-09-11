@@ -169,7 +169,7 @@ const Header = () => {
 
             {/* Book Demo Button */}
             <div className="d-flex align-items-center ms-lg-3">
-              <Link className="btn btn-outline-primary px-4 py-2" to="/book_demo">
+              <Link className="btn btn-outline-primary rounded-pill px-4 py-2" to="/book_demo">
                 Book A Demo
               </Link>
             </div>

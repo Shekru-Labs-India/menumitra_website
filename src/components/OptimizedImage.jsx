@@ -1,36 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const OptimizedImage = ({ 
+// Lazy loading image component
+const LazyImage = ({ 
   src, 
   alt, 
   className = '', 
-  lazy = true, 
-  priority = false,
-  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+  placeholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PC9zdmc+',
   ...props 
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(!lazy || priority);
-  const [hasError, setHasError] = useState(false);
+  const [isInView, setIsInView] = useState(false);
   const imgRef = useRef(null);
 
-  // Generate WebP and fallback paths
-  const getImagePaths = (originalSrc) => {
-    const basePath = originalSrc.replace(/\.(jpg|jpeg|png)$/i, '');
-    const extension = originalSrc.match(/\.(jpg|jpeg|png)$/i)?.[0] || '.jpg';
-    
-    return {
-      webp: `${basePath}.webp`,
-      fallback: originalSrc
-    };
-  };
-
-  const { webp, fallback } = getImagePaths(src);
-
-  // Intersection Observer for lazy loading
   useEffect(() => {
-    if (!lazy || priority) return;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -38,10 +20,7 @@ const OptimizedImage = ({
           observer.disconnect();
         }
       },
-      {
-        rootMargin: '50px', // Start loading 50px before image comes into view
-        threshold: 0.1
-      }
+      { threshold: 0.1 }
     );
 
     if (imgRef.current) {
@@ -49,63 +28,70 @@ const OptimizedImage = ({
     }
 
     return () => observer.disconnect();
-  }, [lazy, priority]);
+  }, []);
 
   const handleLoad = () => {
     setIsLoaded(true);
   };
 
-  const handleError = () => {
-    setHasError(true);
-    setIsLoaded(true);
-  };
-
-  if (!isInView) {
-    return (
-      <div 
-        ref={imgRef}
-        className={`lazy-placeholder ${className}`}
-        style={{ 
-          backgroundColor: '#f0f0f0',
-          minHeight: '200px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-        {...props}
-      >
-        <div style={{ color: '#999' }}>Loading...</div>
-      </div>
-    );
-  }
-
   return (
-    <picture className={className} {...props}>
-      {/* WebP source for modern browsers */}
-      <source 
-        srcSet={webp} 
-        type="image/webp"
-        sizes={sizes}
-      />
-      
-      {/* Fallback for older browsers */}
-      <img
-        ref={imgRef}
-        src={fallback}
-        alt={alt}
-        className={`optimized-image ${isLoaded ? 'loaded' : 'loading'}`}
-        onLoad={handleLoad}
-        onError={handleError}
-        loading={lazy && !priority ? 'lazy' : 'eager'}
-        style={{
-          opacity: isLoaded ? 1 : 0,
-          transition: 'opacity 0.3s ease-in-out',
-          width: '100%',
-          height: 'auto'
-        }}
-      />
-    </picture>
+    <div ref={imgRef} className={`lazy-image-container ${className}`} {...props}>
+      {isInView && (
+        <img
+          src={src}
+          alt={alt}
+          onLoad={handleLoad}
+          style={{
+            opacity: isLoaded ? 1 : 0,
+            transition: 'opacity 0.3s ease',
+            width: '100%',
+            height: 'auto'
+          }}
+        />
+      )}
+      {!isLoaded && (
+        <img
+          src={placeholder}
+          alt="Loading..."
+          style={{
+            opacity: 1,
+            width: '100%',
+            height: 'auto',
+            filter: 'blur(5px)'
+          }}
+        />
+      )}
+    </div>
   );
 };
 
+// Critical image component (loads immediately)
+const CriticalImage = ({ src, alt, className = '', ...props }) => {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      loading="eager"
+      {...props}
+    />
+  );
+};
+
+// Optimized image component that chooses between lazy and critical
+const OptimizedImage = ({ 
+  src, 
+  alt, 
+  className = '', 
+  priority = false,
+  ...props 
+}) => {
+  if (priority) {
+    return <CriticalImage src={src} alt={alt} className={className} {...props} />;
+  }
+  
+  return <LazyImage src={src} alt={alt} className={className} {...props} />;
+};
+
 export default OptimizedImage;
+export { LazyImage, CriticalImage };

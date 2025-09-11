@@ -73,7 +73,7 @@ const Footer = () => {
                   </ul>
 
                   {/* Book Demo Button */}
-                  <Link className="btn btn-outline-dark btn-sm px-3 py-2" to="/book_demo">
+                  <Link className="btn btn-outline-dark btn-sm rounded-pill px-3 py-2" to="/book_demo">
                     Book a Demo
                   </Link>
                 </div>

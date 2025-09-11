@@ -1,0 +1,68 @@
+// System font stack for better performance
+const systemFonts = `
+  /* System font stack - loads instantly, no external requests */
+  body, .font-system {
+    font-family: 
+      -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      "Roboto", 
+      "Oxygen", 
+      "Ubuntu", 
+      "Cantarell", 
+      "Fira Sans", 
+      "Droid Sans", 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+  
+  /* Optimized font loading for headings */
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 
+      -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      "Roboto", 
+      "Oxygen", 
+      "Ubuntu", 
+      "Cantarell", 
+      "Fira Sans", 
+      "Droid Sans", 
+      "Helvetica Neue", 
+      sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Remove Google Fonts dependency */
+  .font-poppins {
+    font-family: 
+      -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      "Roboto", 
+      "Oxygen", 
+      "Ubuntu", 
+      "Cantarell", 
+      "Fira Sans", 
+      "Droid Sans", 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+`;
+
+// Create optimized CSS file
+const createOptimizedFonts = () => {
+  const fs = require('fs');
+  const path = require('path');
+  
+  // Write system fonts CSS
+  fs.writeFileSync(
+    path.join('src/assets/css/system-fonts.css'), 
+    systemFonts
+  );
+  
+  console.log('✅ Created system-fonts.css');
+  console.log('💾 Estimated savings: ~2-3MB (Google Fonts elimination)');
+};
+
+export default createOptimizedFonts;

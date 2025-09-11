@@ -421,7 +421,7 @@ const Devices = () => {
           <div className="video-container mb-4 mb-lg-0">
             <div className="ratio ratio-16x9">
               <iframe
-                src="https://www.youtube.com/embed/j2e2stCcICo?loop=1&playlist=j2e2stCcICo"
+                src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&loop=1&playlist=j2e2stCcICo"
                 title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"

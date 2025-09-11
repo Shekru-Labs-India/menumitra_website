@@ -180,10 +180,11 @@ const Home = () => {
                     <iframe
                       width="100%"
                       height="315"
-                      src="https://www.youtube.com/embed/j2e2stCcICo?loop=1&playlist=j2e2stCcICo"
+                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
                       title="MenuMitra Restaurant Management Software"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      // allow="autoplay"
                       allowFullScreen
                       className="hero-main-video"
                       style={{
@@ -688,12 +689,13 @@ const Home = () => {
 
         
             <div
-              className="container rounded-5"
+              className="container"
               style={{
                 backgroundColor: "#1a1a1a",
                 color: "white",
                 textAlign: "center",
                 padding: "50px 20px",
+                borderRadius: "30px",
               }}
             >
               <h2 className="text-white">
