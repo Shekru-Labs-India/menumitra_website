@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import ManagementPageLayout from "./ManagementPageLayout";
 // menumitra brand images
 import brand1 from "../assets/images/mm_brand/01.webp";
-import brand2 from "../assets/images/mm_brand/02.webp";
 import brand3 from "../assets/images/mm_brand/03.webp";
 import brand4 from "../assets/images/mm_brand/04.webp";
 import brand5 from "../assets/images/mm_brand/05.webp";
