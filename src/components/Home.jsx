@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet";
 import Form from "./Form";
 import BlurText from "./BlurText";
 import HorizontalRule from "./HorizontalRule";
+import LazyYouTube from "./LazyYouTube";
+import LazyImage from "./LazyImage";
 
 
 // New outlet images for second row
@@ -177,16 +179,14 @@ const Home = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="hero-image-wrapper">
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&mute=1&loop=1&playlist=j2e2stCcICo"
+                    <LazyYouTube
+                      videoId="j2e2stCcICo"
                       title="MenuMitra Restaurant Management Software"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      // allow="autoplay"
-                      allowFullScreen
                       className="hero-main-video"
+                      autoplay={true}
+                      mute={true}
+                      loop={true}
+                      playlist="j2e2stCcICo"
                       style={{
                         maxWidth: "100%",
                         height: "auto",
@@ -197,7 +197,7 @@ const Home = () => {
                         position: "relative",
                         zIndex: 2,
                       }}
-                    ></iframe>
+                    />
                     <div className="hero-shapes">
                       <span className="shape shape-1"></span>
                       <span className="shape shape-2"></span>
@@ -510,7 +510,7 @@ const Home = () => {
           <div className="container mt-5 ">
             <div className="row text-center align-items-center">
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand3}
                   alt="Restaurant billing software"
                   className="rounded rellax"
@@ -554,7 +554,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand1}
                   alt=""
                   className="rounded rellax"
@@ -571,7 +571,7 @@ const Home = () => {
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand6}
                   alt=""
                   className="rounded rellax"
@@ -613,7 +613,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand2}
                   alt=""
                   className="rounded rellax"
@@ -630,7 +630,7 @@ const Home = () => {
           <div className="container">
             <div className="row v-center">
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand5}
                   alt=""
                   className="rounded rellax"
@@ -671,7 +671,7 @@ const Home = () => {
 
               {/* / column */}
               <div className="col-lg-5">
-                <img
+                <LazyImage
                   src={brand4}
                   alt=""
                   className="rounded rellax"
@@ -711,7 +711,7 @@ const Home = () => {
               <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={zomatoLogo}
                       className="img-fluid rounded-4"
                       alt="Zomato"
@@ -720,7 +720,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={swiggyLogo}
                       className="img-fluid rounded-4"
                       alt="Swiggy"
@@ -729,7 +729,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={thriveLogo}
                       className="img-fluid rounded-4"
                       alt="Thrive"
@@ -738,7 +738,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={ondcLogo}
                       className="img-fluid rounded-4"
                       alt="ONDC"
@@ -747,7 +747,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={dunzoLogo}
                       className="img-fluid rounded-4"
                       alt="Dunzo"
@@ -756,7 +756,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={upiLogo}
                       className="img-fluid rounded-4"
                       alt="UPI"
@@ -765,7 +765,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={phonepeLogo}
                       className="img-fluid rounded-4"
                       alt="PhonePe"
@@ -774,7 +774,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={paytmLogo}
                       className="img-fluid rounded-4"
                       alt="Paytm"
@@ -783,7 +783,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={pinelabsLogo}
                       className="img-fluid rounded-4"
                       alt="Pine Labs"
@@ -792,7 +792,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={razorpayLogo}
                       className="img-fluid rounded-4"
                       alt="Razorpay"
@@ -801,7 +801,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={shadowfaxLogo}
                       className="img-fluid rounded-4"
                       alt="Shadowfax"
@@ -810,7 +810,7 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="integrate-logo p-2">
-                    <img
+                    <LazyImage
                       src={porterLogo}
                       className="img-fluid rounded-4"
                       alt="Porter"

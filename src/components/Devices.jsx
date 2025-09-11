@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import BannerSection from './BannerSection'
 import FeatureCards from './FeatureCards'
+import LazyYouTube from './LazyYouTube'
 
 
 const Devices = () => {
@@ -420,14 +421,14 @@ const Devices = () => {
         <div className="col-md-6 mb-4 mb-md-0 rounded-3">
           <div className="video-container mb-4 mb-lg-0">
             <div className="ratio ratio-16x9">
-              <iframe
-                src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&loop=1&playlist=j2e2stCcICo"
+              <LazyYouTube
+                videoId="j2e2stCcICo"
                 title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
                 className="rounded-3 shadow-lg"
-              ></iframe>
+                autoplay={true}
+                loop={true}
+                playlist="j2e2stCcICo"
+              />
             </div>
           </div>
         </div>

@@ -54,7 +54,6 @@ import FAQ from "./components/FAQ";
 import Aboutus from "./components/Aboutus";
 import Support from "./components/Support";
 import Career from "./components/Career";
-import Devices from "./components/Devices";
 import WhatsAppFAB from "./components/WhatsAppFAB";
 import StoreManagement from "./components/StoreManagement";
 import RecipeManagement from "./components/RecipeManagement";
@@ -127,7 +126,6 @@ function App() {
     <Route path="/book_demo" element={<BookDemo />} />
     <Route path="/about_us" element={<Aboutus />} />
     <Route path="/support" element={<Support />} />
-    <Route path="/devices" element={<Devices />} />
     <Route path="/store-management" element={<StoreManagement />} />
     <Route path="/recipemanagement" element={<RecipeManagement />} />
     <Route path="/socialmediamanagement" element={<SocialMediaManagement />} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { bannerStyles } from './BannerSection.styles';
+import LazyYouTube from './LazyYouTube';
 
 const BannerSection = () => {
   const [styles, setStyles] = useState(bannerStyles);
@@ -61,14 +62,21 @@ const BannerSection = () => {
       <div style={styles.zhInrBg}></div>
       <div style={styles.zhBnrImgSec}>
         <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-          <iframe 
-            style={{...styles.video, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-            src="https://www.youtube.com/embed/j2e2stCcICo?autoplay=1&list=TLGG3vUbEoDSIB4wNzA1MjAyNQ&loop=1&playlist=j2e2stCcICo"
+          <LazyYouTube
+            videoId="j2e2stCcICo"
             title="Menu Mitra Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+            autoplay={true}
+            loop={true}
+            playlist="j2e2stCcICo"
+            style={{
+              ...styles.video, 
+              position: 'absolute', 
+              top: 0, 
+              left: 0, 
+              width: '100%', 
+              height: '100%'
+            }}
+          />
         </div>
       </div>
     </div>

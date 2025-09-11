@@ -5,6 +5,7 @@ import Form from "./Form";
 import menumitra from "../assets/images/MenuMitra.webp";
 import "../assets/css/apps.css";
 import HorizontalRule from "./HorizontalRule";
+import LazyYouTube from "./LazyYouTube";
 
 const Apps = () => {
   useEffect(() => {
@@ -21,14 +22,13 @@ const Apps = () => {
               <div className="col-12 col-lg-5">
                 <div className="video-container mb-4 mb-lg-0">
                   <div className="ratio ratio-16x9">
-                    <iframe
-                      src="https://www.youtube.com/embed/j2e2stCcICo?loop=1&playlist=j2e2stCcICo"
+                    <LazyYouTube
+                      videoId="j2e2stCcICo"
                       title="MenuMitra Intro Video | Restaurant POS made easy | Shekru Labs India Pvt. Ltd"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
                       className="rounded-3 shadow-lg border-0"
-                    ></iframe>
+                      loop={true}
+                      playlist="j2e2stCcICo"
+                    />
                   </div>
                 </div>
               </div>
