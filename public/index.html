@@ -133,7 +133,7 @@
     <!-- Defer main CSS to prevent render blocking with higher priority -->
     <link rel="preload" href="/static/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
     
-    <!-- Critical CSS for above-the-fold content - EXPANDED -->
+    <!-- Critical CSS for above-the-fold content -->
     <style>
       /* Critical above-the-fold styles to prevent render blocking */
       .hero-section { 
@@ -184,28 +184,6 @@
         .py-5 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
         .btn-primary { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
       }
-      
-      /* Additional critical styles for common elements */
-      .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
-      .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
-      .col-lg-5 { flex: 0 0 41.666667%; max-width: 41.666667%; padding: 0 15px; }
-      .col-lg-7 { flex: 0 0 58.333333%; max-width: 58.333333%; padding: 0 15px; }
-      .navbar { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 0.5rem 1rem; }
-      .navbar-brand { font-size: 1.25rem; font-weight: 500; color: #333; text-decoration: none; }
-      .d-flex { display: flex !important; }
-      .align-items-center { align-items: center !important; }
-      .justify-content-center { justify-content: center !important; }
-      .text-center { text-align: center !important; }
-      .fw-bold { font-weight: 700 !important; }
-      .display-5 { font-size: 3rem; font-weight: 300; line-height: 1.2; }
-      .lead { font-size: 1.25rem; font-weight: 300; }
-      .shadow-lg { box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important; }
-      .rounded-3 { border-radius: 0.75rem !important; }
-      .border-0 { border: 0 !important; }
-      .ratio { position: relative; width: 100%; }
-      .ratio-16x9 { --bs-aspect-ratio: 56.25%; }
-      .ratio::before { content: ""; padding-top: var(--bs-aspect-ratio, 50%); }
-      .ratio > * { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     </style>
     
     <!-- Fallback for browsers that don't support preload -->
