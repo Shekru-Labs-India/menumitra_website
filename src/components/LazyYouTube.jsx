@@ -63,7 +63,7 @@ const LazyYouTube = ({
           style={{
             width: '100%',
             height: '100%',
-            backgroundColor: '#000',
+            // backgroundColor: '#000',
             borderRadius: '20px',
             cursor: 'pointer',
             position: 'relative',
