@@ -65,12 +65,25 @@ function App() {
         "https://menumitra-testing.netlify.app/user_app/o890792/s168/t1";
     }
 
-    // Register service worker for caching
+    // Register optimized service worker for better caching and performance
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
           .then((registration) => {
             console.log('SW registered: ', registration);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New content is available, auto-refresh after a delay
+                  setTimeout(() => {
+                    window.location.reload();
+                  }, 2000);
+                }
+              });
+            });
           })
           .catch((registrationError) => {
             console.log('SW registration failed: ', registrationError);
