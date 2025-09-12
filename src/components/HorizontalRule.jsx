@@ -2,9 +2,9 @@ import React from 'react'
 
 function HorizontalRule({className = 5}) {
   return (
-    <div className={`my-${className}`}>
-    <hr />
-    </div>
+   
+    <hr className={`my-${className} animated-hr`}/>
+   
   )
 }
 

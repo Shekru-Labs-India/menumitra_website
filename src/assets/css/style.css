@@ -7,9 +7,37 @@
 .hero-area {
   position: relative;
   padding: 180px 0 100px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   overflow: hidden;
 }
+
+
+.animated-hr {
+  height: 4px !important; /* increased thickness */
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #ff6b6b,
+    #feca57,
+    #1dd1a1,
+    #54a0ff,
+    #ff6b6b
+  );
+  background-size: 300% 100%;
+  animation: shimmer 3s linear infinite;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15); /* stronger glow */
+  margin: 2rem 0; /* extra spacing above/below */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
 
 .hero-img {
   position: relative;

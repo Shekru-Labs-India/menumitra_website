@@ -148,14 +148,13 @@ const Footer = () => {
           <div className="row mt-5 pt-4 border-top">
             <div className="col-12 d-flex justify-content-end align-items-center">
               <div 
-                className="card border-0 shadow-sm p-3 border-bottom"
+                className="card border border-2 shadow-sm p-3 rounded-3"
                 style={{ cursor: "pointer" }}
                 onClick={handleSupportClick}
               >
                 <img 
                   src={mmSupp} 
-                  alt="MenuMitra 24/7 Support" 
-                  style={{ maxHeight: "80px", objectFit: "contain" }}
+                  alt="MenuMitra 24/7 Support"
                 />
               </div>
             </div>

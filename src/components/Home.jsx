@@ -149,7 +149,7 @@ const Home = () => {
 
         <div className="main-container p-0">
           {/*================== Hero Area Section Start ==================*/}
-          <section className="hero-area section border border-bottom ">
+          <section className="hero-area section">
             <div className="container">
               <div className="row align-items-start">
                 <div className="col-lg-6">
@@ -502,6 +502,7 @@ const Home = () => {
               <span className="circle circle-7"></span>
             </div>
           </section>
+          <HorizontalRule className="5" />
           {/*================== Hero Area Section End ==================*/}
           
 
