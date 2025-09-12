@@ -4705,7 +4705,7 @@ span{
 }
 
 @media (max-width: 1024px) {
-  :root {
+:root {
     --marquee-elements-displayed: 4;
   }
 }

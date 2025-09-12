@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -100,10 +102,13 @@ const Header: React.FC = () => {
           {/* Home Dropdown */}
           <li className="relative group">
             <button 
-              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors active"
+              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors active group"
             >
               Home
-              <i className="fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+              <FontAwesomeIcon 
+                icon={faAngleDown} 
+                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+              />
             </button>
             <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
               {homeMenuItems.map((item, index) => (
@@ -128,9 +133,12 @@ const Header: React.FC = () => {
 
           {/* Services Dropdown */}
           <li className="relative group">
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors">
+            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
               Services
-              <i className="fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+              <FontAwesomeIcon 
+                icon={faAngleDown} 
+                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+              />
             </button>
             <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
               {servicesMenuItems.map((item, index) => (
@@ -147,7 +155,10 @@ const Header: React.FC = () => {
           <li className="group">
             <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
               Pages
-              <i className="fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+              <FontAwesomeIcon 
+                icon={faAngleDown} 
+                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+              />
             </button>
             <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-lg z-10 items-center">
               <ul className="col-span-8 columns-3 gap-10 px-15">
@@ -180,9 +191,12 @@ const Header: React.FC = () => {
 
           {/* News Dropdown */}
           <li className="relative group">
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors">
+            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
               News
-              <i className="fa-solid fa-angle-down text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1"></i>
+              <FontAwesomeIcon 
+                icon={faAngleDown} 
+                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+              />
             </button>
             <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
               {newsMenuItems.map((item, index) => (
@@ -270,7 +284,7 @@ const Header: React.FC = () => {
             className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-white dark:bg-dark-200 absolute right-6 top-5"
             onClick={toggleMobileMenu}
           >
-            <i className="fa-solid fa-times"></i>
+            <FontAwesomeIcon icon={faTimes} />
           </button>
           
           <ul className="nav-list flex flex-col gap-5 w-full max-w-[500px] landscape:h-full relative">
@@ -281,7 +295,10 @@ const Header: React.FC = () => {
                 onClick={() => toggleDropdown('home')}
               >
                 Home
-                <i className={`fa-solid fa-angle-down text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'home' ? 'rotate-180' : ''}`}></i>
+                <FontAwesomeIcon 
+                  icon={faAngleDown} 
+                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'home' ? 'rotate-180' : ''}`} 
+                />
               </button>
               <ul className={`faq-body ${activeDropdown === 'home' ? 'open' : 'close'}`}>
                 {homeMenuItems.map((item, index) => (
@@ -312,7 +329,10 @@ const Header: React.FC = () => {
                 onClick={() => toggleDropdown('services')}
               >
                 Services
-                <i className={`fa-solid fa-angle-down text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'services' ? 'rotate-180' : ''}`}></i>
+                <FontAwesomeIcon 
+                  icon={faAngleDown} 
+                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'services' ? 'rotate-180' : ''}`} 
+                />
               </button>
               <ul className={`faq-body ${activeDropdown === 'services' ? 'open' : 'close'}`}>
                 {servicesMenuItems.map((item, index) => (
@@ -332,7 +352,10 @@ const Header: React.FC = () => {
                 onClick={() => toggleDropdown('pages')}
               >
                 Pages
-                <i className={`fa-solid fa-angle-down text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'pages' ? 'rotate-180' : ''}`}></i>
+                <FontAwesomeIcon 
+                  icon={faAngleDown} 
+                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'pages' ? 'rotate-180' : ''}`} 
+                />
               </button>
               <div className={`faq-body ${activeDropdown === 'pages' ? 'open' : 'close'}`}>
                 <ul className="columns-2 gap-10 mb-15">
@@ -370,7 +393,10 @@ const Header: React.FC = () => {
                 onClick={() => toggleDropdown('news')}
               >
                 News
-                <i className={`fa-solid fa-angle-down text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'news' ? 'rotate-180' : ''}`}></i>
+                <FontAwesomeIcon 
+                  icon={faAngleDown} 
+                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'news' ? 'rotate-180' : ''}`} 
+                />
               </button>
               <ul className={`faq-body ${activeDropdown === 'news' ? 'open' : 'close'}`}>
                 {newsMenuItems.map((item, index) => (
