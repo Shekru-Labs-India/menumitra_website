@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,6 +16,16 @@ const Header: React.FC = () => {
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.pageYOffset;
+      setIsScrolled(scrollY >= 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const homeMenuItems = [
     { href: '/', label: 'Home 1' },
@@ -56,7 +67,11 @@ const Header: React.FC = () => {
 
   return (
     <header 
-      className="fixed left-0 pt-8 z-[1000000000] duration-500 transition-all w-full bg-transparent" 
+      className={`fixed left-0 pt-8 z-[1000000000] duration-500 transition-all w-full ${
+        isScrolled 
+          ? 'bg-white/60 dark:bg-dark-200/60 backdrop-blur-3xl nav-sticky' 
+          : 'bg-transparent'
+      }`}
       id="mainnavigationBar"
     >
       <nav className="container flex items-center relative">
