@@ -81,15 +81,15 @@ const Header: React.FC = () => {
             <Image 
               src="/images/logo.svg" 
               alt="logo" 
-              width={120} 
-              height={40} 
+              width={70} 
+              height={29} 
               className="dark:hidden"
             />
             <Image 
-              src="/images/logo-dark-1.svg" 
+              src="/images/logo-light-1.svg" 
               alt="logo dark version" 
-              width={120} 
-              height={40} 
+              width={70} 
+              height={29} 
               className="hidden dark:inline-block"
             />
           </Link>

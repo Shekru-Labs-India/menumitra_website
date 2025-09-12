@@ -6,9 +6,50 @@ import React from 'react';
 const HeroSection: React.FC = () => {
   return (
     <section className="hero bg-gray dark:bg-dark overflow-hidden relative max-lg:pt-[160px] max-lg:pb-25 pt-[230px] pb-[140px] max-md:pb-[70px]" id="scene">
-      {/* Background decoration - using simple gradient instead of complex SVG */}
-      <div className="absolute top-0 max-w-[1612px] left-1/2 -translate-x-1/2 max-lg:hidden">
-        <div className="w-full h-[520px] bg-gradient-to-b from-transparent via-primary/10 to-transparent opacity-50"></div>
+      {/* Background decoration - Desktop SVG graphs */}
+      <div className="absolute top-0 left-0 w-full max-lg:hidden">
+        <Image 
+          src="/images/hero/hero-graph-top.svg" 
+          alt="Hero background graph" 
+          width={1612} 
+          height={520} 
+          className="w-full h-auto opacity-50"
+          priority
+        />
+      </div>
+      
+      {/* Background decoration - Mobile SVG graphs */}
+      <div className="absolute top-0 left-0 w-full lg:hidden">
+        <Image 
+          src="/images/hero/hero-graph-top.svg" 
+          alt="Hero background graph mobile" 
+          width={375} 
+          height={520} 
+          className="w-full h-auto opacity-50"
+          priority
+        />
+      </div>
+      
+      {/* Bottom background decoration - Desktop */}
+      <div className="absolute bottom-0 left-0 w-full max-lg:hidden">
+        <Image 
+          src="/images/hero/hero-graph-bottom.svg" 
+          alt="Hero background graph bottom" 
+          width={1920} 
+          height={444} 
+          className="w-full h-auto opacity-30"
+        />
+      </div>
+      
+      {/* Bottom background decoration - Mobile */}
+      <div className="absolute bottom-0 left-0 w-full lg:hidden">
+        <Image 
+          src="/images/hero/hero-graph-bottom.svg" 
+          alt="Hero background graph bottom mobile" 
+          width={375} 
+          height={444} 
+          className="w-full h-auto opacity-30"
+        />
       </div>
       
       <div className="container">
