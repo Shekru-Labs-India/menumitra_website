@@ -86,7 +86,7 @@ const Header: React.FC = () => {
               className="dark:hidden"
             />
             <Image 
-              src="/images/logo-light-1.svg" 
+              src="/images/logo-dark-1.svg" 
               alt="logo dark version" 
               width={120} 
               height={40} 
