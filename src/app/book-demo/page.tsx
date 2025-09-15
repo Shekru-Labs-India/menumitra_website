@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 export default function BookDemoPage() {
   const [formData, setFormData] = useState({
@@ -14,9 +15,7 @@ export default function BookDemoPage() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
-  const [bookingData, setBookingData] = useState<any>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -41,91 +40,56 @@ export default function BookDemoPage() {
       });
       
       if (response.data && response.data.detail) {
-        setBookingData(response.data.detail);
-        setIsSubmitted(true);
+        const bookingData = response.data.detail;
+        toast.success(`Demo request submitted successfully! Booking ID: ${bookingData.booking_id}. Our team will contact you within 24 hours.`, {
+          duration: 6000,
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          mobile: '',
+          outlet_name: '',
+          outlet_type: '',
+          city: '',
+          email: ''
+        });
       } else {
         throw new Error('Invalid response format');
       }
     } catch (err: any) {
       console.error('Booking submission error:', err);
+      let errorMessage = 'Failed to submit booking. Please try again.';
+      
       if (err.response?.data?.message) {
+        errorMessage = err.response.data.message;
         setError(err.response.data.message);
       } else if (err.response?.data?.error) {
+        errorMessage = err.response.data.error;
         setError(err.response.data.error);
       } else if (err.message) {
+        errorMessage = err.message;
         setError(err.message);
-      } else {
-        setError('Failed to submit booking. Please try again.');
       }
+      
+      toast.error(errorMessage, {
+        duration: 6000,
+      });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  if (isSubmitted) {
-    return (
-      <div className="min-h-screen bg-gray dark:bg-dark flex items-center justify-center py-20">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-8 shadow-nav">
-              <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Demo Request Submitted!
-              </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Thank you for your interest in MenuMitra. Our team will contact you within 24 hours to schedule your personalized demo.
-              </p>
-              
-              {bookingData && (
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 mb-6 text-left">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Booking Details:</h3>
-                  <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                    <p><strong>Booking ID:</strong> {bookingData.booking_id}</p>
-                    <p><strong>Name:</strong> {bookingData.name}</p>
-                    <p><strong>Mobile:</strong> {bookingData.mobile}</p>
-                    <p><strong>Outlet:</strong> {bookingData.outlet_name}</p>
-                    <p><strong>Type:</strong> {bookingData.outlet_type}</p>
-                    <p><strong>City:</strong> {bookingData.city}</p>
-                    <p><strong>Email:</strong> {bookingData.email}</p>
-                    <p><strong>Created:</strong> {bookingData.created_on}</p>
-                  </div>
-                </div>
-              )}
-              
-              <div className="space-y-4">
-                <p className="text-gray-600 dark:text-gray-300">
-                  <strong>What happens next?</strong>
-                </p>
-                <ul className="text-left text-gray-600 dark:text-gray-300 space-y-2">
-                  <li>• Our sales team will review your requirements</li>
-                  <li>• We'll prepare a customized demo for your restaurant</li>
-                  <li>• You'll receive a calendar invite with meeting details</li>
-                  <li>• During the demo, we'll show you how MenuMitra can transform your operations</li>
-                </ul>
-              </div>
-              <div className="mt-8">
-                <a href="/" className="btn">
-                  Return to Home
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <section className="py-[200px] max-md:pt-150 relative overflow-hidden">
       <div className="absolute left-1/2 top-0 w-full h-[550px] -translate-x-1/2 bg-cover bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
       <div className="container relative" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
-        <div className="mb-12 text-center max-w-[475px] mx-auto">
-          <p className="section-tagline">Contact</p>
+        <div className="mb-12 text-center max-w-[600px] mx-auto">
+      
           <h2>Book A Demo</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
+            Fill out the form below and our team will contact you within 24 hours to schedule your personalized demo.
+          </p>
         </div>
         <div className="relative z-10 max-w-[850px] mx-auto">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
@@ -154,13 +118,13 @@ export default function BookDemoPage() {
                 <div className="grid grid-cols-12 max-md:gap-y-10 md:gap-x-12 md:gap-8">
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="name" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      Your name *
+                      <span className="text-red-500">*</span> Full name
                     </label>
                     <input 
                       type="text" 
                       name="name" 
                       id="name" 
-                      placeholder="Name" 
+                      placeholder="Full Name" 
                       required
                       value={formData.name}
                       onChange={handleInputChange}
@@ -169,7 +133,7 @@ export default function BookDemoPage() {
                   </div>
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="mobile" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      Mobile Number *
+                      <span className="text-red-500">*</span> Mobile Number
                     </label>
                     <input 
                       type="tel" 
@@ -184,7 +148,7 @@ export default function BookDemoPage() {
                   </div>
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="outlet_name" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      Outlet Name *
+                      <span className="text-red-500">*</span> Outlet Name
                     </label>
                     <input 
                       type="text" 
@@ -199,7 +163,7 @@ export default function BookDemoPage() {
                   </div>
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="outlet_type" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      Outlet Type *
+                      <span className="text-red-500">*</span> Outlet Type
                     </label>
                     <select
                       name="outlet_type"
@@ -221,7 +185,7 @@ export default function BookDemoPage() {
                   </div>
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="city" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      City *
+                      <span className="text-red-500">*</span> City
                     </label>
                     <input 
                       type="text" 
@@ -236,13 +200,13 @@ export default function BookDemoPage() {
                   </div>
                   <div className="max-md:col-span-full md:col-span-6">
                     <label htmlFor="email" className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
-                      Your Email *
+                      <span className="text-red-500">*</span> Your Email
                     </label>
                     <input 
                       type="email" 
                       name="email" 
                       id="email" 
-                      placeholder="Email" 
+                      placeholder="Email Address" 
                       required
                       value={formData.email}
                       onChange={handleInputChange}
@@ -267,6 +231,35 @@ export default function BookDemoPage() {
                         'Book Now'
                       )}
                     </button>
+                    
+                    {/* Test buttons - commented out for production */}
+                    {/* 
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
+                      <button 
+                        type="button"
+                        onClick={() => {
+                          toast.success('Demo request submitted successfully! Booking ID: TEST123. Our team will contact you within 24 hours.', {
+                            duration: 6000,
+                          });
+                        }}
+                        className="btn-secondary"
+                      >
+                        Test Success Toast
+                      </button>
+                      
+                      <button 
+                        type="button"
+                        onClick={() => {
+                          toast.error('Failed to submit booking. Please try again.', {
+                            duration: 6000,
+                          });
+                        }}
+                        className="btn-outline"
+                      >
+                        Test Error Toast
+                      </button>
+                    </div>
+                    */}
                   </div>
                 </div>
               </form>

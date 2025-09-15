@@ -1,0 +1,78 @@
+/** Tailwind Red Color Text and Other Red Colored Classes */
+
+/* Text Colors */
+.text-red-50 { --tw-text-opacity: 1; color: rgb(254 242 242 / var(--tw-text-opacity)); }
+.text-red-100 { --tw-text-opacity: 1; color: rgb(254 226 226 / var(--tw-text-opacity)); }
+.text-red-200 { --tw-text-opacity: 1; color: rgb(254 202 202 / var(--tw-text-opacity)); }
+.text-red-300 { --tw-text-opacity: 1; color: rgb(252 165 165 / var(--tw-text-opacity)); }
+.text-red-400 { --tw-text-opacity: 1; color: rgb(248 113 113 / var(--tw-text-opacity)); }
+.text-red-500 { --tw-text-opacity: 1; color: rgb(239 68 68 / var(--tw-text-opacity)); }
+.text-red-600 { --tw-text-opacity: 1; color: rgb(220 38 38 / var(--tw-text-opacity)); }
+.text-red-700 { --tw-text-opacity: 1; color: rgb(185 28 28 / var(--tw-text-opacity)); }
+.text-red-800 { --tw-text-opacity: 1; color: rgb(153 27 27 / var(--tw-text-opacity)); }
+.text-red-900 { --tw-text-opacity: 1; color: rgb(127 29 29 / var(--tw-text-opacity)); }
+.text-red-950 { --tw-text-opacity: 1; color: rgb(69 10 10 / var(--tw-text-opacity)); }
+
+/* Background Colors */
+.bg-red-50 { --tw-bg-opacity: 1; background-color: rgb(254 242 242 / var(--tw-bg-opacity)); }
+.bg-red-100 { --tw-bg-opacity: 1; background-color: rgb(254 226 226 / var(--tw-bg-opacity)); }
+.bg-red-200 { --tw-bg-opacity: 1; background-color: rgb(254 202 202 / var(--tw-bg-opacity)); }
+.bg-red-300 { --tw-bg-opacity: 1; background-color: rgb(252 165 165 / var(--tw-bg-opacity)); }
+.bg-red-400 { --tw-bg-opacity: 1; background-color: rgb(248 113 113 / var(--tw-bg-opacity)); }
+.bg-red-500 { --tw-bg-opacity: 1; background-color: rgb(239 68 68 / var(--tw-bg-opacity)); }
+.bg-red-600 { --tw-bg-opacity: 1; background-color: rgb(220 38 38 / var(--tw-bg-opacity)); }
+.bg-red-700 { --tw-bg-opacity: 1; background-color: rgb(185 28 28 / var(--tw-bg-opacity)); }
+.bg-red-800 { --tw-bg-opacity: 1; background-color: rgb(153 27 27 / var(--tw-bg-opacity)); }
+.bg-red-900 { --tw-bg-opacity: 1; background-color: rgb(127 29 29 / var(--tw-bg-opacity)); }
+.bg-red-950 { --tw-bg-opacity: 1; background-color: rgb(69 10 10 / var(--tw-bg-opacity)); }
+
+/* Border Colors */
+.border-red-50 { --tw-border-opacity: 1; border-color: rgb(254 242 242 / var(--tw-border-opacity)); }
+.border-red-100 { --tw-border-opacity: 1; border-color: rgb(254 226 226 / var(--tw-border-opacity)); }
+.border-red-200 { --tw-border-opacity: 1; border-color: rgb(254 202 202 / var(--tw-border-opacity)); }
+.border-red-300 { --tw-border-opacity: 1; border-color: rgb(252 165 165 / var(--tw-border-opacity)); }
+.border-red-400 { --tw-border-opacity: 1; border-color: rgb(248 113 113 / var(--tw-border-opacity)); }
+.border-red-500 { --tw-border-opacity: 1; border-color: rgb(239 68 68 / var(--tw-border-opacity)); }
+.border-red-600 { --tw-border-opacity: 1; border-color: rgb(220 38 38 / var(--tw-border-opacity)); }
+.border-red-700 { --tw-border-opacity: 1; border-color: rgb(185 28 28 / var(--tw-border-opacity)); }
+.border-red-800 { --tw-border-opacity: 1; border-color: rgb(153 27 27 / var(--tw-border-opacity)); }
+.border-red-900 { --tw-border-opacity: 1; border-color: rgb(127 29 29 / var(--tw-border-opacity)); }
+.border-red-950 { --tw-border-opacity: 1; border-color: rgb(69 10 10 / var(--tw-border-opacity)); }
+
+/* Ring Colors */
+.ring-red-50 { --tw-ring-opacity: 1; --tw-ring-color: rgb(254 242 242 / var(--tw-ring-opacity)); }
+.ring-red-100 { --tw-ring-opacity: 1; --tw-ring-color: rgb(254 226 226 / var(--tw-ring-opacity)); }
+.ring-red-200 { --tw-ring-opacity: 1; --tw-ring-color: rgb(254 202 202 / var(--tw-ring-opacity)); }
+.ring-red-300 { --tw-ring-opacity: 1; --tw-ring-color: rgb(252 165 165 / var(--tw-ring-opacity)); }
+.ring-red-400 { --tw-ring-opacity: 1; --tw-ring-color: rgb(248 113 113 / var(--tw-ring-opacity)); }
+.ring-red-500 { --tw-ring-opacity: 1; --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity)); }
+.ring-red-600 { --tw-ring-opacity: 1; --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity)); }
+.ring-red-700 { --tw-ring-opacity: 1; --tw-ring-color: rgb(185 28 28 / var(--tw-ring-opacity)); }
+.ring-red-800 { --tw-ring-opacity: 1; --tw-ring-color: rgb(153 27 27 / var(--tw-ring-opacity)); }
+.ring-red-900 { --tw-ring-opacity: 1; --tw-ring-color: rgb(127 29 29 / var(--tw-ring-opacity)); }
+.ring-red-950 { --tw-ring-opacity: 1; --tw-ring-color: rgb(69 10 10 / var(--tw-ring-opacity)); }
+
+/* Placeholder Text Colors */
+.placeholder-red-50::placeholder { --tw-placeholder-opacity: 1; color: rgb(254 242 242 / var(--tw-placeholder-opacity)); }
+.placeholder-red-100::placeholder { --tw-placeholder-opacity: 1; color: rgb(254 226 226 / var(--tw-placeholder-opacity)); }
+.placeholder-red-200::placeholder { --tw-placeholder-opacity: 1; color: rgb(254 202 202 / var(--tw-placeholder-opacity)); }
+.placeholder-red-300::placeholder { --tw-placeholder-opacity: 1; color: rgb(252 165 165 / var(--tw-placeholder-opacity)); }
+.placeholder-red-400::placeholder { --tw-placeholder-opacity: 1; color: rgb(248 113 113 / var(--tw-placeholder-opacity)); }
+.placeholder-red-500::placeholder { --tw-placeholder-opacity: 1; color: rgb(239 68 68 / var(--tw-placeholder-opacity)); }
+.placeholder-red-600::placeholder { --tw-placeholder-opacity: 1; color: rgb(220 38 38 / var(--tw-placeholder-opacity)); }
+.placeholder-red-700::placeholder { --tw-placeholder-opacity: 1; color: rgb(185 28 28 / var(--tw-placeholder-opacity)); }
+.placeholder-red-800::placeholder { --tw-placeholder-opacity: 1; color: rgb(153 27 27 / var(--tw-placeholder-opacity)); }
+.placeholder-red-900::placeholder { --tw-placeholder-opacity: 1; color: rgb(127 29 29 / var(--tw-placeholder-opacity)); }
+.placeholder-red-950::placeholder { --tw-placeholder-opacity: 1; color: rgb(69 10 10 / var(--tw-placeholder-opacity)); }
+
+/* Focus Outline Colors */
+.focus\:outline-red-500:focus { outline-color: #ef4444; }
+.focus\:outline-red-600:focus { outline-color: #dc2626; }
+
+/* Shadow Colors (for e.g. shadow-red-500/50) */
+.shadow-red-500\/50 { --tw-shadow-color: rgb(239 68 68 / 0.5); box-shadow: var(--tw-shadow-colored); }
+.shadow-red-600\/50 { --tw-shadow-color: rgb(220 38 38 / 0.5); box-shadow: var(--tw-shadow-colored); }
+
+/* Fill and Stroke */
+.fill-red-500 { fill: #ef4444; }
+.stroke-red-500 { stroke: #ef4444; }
