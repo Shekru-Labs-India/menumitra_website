@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { TargetCursor } from '@/components/reactbits';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faDollarSign, faChartBar } from '@fortawesome/free-solid-svg-icons';
 
 const ActionButtonsSection: React.FC = () => {
   return (
@@ -24,7 +22,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(239, 68, 68, 0.1)';
             }}
           >
-            <FontAwesomeIcon icon={faTrash} className="w-5 h-5" />
+            <i className="fa-solid fa-trash w-5 h-5 text-red-600"></i>
             Stop Wastage
           </button>
           <button 
@@ -41,7 +39,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(34, 197, 94, 0.1)';
             }}
           >
-            <FontAwesomeIcon icon={faDollarSign} className="w-5 h-5" />
+            <i className="fa-solid fa-dollar-sign w-5 h-5 text-green-600"></i>
             Recover Revenue
           </button>
           <button 
@@ -58,7 +56,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
             }}
           >
-            <FontAwesomeIcon icon={faChartBar} className="w-5 h-5" />
+            <i className="fa-solid fa-chart-bar w-5 h-5 text-blue-600"></i>
             Get Insights
           </button>
         </div>
