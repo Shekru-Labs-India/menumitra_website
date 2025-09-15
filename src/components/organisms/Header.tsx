@@ -233,8 +233,8 @@ const Header: React.FC = () => {
 
           {/* Request Demo Button - Desktop */}
           <li className="max-lg:hidden">
-            <Link href="/request-demo" className="btn btn-navbar btn-sm">
-              Request Demo
+            <Link href="/book-demo" className="btn btn-navbar btn-sm">
+              Book a Demo
             </Link>
           </li>
 
@@ -414,14 +414,14 @@ const Header: React.FC = () => {
               </Link>
             </li>
 
-            {/* Mobile Request Demo */}
+            {/* Mobile Book Demo */}
             <li>
               <Link 
-                href="/request-demo" 
+                href="/book-demo" 
                 className="btn btn-navbar btn-sm"
                 onClick={toggleMobileMenu}
               >
-                Request Demo
+                Book a Demo
               </Link>
             </li>
           </ul>
