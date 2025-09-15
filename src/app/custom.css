@@ -76,3 +76,55 @@
 /* Fill and Stroke */
 .fill-red-500 { fill: #ef4444; }
 .stroke-red-500 { stroke: #ef4444; }
+
+/* =========================================== */
+/* MENUMITRA ORANGE THEME - BACKGROUND COLORS ONLY */
+/* =========================================== */
+
+/* Primary Orange Background Colors - Based on MM Logo */
+.bg-primary {
+  background-color: #FF8C00 !important; /* Vibrant Orange from logo */
+}
+
+.bg-primary-200 {
+  background-color: #FFD700 !important; /* Lighter Orange/Yellow from logo */
+}
+
+/* Primary-200 with opacity variations */
+.bg-primary-200\/20 {
+  background-color: rgba(255, 215, 0, 0.2) !important;
+}
+
+.bg-primary-200\/25 {
+  background-color: rgba(255, 215, 0, 0.25) !important;
+}
+
+.bg-primary-200\/30 {
+  background-color: rgba(255, 215, 0, 0.3) !important;
+}
+
+.bg-primary-200\/40 {
+  background-color: rgba(255, 215, 0, 0.4) !important;
+}
+
+.bg-primary-200\/50 {
+  background-color: rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Primary with opacity variations */
+.bg-primary\/10 {
+  background-color: rgba(255, 140, 0, 0.1) !important;
+}
+
+.bg-primary\/50 {
+  background-color: rgba(255, 140, 0, 0.5) !important;
+}
+
+/* Dark Mode Background Variations */
+.dark .bg-primary {
+  background-color: #FFA500 !important; /* Slightly different orange for dark mode */
+}
+
+.dark .bg-primary-200 {
+  background-color: #FFC04D !important; /* Lighter orange for dark mode */
+}
