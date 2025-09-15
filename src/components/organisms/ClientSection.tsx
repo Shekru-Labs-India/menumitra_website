@@ -33,8 +33,8 @@ const ClientSection: React.FC = () => {
       
       <div className="container overflow-hidden max-lg:!px-0 relative z-10">
         <div className="text-center max-w-[550px] px-[10px] mx-auto max-lg:px-2.5">
-          <h2 className="mb-10">The world&apos;s best companies trust aplio.</h2>
-          <p className="text-light mb-15">Trusted by thousands of companies across 50+ countries</p>
+          <h2 className="mb-10">Our Happy Clients - Trusted Restaurant Partners</h2>
+          <p className="text-light mb-15">Join 500+ successful restaurants across India who have transformed their digital presence with MenuMitra's innovative restaurant management solutions</p>
         </div>
         <div className="relative after:absolute before:absolute after:w-[120px] after:h-[40px] after:bg-gradient-to-r after:from-white after:from-[37.5%] after:top-1/2 after:-translate-y-1/2 after:-left-0.5 after:z-10 before:w-[120px] before:h-[40px] before:bg-gradient-to-l before:from-white before:from-[37.5%] before:-right-0.5 before:top-1/2 before:-translate-y-1/2 before:z-10 dark:after:from-dark-gradient dark:before:from-dark-gradient">
           <div className="absolute left-0 top-0 w-full max-lg:hidden">
@@ -55,17 +55,18 @@ const ClientSection: React.FC = () => {
           </div>
           <div className="marquee marquee-items">
             <div className="marquee-content flex items-center justify-between py-8" id="clients">
+              {/* MenuMitra Outlet Images */}
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/group.svg" 
-                  alt="group" 
+                  src="/images/clients/hotel_ganesh_shakaahari.webp" 
+                  alt="Hotel Ganesh Shakaahari - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/group-dark.svg" 
-                  alt="group" 
+                  src="/images/clients/hotel_ganesh_shakaahari.webp" 
+                  alt="Hotel Ganesh Shakaahari - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -73,15 +74,15 @@ const ClientSection: React.FC = () => {
               </div>
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/infinity.svg" 
-                  alt="infinity" 
+                  src="/images/clients/hotel_audumbar.webp" 
+                  alt="Hotel Audumbar - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/infinity-dark.svg" 
-                  alt="infinity" 
+                  src="/images/clients/hotel_audumbar.webp" 
+                  alt="Hotel Audumbar - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -89,15 +90,15 @@ const ClientSection: React.FC = () => {
               </div>
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/artifact.svg" 
-                  alt="artifact" 
+                  src="/images/clients/hotel_rasika.webp" 
+                  alt="Hotel Rasika - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/artifact-dark.svg" 
-                  alt="caudile" 
+                  src="/images/clients/hotel_rasika.webp" 
+                  alt="Hotel Rasika - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -105,15 +106,15 @@ const ClientSection: React.FC = () => {
               </div>
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/caudile.svg" 
-                  alt="caudile" 
+                  src="/images/clients/hotel_nandini_pure_veg.webp" 
+                  alt="Hotel Nandini Pure Veg - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/caudile-dark.svg" 
-                  alt="caudile" 
+                  src="/images/clients/hotel_nandini_pure_veg.webp" 
+                  alt="Hotel Nandini Pure Veg - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -121,15 +122,15 @@ const ClientSection: React.FC = () => {
               </div>
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/axeptio.svg" 
-                  alt="axeptio" 
+                  src="/images/clients/house_of_schezwam.webp" 
+                  alt="House of Schezwam - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/axeptio-dark.svg" 
-                  alt="axeptio" 
+                  src="/images/clients/house_of_schezwam.webp" 
+                  alt="House of Schezwam - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -137,15 +138,15 @@ const ClientSection: React.FC = () => {
               </div>
               <div className="marquee-content-list">
                 <Image 
-                  src="/images/clients/mfinity.svg" 
-                  alt="mfinity" 
+                  src="/images/clients/sudamas_misal_house.webp" 
+                  alt="Sudamas Misal House - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="inline-block dark:hidden"
                 />
                 <Image 
-                  src="/images/clients/mfinity-dark.svg" 
-                  alt="mfinity" 
+                  src="/images/clients/sudamas_misal_house.webp" 
+                  alt="Sudamas Misal House - MenuMitra Restaurant Partner" 
                   width={120} 
                   height={40} 
                   className="hidden dark:inline-block"
@@ -159,6 +160,21 @@ const ClientSection: React.FC = () => {
           <Link href="/contact" className="btn-outline">
             Start your Journey
           </Link>
+        </div>
+        
+        {/* SEO-friendly additional content */}
+        <div className="mt-10 text-center max-w-[800px] mx-auto px-4">
+          <p className="text-sm text-light mb-4">
+            <strong>MenuMitra Restaurant Management Software</strong> - Trusted by leading restaurants, cafes, and food establishments across India. 
+            Our comprehensive digital solutions help restaurants streamline operations, increase revenue, and enhance customer experience.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-light">
+            <span>✓ Restaurant POS System</span>
+            <span>✓ Online Order Management</span>
+            <span>✓ Digital Menu Solutions</span>
+            <span>✓ Customer Analytics</span>
+            <span>✓ Inventory Management</span>
+          </div>
         </div>
       </div>
     </section>

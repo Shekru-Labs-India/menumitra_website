@@ -8,7 +8,7 @@ import MobileDeviceOverlay from '@/components/atoms/MobileDeviceOverlay';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero bg-gray dark:bg-dark overflow-hidden relative min-h-screen flex items-center justify-center pt-[250px] pb-16 md:pt-32 md:pb-28 lg:pt-40 lg:pb-32" id="scene">
+    <section className="hero relative lg:pt-[260px] max-lg:pt-[160px] pb-[140px] overflow-hidden lg:overflow-visible">
       {/* Background decoration - Desktop SVG graphs */}
       <div className="absolute top-0 left-0 w-full max-lg:hidden">
         <Image 
@@ -55,9 +55,9 @@ const HeroSection: React.FC = () => {
         />
       </div>
       
-      <div className="container w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12  relative z-10 gap-8 md:gap-10 lg:gap-12 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
-          <div className="md:col-span-8 order-1 md:order-1">
+      <div className="container">
+        <div className="grid grid-cols-12 gap-5 items-end relative z-10 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          <div className="max-md:col-span-full md:col-span-7 max-md:mb-[350px]" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
             <p className="mb-4 md:mb-6 lg:mb-8 font-medium uppercase text-base md:text-lg lg:text-xl">Join 15,000+ Restaurants Using MenuMitra</p>
             <h1 className="mb-8 md:mb-10 lg:mb-12">
               <SplitText 
@@ -99,7 +99,8 @@ const HeroSection: React.FC = () => {
             </p>
           </div>
           
-          <div className="md:col-span-4 order-2 md:order-2 relative md:z-10">
+          {/* Right: visuals */}
+          <div className="max-md:col-span-full md:col-span-5 relative md:z-10" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
             {/* Background blur effects */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
               <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
@@ -111,12 +112,57 @@ const HeroSection: React.FC = () => {
             <div className="absolute left-1/2 -bottom-150 p-[350px] -translate-x-1/2 bg-contain w-full h-full bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
             
             <div className="w-full h-full">
-              {/* Complete dashboard with phone overlay - reusable component */}
-              <MobileDeviceOverlay 
-                position="bottom-right"
-                size="md"
-                showMainImage={true}
-              />
+              <div className="relative w-full h-full min-h-[200px] md:min-h-[500px] lg:min-h-[600px]">
+
+                {/* BEHIND CARD: make it absolute so it sits behind phone */}
+                <div
+                  className="
+                    behind-card
+                    absolute
+                    right-6
+                    lg:right-24
+                    top-8
+                    w-[320px]
+                    md:w-[380px]
+                    lg:w-[420px]
+                    aspect-[4/3]
+                    rounded-medium
+                    border-2
+                    border-dashed
+                    bg-white/60
+                    shadow-lg
+                    pointer-events-none
+                  "
+                  style={{ zIndex: 10 }}
+                >
+                  <img
+                    src="/images/payment/payment-hero.png"
+                    alt="MenuMitra QR menu dashboard"
+                    className="w-full h-full object-cover object-center rounded-medium"
+                  />
+                </div>
+
+                {/* PHONE_WRAPPER: absolute, explicit z-index, and use left-1/2 + -translate-x-1/2 for mobile centering */}
+                <div
+                  className="
+                    absolute
+                    right-4 bottom-4
+                    lg:right-6 lg:bottom-10
+                    w-[180px] md:w-[220px] lg:w-[285px]
+                    lg:aspect-auto
+                    transform
+                    max-md:left-1/2 max-md:-translate-x-1/2
+                  "
+                  style={{ zIndex: 20 }}
+                >
+                  <img
+                    src="/images/payment/payment-hero-device.png"
+                    alt="MenuMitra mobile app interface"
+                    className="inline-block rounded-t-medium w-full h-auto shadow-lg"
+                  />
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
