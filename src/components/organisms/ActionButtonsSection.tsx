@@ -11,7 +11,7 @@ const ActionButtonsSection: React.FC = () => {
       <div className="container w-full px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-4">
           <button 
-            className="cursor-target px-8 py-4 text-red-600 rounded-lg transition-colors text-lg font-semibold border flex items-center gap-2"
+            className="cursor-target px-4 py-2 text-red-600 rounded-full transition-colors text-lg font-semibold border flex items-center gap-2"
             style={{
               backgroundColor: 'rgba(239, 68, 68, 0.1)',
               borderColor: 'rgba(239, 68, 68, 0.2)',
@@ -28,7 +28,7 @@ const ActionButtonsSection: React.FC = () => {
             Stop Wastage
           </button>
           <button 
-            className="cursor-target px-8 py-4 text-green-600 rounded-lg transition-colors text-lg font-semibold border flex items-center gap-2"
+            className="cursor-target px-4 py-2 text-green-600 rounded-full transition-colors text-lg font-semibold border flex items-center gap-2"
             style={{
               backgroundColor: 'rgba(34, 197, 94, 0.1)',
               borderColor: 'rgba(34, 197, 94, 0.2)',
@@ -45,7 +45,7 @@ const ActionButtonsSection: React.FC = () => {
             Recover Revenue
           </button>
           <button 
-            className="cursor-target px-8 py-4 text-blue-600 rounded-lg transition-colors text-lg font-semibold border flex items-center gap-2"
+            className="cursor-target px-4 py-2 text-blue-600 rounded-full transition-colors text-lg font-semibold border flex items-center gap-2"
             style={{
               backgroundColor: 'rgba(59, 130, 246, 0.1)',
               borderColor: 'rgba(59, 130, 246, 0.2)',

@@ -162,6 +162,33 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
       // Hide the default cursor
       document.body.style.cursor = 'none';
       
+      // Detect color from target element and apply chameleon effect
+      const detectAndApplyColor = () => {
+        const computedStyle = window.getComputedStyle(target);
+        const textColor = computedStyle.color;
+        
+        // Extract RGB values from computed color
+        const rgbMatch = textColor.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/);
+        if (rgbMatch) {
+          const [, r, g, b] = rgbMatch.map(Number);
+          const color = `rgb(${r}, ${g}, ${b})`;
+          
+          // Apply color to dot and corners
+          if (dotRef.current) {
+            gsap.to(dotRef.current, { backgroundColor: color, duration: 0.3 });
+          }
+          
+          if (cornersRef.current) {
+            const corners = Array.from(cornersRef.current);
+            corners.forEach(corner => {
+              gsap.to(corner, { borderColor: color, duration: 0.3 });
+            });
+          }
+        }
+      };
+      
+      detectAndApplyColor();
+      
       gsap.killTweensOf(cursorRef.current, 'rotation');
       spinTl.current?.pause();
       gsap.set(cursorRef.current, { rotation: 0 });
@@ -253,9 +280,19 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
         // Restore the default cursor
         document.body.style.cursor = originalCursor;
 
+        // Reset cursor colors to default black
+        if (dotRef.current) {
+          gsap.to(dotRef.current, { backgroundColor: '#000', duration: 0.3 });
+        }
+        
         if (cornersRef.current) {
           const corners = Array.from(cornersRef.current);
           gsap.killTweensOf(corners);
+          
+          // Reset corner colors to black
+          corners.forEach(corner => {
+            gsap.to(corner, { borderColor: '#000', duration: 0.3 });
+          });
 
           const { cornerSize } = constants;
           const positions = [
