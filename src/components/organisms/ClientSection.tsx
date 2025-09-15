@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
+import GraphBackground from '@/components/atoms/GraphBackground';
 
 const ClientSection: React.FC = () => {
   useEffect(() => {
@@ -23,8 +24,14 @@ const ClientSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="client pt-[140px] pb-[145px] max-lg:py-20">
-      <div className="container overflow-hidden max-lg:!px-0">
+    <section className="client pt-[140px] pb-[145px] max-lg:py-20 relative">
+      {/* Graph Background */}
+      <GraphBackground 
+        className="top-10" 
+        opacity={0.15}
+      />
+      
+      <div className="container overflow-hidden max-lg:!px-0 relative z-10">
         <div className="text-center max-w-[550px] px-[10px] mx-auto max-lg:px-2.5">
           <h2 className="mb-10">The world&apos;s best companies trust aplio.</h2>
           <p className="text-light mb-15">Trusted by thousands of companies across 50+ countries</p>
