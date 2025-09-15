@@ -6,7 +6,7 @@ import { SplitText } from '@/components/reactbits';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero bg-gray dark:bg-dark overflow-hidden relative max-lg:pt-[160px] max-lg:pb-25 pt-[230px] pb-[140px] max-md:pb-[70px]" id="scene">
+    <section className="hero bg-gray dark:bg-dark overflow-hidden relative min-h-screen flex items-center justify-center pt-[250px] pb-16 md:pt-32 md:pb-28 lg:pt-40 lg:pb-32" id="scene">
       {/* Background decoration - Desktop SVG graphs */}
       <div className="absolute top-0 left-0 w-full max-lg:hidden">
         <Image 
@@ -53,27 +53,51 @@ const HeroSection: React.FC = () => {
         />
       </div>
       
-      <div className="container">
-        <div className="grid grid-cols-12 items-center relative z-10 max-lg:gap-y-10 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
-          <div className="col-span-12 md:col-span-6 ">
-            <p className="max-lg:mb-4 mb-8 font-medium uppercase">Join 15,000+ Restaurants</p>
-            <h1 className="mb-12 max-md:mb-8">
-              <SplitText text="Transform your" delay={0.2} duration={0.8} className="block" />
-              <SplitText text="Restaurant" delay={0.8} duration={0.8} className="block" />
-              <SplitText text="with AI-powered menus." delay={1.2} duration={0.8} className="block" />
+      <div className="container w-full px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 items-center relative z-10 gap-8 md:gap-10 lg:gap-12 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          <div className="md:col-span-8 order-1 md:order-1">
+            <p className="mb-4 md:mb-6 lg:mb-8 font-medium uppercase text-base md:text-lg lg:text-xl">Join 15,000+ Restaurants Boosting Sales</p>
+            <h1 className="mb-8 md:mb-10 lg:mb-12">
+              <SplitText 
+                text="Boost Sales by 30%" 
+                delay={0.2} 
+                duration={0.8} 
+                className="block" 
+                fontWeight="font-black"
+                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                textColor="text-primary"
+                letterSpacing="tracking-tight"
+                lineHeight="leading-tight"
+              />
+              <SplitText 
+                text="with Smart QR Menus" 
+                delay={0.8} 
+                duration={0.8} 
+                className="block" 
+                fontWeight="font-black"
+                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                textColor="text-gray-900 dark:text-white"
+                letterSpacing="tracking-tight"
+                lineHeight="leading-tight"
+              />
+              <SplitText 
+                text="& AI Analytics" 
+                delay={1.2} 
+                duration={0.8} 
+                className="block" 
+                fontWeight="font-black"
+                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                textColor="text-primary"
+                letterSpacing="tracking-tight"
+                lineHeight="leading-tight"
+              />
             </h1>
-            <p className="mb-12 max-md:mb-8 max-w-[590px]">
-              Stop losing customers to outdated menus. MenuMitra's AI-powered digital menu platform helps you create stunning QR code menus, manage orders seamlessly, track analytics in real-time, and boost sales by 30%. Join thousands of restaurants already using our smart menu solution. Start your free trial today and see results in 24 hours.
+            <p className="mb-8 md:mb-10 lg:mb-12 text-base sm:text-lg md:text-xl lg:text-2xl max-w-full md:max-w-[590px] leading-relaxed">
+              Transform your restaurant with MenuMitra's revolutionary QR code menu system. Our AI-powered platform creates contactless digital menus, automates order management, provides real-time sales analytics, and increases revenue by 30%. Join 15,000+ restaurants already boosting profits with smart menu technology. Start your free trial today - see results in 24 hours!
             </p>
-            <form>
-              <div className="grid grid-cols-12 items-center border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour pl-4 sm:pl-5 pe-1 pt-1 pb-1 max-w-[520px] w-full focus-within:border-primary dark:focus-within:border-primary  duration-300 transition-all">
-                <input type="text" placeholder="Your restaurant email address" className=" col-span-8 xs:col-span-8 bg-transparent outline-none placeholder:text-light dark:placeholder:text-[#A1A49D] text-[#A1A49D] text-light focus:outline-none  leading-[1.75]" />
-                <button className="btn col-span-4 xs:col-span-4 max-lg:!px-3 max-lg:!text-sm ">Start Free Trial</button>
-              </div>
-            </form>
           </div>
-          <div className="col-span-12 md:col-span-6 ">
-            <div className="relative w-full min-h-[530px] max-md:min-h-[400px] lg:ml-15">
+          <div className="md:col-span-4 order-2 md:order-2 flex items-center justify-center">
+            <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
               {/* Main circle - center */}
               <div className="absolute !left-1/2 !top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image src="/images/hero/hero-circle.png" alt="hero Image" width={400} height={400} className="inline-block dark:hidden" />

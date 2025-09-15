@@ -4,9 +4,17 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import GraphBackground from '@/components/atoms/GraphBackground';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faDatabase, 
+  faChartBar, 
+  faSyncAlt,
+  faCheck
+} from '@fortawesome/free-solid-svg-icons';
 
 interface FeatureItem {
   text: string;
+  icon: any;
 }
 
 interface DataIntegrationsSectionProps {
@@ -14,9 +22,9 @@ interface DataIntegrationsSectionProps {
 }
 
 const defaultFeatures: FeatureItem[] = [
-  { text: 'Guided Payment Procurement' },
-  { text: 'Guided Payment Procurement' },
-  { text: 'Guided Payment Procurement' }
+  { text: 'Real-Time Analytics Dashboard', icon: faChartBar },
+  { text: 'POS System Integration', icon: faDatabase },
+  { text: 'Automatic Data Synchronization', icon: faSyncAlt }
 ];
 
 const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({ 
@@ -35,22 +43,25 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-end">
           <div>
             <p className="section-tagline">Data Integrations</p>
-            <h2 className="max-lg:mb-4 mb-8">A strong vision is crucial for the analysis of wealth.</h2>
+            <h2 className="max-lg:mb-4 mb-8">Seamless Integration with Your Restaurant Systems</h2>
             <p className="max-lg:mb-5 mb-11">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After magazine.
+              Connect MenuMitra with your existing POS systems, payment processors, and analytics tools for a unified restaurant management experience.
             </p>
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4">
               {defaultFeatures.map((feature, index) => (
-                <li key={index} className="flex items-center gap-x-2">
-                  <span className="relative w-7 h-7 rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center">
-                    <i className="fa-solid fa-check text-paragraph dark:text-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                <li key={index} className="flex items-center gap-x-3">
+                  <span className="relative w-8 h-8 rounded-full bg-primary/10 dark:bg-primary/20 shadow-icon flex items-center justify-center">
+                    <FontAwesomeIcon 
+                      icon={feature.icon} 
+                      className="text-primary text-sm"
+                    />
                   </span>
                   <span className="dark:text-white font-jakarta_sans font-medium">{feature.text}</span>
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn">
-              Start Your Journey
+            <Link href="/book-demo" className="btn">
+              See Integration Demo
             </Link>
           </div>
           

@@ -9,6 +9,15 @@ interface SplitTextProps {
   duration?: number;
   className?: string;
   as?: React.ElementType;
+  fontWeight?: string;
+  fontSize?: string;
+  textColor?: string;
+  letterSpacing?: string;
+  lineHeight?: string;
+  textTransform?: string;
+  textAlign?: string;
+  fontStyle?: string;
+  textDecoration?: string;
 }
 
 export default function SplitText({
@@ -17,6 +26,15 @@ export default function SplitText({
   duration = 0.6,
   className = "",
   as: Component = "div",
+  fontWeight = "font-normal",
+  fontSize = "",
+  textColor = "",
+  letterSpacing = "",
+  lineHeight = "",
+  textTransform = "",
+  textAlign = "",
+  fontStyle = "",
+  textDecoration = "",
 }: SplitTextProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -53,8 +71,26 @@ export default function SplitText({
     </span>
   ));
 
+  // Build the complete className string with all text properties
+  const buildClassName = () => {
+    const classes = [
+      className,
+      fontWeight,
+      fontSize,
+      textColor,
+      letterSpacing,
+      lineHeight,
+      textTransform,
+      textAlign,
+      fontStyle,
+      textDecoration,
+    ].filter(Boolean); // Remove empty strings
+    
+    return classes.join(' ');
+  };
+
   return (
-    <Component ref={containerRef} className={className}>
+    <Component ref={containerRef} className={buildClassName()}>
       {splitText}
     </Component>
   );
