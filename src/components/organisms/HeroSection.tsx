@@ -57,7 +57,8 @@ const HeroSection: React.FC = () => {
       
       <div className="container">
         <div className="grid grid-cols-12 gap-5 items-end relative z-10 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
-          <div className="max-md:col-span-full md:col-span-7 max-md:mb-[350px]" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          {/* Text Content - More columns */}
+          <div className="max-md:col-span-full md:col-span-8 lg:col-span-9 max-md:mb-[350px]" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
             <p className="mb-4 md:mb-6 lg:mb-8 font-medium uppercase text-base md:text-lg lg:text-xl">Join 15,000+ Restaurants Using MenuMitra</p>
             <h1 className="mb-8 md:mb-10 lg:mb-12">
               <SplitText 
@@ -99,8 +100,8 @@ const HeroSection: React.FC = () => {
             </p>
           </div>
           
-          {/* Right: visuals */}
-          <div className="max-md:col-span-full md:col-span-5 relative md:z-10" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          {/* Right: visuals - Fewer columns */}
+          <div className="max-md:col-span-full md:col-span-4 lg:col-span-4 relative md:z-10" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
             {/* Background blur effects */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
               <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
@@ -112,43 +113,17 @@ const HeroSection: React.FC = () => {
             <div className="absolute left-1/2 -bottom-150 p-[350px] -translate-x-1/2 bg-contain w-full h-full bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
             
             <div className="w-full h-full">
-              <div className="relative w-full h-full min-h-[200px] md:min-h-[500px] lg:min-h-[600px]">
+              <div className="relative w-full h-full min-h-[200px] md:min-h-[400px] lg:min-h-[500px]">
 
-                {/* BEHIND CARD: make it absolute so it sits behind phone */}
-                <div
-                  className="
-                    behind-card
-                    absolute
-                    right-6
-                    lg:right-24
-                    top-8
-                    w-[320px]
-                    md:w-[380px]
-                    lg:w-[420px]
-                    aspect-[4/3]
-                    rounded-medium
-                    border-2
-                    border-dashed
-                    bg-white/60
-                    shadow-lg
-                    pointer-events-none
-                  "
-                  style={{ zIndex: 10 }}
-                >
-                  <img
-                    src="/images/payment/payment-hero.png"
-                    alt="MenuMitra QR menu dashboard"
-                    className="w-full h-full object-cover object-center rounded-medium"
-                  />
-                </div>
+          
 
-                {/* PHONE_WRAPPER: absolute, explicit z-index, and use left-1/2 + -translate-x-1/2 for mobile centering */}
+                {/* PHONE_WRAPPER: Right end */}
                 <div
                   className="
                     absolute
-                    right-4 bottom-4
-                    lg:right-6 lg:bottom-10
-                    w-[180px] md:w-[220px] lg:w-[285px]
+                    right-0 bottom-4
+                    lg:right-0 lg:bottom-8
+                    w-[200px] md:w-[240px] lg:w-[300px]
                     lg:aspect-auto
                     transform
                     max-md:left-1/2 max-md:-translate-x-1/2
