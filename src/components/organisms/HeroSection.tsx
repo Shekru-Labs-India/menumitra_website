@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { SplitText } from '@/components/reactbits';
+import { SplitText, TargetCursor } from '@/components/reactbits';
+import ActionButtonsSection from './ActionButtonsSection';
 
 const HeroSection: React.FC = () => {
   return (
@@ -96,6 +97,7 @@ const HeroSection: React.FC = () => {
               Transform your restaurant with MenuMitra's revolutionary QR code menu system. Our AI-powered platform creates contactless digital menus, automates order management, provides real-time sales analytics, and increases revenue by 30%. Join 15,000+ restaurants already boosting profits with smart menu technology. Start your free trial today - see results in 24 hours!
             </p>
           </div>
+          
           <div className="md:col-span-4 order-2 md:order-2 flex items-center justify-center">
             <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
               {/* Main circle - center */}
@@ -105,7 +107,7 @@ const HeroSection: React.FC = () => {
               </div>
               
               {/* Policy card - top left with parallax effect */}
-              <div className="absolute max-lg:w-[220px] max-lg:aspect-video max-lg:!left-0 max-md:!top-5 !top-15 !-left-[40px] lg:!-top-[20px] parallax-effect aos-init aos-animate" parallax-value="-1" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+              <div className="cursor-target absolute max-lg:w-[220px] max-lg:aspect-video max-lg:!left-0 max-md:!top-5 !top-15 !-left-[40px] lg:!-top-[20px] parallax-effect aos-init aos-animate" parallax-value="-1" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
                 <Image src="/images/hero/hero-policy.png" alt="hero Image" width={220} height={120} className="inline-block dark:hidden" />
                 <Image src="/images/hero/hero-policy-dark.png" alt="hero Image" width={220} height={120} className="hidden dark:inline-block" />
               </div>
@@ -117,14 +119,21 @@ const HeroSection: React.FC = () => {
               </div>
               
               {/* Chart card - bottom right with parallax effect */}
-              <div className="absolute max-lg:w-[196px] !-right-5 !-bottom-0 max-md:!-bottom-5 max-md:!-right-5 lg:!not-sr-only-bottom-[45px] lg:right-0 xl:right-[30px] parallax-effect aos-init aos-animate" parallax-value="2" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+              <div className="cursor-target absolute max-lg:w-[196px] !-right-5 !-bottom-0 max-md:!-bottom-5 max-md:!-right-5 lg:!not-sr-only-bottom-[45px] lg:right-0 xl:right-[30px] parallax-effect aos-init aos-animate" parallax-value="2" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
                 <Image src="/images/hero/hero-chart.png" alt="hero Image" width={196} height={120} className="inline-block dark:hidden" />
                 <Image src="/images/hero/hero-chart-dark.png" alt="hero Image" width={196} height={120} className="hidden dark:inline-block" />
               </div>
             </div>
           </div>
         </div>
+        <ActionButtonsSection />
       </div>
+      
+      {/* Target Cursor for interactive elements */}
+      <TargetCursor 
+        targetSelector=".cursor-target"
+        spinDuration={2}
+      />
     </section>
   );
 };

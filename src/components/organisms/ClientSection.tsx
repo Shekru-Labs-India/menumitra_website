@@ -24,7 +24,7 @@ const ClientSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="client pt-[140px] pb-[145px] max-lg:py-20 relative">
+    <section id="client-section" className="client pt-[140px] pb-[145px] max-lg:py-20 relative">
       {/* Graph Background */}
       <GraphBackground 
         className="top-10" 
