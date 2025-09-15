@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "MenuMitra - Revolutionize Your Restaurant Operations",
-  description: "From digital menus to order management, MenuMitra empowers restaurants to deliver exceptional dining experiences. Boost efficiency, reduce costs, and increase customer satisfaction with our all-in-one platform.",
+  title: "MenuMitra - Transform Your Restaurant with Smart Menus",
+  description: "Stop losing customers to outdated menus. MenuMitra's AI-powered platform helps you create stunning digital menus, manage orders seamlessly, and boost sales by 30%. Start your free trial today and see results in 24 hours.",
   icons: {
     icon: '/images/favicons/favicon-32x32.png',
     apple: '/images/favicons/apple-icon-180x180.png',
@@ -30,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lato.variable} antialiased`}
       >
         <Header />
         {children}

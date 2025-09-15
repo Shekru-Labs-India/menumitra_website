@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react';
+import { SplitText } from '@/components/reactbits';
 
 const HeroSection: React.FC = () => {
   return (
@@ -57,17 +58,17 @@ const HeroSection: React.FC = () => {
           <div className="col-span-12 md:col-span-6 ">
             <p className="max-lg:mb-4 mb-8 font-medium uppercase">Join 15,000+ Restaurants</p>
             <h1 className="mb-12 max-md:mb-8">
-              Revolutionize your
-              <span className="font-playfair italic inline-block px-5 border-2 rounded-[88px] pt-0.5 pb-2.5 leading-none border-paragraph bg-[#D9D9D900] dark:border-[#F0F3EA]">Restaurant</span>
-              operations.
+              <SplitText text="Transform your" delay={0.2} duration={0.8} className="block" />
+              <SplitText text="Restaurant" delay={0.8} duration={0.8} className="block" />
+              <SplitText text="with smart menus." delay={1.2} duration={0.8} className="block" />
             </h1>
             <p className="mb-12 max-md:mb-8 max-w-[590px]">
-              From digital menus to order management, MenuMitra empowers restaurants to deliver exceptional dining experiences. Boost efficiency, reduce costs, and increase customer satisfaction with our all-in-one platform.
+              Stop losing customers to outdated menus. MenuMitra's AI-powered platform helps you create stunning digital menus, manage orders seamlessly, and boost sales by 30%. Start your free trial today and see results in 24 hours.
             </p>
             <form>
               <div className="grid grid-cols-12 items-center border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour pl-4 sm:pl-5 pe-1 pt-1 pb-1 max-w-[520px] w-full focus-within:border-primary dark:focus-within:border-primary  duration-300 transition-all">
                 <input type="text" placeholder="Your restaurant email address" className=" col-span-8 xs:col-span-8 bg-transparent outline-none placeholder:text-light dark:placeholder:text-[#A1A49D] text-[#A1A49D] text-light focus:outline-none  leading-[1.75]" />
-                <button className="btn col-span-4 xs:col-span-4 max-lg:!px-3 max-lg:!text-sm ">Get Started</button>
+                <button className="btn col-span-4 xs:col-span-4 max-lg:!px-3 max-lg:!text-sm ">Start Free Trial</button>
               </div>
             </form>
           </div>

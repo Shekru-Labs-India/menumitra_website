@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { CountUp } from '@/components/reactbits';
 
 interface StatItem {
   value: number;
@@ -43,10 +44,13 @@ const StatsSection: React.FC<StatsSectionProps> = ({
             {stats.map((stat, index) => (
               <div key={index} className="flex flex-col items-center justify-center relative">
                 <h2 className="text-[48px]">
-                  <span className="counter" data-value={stat.value}>
-                    {stat.value}
-                  </span>
-                  <span className="percent">{stat.suffix}</span>
+                  <CountUp 
+                    end={stat.value} 
+                    suffix={stat.suffix}
+                    duration={2}
+                    delay={index * 0.2}
+                    className="counter"
+                  />
                 </h2>
                 <p className="font-jakarta_sans text-light">{stat.label}</p>
               </div>
