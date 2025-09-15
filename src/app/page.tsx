@@ -7,11 +7,12 @@ import TestimonialsSection from "@/components/organisms/TestimonialsSection";
 import BlogSection from "@/components/organisms/BlogSection";
 import FooterSection from "@/components/organisms/FooterSection";
 import TopIntegrationSection from "@/components/organisms/TopIntegrationSection";
+import HeroSection from "@/components/organisms/HeroSection";
 
 export default function Home() {
   return (
     <div>
-      {/* HeroSection is already included in layout.tsx */}
+      <HeroSection />
       <ClientSection />
       <ServicesSection />
       <StatsSection />

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
-import HeroSection from "@/components/organisms/HeroSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aplio - Make your Finance more efficient",
-  description: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it",
+  title: "MenuMitra - Revolutionize Your Restaurant Operations",
+  description: "From digital menus to order management, MenuMitra empowers restaurants to deliver exceptional dining experiences. Boost efficiency, reduce costs, and increase customer satisfaction with our all-in-one platform.",
   icons: {
     icon: '/images/favicons/favicon-32x32.png',
     apple: '/images/favicons/apple-icon-180x180.png',
@@ -34,7 +33,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <HeroSection />
         {children}
       </body>
     </html>
