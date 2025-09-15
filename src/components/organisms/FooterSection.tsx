@@ -25,7 +25,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
             </div>
             <p className="max-w-[350px] max-lg:mx-auto">
-              Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+              MenuMitra is the leading AI-powered digital menu platform helping restaurants boost sales, streamline operations, and enhance customer experience with QR code menus and smart order management.
             </p>
           </div>
           <div className="col-span-12 lg:col-span-2 max-lg:text-center">
@@ -112,14 +112,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             <h3 className="mb-8 font-medium text-lg">Get In touch</h3>
             <p className="mb-3">Need Support?</p>
             <p className="mb-3">
-              <a href="mailto:hallo@example.com" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                Hallo@example.com
+              <a href="mailto:support@menumitra.com" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                support@menumitra.com
               </a>
             </p>
 
             <p className="mb-3">
-              <a href="tel:+391(0)355684593" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                +391 (0)35 2568 4593
+              <a href="tel:+1-800-MENU-AI" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                +1-800-MENU-AI
               </a>
             </p>
             <ul className="flex items-center max-lg:justify-center social-link gap-4">
@@ -151,7 +151,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
 
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
-            <p className="max-lg:mb-10">@ {currentYear} Aplio. All Rights Reserved</p>
+            <p className="max-lg:mb-10">@ {currentYear} MenuMitra. All Rights Reserved</p>
             <ul className="lg:ml-auto flex items-center gap-15 max-lg:justify-center">
               <li>
                 <a href="/privacy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">

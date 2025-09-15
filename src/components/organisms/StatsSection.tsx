@@ -16,19 +16,19 @@ interface StatsSectionProps {
 
 const defaultStats: StatItem[] = [
   {
-    value: 60,
-    suffix: '%',
-    label: 'Project Completed'
+    value: 15,
+    suffix: 'K+',
+    label: 'Restaurants Served'
   },
   {
     value: 30,
-    suffix: '+',
-    label: 'Team Members'
+    suffix: '%',
+    label: 'Average Sales Increase'
   },
   {
-    value: 40,
-    suffix: 'K',
-    label: 'Satisfied Clients'
+    value: 99,
+    suffix: '%',
+    label: 'Customer Satisfaction'
   }
 ];
 

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /book-demo
+Allow: /about
+Allow: /services
+Allow: /pricing
+Allow: /contact
+Allow: /blog
+
+# Sitemap location
+Sitemap: https://menumitra.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

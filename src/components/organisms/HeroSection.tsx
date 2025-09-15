@@ -60,10 +60,10 @@ const HeroSection: React.FC = () => {
             <h1 className="mb-12 max-md:mb-8">
               <SplitText text="Transform your" delay={0.2} duration={0.8} className="block" />
               <SplitText text="Restaurant" delay={0.8} duration={0.8} className="block" />
-              <SplitText text="with smart menus." delay={1.2} duration={0.8} className="block" />
+              <SplitText text="with AI-powered menus." delay={1.2} duration={0.8} className="block" />
             </h1>
             <p className="mb-12 max-md:mb-8 max-w-[590px]">
-              Stop losing customers to outdated menus. MenuMitra's AI-powered platform helps you create stunning digital menus, manage orders seamlessly, and boost sales by 30%. Start your free trial today and see results in 24 hours.
+              Stop losing customers to outdated menus. MenuMitra's AI-powered digital menu platform helps you create stunning QR code menus, manage orders seamlessly, track analytics in real-time, and boost sales by 30%. Join thousands of restaurants already using our smart menu solution. Start your free trial today and see results in 24 hours.
             </p>
             <form>
               <div className="grid grid-cols-12 items-center border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour pl-4 sm:pl-5 pe-1 pt-1 pb-1 max-w-[520px] w-full focus-within:border-primary dark:focus-within:border-primary  duration-300 transition-all">

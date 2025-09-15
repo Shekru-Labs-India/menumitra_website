@@ -20,12 +20,11 @@ const ServicesSection: React.FC = () => {
           <p className="section-tagline max-lg:text-center">Our Services</p>
           <div className="block max-lg:text-center lg:flex">
             <h2 className="max-lg:mb-5">
-              The world&apos;s best companies <br />
-              trust aplio.
+              Complete Digital Menu <br />
+              Solutions for Restaurants
             </h2>
             <p className="max-w-[520px] mx-auto lg:ml-auto">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not Latin, though it
-              looks like it
+              Transform your restaurant operations with our comprehensive suite of AI-powered tools designed to boost sales, streamline operations, and enhance customer experience.
             </p>
           </div>
         </div>
@@ -55,9 +54,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Investment Banks</h3>
+                  <h3 className="mb-2.5">QR Code Digital Menus</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Create stunning, contactless QR code menus that customers can access instantly. No app downloads required - just scan and order.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>
@@ -81,9 +80,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Sales & Trading</h3>
+                  <h3 className="mb-2.5">AI-Powered Order Management</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Streamline your kitchen operations with intelligent order routing, real-time updates, and automated inventory management.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>
@@ -107,9 +106,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Mortgage Loans</h3>
+                  <h3 className="mb-2.5">Real-Time Analytics Dashboard</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Track sales performance, popular items, customer preferences, and revenue insights with comprehensive analytics.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>
@@ -133,9 +132,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Finance Analysis</h3>
+                  <h3 className="mb-2.5">Multi-Location Management</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Manage multiple restaurant locations from a single dashboard with centralized menu updates and performance tracking.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>
@@ -159,9 +158,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Increased Efficiency</h3>
+                  <h3 className="mb-2.5">Customer Experience Enhancement</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Provide seamless ordering experience with instant menu updates, allergen information, and personalized recommendations.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>
@@ -185,9 +184,9 @@ const ServicesSection: React.FC = () => {
                   className="hidden dark:inline-block mb-6"
                 />
                 <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Fundraising Advice</h3>
+                  <h3 className="mb-2.5">24/7 Customer Support</h3>
                 </Link>
-                <p className="mb-6">Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.</p>
+                <p className="mb-6">Get dedicated support from our restaurant technology experts to ensure smooth operations and maximum ROI.</p>
                 <Link href="/services-single" className="btn-outline btn-sm">
                   Read More
                 </Link>

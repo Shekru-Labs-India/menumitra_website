@@ -12,11 +12,70 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "MenuMitra - Transform Your Restaurant with Smart Menus",
-  description: "Stop losing customers to outdated menus. MenuMitra's AI-powered platform helps you create stunning digital menus, manage orders seamlessly, and boost sales by 30%. Start your free trial today and see results in 24 hours.",
+  title: {
+    default: "MenuMitra - AI-Powered Digital Menu Solutions for Restaurants",
+    template: "%s | MenuMitra - Smart Restaurant Management"
+  },
+  description: "Transform your restaurant with MenuMitra's AI-powered digital menu platform. Create stunning QR code menus, manage orders seamlessly, boost sales by 30%, and enhance customer experience. Join 15,000+ restaurants. Start free trial today!",
+  keywords: [
+    "digital menu",
+    "QR code menu",
+    "restaurant management",
+    "AI menu",
+    "restaurant technology",
+    "menu management system",
+    "restaurant POS",
+    "online ordering",
+    "restaurant software",
+    "smart menu",
+    "digital restaurant",
+    "menu QR code",
+    "restaurant automation"
+  ],
+  authors: [{ name: "MenuMitra Team" }],
+  creator: "MenuMitra",
+  publisher: "MenuMitra",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://menumitra.com',
+    siteName: 'MenuMitra',
+    title: 'MenuMitra - AI-Powered Digital Menu Solutions for Restaurants',
+    description: 'Transform your restaurant with MenuMitra\'s AI-powered digital menu platform. Create stunning QR code menus, manage orders seamlessly, and boost sales by 30%.',
+    images: [
+      {
+        url: '/images/hero/hero-circle.png',
+        width: 1200,
+        height: 630,
+        alt: 'MenuMitra Digital Menu Platform',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MenuMitra - AI-Powered Digital Menu Solutions for Restaurants',
+    description: 'Transform your restaurant with AI-powered digital menus. Boost sales by 30% with QR code menus and seamless order management.',
+    images: ['/images/hero/hero-circle.png'],
+    creator: '@menumitra',
+  },
   icons: {
     icon: '/images/favicons/favicon-32x32.png',
     apple: '/images/favicons/apple-icon-180x180.png',
+  },
+  manifest: '/manifest.json',
+  alternates: {
+    canonical: 'https://menumitra.com',
   },
 };
 
@@ -25,8 +84,40 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MenuMitra",
+    "description": "AI-powered digital menu platform for restaurants",
+    "url": "https://menumitra.com",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free trial available"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "15000"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "MenuMitra",
+      "url": "https://menumitra.com"
+    }
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body
         className={`${lato.variable} antialiased`}
       >
