@@ -14,20 +14,16 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
       <div className="container">
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center">
           <div className="col-span-12 lg:col-span-6">
-            <Image
-              src="/images/logo.svg"
-              alt="logo"
-              width={120}
-              height={40}
-              className="inline-block dark:hidden mb-10"
-            />
-            <Image
-              src="/images/logo-light-1.svg"
-              alt="logo dark version"
-              width={120}
-              height={40}
-              className="hidden dark:inline-block mb-10"
-            />
+            <div className="flex items-center gap-4 mb-10">
+              <Image
+                src="/images/mm/mm.png"
+                alt="MenuMitra logo"
+                width={60}
+                height={60}
+                className="w-auto h-auto"
+              />
+              <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
+            </div>
             <p className="max-w-[350px] max-lg:mx-auto">
               Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
             </p>

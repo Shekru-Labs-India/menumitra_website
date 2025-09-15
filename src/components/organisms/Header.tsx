@@ -79,21 +79,15 @@ const Header: React.FC = () => {
       <nav className="container flex items-center relative">
         {/* Logo */}
         <div className="nav-logo xl:min-w-[266px]">
-          <Link href="/">
+          <Link href="/" className="flex items-center gap-3">
             <Image 
-              src="/images/logo.svg" 
-              alt="logo" 
-              width={70} 
-              height={29} 
-              className="dark:hidden"
+              src="/images/mm/mm.png" 
+              alt="MenuMitra logo" 
+              width={40} 
+              height={40} 
+              className="w-auto h-auto"
             />
-            <Image 
-              src="/images/logo-light-1.svg" 
-              alt="logo dark version" 
-              width={70} 
-              height={29} 
-              className="hidden dark:inline-block"
-            />
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
           </Link>
         </div>
 
