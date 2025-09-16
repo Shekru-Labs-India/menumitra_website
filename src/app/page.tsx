@@ -6,9 +6,8 @@ import SolutionSection from "@/components/organisms/SolutionSection";
 import TestimonialsSection from "@/components/organisms/TestimonialsSection";
 import BlogSection from "@/components/organisms/BlogSection";
 import FooterSection from "@/components/organisms/FooterSection";
-import TopIntegrationSection from "@/components/organisms/TopIntegrationSection";
 import HeroSection from "@/components/organisms/HeroSection";
-
+import CoreFeaturesSection from "@/components/organisms/CoreFeaturesSection";
 export default function Home() {
   return (
     <div>
@@ -18,7 +17,7 @@ export default function Home() {
       <StatsSection />
       <DataIntegrationsSection />
       <SolutionSection />
-      <TopIntegrationSection />
+      <CoreFeaturesSection />
       <TestimonialsSection />
       <BlogSection />
       <FooterSection />
