@@ -11,13 +11,12 @@ import 'swiper/css/pagination';
 
 interface Testimonial {
   id: number;
-  companyLogo: string;
-  companyLogoDark: string;
+  hotelLogo: string;
+  hotelLogoDark: string;
   quote: string;
   rating: number;
   name: string;
   position: string;
-  avatar: string;
 }
 
 interface TestimonialsSliderProps {
@@ -30,53 +29,174 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
   testimonials = [
     {
       id: 1,
-      companyLogo: '/images/testimonial/bodygroup.svg',
-      companyLogoDark: '/images/testimonial/bodygroup-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      name: 'Robert Frost',
-      position: 'Lead Designer',
-      avatar: '/images/testimonial/avatar1.png'
+      hotelLogo: '/images/clients/friends_cafe.webp',
+      hotelLogoDark: '/images/clients/friends_cafe.webp',
+      quote: "Bhai, MenuMitra ka digital menu system bilkul mast hai! Customers ab phone scan karke menu dekh sakte hain. Waiter ko har time menu leke jaane ki zarurat nahi. Time bachta hai, customers bhi khush!",
+      rating: 5,
+      name: 'Suresh Deshmukh',
+      position: 'Manager, Friends Cafe'
     },
     {
       id: 2,
-      companyLogo: '/images/testimonial/caudile.svg',
-      companyLogoDark: '/images/testimonial/caudile-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
+      hotelLogo: '/images/clients/sudamas_misal_house.webp',
+      hotelLogoDark: '/images/clients/sudamas_misal_house.webp',
+      quote: "MenuMitra ne hamara restaurant modern banaya! QR code scan karke menu dekhna, online ordering, payment integration - sab kuch ek jagah. Customers ko lagta hai ki koi fancy restaurant mein aaye hain!",
       rating: 4,
-      name: 'Guy Hawkins',
-      position: 'Developer',
-      avatar: '/images/testimonial/avatar2.png'
+      name: 'Vikram Jadhav',
+      position: 'Chef & Owner, Sudamas Misal House'
     },
     {
       id: 3,
-      companyLogo: '/images/testimonial/axeptio.svg',
-      companyLogoDark: '/images/testimonial/axeptio-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      name: 'Cody Fisher',
-      position: 'UI Designer',
-      avatar: '/images/testimonial/avatar3.png'
+      hotelLogo: '/images/clients/hotel_nandini_pure_veg.webp',
+      hotelLogoDark: '/images/clients/hotel_nandini_pure_veg.webp',
+      quote: "Pehle toh menu update karna bahut mushkil tha. Ab MenuMitra se instant update ho jata hai! Naya dish add karna, price change karna - sab online se ho jata hai. Technology ka magic hai ye!",
+      rating: 5,
+      name: 'Priya Kulkarni',
+      position: 'Operations Head, Hotel Nandini Pure Veg'
     },
     {
       id: 4,
-      companyLogo: '/images/testimonial/infinity.svg',
-      companyLogoDark: '/images/testimonial/infinity-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      name: 'Albert Flores',
-      position: 'Officer',
-      avatar: '/images/testimonial/avatar4.png'
+      hotelLogo: '/images/clients/garva_order.webp',
+      hotelLogoDark: '/images/clients/garva_order.webp',
+      quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
+      rating: 5,
+      name: 'Rajesh Patil',
+      position: 'Owner, Garva Biryani'
     },
     {
       id: 5,
-      companyLogo: '/images/testimonial/mfinity.svg',
-      companyLogoDark: '/images/testimonial/mfinity-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
+      hotelLogo: '/images/clients/hotel_rasika.webp',
+      hotelLogoDark: '/images/clients/hotel_rasika.webp',
+      quote: "MenuMitra ka QR code system bahut convenient hai! Customers ko menu dekhne ke liye waiter ka intezaar nahi karna padta. Order process fast ho gaya hai!",
       rating: 4,
-      name: 'Floyed Miles',
-      position: 'Junior Designer',
-      avatar: '/images/testimonial/avatar5.png'
+      name: 'Anita Sharma',
+      position: 'Manager, Hotel Rasika'
+    },
+    {
+      id: 6,
+      hotelLogo: '/images/clients/hotel_ganesh_shakaahari.webp',
+      hotelLogoDark: '/images/clients/hotel_ganesh_shakaahari.webp',
+      quote: "Digital menu se hamara restaurant ka image improve hua hai! Customers ko lagta hai ki ye modern restaurant hai. Online ordering se revenue bhi badha hai!",
+      rating: 5,
+      name: 'Ravi Ganesh',
+      position: 'Owner, Hotel Ganesh Shakaahari'
+    },
+    {
+      id: 7,
+      hotelLogo: '/images/clients/hotel_new_jagdamba.webp',
+      hotelLogoDark: '/images/clients/hotel_new_jagdamba.webp',
+      quote: "MenuMitra se hamara restaurant tech-savvy ban gaya! QR code scan karke menu dekhna, online payment - sab kuch seamless hai. Customer satisfaction badh gaya hai!",
+      rating: 4,
+      name: 'Sunil Jagdamba',
+      position: 'Proprietor, Hotel New Jagdamba'
+    },
+    {
+      id: 8,
+      hotelLogo: '/images/clients/hotel_pp_patil.webp',
+      hotelLogoDark: '/images/clients/hotel_pp_patil.webp',
+      quote: "Pehle menu update karna time-consuming tha. Ab MenuMitra se instant updates ho jate hain! Naye dishes add karna, prices change karna - sab online!",
+      rating: 5,
+      name: 'Prakash Patil',
+      position: 'Manager, Hotel PP Patil'
+    },
+    {
+      id: 9,
+      hotelLogo: '/images/clients/hotel_audumbar.webp',
+      hotelLogoDark: '/images/clients/hotel_audumbar.webp',
+      quote: "MenuMitra ka digital menu system restaurant ko professional banata hai! Customers ko menu dekhne mein koi problem nahi hoti. Service fast ho gaya hai!",
+      rating: 4,
+      name: 'Deepak Audumbar',
+      position: 'Owner, Hotel Audumbar'
+    },
+    {
+      id: 10,
+      hotelLogo: '/images/clients/hotel_dongarmath.webp',
+      hotelLogoDark: '/images/clients/hotel_dongarmath.webp',
+      quote: "QR code menu se hamara restaurant modern lagta hai! Customers ko menu dekhne ke liye waiter ki zarurat nahi. Order process smooth ho gaya hai!",
+      rating: 5,
+      name: 'Vishal Dongarmath',
+      position: 'Manager, Hotel Dongarmath'
+    },
+    {
+      id: 11,
+      hotelLogo: '/images/clients/hotel_sanskruti_pure_veg.webp',
+      hotelLogoDark: '/images/clients/hotel_sanskruti_pure_veg.webp',
+      quote: "MenuMitra se hamara restaurant ka digital transformation hua hai! Online ordering, payment integration - sab kuch ek platform pe. Technology ka fayda!",
+      rating: 4,
+      name: 'Sanskriti Sharma',
+      position: 'Owner, Hotel Sanskruti Pure Veg'
+    },
+    {
+      id: 12,
+      hotelLogo: '/images/clients/house_of_schezwam.webp',
+      hotelLogoDark: '/images/clients/house_of_schezwam.webp',
+      quote: "Digital menu system se hamara Chinese restaurant popular hua hai! Customers ko menu dekhne mein convenience hai. Online orders badh gaye hain!",
+      rating: 5,
+      name: 'Chen Wei',
+      position: 'Chef, House of Schezwam'
+    },
+    {
+      id: 13,
+      hotelLogo: '/images/clients/nps_chinese_hub.webp',
+      hotelLogoDark: '/images/clients/nps_chinese_hub.webp',
+      quote: "MenuMitra ka QR code system Chinese cuisine ke liye perfect hai! Customers ko menu dekhne mein koi confusion nahi. Order accuracy badh gaya hai!",
+      rating: 4,
+      name: 'Nitin Chinese',
+      position: 'Manager, NPS Chinese Hub'
+    },
+    {
+      id: 14,
+      hotelLogo: '/images/clients/new_jagdamba_veg_nonveg.webp',
+      hotelLogoDark: '/images/clients/new_jagdamba_veg_nonveg.webp',
+      quote: "Digital menu se hamara mixed cuisine restaurant successful hua hai! Veg-nonveg options clearly display hote hain. Customer satisfaction high hai!",
+      rating: 5,
+      name: 'Jagdamba Singh',
+      position: 'Owner, New Jagdamba Veg Nonveg'
+    },
+    {
+      id: 15,
+      hotelLogo: '/images/clients/shree_pure_veg.webp',
+      hotelLogoDark: '/images/clients/shree_pure_veg.webp',
+      quote: "MenuMitra se hamara pure veg restaurant ka digital presence strong hua hai! Online ordering se revenue increase hua hai. Technology ka sahi use!",
+      rating: 4,
+      name: 'Shree Patel',
+      position: 'Manager, Shree Pure Veg'
+    },
+    {
+      id: 16,
+      hotelLogo: '/images/clients/hotel_borul_atitthi.webp',
+      hotelLogoDark: '/images/clients/hotel_borul_atitthi.webp',
+      quote: "QR code menu system se hamara restaurant modern ban gaya hai! Customers ko menu dekhne mein convenience hai. Service quality improve hui hai!",
+      rating: 5,
+      name: 'Borul Atitthi',
+      position: 'Proprietor, Hotel Borul Atitthi'
+    },
+    {
+      id: 17,
+      hotelLogo: '/images/clients/aai_tulja_bhavani.webp',
+      hotelLogoDark: '/images/clients/aai_tulja_bhavani.webp',
+      quote: "MenuMitra ka digital menu system restaurant ko professional banata hai! Customers ko menu dekhne mein koi problem nahi. Order process fast hai!",
+      rating: 4,
+      name: 'Tulja Bhavani',
+      position: 'Owner, Aai Tulja Bhavani'
+    },
+    {
+      id: 18,
+      hotelLogo: '/images/clients/cafe_durga.webp',
+      hotelLogoDark: '/images/clients/cafe_durga.webp',
+      quote: "Digital menu se hamara cafe popular hua hai! Customers ko menu dekhne mein convenience hai. Online orders badh gaye hain!",
+      rating: 5,
+      name: 'Durga Cafe',
+      position: 'Manager, Cafe Durga'
+    },
+    {
+      id: 19,
+      hotelLogo: '/images/clients/creamy_nuts_cafe.webp',
+      hotelLogoDark: '/images/clients/creamy_nuts_cafe.webp',
+      quote: "MenuMitra ka QR code system cafe ke liye perfect hai! Customers ko menu dekhne mein koi confusion nahi. Order accuracy badh gaya hai!",
+      rating: 4,
+      name: 'Creamy Nuts',
+      position: 'Owner, Creamy Nuts Cafe'
     }
   ]
 }) => {
@@ -140,15 +260,15 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
                   <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
                     <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-7">
                       <Image
-                        src={testimonial.companyLogo}
-                        alt="company logo"
+                        src={testimonial.hotelLogo}
+                        alt="hotel logo"
                         width={100}
                         height={40}
                         className="inline-block dark:hidden mb-6"
                       />
                       <Image
-                        src={testimonial.companyLogoDark}
-                        alt="company logo"
+                        src={testimonial.hotelLogoDark}
+                        alt="hotel logo"
                         width={100}
                         height={40}
                         className="hidden dark:inline-block mb-6"
@@ -156,18 +276,11 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
                       <blockquote className="text-paragraph dark:text-white italic mb-5 leading-[1.75]">
                         "{testimonial.quote}"
                       </blockquote>
-                      <div className="mb-7">
-                        {renderStars(testimonial.rating)}
-                      </div>
 
                       <div className="pt-7 flex items-center border-t border-dashed border-gray-100 dark:border-borderColour-dark">
-                        <Image
-                          src={testimonial.avatar}
-                          alt="avatar"
-                          width={48}
-                          height={48}
-                          className="mr-4 rounded-full"
-                        />
+                        <div className="mr-4 w-12 h-12 bg-gray-200 dark:bg-gray-200 rounded-full flex items-center justify-center">
+                          <i className="fa-solid fa-user text-dark text-lg"></i>
+                        </div>
                         <div className="block">
                           <h3 className="text-base font-semibold">{testimonial.name}</h3>
                           <p className="text-paragraph-light dark:text-[#A1A49D] font-jakarta_sans text-sm font-medium">
