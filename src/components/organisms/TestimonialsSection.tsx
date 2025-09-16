@@ -3,11 +3,10 @@ import Image from 'next/image';
 
 interface Testimonial {
   id: number;
-  companyLogo: string;
-  companyLogoDark: string;
+  hotelLogo: string;
+  hotelLogoDark: string;
   quote: string;
   rating: number;
-  avatar: string;
   name: string;
   position: string;
 }
@@ -22,53 +21,48 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   testimonials = [
     {
       id: 1,
-      companyLogo: '/images/testimonial/bodygroup.svg',
-      companyLogoDark: '/images/testimonial/bodygroup-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      avatar: '/images/testimonial/avatar1.png',
-      name: 'Robert Frost',
-      position: 'Lead Designer'
+      hotelLogo: '/images/outlets/hotel_pp_patil.webp',
+      hotelLogoDark: '/images/outlets/hotel_pp_patil.webp',
+      quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
+      rating: 5,
+      name: 'Rajesh Patil',
+      position: 'Owner, Hotel PP Patil'
     },
     {
       id: 2,
-      companyLogo: '/images/testimonial/caudile.svg',
-      companyLogoDark: '/images/testimonial/caudile-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      avatar: '/images/testimonial/avatar2.png',
-      name: 'Guy Hawkins',
-      position: 'Developer'
+      hotelLogo: '/images/outlets/hotel_audumbar.webp',
+      hotelLogoDark: '/images/outlets/hotel_audumbar.webp',
+      quote: "Bhai, MenuMitra ka digital menu system bilkul mast hai! Customers ab phone scan karke menu dekh sakte hain. Waiter ko har time menu leke jaane ki zarurat nahi. Time bachta hai, customers bhi khush!",
+      rating: 5,
+      name: 'Suresh Deshmukh',
+      position: 'Manager, Hotel Audumbar'
     },
     {
       id: 3,
-      companyLogo: '/images/testimonial/axeptio.svg',
-      companyLogoDark: '/images/testimonial/axeptio-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
+      hotelLogo: '/images/outlets/hotel_ganesh_shakaahari.webp',
+      hotelLogoDark: '/images/outlets/hotel_ganesh_shakaahari.webp',
+      quote: "MenuMitra ne hamara restaurant modern banaya! QR code scan karke menu dekhna, online ordering, payment integration - sab kuch ek jagah. Customers ko lagta hai ki koi fancy restaurant mein aaye hain!",
       rating: 4,
-      avatar: '/images/testimonial/avatar3.png',
-      name: 'Cody Fisher',
-      position: 'UI Designer'
+      name: 'Vikram Jadhav',
+      position: 'Chef & Owner, Hotel Ganesh Shakaahari'
     },
     {
       id: 4,
-      companyLogo: '/images/testimonial/infinity.svg',
-      companyLogoDark: '/images/testimonial/infinity-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
-      rating: 4,
-      avatar: '/images/testimonial/avatar4.png',
-      name: 'Albert Flores',
-      position: 'Junior Designer'
+      hotelLogo: '/images/outlets/hotel_nandini_pure_veg.webp',
+      hotelLogoDark: '/images/outlets/hotel_nandini_pure_veg.webp',
+      quote: "Pehle toh menu update karna bahut mushkil tha. Ab MenuMitra se instant update ho jata hai! Naya dish add karna, price change karna - sab online se ho jata hai. Technology ka magic hai ye!",
+      rating: 5,
+      name: 'Priya Kulkarni',
+      position: 'Operations Head, Hotel Nandini Pure Veg'
     },
     {
       id: 5,
-      companyLogo: '/images/testimonial/mfinity.svg',
-      companyLogoDark: '/images/testimonial/mfinity-dark.svg',
-      quote: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.",
+      hotelLogo: '/images/outlets/hotel_rasika.webp',
+      hotelLogoDark: '/images/outlets/hotel_rasika.webp',
+      quote: "MenuMitra ka analytics feature bilkul amazing hai! Pata chal jata hai ki kaun sa dish popular hai, peak hours kab hain, revenue kitna hai. Business decisions lena ab easy ho gaya hai!",
       rating: 4,
-      avatar: '/images/testimonial/avatar5.png',
-      name: 'Floyed Miles',
-      position: 'Designer'
+      name: 'Amit Pawar',
+      position: 'Director, Hotel Rasika'
     }
   ]
 }) => {
@@ -105,15 +99,15 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
               <div key={testimonial.id} className="bg-white dark:bg-dark-200 rounded-medium p-2.5 md:w-[calc(50%_-_20px)] lg:w-[calc(33.33%_-_20px)] shadow-nav">
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-7">
                   <Image
-                    src={testimonial.companyLogo}
-                    alt="company logo"
+                    src={testimonial.hotelLogo}
+                    alt="hotel logo"
                     width={100}
                     height={40}
                     className="inline-block dark:hidden mb-6"
                   />
                   <Image
-                    src={testimonial.companyLogoDark}
-                    alt="company logo"
+                    src={testimonial.hotelLogoDark}
+                    alt="hotel logo"
                     width={100}
                     height={40}
                     className="hidden dark:inline-block mb-6"
@@ -121,18 +115,14 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                   <blockquote className="text-paragraph dark:text-white italic mb-5 leading-[1.75]">
                     "{testimonial.quote}"
                   </blockquote>
-                  <div className="mb-7">
+                  {/* <div className="mb-7">
                     {renderStars(testimonial.rating)}
-                  </div>
+                  </div> */}
 
                   <div className="pt-7 flex items-center border-t border-dashed border-gray-100 dark:border-borderColour-dark">
-                    <Image
-                      src={testimonial.avatar}
-                      alt="avatar"
-                      width={48}
-                      height={48}
-                      className="mr-4 rounded-full"
-                    />
+                    <div className="mr-4 w-12 h-12 bg-gray-200 dark:bg-gray-200 rounded-full flex items-center justify-center">
+                      <i className="fa-solid fa-user text-dark text-lg"></i>
+                    </div>
                     <div className="block">
                       <h3 className="text-base font-semibold">{testimonial.name}</h3>
                       <p className="text-paragraph-light dark:text-[#A1A49D] font-jakarta_sans text-sm font-medium">
