@@ -6,11 +6,28 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { 
+  CreditCard, 
+  Package, 
+  Menu as MenuIcon, 
+  ShoppingCart, 
+  BarChart3, 
+  Users, 
+  Star, 
+  QrCode, 
+  Store, 
+  FileText, 
+  Share2, 
+  Settings, 
+  UserCheck, 
+  Link as LinkIcon 
+} from 'lucide-react';
 
 // Type definitions for navigation
 interface NavItem {
   href: string;
   label: string;
+  icon?: React.ReactNode;
 }
 
 interface NavDropdown {
@@ -61,20 +78,20 @@ const Header: React.FC = () => {
         type: 'dropdown',
         label: 'Features', 
         items: [
-          { href: '/features/Billing', label: 'Billing' },
-          { href: '/features/Inventory', label: 'Inventory' },
-          { href: '/features/Menu', label: 'Menu' },
-          { href: '/features/OnlineOrder', label: 'Online Order' },
-          { href: '/features/RestaurantReports', label: 'Restaurant Reports' },
-          { href: '/features/CustomerManagement', label: 'Customer Management' },
-          { href: '/features/CustomerFeedback', label: 'Customer Feedback' },
-          { href: '/features/ScanOrder', label: 'Scan & Order' },
-          { href: '/features/StoreManagement', label: 'Store Management' },
-          { href: '/features/RecipeManagement', label: 'Recipe Management' },
-          { href: '/features/SocialMediaManagement', label: 'Social Media Management' },
-          { href: '/features/UtilityManagement', label: 'Utility Management' },
-          { href: '/features/StaffManagement', label: 'Staff Management' },
-          { href: '/features/ChainManagement', label: 'Chain Management' },
+          { href: '/features/Billing', label: 'Billing', icon: <CreditCard className="w-4 h-4" /> },
+          { href: '/features/Inventory', label: 'Inventory', icon: <Package className="w-4 h-4" /> },
+          { href: '/features/Menu', label: 'Menu', icon: <MenuIcon className="w-4 h-4" /> },
+          { href: '/features/OnlineOrder', label: 'Online Order', icon: <ShoppingCart className="w-4 h-4" /> },
+          { href: '/features/RestaurantReports', label: 'Restaurant Reports', icon: <BarChart3 className="w-4 h-4" /> },
+          { href: '/features/CustomerManagement', label: 'Customer Management', icon: <Users className="w-4 h-4" /> },
+          { href: '/features/CustomerFeedback', label: 'Customer Feedback', icon: <Star className="w-4 h-4" /> },
+          { href: '/features/ScanOrder', label: 'Scan & Order', icon: <QrCode className="w-4 h-4" /> },
+          { href: '/features/StoreManagement', label: 'Store Management', icon: <Store className="w-4 h-4" /> },
+          { href: '/features/RecipeManagement', label: 'Recipe Management', icon: <FileText className="w-4 h-4" /> },
+          { href: '/features/SocialMediaManagement', label: 'Social Media Management', icon: <Share2 className="w-4 h-4" /> },
+          { href: '/features/UtilityManagement', label: 'Utility Management', icon: <Settings className="w-4 h-4" /> },
+          { href: '/features/StaffManagement', label: 'Staff Management', icon: <UserCheck className="w-4 h-4" /> },
+          { href: '/features/ChainManagement', label: 'Chain Management', icon: <LinkIcon className="w-4 h-4" /> },
         ]
       },
       { 
@@ -158,7 +175,8 @@ const Header: React.FC = () => {
                       <ul className="col-span-8 columns-3 gap-10 px-15">
                         {item.items.map((subItem, subIndex) => (
                           <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                            <Link href={subItem.href} className="flex">
+                            <Link href={subItem.href} className="flex items-center gap-3">
+                              {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                               {subItem.label}
                             </Link>
                           </li>
@@ -185,7 +203,8 @@ const Header: React.FC = () => {
                     <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                       {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className="flex">
+                          <Link href={subItem.href} className="flex items-center gap-3">
+                            {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                             {subItem.label}
                           </Link>
                         </li>
@@ -295,7 +314,8 @@ const Header: React.FC = () => {
                         <ul className="columns-2 gap-10 mb-15">
                           {item.items.map((subItem, subIndex) => (
                             <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                              <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
+                              <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
+                                {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                                 {subItem.label}
                               </Link>
                             </li>
@@ -322,7 +342,8 @@ const Header: React.FC = () => {
                       <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
                         {item.items.map((subItem, subIndex) => (
                           <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                            <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
+                            <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
+                              {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                               {subItem.label}
                             </Link>
                           </li>
