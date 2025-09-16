@@ -27,7 +27,14 @@ import {
   Coins,
   Users as TwoPerson,
   Cog,
-  Building
+  Building,
+  Store as Storefront,
+  Utensils,
+  Pizza,
+  Coffee,
+  Hamburger,
+  CircleDot as Bread,
+  Cloud
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -117,7 +124,21 @@ const Header: React.FC = () => {
           { href: '/addons/hotel-management', label: 'Hotel Management', icon: <Building className="w-4 h-4" /> },
         ]
       },
-      { type: 'link', href: '/contact', label: 'Contact Us' },
+      { 
+        type: 'dropdown',
+        label: 'Outlet Type', 
+        items: [
+          { href: '/outlet-type/restaurant', label: 'Restaurant', icon: <Storefront className="w-4 h-4" /> },
+          { href: '/outlet-type/fine-dine', label: 'Fine Dine', icon: <Utensils className="w-4 h-4" /> },
+          { href: '/outlet-type/food-courts', label: 'Food Courts', icon: <Storefront className="w-4 h-4" /> },
+          { href: '/outlet-type/pizzeria', label: 'Pizzeria', icon: <Pizza className="w-4 h-4" /> },
+          { href: '/outlet-type/cafe', label: 'Cafe', icon: <Coffee className="w-4 h-4" /> },
+          { href: '/outlet-type/qsr', label: 'QSR', icon: <Hamburger className="w-4 h-4" /> },
+          { href: '/outlet-type/bakeries', label: 'Bakeries', icon: <Bread className="w-4 h-4" /> },
+          { href: '/outlet-type/cloud-kitchens', label: 'Cloud Kitchens', icon: <Cloud className="w-4 h-4" /> },
+          { href: '/outlet-type/large-chain', label: 'Large Chain', icon: <Building className="w-4 h-4" /> },
+        ]
+      },
     ]
   };
 
@@ -151,55 +172,41 @@ const Header: React.FC = () => {
           {navigationConfig.main.map((item, index) => (
             <li key={index} className={item.type === 'dropdown' ? 'relative group' : 'group'}>
               {item.type === 'link' ? (
-                <Link 
+            <Link 
                   href={item.href} 
-                  className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
                     isActive(item.href) ? 'active' : ''
-                  }`}
-                >
+              }`}
+            >
                   {item.label}
-                </Link>
+            </Link>
               ) : (
                 <>
-                  <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
+            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group text-nowrap">
                     {item.label}
-                    <FontAwesomeIcon 
-                      icon={faAngleDown} 
-                      className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-                    />
-                  </button>
+              <FontAwesomeIcon 
+                icon={faAngleDown} 
+                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+              />
+            </button>
                   <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                     {item.items.map((subItem, subIndex) => (
                       <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                         <Link href={subItem.href} className="flex items-center gap-3">
                           {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                           {subItem.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
                 </>
               )}
-            </li>
-          ))}
+                </li>
+              ))}
         </ul>
 
         {/* Right Side Actions */}
-        <ul className="flex items-center max-lg:ml-auto [&>*:not(:last-child)]:me-2.5">
-          {/* Search Button */}
-          <li>
-            <button className="bg-white dark:bg-dark-200 p-2.5 rounded-full" id="open-btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path 
-                  fillRule="evenodd" 
-                  clipRule="evenodd" 
-                  d="M9.11278 0C14.1369 0 18.2245 4.08758 18.2245 9.11278C18.2245 11.2861 17.4592 13.5472 16.1845 14.8512L20 18.6667L18.6667 20L14.8512 16.1856C13.5667 17.4603 11.2861 18.2245 9.11278 18.2245C4.08758 18.2245 0 14.1369 0 9.11278C0 4.08758 4.08758 0 9.11278 0ZM9.11278 16.3395C13.0974 16.3395 16.3395 13.0974 16.3395 9.11278C16.3395 5.12818 13.0974 1.88608 9.11278 1.88608C5.12709 1.88608 1.88499 5.12818 1.88499 9.11278C1.88499 13.0974 5.12709 16.3395 9.11278 16.3395Z" 
-                  fill="" 
-                  className="fill-paragraph dark:fill-white"
-                />
-              </svg>
-            </button>
-          </li>
+        <ul className="flex items-center max-lg:ml-auto [&>*:not(:last-child)]:me-2.5 align-middle" >
 
           {/* Request Demo Button - Desktop */}
           <li className="max-lg:hidden">
@@ -255,41 +262,41 @@ const Header: React.FC = () => {
             {navigationConfig.main.map((item, index) => (
               <li key={index} className={item.type === 'dropdown' ? 'relative group faq-item' : ''}>
                 {item.type === 'link' ? (
-                  <Link 
+              <Link 
                     href={item.href} 
-                    className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
                       isActive(item.href) ? 'active' : ''
-                    }`}
-                    onClick={toggleMobileMenu}
-                  >
+                }`}
+                onClick={toggleMobileMenu}
+              >
                     {item.label}
-                  </Link>
+              </Link>
                 ) : (
                   <>
-                    <button 
-                      className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
+              <button 
+                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
                       onClick={() => toggleDropdown(item.label.toLowerCase())}
                     >
                       {item.label}
-                      <FontAwesomeIcon 
-                        icon={faAngleDown} 
+                <FontAwesomeIcon 
+                  icon={faAngleDown} 
                         className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''}`} 
-                      />
-                    </button>
+                />
+              </button>
                     <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
                       {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                           <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
                             {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
                             {subItem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
                   </>
                 )}
-              </li>
-            ))}
+                  </li>
+                ))}
 
             {/* Mobile Book Demo */}
             <li>
