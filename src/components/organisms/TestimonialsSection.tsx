@@ -19,32 +19,32 @@ interface TestimonialsSectionProps {
 const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ 
   className = '',
   testimonials = [
-    {
-      id: 1,
-      hotelLogo: '/images/outlets/hotel_pp_patil.webp',
-      hotelLogoDark: '/images/outlets/hotel_pp_patil.webp',
-      quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
-      rating: 5,
-      name: 'Rajesh Patil',
-      position: 'Owner, Hotel PP Patil'
-    },
+    // {
+    //   id: 1,
+    //   hotelLogo: '/images/outlets/garva_order.webp',
+    //   hotelLogoDark: '/images/outlets/garva_order.webp',
+    //   quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
+    //   rating: 5,
+    //   name: 'Rajesh Patil',
+    //   position: 'Owner, Garva Biryani'
+    // },
     {
       id: 2,
-      hotelLogo: '/images/outlets/hotel_audumbar.webp',
-      hotelLogoDark: '/images/outlets/hotel_audumbar.webp',
+      hotelLogo: '/images/outlets/friends_cafe.webp',
+      hotelLogoDark: '/images/outlets/friends_cafe.webp',
       quote: "Bhai, MenuMitra ka digital menu system bilkul mast hai! Customers ab phone scan karke menu dekh sakte hain. Waiter ko har time menu leke jaane ki zarurat nahi. Time bachta hai, customers bhi khush!",
       rating: 5,
       name: 'Suresh Deshmukh',
-      position: 'Manager, Hotel Audumbar'
+      position: 'Manager, Friends Cafe'
     },
     {
       id: 3,
-      hotelLogo: '/images/outlets/hotel_ganesh_shakaahari.webp',
-      hotelLogoDark: '/images/outlets/hotel_ganesh_shakaahari.webp',
+      hotelLogo: '/images/outlets/sudamas_misal_house.webp',
+      hotelLogoDark: '/images/outlets/sudamas_misal_house.webp',
       quote: "MenuMitra ne hamara restaurant modern banaya! QR code scan karke menu dekhna, online ordering, payment integration - sab kuch ek jagah. Customers ko lagta hai ki koi fancy restaurant mein aaye hain!",
       rating: 4,
       name: 'Vikram Jadhav',
-      position: 'Chef & Owner, Hotel Ganesh Shakaahari'
+      position: 'Chef & Owner, Sudamas Misal House'
     },
     {
       id: 4,
@@ -54,15 +54,6 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
       rating: 5,
       name: 'Priya Kulkarni',
       position: 'Operations Head, Hotel Nandini Pure Veg'
-    },
-    {
-      id: 5,
-      hotelLogo: '/images/outlets/hotel_rasika.webp',
-      hotelLogoDark: '/images/outlets/hotel_rasika.webp',
-      quote: "MenuMitra ka analytics feature bilkul amazing hai! Pata chal jata hai ki kaun sa dish popular hai, peak hours kab hain, revenue kitna hai. Business decisions lena ab easy ho gaya hai!",
-      rating: 4,
-      name: 'Amit Pawar',
-      position: 'Director, Hotel Rasika'
     }
   ]
 }) => {
