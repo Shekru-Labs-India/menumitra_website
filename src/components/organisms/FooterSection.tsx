@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import SocialIcon from '@/components/atoms/SocialIcon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 interface FooterSectionProps {
   className?: string;
@@ -112,22 +114,23 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             <h3 className="mb-8 font-medium text-lg">Get In touch</h3>
             <p className="mb-3">Need Support?</p>
             <p className="mb-3">
-              <a href="mailto:support@menumitra.com" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                support@menumitra.com
+              <a href="mailto:info@menumitra.com" className="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+                <FontAwesomeIcon icon={faEnvelope} className="text-lg" />
+                info@MenuMitra.com
               </a>
             </p>
 
             <p className="mb-3">
-              <a href="tel:+1-800-MENU-AI" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                +1-800-MENU-AI
+              <a href="tel:+919317818283" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+                <FontAwesomeIcon icon={faPhone} className="text-lg" />
+                +91 93178 18283
               </a>
             </p>
             <ul className="flex items-center max-lg:justify-center social-link gap-4">
-              <SocialIcon platform="facebook" href="#" />
-              <SocialIcon platform="twitter" href="#" />
-              <SocialIcon platform="linkedin" href="#" />
-              <SocialIcon platform="instagram" href="#" />
-              <SocialIcon platform="youtube" href="#" />
+              <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
+              <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
+              <SocialIcon platform="youtube" href="https://www.youtube.com/@menumitra" target="_blank" />
+              <SocialIcon platform="instagram" href="https://www.instagram.com/menumitra/" target="_blank" />
             </ul>
           </div>
         </div>
