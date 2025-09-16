@@ -20,7 +20,14 @@ import {
   Share2, 
   Settings, 
   UserCheck, 
-  Link as LinkIcon 
+  Link as LinkIcon,
+  Smartphone,
+  Monitor,
+  CreditCard as CashRegister,
+  Coins,
+  Users as TwoPerson,
+  Cog,
+  Building
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -96,27 +103,18 @@ const Header: React.FC = () => {
       },
       { 
         type: 'dropdown',
-        label: 'Services', 
+        label: 'AddOns', 
         items: [
-          { href: '/services', label: 'Services' },
-          { href: '/services-single', label: 'Service Single' },
-        ]
-      },
-      { 
-        type: 'dropdown',
-        label: 'Pages', 
-        items: [
-          { href: '/team', label: 'Team' },
-          { href: '/team-single', label: 'Team Details' },
-          { href: '/testimonial', label: 'Testimonial' },
-          { href: '/price', label: 'Price' },
-          { href: '/career', label: 'Career' },
-          { href: '/career-single', label: 'Career Single' },
-          { href: '/faq', label: 'FAQ' },
-          { href: '/integration', label: 'Integration' },
-          { href: '/login', label: 'Log In' },
-          { href: '/signup', label: 'Sign Up' },
-          { href: '/404', label: '404' },
+          { href: '/addons/captain-app', label: 'Captain App', icon: <Smartphone className="w-4 h-4" /> },
+          { href: '/addons/waiter-app', label: 'Waiter App', icon: <Users className="w-4 h-4" /> },
+          { href: '/addons/kitchen-display-system', label: 'Kitchen Display System', icon: <Monitor className="w-4 h-4" /> },
+          { href: '/addons/customer-display-system', label: 'Customer Display System', icon: <Monitor className="w-4 h-4" /> },
+          { href: '/addons/point-of-sale', label: 'Point of Sale', icon: <CashRegister className="w-4 h-4" /> },
+          { href: '/addons/smart-mobile-app', label: 'Smart Mobile App', icon: <Smartphone className="w-4 h-4" /> },
+          { href: '/addons/money-management', label: 'Money Management', icon: <Coins className="w-4 h-4" /> },
+          { href: '/addons/customer-app', label: 'Customer App', icon: <TwoPerson className="w-4 h-4" /> },
+          { href: '/addons/customised-solution', label: 'Customised Solution', icon: <Cog className="w-4 h-4" /> },
+          { href: '/addons/hotel-management', label: 'Hotel Management', icon: <Building className="w-4 h-4" /> },
         ]
       },
       { type: 'link', href: '/contact', label: 'Contact Us' },
@@ -170,47 +168,16 @@ const Header: React.FC = () => {
                       className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
                     />
                   </button>
-                  {item.label === 'Pages' ? (
-                    <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-xl z-10 items-center">
-                      <ul className="col-span-8 columns-3 gap-10 px-15">
-                        {item.items.map((subItem, subIndex) => (
-                          <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                            <Link href={subItem.href} className="flex items-center gap-3">
-                              {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
-                              {subItem.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="col-span-4">
-                        <Image 
-                          src="/images/navbar.png" 
-                          alt="navbar" 
-                          width={200} 
-                          height={120} 
-                          className="w-full dark:hidden rounded-2xl"
-                        />
-                        <Image 
-                          src="/images/navbar-dark.png" 
-                          alt="navbar" 
-                          width={200} 
-                          height={120} 
-                          className="w-full hidden dark:block rounded-2xl"
-                        />
-                      </div>
-                    </div>
-                  ) : (
-                    <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
-                      {item.items.map((subItem, subIndex) => (
-                        <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className="flex items-center gap-3">
-                            {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
-                            {subItem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
+                    {item.items.map((subItem, subIndex) => (
+                      <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                        <Link href={subItem.href} className="flex items-center gap-3">
+                          {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </>
               )}
             </li>
@@ -309,47 +276,16 @@ const Header: React.FC = () => {
                         className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''}`} 
                       />
                     </button>
-                    {item.label === 'Pages' ? (
-                      <div className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
-                        <ul className="columns-2 gap-10 mb-15">
-                          {item.items.map((subItem, subIndex) => (
-                            <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                              <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
-                                {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
-                                {subItem.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <div className="max-w-full">
-                          <Image 
-                            src="/images/navbar.png" 
-                            alt="navbar" 
-                            width={200} 
-                            height={120} 
-                            className="w-full dark:hidden rounded-2xl"
-                          />
-                          <Image 
-                            src="/images/navbar-dark.png" 
-                            alt="navbar" 
-                            width={200} 
-                            height={120} 
-                            className="w-full hidden dark:block rounded-2xl"
-                          />
-                        </div>
-                      </div>
-                    ) : (
-                      <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
-                        {item.items.map((subItem, subIndex) => (
-                          <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                            <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
-                              {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
-                              {subItem.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                    <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
+                      {item.items.map((subItem, subIndex) => (
+                        <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                          <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
+                            {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
+                            {subItem.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </>
                 )}
               </li>
