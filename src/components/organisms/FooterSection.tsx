@@ -43,9 +43,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             <h3 className="mb-8 font-medium text-lg">Explore</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               <li>
-                <a href="/about" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                <Link 
+                  href="/about" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/about') ? 'active' : ''
+                  }`}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <Link 
