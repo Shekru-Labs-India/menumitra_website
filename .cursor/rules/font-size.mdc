@@ -1,0 +1,31 @@
+---
+alwaysApply: true
+---
+# Title: enforce-typography-scale
+# Scope: project
+# Enabled: true
+
+## Goal
+Ensure consistent, accessible, and SEO-friendly font sizes across HTML/JSX/TSX and CSS/Tailwind. Fix or propose fixes automatically where safe.
+
+## Rules
+1. Body text must be at least 16px (Tailwind: `text-base` or `text-[16px]`). If detecting inline style like `font-size: 14px`, replace with `text-base` and add `leading-relaxed`.
+2. Headings `<h1>`..`<h6>` must be semantic and have Tailwind size classes following the project's scale:
+   - h1 -> `text-4xl md:text-5xl font-bold leading-tight`
+   - h2 -> `text-3xl md:text-4xl font-semibold leading-snug`
+   - h3 -> `text-2xl md:text-3xl font-semibold leading-snug`
+   - h4 -> `text-xl md:text-2xl font-medium leading-normal`
+   - h5 -> `text-lg md:text-xl font-medium leading-normal`
+   - h6 -> `text-base md:text-lg font-medium leading-normal`
+3. Do not use heading tags purely for styling. If an element uses `<div>`/`<span>` as heading, suggest semantic replacement.
+4. Small/helper text must not be smaller than 12px. Prefer `text-sm md:text-base`.
+5. For any found inline `style="font-size: ..."` or CSS rules overriding Tailwind, suggest moving to the global `@layer base` or Tailwind utility classes.
+6. When making automated changes, only modify files in the current branch and leave a short git commit message: `chore(typography): normalize font sizes`.
+7. If a change affects many files (more than 5), create a code action/snippet and a PR template rather than a blind multi-file commit.
+
+## Auto-fix examples
+- Replace `<p style="font-size:14px">` → `<p class="text-base leading-relaxed">`.
+- Replace `<h2 class="text-xl">` on large-screen-critical page → `<h2 class="text-3xl md:text-4xl">` if it appears to be a section title.
+
+## Lint integration
+If `stylelint` / `eslint` is present, surface those lint errors to the assistant and follow their guidance (do not conflict). If missing, suggest a one-time setup: `npm i -D stylelint stylelint-config-standard stylelint-config-tailwindcss`.

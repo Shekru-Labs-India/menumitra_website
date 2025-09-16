@@ -133,7 +133,7 @@ const HeroSection: React.FC = () => {
                   <img
                     src="/images/payment/payment-hero-device.png"
                     alt="MenuMitra mobile app interface"
-                    className="inline-block rounded-t-medium w-full h-auto shadow-lg"
+                    className="cursor-target inline-block rounded-t-medium w-full h-auto shadow-lg"
                   />
                 </div>
 
