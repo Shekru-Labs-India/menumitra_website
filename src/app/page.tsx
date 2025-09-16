@@ -19,7 +19,7 @@ export default function Home() {
       <SolutionSection />
       <CoreFeaturesSection />
       <TestimonialsSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <FooterSection />
     </div>
   );
