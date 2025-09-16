@@ -9,12 +9,6 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-dark-300 pb-150 relative sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 bg-[url('/images/service-bg.png')] bg-no-repeat bg-cover bg-center opacity-70 w-full h-full sm:hidden"></div>
-      
-      {/* Graph Background */}
-      <GraphBackground 
-        className="top-0" 
-        opacity={0.1}
-      />
       <div className="container">
         <div className="mb-12">
           <p className="section-tagline max-lg:text-center">Our Services</p>
@@ -195,6 +189,7 @@ const ServicesSection: React.FC = () => {
           </div>
         </div>
       </div>
+  
     </section>
   );
 };

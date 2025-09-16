@@ -32,13 +32,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
 }) => {
   return (
     <section className={`bg-gray dark:bg-dark overflow-hidden relative pt-[300px] pb-150 max-md:pb-20 -mt-24 max-md:pt-[320px] max-md:-mt-60 dark:-mt-24 dark:max-md:-mt-60 ${className}`}>
-      {/* Full Background Graph Pattern */}
-      <GraphBackground 
-        position="center"
-        rotation="0deg"
-        opacity={0.15}
-      />
-
+    
       <div className="container relative z-10">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-end">
           <div>
@@ -118,6 +112,13 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
           </div>
         </div>
       </div>
+        {/* Full Background Graph Pattern */}
+        <GraphBackground 
+        position="bottom"
+        rotation="0deg"
+        opacity={0.15}
+      />
+
     </section>
   );
 };
