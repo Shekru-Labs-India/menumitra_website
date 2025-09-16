@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
+import TestimonialsSlider from '@/components/organisms/TestimonialsSlider';
 
 const AboutPage: React.FC = () => {
   return (
@@ -174,6 +175,7 @@ const AboutPage: React.FC = () => {
   </div>
 </section>
 
+<TestimonialsSlider />
 
       <FooterSection />
     </>

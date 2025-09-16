@@ -1,4 +1,6 @@
 ﻿@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
 
 :root {
   --font-lato: 'Lato', sans-serif;
