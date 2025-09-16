@@ -83,31 +83,32 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
         </div>
       </div>
       <div className="max-md:order-1 lg:-mt-15">
-        <p className="section-tagline">Smart Solutions</p>
+        <p className="section-tagline">Restaurant SaaS Platform</p>
         <h2 className="max-lg:mb-4 mb-8">
-          Powerful restaurant technology solutions that work 24/7
+          Complete digital menu management system for modern restaurants
         </h2>
         <p className="max-lg:mb-6 mb-11">
-          MenuMitra provides comprehensive digital menu solutions that transform your restaurant operations. 
-          Our AI-powered platform ensures seamless service delivery and maximum efficiency for your business.
+          MenuMitra is a comprehensive restaurant management SaaS platform that digitizes your menu operations. 
+          Our cloud-based solution helps restaurants streamline ordering, reduce wait times, and increase customer satisfaction 
+          through intelligent menu management and real-time order processing.
         </p>
         <ul className="max-lg:mb-6 mb-14 flex max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10 ">
           <li className="relative flex items-center gap-x-2 ">
             <i className="fa-solid fa-check text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
-              24/7 Support
+              QR Code Menu System
             </span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
             <i className="fa-solid fa-check text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
-              Real-time Analytics
+              Order Management Dashboard
             </span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
             <i className="fa-solid fa-check text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
-              Cloud-based Platform
+              Inventory Tracking
             </span>
           </li>
         </ul>
