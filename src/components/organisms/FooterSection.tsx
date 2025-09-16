@@ -184,6 +184,16 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   Terms & Conditions
                 </a>
               </li>
+              <li>
+                <a href="/cookie-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                  Cookie Policy
+                </a>
+              </li>
+              <li>
+                <a href="/request-data-removal" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                  Request Data Removal
+                </a>
+              </li>
             </ul>
           </div>
         </div>
