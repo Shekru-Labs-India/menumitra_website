@@ -154,7 +154,7 @@ const Header: React.FC = () => {
                     />
                   </button>
                   {item.label === 'Pages' ? (
-                    <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-lg z-10 items-center">
+                    <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-xl z-10 items-center">
                       <ul className="col-span-8 columns-3 gap-10 px-15">
                         {item.items.map((subItem, subIndex) => (
                           <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
@@ -182,7 +182,7 @@ const Header: React.FC = () => {
                       </div>
                     </div>
                   ) : (
-                    <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
+                    <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                       {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                           <Link href={subItem.href} className="flex">
@@ -291,7 +291,7 @@ const Header: React.FC = () => {
                       />
                     </button>
                     {item.label === 'Pages' ? (
-                      <div className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'}`}>
+                      <div className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
                         <ul className="columns-2 gap-10 mb-15">
                           {item.items.map((subItem, subIndex) => (
                             <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
@@ -319,7 +319,7 @@ const Header: React.FC = () => {
                         </div>
                       </div>
                     ) : (
-                      <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'}`}>
+                      <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
                         {item.items.map((subItem, subIndex) => (
                           <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                             <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
