@@ -63,6 +63,18 @@ const Header: React.FC = () => {
     return pathname === path;
   };
 
+  const isFeaturesActive = () => {
+    return pathname.startsWith('/features/');
+  };
+
+  const isAddOnsActive = () => {
+    return pathname.startsWith('/addons/');
+  };
+
+  const isOutletTypeActive = () => {
+    return pathname.startsWith('/outlet-type/');
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -182,21 +194,33 @@ const Header: React.FC = () => {
             </Link>
               ) : (
                 <>
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group text-nowrap">
+                  <button className={`font-Inter flex items-center text-base font-medium leading-8 py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large duration-500 hover:duration-500 transition-colors group text-nowrap ${
+                    (item.label === 'Features' && isFeaturesActive()) || 
+                    (item.label === 'AddOns' && isAddOnsActive()) || 
+                    (item.label === 'Outlet Type' && isOutletTypeActive())
+                      ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
+                      : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
+                  }`}>
                     {item.label}
-              <FontAwesomeIcon 
-                icon={faAngleDown} 
-                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-              />
-            </button>
+                    <FontAwesomeIcon 
+                      icon={faAngleDown} 
+                      className={`ml-1 group-hover:rotate-180 duration-500 mt-1 ${
+                        (item.label === 'Features' && isFeaturesActive()) || 
+                        (item.label === 'AddOns' && isAddOnsActive()) || 
+                        (item.label === 'Outlet Type' && isOutletTypeActive())
+                          ? 'text-primary-600 dark:text-primary-400'
+                          : 'text-paragraph dark:text-white'
+                      }`} 
+                    />
+                  </button>
                   <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                     {item.items.map((subItem, subIndex) => (
-                      <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                        <Link href={subItem.href} className="flex items-center gap-3">
-                          {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
-                          {subItem.label}
-                    </Link>
-                  </li>
+                        <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium' : ''}`}>
+                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`}>{subItem.icon}</span>}
+                            {subItem.label}
+                          </Link>
+                        </li>
                 ))}
               </ul>
                 </>
@@ -273,24 +297,36 @@ const Header: React.FC = () => {
               </Link>
                 ) : (
                   <>
-              <button 
-                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
+                    <button 
+                      className={`faq-header font-Inter flex items-center text-base font-medium leading-8 py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large duration-500 hover:duration-500 transition-colors group ${
+                        (item.label === 'Features' && isFeaturesActive()) || 
+                        (item.label === 'AddOns' && isAddOnsActive()) || 
+                        (item.label === 'Outlet Type' && isOutletTypeActive())
+                          ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
+                          : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
+                      }`}
                       onClick={() => toggleDropdown(item.label.toLowerCase())}
                     >
                       {item.label}
-                <FontAwesomeIcon 
-                  icon={faAngleDown} 
-                        className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''}`} 
-                />
-              </button>
+                      <FontAwesomeIcon 
+                        icon={faAngleDown} 
+                        className={`ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''} ${
+                          (item.label === 'Features' && isFeaturesActive()) || 
+                          (item.label === 'AddOns' && isAddOnsActive()) || 
+                          (item.label === 'Outlet Type' && isOutletTypeActive())
+                            ? 'text-primary-600 dark:text-primary-400'
+                            : 'text-paragraph dark:text-white'
+                        }`} 
+                      />
+                    </button>
                     <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
                       {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className="flex items-center gap-3" onClick={toggleMobileMenu}>
-                            {subItem.icon && <span className="text-gray-600 dark:text-gray-400">{subItem.icon}</span>}
+                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium' : ''}`} onClick={toggleMobileMenu}>
+                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`}>{subItem.icon}</span>}
                             {subItem.label}
-                      </Link>
-                    </li>
+                          </Link>
+                        </li>
                   ))}
                 </ul>
                   </>
