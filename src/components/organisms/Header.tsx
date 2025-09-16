@@ -7,6 +7,21 @@ import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 
+// Type definitions for navigation
+interface NavItem {
+  href: string;
+  label: string;
+}
+
+interface NavDropdown {
+  label: string;
+  items: NavItem[];
+}
+
+type NavigationItem = 
+  | { type: 'link'; href: string; label: string }
+  | { type: 'dropdown'; label: string; items: NavItem[] };
+
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -36,32 +51,61 @@ const Header: React.FC = () => {
   }, []);
 
 
-  const servicesMenuItems = [
-    { href: '/services', label: 'Services' },
-    { href: '/services-single', label: 'Service Single' },
-  ];
+  // Single navigation configuration - easy to edit and maintain
+  const navigationConfig: { main: NavigationItem[] } = {
+    main: [
+      { type: 'link', href: '/', label: 'Home' },
+      { type: 'link', href: '/about', label: 'About' },
+      { type: 'link', href: '/products', label: 'Products' },
+      { 
+        type: 'dropdown',
+        label: 'Features', 
+        items: [
+          { href: '/features/billing', label: 'Billing' },
+          { href: '/features/inventory', label: 'Inventory' },
+          { href: '/features/menu', label: 'Menu' },
+          { href: '/features/online-order', label: 'Online Order' },
+          { href: '/features/restaurant-reports', label: 'Restaurant Reports' },
+          { href: '/features/customer-management', label: 'Customer Management' },
+          { href: '/features/customer-feedback', label: 'Customer Feedback' },
+          { href: '/features/scan-order', label: 'Scan & Order' },
+          { href: '/features/store-management', label: 'Store Management' },
+          { href: '/features/recipe-management', label: 'Recipe Management' },
+          { href: '/features/social-media-management', label: 'Social Media Management' },
+          { href: '/features/utility-management', label: 'Utility Management' },
+          { href: '/features/staff-management', label: 'Staff Management' },
+          { href: '/features/chain-management', label: 'Chain Management' },
+        ]
+      },
+      { 
+        type: 'dropdown',
+        label: 'Services', 
+        items: [
+          { href: '/services', label: 'Services' },
+          { href: '/services-single', label: 'Service Single' },
+        ]
+      },
+      { 
+        type: 'dropdown',
+        label: 'Pages', 
+        items: [
+          { href: '/team', label: 'Team' },
+          { href: '/team-single', label: 'Team Details' },
+          { href: '/testimonial', label: 'Testimonial' },
+          { href: '/price', label: 'Price' },
+          { href: '/career', label: 'Career' },
+          { href: '/career-single', label: 'Career Single' },
+          { href: '/faq', label: 'FAQ' },
+          { href: '/integration', label: 'Integration' },
+          { href: '/login', label: 'Log In' },
+          { href: '/signup', label: 'Sign Up' },
+          { href: '/404', label: '404' },
+        ]
+      },
+      { type: 'link', href: '/contact', label: 'Contact Us' },
+    ]
+  };
 
-  const pagesMenuItems = [
-    { href: '/team', label: 'Team' },
-    { href: '/team-single', label: 'Team Details' },
-    { href: '/testimonial', label: 'Testimonial' },
-    { href: '/price', label: 'Price' },
-    { href: '/career', label: 'Career' },
-    { href: '/career-single', label: 'Career Single' },
-    { href: '/faq', label: 'FAQ' },
-    { href: '/integration', label: 'Integration' },
-    { href: '/login', label: 'Log In' },
-    { href: '/signup', label: 'Sign Up' },
-    { href: '/404', label: '404' },
-  ];
-
-  const newsMenuItems = [
-    { href: '/blog', label: 'Blog Grid' },
-    { href: '/blog-list', label: 'Blog List' },
-    { href: '/categories', label: 'Blog Categories' },
-    { href: '/tags', label: 'Blog Tags' },
-    { href: '/blog-details', label: 'Blog Details' },
-  ];
 
   return (
     <header 
@@ -89,129 +133,69 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <ul className="nav-list hidden lg:flex mx-auto bg-white dark:bg-dark-200 p-2.5 shadow-nav rounded-large [&>*:not(:last-child)]:me-1">
-          {/* Home */}
-          <li className="group">
-            <Link 
-              href="/" 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                isActive('/') ? 'active' : ''
-              }`}
-            >
-              Home
-            </Link>
-          </li>
-
-          {/* About */}
-          <li className="group">
-            <Link 
-              href="/about" 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                isActive('/about') ? 'active' : ''
-              }`}
-            >
-              About
-            </Link>
-          </li>
-
-          {/* Products */}
-          <li className="group">
-            <Link 
-              href="/products" 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                isActive('/products') ? 'active' : ''
-              }`}
-            >
-              Products
-            </Link>
-          </li>
-
-          {/* Services Dropdown */}
-          <li className="relative group">
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
-              Services
-              <FontAwesomeIcon 
-                icon={faAngleDown} 
-                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-              />
-            </button>
-            <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
-              {servicesMenuItems.map((item, index) => (
-                <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  <Link href={item.href} className="flex">
+          {navigationConfig.main.map((item, index) => (
+            <li key={index} className={item.type === 'dropdown' ? 'relative group' : 'group'}>
+              {item.type === 'link' ? (
+                <Link 
+                  href={item.href} 
+                  className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                    isActive(item.href) ? 'active' : ''
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <>
+                  <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
                     {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-
-          {/* Pages Dropdown */}
-          <li className="group">
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
-              Pages
-              <FontAwesomeIcon 
-                icon={faAngleDown} 
-                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-              />
-            </button>
-            <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-lg z-10 items-center">
-              <ul className="col-span-8 columns-3 gap-10 px-15">
-                {pagesMenuItems.map((item, index) => (
-                  <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                    <Link href={item.href} className="flex">
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className="col-span-4">
-                <Image 
-                  src="/images/navbar.png" 
-                  alt="navbar" 
-                  width={200} 
-                  height={120} 
-                  className="w-full dark:hidden rounded-2xl"
-                />
-                <Image 
-                  src="/images/navbar-dark.png" 
-                  alt="navbar" 
-                  width={200} 
-                  height={120} 
-                  className="w-full hidden dark:block rounded-2xl"
-                />
-              </div>
-            </div>
-          </li>
-
-          {/* News Dropdown */}
-          <li className="relative group">
-            <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
-              News
-              <FontAwesomeIcon 
-                icon={faAngleDown} 
-                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-              />
-            </button>
-            <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
-              {newsMenuItems.map((item, index) => (
-                <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  <Link href={item.href} className="flex">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-
-          {/* Contact */}
-          <li>
-            <Link 
-              href="/contact" 
-              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </li>
+                    <FontAwesomeIcon 
+                      icon={faAngleDown} 
+                      className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
+                    />
+                  </button>
+                  {item.label === 'Pages' ? (
+                    <div className="absolute grid gap-15 text-gray-900 dark:text-white md:grid-cols-12 w-full left-0 top-[58px] p-2.5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-medium shadow-lg z-10 items-center">
+                      <ul className="col-span-8 columns-3 gap-10 px-15">
+                        {item.items.map((subItem, subIndex) => (
+                          <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                            <Link href={subItem.href} className="flex">
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="col-span-4">
+                        <Image 
+                          src="/images/navbar.png" 
+                          alt="navbar" 
+                          width={200} 
+                          height={120} 
+                          className="w-full dark:hidden rounded-2xl"
+                        />
+                        <Image 
+                          src="/images/navbar-dark.png" 
+                          alt="navbar" 
+                          width={200} 
+                          height={120} 
+                          className="w-full hidden dark:block rounded-2xl"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
+                      {item.items.map((subItem, subIndex) => (
+                        <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                          <Link href={subItem.href} className="flex">
+                            {subItem.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </>
+              )}
+            </li>
+          ))}
         </ul>
 
         {/* Right Side Actions */}
@@ -282,142 +266,73 @@ const Header: React.FC = () => {
           </button>
           
           <ul className="nav-list flex flex-col gap-5 w-full max-w-[500px] landscape:h-full relative">
-            {/* Mobile Home */}
-            <li>
-              <Link 
-                href="/" 
-                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                  isActive('/') ? 'active' : ''
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                Home
-              </Link>
-            </li>
-
-            {/* Mobile About */}
-            <li>
-              <Link 
-                href="/about" 
-                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                  isActive('/about') ? 'active' : ''
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                About
-              </Link>
-            </li>
-
-            {/* Mobile Products */}
-            <li>
-              <Link 
-                href="/products" 
-                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                  isActive('/products') ? 'active' : ''
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
-
-            {/* Mobile Services Menu */}
-            <li className="relative group faq-item">
-              <button 
-                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
-                onClick={() => toggleDropdown('services')}
-              >
-                Services
-                <FontAwesomeIcon 
-                  icon={faAngleDown} 
-                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'services' ? 'rotate-180' : ''}`} 
-                />
-              </button>
-              <ul className={`faq-body ${activeDropdown === 'services' ? 'open' : 'close'}`}>
-                {servicesMenuItems.map((item, index) => (
-                  <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                    <Link href={item.href} className="flex" onClick={toggleMobileMenu}>
+            {navigationConfig.main.map((item, index) => (
+              <li key={index} className={item.type === 'dropdown' ? 'relative group faq-item' : ''}>
+                {item.type === 'link' ? (
+                  <Link 
+                    href={item.href} 
+                    className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                      isActive(item.href) ? 'active' : ''
+                    }`}
+                    onClick={toggleMobileMenu}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <>
+                    <button 
+                      className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
+                      onClick={() => toggleDropdown(item.label.toLowerCase())}
+                    >
                       {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-
-            {/* Mobile Pages Menu */}
-            <li className="relative group faq-item">
-              <button 
-                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
-                onClick={() => toggleDropdown('pages')}
-              >
-                Pages
-                <FontAwesomeIcon 
-                  icon={faAngleDown} 
-                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'pages' ? 'rotate-180' : ''}`} 
-                />
-              </button>
-              <div className={`faq-body ${activeDropdown === 'pages' ? 'open' : 'close'}`}>
-                <ul className="columns-2 gap-10 mb-15">
-                  {pagesMenuItems.map((item, index) => (
-                    <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                      <Link href={item.href} className="flex" onClick={toggleMobileMenu}>
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="max-w-full">
-                  <Image 
-                    src="/images/navbar.png" 
-                    alt="navbar" 
-                    width={200} 
-                    height={120} 
-                    className="w-full dark:hidden rounded-2xl"
-                  />
-                  <Image 
-                    src="/images/navbar-dark.png" 
-                    alt="navbar" 
-                    width={200} 
-                    height={120} 
-                    className="w-full hidden dark:block rounded-2xl"
-                  />
-                </div>
-              </div>
-            </li>
-
-            {/* Mobile News Menu */}
-            <li className="relative group faq-item">
-              <button 
-                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group"
-                onClick={() => toggleDropdown('news')}
-              >
-                News
-                <FontAwesomeIcon 
-                  icon={faAngleDown} 
-                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'news' ? 'rotate-180' : ''}`} 
-                />
-              </button>
-              <ul className={`faq-body ${activeDropdown === 'news' ? 'open' : 'close'}`}>
-                {newsMenuItems.map((item, index) => (
-                  <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                    <Link href={item.href} className="flex" onClick={toggleMobileMenu}>
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-
-            {/* Mobile Contact */}
-            <li>
-              <Link 
-                href="/contact" 
-                className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
-                onClick={toggleMobileMenu}
-              >
-                Contact Us
-              </Link>
-            </li>
+                      <FontAwesomeIcon 
+                        icon={faAngleDown} 
+                        className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''}`} 
+                      />
+                    </button>
+                    {item.label === 'Pages' ? (
+                      <div className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'}`}>
+                        <ul className="columns-2 gap-10 mb-15">
+                          {item.items.map((subItem, subIndex) => (
+                            <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph py-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                              <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
+                                {subItem.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="max-w-full">
+                          <Image 
+                            src="/images/navbar.png" 
+                            alt="navbar" 
+                            width={200} 
+                            height={120} 
+                            className="w-full dark:hidden rounded-2xl"
+                          />
+                          <Image 
+                            src="/images/navbar-dark.png" 
+                            alt="navbar" 
+                            width={200} 
+                            height={120} 
+                            className="w-full hidden dark:block rounded-2xl"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'}`}>
+                        {item.items.map((subItem, subIndex) => (
+                          <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                            <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                )}
+              </li>
+            ))}
 
             {/* Mobile Book Demo */}
             <li>
