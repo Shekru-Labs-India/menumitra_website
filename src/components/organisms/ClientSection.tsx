@@ -4,6 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import GraphBackground from '@/components/atoms/GraphBackground';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faCashRegister, 
+  faShoppingCart, 
+  faQrcode, 
+  faChartBar, 
+  faBoxes 
+} from '@fortawesome/free-solid-svg-icons';
 
 const ClientSection: React.FC = () => {
   useEffect(() => {
@@ -155,25 +163,34 @@ const ClientSection: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-15 flex items-center justify-center">
-          <Link href="/contact" className="btn-outline">
-            Start your Journey
-          </Link>
-        </div>
         
         {/* SEO-friendly additional content */}
         <div className="mt-10 text-center max-w-[800px] mx-auto px-4">
-          <p className="text-sm text-light mb-4">
-            <strong>MenuMitra Restaurant Management Software</strong> - Trusted by leading restaurants, cafes, and food establishments across India. 
+          <p className="text-base leading-relaxed text-light mb-6">
+            <div className="font-bold text-2xl">MenuMitra Restaurant Management Software</div>  <br /> Trusted by leading restaurants, cafes, and food establishments across India. 
             Our comprehensive digital solutions help restaurants streamline operations, increase revenue, and enhance customer experience.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-xs text-light">
-            <span>✓ Restaurant POS System</span>
-            <span>✓ Online Order Management</span>
-            <span>✓ Digital Menu Solutions</span>
-            <span>✓ Customer Analytics</span>
-            <span>✓ Inventory Management</span>
+          <div className="flex flex-wrap justify-center gap-6 text-base md:text-lg text-light">
+            <div className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg">
+              <FontAwesomeIcon icon={faCashRegister} className="text-primary text-lg" />
+              <span className="font-medium">Restaurant POS System</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg">
+              <FontAwesomeIcon icon={faShoppingCart} className="text-primary text-lg" />
+              <span className="font-medium">Online Order Management</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg">
+              <FontAwesomeIcon icon={faQrcode} className="text-primary text-lg" />
+              <span className="font-medium">Digital Menu Solutions</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg">
+              <FontAwesomeIcon icon={faChartBar} className="text-primary text-lg" />
+              <span className="font-medium">Customer Analytics</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg">
+              <FontAwesomeIcon icon={faBoxes} className="text-primary text-lg" />
+              <span className="font-medium">Inventory Management</span>
+            </div>
           </div>
         </div>
       </div>
