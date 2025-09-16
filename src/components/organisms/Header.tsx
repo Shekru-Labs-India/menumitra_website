@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +11,11 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    return pathname === path;
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -29,16 +35,6 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const homeMenuItems = [
-    { href: '/', label: 'Home 1' },
-    { href: '/payment', label: 'Home 2' },
-    { href: '/banking', label: 'Home 3' },
-    { href: '/analytics', label: 'Home 4' },
-    { href: '/hosting', label: 'Home 5' },
-    { href: '/chatbot', label: 'Home 6' },
-    { href: '/crypto', label: 'Home 7' },
-    { href: '/ai', label: 'Home 8' },
-  ];
 
   const servicesMenuItems = [
     { href: '/services', label: 'Services' },
@@ -93,26 +89,16 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <ul className="nav-list hidden lg:flex mx-auto bg-white dark:bg-dark-200 p-2.5 shadow-nav rounded-large [&>*:not(:last-child)]:me-1">
-          {/* Home Dropdown */}
-          <li className="relative group">
-            <button 
-              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors active group"
+          {/* Home */}
+          <li className="group">
+            <Link 
+              href="/" 
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                isActive('/') ? 'active' : ''
+              }`}
             >
               Home
-              <FontAwesomeIcon 
-                icon={faAngleDown} 
-                className="text-paragraph dark:text-white ml-1 group-hover:rotate-180 duration-500 mt-1" 
-              />
-            </button>
-            <ul className="absolute min-w-[250px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
-              {homeMenuItems.map((item, index) => (
-                <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  <Link href={item.href} className="flex">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            </Link>
           </li>
 
           {/* About */}
@@ -129,7 +115,9 @@ const Header: React.FC = () => {
           <li className="group">
             <Link 
               href="/products" 
-              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                isActive('/products') ? 'active' : ''
+              }`}
             >
               Products
             </Link>
@@ -292,27 +280,17 @@ const Header: React.FC = () => {
           </button>
           
           <ul className="nav-list flex flex-col gap-5 w-full max-w-[500px] landscape:h-full relative">
-            {/* Mobile Home Menu */}
-            <li className="relative group faq-item">
-              <button 
-                className="faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group active"
-                onClick={() => toggleDropdown('home')}
+            {/* Mobile Home */}
+            <li>
+              <Link 
+                href="/" 
+                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                  isActive('/') ? 'active' : ''
+                }`}
+                onClick={toggleMobileMenu}
               >
                 Home
-                <FontAwesomeIcon 
-                  icon={faAngleDown} 
-                  className={`text-paragraph dark:text-white ml-auto duration-500 mt-1 ${activeDropdown === 'home' ? 'rotate-180' : ''}`} 
-                />
-              </button>
-              <ul className={`faq-body ${activeDropdown === 'home' ? 'open' : 'close'}`}>
-                {homeMenuItems.map((item, index) => (
-                  <li key={index} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                    <Link href={item.href} className="flex" onClick={toggleMobileMenu}>
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              </Link>
             </li>
 
             {/* Mobile About */}
@@ -330,7 +308,9 @@ const Header: React.FC = () => {
             <li>
               <Link 
                 href="/products" 
-                className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
+                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+                  isActive('/products') ? 'active' : ''
+                }`}
                 onClick={toggleMobileMenu}
               >
                 Products
