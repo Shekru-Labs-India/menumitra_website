@@ -125,6 +125,16 @@ const Header: React.FC = () => {
             </Link>
           </li>
 
+          {/* Products */}
+          <li className="group">
+            <Link 
+              href="/products" 
+              className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
+            >
+              Products
+            </Link>
+          </li>
+
           {/* Services Dropdown */}
           <li className="relative group">
             <button className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group">
@@ -313,6 +323,17 @@ const Header: React.FC = () => {
                 onClick={toggleMobileMenu}
               >
                 About
+              </Link>
+            </li>
+
+            {/* Mobile Products */}
+            <li>
+              <Link 
+                href="/products" 
+                className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
+                onClick={toggleMobileMenu}
+              >
+                Products
               </Link>
             </li>
 
