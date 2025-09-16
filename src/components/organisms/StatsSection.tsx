@@ -16,19 +16,19 @@ interface StatsSectionProps {
 
 const defaultStats: StatItem[] = [
   {
-    value: 15,
-    suffix: 'K+',
+    value: 2500,
+    suffix: '+',
     label: 'Restaurants Served'
   },
   {
-    value: 30,
+    value: 25,
     suffix: '%',
-    label: 'Average Sales Increase'
+    label: 'Average Revenue Growth'
   },
   {
-    value: 99,
-    suffix: '%',
-    label: 'Customer Satisfaction'
+    value: 4.8,
+    suffix: '/5',
+    label: 'Customer Rating'
   }
 ];
 
@@ -45,12 +45,12 @@ const StatsSection: React.FC<StatsSectionProps> = ({
               <div key={index} className="flex flex-col items-center justify-center relative">
                 <h2 className="text-[48px]">
                   <CountUp 
-                    end={stat.value} 
-                    suffix={stat.suffix}
+                    to={stat.value} 
                     duration={2}
                     delay={index * 0.2}
                     className="counter"
                   />
+                  {stat.suffix}
                 </h2>
                 <p className="font-jakarta_sans text-light">{stat.label}</p>
               </div>
