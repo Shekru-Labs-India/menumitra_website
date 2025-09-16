@@ -8,7 +8,7 @@ import MobileDeviceOverlay from '@/components/atoms/MobileDeviceOverlay';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero relative lg:pt-[260px] max-lg:pt-[160px] pb-[140px] overflow-hidden lg:overflow-visible">
+    <section className="hero relative lg:pt-[260px] max-lg:pt-[160px] pb-[140px] overflow-hidden lg:overflow-visible ">
       {/* Background decoration - Desktop SVG graphs */}
       <div className="absolute top-0 left-0 w-full max-lg:hidden">
         <Image 
