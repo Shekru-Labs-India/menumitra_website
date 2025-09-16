@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import { Download, Smartphone, Monitor } from 'lucide-react';
-
+import SectionDivider from '@/components/atoms/SectionDivider';
 const ProductsPage: React.FC = () => {
   const products = [
     {
@@ -47,7 +47,7 @@ const ProductsPage: React.FC = () => {
       <Header />
       
       {/* Main Content */}
-      <section className="pb-150 relative pt-[230px] ">
+      <section className="pb-20 relative pt-[230px] ">
         <div className="container">
           <div className="text-center max-w-[620px] mx-auto mb-25">
             <p className="section-tagline">MenuMitra Apps</p>
@@ -108,6 +108,8 @@ const ProductsPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <SectionDivider />
 
       
       <FooterSection />
