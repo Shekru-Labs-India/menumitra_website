@@ -1,42 +1,42 @@
 import React from 'react';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
-import { Download, Smartphone, Monitor, Calendar } from 'lucide-react';
+import { Download, Smartphone, Monitor, Calendar, ExternalLink, Globe } from 'lucide-react';
 import SectionDivider from '@/components/atoms/SectionDivider';
 const ProductsPage: React.FC = () => {
   const productsV13 = [
     {
       name: 'Owner App v1.3',
       image: 'images/mm/mm.png',
-      description: 'Complete restaurant management for owners.',
+      description: 'Complete restaurant management dashboard for owners. Monitor sales, manage inventory, track staff performance, and make data-driven decisions.',
       downloadUrl: 'https://menusmitra.xyz/website/owner_app.apk',
       platform: 'Android 6.0 and above'
     },
     {
       name: 'POS System v1.3',
       image: 'images/mm/mm.png',
-      description: 'Powerful billing and order management system.',
+      description: 'Powerful point-of-sale system with advanced billing, inventory tracking, and comprehensive reporting capabilities.',
       downloadUrl: 'https://menusmitra.xyz/website/menumitra_pos_system.exe',
       platform: 'Windows 7 and above'
     },
     {
       name: 'Captain App v1.3',
       image: 'images/mm/mm.png',
-      description: 'Table and order management for captains.',
+      description: 'Streamlined table management and order coordination for restaurant captains. Optimize table turnover and service efficiency.',
       downloadUrl: 'https://menusmitra.xyz/website/captain_app.apk',
       platform: 'Android 6.0 and above'
     },
     {
       name: 'Waiter App v1.3',
       image: 'images/mm/mm.png',
-      description: 'Order taking and customer service app.',
+      description: 'Intuitive order-taking interface for waitstaff. Take orders, manage customer requests, and ensure seamless service delivery.',
       downloadUrl: 'https://menusmitra.xyz/website/waiter_app.apk',
       platform: 'Android 6.0 and above'
     },
     {
       name: 'Partner App v1.3',
       image: 'images/mm/mm.png',
-      description: 'Delivery and partnership management.',
+      description: 'Comprehensive delivery and partnership management platform. Coordinate with delivery partners and manage external collaborations.',
       downloadUrl: 'https://menusmitra.xyz/website/partner_app.apk',
       platform: 'Android 6.0 and above'
     }
@@ -46,7 +46,7 @@ const ProductsPage: React.FC = () => {
     {
       name: 'Owner App v2',
       image: 'images/mm/mm.png',
-      description: 'Next-generation restaurant management solution.',
+      description: 'Revolutionary restaurant management platform with AI-powered insights, real-time analytics, and advanced automation features for modern restaurant owners.',
       downloadUrl: 'https://menusmitra.xyz/website/owner_app_v2.apk',
       platform: 'Android 6.0 and above',
       releaseDate: 'Released: 28 July 2025'
@@ -54,12 +54,59 @@ const ProductsPage: React.FC = () => {
     {
       name: 'POS System v2',
       image: 'images/mm/mm.png',
-      description: 'Advanced point-of-sale system with modern features.',
+      description: 'Next-generation point-of-sale system featuring cloud synchronization, advanced inventory management, and integrated payment processing.',
       downloadUrl: 'https://menusmitra.xyz/website/menumitra_pos_system_v2.exe',
       platform: 'Windows 7 and above',
       releaseDate: 'Released: 31 July 2025'
     }
   ];
+
+  const productsV2Web = {
+    production: [
+      {
+        name: 'Menumitra Stats',
+        url: 'https://stats-v2.menumitra.com',
+        description: 'Comprehensive analytics dashboard with real-time insights, sales reports, and performance metrics to drive data-driven decisions.'
+      },
+      {
+        name: 'Menumitra KDS',
+        url: 'https://kds-v2.menumitra.com',
+        description: 'Advanced Kitchen Display System with order prioritization, cooking timers, and seamless kitchen workflow management.'
+      },
+      {
+        name: 'Menumitra CDS',
+        url: 'https://cds-v2.menumitra.com',
+        description: 'Interactive Customer Display System for order tracking, promotions, and enhanced customer engagement experience.'
+      },
+      {
+        name: 'Menumitra Customer',
+        url: 'https://customer-v2.menumitra.com',
+        description: 'Customer-facing web application for online ordering, menu browsing, and seamless dining experience.'
+      }
+    ],
+    testing: [
+      {
+        name: 'Menumitra Stats (Test)',
+        url: 'https://test-menumitra-stats-v2.netlify.app',
+        description: 'Analytics dashboard testing environment - Experiment with new reporting features and data visualization tools.'
+      },
+      {
+        name: 'Menumitra KDS (Test)',
+        url: 'https://test-menumitra-kds-v2.netlify.app',
+        description: 'Kitchen Display System testing environment - Validate new kitchen workflows and order management features.'
+      },
+      {
+        name: 'Menumitra CDS (Test)',
+        url: 'https://test-menumitra-cds-v2.netlify.app',
+        description: 'Customer Display System testing environment - Test new customer engagement features and interface designs.'
+      },
+      {
+        name: 'Menumitra Customer (Test)',
+        url: 'https://test-menumitra-customer-v2.netlify.app',
+        description: 'Customer application testing environment - Validate new ordering features and user experience improvements.'
+      }
+    ]
+  };
 
   return (
     <>
@@ -68,10 +115,21 @@ const ProductsPage: React.FC = () => {
       {/* Main Content */}
       <section className="pb-20 relative pt-[230px] ">
         <div className="container">
-          <div className="text-center    mx-auto mb-25">
-            <h2 className="mb-8">Complete Restaurant Management Suite</h2>  
+          <div className="text-center mx-auto mb-25">
+            <h2 className="mb-8">Complete Restaurant Management Suite</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Transform your restaurant operations with our comprehensive suite of applications. 
+              From order management to analytics, we provide everything you need to run a successful restaurant business.
+            </p>
           </div>
-          <h3 className="mb-8 text-2xl font-semibold text-center">Version 1.3</h3>
+          
+          <div className="text-center mx-auto mb-25">
+            <h2 className="mb-4">Version 1.3 - Proven & Reliable</h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Our battle-tested applications that have been serving restaurants worldwide. 
+              Download and install these native applications for offline-first operations.
+            </p>
+          </div>
           <div
             className=" grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-8 relative z-10"
             data-aos="fade-up"
@@ -124,7 +182,13 @@ const ProductsPage: React.FC = () => {
 
           <SectionDivider className="my-16" />
 
-          <h3 className="mb-8 text-2xl font-semibold text-center">Version 2.0</h3>
+          <div className="text-center mx-auto mb-25">
+            <h2 className="mb-4">Version 2.0 - Next Generation</h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Experience the future of restaurant management with our latest applications. 
+              Enhanced features, improved performance, and cutting-edge technology await.
+            </p>
+          </div>
           <div
             className=" grid grid-cols-2 max-sm:grid-cols-1 gap-8 relative z-10"
             data-aos="fade-up"
@@ -175,8 +239,113 @@ const ProductsPage: React.FC = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      <SectionDivider className="my-16" />
 
+      {/* V2 Web Products Section */}
+      <section className="pb-20 relative">
+        <div className="container">
+          <div className="text-center mx-auto mb-25">
+            <h2 className="mb-8">V2 Web Applications - Cloud-Powered Solutions</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Access our cutting-edge web-based applications designed for modern restaurant operations. 
+              Built with the latest technology stack, these applications provide seamless, real-time collaboration 
+              and management capabilities across all your restaurant operations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Production Environment */}
+            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
+                  <Globe className="w-6 h-6 text-green-600" />
+                  Production Environment
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Live, production-ready applications serving real customers. 
+                  These applications are optimized for performance, security, and reliability.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                {productsV2Web.production.map((product, index) => (
+                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow">
+                    <div className="flex items-center justify-between">
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <a 
+                          href={product.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                        >
+                          {product.url}
+                        </a>
+                      </div>
+                      <a 
+                        href={product.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-navbar btn-sm flex items-center gap-2 ml-4"
+                      >
+                        <ExternalLink className="w-4 h-4" color="white" />
+                        Visit
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Testing Environment */}
+            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
+                  <Monitor className="w-6 h-6 text-orange-600" />
+                  Testing Environment
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Development and testing applications for experimentation and validation. 
+                  Perfect for trying new features before they go live in production.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                {productsV2Web.testing.map((product, index) => (
+                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow">
+                    <div className="flex items-center justify-between">
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <a 
+                          href={product.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                        >
+                          {product.url}
+                        </a>
+                      </div>
+                      <a 
+                        href={product.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-navbar btn-sm flex items-center gap-2 ml-4"
+                      >
+                        <ExternalLink className="w-4 h-4" color="white" />
+                        Visit
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
       
       <FooterSection />
     </>
