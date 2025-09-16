@@ -1,0 +1,206 @@
+PRIVACY POLICY - MENUMITRA
+
+EFFECTIVE DATE: [Effective Date]
+LAST UPDATED: [Last Updated]
+
+1. DEFINITIONS AND INTERPRETATION
+
+1.1 In this Privacy Policy, the following terms shall have the meanings ascribed to them:
+    (a) "Company," "we," "our," or "us" means MenuMitra, a provider of restaurant management software and related services;
+    (b) "Personal Data" or "Personal Information" means any information relating to an identified or identifiable natural person as defined under applicable data protection laws, including but not limited to the General Data Protection Regulation (GDPR), the Information Technology Act, 2000 (India), and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011;
+    (c) "Business Data" means operational data specific to restaurant operations, including menu items, pricing structures, inventory records, order histories, and transaction receipts;
+    (d) "Data Subject" or "User" means any natural person who registers for or utilizes MenuMitra services;
+    (e) "Processing" means any operation performed on Personal Data, including collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure, dissemination, erasure, or destruction.
+
+1.2 This Privacy Policy governs the collection, processing, storage, and disclosure of Personal Data in connection with MenuMitra's restaurant management software services, including point-of-sale systems, staff applications, customer applications, analytics platforms, and third-party integrations.
+
+2. SCOPE AND APPLICABILITY
+
+2.1 This Privacy Policy applies to all users of MenuMitra services, including but not limited to restaurants, cafes, cloud kitchens, and food service establishments.
+
+2.2 By accessing, using, or registering for MenuMitra services, or by visiting the website menumitra.com, users expressly consent to the data processing practices described herein.
+
+2.3 This Policy complies with applicable data protection legislation, including but not limited to:
+    (a) General Data Protection Regulation (EU) 2016/679
+    (b) Information Technology Act, 2000 (India)
+    (c) Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011
+    (d) California Consumer Privacy Act (CCPA)
+    (e) Other applicable regional data protection laws
+
+3. CATEGORIES OF PERSONAL DATA COLLECTED
+
+3.1 Personal Data Provided Voluntarily:
+    (a) Account Information: Full name, business entity name, email address, telephone number, billing address, and business registration details;
+    (b) Financial Information: Payment instrument details processed through certified third-party payment gateways (Company does not store complete payment card numbers or sensitive financial data);
+    (c) Business Operational Data: Menu configurations, pricing matrices, inventory records, staff employment records, order transaction histories, and receipt documentation;
+    (d) Communication Records: Correspondence with customer support and sales representatives.
+
+3.2 Automatically Collected Data:
+    (a) Usage Analytics: Application and website interaction logs, feature utilization patterns, timestamp data, system crash reports, and performance metrics;
+    (b) Technical Data: Device identifiers, operating system information, application version numbers, IP addresses, and anonymized geolocation data for Bluetooth Low Energy (BLE) functionality;
+    (c) Tracking Technologies: Cookies, web beacons, and similar technologies as detailed in Section 11.
+
+3.3 Mobile Application Permissions:
+    The Company's mobile applications request the following permissions solely for core functionality:
+    (a) Bluetooth/BLE and Location Services (Android): Required for staff device synchronization and BLE communication protocols;
+    (b) Push Notifications: Necessary for order alerts, system updates, and critical operational communications;
+    (c) Storage/Media Access: Required for asset caching, receipt archiving, and offline operational capabilities;
+    (d) Background Services/Boot Completion: Essential for resuming point-of-sale and background task execution following device restarts.
+
+4. LEGAL BASIS FOR PROCESSING
+
+4.1 The Company processes Personal Data under the following legal bases as recognized under applicable data protection laws:
+
+4.2 Contractual Necessity (Article 6(1)(b) GDPR):
+    Processing is necessary for the performance of a contract to which the Data Subject is party, including the provision of requested services and fulfillment of contractual obligations.
+
+4.3 Consent (Article 6(1)(a) GDPR):
+    Processing is based on explicit consent for marketing communications, optional feature utilization, and non-essential data processing activities.
+
+4.4 Legal Compliance (Article 6(1)(c) GDPR):
+    Processing is necessary for compliance with legal obligations, including tax reporting, regulatory compliance, and law enforcement cooperation.
+
+4.5 Legitimate Interests (Article 6(1)(f) GDPR):
+    Processing is necessary for legitimate business interests, including fraud prevention, service improvement, analytics, and security enhancement, provided such interests are not overridden by Data Subject rights and freedoms.
+
+5. PURPOSES OF DATA PROCESSING
+
+5.1 Personal Data is processed for the following purposes:
+    (a) Service Provision: Operation, maintenance, and delivery of MenuMitra software services and applications;
+    (b) Transaction Processing: Order fulfillment, billing operations, and payment processing;
+    (c) Communication: Real-time staff coordination through BLE technology and push notifications;
+    (d) Service Improvement: Product functionality enhancement, analytics, and technical issue resolution;
+    (e) Customer Support: Response to user inquiries and technical assistance provision;
+    (f) Legal Compliance: Adherence to applicable laws, regulations, and legal process requirements;
+    (g) Security: Fraud prevention, system security, and rights protection.
+
+5.2 The Company expressly declares that it does not sell, rent, or otherwise monetize Personal Data to third parties for commercial purposes.
+
+6. DATA SHARING AND THIRD-PARTY DISCLOSURES
+
+6.1 Personal Data may be shared with the following categories of recipients:
+
+6.2 Service Providers:
+    Third-party vendors providing essential services, including cloud hosting providers, payment processors, notification services (e.g., Expo Notifications), analytics providers, and other contractors bound by data processing agreements requiring appropriate data protection measures.
+
+6.3 Business Partners:
+    Integration partners and promotional collaborators, subject to explicit user consent and contractual data protection obligations.
+
+6.4 Legal Authorities:
+    Government agencies, law enforcement, and regulatory bodies in response to lawful requests, court orders, or legal process requirements.
+
+6.5 All third-party recipients are contractually obligated to implement appropriate technical and organizational measures to protect Personal Data and limit processing to specified purposes.
+
+7. DATA SECURITY MEASURES
+
+7.1 The Company implements comprehensive security measures in accordance with industry standards and regulatory requirements:
+
+7.2 Technical Safeguards:
+    (a) Encryption: Transport Layer Security (TLS) 1.2 or higher for data in transit; Advanced Encryption Standard (AES-256) or equivalent for data at rest;
+    (b) Access Controls: Role-based access management implementing least privilege principles for Owner, Manager, Waiter, Captain, and Partner roles;
+    (c) Authentication: Secure password storage using industry-standard hashing algorithms and multi-factor authentication support for sensitive operations;
+    (d) Local Security: Encrypted local storage for offline functionality and secure synchronization protocols.
+
+7.3 Organizational Safeguards:
+    (a) Regular security audits and vulnerability assessments;
+    (b) Comprehensive logging and monitoring systems;
+    (c) Regular data backup procedures;
+    (d) Employee training on data protection and security protocols.
+
+7.4 Breach Notification:
+    In the event of a data breach that poses a risk to Data Subject rights and freedoms, the Company will notify affected users and relevant supervisory authorities within the timeframes prescribed by applicable law.
+
+8. DATA RETENTION POLICY
+
+8.1 Personal Data is retained only for the duration necessary to fulfill the purposes outlined in this Policy.
+
+8.2 Retention Periods:
+    (a) Account and operational records required for business, taxation, or legal compliance purposes: Up to seven (7) years following account termination;
+    (b) Non-essential data, including anonymized usage logs: Deletion or anonymization within ninety (90) days of account termination, unless extended retention is required by law.
+
+9. INTERNATIONAL DATA TRANSFERS
+
+9.1 Personal Data may be transferred to and processed in countries outside the Data Subject's jurisdiction, including India and other countries where service providers operate.
+
+9.2 Transfer Safeguards:
+    International transfers are protected by appropriate safeguards, including:
+    (a) Adequacy decisions by relevant supervisory authorities;
+    (b) Standard Contractual Clauses (SCCs) as approved by the European Commission;
+    (c) Binding Corporate Rules (BCRs) where applicable;
+    (d) Other legally recognized transfer mechanisms.
+
+10. DATA SUBJECT RIGHTS
+
+10.1 Subject to applicable law, Data Subjects may exercise the following rights:
+
+10.2 Access Rights (Article 15 GDPR):
+    Right to obtain confirmation of processing and access to Personal Data, including information about processing purposes, categories of data, recipients, and retention periods.
+
+10.3 Rectification Rights (Article 16 GDPR):
+    Right to request correction of inaccurate or incomplete Personal Data.
+
+10.4 Erasure Rights (Article 17 GDPR):
+    Right to request deletion of Personal Data, subject to legal obligations requiring continued retention.
+
+10.5 Portability Rights (Article 20 GDPR):
+    Right to receive Personal Data in a structured, commonly used, and machine-readable format and to transmit such data to another controller.
+
+10.6 Restriction and Objection Rights (Articles 18, 21 GDPR):
+    Right to restrict processing or object to processing based on legitimate interests or for direct marketing purposes.
+
+10.7 Consent Withdrawal:
+    Right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before withdrawal.
+
+10.8 Rights Exercise:
+    Requests to exercise rights should be submitted to info@menumitra.com. The Company may require identity verification before processing requests.
+
+11. CHILDREN'S PRIVACY PROTECTION
+
+11.1 MenuMitra services are designed for business use and are not intended for individuals under eighteen (18) years of age.
+
+11.2 The Company does not knowingly collect Personal Data from minors. Upon identification of such data, immediate deletion procedures will be initiated.
+
+12. COOKIES AND TRACKING TECHNOLOGIES
+
+12.1 The Company utilizes cookies and similar technologies for:
+    (a) Session management and user preference storage;
+    (b) Usage analytics and performance monitoring;
+    (c) Feature enablement and user experience optimization.
+
+12.2 Users may manage cookie preferences through browser settings or application-specific controls, though functionality may be impaired by cookie blocking.
+
+13. THIRD-PARTY WEBSITES
+
+13.1 MenuMitra services may contain links to external websites. The Company disclaims responsibility for third-party privacy practices and recommends review of external privacy policies.
+
+14. POLICY MODIFICATIONS
+
+14.1 This Privacy Policy may be updated to reflect changes in legal requirements, business practices, or service offerings.
+
+14.2 Material changes will be communicated through email notification or in-application notices, with updated effective dates prominently displayed.
+
+15. CONTACT INFORMATION AND DATA PROTECTION OFFICER
+
+15.1 For privacy-related inquiries, requests, or complaints:
+
+    Email: info@menumitra.com
+    Telephone: +91 93178 18283
+
+15.2 Data Subjects retain the right to lodge complaints with relevant supervisory authorities in their jurisdiction if concerns remain unresolved after contacting the Company.
+
+16. APP STORE COMPLIANCE
+
+16.1 This Privacy Policy governs data processing activities for MenuMitra mobile applications distributed through Android and iOS app stores.
+
+16.2 Application permissions, including BLE/Bluetooth, Location Services, Notifications, Storage, and background services, are utilized exclusively for core point-of-sale and staff coordination functionality.
+
+16.3 The Company maintains accurate Data Safety declarations in app store listings consistent with the data processing practices described herein.
+
+17. SUMMARY OF KEY PROVISIONS
+
+17.1 Data Collection: Account, payment, business operations, usage, and device data.
+17.2 Data Sales: Personal Data is not sold to third parties.
+17.3 Security: Encryption, role-based access controls, and encrypted offline storage.
+17.4 Rights: Contact info@menumitra.com to exercise data protection rights.
+
+This Privacy Policy constitutes a legally binding agreement between MenuMitra and users of its services, subject to applicable data protection laws and regulations.
