@@ -4,32 +4,40 @@ import React, { useState } from 'react';
 
 const FAQSection: React.FC = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
+  const [collapsingItems, setCollapsingItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(item => item !== index)
-        : [...prev, index]
-    );
+    if (openItems.includes(index)) {
+      // Closing item - add to collapsing first
+      setCollapsingItems(prev => [...prev, index]);
+      // Remove from open after a short delay to allow collapsing animation
+      setTimeout(() => {
+        setOpenItems(prev => prev.filter(item => item !== index));
+        setCollapsingItems(prev => prev.filter(item => item !== index));
+      }, 300); // Match the CSS transition duration
+    } else {
+      // Opening item - add directly to open
+      setOpenItems(prev => [...prev, index]);
+    }
   };
 
   const faqData = [
     {
-      question: "What is a business agency?",
-      answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. \"It's not Latin."
+      question: "What is MenuMitra and how does it help my restaurant?",
+      answer: "MenuMitra is a comprehensive restaurant management system that helps you manage your entire restaurant operations from menu management to customer orders, kitchen display, and analytics. It streamlines your workflow, reduces errors, and improves customer satisfaction."
     },
     {
-      question: "What services does a business agency provide?",
-      answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. \"It's not Latin."
+      question: "What are the main features of MenuMitra?",
+      answer: "MenuMitra offers multiple modules including Point of Sale (POS), Kitchen Display System (KDS), Customer Display System (CDS), Customer App, Waiter App, Captain App, and comprehensive analytics dashboard. Each module is designed to work seamlessly together."
     },
     {
-      question: "How often should I update my website?",
-      answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. \"It's not Latin."
+      question: "How do I get started with MenuMitra?",
+      answer: "Getting started is easy! Contact our team to schedule a personalized demo where we'll show you how MenuMitra can benefit your specific restaurant. We'll help you choose the right modules and provide full setup support."
     }
   ];
 
   return (
-    <section className="relative py-150 max-md:overflow-hidden">
+    <section className="relative py-150 max-md:overflow-hidden bg-[url('/images/hero-gradient.png')] bg-cover bg-no-repeat bg-center">
     <div className="container relative">
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex max-md:flex-col -z-10 max-md:hidden">
         <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 blur-[145px]" />
@@ -46,241 +54,63 @@ const FAQSection: React.FC = () => {
           </h2>
         </div>
         <div className="[&>*:not(:last-child)]:mb-5">
-          <div className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
-            <div className="faq-header flex items-center py-3 px-5 bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark  cursor-pointer">
-              <h3 className="text-xl font-semibold">
-                Q. What is a business agency?
-              </h3>
-              <span className="shrink-0 ml-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="plus"
-                >
-                  <path
-                    d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className=" minus"
-                >
-                  <path
-                    d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div className="faq-body close">
-              <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as a nonsense text. “It's not Latin.
+          {faqData.map((faq, index) => (
+            <div key={index} className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
+              <div 
+                className={`faq-header flex items-center py-3 px-5 bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer ${openItems.includes(index) ? 'open' : ''}`}
+                onClick={() => toggleItem(index)}
+              >
+                <h3 className="text-xl font-semibold">
+                  Q. {faq.question}
+                </h3>
+                <span className="shrink-0 ml-auto">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={20}
+                    height={20}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    className="plus"
+                  >
+                    <path
+                      d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                      stroke=""
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      className="stroke-paragraph dark:stroke-primary"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={20}
+                    height={20}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    className="minus"
+                  >
+                    <path
+                      d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                      stroke=""
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      className="stroke-paragraph dark:stroke-primary"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div className={`faq-body ${
+                openItems.includes(index) 
+                  ? 'open' 
+                  : collapsingItems.includes(index) 
+                    ? 'collapsing' 
+                    : 'close'
+              }`}>
+                <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
+                  {faq.answer}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
-            <div className="faq-header flex items-center py-3 px-5 bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer">
-              <h3 className="text-xl font-semibold">
-                Q. What services does a business agency provide?
-              </h3>
-              <span className="shrink-0 ml-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="plus"
-                >
-                  <path
-                    d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className=" minus"
-                >
-                  <path
-                    d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div className="faq-body close ">
-              <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as a nonsense text. “It's not Latin.
-              </div>
-            </div>
-          </div>
-          <div className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
-            <div className="faq-header flex items-center py-3 px-5 bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer">
-              <h3 className="text-xl font-semibold">
-                Q. How often should I update my website?
-              </h3>
-              <span className="shrink-0 ml-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="plus"
-                >
-                  <path
-                    d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className=" minus"
-                >
-                  <path
-                    d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div className="faq-body close ">
-              <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as a nonsense text. “It's not Latin.
-              </div>
-            </div>
-          </div>
-          <div className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
-            <div className="faq-header py-3 px-5 flex items-center bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer">
-              <h3 className="text-xl font-semibold">
-                Q. How do subscriptions work?
-              </h3>
-              <span className="shrink-0 ml-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="plus"
-                >
-                  <path
-                    d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className=" minus"
-                >
-                  <path
-                    d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div className="faq-body close ">
-              <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as a nonsense text. “It's not Latin.
-              </div>
-            </div>
-          </div>
-          <div className="faq-item bg-white dark:bg-dark-200 p-2.5 rounded-medium">
-            <div className="faq-header flex items-center py-3 px-5  bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer">
-              <h3 className="text-xl font-semibold ">
-                Q. What other services are you compatible with?
-              </h3>
-              <span className="shrink-0 ml-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="plus"
-                >
-                  <path
-                    d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className=" minus"
-                >
-                  <path
-                    d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                    stroke=""
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    className="stroke-paragraph dark:stroke-primary"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div className="faq-body close ">
-              <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as a nonsense text. “It's not Latin.
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
