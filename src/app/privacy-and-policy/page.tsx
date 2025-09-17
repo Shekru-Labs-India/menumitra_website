@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   // Fixed dates for legal compliance
-  const effectiveDate = "September 1, 2025";
-  const lastUpdatedDate = "September 1, 2025";
+  const effectiveDate = "January 15, 2025";
+  const lastUpdatedDate = "September 25, 2025";
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -64,18 +64,18 @@ export default function PrivacyPolicyPage() {
     <>
       <section className="relative pt-[160px] max-md:pt-150 overflow-hidden">
         <div className="absolute left-0 right-0 -top-[800px] bg-core-gradient bg-no-repeat bg-center opacity-70 w-full h-full bg-[length:600px_1000px] md:hidden" />
-        <div
-          className="container relative !max-w-[800px]"
-          data-aos="fade-up"
-          data-aos-offset={200}
-          data-aos-duration={1000}
-          data-aos-once="true"
-        >
-          <div className="absolute left-1/2 top-20 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
-            <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 blur-[145px]" />
-            <div className="w-[442px] h-[442px] rounded-full bg-primary-200/25 -ml-[170px] blur-[145px]" />
-            <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]" />
-          </div>
+  <div
+    className="container relative !max-w-[800px]"
+    data-aos="fade-up"
+    data-aos-offset={200}
+    data-aos-duration={1000}
+    data-aos-once="true"
+  >
+    <div className="absolute left-1/2 top-20 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
+      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 blur-[145px]" />
+      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/25 -ml-[170px] blur-[145px]" />
+      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]" />
+    </div>
           
           <main className="prose prose-gray max-w-4xl mx-auto px-6 py-12 leading-relaxed">
             {/* JSON-LD Structured Data */}
@@ -84,11 +84,11 @@ export default function PrivacyPolicyPage() {
               dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
             />
             
-            <div className="singlePage">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Privacy Policy
+            <div className="singlePage pb-10">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-center">
+        Privacy Policy
               </h1>
-            </div>
+    </div>
             
             {/* Effective Date */}
             <p className="text-sm text-gray-600 mb-6">
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
               <strong>Last Updated:</strong> {lastUpdatedDate}
             </p>
             
-            <div className="singlePage">
+    <div className="singlePage">
               <p className="mb-4">
                 MenuMitra ("we", "our", "us") provides restaurant management software and services (POS, staff apps, customer apps, analytics, integrations) to restaurants, cafes, cloud kitchens and food businesses. Protecting your privacy and keeping your data secure is a core priority. This Privacy Policy explains what information we collect, how we use it, with whom we share it, and the choices you have.
               </p>
@@ -291,14 +291,14 @@ export default function PrivacyPolicyPage() {
                   <li>We <strong>do not sell</strong> your personal data.</li>
                   <li>Data is <strong>encrypted</strong>, access is <strong>role-based</strong>, and offline storage is <strong>encrypted</strong>.</li>
                   <li>Contact <strong><a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a></strong> to exercise data rights.</li>
-                </ul>
+      </ul>
               </section>
 
               <p className="mb-4"><strong>Thank you</strong> for trusting MenuMitra with your restaurant operations. We build our product so your business runs smoothly — and your data stays secure.</p>
-            </div>
+    </div>
           </main>
-        </div>
-      </section>
+  </div>
+</section>
 
       <FooterSection />
     </>
