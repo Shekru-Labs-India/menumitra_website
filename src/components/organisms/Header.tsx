@@ -323,68 +323,96 @@ const Header: React.FC = () => {
           <X className="w-5 h-5 ml-2" />
         </button>
         
-        <ul className="nav-list flex flex-col gap-5 w-full max-w-[500px] landscape:h-full relative">
-          {navigationConfig.main.map((item, index) => (
-            <li key={index} className={item.type === 'dropdown' ? 'relative group faq-item' : ''}>
-              {item.type === 'link' ? (
-            <Link 
-                  href={item.href} 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                    isActive(item.href) ? 'active' : ''
-              }`}
-              onClick={toggleMobileMenu}
-            >
-                  {item.label}
-            </Link>
-              ) : (
-                <>
-                  <button 
-                    className={`faq-header font-Inter flex items-center text-base font-medium leading-8 py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large duration-500 hover:duration-500 transition-colors group ${
-                      (item.label === 'Features' && isFeaturesActive()) || 
-                      (item.label === 'AddOns' && isAddOnsActive()) || 
-                      (item.label === 'Outlet Type' && isOutletTypeActive())
-                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
-                        : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
-                    }`}
-                    onClick={() => toggleDropdown(item.label.toLowerCase())}
-                  >
-                    {item.label}
-                    <ChevronDown 
-                      className={`ml-auto duration-500 mt-1 w-4 h-4 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''} ${
-                        (item.label === 'Features' && isFeaturesActive()) || 
-                        (item.label === 'AddOns' && isAddOnsActive()) || 
-                        (item.label === 'Outlet Type' && isOutletTypeActive())
-                          ? 'text-primary-600 dark:text-primary-400'
-                          : 'text-paragraph dark:text-white'
-                      }`} 
-                    />
-                  </button>
-                  <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
-                    {item.items.map((subItem, subIndex) => (
-                      <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                        <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium' : ''}`} onClick={toggleMobileMenu}>
-                          {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`}>{subItem.icon}</span>}
-                          {subItem.label}
-                        </Link>
-                      </li>
-                ))}
-              </ul>
-                </>
-              )}
+        <div className="flex flex-col h-full bg-white dark:bg-dark-200">
+        
+
+          {/* Mobile Menu Content */}
+          <div className="flex-1 overflow-y-auto p-6 mt-20">
+            <ul className="space-y-4">
+              {navigationConfig.main.map((item, index) => (
+                <li key={index}>
+                  {item.type === 'link' ? (
+                    <Link 
+                      href={item.href} 
+                      className={`flex items-center text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
+                        isActive(item.href) 
+                          ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
+                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      }`}
+                      onClick={toggleMobileMenu}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <div className="space-y-2">
+                      <button 
+                        className={`w-full flex items-center justify-between text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
+                          (item.label === 'Features' && isFeaturesActive()) || 
+                          (item.label === 'AddOns' && isAddOnsActive()) || 
+                          (item.label === 'Outlet Type' && isOutletTypeActive())
+                            ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
+                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                        }`}
+                        onClick={() => toggleDropdown(item.label.toLowerCase())}
+                      >
+                        <span>{item.label}</span>
+                        <ChevronDown 
+                          className={`w-5 h-5 transition-transform duration-200 ${
+                            activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''
+                          }`} 
+                        />
+                      </button>
+                      
+                      {/* Mobile Dropdown Items */}
+                      <div className={`overflow-hidden transition-all duration-300 ${
+                        activeDropdown === item.label.toLowerCase() 
+                          ? 'max-h-96 opacity-100' 
+                          : 'max-h-0 opacity-0'
+                      }`}>
+                        <div className="pl-4 space-y-1">
+                          {item.items.map((subItem, subIndex) => (
+                            <Link 
+                              key={subIndex}
+                              href={subItem.href} 
+                              className={`flex items-center gap-3 py-2 px-4 rounded-lg text-base transition-colors ${
+                                isActive(subItem.href) 
+                                  ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-medium' 
+                                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                              }`} 
+                              onClick={toggleMobileMenu}
+                            >
+                              {subItem.icon && (
+                                <span className={`w-5 h-5 ${
+                                  isActive(subItem.href) 
+                                    ? 'text-primary-600 dark:text-primary-400' 
+                                    : 'text-gray-500 dark:text-gray-500'
+                                }`}>
+                                  {subItem.icon}
+                                </span>
+                              )}
+                              <span>{subItem.label}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </li>
               ))}
+            </ul>
+          </div>
 
-          {/* Mobile Book Demo */}
-          <li>
+          {/* Mobile Menu Footer */}
+          <div className="p-6 border-t border-gray-200 dark:border-gray-700">
             <Link 
               href="/book-demo" 
-              className="btn btn-navbar btn-sm"
+              className="w-full btn btn-primary btn-lg text-center block"
               onClick={toggleMobileMenu}
             >
               Book a Demo
             </Link>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </>
   );
