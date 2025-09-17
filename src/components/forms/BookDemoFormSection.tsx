@@ -1,41 +1,22 @@
 'use client';
 
 import React from 'react';
-import BookDemoForm, { BookDemoFormProps } from './BookDemoForm';
+import BookDemoForm from './BookDemoForm';
 
-export interface BookDemoFormSectionProps extends BookDemoFormProps {
-  // Section styling
-  sectionClassName?: string;
-  showSectionBackground?: boolean;
-  showSectionTitle?: boolean;
-  showSectionDescription?: boolean;
-  
-  // AOS animation props
-  enableAOS?: boolean;
-  aosProps?: {
-    'data-aos'?: string;
-    'data-aos-offset'?: string | number;
-    'data-aos-duration'?: string | number;
-    'data-aos-once'?: string | boolean;
-  };
-}
-
-const BookDemoFormSection: React.FC<BookDemoFormSectionProps> = ({
-  title = "Book A Demo",
-  description = "Fill out the form below and our team will contact you within 24 hours to schedule your personalized demo.",
-  sectionClassName = "pt-[200px] pb-[100px] max-md:pt-150 relative overflow-hidden",
-  showSectionBackground = true,
-  showSectionTitle = true,
-  showSectionDescription = true,
-  enableAOS = true,
-  aosProps = {
+const BookDemoFormSection: React.FC = () => {
+  const title = "Book A Demo";
+  const description = "Fill out the form below and our team will contact you within 24 hours to schedule your personalized demo.";
+  const sectionClassName = "pt-[200px] pb-[100px] max-md:pt-150 relative overflow-hidden";
+  const showSectionBackground = true;
+  const showSectionTitle = true;
+  const showSectionDescription = true;
+  const enableAOS = true;
+  const aosProps = {
     'data-aos': 'fade-up',
     'data-aos-offset': '200',
     'data-aos-duration': '1000',
     'data-aos-once': 'true'
-  },
-  ...formProps
-}) => {
+  };
   return (
     <section className={sectionClassName}>
       {showSectionBackground && (
@@ -54,11 +35,7 @@ const BookDemoFormSection: React.FC<BookDemoFormSectionProps> = ({
           </div>
         )}
         
-        <BookDemoForm
-          title={title}
-          description={description}
-          {...formProps}
-        />
+        <BookDemoForm />
       </div>
     </section>
   );

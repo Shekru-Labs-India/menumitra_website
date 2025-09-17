@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
+import BookDemoForm from '@/components/forms/BookDemoForm';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { email, phone, location, getEmailLink, getPhoneLink } from '@/config/contact';
 
@@ -87,63 +90,8 @@ const ContactPage: React.FC = () => {
             <p className="section-tagline">Contact</p>
             <h2>Let us know how we can assist you</h2>
           </div>
-          <div className="relative z-10 max-w-[850px] mx-auto">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-lg:max-w-full max-md:hidden">
-              <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
-              <div className="w-[442px] h-[442px] rounded-full bg-primary-200/25 -ml-[170px] blur-[145px]"></div>
-              <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]"></div>
-            </div>
-
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
-              <div className="bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5">
-                <form>
-                  <div className="grid grid-cols-12 max-md:gap-y-10 md:gap-x-12 md:gap-8">
-                    <div className="max-md:col-span-full md:col-span-6">
-                      <label htmlFor="username" className="block text-sm font-medium text-paragraph dark:text-white mb-2">
-                        Your name
-                      </label>
-                      <input 
-                        type="text" 
-                        name="first-name" 
-                        id="username" 
-                        placeholder="Name" 
-                        className="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary duration-300 transition-all"
-                      />
-                    </div>
-                    <div className="max-md:col-span-full md:col-span-6">
-                      <label htmlFor="email" className="block text-sm font-medium text-paragraph dark:text-white mb-2">
-                        Your Email
-                      </label>
-                      <input 
-                        type="email" 
-                        name="email" 
-                        id="email" 
-                        placeholder="Email" 
-                        className="block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary duration-300 transition-all"
-                      />
-                    </div>
-                    <div className="col-span-full">
-                      <label htmlFor="message" className="block text-sm font-medium text-paragraph dark:text-white mb-2">
-                        Message
-                      </label>
-                      <textarea 
-                        name="message" 
-                        id="message" 
-                        rows={10} 
-                        placeholder="Your message..."
-                        className="block w-full text-sm rounded border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none resize-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary duration-300 transition-all"
-                      ></textarea>
-                    </div>
-                    <div className="mx-auto col-span-full text-center">
-                      <button type="submit" className="btn">
-                        Contact Now
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          
+          <BookDemoForm />
         </div>
       </section>
 
