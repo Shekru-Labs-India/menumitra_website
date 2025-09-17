@@ -65,16 +65,16 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
         defaultActiveItem: 'Captain App',
         backgroundImage: 'bg-service-bg',
         routeMappings: {
-          'Captain App': '/addons/CaptainApp',
-          'Customer App': '/addons/CustomerApp',
-          'Customer Display System': '/addons/CustomerDisplaySystem',
-          'Customised Solution': '/addons/CustomisedSolution',
-          'Hotel Management': '/addons/HotelManagement',
-          'Kitchen Display System': '/addons/KitchenDisplaySystem',
-          'Money Management': '/addons/MoneyManagement',
-          'Point of Sale': '/addons/PointOfSale',
-          'Smart Mobile App': '/addons/SmartMobileApp',
-          'Waiter App': '/addons/WaiterApp'
+          'Captain App': '/addons/captain-app',
+          'Customer App': '/addons/customer-app',
+          'Customer Display System': '/addons/customer-display-system',
+          'Customised Solution': '/addons/customised-solution',
+          'Hotel Management': '/addons/hotel-management',
+          'Kitchen Display System': '/addons/kitchen-display-system',
+          'Money Management': '/addons/money-management',
+          'Point of Sale': '/addons/point-of-sale',
+          'Smart Mobile App': '/addons/smart-mobile-app',
+          'Waiter App': '/addons/waiter-app'
         }
       },
       'outlet-types': {
@@ -94,16 +94,16 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
         defaultActiveItem: 'Restaurant',
         backgroundImage: 'bg-service-bg',
         routeMappings: {
-          'Restaurant': '/outlet-type/Restaurant',
-          'Cafe': '/outlet-type/Cafe',
-          'Fast Food': '/outlet-type/FastFood',
-          'Fine Dining': '/outlet-type/FineDining',
-          'Food Truck': '/outlet-type/FoodTruck',
-          'Cloud Kitchen': '/outlet-type/CloudKitchen',
-          'Bakery': '/outlet-type/Bakery',
-          'Bar & Pub': '/outlet-type/BarPub',
-          'Food Court': '/outlet-type/FoodCourt',
-          'Catering': '/outlet-type/Catering'
+          'Restaurant': '/outlet-type/restaurant',
+          'Cafe': '/outlet-type/cafe',
+          'Fast Food': '/outlet-type/qsr',
+          'Fine Dining': '/outlet-type/fine-dine',
+          'Food Truck': '/outlet-type/food-truck',
+          'Cloud Kitchen': '/outlet-type/cloud-kitchens',
+          'Bakery': '/outlet-type/bakeries',
+          'Bar & Pub': '/outlet-type/bar-pub',
+          'Food Court': '/outlet-type/food-courts',
+          'Catering': '/outlet-type/catering'
         }
       }
     };

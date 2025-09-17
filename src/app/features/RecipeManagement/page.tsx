@@ -1,75 +1,121 @@
-import React from 'react';
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
-import SectionDivider from '@/components/atoms/SectionDivider';
-import { Package, Menu as MenuIcon, ShoppingCart, BarChart3, Users, MessageSquare, QrCode, Store, ChefHat, Share2, Settings, UserCheck, Link } from 'lucide-react';
+"use client";
 
-const FEATURE_NAME_PAGE: React.FC = () => {
-  const features = [
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 1',
-      description: 'Description for the first feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 2',
-      description: 'Description for the second feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 3',
-      description: 'Description for the third feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 4',
-      description: 'Description for the fourth feature of this module.'
-    }
-  ];
+import React from 'react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  FileText, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
+
+const RecipeManagementPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('features');
+
+  const mainContent = (
+    <>
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Recipe Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Standardize your kitchen operations with our comprehensive recipe management system. 
+        Create, store, and share recipes with detailed instructions, ingredients, and nutritional information.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our recipe management platform helps you maintain consistency across all locations, 
+        calculate accurate food costs, and ensure quality control in your kitchen operations.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're managing a single kitchen or multiple locations, our system ensures 
+        every dish is prepared consistently according to your standards.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <FileText className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Digital Recipe Library</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Centralized repository for all your restaurant recipes
+          </p>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Recipe Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our recipe management system provides everything you need to standardize your kitchen operations. 
+        From ingredient tracking to cost calculation, we've designed every feature with kitchen efficiency in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Digital recipe creation and storage</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Ingredient tracking and cost calculation</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Nutritional information and allergen management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Version control and recipe updates</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Recipe Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system standardizes kitchen operations
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Kitchen</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our recipe management system helps you maintain consistency, reduce waste, and improve efficiency in your kitchen. 
+        With standardized recipes and accurate cost tracking, you can optimize your food operations.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Ensure consistent food quality across all locations</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Reduce food waste with accurate portion control</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Improve staff training with detailed instructions</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize food costs with precise ingredient tracking</span>
+        </li>
+      </ul>
+    </>
+  );
 
   return (
-    <>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pb-20 relative pt-[230px]">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h1 className="mb-8">FEATURE_NAME</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Manage your FEATURE_NAME operations efficiently with our comprehensive management system.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="pb-20 relative">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h2 className="mb-8">FEATURE_NAME Features</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-      
-      <FooterSection />
-    </>
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Recipe Management"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
   );
 };
 
-export default FEATURE_NAME_PAGE;
+export default RecipeManagementPage;

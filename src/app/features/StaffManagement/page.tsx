@@ -1,75 +1,121 @@
-import React from 'react';
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
-import SectionDivider from '@/components/atoms/SectionDivider';
-import { Package, Menu as MenuIcon, ShoppingCart, BarChart3, Users, MessageSquare, QrCode, Store, ChefHat, Share2, Settings, UserCheck, Link } from 'lucide-react';
+"use client";
 
-const FEATURE_NAME_PAGE: React.FC = () => {
-  const features = [
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 1',
-      description: 'Description for the first feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 2',
-      description: 'Description for the second feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 3',
-      description: 'Description for the third feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 4',
-      description: 'Description for the fourth feature of this module.'
-    }
-  ];
+import React from 'react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  UserCheck, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
+
+const StaffManagementPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('features');
+
+  const mainContent = (
+    <>
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Staff Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Streamline your restaurant's workforce management with our comprehensive staff management system. 
+        Handle scheduling, payroll, performance tracking, and employee development in one centralized platform.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our staff management platform helps you optimize labor costs, improve employee satisfaction, and maintain 
+        consistent service quality across all shifts and locations.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're managing a small team or a large workforce, our system scales with your business 
+        and provides the tools you need for effective staff management.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <UserCheck className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Workforce Optimization</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Comprehensive platform for all staff management needs
+          </p>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Staff Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our staff management system provides everything you need to manage your restaurant workforce effectively. 
+        From scheduling to performance tracking, we've designed every feature with restaurant operations in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Automated scheduling and shift management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Time tracking and attendance monitoring</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Performance evaluation and feedback systems</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Payroll integration and labor cost optimization</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Staff Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system optimizes workforce management
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our staff management system helps you reduce labor costs, improve employee satisfaction, and maintain consistent service quality. 
+        With automated scheduling and performance tracking, you can optimize your workforce effectively.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize labor costs and reduce overtime expenses</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Improve employee satisfaction and retention rates</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Maintain consistent service quality across all shifts</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Streamline payroll and compliance management</span>
+        </li>
+      </ul>
+    </>
+  );
 
   return (
-    <>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pb-20 relative pt-[230px]">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h1 className="mb-8">FEATURE_NAME</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Manage your FEATURE_NAME operations efficiently with our comprehensive management system.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="pb-20 relative">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h2 className="mb-8">FEATURE_NAME Features</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-      
-      <FooterSection />
-    </>
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Staff Management"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
   );
 };
 
-export default FEATURE_NAME_PAGE;
+export default StaffManagementPage;

@@ -1,75 +1,121 @@
-import React from 'react';
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
-import SectionDivider from '@/components/atoms/SectionDivider';
-import { Package, Menu as MenuIcon, ShoppingCart, BarChart3, Users, MessageSquare, QrCode, Store, ChefHat, Share2, Settings, UserCheck, Link } from 'lucide-react';
+"use client";
 
-const FEATURE_NAME_PAGE: React.FC = () => {
-  const features = [
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 1',
-      description: 'Description for the first feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 2',
-      description: 'Description for the second feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 3',
-      description: 'Description for the third feature of this module.'
-    },
-    {
-      icon: <Package className="w-8 h-8 text-primary-600" />,
-      title: 'Feature 4',
-      description: 'Description for the fourth feature of this module.'
-    }
-  ];
+import React from 'react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  Settings, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
+
+const UtilityManagementPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('features');
+
+  const mainContent = (
+    <>
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Utility Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Optimize your restaurant's utility consumption and reduce operational costs with our comprehensive utility management system. 
+        Monitor energy usage, water consumption, and other utilities to improve efficiency.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our utility management platform provides real-time monitoring, automated alerts, and detailed analytics 
+        to help you identify opportunities for cost savings and environmental sustainability.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're managing a single location or multiple outlets, our system helps you track 
+        and optimize utility consumption across all your restaurant operations.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <Settings className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Smart Utility Monitoring</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Real-time tracking and optimization of utility consumption
+          </p>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Utility Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our utility management system provides everything you need to monitor and optimize your restaurant's utility consumption. 
+        From energy tracking to cost analysis, we've designed every feature with efficiency in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Real-time energy and water consumption monitoring</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Automated alerts for unusual consumption patterns</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Cost tracking and budget management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Sustainability reporting and environmental impact tracking</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Utility Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system optimizes utility consumption
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our utility management system helps you reduce operational costs, improve efficiency, and contribute to environmental sustainability. 
+        With detailed monitoring and automated alerts, you can optimize your utility consumption.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Reduce utility costs and improve profitability</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Identify and fix equipment inefficiencies</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Contribute to environmental sustainability goals</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize utility consumption across all locations</span>
+        </li>
+      </ul>
+    </>
+  );
 
   return (
-    <>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pb-20 relative pt-[230px]">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h1 className="mb-8">FEATURE_NAME</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Manage your FEATURE_NAME operations efficiently with our comprehensive management system.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="pb-20 relative">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h2 className="mb-8">FEATURE_NAME Features</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-      
-      <FooterSection />
-    </>
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Utility Management"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
   );
 };
 
-export default FEATURE_NAME_PAGE;
+export default UtilityManagementPage;

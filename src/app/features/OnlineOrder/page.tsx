@@ -1,75 +1,120 @@
+"use client";
+
 import React from 'react';
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
-import SectionDivider from '@/components/atoms/SectionDivider';
-import { ShoppingCart, Smartphone, Clock, MapPin } from 'lucide-react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  ShoppingCart, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
 
 const OnlineOrderPage: React.FC = () => {
-  const features = [
-    {
-      icon: <ShoppingCart className="w-8 h-8 text-primary-600" />,
-      title: 'Online Ordering',
-      description: 'Accept orders directly from your website and mobile app with real-time order processing.'
-    },
-    {
-      icon: <Smartphone className="w-8 h-8 text-primary-600" />,
-      title: 'Mobile App Integration',
-      description: 'Seamlessly integrate with your mobile app for convenient customer ordering experience.'
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-primary-600" />,
-      title: 'Order Scheduling',
-      description: 'Allow customers to schedule orders for pickup or delivery at specific times.'
-    },
-    {
-      icon: <MapPin className="w-8 h-8 text-primary-600" />,
-      title: 'Delivery Tracking',
-      description: 'Track delivery orders in real-time and provide customers with order status updates.'
-    }
-  ];
+  const sectionConfig = useSectionConfig('features');
+
+  const mainContent = (
+    <>
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Online Order Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Streamline your online ordering process with our comprehensive order management system. 
+        Handle delivery, pickup, and dine-in orders seamlessly from a single platform.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our online ordering platform integrates with your existing systems, providing real-time order tracking, 
+        automated notifications, and comprehensive analytics to optimize your operations.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're managing a single location or multiple outlets, our scalable system ensures 
+        consistent order processing and exceptional customer service.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <ShoppingCart className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Seamless Order Processing</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Handle all order types from one unified platform
+          </p>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Key Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our online order management system provides everything you need to process orders efficiently. 
+        From order intake to fulfillment, we've designed every feature with restaurant operations in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Multi-channel order management (delivery, pickup, dine-in)</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Real-time order tracking and status updates</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Automated customer notifications and confirmations</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Integration with delivery partners and payment gateways</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Online Ordering in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system streamlines order processing
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our online order management system helps you increase sales, reduce errors, and improve customer satisfaction. 
+        With automated processes and real-time insights, you can focus on delivering great food.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Increase order accuracy and reduce errors</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Improve customer satisfaction with real-time updates</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize delivery routes and reduce costs</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Gain insights into order patterns and preferences</span>
+        </li>
+      </ul>
+    </>
+  );
 
   return (
-    <>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pb-20 relative pt-[230px]">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h1 className="mb-8">Online Order Management</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Streamline your online ordering process with our comprehensive order management system. 
-              Accept orders, manage deliveries, and provide customers with seamless ordering experience.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="pb-20 relative">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h2 className="mb-8">Online Order Features</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-      
-      <FooterSection />
-    </>
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Online Order"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
   );
 };
 
