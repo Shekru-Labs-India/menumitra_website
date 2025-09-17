@@ -76,7 +76,15 @@ const Header: React.FC = () => {
   };
 
   const toggleMobileMenu = () => {
+    console.log('toggleMobileMenu called, current state:', isMobileMenuOpen);
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    console.log('toggleMobileMenu setting state to:', !isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    console.log('closeMobileMenu called, current state:', isMobileMenuOpen);
+    setIsMobileMenuOpen(false);
+    console.log('closeMobileMenu setting state to: false');
   };
 
   const toggleDropdown = (dropdown: string) => {
@@ -310,10 +318,27 @@ const Header: React.FC = () => {
         </ul>
 
         {/* Mobile Menu */}
-        <div className={`mobile-menu max-lg:overflow-y-auto ${isMobileMenuOpen ? 'open' : ''}`}>
+        <div 
+          className={`z-[100] mobile-menu max-lg:overflow-y-auto ${isMobileMenuOpen ? 'open' : ''}`}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              toggleMobileMenu();
+            }
+          }}
+          ref={(el) => {
+            if (el) {
+              console.log('Mobile menu div classes:', el.className);
+            }
+          }}
+        >
           <button 
-            className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-white dark:bg-dark-200 absolute right-6 top-5"
-            onClick={toggleMobileMenu}
+            className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-primary-200 dark:bg-primary fixed right-6 top-5 cursor-pointer"
+            onClick={(e) => {
+              console.log('Close button clicked!');
+              e.stopPropagation();
+              e.preventDefault();
+              closeMobileMenu();
+            }}
           >
             <FontAwesomeIcon icon={faTimes} />
           </button>
