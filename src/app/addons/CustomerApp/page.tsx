@@ -4,64 +4,64 @@ import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import { 
-  Package, 
+  Users, 
   CheckCircle, 
   Play
 } from 'lucide-react';
 
-const InventoryPage: React.FC = () => {
-  const sectionConfig = useSectionConfig('features');
+const CustomerAppPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('addons');
 
   const mainContent = (
     <>
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        Smart Inventory Management
+        Customer App
       </h2>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Streamline your restaurant's inventory operations with our comprehensive inventory management system. 
-        Track stock levels, manage suppliers, and optimize your food costs with real-time insights.
+        Enhance your customers' dining experience with our comprehensive customer mobile application. 
+        Provide seamless ordering, loyalty programs, and personalized recommendations.
       </p>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our intelligent inventory platform provides automated stock tracking, low-stock alerts, and 
-        predictive analytics to help you maintain optimal inventory levels and reduce waste.
+        Our customer app features intuitive navigation, secure payment processing, and real-time order tracking. 
+        Build customer loyalty with rewards programs and personalized offers.
       </p>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-        Whether you're managing a single location or multiple outlets, our scalable inventory system 
-        ensures you always have the right ingredients at the right time.
+        Whether you're a quick-service restaurant or fine dining establishment, our customer app adapts to your 
+        business model and enhances the overall customer experience.
       </p>
 
       {/* Feature Image */}
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
         <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
-          <Package className="w-24 h-24 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-2xl font-semibold mb-2">Real-Time Inventory Tracking</h3>
+          <Users className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Customer-Centric Design</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Monitor stock levels and get alerts when items are running low
+            Intuitive interface designed for exceptional user experience
           </p>
         </div>
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Key Features</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our inventory management system includes everything you need to control your restaurant's stock efficiently. 
-        From automated tracking to supplier management, we've designed every feature with restaurant operations in mind.
+        Our customer app includes everything needed to provide a superior dining experience. 
+        From easy ordering to loyalty rewards, we've designed every feature with customer satisfaction in mind.
       </p>
       <ul className="space-y-3 mb-8">
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Real-time stock level monitoring</span>
+          <span>Easy-to-use menu browsing and ordering</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Automated low-stock alerts and notifications</span>
+          <span>Secure payment processing and order tracking</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Supplier management and purchase orders</span>
+          <span>Loyalty programs and reward management</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Cost tracking and waste reduction analytics</span>
+          <span>Personalized recommendations and offers</span>
         </li>
       </ul>
 
@@ -69,9 +69,9 @@ const InventoryPage: React.FC = () => {
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
           <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">See Inventory Management in Action</h3>
+          <h3 className="text-xl font-semibold mb-2">See Customer App in Action</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Watch how our inventory system optimizes restaurant operations
+            Watch how our customer app enhances the dining experience
           </p>
           <button className="btn-primary inline-flex items-center">
             <Play className="w-4 h-4 mr-2" />
@@ -80,27 +80,27 @@ const InventoryPage: React.FC = () => {
         </div>
       </div>
 
-      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Customers</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our inventory management system helps you reduce costs, minimize waste, and ensure you never run out of essential ingredients. 
-        With predictive analytics and automated alerts, you can focus on serving great food while we handle the inventory complexity.
+        Our customer app makes dining more convenient and enjoyable. With features like order customization, 
+        real-time tracking, and loyalty rewards, customers will keep coming back for more.
       </p>
       <ul className="space-y-3">
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Reduce food waste by up to 30%</span>
+          <span>Faster ordering and reduced wait times</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Optimize purchasing decisions with data insights</span>
+          <span>Personalized experience with order history</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Streamline supplier relationships and ordering</span>
+          <span>Exclusive rewards and special offers</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Improve cash flow with better inventory control</span>
+          <span>Easy feedback and review system</span>
         </li>
       </ul>
     </>
@@ -110,7 +110,7 @@ const InventoryPage: React.FC = () => {
     <SectionLayout
       sidebarTitle={sectionConfig.sidebarTitle}
       sidebarItems={sectionConfig.sidebarItems}
-      defaultActiveItem="Inventory"
+      defaultActiveItem="Customer App"
       backgroundImage={sectionConfig.backgroundImage}
       routeMappings={sectionConfig.routeMappings}
       mainContent={mainContent}
@@ -120,4 +120,4 @@ const InventoryPage: React.FC = () => {
   );
 };
 
-export default InventoryPage;
+export default CustomerAppPage;

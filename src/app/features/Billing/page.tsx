@@ -122,6 +122,7 @@ const BillingPage: React.FC = () => {
       sidebarItems={sectionConfig.sidebarItems}
       defaultActiveItem={sectionConfig.defaultActiveItem}
       backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
       mainContent={mainContent}
     >
       {/* CTA Section */}

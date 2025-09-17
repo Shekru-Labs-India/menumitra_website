@@ -1,75 +1,122 @@
+"use client";
+
 import React from 'react';
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
-import SectionDivider from '@/components/atoms/SectionDivider';
-import { Menu as MenuIcon, Edit3, Image, Clock } from 'lucide-react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  Menu as MenuIcon, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
 
 const MenuPage: React.FC = () => {
-  const features = [
-    {
-      icon: <MenuIcon className="w-8 h-8 text-primary-600" />,
-      title: 'Digital Menu Builder',
-      description: 'Create and customize digital menus with drag-and-drop interface and real-time updates.'
-    },
-    {
-      icon: <Edit3 className="w-8 h-8 text-primary-600" />,
-      title: 'Menu Editing',
-      description: 'Easily add, edit, or remove items with pricing, descriptions, and nutritional information.'
-    },
-    {
-      icon: <Image className="w-8 h-8 text-primary-600" />,
-      title: 'Menu Images',
-      description: 'Upload and manage high-quality images for menu items to enhance customer appeal.'
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-primary-600" />,
-      title: 'Availability Control',
-      description: 'Set item availability by time, day, or season with automatic menu updates.'
-    }
-  ];
+  const sectionConfig = useSectionConfig('features');
+
+  const mainContent = (
+    <>
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Digital Menu Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Create, manage, and optimize your restaurant's digital menu with our comprehensive menu management system. 
+        Update prices, add new items, and track performance with real-time analytics.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our intuitive menu platform allows you to design beautiful digital menus, manage seasonal items, 
+        and provide customers with detailed nutritional information and allergen warnings.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're running a single restaurant or a chain, our menu management system scales with your business, 
+        ensuring consistent branding and easy updates across all locations.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <MenuIcon className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Dynamic Menu Builder</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Create and customize menus with drag-and-drop simplicity
+          </p>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Menu Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our menu management system provides everything you need to create and maintain professional digital menus. 
+        From item descriptions to pricing updates, we've designed every feature with restaurant owners in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Drag-and-drop menu builder with templates</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Real-time price and availability updates</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Nutritional information and allergen management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Menu performance analytics and insights</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Menu Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our menu system transforms restaurant operations
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Business</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our menu management system helps you increase sales, improve customer experience, and streamline operations. 
+        With detailed analytics and easy updates, you can optimize your menu for maximum profitability.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Increase average order value with upselling features</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Reduce menu printing costs with digital solutions</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Improve customer satisfaction with detailed item information</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize menu items based on performance data</span>
+        </li>
+      </ul>
+    </>
+  );
 
   return (
-    <>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pb-20 relative pt-[230px]">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h1 className="mb-8">Menu Management</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Create, manage, and optimize your restaurant menu with our comprehensive menu management system. 
-              Update prices, add seasonal items, and control availability across all channels.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="pb-20 relative">
-        <div className="container">
-          <div className="text-center mx-auto mb-25">
-            <h2 className="mb-8">Menu Features</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-      
-      <FooterSection />
-    </>
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Menu"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    >
+      {/* Additional content can be added here */}
+    </SectionLayout>
   );
 };
 

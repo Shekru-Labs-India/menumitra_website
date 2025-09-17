@@ -4,64 +4,64 @@ import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import { 
-  Package, 
+  Coffee, 
   CheckCircle, 
   Play
 } from 'lucide-react';
 
-const InventoryPage: React.FC = () => {
-  const sectionConfig = useSectionConfig('features');
+const CafePage: React.FC = () => {
+  const sectionConfig = useSectionConfig('outlet-types');
 
   const mainContent = (
     <>
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        Smart Inventory Management
+        Cafe Management
       </h2>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Streamline your restaurant's inventory operations with our comprehensive inventory management system. 
-        Track stock levels, manage suppliers, and optimize your food costs with real-time insights.
+        Streamline your cafe operations with our specialized management system designed for coffee shops and cafes. 
+        From order management to customer loyalty, we provide everything you need to run a successful cafe.
       </p>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our intelligent inventory platform provides automated stock tracking, low-stock alerts, and 
-        predictive analytics to help you maintain optimal inventory levels and reduce waste.
+        Our cafe management platform features quick order processing, inventory tracking for coffee beans and pastries, 
+        and customer relationship tools to build a loyal customer base.
       </p>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-        Whether you're managing a single location or multiple outlets, our scalable inventory system 
-        ensures you always have the right ingredients at the right time.
+        Whether you're a small neighborhood cafe or a busy downtown coffee shop, our system scales with your business 
+        and helps you deliver exceptional coffee experiences.
       </p>
 
       {/* Feature Image */}
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
         <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
-          <Package className="w-24 h-24 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-2xl font-semibold mb-2">Real-Time Inventory Tracking</h3>
+          <Coffee className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Cafe-Focused Solutions</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Monitor stock levels and get alerts when items are running low
+            Specialized tools for coffee shops and cafe operations
           </p>
         </div>
       </div>
 
-      <h3 className="text-2xl font-semibold mt-12 mb-6">Key Features</h3>
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Cafe Management Features</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our inventory management system includes everything you need to control your restaurant's stock efficiently. 
-        From automated tracking to supplier management, we've designed every feature with restaurant operations in mind.
+        Our cafe management system provides specialized features for coffee shops and cafes. 
+        From beverage customization to loyalty programs, we've designed every feature with cafe owners in mind.
       </p>
       <ul className="space-y-3 mb-8">
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Real-time stock level monitoring</span>
+          <span>Quick order processing and customization</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Automated low-stock alerts and notifications</span>
+          <span>Beverage and pastry inventory management</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Supplier management and purchase orders</span>
+          <span>Customer loyalty and rewards programs</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Cost tracking and waste reduction analytics</span>
+          <span>Peak hour management and staff scheduling</span>
         </li>
       </ul>
 
@@ -69,9 +69,9 @@ const InventoryPage: React.FC = () => {
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
           <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">See Inventory Management in Action</h3>
+          <h3 className="text-xl font-semibold mb-2">See Cafe Management in Action</h3>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Watch how our inventory system optimizes restaurant operations
+            Watch how our system optimizes cafe operations
           </p>
           <button className="btn-primary inline-flex items-center">
             <Play className="w-4 h-4 mr-2" />
@@ -80,27 +80,27 @@ const InventoryPage: React.FC = () => {
         </div>
       </div>
 
-      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Cafe</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-        Our inventory management system helps you reduce costs, minimize waste, and ensure you never run out of essential ingredients. 
-        With predictive analytics and automated alerts, you can focus on serving great food while we handle the inventory complexity.
+        Our cafe management system helps you serve more customers faster, reduce waste, and build a loyal customer base. 
+        With features designed specifically for cafes, you can focus on crafting the perfect cup of coffee.
       </p>
       <ul className="space-y-3">
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Reduce food waste by up to 30%</span>
+          <span>Faster service during peak hours</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Optimize purchasing decisions with data insights</span>
+          <span>Reduce food waste with smart inventory</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Streamline supplier relationships and ordering</span>
+          <span>Build customer loyalty with rewards programs</span>
         </li>
         <li className="flex items-center">
           <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-          <span>Improve cash flow with better inventory control</span>
+          <span>Optimize staff scheduling for busy periods</span>
         </li>
       </ul>
     </>
@@ -110,7 +110,7 @@ const InventoryPage: React.FC = () => {
     <SectionLayout
       sidebarTitle={sectionConfig.sidebarTitle}
       sidebarItems={sectionConfig.sidebarItems}
-      defaultActiveItem="Inventory"
+      defaultActiveItem="Cafe"
       backgroundImage={sectionConfig.backgroundImage}
       routeMappings={sectionConfig.routeMappings}
       mainContent={mainContent}
@@ -120,4 +120,4 @@ const InventoryPage: React.FC = () => {
   );
 };
 
-export default InventoryPage;
+export default CafePage;

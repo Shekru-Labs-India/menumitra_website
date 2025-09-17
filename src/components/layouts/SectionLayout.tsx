@@ -1,18 +1,20 @@
 "use client";
 
 import React, { useState, ReactNode } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import { ChevronRight } from 'lucide-react';
 
 interface SectionLayoutProps {
-  children: ReactNode;
+  children?: ReactNode;
   sidebarTitle: string;
   sidebarItems: string[];
   defaultActiveItem: string;
   mainContent: ReactNode;
   backgroundImage?: string;
+  routeMappings: Record<string, string>;
 }
 
 const SectionLayout: React.FC<SectionLayoutProps> = ({
@@ -21,9 +23,20 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
   sidebarItems,
   defaultActiveItem,
   mainContent,
-  backgroundImage = "bg-service-bg"
+  backgroundImage = "bg-service-bg",
+  routeMappings
 }) => {
+  const router = useRouter();
+  const pathname = usePathname();
   const [activeItem, setActiveItem] = useState(defaultActiveItem);
+
+  const handleItemClick = (item: string) => {
+    const route = routeMappings[item];
+    if (route && route !== pathname) {
+      router.push(route);
+    }
+    setActiveItem(item);
+  };
 
   return (
     <>
@@ -48,7 +61,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
                   {sidebarItems.map((item, index) => (
                     <li key={index} className={`group ${activeItem === item ? 'tabActive' : ''}`}>
                       <button
-                        onClick={() => setActiveItem(item)}
+                        onClick={() => handleItemClick(item)}
                         className="flex items-center justify-between py-5 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
                       >
                         {item}

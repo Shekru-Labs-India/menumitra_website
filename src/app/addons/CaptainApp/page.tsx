@@ -122,6 +122,7 @@ const CaptainAppPage: React.FC = () => {
       sidebarItems={sectionConfig.sidebarItems}
       defaultActiveItem="Captain App"
       backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
       mainContent={mainContent}
     >
       {/* Additional content can be added here */}

@@ -5,6 +5,7 @@ export interface SectionConfig {
   sidebarItems: string[];
   defaultActiveItem: string;
   backgroundImage: string;
+  routeMappings: Record<string, string>;
 }
 
 export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-types') => {
@@ -29,7 +30,23 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
           'Chain Management'
         ],
         defaultActiveItem: 'Billing',
-        backgroundImage: 'bg-service-bg'
+        backgroundImage: 'bg-service-bg',
+        routeMappings: {
+          'Billing': '/features/Billing',
+          'Inventory': '/features/Inventory',
+          'Menu': '/features/Menu',
+          'Online Order': '/features/OnlineOrder',
+          'Restaurant Reports': '/features/RestaurantReports',
+          'Customer Management': '/features/CustomerManagement',
+          'Customer Feedback': '/features/CustomerFeedback',
+          'Scan & Order': '/features/ScanOrder',
+          'Store Management': '/features/StoreManagement',
+          'Recipe Management': '/features/RecipeManagement',
+          'Social Media Management': '/features/SocialMediaManagement',
+          'Utility Management': '/features/UtilityManagement',
+          'Staff Management': '/features/StaffManagement',
+          'Chain Management': '/features/ChainManagement'
+        }
       },
       addons: {
         sidebarTitle: 'AddOns',
@@ -46,7 +63,19 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
           'Waiter App'
         ],
         defaultActiveItem: 'Captain App',
-        backgroundImage: 'bg-service-bg'
+        backgroundImage: 'bg-service-bg',
+        routeMappings: {
+          'Captain App': '/addons/CaptainApp',
+          'Customer App': '/addons/CustomerApp',
+          'Customer Display System': '/addons/CustomerDisplaySystem',
+          'Customised Solution': '/addons/CustomisedSolution',
+          'Hotel Management': '/addons/HotelManagement',
+          'Kitchen Display System': '/addons/KitchenDisplaySystem',
+          'Money Management': '/addons/MoneyManagement',
+          'Point of Sale': '/addons/PointOfSale',
+          'Smart Mobile App': '/addons/SmartMobileApp',
+          'Waiter App': '/addons/WaiterApp'
+        }
       },
       'outlet-types': {
         sidebarTitle: 'Outlet Types',
@@ -63,7 +92,19 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
           'Catering'
         ],
         defaultActiveItem: 'Restaurant',
-        backgroundImage: 'bg-service-bg'
+        backgroundImage: 'bg-service-bg',
+        routeMappings: {
+          'Restaurant': '/outlet-type/Restaurant',
+          'Cafe': '/outlet-type/Cafe',
+          'Fast Food': '/outlet-type/FastFood',
+          'Fine Dining': '/outlet-type/FineDining',
+          'Food Truck': '/outlet-type/FoodTruck',
+          'Cloud Kitchen': '/outlet-type/CloudKitchen',
+          'Bakery': '/outlet-type/Bakery',
+          'Bar & Pub': '/outlet-type/BarPub',
+          'Food Court': '/outlet-type/FoodCourt',
+          'Catering': '/outlet-type/Catering'
+        }
       }
     };
 
