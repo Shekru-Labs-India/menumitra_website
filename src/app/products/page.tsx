@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import { Download, Smartphone, Monitor, Calendar, ExternalLink, Globe } from 'lucide-react';
 import SectionDivider from '@/components/atoms/SectionDivider';
@@ -111,8 +110,6 @@ const ProductsPage: React.FC = () => {
 
   return (
     <>
-      <Header />
-      
       {/* Main Content */}
       <section className="pb-20 relative pt-[230px] ">
         <div className="container">

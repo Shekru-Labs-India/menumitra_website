@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import BookDemoForm from '@/components/forms/BookDemoForm';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -10,8 +9,6 @@ import { email, phone, location, getEmailLink, getPhoneLink } from '@/config/con
 const ContactPage: React.FC = () => {
   return (
     <>
-      <Header />
-      
       {/* Hero Section */}
       <section className="hero overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
         <div className="container">

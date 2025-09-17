@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import TestimonialsSlider from '@/components/organisms/TestimonialsSlider';
 
 const AboutPage: React.FC = () => {
   return (
     <>
-      <Header />
       <section className="hero  overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
   <div className="container">
     <div

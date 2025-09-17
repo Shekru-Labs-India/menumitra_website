@@ -2,7 +2,6 @@
 
 import React, { useState, ReactNode } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import { ChevronRight } from 'lucide-react';
@@ -40,8 +39,6 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
 
   return (
     <>
-      <Header />
-      
       {/* Main Content Section */}
       <section className="pt-[200px] pb-150 max-md:pt-25 relative max-md:overflow-hidden max-md:pb-20">
         <div className={`absolute left-0 right-0 -top-8 ${backgroundImage} bg-no-repeat bg-cover bg-center opacity-70 w-full h-full sm:hidden`}></div>
