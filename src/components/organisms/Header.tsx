@@ -323,7 +323,7 @@ const Header: React.FC = () => {
           <X className="w-5 h-5 ml-2" />
         </button>
         
-        <div className="flex flex-col h-full bg-white dark:bg-dark-200">
+        <div className="flex flex-col w-full h-full">
         
 
           {/* Mobile Menu Content */}
