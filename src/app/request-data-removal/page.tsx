@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSection from "@/components/organisms/FooterSection";
+import { email, website } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Request Data Removal | MenuMitra",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "Request Data Removal | MenuMitra",
     description:
       "Request the removal of your personal data from MenuMitra systems. Learn about your data rights under GDPR and how to submit a data removal request for our restaurant management services.",
-    url: "https://menumitra.com/request-data-removal",
+    url: "{website.base}/request-data-removal",
     type: "website",
   },
   twitter: {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       "Request the removal of your personal data from MenuMitra systems. Learn about your data rights under GDPR and how to submit a data removal request for our restaurant management services.",
   },
   alternates: {
-    canonical: "https://menumitra.com/request-data-removal",
+    canonical: "{website.base}/request-data-removal",
   },
 };
 
@@ -38,7 +39,7 @@ export default function RequestDataRemovalPage() {
     name: "Request Data Removal",
     description:
       "MenuMitra's data removal request page explaining user rights and procedures for requesting personal data deletion from restaurant management systems.",
-    url: "https://menumitra.com/request-data-removal",
+    url: "{website.base}/request-data-removal",
     about: {
       "@type": "DataCatalog",
       name: "MenuMitra Data Removal Request",
@@ -48,10 +49,10 @@ export default function RequestDataRemovalPage() {
     publisher: {
       "@type": "Organization",
       name: "MenuMitra",
-      url: "https://menumitra.com",
+      url: "{website.base}",
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@menumitra.com",
+        email: "{email}",
         telephone: "+91 93178 18283",
         contactType: "customer service",
       },
@@ -180,7 +181,7 @@ export default function RequestDataRemovalPage() {
                 <h2 className="text-2xl font-semibold mt-12 mb-4">4. How to Submit a Request</h2>
                 
                 <h3 className="text-xl font-semibold mt-8 mb-3">4.1 Email Request (Recommended)</h3>
-                <p className="mb-3">Send an email to <strong><a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a></strong> with the subject line "Data Removal Request" and include:</p>
+                <p className="mb-3">Send an email to <strong><a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a></strong> with the subject line "Data Removal Request" and include:</p>
                 <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>Your full name and email address associated with your account</li>
                   <li>Business name (if applicable)</li>
@@ -273,10 +274,10 @@ export default function RequestDataRemovalPage() {
                 <h2 className="text-2xl font-semibold mt-12 mb-4">9. Contact Information</h2>
                 <p className="mb-3">For data removal requests or questions about your data rights:</p>
                 <p className="mb-4">
-                  <strong>Email:</strong> <a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a><br />
+                  <strong>Email:</strong> <a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a><br />
                   <strong>Phone:</strong> <a href="tel:+919317818283" className="text-primary-600 hover:text-primary-800">+91 93178 18283</a><br />
                   <strong>Business Hours:</strong> Monday-Friday, 9 AM - 6 PM IST<br />
-                  <strong>Website:</strong> www.menumitra.com
+                  <strong>Website:</strong> {website.www}
                 </p>
                 
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">

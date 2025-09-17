@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSection from "@/components/organisms/FooterSection";
+import { email, website } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | MenuMitra",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "Cookie Policy | MenuMitra",
     description:
       "MenuMitra's Cookie Policy: Learn how we use cookies and similar technologies to enhance your browsing experience and provide personalized restaurant management services.",
-    url: "https://menumitra.com/cookie-policy",
+    url: "{website.base}/cookie-policy",
     type: "website",
   },
   twitter: {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       "MenuMitra's Cookie Policy: Learn how we use cookies and similar technologies to enhance your browsing experience and provide personalized restaurant management services.",
   },
   alternates: {
-    canonical: "https://menumitra.com/cookie-policy",
+    canonical: "{website.base}/cookie-policy",
   },
 };
 
@@ -38,7 +39,7 @@ export default function CookiePolicyPage() {
     name: "Cookie Policy",
     description:
       "MenuMitra's Cookie Policy explaining how cookies and similar technologies are used to enhance user experience and provide personalized services.",
-    url: "https://menumitra.com/cookie-policy",
+    url: "{website.base}/cookie-policy",
     about: {
       "@type": "CookiePolicy",
       name: "MenuMitra Cookie Policy",
@@ -48,10 +49,10 @@ export default function CookiePolicyPage() {
     publisher: {
       "@type": "Organization",
       name: "MenuMitra",
-      url: "https://menumitra.com",
+      url: "{website.base}",
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@menumitra.com",
+        email: "{email}",
         telephone: "+91 93178 18283",
         contactType: "customer service",
       },
@@ -98,7 +99,7 @@ export default function CookiePolicyPage() {
             
             <div className="singlePage">
               <p className="mb-4">
-                This Cookie Policy explains how MenuMitra ("we", "our", "us") uses cookies and similar technologies when you visit our website at www.menumitra.com (the "Site") or use our restaurant management applications. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+                This Cookie Policy explains how MenuMitra ("we", "our", "us") uses cookies and similar technologies when you visit our website at {website.www} (the "Site") or use our restaurant management applications. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
               </p>
 
               {/* Table of Contents */}
@@ -250,9 +251,9 @@ export default function CookiePolicyPage() {
                 <h2 className="text-2xl font-semibold mt-12 mb-4">8. Contact Information</h2>
                 <p className="mb-3">If you have any questions about this Cookie Policy or our use of cookies, please contact us:</p>
                 <p className="mb-4">
-                  <strong>Email:</strong> <a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a><br />
+                  <strong>Email:</strong> <a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a><br />
                   <strong>Phone:</strong> <a href="tel:+919317818283" className="text-primary-600 hover:text-primary-800">+91 93178 18283</a><br />
-                  <strong>Website:</strong> www.menumitra.com
+                  <strong>Website:</strong> {website.www}
                 </p>
                 <p className="mb-4"><strong>Thank you</strong> for trusting MenuMitra. We are committed to transparency and giving you control over your data and privacy preferences.</p>
               </section>

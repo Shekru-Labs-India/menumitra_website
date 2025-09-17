@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SocialIcon from '@/components/atoms/SocialIcon';
 import { Phone, Mail } from 'lucide-react';
+import { email, phone, getEmailLink, getPhoneLink, social } from '@/config/contact';
 
 interface FooterSectionProps {
   className?: string;
@@ -176,23 +177,23 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           <div className="col-span-6 lg:col-span-2 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg text-left">Contact Us</h3>
             <p className="mb-3">
-              <a href="mailto:info@menumitra.com" className="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+              <a href={getEmailLink()} className="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                info@MenuMitra.com
+                {email}
               </a>
             </p>
 
             <p className="mb-3">
-              <a href="tel:+919317818283" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+              <a href={getPhoneLink()} className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                +91 93178 18283
+                {phone}
               </a>
             </p>
             <ul className="flex items-center max-lg:justify-center social-link gap-4">
               <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
               <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
-              <SocialIcon platform="youtube" href="https://www.youtube.com/@menumitra" target="_blank" />
-              <SocialIcon platform="instagram" href="https://www.instagram.com/menumitra/" target="_blank" />
+              <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
+              <SocialIcon platform="instagram" href={`https://www.instagram.com/${social.instagram}/`} target="_blank" />
             </ul>
           </div>
         </div>

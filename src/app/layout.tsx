@@ -4,6 +4,7 @@ import "./globals.css";
 import "./custom.css";
 import Header from "@/components/organisms/Header";
 import { Toaster } from "react-hot-toast";
+import { website, social } from "@/config/contact";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://menumitra.com',
+    url: website.base,
     siteName: 'MenuMitra',
     title: 'MenuMitra - AI-Powered Digital Menu Solutions for Restaurants',
     description: 'Transform your restaurant with MenuMitra\'s AI-powered digital menu platform. Create stunning QR code menus, manage orders seamlessly, and boost sales by 30%.',
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     title: 'MenuMitra - AI-Powered Digital Menu Solutions for Restaurants',
     description: 'Transform your restaurant with AI-powered digital menus. Boost sales by 30% with QR code menus and seamless order management.',
     images: ['/images/hero/hero-circle.png'],
-    creator: '@menumitra',
+    creator: social.twitter,
   },
   icons: {
     icon: '/images/favicons/favicon-32x32.png',
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   alternates: {
-    canonical: 'https://menumitra.com',
+    canonical: website.base,
   },
 };
 
@@ -89,7 +90,7 @@ export default function RootLayout({
     "@type": "SoftwareApplication",
     "name": "MenuMitra",
     "description": "AI-powered digital menu platform for restaurants",
-    "url": "https://menumitra.com",
+    "url": website.base,
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -106,7 +107,7 @@ export default function RootLayout({
     "provider": {
       "@type": "Organization",
       "name": "MenuMitra",
-      "url": "https://menumitra.com"
+      "url": website.base
     }
   };
 

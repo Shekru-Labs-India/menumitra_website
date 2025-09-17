@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
+import { website } from '@/config/contact'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://menumitra.com'
+  const baseUrl = website.base
   
   return [
     {

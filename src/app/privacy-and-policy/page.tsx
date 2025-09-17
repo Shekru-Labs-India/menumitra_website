@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSection from "@/components/organisms/FooterSection";
+import { email, website } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | MenuMitra",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | MenuMitra",
     description:
       "MenuMitra's Privacy Policy: Learn how we protect your restaurant data, handle personal information, and maintain security for our POS and management services.",
-    url: "https://menumitra.com/privacy-and-policy",
+    url: "{website.base}/privacy-and-policy",
     type: "website",
   },
   twitter: {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       "MenuMitra's Privacy Policy: Learn how we protect your restaurant data, handle personal information, and maintain security for our POS and management services.",
   },
   alternates: {
-    canonical: "https://menumitra.com/privacy-and-policy",
+    canonical: "{website.base}/privacy-and-policy",
   },
 };
 
@@ -38,7 +39,7 @@ export default function PrivacyPolicyPage() {
     name: "Privacy Policy",
     description:
       "MenuMitra's Privacy Policy explaining data collection, usage, and protection practices for restaurant management software services.",
-    url: "https://menumitra.com/privacy-and-policy",
+    url: "{website.base}/privacy-and-policy",
     about: {
       "@type": "PrivacyPolicy",
       name: "MenuMitra Privacy Policy",
@@ -48,10 +49,10 @@ export default function PrivacyPolicyPage() {
     publisher: {
       "@type": "Organization",
       name: "MenuMitra",
-      url: "https://menumitra.com",
+      url: "{website.base}",
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@menumitra.com",
+        email: "{email}",
         telephone: "+91 93178 18283",
         contactType: "customer service",
       },
@@ -236,7 +237,7 @@ export default function PrivacyPolicyPage() {
                   <li><strong>Restriction / Objection:</strong> Restrict processing or object to certain uses (e.g., direct marketing).</li>
                   <li><strong>Withdraw Consent:</strong> Withdraw any consent you gave (this will not affect processing already completed).</li>
                 </ul>
-                <p className="mb-4">To exercise rights, contact us at <strong><a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a></strong>. We may need to verify your identity before responding.</p>
+                <p className="mb-4">To exercise rights, contact us at <strong><a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a></strong>. We may need to verify your identity before responding.</p>
               </section>
 
               <section id="children" className="mt-10 mb-6 scroll-mt-24">
@@ -269,7 +270,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl font-semibold mt-12 mb-4">14. Contact & Data Protection Officer</h2>
                 <p className="mb-3">For questions, requests or complaints, contact:</p>
                 <p className="mb-4">
-                  <strong>Email:</strong> <a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a><br />
+                  <strong>Email:</strong> <a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a><br />
                   <strong>Phone:</strong> <a href="tel:+919317818283" className="text-primary-600 hover:text-primary-800">+91 93178 18283</a>
                 </p>
                 <p className="mb-4">If you remain unsatisfied after contacting us, you may have the right to lodge a complaint with a supervisory authority in your jurisdiction.</p>
@@ -290,7 +291,7 @@ export default function PrivacyPolicyPage() {
                   <li>We collect <strong>account, payment, business operations, usage, and device data</strong>.</li>
                   <li>We <strong>do not sell</strong> your personal data.</li>
                   <li>Data is <strong>encrypted</strong>, access is <strong>role-based</strong>, and offline storage is <strong>encrypted</strong>.</li>
-                  <li>Contact <strong><a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a></strong> to exercise data rights.</li>
+                  <li>Contact <strong><a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a></strong> to exercise data rights.</li>
       </ul>
               </section>
 

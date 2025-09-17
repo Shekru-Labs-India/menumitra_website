@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { email, phone, location, getEmailLink, getPhoneLink } from '@/config/contact';
 
 const ContactPage: React.FC = () => {
   return (
@@ -46,7 +47,7 @@ const ContactPage: React.FC = () => {
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
                   <MapPin className="w-10 h-10 mx-auto mb-6 text-paragraph dark:text-white" />
                   <h3 className="mb-2.5">Our Address</h3>
-                  <p>India</p>
+                  <p>{location}</p>
                 </div>
               </div>
 
@@ -55,7 +56,7 @@ const ContactPage: React.FC = () => {
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
                   <Mail className="w-10 h-10 mx-auto mb-6 text-paragraph dark:text-white" />
                   <h3 className="mb-2.5">Email Us</h3>
-                  <a href="mailto:info@menumitra.com" className="text-primary hover:underline">info@menumitra.com</a>
+                  <a href={getEmailLink()} className="text-primary hover:underline">{email}</a>
                 </div>
               </div>
 
@@ -64,7 +65,7 @@ const ContactPage: React.FC = () => {
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
                   <Phone className="w-10 h-10 mx-auto mb-6 text-paragraph dark:text-white" />
                   <h3 className="mb-2.5">Call Us</h3>
-                  <a href="tel:+919317818283" className="text-primary hover:underline">+91 93178 18283</a>
+                  <a href={getPhoneLink()} className="text-primary hover:underline">{phone}</a>
                 </div>
               </div>
             </div>

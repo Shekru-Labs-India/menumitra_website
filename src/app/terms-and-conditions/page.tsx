@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSection from "@/components/organisms/FooterSection";
+import { email, website } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions | MenuMitra",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: "Terms and Conditions | MenuMitra",
     description:
       "MenuMitra's Terms and Conditions: Review our service agreements, user policies, and legal requirements for our restaurant management software and POS services.",
-    url: "https://menumitra.com/terms-and-conditions",
+    url: "{website.base}/terms-and-conditions",
     type: "website",
   },
   twitter: {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       "MenuMitra's Terms and Conditions: Review our service agreements, user policies, and legal requirements for our restaurant management software and POS services.",
   },
   alternates: {
-    canonical: "https://menumitra.com/terms-and-conditions",
+    canonical: "{website.base}/terms-and-conditions",
   },
 };
 
@@ -38,7 +39,7 @@ export default function TermsConditionsPage() {
     name: "Terms and Conditions",
     description:
       "MenuMitra's Terms and Conditions explaining service agreements, user policies, and legal requirements for restaurant management software services.",
-    url: "https://menumitra.com/terms-and-conditions",
+    url: "{website.base}/terms-and-conditions",
     about: {
       "@type": "TermsOfService",
       name: "MenuMitra Terms and Conditions",
@@ -48,10 +49,10 @@ export default function TermsConditionsPage() {
     publisher: {
       "@type": "Organization",
       name: "MenuMitra",
-      url: "https://menumitra.com",
+      url: "{website.base}",
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@menumitra.com",
+        email: "{email}",
         telephone: "+91 93178 18283",
         contactType: "customer service",
       },
@@ -122,7 +123,7 @@ export default function TermsConditionsPage() {
               <section id="introduction" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">1. Introduction</h2>
                 <ul className="mb-4 list-disc list-inside space-y-2">
-                  <li>These Terms of Service (the "Terms") are intended to make you aware of your legal rights and responsibilities with respect to your access to and use of the website at www.menumitra.com (the "Site") and any related mobile or software applications whether existing now or in the future ("the App") of MenuMitra ("MenuMitra") or "We" or "Us").</li>
+                  <li>These Terms of Service (the "Terms") are intended to make you aware of your legal rights and responsibilities with respect to your access to and use of the website at {website.www} (the "Site") and any related mobile or software applications whether existing now or in the future ("the App") of MenuMitra ("MenuMitra") or "We" or "Us").</li>
                   <li>By downloading or otherwise accessing the App you agree to be bound by the following terms and conditions ("Terms"), privacy policy and License Agreement. If you have any queries about the App or these Terms, you can contact Us by any of the means set out in paragraph 13 of these Terms. If you do not agree with these Terms, you should stop using the App immediately.</li>
                 </ul>
               </section>
@@ -281,9 +282,9 @@ export default function TermsConditionsPage() {
                 <h2 className="text-2xl font-semibold mt-12 mb-4">13. Contact Information</h2>
                 <p className="mb-3">For questions, requests or complaints regarding these Terms, contact:</p>
                 <p className="mb-4">
-                  <strong>Email:</strong> <a href="mailto:info@menumitra.com" className="text-primary-600 hover:text-primary-800">info@menumitra.com</a><br />
+                  <strong>Email:</strong> <a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a><br />
                   <strong>Phone:</strong> <a href="tel:+919317818283" className="text-primary-600 hover:text-primary-800">+91 93178 18283</a><br />
-                  <strong>Website:</strong> www.menumitra.com
+                  <strong>Website:</strong> {website.www}
                 </p>
                 <p className="mb-4"><strong>Thank you</strong> for choosing MenuMitra for your restaurant management needs. We are committed to providing you with excellent service while maintaining the highest standards of data security and user experience.</p>
               </section>

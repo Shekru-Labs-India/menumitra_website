@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { website } from '@/config/contact';
 
 export const metadata: Metadata = {
   title: 'Book a Demo - MenuMitra Digital Menu Platform',
@@ -15,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Book a Demo - MenuMitra Digital Menu Platform',
     description: 'Schedule a personalized demo of MenuMitra\'s AI-powered digital menu platform. See how our QR code menus can boost your restaurant sales by 30%.',
-    url: 'https://menumitra.com/book-demo',
+    url: '{website.base}/book-demo',
   },
   twitter: {
     title: 'Book a Demo - MenuMitra Digital Menu Platform',
     description: 'Schedule a personalized demo of MenuMitra\'s AI-powered digital menu platform. Free consultation available.',
   },
   alternates: {
-    canonical: 'https://menumitra.com/book-demo',
+    canonical: '{website.base}/book-demo',
   },
 };
 

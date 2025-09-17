@@ -3,6 +3,7 @@ import Header from '@/components/organisms/Header';
 import FooterSection from '@/components/organisms/FooterSection';
 import { Download, Smartphone, Monitor, Calendar, ExternalLink, Globe } from 'lucide-react';
 import SectionDivider from '@/components/atoms/SectionDivider';
+import { website } from '@/config/contact';
 const ProductsPage: React.FC = () => {
   const productsV13 = [
     {
@@ -65,22 +66,22 @@ const ProductsPage: React.FC = () => {
     production: [
       {
         name: 'Menumitra Stats',
-        url: 'https://stats-v2.menumitra.com',
+        url: '{website.stats}',
         description: 'Comprehensive analytics dashboard with real-time insights, sales reports, and performance metrics to drive data-driven decisions.'
       },
       {
         name: 'Menumitra KDS',
-        url: 'https://kds-v2.menumitra.com',
+        url: '{website.kds}',
         description: 'Advanced Kitchen Display System with order prioritization, cooking timers, and seamless kitchen workflow management.'
       },
       {
         name: 'Menumitra CDS',
-        url: 'https://cds-v2.menumitra.com',
+        url: '{website.cds}',
         description: 'Interactive Customer Display System for order tracking, promotions, and enhanced customer engagement experience.'
       },
       {
         name: 'Menumitra Customer',
-        url: 'https://customer-v2.menumitra.com',
+        url: '{website.customer}',
         description: 'Customer-facing web application for online ordering, menu browsing, and seamless dining experience.'
       }
     ],
