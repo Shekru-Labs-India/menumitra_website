@@ -1569,6 +1569,22 @@ video {
 
 .bg-service-bg {
   background-image: url('/images/service-bg.png');
+}
+
+/* Print Styles for Privacy Policy */
+@media print {
+  nav, footer, .bg-core-gradient {
+    display: none !important;
+  }
+  main {
+    max-width: 100%;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+  .prose {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
 }.bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }.from-\[\#F3FDD9\]{
