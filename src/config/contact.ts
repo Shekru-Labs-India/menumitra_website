@@ -31,7 +31,7 @@ export const CONTACT_CONFIG = {
   },
   
   // Location
-  location: 'India',
+  location: 'Muktangan English School & Jr College, office No. 6, 2 Floor manogat, Parvati, Pune, Maharashtra 411009',
   
   // Business hours
   businessHours: 'Mon-Fri 9AM-6PM IST',
