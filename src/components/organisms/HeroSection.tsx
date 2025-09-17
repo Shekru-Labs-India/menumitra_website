@@ -56,9 +56,9 @@ const HeroSection: React.FC = () => {
       </div>
       
       <div className="container">
-        <div className="grid grid-cols-12 gap-5 items-end relative z-10 aos-init aos-animate" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+        <div className="grid grid-cols-12 gap-5 items-end relative z-10">
           {/* Text Content - More columns */}
-          <div className="max-md:col-span-full md:col-span-8 lg:col-span-9 max-md:mb-8" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          <div className="max-md:col-span-full md:col-span-8 lg:col-span-9 max-md:mb-8">
             <p className="mb-4 md:mb-6 lg:mb-8 font-medium uppercase text-base md:text-lg lg:text-xl">Join 15,000+ Restaurants Using MenuMitra</p>
             <h1 className="mb-8 md:mb-10 lg:mb-12">
               <SplitText 
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Right: visuals - Fewer columns */}
-          <div className="max-md:hidden md:col-span-4 lg:col-span-4 relative md:z-10" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
+          <div className="max-md:hidden md:col-span-4 lg:col-span-4 relative md:z-10">
             {/* Background blur effects */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
               <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
