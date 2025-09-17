@@ -86,8 +86,8 @@ export default function CookiePolicyPage() {
             
             <div className="singlePage pb-10">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-center">
-                Cookie Policy
-              </h1>
+            Cookie Policy
+          </h1>
             </div>
             
             {/* Effective Date */}

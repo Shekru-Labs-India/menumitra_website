@@ -87,7 +87,7 @@ export default function TermsConditionsPage() {
             <div className="singlePage pb-10">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-center">
                 Terms and Conditions
-              </h1>
+          </h1>
             </div>
             
             {/* Effective Date */}

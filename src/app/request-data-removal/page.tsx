@@ -86,8 +86,8 @@ export default function RequestDataRemovalPage() {
             
             <div className="singlePage pb-10">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-center">
-                Request Data Removal
-              </h1>
+            Request Data Removal
+          </h1>
             </div>
             
             {/* Effective Date */}
