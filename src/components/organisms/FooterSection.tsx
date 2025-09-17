@@ -23,7 +23,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
     <section className={`bg-white dark:bg-dark-300 overflow-hidden relative pt-20 ${className}`}>
       <div className="container">
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center">
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-4 ">
             <div className="flex items-center gap-4 mb-10">
               <Image
                 src="/images/mm/mm.png"
@@ -39,8 +39,18 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             </p>
           </div>
           <div className="col-span-12 lg:col-span-2 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg">Explore</h3>
+            <h3 className="mb-8 font-medium text-lg">Navigations</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
+              <li>
+                <Link 
+                  href="/" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/') ? 'active' : ''
+                  }`}
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link 
                   href="/about" 
@@ -53,38 +63,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               </li>
               <li>
                 <Link 
-                  href="/services" 
+                  href="/products" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/services') ? 'active' : ''
+                    isActive('/products') ? 'active' : ''
                   }`}
                 >
-                  Services
+                  Products
                 </Link>
-              </li>
-              <li>
-                <a href="/career" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Career
-                </a>
-              </li>
-              <li>
-                <a href="/payment" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Payment
-                </a>
-              </li>
-              <li>
-                <a href="/price" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="/faq" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Faq's
-                </a>
-              </li>
-              <li>
-                <a href="/testimonial" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Testimonials
-                </a>
               </li>
             </ul>
           </div>
@@ -92,39 +77,34 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             <h3 className="mb-8 font-medium text-lg">Resources</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               <li>
-                <a href="/banking" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Banking
-                </a>
+                <Link 
+                  href="/features/Menu" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/Menu') ? 'active' : ''
+                  }`}
+                >
+                  Features
+                </Link>
               </li>
               <li>
-                <a href="/team" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Team
-                </a>
+                <Link 
+                  href="/addons/captain-app" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/captain-app') ? 'active' : ''
+                  }`}
+                >
+                  AddOns
+                </Link>
               </li>
               <li>
-                <a href="/integration" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Integration
-                </a>
-              </li>
-              <li>
-                <a href="/blog" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="/login" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Log In
-                </a>
-              </li>
-              <li>
-                <a href="/signup" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  Sign Up
-                </a>
-              </li>
-              <li>
-                <a href="/404" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                  404
-                </a>
+                <Link 
+                  href="/outlet-type/restaurant" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/restaurant') ? 'active' : ''
+                  }`}
+                >
+                  Outlet Types
+                </Link>
               </li>
             </ul>
           </div>
