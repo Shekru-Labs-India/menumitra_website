@@ -74,7 +74,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             </ul>
           </div>
           <div className="col-span-12 lg:col-span-2 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg">Resources</h3>
+            <h3 className="mb-8 font-medium text-lg">Features</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               <li>
                 <Link 
@@ -83,9 +83,44 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/features/Menu') ? 'active' : ''
                   }`}
                 >
-                  Features
+                  Menu
                 </Link>
               </li>
+              <li>
+                <Link 
+                  href="/features/Billing" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/Billing') ? 'active' : ''
+                  }`}
+                >
+                  Billing
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/Inventory" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/Inventory') ? 'active' : ''
+                  }`}
+                >
+                  Inventory
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/OnlineOrder" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/OnlineOrder') ? 'active' : ''
+                  }`}
+                >
+                  Online Order
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-12 lg:col-span-2 max-lg:text-center">
+            <h3 className="mb-8 font-medium text-lg">AddOns</h3>
+            <ul className="[&>*:not(:last-child)]:mb-3">
               <li>
                 <Link 
                   href="/addons/captain-app" 
@@ -93,17 +128,37 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/addons/captain-app') ? 'active' : ''
                   }`}
                 >
-                  AddOns
+                  Captain App
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/outlet-type/restaurant" 
+                  href="/addons/waiter-app" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/restaurant') ? 'active' : ''
+                    isActive('/addons/waiter-app') ? 'active' : ''
                   }`}
                 >
-                  Outlet Types
+                  Waiter App
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/addons/point-of-sale" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/point-of-sale') ? 'active' : ''
+                  }`}
+                >
+                  Point of Sale
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/addons/kitchen-display-system" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/kitchen-display-system') ? 'active' : ''
+                  }`}
+                >
+                  Kitchen Display
                 </Link>
               </li>
             </ul>
