@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { 
   CreditCard, 
   Package, 
@@ -34,7 +32,10 @@ import {
   Coffee,
   Hamburger,
   CircleDot as Bread,
-  Cloud
+  Cloud,
+  ChevronDown,
+  X,
+  Menu
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -247,9 +248,8 @@ const Header: React.FC = () => {
                       : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
-                    <FontAwesomeIcon 
-                      icon={faAngleDown} 
-                      className={`ml-1 group-hover:rotate-180 duration-500 mt-1 ${
+                    <ChevronDown 
+                      className={`ml-1 group-hover:rotate-180 duration-500 mt-1 w-4 h-4 ${
                         (item.label === 'Features' && isFeaturesActive()) || 
                         (item.label === 'AddOns' && isAddOnsActive()) || 
                         (item.label === 'Outlet Type' && isOutletTypeActive())
@@ -290,30 +290,7 @@ const Header: React.FC = () => {
               className={`outline-none mobile-menu-button w-10 h-10 rounded-full bg-white dark:bg-dark-200 relative ${isMobileMenuOpen ? 'hidden' : ''}`}
               onClick={toggleMobileMenu}
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="22" 
-                height="14" 
-                viewBox="0 0 22 14" 
-                fill="none" 
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >
-                <path 
-                  d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1Z" 
-                  fill="" 
-                  className="fill-paragraph dark:fill-white"
-                />
-                <path 
-                  d="M8 7C8 6.44772 8.44772 6 9 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H9C8.44772 8 8 7.55228 8 7Z" 
-                  fill="" 
-                  className="fill-paragraph dark:fill-white"
-                />
-                <path 
-                  d="M4 13C4 12.4477 4.44772 12 5 12H21C21.5523 12 22 12.4477 22 13C22 13.5523 21.5523 14 21 14H5C4.44772 14 4 13.5523 4 13Z" 
-                  fill="" 
-                  className="fill-paragraph dark:fill-white"
-                />
-              </svg>
+              <Menu className="w-5 h-5 text-paragraph dark:text-white ml-2" />
             </button>
           </li>
         </ul>
@@ -343,7 +320,7 @@ const Header: React.FC = () => {
             closeMobileMenu();
           }}
         >
-          <FontAwesomeIcon icon={faTimes} />
+          <X className="w-5 h-5 ml-2" />
         </button>
         
         <ul className="nav-list flex flex-col gap-5 w-full max-w-[500px] landscape:h-full relative">
@@ -372,9 +349,8 @@ const Header: React.FC = () => {
                     onClick={() => toggleDropdown(item.label.toLowerCase())}
                   >
                     {item.label}
-                    <FontAwesomeIcon 
-                      icon={faAngleDown} 
-                      className={`ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''} ${
+                    <ChevronDown 
+                      className={`ml-auto duration-500 mt-1 w-4 h-4 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''} ${
                         (item.label === 'Features' && isFeaturesActive()) || 
                         (item.label === 'AddOns' && isAddOnsActive()) || 
                         (item.label === 'Outlet Type' && isOutletTypeActive())
