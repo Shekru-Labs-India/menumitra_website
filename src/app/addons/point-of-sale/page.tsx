@@ -4,7 +4,7 @@ import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import { 
-  CashRegister, 
+  Receipt, 
   CheckCircle, 
   Play
 } from 'lucide-react';
@@ -33,7 +33,7 @@ const PointOfSalePage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
         <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
-          <CashRegister className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <Receipt className="w-24 h-24 text-primary-600 mx-auto mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Complete POS Solution</h3>
           <p className="text-gray-600 dark:text-gray-300">
             All-in-one point of sale system for restaurants

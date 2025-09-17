@@ -4,7 +4,7 @@ import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import { 
-  Bread, 
+  Croissant,
   CheckCircle, 
   Play
 } from 'lucide-react';
@@ -33,7 +33,7 @@ const BakeriesPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
         <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
-          <Bread className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <Croissant className="w-24 h-24 text-primary-600 mx-auto mb-4" />
           <h3 className="text-2xl font-semibold mb-2">Fresh Bakery Operations</h3>
           <p className="text-gray-600 dark:text-gray-300">
             Specialized management for bakery and pastry operations
