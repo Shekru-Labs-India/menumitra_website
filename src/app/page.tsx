@@ -8,6 +8,8 @@ import BlogSection from "@/components/organisms/BlogSection";
 import FooterSection from "@/components/organisms/FooterSection";
 import HeroSection from "@/components/organisms/HeroSection";
 import CoreFeaturesSection from "@/components/organisms/CoreFeaturesSection";
+import FAQSection from '@/components/sections/FAQSection';
+
 export default function Home() {
   return (
     <div>
@@ -19,7 +21,7 @@ export default function Home() {
       <SolutionSection />
       <CoreFeaturesSection />
       <TestimonialsSection />
-      {/* <BlogSection /> */}
+      <FAQSection />
       <FooterSection />
     </div>
   );
