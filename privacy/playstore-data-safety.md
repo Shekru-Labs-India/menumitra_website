@@ -74,14 +74,14 @@ This document maps MenuMitra's privacy policy to Google Play Store Data Safety r
 ### User Controls
 - **Data access**: Users can request copies of their data
 - **Data deletion**: Users can request data deletion (subject to legal requirements)
-- **Contact**: Users can contact info@menumitra.com for data requests
+- **Contact**: Users can contact menumitra.info@gmail.com for data requests
 
 ## Privacy Policy Verification
 
 ✅ **Privacy Policy URL**: https://menumitra.com/privacy-and-policy  
 ✅ **Publicly accessible**: Policy is available without login requirement  
 ✅ **Matches Play Console**: Data Safety declarations align with privacy policy  
-✅ **Contact information**: Clear contact details provided (info@menumitra.com, +91 93178 18283)  
+✅ **Contact information**: Clear contact details provided (menumitra.info@gmail.com, +91 93178 18283)  
 ✅ **Data rights**: Clear explanation of user rights and how to exercise them  
 
 ## Implementation Notes
@@ -93,7 +93,7 @@ This document maps MenuMitra's privacy policy to Google Play Store Data Safety r
 
 ## Contact for Data Safety Questions
 
-- **Email**: info@menumitra.com
+- **Email**: menumitra.info@gmail.com
 - **Phone**: +91 93178 18283
 - **Privacy Policy**: https://menumitra.com/privacy-and-policy
 

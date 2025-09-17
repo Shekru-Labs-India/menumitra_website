@@ -130,7 +130,7 @@ To provide comprehensive restaurant management solutions, we have created certai
 
 For questions, requests or complaints regarding these Terms, contact:
 
-**Email:** info@menumitra.com  
+**Email:** menumitra.info@gmail.com  
 **Phone:** +91 93178 18283  
 **Website:** www.menumitra.com
 

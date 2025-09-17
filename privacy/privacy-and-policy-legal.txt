@@ -152,7 +152,7 @@ LAST UPDATED: [Last Updated]
     Right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before withdrawal.
 
 10.8 Rights Exercise:
-    Requests to exercise rights should be submitted to info@menumitra.com. The Company may require identity verification before processing requests.
+    Requests to exercise rights should be submitted to menumitra.info@gmail.com. The Company may require identity verification before processing requests.
 
 11. CHILDREN'S PRIVACY PROTECTION
 
@@ -183,7 +183,7 @@ LAST UPDATED: [Last Updated]
 
 15.1 For privacy-related inquiries, requests, or complaints:
 
-    Email: info@menumitra.com
+    Email: menumitra.info@gmail.com
     Telephone: +91 93178 18283
 
 15.2 Data Subjects retain the right to lodge complaints with relevant supervisory authorities in their jurisdiction if concerns remain unresolved after contacting the Company.
@@ -201,6 +201,6 @@ LAST UPDATED: [Last Updated]
 17.1 Data Collection: Account, payment, business operations, usage, and device data.
 17.2 Data Sales: Personal Data is not sold to third parties.
 17.3 Security: Encryption, role-based access controls, and encrypted offline storage.
-17.4 Rights: Contact info@menumitra.com to exercise data protection rights.
+17.4 Rights: Contact menumitra.info@gmail.com to exercise data protection rights.
 
 This Privacy Policy constitutes a legally binding agreement between MenuMitra and users of its services, subject to applicable data protection laws and regulations.

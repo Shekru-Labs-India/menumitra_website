@@ -26,7 +26,7 @@
 - ✅ Cookies & Tracking Technologies
 - ✅ Third-Party Website Links
 - ✅ Policy Change Procedures
-- ✅ Contact Information (info@menumitra.com, +91 93178 18283)
+- ✅ Contact Information (menumitra.info@gmail.com, +91 93178 18283)
 - ✅ App Store Compliance Information
 - ✅ Quick Read Summary
 
@@ -54,7 +54,7 @@
 - **Industry Standards**: TLS 1.2+, AES-256 encryption, role-based access
 
 #### Contact Information Used
-- **Email**: info@menumitra.com
+- **Email**: menumitra.info@gmail.com
 - **Phone**: +91 93178 18283
 - **Website**: menumitra.com
 

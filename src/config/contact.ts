@@ -3,7 +3,7 @@
 
 export const CONTACT_CONFIG = {
   // Primary contact email
-  email: 'info@menumitra.com',
+  email: 'menumitra.info@gmail.com',
   
   // Phone number
   phone: '+91 93178 18283',

@@ -121,7 +121,7 @@ Subject to local law, you may have rights including:
 * **Restriction / Objection:** Restrict processing or object to certain uses (e.g., direct marketing).
 * **Withdraw Consent:** Withdraw any consent you gave (this will not affect processing already completed).
 
-To exercise rights, contact us at **[info@menumitra.com](mailto:info@menumitra.com)**. We may need to verify your identity before responding.
+To exercise rights, contact us at **[menumitra.info@gmail.com](mailto:menumitra.info@gmail.com)**. We may need to verify your identity before responding.
 
 ---
 
@@ -159,7 +159,7 @@ We may update this Privacy Policy to reflect changes in practices, legal require
 
 For questions, requests or complaints, contact:
 
-**Email:** [info@menumitra.com](mailto:info@menumitra.com)
+**Email:** [menumitra.info@gmail.com](mailto:menumitra.info@gmail.com)
 **Phone:** +91 93178 18283
 
 If you remain unsatisfied after contacting us, you may have the right to lodge a complaint with a supervisory authority in your jurisdiction.
@@ -179,7 +179,7 @@ If you remain unsatisfied after contacting us, you may have the right to lodge a
 * We collect **account, payment, business operations, usage, and device data**.
 * We **do not sell** your personal data.
 * Data is **encrypted**, access is **role-based**, and offline storage is **encrypted**.
-* Contact **[info@menumitra.com](mailto:info@menumitra.com)** to exercise data rights.
+* Contact **[menumitra.info@gmail.com](mailto:menumitra.info@gmail.com)** to exercise data rights.
 
 ---
 

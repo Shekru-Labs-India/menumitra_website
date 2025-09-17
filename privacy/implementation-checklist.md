@@ -5,7 +5,7 @@
 ### Content Updates Required
 - [ ] Replace `[Effective Date]` with actual effective date (e.g., "January 15, 2024")
 - [ ] Replace `[Last Updated]` with actual last updated date (e.g., "January 15, 2024")
-- [ ] Verify all contact information is correct (info@menumitra.com, +91 93178 18283)
+- [ ] Verify all contact information is correct (menumitra.info@gmail.com, +91 93178 18283)
 - [ ] Confirm domain name in canonical URLs (menumitra.com)
 - [ ] Review all data collection practices match current implementation
 
