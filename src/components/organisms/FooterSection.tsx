@@ -24,7 +24,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
       <div className="container">
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center">
           <div className="col-span-12 lg:col-span-4 ">
-            <div className="flex items-center gap-4 mb-10">
+            <div className="flex items-center gap-4 mb-5">
               <Image
                 src="/images/mm/mm.png"
                 alt="MenuMitra logo"
@@ -35,7 +35,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
             </div>
             <p className="max-w-[350px] max-lg:mx-auto">
-              MenuMitra is the leading AI-powered digital menu platform helping restaurants boost sales, streamline operations, and enhance customer experience with QR code menus and smart order management.
+              AI-powered digital menu platform for restaurants with QR code menus and smart order management.
             </p>
           </div>
           <div className="col-span-12 lg:col-span-2 max-lg:text-center">
@@ -110,7 +110,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           </div>
           <div className="col-span-12 lg:col-span-2 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg">Contact Us</h3>
-            <p className="mb-3">Need Support?</p>
             <p className="mb-3">
               <a href="mailto:info@menumitra.com" className="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
                 <Mail className="w-4 h-4" />
