@@ -34,7 +34,16 @@ import {
   Coffee,
   Hamburger,
   CircleDot as Bread,
-  Cloud
+  Cloud,
+  Home,
+  Info,
+  Layers,
+  DollarSign,
+  Phone,
+  BookOpen,
+  HelpCircle,
+  Code,
+  Link2
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -50,7 +59,7 @@ interface NavDropdown {
 }
 
 type NavigationItem = 
-  | { type: 'link'; href: string; label: string }
+  | { type: 'link'; href: string; label: string; icon?: React.ReactNode }
   | { type: 'dropdown'; label: string; items: NavItem[] };
 
 const Header: React.FC = () => {
@@ -75,6 +84,14 @@ const Header: React.FC = () => {
     return pathname.startsWith('/outlet-type/');
   };
 
+  const isResourcesActive = () => {
+    return pathname.startsWith('/blog') || 
+           pathname.startsWith('/help') || 
+           pathname.startsWith('/documentation') || 
+           pathname.startsWith('/api') || 
+           pathname.startsWith('/integrations');
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -93,13 +110,51 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when clicking outside or pressing escape
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      
+      if (isMobileMenuOpen && 
+          mobileMenu && 
+          !mobileMenu.contains(event.target as Node) && 
+          !mobileMenuButton?.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    const handleEscapeKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscapeKey);
+      // Prevent body scroll when mobile menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscapeKey);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
 
   // Single navigation configuration - easy to edit and maintain
   const navigationConfig: { main: NavigationItem[] } = {
     main: [
-      { type: 'link', href: '/', label: 'Home' },
-      { type: 'link', href: '/about', label: 'About' },
-      { type: 'link', href: '/products', label: 'Products' },
+      { type: 'link', href: '/', label: 'Home', icon: <Home className="w-5 h-5" /> },
+      { type: 'link', href: '/about', label: 'About', icon: <Info className="w-5 h-5" /> },
+      { type: 'link', href: '/products', label: 'Products', icon: <Layers className="w-5 h-5" /> },
+      { type: 'link', href: '/pricing', label: 'Pricing', icon: <DollarSign className="w-5 h-5" /> },
+      { type: 'link', href: '/contact', label: 'Contact', icon: <Phone className="w-5 h-5" /> },
       { 
         type: 'dropdown',
         label: 'Features', 
@@ -151,6 +206,17 @@ const Header: React.FC = () => {
           { href: '/outlet-type/large-chain', label: 'Large Chain', icon: <Building className="w-4 h-4" /> },
         ]
       },
+      { 
+        type: 'dropdown',
+        label: 'Resources', 
+        items: [
+          { href: '/blog', label: 'Blog', icon: <BookOpen className="w-4 h-4" /> },
+          { href: '/help', label: 'Help Center', icon: <HelpCircle className="w-4 h-4" /> },
+          { href: '/documentation', label: 'Documentation', icon: <FileText className="w-4 h-4" /> },
+          { href: '/api', label: 'API', icon: <Code className="w-4 h-4" /> },
+          { href: '/integrations', label: 'Integrations', icon: <Link2 className="w-4 h-4" /> },
+        ]
+      },
     ]
   };
 
@@ -197,7 +263,8 @@ const Header: React.FC = () => {
                   <button className={`font-Inter flex items-center text-base font-medium leading-8 py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large duration-500 hover:duration-500 transition-colors group text-nowrap ${
                     (item.label === 'Features' && isFeaturesActive()) || 
                     (item.label === 'AddOns' && isAddOnsActive()) || 
-                    (item.label === 'Outlet Type' && isOutletTypeActive())
+                    (item.label === 'Outlet Type' && isOutletTypeActive()) ||
+                    (item.label === 'Resources' && isResourcesActive())
                       ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
                       : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
@@ -207,7 +274,8 @@ const Header: React.FC = () => {
                       className={`ml-1 group-hover:rotate-180 duration-500 mt-1 ${
                         (item.label === 'Features' && isFeaturesActive()) || 
                         (item.label === 'AddOns' && isAddOnsActive()) || 
-                        (item.label === 'Outlet Type' && isOutletTypeActive())
+                        (item.label === 'Outlet Type' && isOutletTypeActive()) ||
+                        (item.label === 'Resources' && isResourcesActive())
                           ? 'text-primary-600 dark:text-primary-400'
                           : 'text-paragraph dark:text-white'
                       }`} 
@@ -274,7 +342,7 @@ const Header: React.FC = () => {
         </ul>
 
         {/* Mobile Menu */}
-        <div className={`mobile-menu max-lg:overflow-y-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`mobile-menu max-lg:overflow-y-auto ${isMobileMenuOpen ? 'open' : ''}`}>
           <button 
             className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-white dark:bg-dark-200 absolute right-6 top-5"
             onClick={toggleMobileMenu}
@@ -286,53 +354,40 @@ const Header: React.FC = () => {
             {navigationConfig.main.map((item, index) => (
               <li key={index} className={item.type === 'dropdown' ? 'relative group faq-item' : ''}>
                 {item.type === 'link' ? (
-              <Link 
+                  <Link 
                     href={item.href} 
-                className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
-                      isActive(item.href) ? 'active' : ''
-                }`}
-                onClick={toggleMobileMenu}
-              >
+                    className="font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors"
+                    onClick={toggleMobileMenu}
+                  >
                     {item.label}
-              </Link>
+                  </Link>
                 ) : (
                   <>
                     <button 
-                      className={`faq-header font-Inter flex items-center text-base font-medium leading-8 py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large duration-500 hover:duration-500 transition-colors group ${
-                        (item.label === 'Features' && isFeaturesActive()) || 
-                        (item.label === 'AddOns' && isAddOnsActive()) || 
-                        (item.label === 'Outlet Type' && isOutletTypeActive())
-                          ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
-                          : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
+                      className={`faq-header font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors group ${
+                        activeDropdown === item.label.toLowerCase() ? 'open' : ''
                       }`}
                       onClick={() => toggleDropdown(item.label.toLowerCase())}
                     >
                       {item.label}
                       <FontAwesomeIcon 
                         icon={faAngleDown} 
-                        className={`ml-auto duration-500 mt-1 ${activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''} ${
-                          (item.label === 'Features' && isFeaturesActive()) || 
-                          (item.label === 'AddOns' && isAddOnsActive()) || 
-                          (item.label === 'Outlet Type' && isOutletTypeActive())
-                            ? 'text-primary-600 dark:text-primary-400'
-                            : 'text-paragraph dark:text-white'
-                        }`} 
+                        className="text-paragraph dark:text-white ml-auto group-[.open]:rotate-180 duration-500 mt-1"
                       />
                     </button>
-                    <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'} bg-white dark:bg-dark-200 rounded-lg shadow-lg p-4 mt-2`}>
+                    <ul className={`faq-body ${activeDropdown === item.label.toLowerCase() ? 'open' : 'close'}`}>
                       {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium' : ''}`} onClick={toggleMobileMenu}>
-                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`}>{subItem.icon}</span>}
+                          <Link href={subItem.href} className="flex" onClick={toggleMobileMenu}>
                             {subItem.label}
                           </Link>
                         </li>
-                  ))}
-                </ul>
+                      ))}
+                    </ul>
                   </>
                 )}
-                  </li>
-                ))}
+              </li>
+            ))}
 
             {/* Mobile Book Demo */}
             <li>

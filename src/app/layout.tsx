@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import "./custom.css";
+// import "./theme.css";
+import "./theme-1.css";
 import Header from "@/components/organisms/Header";
 import { Toaster } from "react-hot-toast";
 import { website, social } from "@/config/contact";
