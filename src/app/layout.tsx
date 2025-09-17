@@ -120,9 +120,31 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('DOMContentLoaded', function() {
+                AOS.init({
+                  duration: 500,
+                  once: true,
+                  offset: 50,
+                  easing: 'ease-out',
+                  delay: 0
+                });
+              });
+            `
+          }}
         />
       </head>
       <body
