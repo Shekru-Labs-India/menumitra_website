@@ -71,6 +71,16 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   Products
                 </Link>
               </li>
+              <li>
+                <Link 
+                  href="/contact" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/contact') ? 'active' : ''
+                  }`}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col-span-6 lg:col-span-2 max-lg:text-center">
