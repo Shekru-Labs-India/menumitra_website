@@ -16,11 +16,12 @@ const AboutPage: React.FC = () => {
     >
       <p className="mb-4 font-medium uppercase">about company</p>
       <h1 className="max-lg:mb-10 mb-10">
-        The future of business is being shaped by aplio
+        The future of restaurant management is being shaped by MenuMitra
       </h1>
       <p className="max-lg:mb-10 mb-12 max-w-[590px] mx-auto">
-        Until recently, the prevailing view assumed lorem ipsum was born as a
-        nonsense text. It's not Latin, though it looks like it
+        MenuMitra is revolutionizing the restaurant industry with our comprehensive 
+        digital solutions that streamline operations, enhance customer experience, 
+        and drive business growth.
       </p>
     </div>
   </div>
@@ -43,7 +44,7 @@ const AboutPage: React.FC = () => {
       >
         <img
           src="/images/about/about1.png"
-          alt="about images"
+          alt="MenuMitra restaurant management system"
           className="rounded w-full"
         />
       </div>
@@ -57,7 +58,7 @@ const AboutPage: React.FC = () => {
       >
         <img
           src="/images/about/about2.png"
-          alt="about images"
+          alt="MenuMitra digital menu solutions"
           className="rounded w-full"
         />
       </div>
@@ -71,7 +72,7 @@ const AboutPage: React.FC = () => {
       >
         <img
           src="/images/about/about3.png"
-          alt="about images"
+          alt="MenuMitra customer experience platform"
           className="rounded w-full"
         />
       </div>
@@ -80,20 +81,20 @@ const AboutPage: React.FC = () => {
       <div className="max-md:col-span-full md:col-span-6">
         <div className="max-w-[550px]">
           <p className="section-tagline">Numbers</p>
-          <h2>More than 10 years experience in this industry</h2>
+          <h2>More than 5 years experience in restaurant technology</h2>
         </div>
       </div>
       <div className="max-md:col-span-full md:col-span-6 max-w-[590px] py-10">
         <p>
-          Lorem ipsum dolor sit amet consectetur. Nulla lobortis lacus nunc
-          pulvinar amet. Id dignissim ipsum quis varius. Accumsan ultricies
-          dapibus rutrum parturient mauris at est habitasse.
+          MenuMitra has been at the forefront of restaurant digital transformation, 
+          helping thousands of restaurants streamline their operations and enhance 
+          customer satisfaction through innovative technology solutions.
           <br />
           <br />
-          Risus egestas neque. Nunc diam arcu purus egestas at dignissim nunc.
-          In nec donec sed pretium donec eros elementum. Nec bibendum vel odio
-          convallis feugiat viverra rhoncus in risus. Pretium ante nibh morbi
-          sed consequat sem quam pharetra. Et cursus mattis senectus aliquet.
+          Our comprehensive platform includes digital menus, POS systems, kitchen 
+          display systems, customer apps, and analytics tools that work seamlessly 
+          together to create a complete restaurant management ecosystem. We believe 
+          in empowering restaurants with technology that actually works.
         </p>
       </div>
     </div>
@@ -104,7 +105,7 @@ const AboutPage: React.FC = () => {
   <div className="absolute left-0 right-0 top-25 bg-[url('/images/core-gradient.png')] bg-no-repeat bg-center opacity-70 w-full h-full bg-[length:600px_1000px] md:hidden" />
   <div className="container ">
     <div className="mb-12 text-center max-w-[475px] mx-auto">
-      <p className="section-tagline">Our Value</p>
+      <p className="section-tagline">Our Values</p>
       <h2>Our business is steered by our core values</h2>
     </div>
     <div className="relative z-10">
@@ -128,7 +129,8 @@ const AboutPage: React.FC = () => {
             />
             <h3 className="mb-2.5">Our Passion</h3>
             <p>
-              The prevailing view asumed lorem ipsum was born as nonsense text.
+              We are passionate about revolutionizing the restaurant industry through 
+              innovative technology solutions that make operations smoother and more efficient.
             </p>
           </div>
         </div>
@@ -146,7 +148,8 @@ const AboutPage: React.FC = () => {
             />
             <h3 className="mb-2.5">Transparency</h3>
             <p>
-              The prevailing view asumed lorem ipsum was born as nonsense text.
+              We believe in complete transparency with our clients, providing clear 
+              pricing, honest communication, and reliable support throughout our partnership.
             </p>
           </div>
         </div>
@@ -164,7 +167,8 @@ const AboutPage: React.FC = () => {
             />
             <h3 className="mb-2.5">Our Mission</h3>
             <p>
-              The prevailing view asumed lorem ipsum was born as nonsense text.
+              To empower restaurants with cutting-edge technology that enhances 
+              customer experience, streamlines operations, and drives sustainable growth.
             </p>
           </div>
         </div>
