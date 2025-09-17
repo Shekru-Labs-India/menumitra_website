@@ -54,15 +54,15 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
 
           <div className="grid grid-cols-12 gap-y-15 md:gap-8 lg:gap-16 auto-rows-max">
             {/* Sidebar Navigation */}
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav max-md:hidden md:col-span-6 lg:col-span-4 self-start md:sticky md:top-20 max-md:static">
-              <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark pt-9 px-10 pb-7">
+            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav max-md:hidden md:col-span-6 lg:col-span-4 self-start md:sticky md:top-25 max-md:static">
+              <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark pt-4 px-6 pb-5">
                 <h3 className="mb-3">{sidebarTitle}</h3>
                 <ul className="[&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-gray-100 dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:last-child)]:border-b">
                   {sidebarItems.map((item, index) => (
                     <li key={index} className={`group ${activeItem === item ? 'tabActive' : ''}`}>
                       <button
                         onClick={() => handleItemClick(item)}
-                        className="flex items-center justify-between py-5 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
+                        className="flex items-center justify-between py-3 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
                       >
                         {item}
                         <ChevronRight className={`w-4 h-4 ${activeItem === item ? 'block' : 'hidden'}`} />

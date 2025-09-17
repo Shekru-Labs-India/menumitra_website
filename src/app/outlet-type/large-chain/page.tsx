@@ -1,22 +1,121 @@
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
+"use client";
 
-export default function LargeChainPage() {
-  return (
+import React from 'react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  Building, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
+
+const LargeChainPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('outlet-types');
+
+  const mainContent = (
     <>
-      <Header />
-      <main className="pt-20">
-        <div className="container mx-auto px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-center mb-8">
-            Large Chain Management Solutions
-          </h1>
-          <p className="text-lg md:text-xl text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Enterprise-level restaurant chain management system with multi-location support, 
-            centralized reporting, and scalable operations for large restaurant chains.
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Large Chain Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Scale your restaurant chain operations with our enterprise-grade management system. 
+        Coordinate multiple locations, maintain consistency, and optimize performance across your entire network.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our large chain management platform provides centralized control, standardized operations, and comprehensive analytics 
+        to help you maintain quality and drive growth across all your restaurant locations.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're managing a regional chain or a national franchise network, our system helps you 
+        maintain operational excellence and drive consistent growth.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <Building className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">Enterprise Chain Operations</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Comprehensive management for large restaurant chains
           </p>
         </div>
-      </main>
-      <FooterSection />
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Large Chain Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our large chain management system provides everything you need to operate a successful restaurant chain. 
+        From centralized control to performance optimization, we've designed every feature with chain operations in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Centralized operations and multi-location management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Standardized procedures and quality control</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Comprehensive analytics and performance benchmarking</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Franchise management and support systems</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See Large Chain Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system scales restaurant chain operations
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant Chain</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our large chain management system helps you maintain consistency, optimize performance, and drive growth across all locations. 
+        With centralized control and comprehensive analytics, you can scale your chain effectively.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Maintain consistent quality and service standards</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize performance and identify best practices</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Reduce operational costs through centralized management</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Scale operations and support franchise growth</span>
+        </li>
+      </ul>
     </>
   );
-}
+
+  return (
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Large Chain"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
+  );
+};
+
+export default LargeChainPage;
