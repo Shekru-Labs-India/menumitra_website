@@ -1,22 +1,121 @@
-import Header from '@/components/organisms/Header';
-import FooterSection from '@/components/organisms/FooterSection';
+"use client";
 
-export default function QSRPage() {
-  return (
+import React from 'react';
+import SectionLayout from '@/components/layouts/SectionLayout';
+import { useSectionConfig } from '@/hooks/useSectionConfig';
+import { 
+  Hamburger, 
+  CheckCircle, 
+  Play
+} from 'lucide-react';
+
+const QSRPage: React.FC = () => {
+  const sectionConfig = useSectionConfig('outlet-types');
+
+  const mainContent = (
     <>
-      <Header />
-      <main className="pt-20">
-        <div className="container mx-auto px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-center mb-8">
-            QSR Management Solutions
-          </h1>
-          <p className="text-lg md:text-xl text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Quick Service Restaurant management system optimized for fast-paced operations, 
-            drive-through efficiency, and rapid order processing.
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Quick Service Restaurant Management
+      </h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Optimize your quick service restaurant operations with our high-speed management system. 
+        Serve customers faster, reduce wait times, and maximize efficiency in your fast-paced environment.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our QSR management platform provides rapid order processing, streamlined kitchen operations, and efficient customer flow 
+        to help you serve more customers in less time while maintaining quality and accuracy.
+      </p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+        Whether you're running a burger joint, pizza place, or sandwich shop, our system adapts to your 
+        fast-paced operations and helps you deliver quick, quality service.
+      </p>
+
+      {/* Feature Image */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
+        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
+          <Hamburger className="w-24 h-24 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-2xl font-semibold mb-2">High-Speed Operations</h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Optimized for fast-paced quick service environments
           </p>
         </div>
-      </main>
-      <FooterSection />
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">QSR Management Features</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our QSR management system provides everything you need to operate a fast, efficient quick service restaurant. 
+        From rapid order processing to streamlined operations, we've designed every feature with speed and efficiency in mind.
+      </p>
+      <ul className="space-y-3 mb-8">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Rapid order processing and payment handling</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Streamlined kitchen workflow and preparation</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Drive-through and counter service optimization</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Real-time performance monitoring and analytics</span>
+        </li>
+      </ul>
+
+      {/* Video Section */}
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
+          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold mb-2">See QSR Management in Action</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Watch how our system optimizes quick service operations
+          </p>
+          <button className="btn-primary inline-flex items-center">
+            <Play className="w-4 h-4 mr-2" />
+            Watch Demo
+          </button>
+        </div>
+      </div>
+
+      <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your QSR</h3>
+      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+        Our QSR management system helps you serve customers faster, reduce wait times, and increase throughput. 
+        With optimized operations and real-time monitoring, you can maximize efficiency and profitability.
+      </p>
+      <ul className="space-y-3">
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Reduce customer wait times and improve satisfaction</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Increase order throughput and revenue potential</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Minimize order errors and improve accuracy</span>
+        </li>
+        <li className="flex items-center">
+          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+          <span>Optimize staff efficiency and reduce labor costs</span>
+        </li>
+      </ul>
     </>
   );
-}
+
+  return (
+    <SectionLayout
+      sidebarTitle={sectionConfig.sidebarTitle}
+      sidebarItems={sectionConfig.sidebarItems}
+      defaultActiveItem="Fast Food"
+      backgroundImage={sectionConfig.backgroundImage}
+      routeMappings={sectionConfig.routeMappings}
+      mainContent={mainContent}
+    />
+  );
+};
+
+export default QSRPage;
