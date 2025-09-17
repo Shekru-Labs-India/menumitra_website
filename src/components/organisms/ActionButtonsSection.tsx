@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { TargetCursor } from '@/components/reactbits';
+import { Trash2, DollarSign, BarChart3 } from 'lucide-react';
 
 const ActionButtonsSection: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(239, 68, 68, 0.1)';
             }}
           >
-            <i className="fa-solid fa-trash w-5 h-5 text-red-600"></i>
+            <Trash2 className="w-5 h-5 text-red-600" />
             Stop Wastage
           </button>
           <button 
@@ -39,7 +40,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(34, 197, 94, 0.1)';
             }}
           >
-            <i className="fa-solid fa-dollar-sign w-5 h-5 text-green-600"></i>
+            <DollarSign className="w-5 h-5 text-green-600" />
             Recover Revenue
           </button>
           <button 
@@ -56,7 +57,7 @@ const ActionButtonsSection: React.FC = () => {
               e.currentTarget.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
             }}
           >
-            <i className="fa-solid fa-chart-bar w-5 h-5 text-blue-600"></i>
+            <BarChart3 className="w-5 h-5 text-blue-600" />
             Get Insights
           </button>
         </div>
