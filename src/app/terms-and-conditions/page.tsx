@@ -77,7 +77,7 @@ export default function TermsConditionsPage() {
             <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]" />
           </div>
           
-          <main className="prose prose-gray max-w-4xl mx-auto px-6 py-12 leading-relaxed">
+          <main className="max-w-4xl mx-auto px-6 py-12 leading-relaxed text-gray-700">
             {/* JSON-LD Structured Data */}
             <script
               type="application/ld+json"
@@ -121,7 +121,7 @@ export default function TermsConditionsPage() {
 
               <section id="introduction" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">1. Introduction</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>These Terms of Service (the "Terms") are intended to make you aware of your legal rights and responsibilities with respect to your access to and use of the website at www.menumitra.com (the "Site") and any related mobile or software applications whether existing now or in the future ("the App") of MenuMitra ("MenuMitra") or "We" or "Us").</li>
                   <li>By downloading or otherwise accessing the App you agree to be bound by the following terms and conditions ("Terms"), privacy policy and License Agreement. If you have any queries about the App or these Terms, you can contact Us by any of the means set out in paragraph 13 of these Terms. If you do not agree with these Terms, you should stop using the App immediately.</li>
                 </ul>
@@ -129,7 +129,7 @@ export default function TermsConditionsPage() {
 
               <section id="definitions" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">2. Definitions</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li><strong>"Services"</strong> will include business applications like POS management, staff management mobile app, customer management mobile app, inventory management, analytics dashboard, and other restaurant management tools, which are integrated to MenuMitra's comprehensive restaurant management platform.</li>
                   <li><strong>"Content"</strong> means the content that MenuMitra creates and makes available in connection with the Services including, but not limited to, visual interfaces, interactive features, graphics, design, compilation, computer code, products, software, functionalities, aggregate ratings, reports and other usage-related data in connection with activities associated with your account and all other elements and components of the Services excluding Your Content and third party content. It will include (but is not limited to) images, photos, audio, video, and all other forms of information or data.</li>
                   <li><strong>"Your content"</strong> or <strong>"User Content"</strong> means content that you upload, share or transmit to, through or in connection with the Services, such as menu items, pricing, customer information, order data, staff records, inventory data, restaurant analytics, and any other materials that you display or are displayed in your account.</li>
@@ -138,16 +138,25 @@ export default function TermsConditionsPage() {
 
               <section id="conduct" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">3. General Rules Relating To Conduct</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>The App is made available for your own, personal and business use. We grant you a personal, limited, nonexclusive and non-transferable license to access and use the Services only as expressly permitted in these Terms.</li>
                   <li>You shall not use the Services for any illegal purpose or in any manner inconsistent with these Terms.</li>
                   <li>When you use the App you must comply with all applicable laws of India and with any applicable international laws (together referred to as "Applicable Laws").</li>
-                  <li>You agree that when using the App you will comply with all Applicable Laws and these Terms. In particular, but without limitation, you agree not to:  
-                    <ul className="mt-2 ml-4">
-                      <li>Use the App in any unlawful manner or in a manner which promotes or encourages illegal activity including (without limitation) copyright infringement; or</li>
-                      <li>Attempt to gain unauthorized access to the App or any networks, servers or computer systems connected to the App; or</li>
-                      <li>Modify, adapt, translate or reverse engineer any part of the App or re-format or frame any portion of the pages comprising the App, save to the extent expressly permitted by these Terms or by law.</li>
-                    </ul>
+                  <li>You agree that when using the App you will comply with all Applicable Laws and these Terms. In particular, but without limitation, you agree not to:
+                    <div className="mt-2 ml-6 space-y-1">
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Use the App in any unlawful manner or in a manner which promotes or encourages illegal activity including (without limitation) copyright infringement; or</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Attempt to gain unauthorized access to the App or any networks, servers or computer systems connected to the App; or</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Modify, adapt, translate or reverse engineer any part of the App or re-format or frame any portion of the pages comprising the App, save to the extent expressly permitted by these Terms or by law.</span>
+                      </div>
+                    </div>
                   </li>
                   <li>You agree to indemnify MenuMitra and its group companies in full and on demand from and against any loss, damage, costs or expenses which they suffer or incur directly or indirectly as a result of your use of the App otherwise than in accordance with these Terms or Applicable Laws.</li>
                 </ul>
@@ -155,19 +164,28 @@ export default function TermsConditionsPage() {
 
               <section id="intellectual" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">4. Intellectual Property Rights And Content</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>We are the sole and exclusive copyright owners of the Services and our Content. We also exclusively own the copyrights, trademarks, service marks, logos, trade names, trade dress and other intellectual and proprietary rights associated with the Services and Our Content. All rights are reserved.</li>
                   <li>You acknowledge that the Services contain original works and have been developed, compiled, prepared, revised, selected, and arranged by us and others through the application of methods and standards of judgment developed and applied through the expenditure of substantial time, effort, and money and constitutes valuable intellectual property of us and such others.</li>
                   <li>To the fullest extent permitted by applicable law, we neither warrant nor represent that your use of materials displayed on the Services will not infringe rights of third parties not owned by or affiliated with us. You agree to immediately notify us upon becoming aware of any claim that the Services infringe upon any copyright trademark, or other contractual, intellectual, statutory, or common law right.</li>
                   <li>You further acknowledge that the Services may contain information which is designated as confidential by MenuMitra and that you shall not disclose such information without MenuMitra's prior written consent.</li>
                   <li>Except as otherwise expressly granted to you in writing, we do not grant you any other express or implied right or license to the Services, our Content or our Intellectual Property Rights.</li>
                   <li>By submitting Your Content you hereby irrevocably grant us a perpetual, irrevocable, nonexclusive, royalty-free, right to use Your Content for any purpose including API partnerships with third parties and in any media existing now or in future. You irrevocably waive, and cause to be waived, any claims and assertions of moral rights or attribution with respect to Your Content brought against us, by any third party services and our and their users.</li>
-                  <li>You are responsible for Your Content. You represent and warrant that  
-                    <ul className="mt-2 ml-4">
-                      <li>Your Content was not submitted via the use of any automated process such as a script bot;</li>
-                      <li>Use of Your Content by us, third party services, and our and their third party users will not violate or infringe any rights of yours or any third party; and</li>
-                      <li>Your Content does not violate the Terms or any applicable laws.</li>
-                    </ul>
+                  <li>You are responsible for Your Content. You represent and warrant that:
+                    <div className="mt-2 ml-6 space-y-1">
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Your Content was not submitted via the use of any automated process such as a script bot;</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Use of Your Content by us, third party services, and our and their third party users will not violate or infringe any rights of yours or any third party; and</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>Your Content does not violate the Terms or any applicable laws.</span>
+                      </div>
+                    </div>
                   </li>
                   <li>You assume all risks associated with Your Content, including anyone's reliance on its quality, accuracy, or reliability, or any disclosure by you of information in Your Content that makes you personally identifiable.</li>
                 </ul>
@@ -175,7 +193,7 @@ export default function TermsConditionsPage() {
 
               <section id="trial" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">5. Free Trial And Fees</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>You may start using our App with a free trial. The free trial period of the App lasts for 14 days, or as otherwise specified during sign-up and is intended to allow you to try the service. You will be notified during sign-up whether you are eligible for a free trial.</li>
                   <li>We will bill your Payment Method for your subscription fee at the end of the free trial period unless you cancel your subscription prior to the end of the free trial period. You will not receive a notice from us that your paid membership has begun.</li>
                   <li>You may cancel your membership at any time. However, we do not provide refunds or credits for partial membership periods.</li>
@@ -185,21 +203,30 @@ export default function TermsConditionsPage() {
 
               <section id="privacy" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">6. MenuMitra Privacy Policy</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>We take your privacy very seriously. MenuMitra will only use your personal information in accordance with the terms of our privacy policy. By using the App you acknowledge and agree that you have read and accept the terms of our privacy policy and these Terms.</li>
                 </ul>
               </section>
 
               <section id="disclaimer" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">7. Disclaimer / Liability</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>USE OF THE APP IS AT YOUR OWN RISK. THE APP IS PROVIDED ON AN "AS IS" BASIS. TO THE MAXIMUM EXTENT PERMITTED BY LAW: (A) MENUMITRA DISCLAIMS ALL LIABILITY WHATSOEVER, WHETHER ARISING IN CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE IN RELATION TO THE APP; AND (B) ALL IMPLIED WARRANTIES, TERMS AND CONDITIONS RELATING TO THE APP (WHETHER IMPLIED BY STATUE, COMMON LAW OR OTHERWISE), INCLUDING (WITHOUT LIMITATION) ANY WARRANTY, TERM OR CONDITION AS TO ACCURACY, COMPLETENESS, SATISFACTORY QUALITY, PERFORMANCE, FITNESS FOR PURPOSE OR ANY SPECIAL PURPOSE, AVAILABILITY, NON INFRINGEMENT, INFORMATION ACCURACY, AS BETWEEN MENUMITRA AND YOU, ARE HEREBY EXCLUDED. IN PARTICULAR, BUT WITHOUT PREJUDICE TO THE FOREGOING, WE ACCEPT NO RESPONSIBILITY FOR ANY TECHNICAL FAILURE OF THE INTERNET AND/OR THE APP; OR ANY DAMAGE OR INJURY TO USERS OR THEIR EQUIPMENT AS A RESULT OF OR RELATING TO THEIR USE OF THE APP. YOUR STATUTORY RIGHTS ARE NOT AFFECTED.</li>
-                  <li>MenuMitra will not be liable, in contract, tort (including, without limitation, negligence), under statute or otherwise, as a result of or in connection with the App, for any:  
-                    <ul className="mt-2 ml-4">
-                      <li>economic loss (including, without limitation, loss of revenues, profits, contracts, business or anticipated savings); or</li>
-                      <li>loss of goodwill or reputation; or</li>
-                      <li>special or indirect or consequential loss.</li>
-                    </ul>
+                  <li>MenuMitra will not be liable, in contract, tort (including, without limitation, negligence), under statute or otherwise, as a result of or in connection with the App, for any:
+                    <div className="mt-2 ml-6 space-y-1">
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>economic loss (including, without limitation, loss of revenues, profits, contracts, business or anticipated savings); or</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>loss of goodwill or reputation; or</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-gray-600 mr-2 mt-1">•</span>
+                        <span>special or indirect or consequential loss.</span>
+                      </div>
+                    </div>
                   </li>
                   <li>IF MENUMITRA IS LIABLE TO YOU DIRECTLY OR INDIRECTLY IN RELATION TO THE APP, THAT LIABILITY (HOWSOEVER ARISING) SHALL BE LIMITED TO THE SUMS PAID BY YOU UPON PURCHASING THE APP, OR ANY IN-APP SPEND, INCLUDING SUBSCRIPTIONS.</li>
                 </ul>
@@ -207,21 +234,21 @@ export default function TermsConditionsPage() {
 
               <section id="suspension" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">8. Service Suspension</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>MenuMitra reserves the right to suspend or cease providing any services relating to the apps published by it, with or without notice, and shall have no liability or responsibility to you in any manner whatsoever if it chooses to do so.</li>
                 </ul>
               </section>
 
               <section id="advertisers" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">9. Advertisers In The App</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>We accept no responsibility for advertisements contained within the App. If you agree to purchase goods and/or services from any third party who advertises in the App, you do so at your own risk. The advertiser, not MenuMitra, is responsible for such goods and/or services and if you have any queries or complaints in relation to them, your only recourse is against the advertiser.</li>
                 </ul>
               </section>
 
               <section id="security" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">10. Data Security and Backup</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>MenuMitra implements industry-standard security measures to protect your data, including encryption in transit and at rest.</li>
                   <li>We maintain regular backups of your data, but you are responsible for maintaining your own backups of critical business data.</li>
                   <li>In the event of data loss, MenuMitra's liability is limited to the cost of restoring data from our most recent backup.</li>
@@ -230,7 +257,7 @@ export default function TermsConditionsPage() {
 
               <section id="restaurant" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">11. Restaurant-Specific Terms</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>You are responsible for ensuring compliance with all local health and safety regulations in your jurisdiction.</li>
                   <li>MenuMitra provides tools for restaurant management but does not guarantee compliance with any specific regulations.</li>
                   <li>You are responsible for maintaining accurate menu information, pricing, and inventory data.</li>
@@ -240,7 +267,7 @@ export default function TermsConditionsPage() {
 
               <section id="general" className="mt-10 mb-6 scroll-mt-24">
                 <h2 className="text-2xl font-semibold mt-12 mb-4">12. General</h2>
-                <ul className="mb-4">
+                <ul className="mb-4 list-disc list-inside space-y-2">
                   <li>These Terms (as amended from time to time) constitute the entire agreement between you and MenuMitra concerning your use of the App.</li>
                   <li>MenuMitra reserves the right to update these Terms from time to time. If it does so, the updated version will be effective immediately, and the current Terms are available through a link in the App to this page. You are responsible for regularly reviewing these Terms so that you are aware of any changes to them and you will be bound by the new policy upon your continued use of the App. No other variation to these Terms shall be effective unless in writing and signed by an authorized representative on behalf of MenuMitra.</li>
                   <li>We will send you information relating to your account (e.g. payment authorizations, invoices, changes in password or Payment Method, confirmation messages, notices) in electronic form only.</li>
