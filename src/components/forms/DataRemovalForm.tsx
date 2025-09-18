@@ -9,6 +9,8 @@ export default function DataRemovalForm() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [showOTP, setShowOTP] = useState(false);
+  const [otp, setOtp] = useState(["", "", "", ""]);
 
   // Mobile number validation: starts with 6-9 and exactly 10 digits
   const isValidMobileNumber = (mobile: string) => {
@@ -17,6 +19,29 @@ export default function DataRemovalForm() {
   };
 
   const isFormValid = isValidMobileNumber(mobileNumber);
+
+  // Handle OTP input change
+  const handleOtpChange = (index: number, value: string) => {
+    if (value.length > 1) return; // Only allow single digit
+    
+    const newOtp = [...otp];
+    newOtp[index] = value;
+    setOtp(newOtp);
+
+    // Auto-focus next input
+    if (value && index < 3) {
+      const nextInput = document.getElementById(`otp-${index + 1}`);
+      nextInput?.focus();
+    }
+  };
+
+  // Handle OTP backspace
+  const handleOtpKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Backspace" && !otp[index] && index > 0) {
+      const prevInput = document.getElementById(`otp-${index - 1}`);
+      prevInput?.focus();
+    }
+  };
 
   // Handle input change - only allow numeric input and validate first digit
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -66,7 +91,7 @@ export default function DataRemovalForm() {
 
       if (response.status === 200) {
         setSubmitStatus("success");
-        setMobileNumber("");
+        setShowOTP(true);
         toast.success("OTP sent successfully!");
       } else {
         toast.error("Failed to send OTP. Please try again.");
@@ -116,22 +141,56 @@ export default function DataRemovalForm() {
 
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-12 items-center max-lg:gap-y-5 lg:gap-x-6 ">
-              <input
-                type="text"
-                placeholder="Enter your mobile number"
-                value={mobileNumber}
-                onChange={handleInputChange}
-                onKeyPress={handleKeyPress}
-                maxLength={10}
-                className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
-              />
-              <button 
-                type="submit"
-                disabled={!isFormValid || isSubmitting}
-                className={`btn max-lg:col-span-full lg:col-span-4 ${(!isFormValid || isSubmitting) ? 'opacity-50 cursor-not-allowed' : ''}`}
-              >
-                {isSubmitting ? "Submitting..." : "Submit"}
-              </button>
+              {!showOTP ? (
+                <>
+                  <input
+                    type="text"
+                    placeholder="Enter your mobile number"
+                    value={mobileNumber}
+                    onChange={handleInputChange}
+                    onKeyPress={handleKeyPress}
+                    maxLength={10}
+                    className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
+                  />
+                  <button 
+                    type="submit"
+                    disabled={!isFormValid || isSubmitting}
+                    className={`btn max-lg:col-span-full lg:col-span-4 ${(!isFormValid || isSubmitting) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  >
+                    {isSubmitting ? "Submitting..." : "Submit"}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className="max-lg:col-span-full lg:col-span-8">
+                    <div className="text-center mb-4">
+                      <p className="text-sm text-gray-600 mb-2">OTP sent to</p>
+                      <p className="text-lg font-semibold text-gray-800">+91 {mobileNumber}</p>
+                    </div>
+                    <div className="flex justify-center space-x-3 gap-x-3">
+                      {otp.map((digit, index) => (
+                        <input
+                          key={index}
+                          id={`otp-${index}`}
+                          type="text"
+                          maxLength={1}
+                          value={digit}
+                          onChange={(e) => handleOtpChange(index, e.target.value)}
+                          onKeyDown={(e) => handleOtpKeyDown(index, e)}
+                          className="w-12 h-12 text-center text-lg font-semibold border border-gray-300 rounded-lg focus:border-primary dark:focus:border-primary transition-colors"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <button 
+                    type="button"
+                    disabled={otp.some(digit => !digit)}
+                    className={`btn max-lg:col-span-full lg:col-span-4 ${otp.some(digit => !digit) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  >
+                    Verify OTP
+                  </button>
+                </>
+              )}
             </div>
           </form>
           <ul className=" flex max-md:flex-col max-lg:gap-y-2.5 items-center max-lg:justify-between lg:gap-5 mt-6 ">
