@@ -22,21 +22,29 @@ export default function DataRemovalForm() {
 
   // Handle OTP input change
   const handleOtpChange = (index: number, value: string) => {
-    if (value.length > 1) return; // Only allow single digit
+    // Only allow numeric input
+    const numericValue = value.replace(/[^0-9]/g, '');
+    if (numericValue.length > 1) return; // Only allow single digit
     
     const newOtp = [...otp];
-    newOtp[index] = value;
+    newOtp[index] = numericValue;
     setOtp(newOtp);
 
     // Auto-focus next input
-    if (value && index < 3) {
+    if (numericValue && index < 3) {
       const nextInput = document.getElementById(`otp-${index + 1}`);
       nextInput?.focus();
     }
   };
 
-  // Handle OTP backspace
+  // Handle OTP backspace and prevent non-numeric input
   const handleOtpKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
+    // Prevent non-numeric characters from being typed
+    if (!/[0-9]/.test(e.key) && e.key !== "Backspace" && e.key !== "Delete" && e.key !== "Tab" && e.key !== "ArrowLeft" && e.key !== "ArrowRight") {
+      e.preventDefault();
+      return;
+    }
+
     if (e.key === "Backspace" && !otp[index] && index > 0) {
       const prevInput = document.getElementById(`otp-${index - 1}`);
       prevInput?.focus();
