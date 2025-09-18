@@ -65,7 +65,7 @@ export default function MyPage() {
 | `description` | `string` | `"Fill out the form..."` | Form description |
 | `submitButtonText` | `string` | `"Book Now"` | Submit button text |
 | `fields` | `FormField[]` | `defaultFields` | Array of form fields |
-| `apiEndpoint` | `string` | `'https://men4u.xyz/v2/website_api/create_booking'` | API endpoint URL |
+| `apiEndpoint` | `string` | `'https://men4u.xyz/v2/website_api/create_website_booking'` | API endpoint URL |
 | `apiHeaders` | `Record<string, string>` | `{ 'Content-Type': 'application/json' }` | API request headers |
 | `className` | `string` | `""` | Additional CSS classes |
 | `showBackground` | `boolean` | `true` | Show background blur effects |
