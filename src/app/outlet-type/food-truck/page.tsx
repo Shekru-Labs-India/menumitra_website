@@ -3,10 +3,10 @@
 import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
+import YouTubeVideo from '@/components/atoms/YouTubeVideo';
 import { 
   Truck, 
   CheckCircle, 
-  Play
 } from 'lucide-react';
 
 const FoodTruckPage: React.FC = () => {
@@ -62,19 +62,11 @@ const FoodTruckPage: React.FC = () => {
       </ul>
 
       {/* Video Section */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
-          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">See Food Truck Management in Action</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Watch how our system optimizes mobile food operations
-          </p>
-          <button className="btn-primary inline-flex items-center">
-            <Play className="w-4 h-4 mr-2" />
-            Watch Demo
-          </button>
-        </div>
-      </div>
+      <YouTubeVideo 
+        videoId="j2e2stCcICo"
+        title="See Food Truck Management in Action"
+        description="Watch how our system optimizes food truck operations"
+      />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Food Truck</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
