@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
+import YouTubeVideo from '@/components/atoms/YouTubeVideo';
 import { 
   CreditCard, 
   CheckCircle
@@ -10,31 +11,6 @@ import {
 
 const BillingPage: React.FC = () => {
   const sectionConfig = useSectionConfig('features');
-  const videoRef = useRef<HTMLDivElement>(null);
-  const [isVideoVisible, setIsVideoVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVideoVisible(true);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-
-    return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
-      }
-    };
-  }, []);
 
   const mainContent = (
     <>
@@ -98,27 +74,11 @@ const BillingPage: React.FC = () => {
       </ul>
 
       {/* Video Section */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative">
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-8 mb-0 text-center relative !mb-0">
-          <h2 className="text-2xl font-semibold mb-4 !mt-0">See MenuMitra Billing in Action</h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Watch how our smart billing system streamlines restaurant operations
-          </p>
-          <div ref={videoRef} className="relative w-full max-w-4xl mx-auto !mb-0">
-            <div className="relative w-full !mb-0" style={{ paddingBottom: '56.25%' }}>
-              <iframe 
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src={`https://www.youtube.com/embed/j2e2stCcICo?si=uLqFbNnFrvHAGZpi&controls=0&autoplay=${isVideoVisible ? '1' : '0'}&mute=1&loop=1&playlist=j2e2stCcICo`}
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+      <YouTubeVideo 
+        videoId="j2e2stCcICo"
+        title="See MenuMitra Billing in Action"
+        description="Watch how our smart billing system streamlines restaurant operations"
+      />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Why Choose MenuMitra Billing?</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
