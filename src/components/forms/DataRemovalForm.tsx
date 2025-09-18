@@ -3,6 +3,7 @@
 import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { AlertTriangle } from "lucide-react";
 
 export default function DataRemovalForm() {
   const [mobileNumber, setMobileNumber] = useState("");
@@ -137,7 +138,17 @@ export default function DataRemovalForm() {
             
           </ul>
 
-          Important: Data removal is irreversible. Once deleted, we cannot recover your data or restore your account.
+          <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+            <div className="flex items-start">
+              <AlertTriangle className="w-5 h-5 text-red-800 mr-3 mt-0.5 flex-shrink-0" />
+              <div>
+                <h3 className="text-sm font-semibold text-red-800 mb-1">Important Notice</h3>
+                <p className="text-sm text-red-700">
+                  Data removal is irreversible. Once deleted, we cannot recover your data or restore your account.
+                </p>
+              </div>
+            </div>
+          </div>
 
 
         </div>
