@@ -171,7 +171,7 @@ export default function RootLayout({
               function initAOS() {
                 if (typeof AOS !== 'undefined') {
                   AOS.init({
-                    duration: 500,
+                    duration: 300,
                     once: true,
                     offset: 50,
                     easing: 'ease-out',

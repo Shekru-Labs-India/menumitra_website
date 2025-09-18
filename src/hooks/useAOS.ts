@@ -17,7 +17,7 @@ export const useAOS = () => {
     if (typeof window !== 'undefined' && window.AOS) {
       // Initialize AOS if not already initialized
       window.AOS.init({
-        duration: 500,
+        duration: 300,
         once: true,
         offset: 50,
         easing: 'ease-out',

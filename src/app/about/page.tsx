@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
       className="max-w-[948px] mx-auto text-center"
       data-aos="fade-up"
       data-aos-offset={200}
-      data-aos-duration={1000}
+      data-aos-duration={300}
       data-aos-once="true"
     >
       <p className="mb-4 font-medium uppercase">about company</p>
@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
         className="p-2.5 bg-white dark:bg-dark-200 rounded-medium overflow-hidden shadow-box"
         data-aos="fade-up"
         data-aos-offset={200}
-        data-aos-duration={1000}
+        data-aos-duration={300}
         data-aos-once="true"
       >
         <img
@@ -66,8 +66,8 @@ const AboutPage: React.FC = () => {
         className="p-2.5 bg-white dark:bg-dark-200 rounded-medium overflow-hidden shadow-box"
         data-aos="fade-up"
         data-aos-offset={200}
-        data-aos-duration={1000}
-        data-aos-delay={150}
+        data-aos-duration={300}
+        data-aos-delay={100}
         data-aos-once="true"
       >
         <img
@@ -80,8 +80,8 @@ const AboutPage: React.FC = () => {
         className="p-2.5 bg-white dark:bg-dark-200 rounded-medium overflow-hidden shadow-box"
         data-aos="fade-up"
         data-aos-offset={200}
-        data-aos-duration={1000}
-        data-aos-delay={300}
+        data-aos-duration={300}
+        data-aos-delay={200}
         data-aos-once="true"
       >
         <img

@@ -1,9 +1,23 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import FooterSection from '@/components/organisms/FooterSection';
 import { Download, Smartphone, Monitor, Calendar, ExternalLink, Globe } from 'lucide-react';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import { website } from '@/config/contact';
+import { useAOS } from '@/hooks/useAOS';
 const ProductsPage: React.FC = () => {
+  const { refreshAOS } = useAOS();
+  
+  useEffect(() => {
+    // Refresh AOS when component mounts to ensure animations work on first load
+    const timer = setTimeout(() => {
+      refreshAOS();
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [refreshAOS]);
+  
   const productsV13 = [
     {
       name: 'Owner App v1.3',
@@ -132,8 +146,8 @@ const ProductsPage: React.FC = () => {
             className=" grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-8 relative z-10"
             data-aos="fade-up"
             data-aos-offset={200}
-            data-aos-duration={1000}
-            data-aos-delay={200}
+            data-aos-duration={300}
+            data-aos-delay={100}
             data-aos-once="true"
           >
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex max-md:flex-col -z-10">
@@ -191,8 +205,8 @@ const ProductsPage: React.FC = () => {
             className=" grid grid-cols-2 max-sm:grid-cols-1 gap-8 relative z-10"
             data-aos="fade-up"
             data-aos-offset={200}
-            data-aos-duration={1000}
-            data-aos-delay={400}
+            data-aos-duration={300}
+            data-aos-delay={200}
             data-aos-once="true"
           >
             {productsV2.map((product, index) => (
@@ -251,7 +265,14 @@ const ProductsPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div 
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+            data-aos="fade-up"
+            data-aos-offset={200}
+            data-aos-duration={300}
+            data-aos-delay={300}
+            data-aos-once="true"
+          >
             {/* Production Environment */}
             <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8">
               <div className="text-center mb-8">
@@ -267,7 +288,15 @@ const ProductsPage: React.FC = () => {
               
               <div className="space-y-4">
                 {productsV2Web.production.map((product, index) => (
-                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <div 
+                    key={index} 
+                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    data-aos="fade-up"
+                    data-aos-offset={100}
+                    data-aos-duration={300}
+                    data-aos-delay={400 + (index * 50)}
+                    data-aos-once="true"
+                  >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
@@ -311,7 +340,15 @@ const ProductsPage: React.FC = () => {
               
               <div className="space-y-4">
                 {productsV2Web.testing.map((product, index) => (
-                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <div 
+                    key={index} 
+                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    data-aos="fade-up"
+                    data-aos-offset={100}
+                    data-aos-duration={300}
+                    data-aos-delay={600 + (index * 50)}
+                    data-aos-once="true"
+                  >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
