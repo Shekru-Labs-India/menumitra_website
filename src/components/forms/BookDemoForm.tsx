@@ -160,7 +160,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
       
       if (response.data && response.data.detail) {
         const bookingData = response.data.detail;
-        const successMessage = `Demo request submitted successfully! Booking ID: ${bookingData.booking_id}. Our team will contact you within 24 hours.`;
+        const successMessage = `Demo request submitted successfully! Our team will contact you within 24 hours.`;
         
         toast.success(successMessage, {
           duration: 6000,

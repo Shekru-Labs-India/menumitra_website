@@ -4,6 +4,7 @@ import React, { useState, ReactNode } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
+import BookDemoForm from '@/components/forms/BookDemoForm';
 import { ChevronRight } from 'lucide-react';
 
 interface SectionLayoutProps {
@@ -82,6 +83,38 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
 
       {/* Additional Content */}
       {children}
+
+      {/* Book Demo Form Section */}
+      <section className="relative pb-25 max-md:overflow-hidden">
+        <div className="container relative max-md:text-center">
+          <div className="absolute left-1/2 -bottom-[442px] -translate-x-1/2 flex max-md:flex-col -z-10 max-md:hidden">
+            <div className="max-md:hidden max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
+            <div className="max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]"></div>
+            <div className="max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]"></div>
+          </div>
+          <div className="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full bg-hero-gradient bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
+          
+          <div className="text-center mb-12">
+            <p className="text-primary-600 font-medium mb-2">Get Started</p>
+            <h2 className="mb-5 max-lg:text-[32px] text-[48px] font-semibold">
+              Ready to transform your restaurant operations?
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Book a personalized demo and see how MenuMitra can streamline your restaurant management, 
+              from billing to inventory, all in one powerful platform.
+            </p>
+          </div>
+          
+          <BookDemoForm 
+            title="Book Your Free Demo"
+            description="Fill out the form below and our team will contact you within 24 hours to schedule your personalized demo."
+            submitButtonText="Book Demo Now"
+            showBackground={false}
+            containerClassName="bg-transparent"
+            formClassName="bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5"
+          />
+        </div>
+      </section>
 
       <SectionDivider />
       <FooterSection />
