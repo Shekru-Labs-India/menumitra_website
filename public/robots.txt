@@ -32,7 +32,7 @@ Disallow: /*.log
 Disallow: /temp/
 Disallow: /tmp/
 
-# Allow important pages explicitly
+# Allow actual existing pages
 Allow: /
 Allow: /about
 Allow: /book-demo
@@ -65,7 +65,3 @@ Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://menumitra.com/sitemap.xml
-
-# Additional sitemaps (if needed in future)
-# Sitemap: https://menumitra.com/sitemap-images.xml
-# Sitemap: https://menumitra.com/sitemap-news.xml
