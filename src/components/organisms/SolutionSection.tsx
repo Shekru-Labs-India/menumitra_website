@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { QrCode, BarChart3, Package } from 'lucide-react';
 
 interface SolutionSectionProps {
   className?: string;
@@ -94,19 +95,19 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
         </p>
         <ul className="max-lg:mb-6 mb-14 flex max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10 ">
           <li className="relative flex items-center gap-x-2 ">
-            <i className="fa-solid fa-check text-paragraph dark:text-primary" />
+            <QrCode className="w-10 h-10 text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
               QR Code Menu System
             </span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
-            <i className="fa-solid fa-check text-paragraph dark:text-primary" />
+            <BarChart3 className="w-10 h-10 text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
               Order Management Dashboard
             </span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
-            <i className="fa-solid fa-check text-paragraph dark:text-primary" />
+            <Package className="w-10 h-10 text-paragraph dark:text-primary" />
             <span className="dark:text-white font-jakarta_sans font-medium">
               Inventory Tracking
             </span>

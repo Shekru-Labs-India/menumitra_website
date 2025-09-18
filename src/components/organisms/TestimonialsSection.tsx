@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Star, User } from 'lucide-react';
 
 interface Testimonial {
   id: number;
@@ -59,11 +60,11 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 }) => {
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, index) => (
-      <i
+      <Star
         key={index}
-        className={`fa-solid fa-star ${
+        className={`w-4 h-4 ${
           index < rating 
-            ? 'text-paragraph dark:text-white' 
+            ? 'text-paragraph dark:text-white fill-current' 
             : 'text-[#A7A7B4] dark:text-[#646463]'
         }`}
       />
@@ -112,7 +113,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
                   <div className="pt-7 flex items-center border-t border-dashed border-gray-100 dark:border-borderColour-dark">
                     <div className="mr-4 w-12 h-12 bg-gray-200 dark:bg-gray-200 rounded-full flex items-center justify-center">
-                      <i className="fa-solid fa-user text-dark text-lg"></i>
+                      <User className="w-5 h-5 text-dark" />
                     </div>
                     <div className="block">
                       <h3 className="text-base font-semibold">{testimonial.name}</h3>
