@@ -185,7 +185,7 @@ export default function DataRemovalForm() {
                           value={digit}
                           onChange={(e) => handleOtpChange(index, e.target.value)}
                           onKeyDown={(e) => handleOtpKeyDown(index, e)}
-                          className="w-12 h-12 text-center text-lg font-semibold border border-gray-300 rounded-lg focus:border-primary dark:focus:border-primary transition-colors"
+                          className="w-12 h-12 text-center text-lg font-semibold border border-gray-300 bg-white rounded-lg focus:border dark:focus:border-primary transition-colors"
                         />
                       ))}
                     </div>
