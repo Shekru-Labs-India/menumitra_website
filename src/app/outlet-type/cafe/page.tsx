@@ -47,20 +47,16 @@ const CafePage: React.FC = () => {
         From beverage customization to loyalty programs, we've designed every feature with cafe owners in mind.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Quick order processing and customization</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Beverage and pastry inventory management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Customer loyalty and rewards programs</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Peak hour management and staff scheduling</span>
         </li>
       </ul>
@@ -86,20 +82,16 @@ const CafePage: React.FC = () => {
         With features designed specifically for cafes, you can focus on crafting the perfect cup of coffee.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Faster service during peak hours</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Reduce food waste with smart inventory</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Build customer loyalty with rewards programs</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Optimize staff scheduling for busy periods</span>
         </li>
       </ul>

@@ -47,20 +47,16 @@ const WaiterAppPage: React.FC = () => {
         From order management to table coordination, we've designed every feature with waitstaff needs in mind.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Quick order taking and menu browsing</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Real-time table status and order tracking</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Customer communication and special requests</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Payment processing and bill management</span>
         </li>
       </ul>
@@ -86,20 +82,16 @@ const WaiterAppPage: React.FC = () => {
         waiters can focus on providing excellent customer service while the app handles the operational complexity.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Reduce order errors and improve accuracy</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Increase table turnover and service efficiency</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Enhance customer satisfaction with faster service</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Streamline payment processing and bill management</span>
         </li>
       </ul>

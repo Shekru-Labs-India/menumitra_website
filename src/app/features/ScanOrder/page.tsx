@@ -47,20 +47,16 @@ const ScanOrderPage: React.FC = () => {
         From QR code generation to order processing, we've designed every feature with safety and convenience in mind.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>QR code generation and table management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Mobile-optimized menu browsing and ordering</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Secure payment processing and order confirmation</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Real-time order tracking and kitchen integration</span>
         </li>
       </ul>
@@ -86,20 +82,16 @@ const ScanOrderPage: React.FC = () => {
         With contactless ordering and automated processes, you can serve more customers while maintaining safety standards.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Reduce physical contact and improve safety</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Increase order accuracy and reduce wait times</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Enhance customer experience with modern technology</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Optimize staff efficiency and reduce manual work</span>
         </li>
       </ul>

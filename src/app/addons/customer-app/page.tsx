@@ -47,20 +47,16 @@ const CustomerAppPage: React.FC = () => {
         From easy ordering to loyalty rewards, we've designed every feature with customer satisfaction in mind.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Easy-to-use menu browsing and ordering</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Secure payment processing and order tracking</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Loyalty programs and reward management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Personalized recommendations and offers</span>
         </li>
       </ul>
@@ -86,20 +82,16 @@ const CustomerAppPage: React.FC = () => {
         real-time tracking, and loyalty rewards, customers will keep coming back for more.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Faster ordering and reduced wait times</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Personalized experience with order history</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Exclusive rewards and special offers</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Easy feedback and review system</span>
         </li>
       </ul>

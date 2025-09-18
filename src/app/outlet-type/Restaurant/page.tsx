@@ -47,20 +47,16 @@ const RestaurantPage: React.FC = () => {
         From front-of-house operations to back-of-house management, we've designed every feature with restaurant owners in mind.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Table management and reservation system</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Kitchen display system and order management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Staff scheduling and performance tracking</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Customer relationship management and feedback</span>
         </li>
       </ul>
@@ -86,20 +82,16 @@ const RestaurantPage: React.FC = () => {
         With comprehensive analytics and automated processes, you can focus on what matters most - serving great food.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Increase table turnover and revenue</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Reduce operational costs and waste</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Improve staff productivity and satisfaction</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Enhance customer experience and loyalty</span>
         </li>
       </ul>

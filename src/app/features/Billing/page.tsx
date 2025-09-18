@@ -1,16 +1,40 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import { 
   CreditCard, 
-  CheckCircle, 
-  Play
+  CheckCircle
 } from 'lucide-react';
 
 const BillingPage: React.FC = () => {
   const sectionConfig = useSectionConfig('features');
+  const videoRef = useRef<HTMLDivElement>(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVideoVisible(true);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
 
   const mainContent = (
     <>
@@ -53,44 +77,46 @@ const BillingPage: React.FC = () => {
         Generate professional invoices, track payment methods, and maintain detailed financial records for better business management.
       </p>
       <ul className="space-y-3 mb-8">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Automated table billing and order management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Split billing for groups and shared orders</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Multiple payment methods (cash, card, digital wallets)</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Real-time sales tracking and daily reports</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Tax calculation and discount management</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Professional invoice generation and printing</span>
         </li>
       </ul>
 
       {/* Video Section */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative mb-8">
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-12 text-center relative">
-          <Play className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">See MenuMitra Billing in Action</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
+      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 dark:to-dark-400 rounded-lg p-8 mb-0 text-center relative !mb-0">
+          <h2 className="text-2xl font-semibold mb-4 !mt-0">See MenuMitra Billing in Action</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
             Watch how our smart billing system streamlines restaurant operations
           </p>
-          <button className="btn-primary inline-flex items-center">
-            <Play className="w-4 h-4 mr-2" />
-            Watch Demo
-          </button>
+          <div ref={videoRef} className="relative w-full max-w-4xl mx-auto !mb-0">
+            <div className="relative w-full !mb-0" style={{ paddingBottom: '56.25%' }}>
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src={`https://www.youtube.com/embed/j2e2stCcICo?si=uLqFbNnFrvHAGZpi&controls=0&autoplay=${isVideoVisible ? '1' : '0'}&mute=1&loop=1&playlist=j2e2stCcICo`}
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -104,28 +130,22 @@ const BillingPage: React.FC = () => {
         peak hours, payment preferences, and revenue trends. Make data-driven decisions to optimize your menu and operations.
       </p>
       <ul className="space-y-3">
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Works with any restaurant size - from food trucks to fine dining</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>PCI-compliant payment processing for secure transactions</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>24/7 technical support from restaurant industry experts</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Mobile app for managers to monitor billing on-the-go</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Easy integration with existing restaurant management systems</span>
         </li>
-        <li className="flex items-center">
-          <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+        <li className="flex items-center"> 
           <span>Comprehensive training and onboarding support</span>
         </li>
       </ul>
