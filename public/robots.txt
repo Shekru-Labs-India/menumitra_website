@@ -1,23 +1,71 @@
+# Robots.txt for MenuMitra - AI-Powered Digital Menu Platform
+# https://menumitra.com
+
 User-agent: *
 Allow: /
 
-# Block access to admin areas
+# Block access to sensitive areas
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
 Disallow: /private/
+Disallow: /dashboard/
+Disallow: /user/
+Disallow: /account/
 
-# Allow important pages
+# Block access to development and build files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /next.config.*
+Disallow: /tailwind.config.*
+Disallow: /eslint.config.*
+
+# Block access to temporary and backup files
+Disallow: /*.backup
+Disallow: /*.tmp
+Disallow: /*.log
+Disallow: /temp/
+Disallow: /tmp/
+
+# Allow important pages explicitly
 Allow: /
-Allow: /book-demo
 Allow: /about
-Allow: /services
-Allow: /pricing
+Allow: /book-demo
 Allow: /contact
-Allow: /blog
+Allow: /products
+Allow: /features/
+Allow: /addons/
+Allow: /outlet-type/
+Allow: /privacy-and-policy
+Allow: /terms-and-conditions
+Allow: /cookie-policy
+Allow: /request-data-removal
+
+# Allow static assets
+Allow: /images/
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ico
+
+# Crawl delay to be respectful
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://menumitra.com/sitemap.xml
 
-# Crawl delay (optional)
-Crawl-delay: 1
+# Additional sitemaps (if needed in future)
+# Sitemap: https://menumitra.com/sitemap-images.xml
+# Sitemap: https://menumitra.com/sitemap-news.xml
