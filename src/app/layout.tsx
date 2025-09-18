@@ -73,8 +73,25 @@ export const metadata: Metadata = {
     creator: social.twitter,
   },
   icons: {
-    icon: '/images/favicons/favicon-32x32.png',
-    apple: '/images/favicons/apple-icon-180x180.png',
+    icon: [
+      { url: '/images/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/favicons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/favicons/apple-icon-57x57.png', sizes: '57x57', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-60x60.png', sizes: '60x60', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-72x72.png', sizes: '72x72', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-76x76.png', sizes: '76x76', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-114x114.png', sizes: '114x114', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-120x120.png', sizes: '120x120', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-144x144.png', sizes: '144x144', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-152x152.png', sizes: '152x152', type: 'image/png' },
+      { url: '/images/favicons/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'icon', url: '/favicon.ico' },
+    ],
   },
   manifest: '/manifest.json',
   alternates: {
@@ -116,8 +133,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
+        {/* Favicon Links */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png" />
+        <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossOrigin="anonymous"
