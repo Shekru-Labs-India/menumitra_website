@@ -12,6 +12,20 @@ import {
   faChartBar, 
   faBoxes 
 } from '@fortawesome/free-solid-svg-icons';
+import { 
+  Smartphone, 
+  ShoppingCart, 
+  Zap, 
+  Package, 
+  TrendingUp, 
+  MapPin, 
+  BarChart3, 
+  Utensils, 
+  DollarSign, 
+  Wrench, 
+  GraduationCap, 
+  Rocket 
+} from 'lucide-react';
 
 const ClientSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -147,20 +161,20 @@ const ClientSection: React.FC = () => {
             </p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               <li className="flex items-center gap-x-2 ">
-                <span className="relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center gap-6">
-                  <span className="text-2xl">📱</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Smartphone className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Contactless QR Code Menus </span>
               </li>
               <li className="flex items-center gap-x-2">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">🛒</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <ShoppingCart className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Instant Order Placement </span>
               </li>
               <li className="flex items-center gap-x-2 ">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">⚡</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Zap className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Real-time Menu Updates </span>
               </li>
@@ -174,8 +188,8 @@ const ClientSection: React.FC = () => {
             </p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               <li className="flex items-center gap-x-2 ">
-                <span className="relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center gap-6">
-                  <span className="text-2xl">📦</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Package className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white">
                   {" "}
@@ -183,14 +197,14 @@ const ClientSection: React.FC = () => {
                 </span>
               </li>
               <li className="flex items-center gap-x-2">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">📈</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <TrendingUp className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Automated Inventory Management </span>
               </li>
               <li className="flex items-center gap-x-2 ">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">📍</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <MapPin className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Real-time Order Tracking </span>
               </li>
@@ -204,8 +218,8 @@ const ClientSection: React.FC = () => {
             </p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               <li className="flex items-center gap-x-2 ">
-                <span className="relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center gap-6">
-                  <span className="text-2xl">📊</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <BarChart3 className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white">
                   {" "}
@@ -213,14 +227,14 @@ const ClientSection: React.FC = () => {
                 </span>
               </li>
               <li className="flex items-center gap-x-2">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">🍽️</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Utensils className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Popular Items Tracking </span>
               </li>
               <li className="flex items-center gap-x-2 ">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">💰</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <DollarSign className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Revenue Insights </span>
               </li>
@@ -234,20 +248,20 @@ const ClientSection: React.FC = () => {
             </p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               <li className="flex items-center gap-x-2 ">
-                <span className="relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center gap-6">
-                  <span className="text-2xl">🛠️</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Wrench className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> 24/7 Technical Support </span>
               </li>
               <li className="flex items-center gap-x-2">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">🎓</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <GraduationCap className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Training & Onboarding </span>
               </li>
               <li className="flex items-center gap-x-2 ">
-                <span className=" relative  rounded-full bg-white dark:bg-dark-200 shadow-icon flex item-center justify-center">
-                  <span className="text-2xl">🚀</span>
+                <span className="relative rounded-full bg-white dark:bg-dark-200 shadow-icon flex items-center justify-center w-12 h-12">
+                  <Rocket className="w-6 h-6 text-primary-600" />
                 </span>
                 <span className="dark:text-white"> Performance Optimization </span>
               </li>
