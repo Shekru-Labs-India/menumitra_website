@@ -132,6 +132,53 @@ export default function DataRemovalForm() {
     }
   };
 
+  const handleOTPVerification = async () => {
+    const otpString = otp.join("");
+    
+    if (otpString.length !== 4) {
+      toast.error("Please enter a valid 4-digit OTP.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await axios.post("https://men4u.xyz/v2/website_api/verify_data_removal_otp", {
+        mobile: mobileNumber,
+        otp: otpString
+      });
+
+      if (response.status === 200) {
+        toast.success(response.data.detail || "User data removed successfully");
+        // Reset form after successful verification
+        setShowOTP(false);
+        setMobileNumber("");
+        setOtp(["", "", "", ""]);
+      }
+    } catch (error: any) {
+      console.error("Error verifying OTP:", error);
+      
+      if (error.response) {
+        const status = error.response.status;
+        if (status === 400) {
+          toast.error(error.response.data.detail || "Invalid OTP. Please try again.");
+        } else if (status === 429) {
+          toast.error("Too many requests. Please wait a moment and try again.");
+        } else if (status >= 500) {
+          toast.error("Server error. Please try again later.");
+        } else {
+          toast.error("Failed to verify OTP. Please try again.");
+        }
+      } else if (error.request) {
+        toast.error("Network error. Please check your connection and try again.");
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="relative pb-25  max-md:overflow-hidden">
   <div className="container relative max-md:text-center">
@@ -192,10 +239,11 @@ export default function DataRemovalForm() {
                   </div>
                   <button 
                     type="button"
-                    disabled={otp.some(digit => !digit)}
-                    className={`btn max-lg:col-span-full lg:col-span-4 ${otp.some(digit => !digit) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    onClick={handleOTPVerification}
+                    disabled={otp.some(digit => !digit) || isSubmitting}
+                    className={`btn max-lg:col-span-full lg:col-span-4 ${(otp.some(digit => !digit) || isSubmitting) ? 'opacity-50 cursor-not-allowed' : ''}`}
                   >
-                    Verify OTP
+                    {isSubmitting ? "Verifying..." : "Verify OTP"}
                   </button>
                 </>
               )}
