@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function DataRemovalForm() {
   const [mobileNumber, setMobileNumber] = useState("");
@@ -57,24 +59,40 @@ export default function DataRemovalForm() {
     setSubmitStatus("idle");
 
     try {
-      // TODO: Replace with your actual API endpoint
-      const response = await fetch("/api/data-removal", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ mobileNumber }),
+      const response = await axios.post("https://men4u.xyz/v2/website_api/request_data_removal", {
+        mobile: mobileNumber
       });
 
-      if (response.ok) {
+      if (response.status === 200) {
         setSubmitStatus("success");
         setMobileNumber("");
+        toast.success("OTP sent successfully!");
       } else {
-        setSubmitStatus("error");
+        toast.error("Failed to send OTP. Please try again.");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error submitting form:", error);
-      setSubmitStatus("error");
+      
+      // Handle different types of errors with specific messages
+      if (error.response) {
+        // Server responded with error status
+        const status = error.response.status;
+        if (status === 400) {
+          toast.error("Invalid mobile number. Please check and try again.");
+        } else if (status === 429) {
+          toast.error("Too many requests. Please wait a moment and try again.");
+        } else if (status >= 500) {
+          toast.error("Server error. Please try again later.");
+        } else {
+          toast.error("Failed to send OTP. Please try again.");
+        }
+      } else if (error.request) {
+        // Network error
+        toast.error("Network error. Please check your connection and try again.");
+      } else {
+        // Other error
+        toast.error("Something went wrong. Please try again.");
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -88,36 +106,12 @@ export default function DataRemovalForm() {
       <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
       <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
     </div>
-    <div className="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full  bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10" />
+    <div className="absolute left-1/2 -bottom-[350px] p-[350px] -translate-x-1/2 bg-contain w-full h-full bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 hidden md:block -z-10" />
     <div>
       <div className="grid grid-cols-12 grid-y-10 items-start">
        
         <div className="max-md:col-span-full col-span-12 max-md:mt-5 ">
-          {/* Success Message */}
-          {submitStatus === "success" && (
-            <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <p className="text-green-800 font-medium">Request submitted successfully!</p>
-              </div>
-              <p className="text-green-700 text-sm mt-1">We will respond within 72 hours.</p>
-            </div>
-          )}
 
-          {/* Error Message */}
-          {submitStatus === "error" && (
-            <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 text-red-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <p className="text-red-800 font-medium">Error submitting request</p>
-              </div>
-              <p className="text-red-700 text-sm mt-1">Please try again or contact us directly.</p>
-            </div>
-          )}
 
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-12 items-center max-lg:gap-y-5 lg:gap-x-6 ">
