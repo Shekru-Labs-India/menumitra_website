@@ -1,10 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Star, User } from 'lucide-react';
+import { useAOS } from '@/hooks/useAOS';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -201,6 +202,17 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     }
   ]
 }) => {
+  const { refreshAOS } = useAOS();
+  
+  useEffect(() => {
+    // Refresh AOS when component mounts
+    const timer = setTimeout(() => {
+      refreshAOS();
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [refreshAOS]);
+  
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
@@ -243,6 +255,12 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
               pagination={{ 
                 clickable: true,
                 el: '.swiper-pagination'
+              }}
+              onSwiper={() => {
+                // Refresh AOS when Swiper is initialized
+                setTimeout(() => {
+                  refreshAOS();
+                }, 100);
               }}
               breakpoints={{
                 768: {

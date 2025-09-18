@@ -7,6 +7,7 @@ import "./theme-1.css";
 import Header from "@/components/organisms/Header";
 import { Toaster } from "react-hot-toast";
 import { website, social } from "@/config/contact";
+import AOSProvider from "@/components/providers/AOSProvider";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -167,15 +168,44 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              document.addEventListener('DOMContentLoaded', function() {
-                AOS.init({
-                  duration: 500,
-                  once: true,
-                  offset: 50,
-                  easing: 'ease-out',
-                  delay: 0
+              function initAOS() {
+                if (typeof AOS !== 'undefined') {
+                  AOS.init({
+                    duration: 500,
+                    once: true,
+                    offset: 50,
+                    easing: 'ease-out',
+                    delay: 0
+                  });
+                }
+              }
+              
+              // Initialize AOS when DOM is ready
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAOS);
+              } else {
+                initAOS();
+              }
+              
+              // Re-initialize AOS on navigation (for Next.js)
+              if (typeof window !== 'undefined') {
+                window.addEventListener('load', function() {
+                  setTimeout(function() {
+                    if (typeof AOS !== 'undefined') {
+                      AOS.refresh();
+                    }
+                  }, 100);
                 });
-              });
+                
+                // Additional refresh for client-side navigation
+                window.addEventListener('pageshow', function() {
+                  setTimeout(function() {
+                    if (typeof AOS !== 'undefined') {
+                      AOS.refresh();
+                    }
+                  }, 200);
+                });
+              }
             `
           }}
         />
@@ -184,7 +214,9 @@ export default function RootLayout({
         className={`${lato.variable} antialiased`}
       >
         <Header />
-        {children}
+        <AOSProvider>
+          {children}
+        </AOSProvider>
         <Toaster
           position="top-right"
           reverseOrder={false}

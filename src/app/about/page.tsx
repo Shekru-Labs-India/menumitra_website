@@ -1,8 +1,22 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import FooterSection from '@/components/organisms/FooterSection';
 import TestimonialsSlider from '@/components/organisms/TestimonialsSlider';
+import { useAOS } from '@/hooks/useAOS';
 
 const AboutPage: React.FC = () => {
+  const { refreshAOS } = useAOS();
+  
+  useEffect(() => {
+    // Refresh AOS when component mounts to ensure animations work on first load
+    const timer = setTimeout(() => {
+      refreshAOS();
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [refreshAOS]);
+  
   return (
     <>
       <section className="hero  overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
