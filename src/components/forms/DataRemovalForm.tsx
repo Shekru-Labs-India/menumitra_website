@@ -64,6 +64,10 @@ export default function DataRemovalForm() {
           <ul className=" flex max-md:flex-col max-lg:gap-y-2.5 items-center max-lg:justify-between lg:gap-5 mt-6 ">
             
           </ul>
+
+          Important: Data removal is irreversible. Once deleted, we cannot recover your data or restore your account.
+
+
         </div>
       </div>
     </div>
