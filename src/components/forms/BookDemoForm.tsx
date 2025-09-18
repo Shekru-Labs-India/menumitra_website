@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { API_ENDPOINTS } from '@/config/api';
 
 // Types for form configuration
 export interface FormField {
@@ -109,7 +110,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
   description = "Fill out the form below and our team will contact you within 24 hours to schedule your personalized demo.",
   submitButtonText = "Book Now",
   fields = defaultFields,
-  apiEndpoint = 'https://men4u.xyz/v2/website_api/create_website_booking',
+  apiEndpoint = API_ENDPOINTS.CREATE_WEBSITE_BOOKING,
   apiHeaders = { 'Content-Type': 'application/json' },
   className = "",
   showBackground = true,

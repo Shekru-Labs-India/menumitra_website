@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { AlertTriangle } from "lucide-react";
+import { API_ENDPOINTS } from "@/config/api";
 
 export default function DataRemovalForm() {
   const [mobileNumber, setMobileNumber] = useState("");
@@ -93,7 +94,7 @@ export default function DataRemovalForm() {
     setSubmitStatus("idle");
 
     try {
-      const response = await axios.post("https://men4u.xyz/v2/website_api/request_data_removal", {
+      const response = await axios.post(API_ENDPOINTS.REQUEST_DATA_REMOVAL, {
         mobile: mobileNumber
       });
 
@@ -143,7 +144,7 @@ export default function DataRemovalForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post("https://men4u.xyz/v2/website_api/verify_data_removal_otp", {
+      const response = await axios.post(API_ENDPOINTS.VERIFY_DATA_REMOVAL_OTP, {
         mobile: mobileNumber,
         otp: otpString
       });
