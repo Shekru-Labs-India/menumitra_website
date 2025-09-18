@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FooterSection from "@/components/organisms/FooterSection";
+import DataRemovalForm from "@/components/forms/DataRemovalForm";
 import { email, website } from "@/config/contact";
 
 export const metadata: Metadata = {
@@ -91,6 +92,9 @@ export default function RequestDataRemovalPage() {
           </h1>
             </div>
             
+
+              {/* Data Removal Request Form */}
+              <DataRemovalForm />
             {/* Effective Date */}
             <p className="text-sm text-gray-600 mb-6">
               <strong>Effective Date:</strong> {effectiveDate}<br />
@@ -114,6 +118,7 @@ export default function RequestDataRemovalPage() {
                 <a href="#exceptions" className="block hover:text-primary-600">7. Exceptions and Limitations</a>
                 <a href="#business-data" className="block hover:text-primary-600">8. Business Data vs Personal Data</a>
                 <a href="#contact" className="block hover:text-primary-600">9. Contact Information</a>
+                <a href="#data-removal-form" className="block hover:text-primary-600">10. Submit Data Removal Request</a>
               </nav>
 
               <section id="your-rights" className="mt-10 mb-6 scroll-mt-24">

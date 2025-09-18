@@ -1548,7 +1548,7 @@ video {
   background-image: linear-gradient(180deg,var(--tw-gradient-stops));
 }.bg-\[url\(\'\.\.\/images\/core-gradient\.png\'\)\]{
   background-image: url('/images/core-gradient.png');
-}.bg-\[url\(\'\.\.\/images\/hero-gradient\.png\'\)\]{
+}.bg-\[url\(\'\/images\/hero-gradient\.png\'\)\]{
   background-image: url('/images/hero-gradient.png');
 }.bg-\[url\(\'\.\.\/images\/price-gradient\.png\'\)\]{
   background-image: url('/images/price-gradient.png');
