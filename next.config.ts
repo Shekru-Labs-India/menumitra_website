@@ -48,6 +48,67 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Frontend-only caching rules
+      // Next.js build assets (fingerprinted) - safe long cache
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, s-maxage=2592000, immutable',
+          },
+        ],
+      },
+      // CSS files - 30 days
+      {
+        source: '/(.*)\\.css',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, s-maxage=2592000',
+          },
+        ],
+      },
+      // JS files - 30 days
+      {
+        source: '/(.*)\\.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, s-maxage=2592000',
+          },
+        ],
+      },
+      // Images - 30 days
+      {
+        source: '/(.*)\\.(png|jpg|jpeg|gif|svg|webp|avif|ico)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, s-maxage=2592000',
+          },
+        ],
+      },
+      // Fonts - 1 year
+      {
+        source: '/(.*)\\.(woff|woff2|ttf|eot)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, s-maxage=31536000, immutable',
+          },
+        ],
+      },
+      // Favicons and manifest - 30 days
+      {
+        source: '/(favicon\\.ico|manifest\\.json)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, s-maxage=2592000',
+          },
+        ],
+      },
       {
         source: '/sitemap.xml',
         headers: [
