@@ -193,19 +193,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/outlet-type/Restaurant`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/outlet-type/cafe`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/outlet-type/Cafe`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
