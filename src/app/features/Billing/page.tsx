@@ -5,7 +5,6 @@ import SectionLayout from '@/components/layouts/SectionLayout';
 import { useSectionConfig } from '@/hooks/useSectionConfig';
 import YouTubeVideo from '@/components/atoms/YouTubeVideo';
 import { 
-  CreditCard, 
   CheckCircle
 } from 'lucide-react';
 
@@ -33,15 +32,15 @@ const BillingPage: React.FC = () => {
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav mb-8">
-        <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center">
-          <CreditCard className="w-24 h-24 text-primary-600 mx-auto mb-4" />
-          <h3 className="text-2xl font-semibold mb-2">Restaurant Billing Dashboard</h3>
-          <p className="text-gray-600 dark:text-gray-300">
-            Complete billing control from order to payment with real-time table management
-          </p>
-        </div>
-      </div>
+       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+   <img
+     src="/images/service-single1.png"
+     alt="MenuMitra Restaurant Billing Dashboard - Complete billing control from order to payment with real-time table management"
+     className="w-[900px] h-auto object-cover rounded mx-auto block"
+     loading="lazy"
+   />
+ </div>
+
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">What to Expect</h3>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
