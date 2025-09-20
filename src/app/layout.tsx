@@ -8,6 +8,7 @@ import Header from "@/components/organisms/Header";
 import { Toaster } from "react-hot-toast";
 import { website, social } from "@/config/contact";
 import AOSProvider from "@/components/providers/AOSProvider";
+import FloatingActionButton from "@/components/atoms/FloatingActionButton";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -217,6 +218,16 @@ export default function RootLayout({
         <AOSProvider>
           {children}
         </AOSProvider>
+        
+        {/* Floating Action Button */}
+        <FloatingActionButton
+          icon="whatsapp"
+          label="WhatsApp Us"
+          variant="whatsapp"
+          size="medium"
+          animate={false}
+        />
+        
         <Toaster
           position="top-right"
           reverseOrder={false}
