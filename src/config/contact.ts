@@ -38,12 +38,22 @@ export const CONTACT_CONFIG = {
   
   // Response time
   responseTime: 'We\'ll respond within 24 hours',
+  
+  // WhatsApp configuration
+  whatsapp: {
+    phone: '919317818283',
+    defaultMessage: 'Hello MenuMitra, I\'m interested in your restaurant management solutions and would like to know more details about your services.',
+  },
 } as const;
 
 // Helper functions for common use cases
 export const getEmailLink = (email: string = CONTACT_CONFIG.email) => `mailto:${email}`;
 export const getPhoneLink = (phone: string = CONTACT_CONFIG.phone) => `tel:${phone}`;
 export const getWebsiteUrl = (path: string = '') => `${CONTACT_CONFIG.website.base}${path}`;
+export const getWhatsAppLink = (phone: string = CONTACT_CONFIG.whatsapp.phone, message: string = CONTACT_CONFIG.whatsapp.defaultMessage) => {
+  const encodedMessage = encodeURIComponent(message);
+  return `https://api.whatsapp.com/send/?phone=${phone}&text=${encodedMessage}&type=phone_number&app_absent=0`;
+};
 
 // Export individual values for convenience
 export const {
@@ -55,4 +65,5 @@ export const {
   location,
   businessHours,
   responseTime,
+  whatsapp,
 } = CONTACT_CONFIG;

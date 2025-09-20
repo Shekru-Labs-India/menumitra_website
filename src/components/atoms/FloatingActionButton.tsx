@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { MessageCircle, Phone, ArrowUp, Mail, HelpCircle } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
+import { getWhatsAppLink } from '@/config/contact';
 
 interface FloatingActionButtonProps {
   onClick?: () => void;
@@ -64,6 +65,13 @@ const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
   };
 
   const handleClick = () => {
+    // WhatsApp variant: open WhatsApp chat
+    if (variant === 'whatsapp') {
+      const whatsappUrl = getWhatsAppLink();
+      window.open(whatsappUrl, '_blank');
+      return;
+    }
+
     // Default action: scroll to contact section or top
     const contactSection = document.getElementById('contact');
     if (contactSection) {
