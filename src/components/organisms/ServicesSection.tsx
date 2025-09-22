@@ -47,13 +47,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">QR Code Digital Menus</h3>
-                </Link>
+                <h3 className="mb-2.5">QR Code Digital Menus</h3>
                 <p className="mb-6">Create stunning, contactless QR code menus that customers can access instantly. No app downloads required - just scan and order.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
 
@@ -73,13 +68,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">AI-Powered Order Management</h3>
-                </Link>
+                <h3 className="mb-2.5">AI-Powered Order Management</h3>
                 <p className="mb-6">Streamline your kitchen operations with intelligent order routing, real-time updates, and automated inventory management.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
 
@@ -99,13 +89,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Real-Time Analytics Dashboard</h3>
-                </Link>
+                <h3 className="mb-2.5">Real-Time Analytics Dashboard</h3>
                 <p className="mb-6">Track sales performance, popular items, customer preferences, and revenue insights with comprehensive analytics.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
 
@@ -125,13 +110,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Multi-Location Management</h3>
-                </Link>
+                <h3 className="mb-2.5">Multi-Location Management</h3>
                 <p className="mb-6">Manage multiple restaurant locations from a single dashboard with centralized menu updates and performance tracking.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
 
@@ -151,13 +131,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">Customer Experience Enhancement</h3>
-                </Link>
+                <h3 className="mb-2.5">Customer Experience Enhancement</h3>
                 <p className="mb-6">Provide seamless ordering experience with instant menu updates, allergen information, and personalized recommendations.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
 
@@ -177,13 +152,8 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="hidden dark:inline-block mb-6"
                 />
-                <Link href="/services-single" className="block">
-                  <h3 className="mb-2.5">24/7 Customer Support</h3>
-                </Link>
+                <h3 className="mb-2.5">24/7 Customer Support</h3>
                 <p className="mb-6">Get dedicated support from our restaurant technology experts to ensure smooth operations and maximum ROI.</p>
-                <Link href="/services-single" className="btn-outline btn-sm">
-                  Read More
-                </Link>
               </div>
             </div>
           </div>
