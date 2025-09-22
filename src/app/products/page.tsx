@@ -56,6 +56,29 @@ const ProductsPage: React.FC = () => {
     }
   ];
 
+  const productsV13Web = [
+    {
+      name: 'MenuMitra Customer Display System',
+      url: 'https://cds.menumitra.com/',
+      description: 'Interactive customer display system for order tracking, promotions, and enhanced customer engagement experience. Real-time order status updates and promotional content display.'
+    },
+    {
+      name: 'MenuMitra Kitchen Display System',
+      url: 'https://kds.menumitra.com/',
+      description: 'Advanced kitchen display system with order prioritization, cooking timers, and seamless kitchen workflow management. Optimize kitchen operations and reduce order preparation time.'
+    },
+    {
+      name: 'MenuMitra Statistics Dashboard',
+      url: 'https://statistics.menumitra.com/login',
+      description: 'Comprehensive analytics dashboard with real-time insights, sales reports, and performance metrics to drive data-driven business decisions and track restaurant performance.'
+    },
+    {
+      name: 'MenuMitra User Application',
+      url: 'https://user.menumitra.com/user_app/index',
+      description: 'Complete user management application for restaurant staff and customers. Manage user accounts, permissions, and access control across all MenuMitra applications.'
+    }
+  ];
+
   const productsV2 = [
     {
       name: 'Owner App v2',
@@ -190,6 +213,78 @@ const ProductsPage: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <SectionDivider className="my-16" />
+
+          <div className="text-center mx-auto mb-25">
+            <h2 className="mb-8">V1.3 Web Applications - Proven Solutions</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Access our battle-tested web-based applications that have been serving restaurants worldwide. 
+              These reliable, proven solutions provide comprehensive restaurant management capabilities 
+              with the stability and performance you can trust.
+            </p>
+          </div>
+
+          <div 
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-offset={200}
+            data-aos-duration={300}
+            data-aos-delay={150}
+            data-aos-once="true"
+          >
+            {/* Production Environment */}
+            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 max-w-4xl w-full">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
+                  <Globe className="w-6 h-6 text-green-600" />
+                  Production Environment
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Live, production-ready applications serving real customers. 
+                  These applications are optimized for performance, security, and reliability.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                {productsV13Web.map((product, index) => (
+                  <div 
+                    key={index} 
+                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    data-aos="fade-up"
+                    data-aos-offset={100}
+                    data-aos-duration={300}
+                    data-aos-delay={200 + (index * 50)}
+                    data-aos-once="true"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <a 
+                          href={product.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                        >
+                          {product.url}
+                        </a>
+                      </div>
+                      <a 
+                        href={product.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-navbar btn-sm flex items-center gap-2 ml-4"
+                      >
+                        <ExternalLink className="w-4 h-4" color="white" />
+                        Visit
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <SectionDivider className="my-16" />
