@@ -205,7 +205,7 @@ const Header: React.FC = () => {
       <header 
         className={`fixed left-0 pt-8 z-[1000000000] duration-500 transition-all w-full ${
           isScrolled 
-            ? 'bg-white/60 dark:bg-dark-200/60 backdrop-blur-3xl nav-sticky' 
+            ? 'nav-sticky !backdrop-blur-[15px]' 
             : 'bg-transparent'
         }`}
         id="mainnavigationBar"
