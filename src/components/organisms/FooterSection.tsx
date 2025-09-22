@@ -91,7 +91,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 <Link 
                   href="/features/menu" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/Menu') ? 'active' : ''
+                    isActive('/features/menu') ? 'active' : ''
                   }`}
                 >
                   Menu
@@ -101,7 +101,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 <Link 
                   href="/features/billing" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/Billing') ? 'active' : ''
+                    isActive('/features/billing') ? 'active' : ''
                   }`}
                 >
                   Billing
@@ -111,7 +111,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 <Link 
                   href="/features/inventory" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/Inventory') ? 'active' : ''
+                    isActive('/features/inventory') ? 'active' : ''
                   }`}
                 >
                   Inventory
@@ -121,7 +121,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 <Link 
                   href="/features/online-order" 
                   className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/OnlineOrder') ? 'active' : ''
+                    isActive('/features/online-order') ? 'active' : ''
                   }`}
                 >
                   Online Order

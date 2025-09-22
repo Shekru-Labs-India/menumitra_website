@@ -79,22 +79,22 @@ const ProductsPage: React.FC = () => {
     production: [
       {
         name: 'Menumitra Stats',
-        url: '{website.stats}',
+        url: website.stats,
         description: 'Comprehensive analytics dashboard with real-time insights, sales reports, and performance metrics to drive data-driven decisions.'
       },
       {
         name: 'Menumitra KDS',
-        url: '{website.kds}',
+        url: website.kds,
         description: 'Advanced Kitchen Display System with order prioritization, cooking timers, and seamless kitchen workflow management.'
       },
       {
         name: 'Menumitra CDS',
-        url: '{website.cds}',
+        url: website.cds,
         description: 'Interactive Customer Display System for order tracking, promotions, and enhanced customer engagement experience.'
       },
       {
         name: 'Menumitra Customer',
-        url: '{website.customer}',
+        url: website.customer,
         description: 'Customer-facing web application for online ordering, menu browsing, and seamless dining experience.'
       }
     ],
