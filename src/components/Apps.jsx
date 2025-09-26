@@ -384,10 +384,6 @@ const Apps = () => {
                     <a className="small text-primary" href="https://stats-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://stats-v2.menumitra.com</a>
                   </li>
                   <li className="mb-5">
-                    <div className="fw-medium">Menumitra Admin</div>
-                    <a className="small text-primary" href="https://admin-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://admin-v2.menumitra.com</a>
-                  </li>
-                  <li className="mb-5">
                     <div className="fw-medium">Menumitra KDS</div>
                     <a className="small text-primary" href="https://kds-v2.menumitra.com" target="_blank" rel="noopener noreferrer">https://kds-v2.menumitra.com</a>
                   </li>
@@ -407,10 +403,6 @@ const Apps = () => {
                   <li className="mb-5">
                     <div className="fw-medium">Menumitra Stats (Test)</div>
                     <a className="small text-primary" href="https://test-menumitra-stats-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-stats-v2.netlify.app</a>
-                  </li>
-                  <li className="mb-5">
-                    <div className="fw-medium">Menumitra Admin (Test)</div>
-                    <a className="small text-primary" href="https://test-menumitra-admin-v2.netlify.app" target="_blank" rel="noopener noreferrer">https://test-menumitra-admin-v2.netlify.app</a>
                   </li>
                   <li className="mb-5">
                     <div className="fw-medium">Menumitra KDS (Test)</div>
