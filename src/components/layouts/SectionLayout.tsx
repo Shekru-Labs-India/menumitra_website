@@ -60,7 +60,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
                     <li key={index} className={`group ${activeItem === item ? 'tabActive' : ''}`}>
                       <button
                         onClick={() => handleItemClick(item)}
-                        className="flex items-center justify-between py-3 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
+                        className="flex items-center justify-between py-3 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
                       >
                         {item}
                         <ChevronRight className={`w-4 h-4 ${activeItem === item ? 'block' : 'hidden'}`} />
