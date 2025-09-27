@@ -16,21 +16,21 @@ const SmartMobileAppPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Smart Mobile App
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Empower your restaurant operations with our comprehensive smart mobile application. 
         Manage your business on-the-go with powerful tools and real-time insights.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our smart mobile app provides restaurant owners and managers with complete control over operations, 
         from inventory management to staff scheduling, all accessible from their mobile device.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single location or multiple outlets, our mobile app gives you the flexibility 
         to run your restaurant business from anywhere, anytime.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Smart Mobile App - Mobile Business Management with complete restaurant management in your pocket"
@@ -40,7 +40,7 @@ const SmartMobileAppPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Smart Mobile App Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our smart mobile app provides everything you need to manage your restaurant business remotely. 
         From real-time monitoring to operational control, we've designed every feature with mobile convenience in mind.
       </p>
@@ -67,7 +67,7 @@ const SmartMobileAppPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Business</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our smart mobile app helps you stay connected to your restaurant business 24/7. With real-time insights and 
         remote control capabilities, you can manage your operations effectively from anywhere.
       </p>
