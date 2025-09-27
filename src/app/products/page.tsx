@@ -266,7 +266,7 @@ const ProductsPage: React.FC = () => {
                           href={product.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                          className="text-blue-600 hover:underline text-sm font-medium"
                         >
                           {product.url}
                         </a>
@@ -400,7 +400,7 @@ const ProductsPage: React.FC = () => {
                           href={product.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                          className="text-blue-600 hover:underline text-sm font-medium"
                         >
                           {product.url}
                         </a>
@@ -452,7 +452,7 @@ const ProductsPage: React.FC = () => {
                           href={product.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                          className="text-blue-600 hover:underline text-sm font-medium"
                         >
                           {product.url}
                         </a>
