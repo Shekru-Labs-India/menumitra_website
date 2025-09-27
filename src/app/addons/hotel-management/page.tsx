@@ -16,21 +16,21 @@ const HotelManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Hotel Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your hotel's restaurant and food service operations with our comprehensive hotel management system. 
         Manage multiple dining outlets, room service, and catering operations from one centralized platform.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our hotel management platform provides integrated restaurant operations, guest service management, and multi-outlet coordination 
         to help you deliver exceptional dining experiences across all your hotel's food service areas.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a boutique hotel or a large resort, our system helps you coordinate 
         all food service operations and maintain consistent quality across all outlets.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Hotel Management - Integrated Hotel Operations with comprehensive management for hotel food service operations"
@@ -40,7 +40,7 @@ const HotelManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Hotel Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our hotel management system provides everything you need to coordinate food service operations across your hotel. 
         From multi-outlet management to guest service integration, we've designed every feature with hotel operations in mind.
       </p>
@@ -67,7 +67,7 @@ const HotelManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Hotel</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our hotel management system helps you deliver exceptional dining experiences, improve operational efficiency, and increase guest satisfaction. 
         With integrated operations and personalized service, you can create memorable experiences for your guests.
       </p>
