@@ -16,23 +16,23 @@ const BillingPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Smart Billing Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your restaurant's billing operations with MenuMitra's intelligent billing management system. 
         From table orders to final payments, handle everything seamlessly with automated invoice generation, 
         split billing, and integrated payment processing.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our smart billing platform connects directly with your POS system, kitchen display, and customer management tools. 
         Process payments faster, reduce billing errors, and provide customers with detailed, professional invoices. 
         Perfect for restaurants, cafes, food trucks, and catering businesses.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a quick-service restaurant or a fine dining establishment, MenuMitra's billing system 
         adapts to your workflow, supports multiple payment methods, and ensures accurate financial tracking for better business insights.
       </p>
 
       {/* Feature Image */}
-       <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+       <div className="bg- rounded-medium p-2.5 shadow-nav">
    <img
      src="/images/service-single1.png"
      alt="MenuMitra Restaurant Billing Dashboard - Complete billing control from order to payment with real-time table management"
@@ -43,11 +43,11 @@ const BillingPage: React.FC = () => {
 
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">What to Expect</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         MenuMitra's billing system is built specifically for restaurants, handling everything from table orders to final payments. 
         Our system automatically calculates taxes, applies discounts, manages split bills, and processes payments through multiple gateways.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Experience seamless integration with your kitchen display system, POS terminals, and customer database. 
         Generate professional invoices, track payment methods, and maintain detailed financial records for better business management.
       </p>
@@ -80,11 +80,11 @@ const BillingPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Why Choose MenuMitra Billing?</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         MenuMitra's billing system is designed by restaurant professionals who understand the daily challenges of food service operations. 
         From handling rush hour orders to managing complex group bills, our system adapts to your restaurant's unique needs.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our comprehensive reporting tools give you insights into your restaurant's performance, helping you track popular items, 
         peak hours, payment preferences, and revenue trends. Make data-driven decisions to optimize your menu and operations.
       </p>
