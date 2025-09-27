@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                     (item.label === 'Features' && isFeaturesActive()) || 
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
-                      ? 'text-primary-600 bg-white border-primary-700 dark:border-primary-300' 
+                      ? 'text-primary-600 bg-white border-primary-700' 
                       : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
@@ -403,7 +403,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Mobile Menu Footer */}
-          <div className="p-6 border-t border-gray-200 dark:border-gray-700">
+          <div className="p-6 border-t border-gray-200">
             <Link 
               href="/book-demo" 
               className="w-full btn btn-primary btn-lg text-center block"

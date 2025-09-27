@@ -181,7 +181,7 @@ const ProductsPage: React.FC = () => {
             
             {productsV13.map((product, index) => (
               <div key={index} className="bg-white shadow-box rounded-medium p-2.5">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
+                <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center">
                   <div className="flex items-center justify-center gap-4 mb-8">
                     <img
                       src={product.image}
@@ -251,7 +251,7 @@ const ProductsPage: React.FC = () => {
                 {productsV13Web.map((product, index) => (
                   <div 
                     key={index} 
-                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
                     data-aos="fade-up"
                     data-aos-offset={100}
                     data-aos-duration={300}
@@ -306,7 +306,7 @@ const ProductsPage: React.FC = () => {
           >
             {productsV2.map((product, index) => (
               <div key={index} className="bg-white shadow-box rounded-medium p-2.5">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
+                <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center">
                   <div className="flex items-center justify-center gap-4 mb-8">
                     <img
                       src={product.image}
@@ -385,7 +385,7 @@ const ProductsPage: React.FC = () => {
                 {productsV2Web.production.map((product, index) => (
                   <div 
                     key={index} 
-                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
                     data-aos="fade-up"
                     data-aos-offset={100}
                     data-aos-duration={300}
@@ -437,7 +437,7 @@ const ProductsPage: React.FC = () => {
                 {productsV2Web.testing.map((product, index) => (
                   <div 
                     key={index} 
-                    className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow"
+                    className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
                     data-aos="fade-up"
                     data-aos-offset={100}
                     data-aos-duration={300}

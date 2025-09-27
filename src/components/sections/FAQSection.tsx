@@ -69,7 +69,7 @@ const FAQSection: React.FC = () => {
           {faqData.map((faq, index) => (
             <div key={index} className="faq-item bg-white p-2.5 rounded-medium">
               <div 
-                className={`faq-header flex items-center py-3 px-5 bg-white border border-dashed rounded border-gray-100 dark:border-borderColour-dark cursor-pointer ${openItems.includes(index) ? 'open' : ''}`}
+                className={`faq-header flex items-center py-3 px-5 bg-white border border-dashed rounded border-gray-100 cursor-pointer ${openItems.includes(index) ? 'open' : ''}`}
                 onClick={() => toggleItem(index)}
               >
                 <h3 className="text-xl font-semibold">

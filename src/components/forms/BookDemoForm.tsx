@@ -119,8 +119,8 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
   onError,
   onSubmit,
   containerClassName = "bg-white rounded-medium p-2.5 shadow-nav",
-  formClassName = "bg-white border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5",
-  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white focus:border-primary dark:focus:border-primary duration-300 transition-all",
+  formClassName = "bg-white border border-dashed rounded border-gray-100 p-12 max-md:p-5",
+  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white focus:border-primary dark:focus:border-primary duration-300 transition-all",
   buttonClassName = "btn disabled:opacity-50 disabled:cursor-not-allowed"
 }) => {
   // Initialize form data based on fields
@@ -258,7 +258,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
       <div className={containerClassName}>
         <div className={formClassName}>
           {showErrorDisplay && error && (
-            <div className="mb-6 p-4 bg-red-50 border border-red-200 dark:border-red-800 rounded-lg">
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">

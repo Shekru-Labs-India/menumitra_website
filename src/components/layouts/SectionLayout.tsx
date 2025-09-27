@@ -53,7 +53,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
           <div className="grid grid-cols-12 gap-y-15 md:gap-8 lg:gap-16 auto-rows-max">
             {/* Sidebar Navigation */}
             <div className="bg-white rounded-medium p-2.5 shadow-nav max-md:hidden md:col-span-6 lg:col-span-4 self-start md:sticky md:top-25 max-md:static">
-              <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark pt-4 px-6 pb-5">
+              <div className="border border-dashed rounded border-gray-100 pt-4 px-6 pb-5">
                 <h3 className="mb-3">{sidebarTitle}</h3>
                 <ul className="[&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-gray-100 dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:last-child)]:border-b">
                   {sidebarItems.map((item, index) => (
@@ -111,7 +111,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
             submitButtonText="Book Demo Now"
             showBackground={false}
             containerClassName="bg-transparent"
-            formClassName="bg-white border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5"
+            formClassName="bg-white border border-dashed rounded border-gray-100 p-12 max-md:p-5"
           />
         </div>
       </section>

@@ -21,7 +21,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
   };
 
   return (
-    <section className={`bg-white overflow-hidden relative pt-20 border-t border-dashed border-gray-100 dark:border-borderColour-dark ${className}`}>
+    <section className={`bg-white overflow-hidden relative pt-20 border-t border-dashed border-gray-100 ${className}`}>
       <div className="container">
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center">
           <div className="col-span-12 lg:col-span-4 ">

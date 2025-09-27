@@ -70,7 +70,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
           <div className="grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-8">
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-medium p-2.5 shadow-nav scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-6 max-md:p-4">
+                <div className="border border-dashed rounded border-gray-100 p-6 max-md:p-4">
                   <Image
                     src={post.image}
                     alt="blog image"
