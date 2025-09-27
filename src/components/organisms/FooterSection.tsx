@@ -18,7 +18,25 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => {
-    return pathname === path;
+    // For exact matches (like home, about, products, contact)
+    if (pathname === path) {
+      return true;
+    }
+    
+    // For features, addons, and outlet types, check if current path matches exactly
+    if (path.startsWith('/features/') && pathname.startsWith('/features/')) {
+      return pathname === path;
+    }
+    
+    if (path.startsWith('/addons/') && pathname.startsWith('/addons/')) {
+      return pathname === path;
+    }
+    
+    if (path.startsWith('/outlet-type/') && pathname.startsWith('/outlet-type/')) {
+      return pathname === path;
+    }
+    
+    return false;
   };
 
   return (
@@ -34,8 +52,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Home
@@ -44,8 +62,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/about" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/about') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/about') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   About
@@ -54,8 +72,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/products" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/products') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/products') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Products
@@ -64,8 +82,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/contact" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/contact') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/contact') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Contact
@@ -79,8 +97,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/menu" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/menu') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/menu') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Menu
@@ -89,8 +107,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/billing" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/billing') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/billing') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Billing
@@ -99,8 +117,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/inventory" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/inventory') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/inventory') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Inventory
@@ -109,8 +127,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/online-order" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/online-order') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/online-order') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Online Order
@@ -119,8 +137,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/restaurant-reports" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/restaurant-reports') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/restaurant-reports') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Restaurant Reports
@@ -129,8 +147,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/customer-management" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/customer-management') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/customer-management') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Customer Management
@@ -139,8 +157,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/customer-feedback" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/customer-feedback') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/customer-feedback') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Customer Feedback
@@ -149,8 +167,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/scan-order" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/features/scan-order') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/scan-order') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Scan & Order
@@ -164,8 +182,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/captain-app" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/addons/captain-app') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/captain-app') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Captain App
@@ -174,8 +192,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/waiter-app" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/addons/waiter-app') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/waiter-app') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Waiter App
@@ -184,8 +202,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/point-of-sale" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/addons/point-of-sale') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/point-of-sale') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Point of Sale
@@ -194,8 +212,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/kitchen-display-system" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/addons/kitchen-display-system') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/addons/kitchen-display-system') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Kitchen Display
@@ -209,8 +227,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/restaurant" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/restaurant') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/restaurant') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Restaurant
@@ -219,8 +237,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/fine-dine" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/fine-dine') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/fine-dine') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Fine Dine
@@ -229,8 +247,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/food-courts" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/food-courts') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/food-courts') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Food Courts
@@ -239,8 +257,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/pizzeria" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/pizzeria') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/pizzeria') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Pizzeria
@@ -249,8 +267,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/cafe" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/cafe') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/cafe') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Cafe
@@ -259,8 +277,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/qsr" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/qsr') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/qsr') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   QSR
@@ -269,8 +287,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/bakeries" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/bakeries') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/bakeries') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Bakeries
@@ -279,8 +297,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/cloud-kitchens" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/cloud-kitchens') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/cloud-kitchens') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Cloud Kitchens
@@ -289,8 +307,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/outlet-type/large-chain" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
-                    isActive('/outlet-type/large-chain') ? 'active' : ''
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/large-chain') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
                   Large Chain
