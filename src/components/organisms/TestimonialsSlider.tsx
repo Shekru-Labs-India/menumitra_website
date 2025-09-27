@@ -266,7 +266,7 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
                         className="inline-block  mb-6"
                       />
                       <Image
-                        src={testimonial.hotelLogoDark}
+                        src={testimonial.hotelLogo}
                         alt="hotel logo"
                         width={100}
                         height={40}
