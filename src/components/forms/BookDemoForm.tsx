@@ -120,7 +120,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
   onSubmit,
   containerClassName = "bg-white rounded-medium p-2.5 shadow-nav",
   formClassName = "bg-white border border-dashed rounded border-gray-100 p-12 max-md:p-5",
-  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white focus:border-primary dark:focus:border-primary duration-300 transition-all",
+  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light outline-none bg-white focus:border-primary duration-300 transition-all",
   buttonClassName = "btn disabled:opacity-50 disabled:cursor-not-allowed"
 }) => {
   // Initialize form data based on fields

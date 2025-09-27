@@ -70,7 +70,7 @@ const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
 
   return (
     <div className={`bg-white rounded-medium p-2.5 shadow-nav relative ${containerClassName}`}>
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark-300 rounded-lg p-8 mb-0 text-center relative !mb-0">
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-8 mb-0 text-center relative !mb-0">
         {showTitle && (
           <h2 className="text-2xl font-semibold mb-4 !mt-0">{title}</h2>
         )}

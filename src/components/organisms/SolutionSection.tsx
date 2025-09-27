@@ -17,7 +17,7 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
             <img
               src="images/solution/solution.png"
               alt="vision image"
-              className="dark:hidden"
+              className=""
             />
             <img
               src="images/solution/solution-dark.png"
@@ -34,7 +34,7 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
               <img
                 src="images/solution/solution-shape1.png"
                 alt="vision image"
-                className="dark:hidden  w-full"
+                className="  w-full"
               />
               <img
                 src="images/solution/solution-shape1-dark.png"
@@ -53,7 +53,7 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
               <img
                 src="images/solution/solution-shape2.png"
                 alt="vision image"
-                className="dark:hidden  w-full"
+                className="  w-full"
               />
               <img
                 src="images/solution/solution-shape2-dark.png"
@@ -72,7 +72,7 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
               <img
                 src="images/solution/solution-shape3.png"
                 alt="vision image"
-                className="dark:hidden  w-full"
+                className="  w-full"
               />
               <img
                 src="images/solution/solution-shape3-dark.png"

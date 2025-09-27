@@ -232,7 +232,7 @@ const Header: React.FC = () => {
               {item.type === 'link' ? (
             <Link 
                   href={item.href} 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour  duration-500 hover:duration-500 transition-colors ${
                     isActive(item.href) ? 'active' : ''
               }`}
             >
@@ -245,7 +245,7 @@ const Header: React.FC = () => {
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
                       ? 'text-primary-600 bg-white border-primary-700' 
-                      : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:border-borderColour/10'
+                      : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour '
                   }`}>
                     {item.label}
                     <ChevronDown 

@@ -65,7 +65,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
               alt="vision image" 
               width={310} 
               height={400}
-              className="w-[260px] xl:w-[310px] dark:hidden"
+              className="w-[260px] xl:w-[310px] "
             />
             <Image 
               src="/images/vision/vision-image-dark.png" 
@@ -82,7 +82,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
                 alt="vision image shape" 
                 width={310} 
                 height={200}
-                className="w-full dark:hidden"
+                className="w-full "
               />
               <Image 
                 src="/images/vision/vision-image-dark-1.png" 
@@ -99,7 +99,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
                 alt="vision image shape" 
                 width={350} 
                 height={300}
-                className="w-full h-full dark:hidden"
+                className="w-full h-full "
               />
               <Image 
                 src="/images/vision/vision-image-dark-2.png" 

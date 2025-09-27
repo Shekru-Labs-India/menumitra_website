@@ -59,7 +59,7 @@ const ClientSection: React.FC = () => {
         <img
           src="images/crypto/aboutCrypto.png"
           alt="MenuMitra platform shape"
-          className="dark:hidden max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
+          className=" max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           data-aos="fade-up"
           data-aos-offset={200}
           data-aos-duration={1000}
@@ -84,7 +84,7 @@ const ClientSection: React.FC = () => {
           <img
             src="images/crypto/aboutCrypto-shape.png"
             alt="MenuMitra platform shape"
-            className="dark:hidden"
+            className=""
           />
           <img
             src="images/crypto/aboutCrypto-shape-dark.png"

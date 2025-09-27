@@ -206,7 +206,7 @@ export default function DataRemovalForm() {
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
                     maxLength={10}
-                    className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
+                    className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary duration-300 transition-all outline-none"
                   />
                   <button 
                     type="submit"
@@ -233,7 +233,7 @@ export default function DataRemovalForm() {
                           value={digit}
                           onChange={(e) => handleOtpChange(index, e.target.value)}
                           onKeyDown={(e) => handleOtpKeyDown(index, e)}
-                          className="w-12 h-12 text-center text-lg font-semibold border border-gray-300 bg-white rounded-lg focus:border dark:focus:border-primary transition-colors"
+                          className="w-12 h-12 text-center text-lg font-semibold border border-gray-300 bg-white rounded-lg focus:border transition-colors"
                         />
                       ))}
                     </div>

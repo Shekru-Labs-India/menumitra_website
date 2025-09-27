@@ -38,7 +38,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/investment-dark.svg" 
@@ -59,7 +59,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/sales-dark.svg" 
@@ -80,7 +80,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/loan-dark.svg" 
@@ -101,7 +101,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/finance-dark.svg" 
@@ -122,7 +122,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/effeciency-dark.svg" 
@@ -143,7 +143,7 @@ const ServicesSection: React.FC = () => {
                   alt="image" 
                   width={64} 
                   height={64} 
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image 
                   src="/images/services/fund-dark.svg" 

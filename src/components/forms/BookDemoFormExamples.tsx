@@ -125,7 +125,7 @@ export const CustomAPIBookDemoForm = () => {
 // Example 5: Form with custom styling
 export const StyledBookDemoForm = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 p-8 rounded-2xl">
+    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
       <BookDemoForm
         title="Join Our Beta Program"
         description="Be among the first to experience our new features."
@@ -133,7 +133,7 @@ export const StyledBookDemoForm = () => {
         showBackground={false}
         containerClassName="bg-white rounded-xl p-6 shadow-xl"
         formClassName="bg-transparent border-2 border-dashed border-blue-200 rounded-lg p-8"
-        fieldClassName="block w-full text-sm rounded-lg border-2 border-blue-200 py-3 px-4 text-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none bg-white focus:border-blue-500 dark:focus:border-blue-400 duration-300 transition-all"
+        fieldClassName="block w-full text-sm rounded-lg border-2 border-blue-200 py-3 px-4 text-gray-700 placeholder:text-gray-400 outline-none bg-white focus:border-blue-500 duration-300 transition-all"
         buttonClassName="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         onSuccess={(data) => {
           console.log('Beta signup successful:', data);

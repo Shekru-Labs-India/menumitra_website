@@ -34,7 +34,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="QR Code Menus"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/investment-dark.svg"
@@ -58,7 +58,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Real-time Analytics"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/loan-dark.svg"
@@ -82,7 +82,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Order Management"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/sales-dark.svg"
@@ -110,7 +110,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Multi-location Management"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/finance-dark.svg"
@@ -134,7 +134,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Customer Experience"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/effeciency-dark.svg"
@@ -158,7 +158,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="24/7 Support"
                   width={64}
                   height={64}
-                  className="inline-block dark:hidden mb-6"
+                  className="inline-block  mb-6"
                 />
                 <Image
                   src="/images/services/fund-dark.svg"

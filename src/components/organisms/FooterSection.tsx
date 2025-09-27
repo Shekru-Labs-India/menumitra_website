@@ -204,7 +204,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             alt="footer-seperator"
             width={1200}
             height={50}
-            className="dark:hidden w-full object-cover"
+            className=" w-full object-cover"
           />
           <Image
             src="/images/footer-seperator-dark.svg"
