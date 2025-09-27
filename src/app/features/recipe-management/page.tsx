@@ -16,21 +16,21 @@ const RecipeManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Recipe Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Standardize your kitchen operations with our comprehensive recipe management system. 
         Create, store, and share recipes with detailed instructions, ingredients, and nutritional information.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our recipe management platform helps you maintain consistency across all locations, 
         calculate accurate food costs, and ensure quality control in your kitchen operations.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single kitchen or multiple locations, our system ensures 
         every dish is prepared consistently according to your standards.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Recipe Management - Digital Recipe Library with centralized repository for all your restaurant recipes"
@@ -40,7 +40,7 @@ const RecipeManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Recipe Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our recipe management system provides everything you need to standardize your kitchen operations. 
         From ingredient tracking to cost calculation, we've designed every feature with kitchen efficiency in mind.
       </p>
@@ -67,7 +67,7 @@ const RecipeManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Kitchen</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our recipe management system helps you maintain consistency, reduce waste, and improve efficiency in your kitchen. 
         With standardized recipes and accurate cost tracking, you can optimize your food operations.
       </p>
