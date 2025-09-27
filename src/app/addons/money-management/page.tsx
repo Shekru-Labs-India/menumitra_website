@@ -16,21 +16,21 @@ const MoneyManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Money Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your restaurant's financial operations with our comprehensive money management system. 
         Track cash flow, manage expenses, and optimize your financial performance with real-time insights.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our money management platform provides cash handling, expense tracking, and financial reporting 
         to help you maintain accurate records and make informed business decisions.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single location or multiple outlets, our system helps you maintain 
         financial control and optimize your restaurant's profitability.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Money Management - Financial Control Center with comprehensive money management for restaurant operations"
@@ -40,7 +40,7 @@ const MoneyManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Money Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our money management system provides everything you need to control your restaurant's finances. 
         From cash handling to expense tracking, we've designed every feature with financial accuracy in mind.
       </p>
@@ -67,7 +67,7 @@ const MoneyManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our money management system helps you maintain financial control, reduce costs, and improve profitability. 
         With accurate tracking and detailed reporting, you can make informed decisions to grow your business.
       </p>
