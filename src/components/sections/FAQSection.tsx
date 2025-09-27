@@ -117,7 +117,7 @@ const FAQSection: React.FC = () => {
                     ? 'collapsing' 
                     : 'close'
               }`}>
-                <div className="text-paragraph-light pt-6 px-6 pb-3.5 dark:text-[#A1A49D]">
+                <div className="text-paragraph-light pt-6 px-6 pb-3.5">
                   {faq.answer}
                 </div>
               </div>

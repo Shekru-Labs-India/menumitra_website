@@ -302,7 +302,7 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
                         </div>
                         <div className="block">
                           <h3 className="text-base font-semibold">{testimonial.name}</h3>
-                          <p className="text-paragraph-light dark:text-[#A1A49D] font-jakarta_sans text-sm font-medium">
+                          <p className="text-paragraph-light font-jakarta_sans text-sm font-medium">
                             {testimonial.position}
                           </p>
                         </div>
