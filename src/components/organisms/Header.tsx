@@ -262,7 +262,7 @@ const Header: React.FC = () => {
                     {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                           <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium bg-white dark:bg-dark-200' : ''}`}>
-                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`}>{subItem.icon}</span>}
+                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600'}`}>{subItem.icon}</span>}
                             {subItem.label}
                           </Link>
                         </li>
@@ -377,7 +377,7 @@ const Header: React.FC = () => {
                               className={`flex items-center gap-3 py-2 px-4 rounded-lg text-base transition-colors ${
                                 isActive(subItem.href) 
                                   ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-medium' 
-                                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                                  : 'text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800'
                               }`} 
                               onClick={toggleMobileMenu}
                             >

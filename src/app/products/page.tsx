@@ -152,7 +152,7 @@ const ProductsPage: React.FC = () => {
         <div className="container">
           <div className="text-center mx-auto mb-25">
             <h2 className="mb-8">Complete Restaurant Management Suite</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Transform your restaurant operations with our comprehensive suite of applications. 
               From order management to analytics, we provide everything you need to run a successful restaurant business.
             </p>
@@ -160,7 +160,7 @@ const ProductsPage: React.FC = () => {
           
           <div className="text-center mx-auto mb-25">
             <h2 className="mb-4">Version 1.3 - Proven & Reliable</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Our battle-tested applications that have been serving restaurants worldwide. 
               Download and install these native applications for offline-first operations.
             </p>
@@ -191,7 +191,7 @@ const ProductsPage: React.FC = () => {
                     <h3 className="mb-0">{product.name}</h3>
                   </div>
                   <p className="mb-4">{product.description}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex items-center justify-center gap-2">
+                  <p className="text-sm text-gray-600 mb-4 flex items-center justify-center gap-2">
                     {product.platform.includes('Android') ? (
                       <Smartphone className="w-4 h-4" />
                     ) : (
@@ -219,7 +219,7 @@ const ProductsPage: React.FC = () => {
 
           <div className="text-center mx-auto mb-25">
             <h2 className="mb-8">V1.3 Web Applications - Proven Solutions</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Access our battle-tested web-based applications that have been serving restaurants worldwide. 
               These reliable, proven solutions provide comprehensive restaurant management capabilities 
               with the stability and performance you can trust.
@@ -241,7 +241,7 @@ const ProductsPage: React.FC = () => {
                   <Globe className="w-6 h-6 text-green-600" />
                   Production Environment
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600">
                   Live, production-ready applications serving real customers. 
                   These applications are optimized for performance, security, and reliability.
                 </p>
@@ -261,7 +261,7 @@ const ProductsPage: React.FC = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <p className="text-sm text-gray-600 mb-2">{product.description}</p>
                         <a 
                           href={product.url}
                           target="_blank"
@@ -291,7 +291,7 @@ const ProductsPage: React.FC = () => {
 
           <div className="text-center mx-auto mb-25">
             <h2 className="mb-4">Version 2.0 - Next Generation</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Experience the future of restaurant management with our latest applications. 
               Enhanced features, improved performance, and cutting-edge technology await.
             </p>
@@ -316,7 +316,7 @@ const ProductsPage: React.FC = () => {
                     <h3 className="mb-0">{product.name}</h3>
                   </div>
                   <p className="mb-4">{product.description}</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2 flex items-center justify-center gap-2">
+                  <p className="text-sm text-gray-600 mb-2 flex items-center justify-center gap-2">
                     {product.platform.includes('Android') ? (
                       <Smartphone className="w-4 h-4" />
                     ) : (
@@ -324,7 +324,7 @@ const ProductsPage: React.FC = () => {
                     )}
                     {product.platform}
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex items-center justify-center gap-2">
+                  <p className="text-sm text-gray-600 mb-4 flex items-center justify-center gap-2">
                     <Calendar className="w-4 h-4" />
                     {product.releaseDate}
                   </p>
@@ -353,7 +353,7 @@ const ProductsPage: React.FC = () => {
         <div className="container">
           <div className="text-center mx-auto mb-25">
             <h2 className="mb-8">V2 Web Applications - Cloud-Powered Solutions</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Access our cutting-edge web-based applications designed for modern restaurant operations. 
               Built with the latest technology stack, these applications provide seamless, real-time collaboration 
               and management capabilities across all your restaurant operations.
@@ -375,7 +375,7 @@ const ProductsPage: React.FC = () => {
                   <Globe className="w-6 h-6 text-green-600" />
                   Production Environment
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600">
                   Live, production-ready applications serving real customers. 
                   These applications are optimized for performance, security, and reliability.
                 </p>
@@ -395,7 +395,7 @@ const ProductsPage: React.FC = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <p className="text-sm text-gray-600 mb-2">{product.description}</p>
                         <a 
                           href={product.url}
                           target="_blank"
@@ -427,7 +427,7 @@ const ProductsPage: React.FC = () => {
                   <Monitor className="w-6 h-6 text-orange-600" />
                   Testing Environment
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600">
                   Development and testing applications for experimentation and validation. 
                   Perfect for trying new features before they go live in production.
                 </p>
@@ -447,7 +447,7 @@ const ProductsPage: React.FC = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
                         <h4 className="font-semibold text-lg mb-1">{product.name}</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{product.description}</p>
+                        <p className="text-sm text-gray-600 mb-2">{product.description}</p>
                         <a 
                           href={product.url}
                           target="_blank"
