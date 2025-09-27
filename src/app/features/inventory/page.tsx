@@ -16,21 +16,21 @@ const InventoryPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Smart Inventory Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your restaurant's inventory operations with our comprehensive inventory management system. 
         Track stock levels, manage suppliers, and optimize your food costs with real-time insights.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our intelligent inventory platform provides automated stock tracking, low-stock alerts, and 
         predictive analytics to help you maintain optimal inventory levels and reduce waste.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single location or multiple outlets, our scalable inventory system 
         ensures you always have the right ingredients at the right time.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Smart Inventory Management - Real-Time Inventory Tracking with monitor stock levels and get alerts when items are running low"
@@ -40,7 +40,7 @@ const InventoryPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Key Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our inventory management system includes everything you need to control your restaurant's stock efficiently. 
         From automated tracking to supplier management, we've designed every feature with restaurant operations in mind.
       </p>
@@ -67,7 +67,7 @@ const InventoryPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our inventory management system helps you reduce costs, minimize waste, and ensure you never run out of essential ingredients. 
         With predictive analytics and automated alerts, you can focus on serving great food while we handle the inventory complexity.
       </p>
