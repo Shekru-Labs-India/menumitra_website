@@ -14,7 +14,6 @@ import 'swiper/css/pagination';
 interface Testimonial {
   id: number;
   hotelLogo: string;
-  hotelLogoDark: string;
   quote: string;
   rating: number;
   name: string;
@@ -32,7 +31,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 1,
       hotelLogo: '/images/clients/friends_cafe.webp',
-      hotelLogoDark: '/images/clients/friends_cafe.webp',
       quote: "Bhai, MenuMitra ka digital menu system bilkul mast hai! Customers ab phone scan karke menu dekh sakte hain. Waiter ko har time menu leke jaane ki zarurat nahi. Time bachta hai, customers bhi khush!",
       rating: 5,
       name: 'Suresh Deshmukh',
@@ -41,7 +39,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 2,
       hotelLogo: '/images/clients/sudamas_misal_house.webp',
-      hotelLogoDark: '/images/clients/sudamas_misal_house.webp',
       quote: "MenuMitra ne hamara restaurant modern banaya! QR code scan karke menu dekhna, online ordering, payment integration - sab kuch ek jagah. Customers ko lagta hai ki koi fancy restaurant mein aaye hain!",
       rating: 4,
       name: 'Vikram Jadhav',
@@ -50,7 +47,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 3,
       hotelLogo: '/images/clients/hotel_nandini_pure_veg.webp',
-      hotelLogoDark: '/images/clients/hotel_nandini_pure_veg.webp',
       quote: "Pehle toh menu update karna bahut mushkil tha. Ab MenuMitra se instant update ho jata hai! Naya dish add karna, price change karna - sab online se ho jata hai. Technology ka magic hai ye!",
       rating: 5,
       name: 'Priya Kulkarni',
@@ -59,7 +55,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 4,
       hotelLogo: '/images/clients/garva_order.webp',
-      hotelLogoDark: '/images/clients/garva_order.webp',
       quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
       rating: 5,
       name: 'Rajesh Patil',
@@ -68,7 +63,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 5,
       hotelLogo: '/images/clients/hotel_rasika.webp',
-      hotelLogoDark: '/images/clients/hotel_rasika.webp',
       quote: "MenuMitra ka QR code system bahut convenient hai! Customers ko menu dekhne ke liye waiter ka intezaar nahi karna padta. Order process fast ho gaya hai!",
       rating: 4,
       name: 'Anita Sharma',
@@ -77,7 +71,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 6,
       hotelLogo: '/images/clients/hotel_ganesh_shakaahari.webp',
-      hotelLogoDark: '/images/clients/hotel_ganesh_shakaahari.webp',
       quote: "Digital menu se hamara restaurant ka image improve hua hai! Customers ko lagta hai ki ye modern restaurant hai. Online ordering se revenue bhi badha hai!",
       rating: 5,
       name: 'Ravi Ganesh',
@@ -86,7 +79,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 7,
       hotelLogo: '/images/clients/hotel_new_jagdamba.webp',
-      hotelLogoDark: '/images/clients/hotel_new_jagdamba.webp',
       quote: "MenuMitra se hamara restaurant tech-savvy ban gaya! QR code scan karke menu dekhna, online payment - sab kuch seamless hai. Customer satisfaction badh gaya hai!",
       rating: 4,
       name: 'Sunil Jagdamba',
@@ -95,7 +87,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 8,
       hotelLogo: '/images/clients/hotel_pp_patil.webp',
-      hotelLogoDark: '/images/clients/hotel_pp_patil.webp',
       quote: "Pehle menu update karna time-consuming tha. Ab MenuMitra se instant updates ho jate hain! Naye dishes add karna, prices change karna - sab online!",
       rating: 5,
       name: 'Prakash Patil',
@@ -104,7 +95,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 9,
       hotelLogo: '/images/clients/hotel_audumbar.webp',
-      hotelLogoDark: '/images/clients/hotel_audumbar.webp',
       quote: "MenuMitra ka digital menu system restaurant ko professional banata hai! Customers ko menu dekhne mein koi problem nahi hoti. Service fast ho gaya hai!",
       rating: 4,
       name: 'Deepak Audumbar',
@@ -113,7 +103,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 10,
       hotelLogo: '/images/clients/hotel_dongarmath.webp',
-      hotelLogoDark: '/images/clients/hotel_dongarmath.webp',
       quote: "QR code menu se hamara restaurant modern lagta hai! Customers ko menu dekhne ke liye waiter ki zarurat nahi. Order process smooth ho gaya hai!",
       rating: 5,
       name: 'Vishal Dongarmath',
@@ -122,7 +111,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 11,
       hotelLogo: '/images/clients/hotel_sanskruti_pure_veg.webp',
-      hotelLogoDark: '/images/clients/hotel_sanskruti_pure_veg.webp',
       quote: "MenuMitra se hamara restaurant ka digital transformation hua hai! Online ordering, payment integration - sab kuch ek platform pe. Technology ka fayda!",
       rating: 4,
       name: 'Sanskriti Sharma',
@@ -131,7 +119,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 12,
       hotelLogo: '/images/clients/house_of_schezwam.webp',
-      hotelLogoDark: '/images/clients/house_of_schezwam.webp',
       quote: "Digital menu system se hamara Chinese restaurant popular hua hai! Customers ko menu dekhne mein convenience hai. Online orders badh gaye hain!",
       rating: 5,
       name: 'Chen Wei',
@@ -140,7 +127,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 13,
       hotelLogo: '/images/clients/nps_chinese_hub.webp',
-      hotelLogoDark: '/images/clients/nps_chinese_hub.webp',
       quote: "MenuMitra ka QR code system Chinese cuisine ke liye perfect hai! Customers ko menu dekhne mein koi confusion nahi. Order accuracy badh gaya hai!",
       rating: 4,
       name: 'Nitin Chinese',
@@ -149,7 +135,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 14,
       hotelLogo: '/images/clients/new_jagdamba_veg_nonveg.webp',
-      hotelLogoDark: '/images/clients/new_jagdamba_veg_nonveg.webp',
       quote: "Digital menu se hamara mixed cuisine restaurant successful hua hai! Veg-nonveg options clearly display hote hain. Customer satisfaction high hai!",
       rating: 5,
       name: 'Jagdamba Singh',
@@ -158,7 +143,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 15,
       hotelLogo: '/images/clients/shree_pure_veg.webp',
-      hotelLogoDark: '/images/clients/shree_pure_veg.webp',
       quote: "MenuMitra se hamara pure veg restaurant ka digital presence strong hua hai! Online ordering se revenue increase hua hai. Technology ka sahi use!",
       rating: 4,
       name: 'Shree Patel',
@@ -167,7 +151,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 16,
       hotelLogo: '/images/clients/hotel_borul_atitthi.webp',
-      hotelLogoDark: '/images/clients/hotel_borul_atitthi.webp',
       quote: "QR code menu system se hamara restaurant modern ban gaya hai! Customers ko menu dekhne mein convenience hai. Service quality improve hui hai!",
       rating: 5,
       name: 'Borul Atitthi',
@@ -176,7 +159,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 17,
       hotelLogo: '/images/clients/aai_tulja_bhavani.webp',
-      hotelLogoDark: '/images/clients/aai_tulja_bhavani.webp',
       quote: "MenuMitra ka digital menu system restaurant ko professional banata hai! Customers ko menu dekhne mein koi problem nahi. Order process fast hai!",
       rating: 4,
       name: 'Tulja Bhavani',
@@ -185,7 +167,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 18,
       hotelLogo: '/images/clients/cafe_durga.webp',
-      hotelLogoDark: '/images/clients/cafe_durga.webp',
       quote: "Digital menu se hamara cafe popular hua hai! Customers ko menu dekhne mein convenience hai. Online orders badh gaye hain!",
       rating: 5,
       name: 'Durga Cafe',
@@ -194,7 +175,6 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
     {
       id: 19,
       hotelLogo: '/images/clients/creamy_nuts_cafe.webp',
-      hotelLogoDark: '/images/clients/creamy_nuts_cafe.webp',
       quote: "MenuMitra ka QR code system cafe ke liye perfect hai! Customers ko menu dekhne mein koi confusion nahi. Order accuracy badh gaya hai!",
       rating: 4,
       name: 'Creamy Nuts',

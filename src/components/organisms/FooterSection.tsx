@@ -211,7 +211,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             alt="footer-seperator"
             width={1200}
             height={50}
-            className="hidden dark:block w-full object-cover"
+            className="hidden w-full object-cover"
           />
         </div>
 

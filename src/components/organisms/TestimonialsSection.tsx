@@ -32,7 +32,6 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
     {
       id: 2,
       hotelLogo: '/images/outlets/friends_cafe.webp',
-      hotelLogoDark: '/images/outlets/friends_cafe.webp',
       quote: "Bhai, MenuMitra ka digital menu system bilkul mast hai! Customers ab phone scan karke menu dekh sakte hain. Waiter ko har time menu leke jaane ki zarurat nahi. Time bachta hai, customers bhi khush!",
       rating: 5,
       name: 'Suresh Deshmukh',
@@ -41,7 +40,6 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
     {
       id: 3,
       hotelLogo: '/images/outlets/sudamas_misal_house.webp',
-      hotelLogoDark: '/images/outlets/sudamas_misal_house.webp',
       quote: "MenuMitra ne hamara restaurant modern banaya! QR code scan karke menu dekhna, online ordering, payment integration - sab kuch ek jagah. Customers ko lagta hai ki koi fancy restaurant mein aaye hain!",
       rating: 4,
       name: 'Vikram Jadhav',
@@ -50,7 +48,6 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
     {
       id: 4,
       hotelLogo: '/images/outlets/hotel_nandini_pure_veg.webp',
-      hotelLogoDark: '/images/outlets/hotel_nandini_pure_veg.webp',
       quote: "Pehle toh menu update karna bahut mushkil tha. Ab MenuMitra se instant update ho jata hai! Naya dish add karna, price change karna - sab online se ho jata hai. Technology ka magic hai ye!",
       rating: 5,
       name: 'Priya Kulkarni',
