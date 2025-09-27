@@ -31,7 +31,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
   className = '' 
 }) => {
   return (
-    <section className={`bg-gray dark:bg-dark overflow-hidden relative pt-[300px] pb-150 max-md:pb-20 -mt-24 max-md:pt-[320px] max-md:-mt-60 dark:-mt-24 dark:max-md:-mt-60 ${className}`}>
+    <section className={`bg-gray overflow-hidden relative pt-[300px] pb-150 max-md:pb-20 -mt-24 max-md:pt-[320px] max-md:-mt-60 dark:-mt-24 dark:max-md:-mt-60 ${className}`}>
     
       <div className="container relative z-10">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-end">

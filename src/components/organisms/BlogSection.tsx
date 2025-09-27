@@ -53,7 +53,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
   ]
 }) => {
   return (
-    <section className={`bg-white dark:bg-dark pt-150 pb-150 relative max-md:pb-20 ${className}`}>
+    <section className={`bg-white pt-150 pb-150 relative max-md:pb-20 ${className}`}>
       <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 bg-[url('/images/service-bg.png')] bg-no-repeat bg-center opacity-70 w-full h-full bg-[length:600px_1800px] md:hidden"></div>
       <div className="container relative">
         <div className="text-center max-w-[550px] mx-auto mb-16">

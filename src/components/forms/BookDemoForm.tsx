@@ -258,7 +258,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
       <div className={containerClassName}>
         <div className={formClassName}>
           {showErrorDisplay && error && (
-            <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 dark:border-red-800 rounded-lg">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
