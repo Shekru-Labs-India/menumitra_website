@@ -385,7 +385,7 @@ const Header: React.FC = () => {
                                 <span className={`w-5 h-5 ${
                                   isActive(subItem.href) 
                                     ? 'text-primary-600 dark:text-primary-400' 
-                                    : 'text-gray-500 dark:text-gray-500'
+                                    : 'text-gray-500'
                                 }`}>
                                   {subItem.icon}
                                 </span>
