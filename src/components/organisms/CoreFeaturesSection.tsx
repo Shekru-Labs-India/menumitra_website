@@ -28,7 +28,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
             <div className="relative grid grid-cols-3 max-lg:grid-cols-1 [&>*:nth-child(3n+1)]:before:absolute [&>*:nth-child(3n+1)]:before:left-0 [&>*:nth-child(3n+1)]:before:top-1/2 [&>*:nth-child(3n+1)]:before:-translate-y-1/2 [&>*:nth-child(3n+1)]:before:w-[1px] [&>*:nth-child(3n+1)]:before:h-full [&>*:nth-child(3n+1)]:before:content-[url('/images/payment/coreborder-right.svg')] max-lg:[&>*:nth-child(3n+1)]:before:hidden">
               
               {/* QR Code Menus */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
                 <Image
                   src="/images/services/investment.svg"
                   alt="QR Code Menus"
@@ -52,7 +52,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               </div>
 
               {/* Real-time Analytics */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
                 <Image
                   src="/images/services/loan.svg"
                   alt="Real-time Analytics"
@@ -76,7 +76,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               </div>
 
               {/* Order Management */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
                 <Image
                   src="/images/services/sales.svg"
                   alt="Order Management"
@@ -104,7 +104,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
             <div className="relative grid grid-cols-3 max-lg:grid-cols-1 [&>*:nth-child(3n+1)]:before:absolute [&>*:nth-child(3n+1)]:before:left-0 [&>*:nth-child(3n+1)]:before:top-1/2 [&>*:nth-child(3n+1)]:before:-translate-y-1/2 [&>*:nth-child(3n+1)]:before:w-[1px] [&>*:nth-child(3n+1)]:before:h-full [&>*:nth-child(3n+1)]:before:content-[url('/images/payment/coreborder-right.svg')] max-lg:[&>*:nth-child(3n+1)]:before:hidden">
               
               {/* Multi-location Management */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
                 <Image
                   src="/images/services/finance.svg"
                   alt="Multi-location Management"
@@ -128,7 +128,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               </div>
 
               {/* Customer Experience */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
                 <Image
                   src="/images/services/effeciency.svg"
                   alt="Customer Experience"
@@ -152,7 +152,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               </div>
 
               {/* 24/7 Support */}
-              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] group">
+              <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group">
                 <Image
                   src="/images/services/fund.svg"
                   alt="24/7 Support"

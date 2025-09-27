@@ -152,19 +152,19 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Smartphone className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Contactless QR Code Menus </span>
+                <span className=""> Contactless QR Code Menus </span>
               </li>
               <li className="flex items-center gap-x-2">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <ShoppingCart className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Instant Order Placement </span>
+                <span className=""> Instant Order Placement </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Zap className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Real-time Menu Updates </span>
+                <span className=""> Real-time Menu Updates </span>
               </li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Package className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white">
+                <span className="">
                   {" "}
                   Intelligent Order Routing{" "}
                 </span>
@@ -188,13 +188,13 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <TrendingUp className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Automated Inventory Management </span>
+                <span className=""> Automated Inventory Management </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <MapPin className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Real-time Order Tracking </span>
+                <span className=""> Real-time Order Tracking </span>
               </li>
             </ul>
           </div>
@@ -209,7 +209,7 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <BarChart3 className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white">
+                <span className="">
                   {" "}
                   Real-time Sales Analytics{" "}
                 </span>
@@ -218,13 +218,13 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Utensils className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Popular Items Tracking </span>
+                <span className=""> Popular Items Tracking </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <DollarSign className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Revenue Insights </span>
+                <span className=""> Revenue Insights </span>
               </li>
             </ul>
           </div>
@@ -239,19 +239,19 @@ const ClientSection: React.FC = () => {
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Wrench className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> 24/7 Technical Support </span>
+                <span className=""> 24/7 Technical Support </span>
               </li>
               <li className="flex items-center gap-x-2">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <GraduationCap className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Training & Onboarding </span>
+                <span className=""> Training & Onboarding </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className="relative rounded-full bg-white shadow-icon flex items-center justify-center w-12 h-12">
                   <Rocket className="w-6 h-6 text-primary-600" />
                 </span>
-                <span className="dark:text-white"> Performance Optimization </span>
+                <span className=""> Performance Optimization </span>
               </li>
             </ul>
           </div>
