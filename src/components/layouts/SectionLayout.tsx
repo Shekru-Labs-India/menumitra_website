@@ -55,7 +55,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
             <div className="bg-white rounded-medium p-2.5 shadow-nav max-md:hidden md:col-span-6 lg:col-span-4 self-start md:sticky md:top-25 max-md:static">
               <div className="border border-dashed rounded border-gray-100 pt-4 px-6 pb-5">
                 <h3 className="mb-3">{sidebarTitle}</h3>
-                <ul className="[&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-gray-100 dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:last-child)]:border-b">
+                <ul className="[&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-gray-100 [&>*:not(:last-child)]:border-b">
                   {sidebarItems.map((item, index) => (
                     <li key={index} className={`group ${activeItem === item ? 'tabActive' : ''}`}>
                       <button

@@ -290,7 +290,7 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
                         alt="hotel logo"
                         width={100}
                         height={40}
-                        className="hidden dark:inline-block mb-6"
+                        className="hidden mb-6"
                       />
                       <blockquote className="text-paragraph italic mb-5 leading-[1.75]">
                         "{testimonial.quote}"

@@ -72,7 +72,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
               alt="vision image" 
               width={310} 
               height={400}
-              className="w-[260px] xl:w-[310px] hidden dark:inline-block"
+              className="w-[260px] xl:w-[310px] hidden"
             />
             
             {/* Floating image elements */}
@@ -89,7 +89,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
                 alt="vision image shape" 
                 width={310} 
                 height={200}
-                className="w-full hidden dark:inline-block"
+                className="w-full hidden"
               />
             </div>
             
@@ -106,7 +106,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
                 alt="vision image shape" 
                 width={350} 
                 height={300}
-                className="w-full h-full hidden dark:inline-block"
+                className="w-full h-full hidden"
               />
             </div>
           </div>

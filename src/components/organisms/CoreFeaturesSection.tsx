@@ -22,7 +22,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
             <div className="max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/25 -ml-[170px] max-md:ml-0 blur-[145px]" />
             <div className="max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
           </div>
-          <div className="flex flex-col relative [&>*:not(:last-child)]:after:absolute [&>*:not(:last-child)]:after:h-0.5 [&>*:not(:last-child)]:after:w-full [&>*:not(:last-child)]:after:content-[url('/images/payment/seperator.png')] dark:[&>*:not(:last-child)]:after:content-[url('/images/payment/seperator-dark.png')] [&>*:not(:last-child)]:after:bottom-0 [&>*:not(:last-child)]:after:overflow-hidden max-md:[&>*:not(:last-child)]:after:hidden">
+          <div className="flex flex-col relative [&>*:not(:last-child)]:after:absolute [&>*:not(:last-child)]:after:h-0.5 [&>*:not(:last-child)]:after:w-full [&>*:not(:last-child)]:after:content-[url('/images/payment/seperator.png')] [&>*:not(:last-child)]:after:bottom-0 [&>*:not(:last-child)]:after:overflow-hidden max-md:[&>*:not(:last-child)]:after:hidden">
             
             {/* First Row */}
             <div className="relative grid grid-cols-3 max-lg:grid-cols-1 [&>*:nth-child(3n+1)]:before:absolute [&>*:nth-child(3n+1)]:before:left-0 [&>*:nth-child(3n+1)]:before:top-1/2 [&>*:nth-child(3n+1)]:before:-translate-y-1/2 [&>*:nth-child(3n+1)]:before:w-[1px] [&>*:nth-child(3n+1)]:before:h-full [&>*:nth-child(3n+1)]:before:content-[url('/images/payment/coreborder-right.svg')] dark:[&>*:nth-child(3n+1)]:before:content-[url('/images/payment/coreborder-right-dark.svg')] max-lg:[&>*:nth-child(3n+1)]:before:hidden">
@@ -41,7 +41,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="QR Code Menus"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   QR Code Menus
@@ -65,7 +65,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Real-time Analytics"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Real-time Analytics
@@ -89,7 +89,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Order Management"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Order Management
@@ -117,7 +117,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Multi-location Management"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Multi-location Management
@@ -141,7 +141,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="Customer Experience"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Customer Experience
@@ -165,7 +165,7 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   alt="24/7 Support"
                   width={64}
                   height={64}
-                  className="hidden dark:inline-block mb-6"
+                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   24/7 Support
