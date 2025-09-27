@@ -16,21 +16,21 @@ const ChainManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Chain Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Manage your restaurant chain operations with our comprehensive chain management system. 
         Coordinate multiple locations, maintain brand consistency, and optimize performance across all outlets.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our chain management platform provides centralized control over operations, inventory, staff, and customer data 
         while allowing each location to maintain its local identity and operational flexibility.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a small chain or a large franchise network, our system scales with your business 
         and provides the tools you need for effective chain operations.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Chain Management - Multi-Location Control with centralized management for all your chain locations"
@@ -40,7 +40,7 @@ const ChainManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Chain Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our chain management system provides everything you need to operate multiple restaurant locations effectively. 
         From centralized control to local autonomy, we've designed every feature with chain operations in mind.
       </p>
@@ -67,7 +67,7 @@ const ChainManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Chain</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our chain management system helps you maintain consistency, reduce costs, and improve performance across all locations. 
         With centralized control and local flexibility, you can scale your chain effectively.
       </p>
