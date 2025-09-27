@@ -133,7 +133,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
             </a>
           </div>
         </div>
-        <div className="w-full h-[450px] absolute bottom-15 left-0 z-10 bg-gradient-to-b from-transparent to-white dark:to-dark-300 to-100%"></div>
+        <div className="w-full h-[450px] absolute bottom-15 left-0 z-10 bg-gradient-to-b from-transparent to-white to-100%"></div>
       </div>
     </section>
   );

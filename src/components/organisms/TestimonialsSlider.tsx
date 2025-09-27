@@ -219,7 +219,7 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
         key={index}
         className={`w-4 h-4 ${
           index < rating 
-            ? 'text-paragraph dark:text-rating fill-current' 
+            ? 'text-paragraph fill-current' 
             : 'text-[#A7A7B4]'
         }`}
       />

@@ -125,7 +125,7 @@ export const CustomAPIBookDemoForm = () => {
 // Example 5: Form with custom styling
 export const StyledBookDemoForm = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 p-8 rounded-2xl">
+    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 p-8 rounded-2xl">
       <BookDemoForm
         title="Join Our Beta Program"
         description="Be among the first to experience our new features."
