@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SocialIcon from '@/components/atoms/SocialIcon';
+import ContactHeader from './ContactHeader';
 import { Phone, Mail } from 'lucide-react';
 import { email, phone, getEmailLink, getPhoneLink, social } from '@/config/contact';
 
@@ -21,25 +22,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
   };
 
   return (
-    <section className={`bg-white overflow-hidden relative pt-20 border-t border-dashed border-gray-100 ${className}`}>
+    <section className={`bg-white overflow-hidden relative py-5 border-t border-dashed border-gray-100 ${className}`}>
+      {/* Contact Header */}
+      <ContactHeader />
+      
       <div className="container">
-        <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center">
-          <div className="col-span-12 lg:col-span-4 ">
-            <div className="flex items-center gap-4 mb-5 max-lg:justify-center">
-              <Image
-                src="/images/mm/mm.png"
-                alt="MenuMitra logo"
-                width={60}
-                height={60}
-                className="w-auto h-auto"
-              />
-              <span className="text-2xl font-bold text-gray-900">MenuMitra</span>
-            </div>
-            <p className="max-w-[350px] max-lg:mx-auto">
-              AI-powered digital menu platform for restaurants with QR code menus and smart order management.
-            </p>
-          </div>
-          <div className="col-span-6 lg:col-span-2 max-lg:text-center">
+        <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center gap-2">
+          <div className="col-span-6 lg:col-span-3 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg text-left">Navigations</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
@@ -84,7 +73,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               </li>
             </ul>
           </div>
-          <div className="col-span-6 lg:col-span-2 max-lg:text-center">
+          <div className="col-span-6 lg:col-span-3 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg text-left">Features</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
@@ -125,6 +114,46 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   }`}
                 >
                   Online Order
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/restaurant-reports" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/restaurant-reports') ? 'active' : ''
+                  }`}
+                >
+                  Restaurant Reports
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/customer-management" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/customer-management') ? 'active' : ''
+                  }`}
+                >
+                  Customer Management
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/customer-feedback" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/customer-feedback') ? 'active' : ''
+                  }`}
+                >
+                  Customer Feedback
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/features/scan-order" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/features/scan-order') ? 'active' : ''
+                  }`}
+                >
+                  Scan & Order
                 </Link>
               </li>
             </ul>
@@ -172,28 +201,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   Kitchen Display
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div className="col-span-6 lg:col-span-2 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg text-left">Contact Us</h3>
-            <p className="mb-3">
-              <a href={getEmailLink()} className="relative inline-block overflow-hidden text-base text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                {email}
-              </a>
-            </p>
-
-            <p className="mb-3">
-              <a href={getPhoneLink()} className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                {phone}
-              </a>
-            </p>
-            <ul className="flex items-center max-lg:justify-center social-link gap-4">
-              <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
-              <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
-              <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
-              <SocialIcon platform="instagram" href={`https://www.instagram.com/${social.instagram}/`} target="_blank" />
             </ul>
           </div>
         </div>
