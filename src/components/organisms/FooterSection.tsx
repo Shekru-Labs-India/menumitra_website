@@ -158,7 +158,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               </li>
             </ul>
           </div>
-          <div className="col-span-6 lg:col-span-2 max-lg:text-center">
+          <div className="col-span-6 lg:col-span-3 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg text-left">AddOns</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
@@ -199,6 +199,101 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   }`}
                 >
                   Kitchen Display
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-6 lg:col-span-2 max-lg:text-center">
+            <h3 className="mb-8 font-medium text-lg text-left">Outlet Type</h3>
+            <ul className="[&>*:not(:last-child)]:mb-3 text-left">
+              <li>
+                <Link 
+                  href="/outlet-type/restaurant" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/restaurant') ? 'active' : ''
+                  }`}
+                >
+                  Restaurant
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/fine-dine" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/fine-dine') ? 'active' : ''
+                  }`}
+                >
+                  Fine Dine
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/food-courts" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/food-courts') ? 'active' : ''
+                  }`}
+                >
+                  Food Courts
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/pizzeria" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/pizzeria') ? 'active' : ''
+                  }`}
+                >
+                  Pizzeria
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/cafe" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/cafe') ? 'active' : ''
+                  }`}
+                >
+                  Cafe
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/qsr" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/qsr') ? 'active' : ''
+                  }`}
+                >
+                  QSR
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/bakeries" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/bakeries') ? 'active' : ''
+                  }`}
+                >
+                  Bakeries
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/cloud-kitchens" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/cloud-kitchens') ? 'active' : ''
+                  }`}
+                >
+                  Cloud Kitchens
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/outlet-type/large-chain" 
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/large-chain') ? 'active' : ''
+                  }`}
+                >
+                  Large Chain
                 </Link>
               </li>
             </ul>

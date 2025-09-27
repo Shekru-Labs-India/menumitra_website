@@ -13,7 +13,7 @@ interface ContactHeaderProps {
 
 const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
   return (
-    <div className={`bg-white py-4 ${className}`}>
+    <div className={`bg-white py-6 ${className}`}>
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Left Section - Logo */}
@@ -48,10 +48,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
                 {email}
               </a>
             </div>
-          </div>
-
-          {/* Right Section - Social Icons and CTA */}
-          <div className="flex items-center gap-4">
+<div className="flex items-center gap-2">
             {/* Social Media Icons */}
             <ul className="flex items-center max-lg:justify-center social-link gap-4">
               <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
@@ -59,6 +56,11 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
               <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
               <SocialIcon platform="instagram" href={`https://www.instagram.com/${social.instagram}/`} target="_blank" />
             </ul>
+            </div>
+          </div>
+
+          {/* Right Section - Social Icons and CTA */}
+          <div className="flex items-center gap-4">
 
             {/* Book a Demo Button */}
             <Link 
