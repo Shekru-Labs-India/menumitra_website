@@ -16,21 +16,21 @@ const WaiterAppPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Waiter App
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Empower your waitstaff with our comprehensive waiter mobile application. 
         Streamline order taking, table management, and customer service with intuitive tools.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our waiter app features real-time order processing, table status updates, and customer communication tools. 
         Improve service efficiency and enhance the overall dining experience.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a small restaurant or a large dining establishment, our waiter app adapts to your 
         service model and helps your staff deliver exceptional customer service.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Waiter App - Service Excellence Tools with intuitive interface designed for restaurant waitstaff"
@@ -40,7 +40,7 @@ const WaiterAppPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Key Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our waiter app includes everything needed to enhance service efficiency and customer satisfaction. 
         From order management to table coordination, we've designed every feature with waitstaff needs in mind.
       </p>
@@ -67,7 +67,7 @@ const WaiterAppPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Waitstaff</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our waiter app makes service more efficient and enjoyable for your staff. With intuitive tools and real-time updates, 
         waiters can focus on providing excellent customer service while the app handles the operational complexity.
       </p>
