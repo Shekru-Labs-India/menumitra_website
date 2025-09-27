@@ -89,7 +89,7 @@ const FAQSection: React.FC = () => {
                       stroke=""
                       strokeWidth="1.5"
                       strokeLinecap="round"
-                      className="stroke-paragraph dark:stroke-primary"
+                      className="stroke-paragraph"
                     />
                   </svg>
                   <svg
@@ -105,7 +105,7 @@ const FAQSection: React.FC = () => {
                       stroke=""
                       strokeWidth="1.5"
                       strokeLinecap="round"
-                      className="stroke-paragraph dark:stroke-primary"
+                      className="stroke-paragraph"
                     />
                   </svg>
                 </span>

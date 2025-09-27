@@ -5,7 +5,6 @@ import { Star, User } from 'lucide-react';
 interface Testimonial {
   id: number;
   hotelLogo: string;
-  hotelLogoDark: string;
   quote: string;
   rating: number;
   name: string;
@@ -20,15 +19,6 @@ interface TestimonialsSectionProps {
 const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ 
   className = '',
   testimonials = [
-    // {
-    //   id: 1,
-    //   hotelLogo: '/images/outlets/garva_order.webp',
-    //   hotelLogoDark: '/images/outlets/garva_order.webp',
-    //   quote: "Arre yaar, MenuMitra ne hamara restaurant ka business hi badal diya! Pehle toh customers ko menu samajh nahi aa raha tha, ab sabko pata chal jata hai ki kya order karna hai. Sales 40% badh gaye hai!",
-    //   rating: 5,
-    //   name: 'Rajesh Patil',
-    //   position: 'Owner, Garva Biryani'
-    // },
     {
       id: 2,
       hotelLogo: '/images/outlets/friends_cafe.webp',
