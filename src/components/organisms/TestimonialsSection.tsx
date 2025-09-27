@@ -65,7 +65,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
         className={`w-4 h-4 ${
           index < rating 
             ? 'text-paragraph fill-current' 
-            : 'text-[#A7A7B4] dark:text-[#646463]'
+            : 'text-[#A7A7B4]'
         }`}
       />
     ));
