@@ -209,7 +209,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
     
     return (
       <div key={field.name} className={colSpanClass}>
-        <label htmlFor={field.name} className="block text-sm font-medium font-jakarta_sans text-paragraph dark:text-white mb-2">
+        <label htmlFor={field.name} className="block text-sm font-medium font-jakarta_sans text-paragraph mb-2">
           {field.required && <span className="text-red-500">*</span>} {field.label}
         </label>
         

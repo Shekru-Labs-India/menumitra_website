@@ -33,7 +33,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 height={60}
                 className="w-auto h-auto"
               />
-              <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
+              <span className="text-2xl font-bold text-gray-900">MenuMitra</span>
             </div>
             <p className="max-w-[350px] max-lg:mx-auto">
               AI-powered digital menu platform for restaurants with QR code menus and smart order management.
@@ -45,7 +45,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/') ? 'active' : ''
                   }`}
                 >
@@ -55,7 +55,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/about" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/about') ? 'active' : ''
                   }`}
                 >
@@ -65,7 +65,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/products" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/products') ? 'active' : ''
                   }`}
                 >
@@ -75,7 +75,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/contact" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/contact') ? 'active' : ''
                   }`}
                 >
@@ -90,7 +90,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/menu" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/features/menu') ? 'active' : ''
                   }`}
                 >
@@ -100,7 +100,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/billing" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/features/billing') ? 'active' : ''
                   }`}
                 >
@@ -110,7 +110,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/inventory" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/features/inventory') ? 'active' : ''
                   }`}
                 >
@@ -120,7 +120,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/features/online-order" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/features/online-order') ? 'active' : ''
                   }`}
                 >
@@ -135,7 +135,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/captain-app" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/addons/captain-app') ? 'active' : ''
                   }`}
                 >
@@ -145,7 +145,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/waiter-app" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/addons/waiter-app') ? 'active' : ''
                   }`}
                 >
@@ -155,7 +155,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/point-of-sale" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/addons/point-of-sale') ? 'active' : ''
                   }`}
                 >
@@ -165,7 +165,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               <li>
                 <Link 
                   href="/addons/kitchen-display-system" 
-                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                  className={`relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/addons/kitchen-display-system') ? 'active' : ''
                   }`}
                 >
@@ -177,14 +177,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           <div className="col-span-6 lg:col-span-2 max-lg:text-center">
             <h3 className="mb-8 font-medium text-lg text-left">Contact Us</h3>
             <p className="mb-3">
-              <a href={getEmailLink()} className="relative inline-block overflow-hidden text-base text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+              <a href={getEmailLink()} className="relative inline-block overflow-hidden text-base text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 {email}
               </a>
             </p>
 
             <p className="mb-3">
-              <a href={getPhoneLink()} className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
+              <a href={getPhoneLink()} className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 {phone}
               </a>
@@ -220,22 +220,22 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             <p className="max-lg:mb-10">@ {currentYear} MenuMitra. All Rights Reserved</p>
             <ul className="lg:ml-auto flex items-center gap-15 max-lg:justify-center">
               <li>
-                <a href="/privacy-and-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                <a href="/privacy-and-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/terms-and-conditions" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                <a href="/terms-and-conditions" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Terms & Conditions
                 </a>
               </li>
               <li>
-                <a href="/cookie-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                <a href="/cookie-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Cookie Policy
                 </a>
               </li>
               <li>
-                <a href="/request-data-removal" className="relative inline-block overflow-hidden text-base capitalize text-paragraph dark:text-white before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                <a href="/request-data-removal" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Request Data Removal
                 </a>
               </li>

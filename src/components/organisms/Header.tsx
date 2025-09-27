@@ -221,7 +221,7 @@ const Header: React.FC = () => {
               height={40} 
               className="w-auto h-auto"
             />
-            <span className="text-2xl font-bold text-gray-900 dark:text-white">MenuMitra</span>
+            <span className="text-2xl font-bold text-gray-900">MenuMitra</span>
           </Link>
         </div>
 
@@ -232,7 +232,7 @@ const Header: React.FC = () => {
               {item.type === 'link' ? (
             <Link 
                   href={item.href} 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph dark:text-white py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
                     isActive(item.href) ? 'active' : ''
               }`}
             >
@@ -245,7 +245,7 @@ const Header: React.FC = () => {
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
                       ? 'text-primary-600 dark:text-primary-400 bg-white dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
-                      : 'text-paragraph dark:text-white border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
+                      : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
                     <ChevronDown 
@@ -254,7 +254,7 @@ const Header: React.FC = () => {
                         (item.label === 'AddOns' && isAddOnsActive()) || 
                         (item.label === 'Outlet Type' && isOutletTypeActive())
                           ? 'text-primary-600 dark:text-primary-400'
-                          : 'text-paragraph dark:text-white'
+                          : 'text-paragraph'
                       }`} 
                     />
                   </button>
@@ -290,7 +290,7 @@ const Header: React.FC = () => {
               className={`outline-none mobile-menu-button w-10 h-10 rounded-full bg-white dark:bg-dark-200 relative ${isMobileMenuOpen ? 'hidden' : ''}`}
               onClick={toggleMobileMenu}
             >
-              <Menu className="w-5 h-5 text-paragraph dark:text-white ml-2" />
+              <Menu className="w-5 h-5 text-paragraph ml-2" />
             </button>
           </li>
         </ul>

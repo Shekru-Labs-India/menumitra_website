@@ -64,7 +64,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
         key={index}
         className={`w-4 h-4 ${
           index < rating 
-            ? 'text-paragraph dark:text-white fill-current' 
+            ? 'text-paragraph fill-current' 
             : 'text-[#A7A7B4] dark:text-[#646463]'
         }`}
       />
@@ -104,7 +104,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                     height={40}
                     className="hidden dark:inline-block mb-6"
                   />
-                  <blockquote className="text-paragraph dark:text-white italic mb-5 leading-[1.75]">
+                  <blockquote className="text-paragraph italic mb-5 leading-[1.75]">
                     "{testimonial.quote}"
                   </blockquote>
                   {/* <div className="mb-7">
