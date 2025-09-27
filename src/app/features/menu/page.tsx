@@ -16,21 +16,21 @@ const MenuPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Digital Menu Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Create, manage, and optimize your restaurant's digital menu with our comprehensive menu management system. 
         Update prices, add new items, and track performance with real-time analytics.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our intuitive menu platform allows you to design beautiful digital menus, manage seasonal items, 
         and provide customers with detailed nutritional information and allergen warnings.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a single restaurant or a chain, our menu management system scales with your business, 
         ensuring consistent branding and easy updates across all locations.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Digital Menu Management - Dynamic Menu Builder with create and customize menus with drag-and-drop simplicity"
@@ -40,7 +40,7 @@ const MenuPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Menu Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our menu management system provides everything you need to create and maintain professional digital menus. 
         From item descriptions to pricing updates, we've designed every feature with restaurant owners in mind.
       </p>
@@ -67,7 +67,7 @@ const MenuPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Business</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our menu management system helps you increase sales, improve customer experience, and streamline operations. 
         With detailed analytics and easy updates, you can optimize your menu for maximum profitability.
       </p>
