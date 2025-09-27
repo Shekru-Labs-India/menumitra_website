@@ -16,21 +16,21 @@ const PointOfSalePage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Point of Sale System
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your restaurant's sales operations with our comprehensive point of sale system. 
         Process orders, handle payments, and manage transactions with ease and efficiency.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our POS system provides intuitive order processing, multiple payment options, and real-time sales tracking 
         to help you manage your restaurant's daily operations effectively.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a small cafe or a large restaurant, our POS system adapts to your 
         business needs and provides the tools you need for successful sales management.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Point of Sale System - Complete POS Solution with all-in-one point of sale system for restaurants"
@@ -40,7 +40,7 @@ const PointOfSalePage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">POS System Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our point of sale system provides everything you need to manage sales operations efficiently. 
         From order processing to payment handling, we've designed every feature with restaurant operations in mind.
       </p>
@@ -67,7 +67,7 @@ const PointOfSalePage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our point of sale system helps you increase sales efficiency, reduce errors, and improve customer service. 
         With streamlined operations and real-time insights, you can focus on growing your business.
       </p>
