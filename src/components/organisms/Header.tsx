@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                     (item.label === 'Features' && isFeaturesActive()) || 
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
-                      ? 'text-primary-600 dark:text-primary-400 bg-white dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
+                      ? 'text-primary-600 bg-white dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
                       : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
@@ -253,7 +253,7 @@ const Header: React.FC = () => {
                         (item.label === 'Features' && isFeaturesActive()) || 
                         (item.label === 'AddOns' && isAddOnsActive()) || 
                         (item.label === 'Outlet Type' && isOutletTypeActive())
-                          ? 'text-primary-600 dark:text-primary-400'
+                          ? 'text-primary-600'
                           : 'text-paragraph'
                       }`} 
                     />
@@ -261,8 +261,8 @@ const Header: React.FC = () => {
                   <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                     {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400 font-medium bg-white dark:bg-dark-200' : ''}`}>
-                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600'}`}>{subItem.icon}</span>}
+                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 font-medium bg-white dark:bg-dark-200' : ''}`}>
+                            {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600' : 'text-gray-600'}`}>{subItem.icon}</span>}
                             {subItem.label}
                           </Link>
                         </li>
@@ -336,7 +336,7 @@ const Header: React.FC = () => {
                       href={item.href} 
                       className={`flex items-center text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(item.href) 
-                          ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
+                          ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600' 
                           : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                       }`}
                       onClick={toggleMobileMenu}
@@ -350,7 +350,7 @@ const Header: React.FC = () => {
                           (item.label === 'Features' && isFeaturesActive()) || 
                           (item.label === 'AddOns' && isAddOnsActive()) || 
                           (item.label === 'Outlet Type' && isOutletTypeActive())
-                            ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
+                            ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600' 
                             : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                         onClick={() => toggleDropdown(item.label.toLowerCase())}
@@ -376,7 +376,7 @@ const Header: React.FC = () => {
                               href={subItem.href} 
                               className={`flex items-center gap-3 py-2 px-4 rounded-lg text-base transition-colors ${
                                 isActive(subItem.href) 
-                                  ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 font-medium' 
+                                  ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 font-medium' 
                                   : 'text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800'
                               }`} 
                               onClick={toggleMobileMenu}
@@ -384,7 +384,7 @@ const Header: React.FC = () => {
                               {subItem.icon && (
                                 <span className={`w-5 h-5 ${
                                   isActive(subItem.href) 
-                                    ? 'text-primary-600 dark:text-primary-400' 
+                                    ? 'text-primary-600' 
                                     : 'text-gray-500'
                                 }`}>
                                   {subItem.icon}
