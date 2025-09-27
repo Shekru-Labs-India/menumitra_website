@@ -43,10 +43,10 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8">
               {/* Address Card */}
-              <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
+              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+                <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
-                    <MapPin className="w-10 h-10 text-paragraph dark:text-white" />
+                    <MapPin className="w-10 h-10 text-paragraph" />
                     <h3 className="mb-0">Our Address</h3>
                   </div>
                   <p className="text-center">{location}</p>
@@ -54,10 +54,10 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Email Card */}
-              <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
+              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+                <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
-                    <Mail className="w-10 h-10 text-paragraph dark:text-white" />
+                    <Mail className="w-10 h-10 text-paragraph" />
                     <h3 className="mb-0">Email Us</h3>
                   </div>
                   <a href={getEmailLink()} className="text-center hover:underline">{email}</a>
@@ -65,10 +65,10 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Phone Card */}
-              <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="200" data-aos-once="true">
-                <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
+              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="200" data-aos-once="true">
+                <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
-                    <Phone className="w-10 h-10 text-paragraph dark:text-white" />
+                    <Phone className="w-10 h-10 text-paragraph" />
                     <h3 className="mb-0">Call Us</h3>
                   </div>
                   <a href={getPhoneLink()} className="text-center hover:underline">{phone}</a>
