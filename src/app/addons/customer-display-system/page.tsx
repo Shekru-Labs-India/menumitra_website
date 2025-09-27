@@ -16,21 +16,21 @@ const CustomerDisplaySystemPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Customer Display System
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Enhance your customer experience with our interactive customer display system. 
         Showcase your menu, promotions, and order status with engaging digital displays.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our customer display system provides dynamic menu presentations, real-time order updates, and promotional content 
         to engage customers and improve their dining experience.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a quick-service restaurant or a casual dining establishment, our system helps you 
         communicate effectively with your customers and drive sales.
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Customer Display System - Interactive Customer Displays with engaging digital displays for enhanced customer experience"
@@ -40,7 +40,7 @@ const CustomerDisplaySystemPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Customer Display Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our customer display system provides everything you need to engage and inform your customers. 
         From menu presentations to order tracking, we've designed every feature with customer experience in mind.
       </p>
@@ -67,7 +67,7 @@ const CustomerDisplaySystemPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our customer display system helps you increase sales, improve customer satisfaction, and reduce wait times. 
         With engaging displays and real-time updates, you can create a better dining experience.
       </p>
