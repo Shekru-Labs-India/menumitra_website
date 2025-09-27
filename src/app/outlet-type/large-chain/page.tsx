@@ -30,7 +30,7 @@ const LargeChainPage: React.FC = () => {
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Large Chain Management - Enterprise Chain Operations with comprehensive management for large restaurant chains"

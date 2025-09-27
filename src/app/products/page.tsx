@@ -180,7 +180,7 @@ const ProductsPage: React.FC = () => {
             </div>
             
             {productsV13.map((product, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5">
+              <div key={index} className="bg-white shadow-box rounded-medium p-2.5">
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
                   <div className="flex items-center justify-center gap-4 mb-8">
                     <img
@@ -235,7 +235,7 @@ const ProductsPage: React.FC = () => {
             data-aos-once="true"
           >
             {/* Production Environment */}
-            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8 max-w-4xl w-full">
+            <div className="bg-white shadow-box rounded-medium p-8 max-w-4xl w-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
                   <Globe className="w-6 h-6 text-green-600" />
@@ -305,7 +305,7 @@ const ProductsPage: React.FC = () => {
             data-aos-once="true"
           >
             {productsV2.map((product, index) => (
-              <div key={index} className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-2.5">
+              <div key={index} className="bg-white shadow-box rounded-medium p-2.5">
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5 text-center">
                   <div className="flex items-center justify-center gap-4 mb-8">
                     <img
@@ -369,7 +369,7 @@ const ProductsPage: React.FC = () => {
             data-aos-once="true"
           >
             {/* Production Environment */}
-            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8">
+            <div className="bg-white shadow-box rounded-medium p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
                   <Globe className="w-6 h-6 text-green-600" />
@@ -421,7 +421,7 @@ const ProductsPage: React.FC = () => {
             </div>
 
             {/* Testing Environment */}
-            <div className="bg-white dark:bg-dark-200 shadow-box rounded-medium p-8">
+            <div className="bg-white shadow-box rounded-medium p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center gap-3">
                   <Monitor className="w-6 h-6 text-orange-600" />

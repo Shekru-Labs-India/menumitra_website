@@ -118,9 +118,9 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
   onSuccess,
   onError,
   onSubmit,
-  containerClassName = "bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav",
-  formClassName = "bg-white dark:bg-dark-200 border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5",
-  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white dark:bg-dark-200 focus:border-primary dark:focus:border-primary duration-300 transition-all",
+  containerClassName = "bg-white rounded-medium p-2.5 shadow-nav",
+  formClassName = "bg-white border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-12 max-md:p-5",
+  fieldClassName = "block w-full text-sm rounded-[48px] border border-borderColour dark:border-borderColour-dark py-2.5 px-5 text-paragraph-light placeholder:text-paragraph-light dark:placeholder:text-paragraph-light outline-none bg-white focus:border-primary dark:focus:border-primary duration-300 transition-all",
   buttonClassName = "btn disabled:opacity-50 disabled:cursor-not-allowed"
 }) => {
   // Initialize form data based on fields

@@ -88,7 +88,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
           <div className="flex flex-wrap max-md:flex-col gap-6 gap-y-8 justify-center mb-12">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white dark:bg-dark-200 rounded-medium p-2.5 md:w-[calc(50%_-_20px)] lg:w-[calc(33.33%_-_20px)] shadow-nav">
+              <div key={testimonial.id} className="bg-white rounded-medium p-2.5 md:w-[calc(50%_-_20px)] lg:w-[calc(33.33%_-_20px)] shadow-nav">
                 <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-7">
                   <Image
                     src={testimonial.hotelLogo}

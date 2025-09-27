@@ -258,10 +258,10 @@ const Header: React.FC = () => {
                       }`} 
                     />
                   </button>
-                  <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white dark:bg-dark-200 group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
+                  <ul className="absolute min-w-[280px] left-0 top-12 p-5 opacity-0 scale-y-0 origin-top duration-500 group-hover:scale-y-100 bg-white group-hover:opacity-100 rounded-md shadow-lg [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColour dark:[&>*:not(:last-child)]:border-borderColour-dark [&>*:not(:first-child)]:mt-2.5 z-10">
                     {item.items.map((subItem, subIndex) => (
                         <li key={subIndex} className="relative overflow-hidden text-base capitalize text-paragraph pb-2.5 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph dark:before:bg-white before:transition-transform before:duration-500 duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
-                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 font-medium bg-white dark:bg-dark-200' : ''}`}>
+                          <Link href={subItem.href} className={`flex items-center gap-3 ${isActive(subItem.href) ? 'text-primary-600 font-medium bg-white' : ''}`}>
                             {subItem.icon && <span className={`${isActive(subItem.href) ? 'text-primary-600' : 'text-gray-600'}`}>{subItem.icon}</span>}
                             {subItem.label}
                           </Link>
@@ -287,7 +287,7 @@ const Header: React.FC = () => {
           {/* Mobile Menu Toggle */}
           <li className={`max-lg:inline-block lg:hidden ${isMobileMenuOpen ? 'hidden' : ''}`}>
             <button 
-              className={`outline-none mobile-menu-button w-10 h-10 rounded-full bg-white dark:bg-dark-200 relative ${isMobileMenuOpen ? 'hidden' : ''}`}
+              className={`outline-none mobile-menu-button w-10 h-10 rounded-full bg-white relative ${isMobileMenuOpen ? 'hidden' : ''}`}
               onClick={toggleMobileMenu}
             >
               <Menu className="w-5 h-5 text-paragraph ml-2" />

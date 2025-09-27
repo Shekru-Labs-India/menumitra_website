@@ -30,7 +30,7 @@ const QSRPage: React.FC = () => {
       </p>
 
       {/* Feature Image */}
-      <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+      <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
           src="/images/service-single1.png"
           alt="MenuMitra Quick Service Restaurant Management - High-Speed Operations optimized for fast-paced quick service environments"

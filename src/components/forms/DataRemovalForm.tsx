@@ -206,7 +206,7 @@ export default function DataRemovalForm() {
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
                     maxLength={10}
-                    className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white dark:bg-dark-200 dark:border-[#31332F] border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
+                    className="bg-transparent placeholder:text-dark text-black text-light focus:outline-none  leading-[1.5] border rounded-[60px] bg-white dark:border-[#31332F] border-borderColour max-lg:col-span-full lg:col-span-8 h-full ps-5 max-lg:py-3.5 focus:border-primary dark:focus:border-primary  duration-300 transition-all outline-none"
                   />
                   <button 
                     type="submit"

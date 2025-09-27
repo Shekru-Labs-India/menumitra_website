@@ -22,7 +22,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
     </div>
     <div className="max-w-[1068px] mx-auto -mt-15 max-md:hidden relative -z-10">
       <div className="relative max-lg:py-25 max-xl:py-150 py-[175px] w-full z-10">
-        <div className="relative flex flex-row align-center justify-center mx-auto w-150 h-150 rounded-full bg-white dark:bg-dark-200 shadow-nav">
+        <div className="relative flex flex-row align-center justify-center mx-auto w-150 h-150 rounded-full bg-white shadow-nav">
           <div className="flex flex-row align-center justify-center mx-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-[122px] h-[122px] rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
             <span className="inline-block text-primary text-[30px] font-semibold py-[46px] px-[25px] leading-none">
               aplio
@@ -30,7 +30,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           </div>
         </div>
         <div className="w-1/2 h-full block absolute top-0 left-0 bottom-auto right-auto">
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-0 left-0 right-auto bottom-auto">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-0 left-0 right-auto bottom-auto">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/twitter.svg"
@@ -124,7 +124,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
               </defs>
             </svg>
           </div>
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-1/2 -translate-y-1/2 left-10 bottom-auto right-auto">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-1/2 -translate-y-1/2 left-10 bottom-auto right-auto">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/snapchat.svg"
@@ -218,7 +218,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
               </defs>
             </svg>
           </div>
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-auto left-0 bottom-0 right-auto">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-auto left-0 bottom-0 right-auto">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/dropbox.svg"
@@ -314,7 +314,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           </div>
         </div>
         <div className="w-1/2 h-full block absolute top-0 left-auto bottom-auto right-0">
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-0 left-auto right-0 bottom-auto">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-0 left-auto right-0 bottom-auto">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/slack.svg"
@@ -408,7 +408,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
               </defs>
             </svg>
           </div>
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-1/2 -translate-y-1/2 left-auto bottom-auto right-10">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-1/2 -translate-y-1/2 left-auto bottom-auto right-10">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/asana.svg"
@@ -502,7 +502,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
               </defs>
             </svg>
           </div>
-          <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-auto left-auto bottom-0 right-0">
+          <div className="bg-white shadow-box  p-2.5 w-25 xl:w-[120px] aspect-square rounded-full absolute top-auto left-auto bottom-0 right-0">
             <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full 1xl:p-2.5">
               <img
                 src="images/google-drive.svg"
@@ -600,7 +600,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
       </div>
     </div>
     <div className=" grid grid-cols-2 gap-8 md:hidden mt-10">
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/figma.svg"
@@ -609,7 +609,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           />
         </div>
       </div>
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/dropbox.svg"
@@ -618,7 +618,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           />
         </div>
       </div>
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/twitter.svg"
@@ -627,7 +627,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           />
         </div>
       </div>
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/slack.svg"
@@ -636,7 +636,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           />
         </div>
       </div>
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/google-drive.svg"
@@ -645,7 +645,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
           />
         </div>
       </div>
-      <div className="bg-white dark:bg-dark-200 shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
+      <div className="bg-white shadow-box  p-2.5 w-25 aspect-square rounded-full mx-auto">
         <div className="flex items-center justify-center border border-dashed  border-gray-100 dark:border-borderColour-dark text-center aspect-square rounded-full ">
           <img
             src="images/asana.svg"

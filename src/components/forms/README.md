@@ -73,8 +73,8 @@ export default function MyPage() {
 | `onSuccess` | `(data: any) => void` | `undefined` | Success callback |
 | `onError` | `(error: any) => void` | `undefined` | Error callback |
 | `onSubmit` | `(formData: any) => void` | `undefined` | Submit callback |
-| `containerClassName` | `string` | `"bg-white dark:bg-dark-200..."` | Container styling |
-| `formClassName` | `string` | `"bg-white dark:bg-dark-200..."` | Form styling |
+| `containerClassName` | `string` | `"bg-white..."` | Container styling |
+| `formClassName` | `string` | `"bg-white..."` | Form styling |
 | `fieldClassName` | `string` | `"block w-full text-sm..."` | Field styling |
 | `buttonClassName` | `string` | `"btn disabled:opacity-50..."` | Button styling |
 

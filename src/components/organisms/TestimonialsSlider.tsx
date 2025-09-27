@@ -276,7 +276,7 @@ const TestimonialsSlider: React.FC<TestimonialsSliderProps> = ({
             >
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav">
+                  <div className="bg-white rounded-medium p-2.5 shadow-nav">
                     <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-7">
                       <Image
                         src={testimonial.hotelLogo}

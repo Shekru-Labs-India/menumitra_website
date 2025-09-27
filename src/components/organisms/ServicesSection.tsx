@@ -31,7 +31,7 @@ const ServicesSection: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark max-lg:p-5 p-10">
                 <Image 
                   src="/images/services/investment.svg" 
@@ -52,7 +52,7 @@ const ServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5">
                 <Image 
                   src="/images/services/sales.svg" 
@@ -73,7 +73,7 @@ const ServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5">
                 <Image 
                   src="/images/services/loan.svg" 
@@ -94,7 +94,7 @@ const ServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5">
                 <Image 
                   src="/images/services/finance.svg" 
@@ -115,7 +115,7 @@ const ServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5">
                 <Image 
                   src="/images/services/effeciency.svg" 
@@ -136,7 +136,7 @@ const ServicesSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-dark-200 rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="bg-white rounded-medium p-2.5 shadow-nav relative scale-100 hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="border border-dashed rounded border-gray-100 dark:border-borderColour-dark p-10 h-full max-lg:p-5">
                 <Image 
                   src="/images/services/fund.svg" 
