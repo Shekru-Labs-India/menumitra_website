@@ -72,7 +72,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   };
 
   return (
-    <section className={`bg-white dark:bg-dark-300 max-md:py-20 pt-150 pb-150 relative ${className}`}>
+    <section className={`bg-white max-md:py-20 pt-150 pb-150 relative ${className}`}>
       <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 bg-[url('/images/service-bg.png')] bg-no-repeat bg-center opacity-70 w-full h-full md:hidden"></div>
       <div className="container relative">
         <div className="text-center max-w-[550px] mx-auto mb-16">

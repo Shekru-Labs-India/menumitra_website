@@ -7,7 +7,7 @@ interface TopIntegrationSectionProps {
 
 const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className = '' }) => {
   return (
-    <section className="bg-white dark:bg-dark-300  pb-150 max-md:pb-20">
+    <section className="bg-white  pb-150 max-md:pb-20">
   <div className="container relative z-10">
     <div className="text-center max-w-[620px] mx-auto">
       <p className="section-tagline">Top Integration</p>

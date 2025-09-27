@@ -7,7 +7,7 @@ import GraphBackground from '@/components/atoms/GraphBackground';
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="bg-white dark:bg-dark-300 pb-150 relative sm:overflow-hidden">
+    <section className="bg-white pb-150 relative sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 bg-[url('/images/service-bg.png')] bg-no-repeat bg-cover bg-center opacity-70 w-full h-full sm:hidden"></div>
       <div className="container">
         <div className="mb-12">

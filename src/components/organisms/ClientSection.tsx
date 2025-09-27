@@ -52,7 +52,7 @@ const ClientSection: React.FC = () => {
   };
 
   return (
-    <section className=" bg-white dark:bg-dark-300 overflow-hidden relative pb-150 max-md:pb-20 pt-[140px]">
+    <section className=" bg-white overflow-hidden relative pb-150 max-md:pb-20 pt-[140px]">
   <div className="container relative z-10">
     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-center">
       <div className="relative flex max-md:justify-center justify-end items-center">

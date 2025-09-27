@@ -8,7 +8,7 @@ interface SolutionSectionProps {
 
 const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => {
   return (
-    <section className=" bg-white dark:bg-dark-300 overflow-hidden relative pt-[160px] pb-150 lg:pb-15 max-lg:pt-20 max-lg:pb-150">
+    <section className=" bg-white overflow-hidden relative pt-[160px] pb-150 lg:pb-15 max-lg:pt-20 max-lg:pb-150">
   <div className="container ">
     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-center">
       <div className="max-md:order-2">
