@@ -51,14 +51,7 @@ const MobileDeviceOverlay: React.FC<MobileDeviceOverlayProps> = ({
           alt="MenuMitra mobile app interface" 
           width={285} 
           height={160} 
-          className="inline-block dark:hidden rounded-t-medium w-full shadow-lg" 
-        />
-        <Image 
-          src="/images/payment/payment-hero-device-dark.png" 
-          alt="MenuMitra mobile app interface dark mode" 
-          width={285} 
-          height={160} 
-          className="hidden dark:inline-block rounded-t-medium w-full shadow-lg" 
+          className="inline-block rounded-t-medium w-full shadow-lg" 
         />
       </div>
       
@@ -70,14 +63,7 @@ const MobileDeviceOverlay: React.FC<MobileDeviceOverlayProps> = ({
             alt="MenuMitra QR menu dashboard" 
             width={600} 
             height={450} 
-            className="inline-block dark:hidden w-full rounded-medium shadow-nav" 
-          />
-          <Image 
-            src="/images/payment/payment-hero-dark.png" 
-            alt="MenuMitra QR menu dashboard dark mode" 
-            width={600} 
-            height={450} 
-            className="hidden dark:inline-block w-full rounded-medium shadow-nav" 
+            className="inline-block w-full rounded-medium shadow-nav" 
           />
         </div>
       )}

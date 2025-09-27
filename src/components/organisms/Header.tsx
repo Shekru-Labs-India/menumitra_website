@@ -232,7 +232,7 @@ const Header: React.FC = () => {
               {item.type === 'link' ? (
             <Link 
                   href={item.href} 
-              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
+              className={`font-Inter flex items-center text-base font-medium leading-8 text-paragraph py-[5px] px-5 lg:px-4 xl:px-5 border rounded-large border-transparent hover:bg-white hover:border-borderColour dark:hover:border-borderColour/10 duration-500 hover:duration-500 transition-colors ${
                     isActive(item.href) ? 'active' : ''
               }`}
             >
@@ -245,7 +245,7 @@ const Header: React.FC = () => {
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
                       ? 'text-primary-600 bg-white border-primary-700' 
-                      : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
+                      : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
                     <ChevronDown 
@@ -337,7 +337,7 @@ const Header: React.FC = () => {
                       className={`flex items-center text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(item.href) 
                           ? 'bg-primary-50 text-primary-600' 
-                          : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
+                          : 'text-gray-700 hover:bg-gray-50'
                       }`}
                       onClick={toggleMobileMenu}
                     >
@@ -351,7 +351,7 @@ const Header: React.FC = () => {
                           (item.label === 'AddOns' && isAddOnsActive()) || 
                           (item.label === 'Outlet Type' && isOutletTypeActive())
                             ? 'bg-primary-50 text-primary-600' 
-                            : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
+                            : 'text-gray-700 hover:bg-gray-50'
                         }`}
                         onClick={() => toggleDropdown(item.label.toLowerCase())}
                       >
@@ -377,7 +377,7 @@ const Header: React.FC = () => {
                               className={`flex items-center gap-3 py-2 px-4 rounded-lg text-base transition-colors ${
                                 isActive(subItem.href) 
                                   ? 'bg-primary-50 text-primary-600 font-medium' 
-                                  : 'text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800'
+                                  : 'text-gray-600 hover:bg-gray-50'
                               }`} 
                               onClick={toggleMobileMenu}
                             >

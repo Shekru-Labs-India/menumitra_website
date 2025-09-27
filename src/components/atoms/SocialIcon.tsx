@@ -64,7 +64,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ platform, href, target, classNa
   return (
     <li>
       <a href={href} target={target} className={`transition-all hover:scale-110 ${className}`}>
-        <div className="text-gray-600 hover:text-gray-900 dark:hover:text-white transition-colors duration-300">
+        <div className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
           {getIcon(platform)}
         </div>
       </a>
