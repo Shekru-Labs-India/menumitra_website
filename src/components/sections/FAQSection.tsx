@@ -33,7 +33,19 @@ const FAQSection: React.FC = () => {
     {
       question: "How do I get started with MenuMitra?",
       answer: "Getting started is easy! Contact our team to schedule a personalized demo where we'll show you how MenuMitra can benefit your specific restaurant. We'll help you choose the right modules and provide full setup support."
-    }
+    },
+    {
+      question: "Is MenuMitra suitable for different types of restaurants?",
+      answer: "Yes! MenuMitra is designed to work for various restaurant types including fine dining, cafes, QSR (Quick Service Restaurants), pizzerias, bakeries, food courts, cloud kitchens, and large restaurant chains. We offer customized solutions for each outlet type."
+    },
+    {
+      question: "What devices and platforms does MenuMitra support?",
+      answer: "MenuMitra works on multiple platforms including Android tablets, iPads, Windows PCs, and smartphones. Our system is cloud-based, so you can access it from anywhere with an internet connection. We also provide dedicated apps for different roles like waiters, captains, and customers."
+    },
+    {
+      question: "How does the Kitchen Display System (KDS) work?",
+      answer: "Our KDS displays orders in real-time to your kitchen staff, organized by preparation time and priority. It helps reduce order errors, improves kitchen efficiency, and provides better communication between front-of-house and kitchen staff. Orders can be marked as completed, and the system tracks preparation times."
+    },
   ];
 
   return (
