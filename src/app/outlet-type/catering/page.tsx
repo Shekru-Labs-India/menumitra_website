@@ -16,15 +16,15 @@ const CateringPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Catering Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your catering operations with our comprehensive management system. 
         Manage events, coordinate deliveries, and ensure exceptional service for all your catering clients.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our catering management platform provides event planning, menu customization, and delivery coordination 
         to help you deliver memorable experiences and build lasting client relationships.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're catering corporate events or private parties, our system helps you 
         manage all aspects of your catering business efficiently.
       </p>
@@ -40,7 +40,7 @@ const CateringPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Catering Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our catering management system provides everything you need to operate a successful catering business. 
         From event planning to delivery coordination, we've designed every feature with catering operations in mind.
       </p>
@@ -67,7 +67,7 @@ const CateringPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Catering Business</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our catering management system helps you deliver exceptional events, build client relationships, and grow your business. 
         With specialized tools and comprehensive planning, you can focus on creating memorable experiences.
       </p>

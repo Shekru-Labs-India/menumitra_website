@@ -75,7 +75,7 @@ const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
           <h2 className="text-2xl font-semibold mb-4 !mt-0">{title}</h2>
         )}
         {showDescription && (
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-gray-600 mb-6">
             {description}
           </p>
         )}

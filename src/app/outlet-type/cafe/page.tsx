@@ -16,15 +16,15 @@ const CafePage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Cafe Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your cafe operations with our specialized management system designed for coffee shops and cafes. 
         From order management to customer loyalty, we provide everything you need to run a successful cafe.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our cafe management platform features quick order processing, inventory tracking for coffee beans and pastries, 
         and customer relationship tools to build a loyal customer base.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're a small neighborhood cafe or a busy downtown coffee shop, our system scales with your business 
         and helps you deliver exceptional coffee experiences.
       </p>
@@ -40,7 +40,7 @@ const CafePage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Cafe Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our cafe management system provides specialized features for coffee shops and cafes. 
         From beverage customization to loyalty programs, we've designed every feature with cafe owners in mind.
       </p>
@@ -67,7 +67,7 @@ const CafePage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Cafe</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our cafe management system helps you serve more customers faster, reduce waste, and build a loyal customer base. 
         With features designed specifically for cafes, you can focus on crafting the perfect cup of coffee.
       </p>

@@ -16,15 +16,15 @@ const FoodTruckPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Food Truck Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Optimize your food truck operations with our mobile-friendly management system. 
         Manage locations, track inventory, and serve customers efficiently wherever you go.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food truck management platform provides location tracking, inventory management, and customer engagement tools 
         to help you maximize sales and build a loyal customer base on the go.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a single food truck or a fleet, our system helps you 
         manage operations efficiently and grow your mobile food business.
       </p>
@@ -40,7 +40,7 @@ const FoodTruckPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Food Truck Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food truck management system provides everything you need to operate a successful mobile food business. 
         From location management to customer engagement, we've designed every feature with food truck operations in mind.
       </p>
@@ -67,7 +67,7 @@ const FoodTruckPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Food Truck</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food truck management system helps you increase sales, build customer loyalty, and optimize operations. 
         With mobile-friendly tools and location-based features, you can grow your mobile food business effectively.
       </p>

@@ -99,7 +99,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
             <h2 className="mb-5 max-lg:text-[32px] text-[48px] font-semibold">
               Ready to transform your restaurant operations?
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Book a personalized demo and see how MenuMitra can streamline your restaurant management, 
               from billing to inventory, all in one powerful platform.
             </p>

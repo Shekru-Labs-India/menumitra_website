@@ -28,7 +28,7 @@ const BookDemoFormSection: React.FC = () => {
           <div className="mb-12 text-center max-w-[600px] mx-auto">
             {showSectionTitle && <h2>{title}</h2>}
             {showSectionDescription && (
-              <p className="text-lg text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
+              <p className="text-lg text-gray-600 mt-4 leading-relaxed">
                 {description}
               </p>
             )}

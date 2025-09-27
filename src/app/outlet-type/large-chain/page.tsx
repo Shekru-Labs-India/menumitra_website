@@ -16,15 +16,15 @@ const LargeChainPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Large Chain Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Scale your restaurant chain operations with our enterprise-grade management system. 
         Coordinate multiple locations, maintain consistency, and optimize performance across your entire network.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our large chain management platform provides centralized control, standardized operations, and comprehensive analytics 
         to help you maintain quality and drive growth across all your restaurant locations.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a regional chain or a national franchise network, our system helps you 
         maintain operational excellence and drive consistent growth.
       </p>
@@ -40,7 +40,7 @@ const LargeChainPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Large Chain Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our large chain management system provides everything you need to operate a successful restaurant chain. 
         From centralized control to performance optimization, we've designed every feature with chain operations in mind.
       </p>
@@ -67,7 +67,7 @@ const LargeChainPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant Chain</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our large chain management system helps you maintain consistency, optimize performance, and drive growth across all locations. 
         With centralized control and comprehensive analytics, you can scale your chain effectively.
       </p>

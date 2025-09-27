@@ -16,15 +16,15 @@ const QSRPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Quick Service Restaurant Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Optimize your quick service restaurant operations with our high-speed management system. 
         Serve customers faster, reduce wait times, and maximize efficiency in your fast-paced environment.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our QSR management platform provides rapid order processing, streamlined kitchen operations, and efficient customer flow 
         to help you serve more customers in less time while maintaining quality and accuracy.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a burger joint, pizza place, or sandwich shop, our system adapts to your 
         fast-paced operations and helps you deliver quick, quality service.
       </p>
@@ -40,7 +40,7 @@ const QSRPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">QSR Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our QSR management system provides everything you need to operate a fast, efficient quick service restaurant. 
         From rapid order processing to streamlined operations, we've designed every feature with speed and efficiency in mind.
       </p>
@@ -67,7 +67,7 @@ const QSRPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your QSR</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our QSR management system helps you serve customers faster, reduce wait times, and increase throughput. 
         With optimized operations and real-time monitoring, you can maximize efficiency and profitability.
       </p>

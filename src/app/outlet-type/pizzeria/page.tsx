@@ -16,15 +16,15 @@ const PizzeriaPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Pizzeria Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your pizzeria operations with our specialized management system. 
         Manage pizza orders, track ingredients, and optimize your kitchen workflow for maximum efficiency.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our pizzeria management platform provides order management, ingredient tracking, and kitchen optimization 
         to help you serve delicious pizzas quickly and consistently.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a traditional pizzeria or a modern pizza chain, our system helps you 
         maintain quality, speed, and customer satisfaction.
       </p>
@@ -40,7 +40,7 @@ const PizzeriaPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Pizzeria Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our pizzeria management system provides everything you need to operate a successful pizza business. 
         From order processing to ingredient management, we've designed every feature with pizzeria operations in mind.
       </p>
@@ -67,7 +67,7 @@ const PizzeriaPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Pizzeria</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our pizzeria management system helps you serve customers faster, maintain consistent quality, and optimize your operations. 
         With specialized tools and automated processes, you can focus on creating delicious pizzas.
       </p>

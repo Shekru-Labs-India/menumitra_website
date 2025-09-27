@@ -337,7 +337,7 @@ const Header: React.FC = () => {
                       className={`flex items-center text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(item.href) 
                           ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
-                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                          : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                       }`}
                       onClick={toggleMobileMenu}
                     >
@@ -351,7 +351,7 @@ const Header: React.FC = () => {
                           (item.label === 'AddOns' && isAddOnsActive()) || 
                           (item.label === 'Outlet Type' && isOutletTypeActive())
                             ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400' 
-                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                            : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                         onClick={() => toggleDropdown(item.label.toLowerCase())}
                       >

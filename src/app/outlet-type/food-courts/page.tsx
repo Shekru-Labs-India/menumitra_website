@@ -16,15 +16,15 @@ const FoodCourtsPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Food Court Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Optimize your food court operations with our specialized management system. 
         Coordinate multiple vendors, manage shared spaces, and ensure smooth operations across all food outlets.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food court management platform provides vendor coordination, shared resource management, and centralized operations 
         to help you maintain efficiency and quality across all food court outlets.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a mall food court or a corporate dining facility, our system helps you 
         coordinate operations and deliver exceptional dining experiences.
       </p>
@@ -40,7 +40,7 @@ const FoodCourtsPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Food Court Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food court management system provides everything you need to coordinate multiple vendors and maintain efficient operations. 
         From vendor management to shared resource coordination, we've designed every feature with food court operations in mind.
       </p>
@@ -67,7 +67,7 @@ const FoodCourtsPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Food Court</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our food court management system helps you maintain operational efficiency, ensure quality standards, and optimize vendor performance. 
         With centralized coordination and shared resources, you can create a thriving food court environment.
       </p>

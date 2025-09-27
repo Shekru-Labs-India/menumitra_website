@@ -133,7 +133,7 @@ export const StyledBookDemoForm = () => {
         showBackground={false}
         containerClassName="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-xl"
         formClassName="bg-transparent border-2 border-dashed border-blue-200 dark:border-blue-800 rounded-lg p-8"
-        fieldClassName="block w-full text-sm rounded-lg border-2 border-blue-200 dark:border-blue-700 py-3 px-4 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none bg-white dark:bg-gray-800 focus:border-blue-500 dark:focus:border-blue-400 duration-300 transition-all"
+        fieldClassName="block w-full text-sm rounded-lg border-2 border-blue-200 dark:border-blue-700 py-3 px-4 text-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-500 outline-none bg-white dark:bg-gray-800 focus:border-blue-500 dark:focus:border-blue-400 duration-300 transition-all"
         buttonClassName="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         onSuccess={(data) => {
           console.log('Beta signup successful:', data);

@@ -16,15 +16,15 @@ const BarPubPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Bar & Pub Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Optimize your bar and pub operations with our specialized management system. 
         Manage drinks, food service, and entertainment to create the perfect atmosphere for your customers.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bar and pub management platform provides beverage management, food service coordination, and entertainment scheduling 
         to help you deliver exceptional experiences and maximize profitability.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a neighborhood pub or a trendy bar, our system helps you 
         manage all aspects of your establishment efficiently.
       </p>
@@ -40,7 +40,7 @@ const BarPubPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Bar & Pub Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bar and pub management system provides everything you need to operate a successful establishment. 
         From beverage management to entertainment coordination, we've designed every feature with bar operations in mind.
       </p>
@@ -67,7 +67,7 @@ const BarPubPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Bar & Pub</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bar and pub management system helps you increase sales, improve customer experience, and optimize operations. 
         With specialized tools and integrated services, you can create a thriving establishment.
       </p>

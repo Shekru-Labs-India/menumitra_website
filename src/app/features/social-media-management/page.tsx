@@ -16,15 +16,15 @@ const SocialMediaManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Social Media Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Build your restaurant's online presence with our comprehensive social media management system. 
         Create, schedule, and manage content across multiple platforms to engage with your customers.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our social media platform helps you showcase your food, promote special offers, and build a community 
         of loyal customers through engaging content and strategic marketing campaigns.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single location or multiple outlets, our system helps you maintain 
         consistent branding and effective social media presence across all platforms.
       </p>
@@ -40,7 +40,7 @@ const SocialMediaManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Social Media Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our social media management system provides everything you need to build a strong online presence. 
         From content creation to analytics, we've designed every feature with restaurant marketing in mind.
       </p>
@@ -67,7 +67,7 @@ const SocialMediaManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our social media management system helps you build brand awareness, engage with customers, and drive sales. 
         With automated scheduling and comprehensive analytics, you can focus on creating great content.
       </p>

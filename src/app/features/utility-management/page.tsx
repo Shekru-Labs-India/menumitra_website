@@ -16,15 +16,15 @@ const UtilityManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Utility Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Optimize your restaurant's utility consumption and reduce operational costs with our comprehensive utility management system. 
         Monitor energy usage, water consumption, and other utilities to improve efficiency.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our utility management platform provides real-time monitoring, automated alerts, and detailed analytics 
         to help you identify opportunities for cost savings and environmental sustainability.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a single location or multiple outlets, our system helps you track 
         and optimize utility consumption across all your restaurant operations.
       </p>
@@ -40,7 +40,7 @@ const UtilityManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Utility Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our utility management system provides everything you need to monitor and optimize your restaurant's utility consumption. 
         From energy tracking to cost analysis, we've designed every feature with efficiency in mind.
       </p>
@@ -67,7 +67,7 @@ const UtilityManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our utility management system helps you reduce operational costs, improve efficiency, and contribute to environmental sustainability. 
         With detailed monitoring and automated alerts, you can optimize your utility consumption.
       </p>

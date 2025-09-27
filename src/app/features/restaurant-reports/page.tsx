@@ -16,15 +16,15 @@ const RestaurantReportsPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Restaurant Reports & Analytics
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Make data-driven decisions with our comprehensive restaurant reporting and analytics system. 
         Track performance, identify trends, and optimize your operations with detailed insights.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our analytics platform provides real-time dashboards, customizable reports, and predictive insights 
         to help you understand your business performance and make informed decisions.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're analyzing sales trends or optimizing staff schedules, our reporting tools 
         provide the insights you need to grow your restaurant business.
       </p>
@@ -40,7 +40,7 @@ const RestaurantReportsPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Reporting Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our restaurant reporting system provides comprehensive analytics across all aspects of your business. 
         From sales performance to customer behavior, we've designed every report with restaurant owners in mind.
       </p>
@@ -67,7 +67,7 @@ const RestaurantReportsPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Business</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our restaurant reporting system helps you identify opportunities, optimize operations, and increase profitability. 
         With detailed analytics and actionable insights, you can make informed decisions to grow your business.
       </p>

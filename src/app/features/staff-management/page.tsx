@@ -16,15 +16,15 @@ const StaffManagementPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Staff Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your restaurant's workforce management with our comprehensive staff management system. 
         Handle scheduling, payroll, performance tracking, and employee development in one centralized platform.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our staff management platform helps you optimize labor costs, improve employee satisfaction, and maintain 
         consistent service quality across all shifts and locations.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're managing a small team or a large workforce, our system scales with your business 
         and provides the tools you need for effective staff management.
       </p>
@@ -40,7 +40,7 @@ const StaffManagementPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Staff Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our staff management system provides everything you need to manage your restaurant workforce effectively. 
         From scheduling to performance tracking, we've designed every feature with restaurant operations in mind.
       </p>
@@ -67,7 +67,7 @@ const StaffManagementPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our staff management system helps you reduce labor costs, improve employee satisfaction, and maintain consistent service quality. 
         With automated scheduling and performance tracking, you can optimize your workforce effectively.
       </p>

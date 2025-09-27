@@ -16,15 +16,15 @@ const BakeriesPage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Bakery Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Streamline your bakery operations with our specialized management system. 
         Manage fresh baked goods, track inventory, and optimize production schedules for maximum freshness.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bakery management platform provides production planning, freshness tracking, and customer ordering systems 
         to help you deliver the freshest baked goods while minimizing waste and maximizing profitability.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a small artisan bakery or a large commercial operation, our system helps you 
         maintain quality, freshness, and efficient production processes.
       </p>
@@ -40,7 +40,7 @@ const BakeriesPage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Bakery Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bakery management system provides everything you need to operate a successful bakery business. 
         From production planning to freshness tracking, we've designed every feature with bakery operations in mind.
       </p>
@@ -67,7 +67,7 @@ const BakeriesPage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Bakery</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our bakery management system helps you maintain freshness, reduce waste, and optimize production. 
         With specialized tools and automated processes, you can focus on creating delicious baked goods.
       </p>

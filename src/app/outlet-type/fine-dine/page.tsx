@@ -16,15 +16,15 @@ const FineDinePage: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
         Fine Dining Management
       </h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Elevate your fine dining restaurant operations with our sophisticated management system. 
         Deliver exceptional dining experiences with premium service and elegant presentation.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our fine dining management platform provides advanced reservation systems, wine pairing recommendations, 
         and detailed service protocols to ensure every guest receives a memorable dining experience.
       </p>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+      <p className="text-lg text-gray-600 mb-8">
         Whether you're running a Michelin-starred restaurant or an upscale dining establishment, our system helps you 
         maintain the highest standards of service and culinary excellence.
       </p>
@@ -40,7 +40,7 @@ const FineDinePage: React.FC = () => {
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Fine Dining Management Features</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our fine dining management system provides everything you need to deliver exceptional dining experiences. 
         From reservation management to service protocols, we've designed every feature with fine dining excellence in mind.
       </p>
@@ -67,7 +67,7 @@ const FineDinePage: React.FC = () => {
       />
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Benefits for Your Fine Dining Restaurant</h3>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 mb-6">
         Our fine dining management system helps you deliver exceptional service, maintain high standards, and create memorable experiences. 
         With sophisticated tools and detailed protocols, you can exceed guest expectations.
       </p>
