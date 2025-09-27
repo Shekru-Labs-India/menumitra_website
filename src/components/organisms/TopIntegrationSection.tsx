@@ -23,7 +23,7 @@ const TopIntegrationSection: React.FC<TopIntegrationSectionProps> = ({ className
     <div className="max-w-[1068px] mx-auto -mt-15 max-md:hidden relative -z-10">
       <div className="relative max-lg:py-25 max-xl:py-150 py-[175px] w-full z-10">
         <div className="relative flex flex-row align-center justify-center mx-auto w-150 h-150 rounded-full bg-white shadow-nav">
-          <div className="flex flex-row align-center justify-center mx-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-[122px] h-[122px] rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
+          <div className="flex flex-row align-center justify-center mx-auto absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-[122px] h-[122px] rounded-full bg-primary-100">
             <span className="inline-block text-primary text-[30px] font-semibold py-[46px] px-[25px] leading-none">
               aplio
             </span>

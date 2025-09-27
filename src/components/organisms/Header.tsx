@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                     (item.label === 'Features' && isFeaturesActive()) || 
                     (item.label === 'AddOns' && isAddOnsActive()) || 
                     (item.label === 'Outlet Type' && isOutletTypeActive())
-                      ? 'text-primary-600 bg-white dark:bg-primary-900/20 border-primary-700 dark:border-primary-300' 
+                      ? 'text-primary-600 bg-white border-primary-700 dark:border-primary-300' 
                       : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour dark:hover:bg-dark-200 dark:hover:border-borderColour/10'
                   }`}>
                     {item.label}
@@ -312,7 +312,7 @@ const Header: React.FC = () => {
         }}
       >
         <button 
-          className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-primary-200 dark:bg-primary fixed right-6 top-20 z-[2000000001] cursor-pointer"
+          className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-primary-200 fixed right-6 top-20 z-[2000000001] cursor-pointer"
           onClick={(e) => {
             console.log('Close button clicked!');
             e.stopPropagation();
@@ -336,7 +336,7 @@ const Header: React.FC = () => {
                       href={item.href} 
                       className={`flex items-center text-lg font-medium py-3 px-4 rounded-lg transition-colors ${
                         isActive(item.href) 
-                          ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600' 
+                          ? 'bg-primary-50 text-primary-600' 
                           : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                       }`}
                       onClick={toggleMobileMenu}
@@ -350,7 +350,7 @@ const Header: React.FC = () => {
                           (item.label === 'Features' && isFeaturesActive()) || 
                           (item.label === 'AddOns' && isAddOnsActive()) || 
                           (item.label === 'Outlet Type' && isOutletTypeActive())
-                            ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600' 
+                            ? 'bg-primary-50 text-primary-600' 
                             : 'text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                         onClick={() => toggleDropdown(item.label.toLowerCase())}
@@ -376,7 +376,7 @@ const Header: React.FC = () => {
                               href={subItem.href} 
                               className={`flex items-center gap-3 py-2 px-4 rounded-lg text-base transition-colors ${
                                 isActive(subItem.href) 
-                                  ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 font-medium' 
+                                  ? 'bg-primary-50 text-primary-600 font-medium' 
                                   : 'text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800'
                               }`} 
                               onClick={toggleMobileMenu}

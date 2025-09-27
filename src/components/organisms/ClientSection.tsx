@@ -106,7 +106,7 @@ const ClientSection: React.FC = () => {
                   onClick={() => handleTabClick('tab1')}
                   className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark dark:border-borderColour-dark hover:bg-paragraph dark:hover:bg-primary hover:text-white dark:hover:text-paragraph duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab1' 
-                      ? 'bg-paragraph dark:bg-primary text-white border-paragraph dark:border-primary' 
+                      ? 'bg-paragraph text-white border-paragraph dark:border-primary' 
                       : ''
                   }`}
                 >
@@ -118,7 +118,7 @@ const ClientSection: React.FC = () => {
                   onClick={() => handleTabClick('tab2')}
                   className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark dark:border-borderColour-dark hover:bg-paragraph dark:hover:bg-primary hover:text-white dark:hover:text-paragraph duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab2' 
-                      ? 'bg-paragraph dark:bg-primary text-white border-paragraph dark:border-primary' 
+                      ? 'bg-paragraph text-white border-paragraph dark:border-primary' 
                       : ''
                   }`}
                 >
@@ -130,7 +130,7 @@ const ClientSection: React.FC = () => {
                   onClick={() => handleTabClick('tab3')}
                   className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark dark:border-borderColour-dark hover:bg-paragraph dark:hover:bg-primary hover:text-white dark:hover:text-paragraph duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab3' 
-                      ? 'bg-paragraph dark:bg-primary text-white border-paragraph dark:border-primary' 
+                      ? 'bg-paragraph text-white border-paragraph dark:border-primary' 
                       : ''
                   }`}
                 >

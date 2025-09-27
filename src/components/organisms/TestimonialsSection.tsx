@@ -112,7 +112,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                   </div> */}
 
                   <div className="pt-7 flex items-center border-t border-dashed border-gray-100 dark:border-borderColour-dark">
-                    <div className="mr-4 w-12 h-12 bg-gray-200 dark:bg-gray-200 rounded-full flex items-center justify-center">
+                    <div className="mr-4 w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
                       <User className="w-5 h-5 text-dark" />
                     </div>
                     <div className="block">

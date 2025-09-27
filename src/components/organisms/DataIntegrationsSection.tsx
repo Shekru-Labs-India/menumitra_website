@@ -44,7 +44,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4">
               {defaultFeatures.map((feature, index) => (
                 <li key={index} className="flex items-center gap-x-3">
-                  <span className="relative w-8 h-8 rounded-full bg-primary/10 dark:bg-primary/20 shadow-icon flex items-center justify-center">
+                  <span className="relative w-8 h-8 rounded-full bg-primary/10 shadow-icon flex items-center justify-center">
                     <FontAwesomeIcon 
                       icon={feature.icon} 
                       className="text-primary text-sm"
