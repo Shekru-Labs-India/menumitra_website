@@ -10,13 +10,8 @@ const BookDemoFormSection: React.FC = () => {
   const showSectionBackground = true;
   const showSectionTitle = true;
   const showSectionDescription = true;
-  const enableAOS = true;
-  const aosProps = {
-    'data-aos': 'fade-up',
-    'data-aos-offset': '200',
-    'data-aos-duration': '1000',
-    'data-aos-once': 'true'
-  };
+  const enableAOS = false;
+  const aosProps = {};
   return (
     <section className={sectionClassName}>
       {showSectionBackground && (
