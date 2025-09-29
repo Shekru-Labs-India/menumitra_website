@@ -8,7 +8,7 @@ import MobileDeviceOverlay from '@/components/atoms/MobileDeviceOverlay';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero relative lg:pt-[260px] max-lg:pt-[160px] pb-[140px] overflow-hidden lg:overflow-visible ">
+    <section className="hero relative lg:pt-[240px] max-lg:pt-[120px] pb-[120px] overflow-hidden lg:overflow-visible ">
       {/* Background decoration - Desktop SVG graphs */}
       <div className="absolute top-0 left-0 w-full max-lg:hidden">
         <Image 
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Right: visuals - Fewer columns */}
-          <div className="max-md:hidden md:col-span-4 lg:col-span-4 relative md:z-10">
+          <div className="md:col-span-4 lg:col-span-4 relative md:z-10">
             {/* Background blur effects */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
               <div className="max-lg:hidden max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 blur-[145px]"></div>
@@ -121,12 +121,13 @@ const HeroSection: React.FC = () => {
                 <div
                   className="
                     absolute
-                    right-0 bottom-4
+                    right-0 left-10 bottom-4 top-0
                     lg:right-0 lg:bottom-8
-                    w-[200px] md:w-[240px] lg:w-[300px]
+                    w-[300px] md:w-[240px] lg:w-[300px]
                     lg:aspect-auto
                     transform
-                    max-md:left-1/2 max-md:-translate-x-1/2
+                    max-md:left-20 max-md:-translate-x-1/2
+                    max-md:top-20
                   "
                   style={{ zIndex: 20 }}
                 >
