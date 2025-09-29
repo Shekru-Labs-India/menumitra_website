@@ -356,15 +356,30 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             height={50}
             className=" w-full object-cover"
           />
+        </div>
+
+        {/* Cards Image Section */}
+        <div className="py-4 max-lg:text-center">
+          <div className="flex justify-center">
+            <Image
+              src="/images/footer-cards.png"
+              alt="Payment Cards and Methods"
+              width={400}
+              height={60}
+              className="w-auto h-auto object-contain rounded-xl shadow-lg p-3 border hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+        <div className="seperator">
           <Image
-            src="/images/footer-seperator-dark.svg"
+            src="/images/footer-seperator.svg"
             alt="footer-seperator"
             width={1200}
             height={50}
-            className="hidden w-full object-cover"
+            className=" w-full object-cover"
           />
         </div>
-
+                  
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
             <p className="max-lg:mb-10">@ {currentYear} MenuMitra. All Rights Reserved</p>
