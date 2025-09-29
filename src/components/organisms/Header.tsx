@@ -36,7 +36,11 @@ import {
   ChevronDown,
   X,
   Menu,
-  Truck
+  Truck,
+  Home,
+  Info,
+  Package2,
+  PhoneCall
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -52,8 +56,8 @@ interface NavDropdown {
 }
 
 type NavigationItem = 
-  | { type: 'link'; href: string; label: string }
-  | { type: 'dropdown'; label: string; items: NavItem[] };
+  | { type: 'link'; href: string; label: string; icon?: React.ReactNode }
+  | { type: 'dropdown'; label: string; icon?: React.ReactNode; items: NavItem[] };
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -143,12 +147,13 @@ const Header: React.FC = () => {
   // Single navigation configuration - easy to edit and maintain
   const navigationConfig: { main: NavigationItem[] } = {
     main: [
-      { type: 'link', href: '/', label: 'Home' },
-      { type: 'link', href: '/about', label: 'About' },
-      { type: 'link', href: '/products', label: 'Products' },
+      { type: 'link', href: '/', label: 'Home', icon: <Home className="w-4 h-4" /> },
+      { type: 'link', href: '/about', label: 'About', icon: <Info className="w-4 h-4" /> },
+      { type: 'link', href: '/products', label: 'Products', icon: <Package2 className="w-4 h-4" /> },
       { 
         type: 'dropdown',
-        label: 'Features', 
+        label: 'Features',
+        icon: <Settings className="w-4 h-4" />,
         items: [
           { href: '/features/billing', label: 'Billing', icon: <CreditCard className="w-4 h-4" /> },
           { href: '/features/inventory', label: 'Inventory', icon: <Package className="w-4 h-4" /> },
@@ -168,7 +173,8 @@ const Header: React.FC = () => {
       },
       { 
         type: 'dropdown',
-        label: 'AddOns', 
+        label: 'AddOns',
+        icon: <Smartphone className="w-4 h-4" />,
         items: [
           { href: '/addons/captain-app', label: 'Captain App', icon: <Smartphone className="w-4 h-4" /> },
           { href: '/addons/waiter-app', label: 'Waiter App', icon: <Users className="w-4 h-4" /> },
@@ -184,7 +190,8 @@ const Header: React.FC = () => {
       },
       { 
         type: 'dropdown',
-        label: 'Outlet Type', 
+        label: 'Outlet Type',
+        icon: <Storefront className="w-4 h-4" />,
         items: [
           { href: '/outlet-type/restaurant', label: 'Restaurant', icon: <Storefront className="w-4 h-4" /> },
           { href: '/outlet-type/fine-dine', label: 'Fine Dine', icon: <Utensils className="w-4 h-4" /> },
@@ -240,7 +247,10 @@ const Header: React.FC = () => {
                     isActive(item.href) ? 'active' : ''
               }`}
             >
-                  {item.label}
+                  <span className="flex items-center gap-2">
+                    {item.icon && <span className="w-4 h-4">{item.icon}</span>}
+                    {item.label}
+                  </span>
             </Link>
               ) : (
                 <>
@@ -251,7 +261,10 @@ const Header: React.FC = () => {
                       ? 'text-primary-600 bg-white border-primary-700' 
                       : 'text-paragraph border-transparent hover:bg-white hover:border-borderColour '
                   }`}>
-                    {item.label}
+                    <span className="flex items-center gap-2">
+                      {item.icon && <span className="w-4 h-4">{item.icon}</span>}
+                      {item.label}
+                    </span>
                     <ChevronDown 
                       className={`ml-1 group-hover:rotate-180 duration-500 mt-1 w-4 h-4 ${
                         (item.label === 'Features' && isFeaturesActive()) || 
@@ -345,7 +358,18 @@ const Header: React.FC = () => {
                       }`}
                       onClick={toggleMobileMenu}
                     >
-                      {item.label}
+                      <span className="flex items-center gap-3">
+                        {item.icon && (
+                          <span className={`w-5 h-5 ${
+                            isActive(item.href) 
+                              ? 'text-primary-600' 
+                              : 'text-gray-500'
+                          }`}>
+                            {item.icon}
+                          </span>
+                        )}
+                        <span>{item.label}</span>
+                      </span>
                     </Link>
                   ) : (
                     <div className="space-y-2">
@@ -359,7 +383,20 @@ const Header: React.FC = () => {
                         }`}
                         onClick={() => toggleDropdown(item.label.toLowerCase())}
                       >
-                        <span>{item.label}</span>
+                        <span className="flex items-center gap-3">
+                          {item.icon && (
+                            <span className={`w-5 h-5 ${
+                              (item.label === 'Features' && isFeaturesActive()) || 
+                              (item.label === 'AddOns' && isAddOnsActive()) || 
+                              (item.label === 'Outlet Type' && isOutletTypeActive())
+                                ? 'text-primary-600' 
+                                : 'text-gray-500'
+                            }`}>
+                              {item.icon}
+                            </span>
+                          )}
+                          <span>{item.label}</span>
+                        </span>
                         <ChevronDown 
                           className={`w-5 h-5 transition-transform duration-200 ${
                             activeDropdown === item.label.toLowerCase() ? 'rotate-180' : ''
