@@ -192,6 +192,7 @@ const Header: React.FC = () => {
           { href: '/outlet-type/cafe', label: 'Cafe', icon: <Coffee className="w-4 h-4" /> },
           { href: '/outlet-type/qsr', label: 'QSR', icon: <Hamburger className="w-4 h-4" /> },
           { href: '/outlet-type/bakeries', label: 'Bakeries', icon: <Bread className="w-4 h-4" /> },
+          { href: '/outlet-type/bar-pub', label: 'Bar & Pub', icon: <Coffee className="w-4 h-4" /> },
           { href: '/outlet-type/cloud-kitchens', label: 'Cloud Kitchens', icon: <Cloud className="w-4 h-4" /> },
           { href: '/outlet-type/large-chain', label: 'Large Chain', icon: <Building className="w-4 h-4" /> },
         ]

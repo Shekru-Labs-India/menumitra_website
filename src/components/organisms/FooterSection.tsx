@@ -296,6 +296,16 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
               </li>
               <li>
                 <Link 
+                  href="/outlet-type/bar-pub" 
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/outlet-type/bar-pub') ? 'text-primary' : 'text-paragraph'
+                  }`}
+                >
+                  Bar & Pub
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/outlet-type/cloud-kitchens" 
                   className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
                     isActive('/outlet-type/cloud-kitchens') ? 'text-primary' : 'text-paragraph'
