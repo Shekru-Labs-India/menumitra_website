@@ -41,7 +41,10 @@ import {
   Home,
   Info,
   Package2,
-  PhoneCall
+  PhoneCall,
+  Calendar,
+  Briefcase,
+  Headphones
 } from 'lucide-react';
 import { email, phone, getEmailLink, getPhoneLink, social } from '@/config/contact';
 
@@ -134,6 +137,45 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   <span className="flex items-center gap-2">
                     <PhoneCall className="w-4 h-4" />
                     Contact
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/book-demo" 
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/book-demo') ? 'text-primary' : 'text-paragraph'
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    Book a Demo
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/careers" 
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/careers') ? 'text-primary' : 'text-paragraph'
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <Briefcase className="w-4 h-4" />
+                    Careers
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/customer-care" 
+                  className={`relative inline-block overflow-hidden text-base capitalize before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 ${
+                    isActive('/customer-care') ? 'text-primary' : 'text-paragraph'
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <Headphones className="w-4 h-4" />
+                    Customer Care
                   </span>
                 </Link>
               </li>
