@@ -329,7 +329,7 @@ const Header: React.FC = () => {
         }}
       >
         <button 
-          className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-primary-200 fixed right-6 top-20 z-[2000000001] cursor-pointer"
+          className="outline-none navbar-toggle-close w-10 h-10 rounded-full bg-primary-200 fixed right-6 top-10 z-[2000000001] cursor-pointer"
           onClick={(e) => {
             console.log('Close button clicked!');
             e.stopPropagation();

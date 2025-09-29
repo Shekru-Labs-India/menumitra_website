@@ -36,13 +36,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   height={64}
                   className="inline-block  mb-6"
                 />
-                <Image
-                  src="/images/services/investment-dark.svg"
-                  alt="QR Code Menus"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   QR Code Menus
                 </h3>
@@ -60,13 +53,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   height={64}
                   className="inline-block  mb-6"
                 />
-                <Image
-                  src="/images/services/loan-dark.svg"
-                  alt="Real-time Analytics"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Real-time Analytics
                 </h3>
@@ -83,13 +69,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   width={64}
                   height={64}
                   className="inline-block  mb-6"
-                />
-                <Image
-                  src="/images/services/sales-dark.svg"
-                  alt="Order Management"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Order Management
@@ -112,13 +91,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   height={64}
                   className="inline-block  mb-6"
                 />
-                <Image
-                  src="/images/services/finance-dark.svg"
-                  alt="Multi-location Management"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Multi-location Management
                 </h3>
@@ -136,13 +108,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   height={64}
                   className="inline-block  mb-6"
                 />
-                <Image
-                  src="/images/services/effeciency-dark.svg"
-                  alt="Customer Experience"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   Customer Experience
                 </h3>
@@ -159,13 +124,6 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
                   width={64}
                   height={64}
                   className="inline-block  mb-6"
-                />
-                <Image
-                  src="/images/services/fund-dark.svg"
-                  alt="24/7 Support"
-                  width={64}
-                  height={64}
-                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
                   24/7 Support

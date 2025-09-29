@@ -40,13 +40,6 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="inline-block  mb-6"
                 />
-                <Image 
-                  src="/images/services/investment-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5">QR Code Digital Menus</h3>
                 <p className="mb-6">Create stunning, contactless QR code menus that customers can access instantly. No app downloads required - just scan and order.</p>
               </div>
@@ -60,13 +53,6 @@ const ServicesSection: React.FC = () => {
                   width={64} 
                   height={64} 
                   className="inline-block  mb-6"
-                />
-                <Image 
-                  src="/images/services/sales-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5">AI-Powered Order Management</h3>
                 <p className="mb-6">Streamline your kitchen operations with intelligent order routing, real-time updates, and automated inventory management.</p>
@@ -82,13 +68,6 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="inline-block  mb-6"
                 />
-                <Image 
-                  src="/images/services/loan-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5">Real-Time Analytics Dashboard</h3>
                 <p className="mb-6">Track sales performance, popular items, customer preferences, and revenue insights with comprehensive analytics.</p>
               </div>
@@ -102,13 +81,6 @@ const ServicesSection: React.FC = () => {
                   width={64} 
                   height={64} 
                   className="inline-block  mb-6"
-                />
-                <Image 
-                  src="/images/services/finance-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5">Multi-Location Management</h3>
                 <p className="mb-6">Manage multiple restaurant locations from a single dashboard with centralized menu updates and performance tracking.</p>
@@ -124,13 +96,6 @@ const ServicesSection: React.FC = () => {
                   height={64} 
                   className="inline-block  mb-6"
                 />
-                <Image 
-                  src="/images/services/effeciency-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
-                />
                 <h3 className="mb-2.5">Customer Experience Enhancement</h3>
                 <p className="mb-6">Provide seamless ordering experience with instant menu updates, allergen information, and personalized recommendations.</p>
               </div>
@@ -144,13 +109,6 @@ const ServicesSection: React.FC = () => {
                   width={64} 
                   height={64} 
                   className="inline-block  mb-6"
-                />
-                <Image 
-                  src="/images/services/fund-dark.svg" 
-                  alt="image" 
-                  width={64} 
-                  height={64} 
-                  className="hidden mb-6"
                 />
                 <h3 className="mb-2.5">24/7 Customer Support</h3>
                 <p className="mb-6">Get dedicated support from our restaurant technology experts to ensure smooth operations and maximum ROI.</p>

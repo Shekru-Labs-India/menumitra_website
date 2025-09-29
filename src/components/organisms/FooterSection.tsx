@@ -76,7 +76,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
   };
 
   return (
-    <section className={`bg-white overflow-hidden relative py-5 border-t border-dashed border-gray-100 ${className}`}>
+    <section className={`bg-white overflow-hidden relative pb-5 pt-0 border-t border-dashed border-gray-100 ${className}`}>
       {/* Contact Header */}
       <ContactHeader />
       
@@ -624,7 +624,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           </div>
         </div>
 
-        <div className="seperator">
+        {/* <div className="seperator block">
           <Image
             src="/images/footer-seperator.svg"
             alt="footer-seperator"
@@ -632,7 +632,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             height={50}
             className=" w-full object-cover"
           />
-        </div>
+        </div> */}
+<hr />
 
         {/* Cards Image Section */}
         <div className="py-4 max-lg:text-center">
@@ -646,15 +647,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             />
           </div>
         </div>
-        <div className="seperator">
-          <Image
-            src="/images/footer-seperator.svg"
-            alt="footer-seperator"
-            width={1200}
-            height={50}
-            className=" w-full object-cover"
-          />
-        </div>
+        <hr />
                   
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
