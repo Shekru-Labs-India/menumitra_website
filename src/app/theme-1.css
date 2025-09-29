@@ -2902,7 +2902,7 @@ span{
 }
 .after\:bg-primary::after{
   content: var(--tw-content);
-  --tw-bg-opacity: 1;
+  --tw-bg-opacity: 0;
   background-color: rgb(177 227 70 / var(--tw-bg-opacity));
 }
 .after\:bg-primary-200\/30::after{
