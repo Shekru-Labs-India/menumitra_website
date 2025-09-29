@@ -65,7 +65,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
             {/* Book a Demo Button */}
             <Link 
               href="/book-demo" 
-              className="btn btn-nav btn-sm whitespace-nowrap"
+              className="btn btn-nav btn-sm whitespace-nowrap font-bold"
             >
               Book a Demo
             </Link>

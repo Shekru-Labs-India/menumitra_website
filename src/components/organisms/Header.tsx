@@ -279,7 +279,7 @@ const Header: React.FC = () => {
 
           {/* Request Demo Button - Desktop */}
           <li className="max-lg:hidden">
-            <Link href="/book-demo" className="btn btn-navbar btn-sm">
+            <Link href="/book-demo" className="btn btn-navbar btn-sm font-bold">
               Book a Demo
             </Link>
           </li>
@@ -406,7 +406,7 @@ const Header: React.FC = () => {
           <div className="p-6 border-t border-gray-200">
             <Link 
               href="/book-demo" 
-              className="w-full btn btn-primary btn-lg text-center block"
+              className="w-full btn btn-primary btn-lg text-center block font-bold"
               onClick={toggleMobileMenu}
             >
               Book a Demo
