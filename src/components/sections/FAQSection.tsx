@@ -23,28 +23,44 @@ const FAQSection: React.FC = () => {
 
   const faqData = [
     {
-      question: "What is MenuMitra and how does it help my restaurant?",
-      answer: "MenuMitra is a comprehensive restaurant management system that helps you manage your entire restaurant operations from menu management to customer orders, kitchen display, and analytics. It streamlines your workflow, reduces errors, and improves customer satisfaction."
+      question: "What is MenuMitra?",
+      answer: "Complete hotel & restaurant management system for orders, kitchen display, and analytics."
     },
     {
-      question: "What are the main features of MenuMitra?",
-      answer: "MenuMitra offers multiple modules including Point of Sale (POS), Kitchen Display System (KDS), Customer Display System (CDS), Customer App, Waiter App, Captain App, and comprehensive analytics dashboard. Each module is designed to work seamlessly together."
+      question: "What features does MenuMitra offer?",
+      answer: "POS, Kitchen Display, Customer Apps, Waiter Apps, Analytics Dashboard, and Hotel Management."
     },
     {
-      question: "How do I get started with MenuMitra?",
-      answer: "Getting started is easy! Contact our team to schedule a personalized demo where we'll show you how MenuMitra can benefit your specific restaurant. We'll help you choose the right modules and provide full setup support."
+      question: "How do I get started?",
+      answer: "Contact us for a free demo. We'll help you choose modules and provide full setup support."
     },
     {
-      question: "Is MenuMitra suitable for different types of restaurants?",
-      answer: "Yes! MenuMitra is designed to work for various restaurant types including fine dining, cafes, QSR (Quick Service Restaurants), pizzerias, bakeries, food courts, cloud kitchens, and large restaurant chains. We offer customized solutions for each outlet type."
+      question: "Which hotels can use MenuMitra?",
+      answer: "All types - luxury hotels, resorts, boutique hotels, business hotels, and restaurant chains."
     },
     {
-      question: "What devices and platforms does MenuMitra support?",
-      answer: "MenuMitra works on multiple platforms including Android tablets, iPads, Windows PCs, and smartphones. Our system is cloud-based, so you can access it from anywhere with an internet connection. We also provide dedicated apps for different roles like waiters, captains, and customers."
+      question: "What devices are supported?",
+      answer: "Android tablets, iPads, Windows PCs, and smartphones. Cloud-based access from anywhere."
     },
     {
-      question: "How does the Kitchen Display System (KDS) work?",
-      answer: "Our KDS displays orders in real-time to your kitchen staff, organized by preparation time and priority. It helps reduce order errors, improves kitchen efficiency, and provides better communication between front-of-house and kitchen staff. Orders can be marked as completed, and the system tracks preparation times."
+      question: "How does Kitchen Display work?",
+      answer: "Shows orders in real-time, organized by priority. Reduces errors and improves kitchen efficiency."
+    },
+    {
+      question: "What support do you provide?",
+      answer: "Setup assistance, staff training, and 24/7 technical support for all MenuMitra features."
+    },
+    {
+      question: "Is my data secure?",
+      answer: "Yes. We use enterprise-grade encryption, secure cloud storage, and follow industry security standards."
+    },
+    {
+      question: "Can it integrate with existing systems?",
+      answer: "Yes. We integrate with PMS, accounting software, payment gateways, and loyalty programs."
+    },
+    {
+      question: "What are the pricing options?",
+      answer: "Flexible plans for different hotel sizes. Contact us for a customized quote with monthly or annual options."
     },
   ];
 
@@ -57,7 +73,7 @@ const FAQSection: React.FC = () => {
         <div className="max-1xl:w-[335px] max-1xl:h-[335px]  1xl:w-[442px] 1xl:h-[442px]  rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]" />
       </div>
       <div className="absolute left-1/2 top-150 p-[350px] -translate-x-1/2 bg-cover w-full h-full bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10" />
-      <div className=" max-w-[830px] mx-auto">
+      <div className="  mx-auto">
         <div className=" text-center">
           <p className="section-tagline mb-3">Faq’s</p>
           <h2 className="mb-12">
@@ -65,64 +81,131 @@ const FAQSection: React.FC = () => {
             Question
           </h2>
         </div>
-        <div className="[&>*:not(:last-child)]:mb-5">
-          {faqData.map((faq, index) => (
-            <div key={index} className="faq-item bg-white p-2.5 rounded-medium">
-              <div 
-                className={`faq-header flex items-center py-3 px-5 bg-white border border-dashed rounded border-gray-100 cursor-pointer ${openItems.includes(index) ? 'open' : ''}`}
-                onClick={() => toggleItem(index)}
-              >
-                <h3 className="text-xl font-semibold">
-                  Q. {faq.question}
-                </h3>
-                <span className="shrink-0 ml-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={20}
-                    height={20}
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    className="plus"
-                  >
-                    <path
-                      d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                      stroke=""
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      className="stroke-paragraph"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={20}
-                    height={20}
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    className="minus"
-                  >
-                    <path
-                      d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
-                      stroke=""
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      className="stroke-paragraph"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className={`faq-body ${
-                openItems.includes(index) 
-                  ? 'open' 
-                  : collapsingItems.includes(index) 
-                    ? 'collapsing' 
-                    : 'close'
-              }`}>
-                <div className="text-paragraph-light pt-6 px-6 pb-3.5">
-                  {faq.answer}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          {/* Left Column - First 5 FAQs */}
+          <div className="space-y-5">
+            {faqData.slice(0, 5).map((faq, index) => (
+              <div key={index} className="faq-item bg-white p-2.5 rounded-medium">
+                <div 
+                  className={`faq-header flex items-center py-3 px-5 bg-white border border-dashed rounded border-gray-100 cursor-pointer ${openItems.includes(index) ? 'open' : ''}`}
+                  onClick={() => toggleItem(index)}
+                >
+                  <h3 className="text-xl font-semibold">
+                    Q. {faq.question}
+                  </h3>
+                  <span className="shrink-0 ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      className="plus"
+                    >
+                      <path
+                        d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                        stroke=""
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        className="stroke-paragraph"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      className="minus"
+                    >
+                      <path
+                        d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                        stroke=""
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        className="stroke-paragraph"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className={`faq-body ${
+                  openItems.includes(index) 
+                    ? 'open' 
+                    : collapsingItems.includes(index) 
+                      ? 'collapsing' 
+                      : 'close'
+                }`}>
+                  <div className="text-paragraph-light pt-6 px-6 pb-3.5">
+                    {faq.answer}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Right Column - Last 5 FAQs */}
+          <div className="space-y-5">
+            {faqData.slice(5, 10).map((faq, index) => {
+              const actualIndex = index + 5; // Adjust index for the second column
+              return (
+                <div key={actualIndex} className="faq-item bg-white p-2.5 rounded-medium">
+                  <div 
+                    className={`faq-header flex items-center py-3 px-5 bg-white border border-dashed rounded border-gray-100 cursor-pointer ${openItems.includes(actualIndex) ? 'open' : ''}`}
+                    onClick={() => toggleItem(actualIndex)}
+                  >
+                    <h3 className="text-xl font-semibold">
+                      Q. {faq.question}
+                    </h3>
+                    <span className="shrink-0 ml-auto">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        className="plus"
+                      >
+                        <path
+                          d="M6.25 10H13.75M10 6.25V13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                          stroke=""
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          className="stroke-paragraph"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        className="minus"
+                      >
+                        <path
+                          d="M6.25 10H13.75M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                          stroke=""
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          className="stroke-paragraph"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className={`faq-body ${
+                    openItems.includes(actualIndex) 
+                      ? 'open' 
+                      : collapsingItems.includes(actualIndex) 
+                        ? 'collapsing' 
+                        : 'close'
+                  }`}>
+                    <div className="text-paragraph-light pt-6 px-6 pb-3.5">
+                      {faq.answer}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
