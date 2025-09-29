@@ -35,7 +35,8 @@ import {
   Cloud,
   ChevronDown,
   X,
-  Menu
+  Menu,
+  Truck
 } from 'lucide-react';
 
 // Type definitions for navigation
@@ -188,6 +189,7 @@ const Header: React.FC = () => {
           { href: '/outlet-type/restaurant', label: 'Restaurant', icon: <Storefront className="w-4 h-4" /> },
           { href: '/outlet-type/fine-dine', label: 'Fine Dine', icon: <Utensils className="w-4 h-4" /> },
           { href: '/outlet-type/food-courts', label: 'Food Courts', icon: <Storefront className="w-4 h-4" /> },
+          { href: '/outlet-type/food-truck', label: 'Food Truck', icon: <Truck className="w-4 h-4" /> },
           { href: '/outlet-type/pizzeria', label: 'Pizzeria', icon: <Pizza className="w-4 h-4" /> },
           { href: '/outlet-type/cafe', label: 'Cafe', icon: <Coffee className="w-4 h-4" /> },
           { href: '/outlet-type/qsr', label: 'QSR', icon: <Hamburger className="w-4 h-4" /> },
