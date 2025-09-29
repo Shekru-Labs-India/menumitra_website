@@ -1,10 +1,75 @@
-'use client';
-
 import React from 'react';
 import FooterSection from '@/components/organisms/FooterSection';
 import BookDemoForm from '@/components/forms/BookDemoForm';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { email, phone, location, getEmailLink, getPhoneLink } from '@/config/contact';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact MenuMitra - Get Help Desk Assistance for Restaurant Digital Menu Solutions",
+  description: "Ready to transform your restaurant with MenuMitra's AI-powered digital menu platform? Contact our help desk for assistance. Get in touch with our team to learn how MenuMitra can boost your sales and streamline operations.",
+  keywords: [
+    "contact MenuMitra",
+    "restaurant help desk",
+    "digital menu support",
+    "QR code menu assistance",
+    "restaurant technology support",
+    "MenuMitra contact",
+    "restaurant software help",
+    "menu management support",
+    "restaurant automation help",
+    "contactless dining support",
+    "restaurant digital transformation",
+    "menu platform support",
+    "restaurant tech assistance",
+    "AI menu support",
+    "restaurant management help"
+  ],
+  
+  openGraph: {
+    title: "Contact MenuMitra - Get Help Desk Assistance for Restaurant Digital Menu Solutions",
+    description: "Ready to transform your restaurant with MenuMitra's AI-powered digital menu platform? Contact our help desk for assistance and learn how to boost your sales.",
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/menumitra-og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact MenuMitra - Restaurant Digital Menu Platform Support',
+      },
+    ],
+  },
+  
+  twitter: {
+    card: 'summary_large_image',
+    title: "Contact MenuMitra - Get Help Desk Assistance for Restaurant Digital Menu Solutions",
+    description: "Ready to transform your restaurant with MenuMitra's AI-powered digital menu platform? Contact our help desk for assistance.",
+    images: ['/images/hero/menumitra-og-image.jpg'],
+  },
+  
+  other: {
+    'contact:phone': '+91 93178 18283',
+    'contact:email': 'menumitra.info@gmail.com',
+    'contact:address': 'Muktangan English School & Jr College, office No. 6, 2 Floor manogat, Parvati, Pune, Maharashtra 411009',
+    'business:contact_data:phone_number': '+91 93178 18283',
+    'business:contact_data:email': 'menumitra.info@gmail.com',
+    'business:contact_data:street_address': 'Muktangan English School & Jr College, office No. 6, 2 Floor manogat, Parvati',
+    'business:contact_data:locality': 'Pune',
+    'business:contact_data:region': 'Maharashtra',
+    'business:contact_data:postal_code': '411009',
+    'business:contact_data:country_name': 'India',
+    'page:type': 'contact',
+    'page:purpose': 'customer_support',
+    'page:action': 'get_help',
+    'support:available': '24/7',
+    'support:methods': 'phone, email, contact_form',
+    'support:response_time': 'within_24_hours',
+    'cta:primary': 'Book Now',
+    'cta:secondary': 'Get in touch',
+    'form:fields': 'full_name, mobile_number, outlet_name, outlet_type, city, email',
+    'form:purpose': 'restaurant_demo_booking',
+  },
+};
 
 const ContactPage: React.FC = () => {
   return (
