@@ -51,13 +51,7 @@ const CustomerCarePage: React.FC = () => {
       {/* Hero Section */}
       <section className="hero overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
         <div className="container">
-          <div
-            className="max-w-[948px] mx-auto text-center"
-            data-aos="fade-up"
-            data-aos-offset={50}
-            data-aos-duration={500}
-            data-aos-once="true"
-          >
+          <div className="max-w-[948px] mx-auto text-center">
             <p className="mb-4 font-medium uppercase">Customer Care</p>
             <h1 className="max-lg:mb-10 mb-10">
               We're here to help you succeed
@@ -82,7 +76,7 @@ const CustomerCarePage: React.FC = () => {
             </div>
             <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8">
               {/* Phone Support */}
-              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-2.5">
                 <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
                     <Phone className="w-10 h-10 text-paragraph" />
@@ -95,7 +89,7 @@ const CustomerCarePage: React.FC = () => {
               </div>
 
               {/* Email Support */}
-              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-2.5">
                 <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
                     <Mail className="w-10 h-10 text-paragraph" />
@@ -108,7 +102,7 @@ const CustomerCarePage: React.FC = () => {
               </div>
 
               {/* Live Chat */}
-              <div className="bg-white shadow-box rounded-medium p-2.5" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="200" data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-2.5">
                 <div className="border border-dashed rounded border-gray-100 p-10 h-full max-lg:p-5 text-center flex flex-col justify-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
                     <MessageCircle className="w-10 h-10 text-paragraph" />
@@ -129,14 +123,14 @@ const CustomerCarePage: React.FC = () => {
       {/* Support Services */}
       <section className="mb-150 relative">
         <div className="container">
-          <div className="mb-12 text-center max-w-[475px] mx-auto" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+          <div className="mb-12 text-center max-w-[475px] mx-auto">
             <p className="section-tagline">Support Services</p>
             <h2>How we can help you</h2>
           </div>
           
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8">
             {/* Technical Support */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <HelpCircle className="w-6 h-6 text-primary" />
@@ -168,7 +162,7 @@ const CustomerCarePage: React.FC = () => {
             </div>
 
             {/* Training & Onboarding */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Clock className="w-6 h-6 text-primary" />
@@ -205,7 +199,7 @@ const CustomerCarePage: React.FC = () => {
       {/* Contact Form Section */}
       <section className="mb-150 relative">
         <div className="absolute left-1/2 w-full h-[550px] -translate-x-1/2 bg-cover bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
-        <div className="container relative" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+        <div className="container relative">
           <div className="mb-12 text-center max-w-[475px] mx-auto">
             <p className="section-tagline">Get Help</p>
             <h2>Send us your support request</h2>

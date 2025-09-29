@@ -51,13 +51,7 @@ const CareersPage: React.FC = () => {
       {/* Hero Section */}
       <section className="hero overflow-hidden relative max-lg:pt-150 pt-[240px] pb-[60px] z-40">
         <div className="container">
-          <div
-            className="max-w-[948px] mx-auto text-center"
-            data-aos="fade-up"
-            data-aos-offset={50}
-            data-aos-duration={500}
-            data-aos-once="true"
-          >
+          <div className="max-w-[948px] mx-auto text-center">
             <p className="mb-4 font-medium uppercase">Join Our Team</p>
             <h1 className="max-lg:mb-10 mb-10">
               Build the future of restaurant technology
@@ -81,14 +75,14 @@ const CareersPage: React.FC = () => {
               <div className="max-1xl:w-[335px] max-1xl:h-[335px] 1xl:w-[442px] 1xl:h-[442px] rounded-full bg-primary-200/20 -ml-[170px] max-md:ml-0 blur-[145px]"></div>
             </div>
             
-            <div className="mb-12 text-center max-w-[475px] mx-auto" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+            <div className="mb-12 text-center max-w-[475px] mx-auto">
               <p className="section-tagline">Why MenuMitra</p>
               <h2>Why work with us?</h2>
             </div>
 
             <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8">
               {/* Innovation */}
-              <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Zap className="w-6 h-6 text-primary" />
@@ -102,7 +96,7 @@ const CareersPage: React.FC = () => {
               </div>
 
               {/* Growth */}
-              <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <BarChart3 className="w-6 h-6 text-primary" />
@@ -116,7 +110,7 @@ const CareersPage: React.FC = () => {
               </div>
 
               {/* Culture */}
-              <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="200" data-aos-once="true">
+              <div className="bg-white shadow-box rounded-medium p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Heart className="w-6 h-6 text-primary" />
@@ -136,14 +130,14 @@ const CareersPage: React.FC = () => {
       {/* Open Positions */}
       <section className="mb-150 relative">
         <div className="container">
-          <div className="mb-12 text-center max-w-[475px] mx-auto" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+          <div className="mb-12 text-center max-w-[475px] mx-auto">
             <p className="section-tagline">Open Positions</p>
             <h2>Current job openings</h2>
           </div>
           
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8">
             {/* Software Developer */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8" >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Code className="w-6 h-6 text-primary" />
@@ -172,7 +166,7 @@ const CareersPage: React.FC = () => {
             </div>
 
             {/* Sales Executive */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8" >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Users className="w-6 h-6 text-primary" />
@@ -201,7 +195,7 @@ const CareersPage: React.FC = () => {
             </div>
 
             {/* Customer Success Manager */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8" >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Shield className="w-6 h-6 text-primary" />
@@ -230,7 +224,7 @@ const CareersPage: React.FC = () => {
             </div>
 
             {/* Mobile App Developer */}
-            <div className="bg-white shadow-box rounded-medium p-8" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-delay="100" data-aos-once="true">
+            <div className="bg-white shadow-box rounded-medium p-8" >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Smartphone className="w-6 h-6 text-primary" />
@@ -264,7 +258,7 @@ const CareersPage: React.FC = () => {
       {/* Contact Form Section */}
       <section className="mb-150 relative">
         <div className="absolute left-1/2 w-full h-[550px] -translate-x-1/2 bg-cover bg-[url('/images/hero-gradient.png')] bg-no-repeat bg-center opacity-70 md:hidden -z-10"></div>
-        <div className="container relative" data-aos="fade-up" data-aos-offset={50} data-aos-duration={500} data-aos-once="true">
+        <div className="container relative" >
           <div className="mb-12 text-center max-w-[475px] mx-auto">
             <p className="section-tagline">Don't see your role?</p>
             <h2>Send us your application</h2>
