@@ -37,7 +37,11 @@ import {
   Hamburger,
   CircleDot as Bread,
   Cloud,
-  Truck
+  Truck,
+  Home,
+  Info,
+  Package2,
+  PhoneCall
 } from 'lucide-react';
 import { email, phone, getEmailLink, getPhoneLink, social } from '@/config/contact';
 
@@ -88,7 +92,10 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
-                  Home
+                  <span className="flex items-center gap-2">
+                    <Home className="w-4 h-4" />
+                    Home
+                  </span>
                 </Link>
               </li>
               <li>
@@ -98,7 +105,10 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/about') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
-                  About
+                  <span className="flex items-center gap-2">
+                    <Info className="w-4 h-4" />
+                    About
+                  </span>
                 </Link>
               </li>
               <li>
@@ -108,7 +118,10 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/products') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
-                  Products
+                  <span className="flex items-center gap-2">
+                    <Package2 className="w-4 h-4" />
+                    Products
+                  </span>
                 </Link>
               </li>
               <li>
@@ -118,7 +131,10 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                     isActive('/contact') ? 'text-primary' : 'text-paragraph'
                   }`}
                 >
-                  Contact
+                  <span className="flex items-center gap-2">
+                    <PhoneCall className="w-4 h-4" />
+                    Contact
+                  </span>
                 </Link>
               </li>
             </ul>
