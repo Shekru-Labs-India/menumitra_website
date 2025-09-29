@@ -7,7 +7,7 @@ import { TargetCursor } from '@/components/reactbits';
 const ActionButtonsSection: React.FC = () => {
   return (
     <section className="py-16 bg-transparent relative">
-      <div className="container w-full px-4 sm:px-6 lg:px-8 max-md:hidden">
+      <div className="container w-full px-4 sm:px-6 lg:px-8  absolute top-10">
         <div className="flex flex-wrap justify-center gap-4">
           <button 
             className="cursor-target px-4 py-2 text-red-600 rounded-full transition-colors text-lg font-semibold border flex items-center gap-2"
