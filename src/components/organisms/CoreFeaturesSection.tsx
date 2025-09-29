@@ -29,53 +29,65 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               
               {/* QR Code Menus */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
-                <Image
-                  src="/images/services/investment.svg"
-                  alt="QR Code Menus"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  QR Code Menus
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Create stunning, contactless digital menus that customers can access instantly. No app downloads required - just scan and order.
-                </p>
+                <div className="flex items-start gap-4">
+                  <Image
+                    src="/images/services/investment.svg"
+                    alt="QR Code Menus"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      QR Code Menus
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Create stunning, contactless digital menus that customers can access instantly. No app downloads required - just scan and order.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Real-time Analytics */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
-                <Image
-                  src="/images/services/loan.svg"
-                  alt="Real-time Analytics"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  Real-time Analytics
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Track sales performance, popular items, and customer preferences with comprehensive analytics and insights.
-                </p>
+                <div className="flex items-start gap-4 flex-row-reverse">
+                  <Image
+                    src="/images/services/loan.svg"
+                    alt="Real-time Analytics"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      Real-time Analytics
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Track sales performance, popular items, and customer preferences with comprehensive analytics and insights.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Order Management */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
-                <Image
-                  src="/images/services/sales.svg"
-                  alt="Order Management"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  Order Management
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Streamline kitchen operations with intelligent order routing and automated inventory management.
-                </p>
+                <div className="flex items-start gap-4">
+                  <Image
+                    src="/images/services/sales.svg"
+                    alt="Order Management"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      Order Management
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Streamline kitchen operations with intelligent order routing and automated inventory management.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -84,53 +96,65 @@ const CoreFeaturesSection: React.FC<CoreFeaturesSectionProps> = ({ className = '
               
               {/* Multi-location Management */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
-                <Image
-                  src="/images/services/finance.svg"
-                  alt="Multi-location Management"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  Multi-location Management
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Manage multiple restaurant locations from a single dashboard with centralized menu updates and performance tracking.
-                </p>
+                <div className="flex items-start gap-4 flex-row-reverse">
+                  <Image
+                    src="/images/services/finance.svg"
+                    alt="Multi-location Management"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      Multi-location Management
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Manage multiple restaurant locations from a single dashboard with centralized menu updates and performance tracking.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Customer Experience */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] max-lg:after:w-full max-lg:after:h-[1px] max-lg:after:bottom-0 max-lg:top-auto">
-                <Image
-                  src="/images/services/effeciency.svg"
-                  alt="Customer Experience"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  Customer Experience
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Provide seamless ordering experience with instant menu updates, allergen information, and personalized recommendations.
-                </p>
+                <div className="flex items-start gap-4">
+                  <Image
+                    src="/images/services/effeciency.svg"
+                    alt="Customer Experience"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      Customer Experience
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Provide seamless ordering experience with instant menu updates, allergen information, and personalized recommendations.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* 24/7 Support */}
               <div className="relative px-0 lg:px-12 py-12 after:absolute lg:after:right-0 lg:after:top-1/2 after:overflow-hidden lg:after:-translate-y-1/2 lg:after:w-[1px] lg:after:h-full lg:after:content-[url('/images/payment/coreborder-right.svg')]  group">
-                <Image
-                  src="/images/services/fund.svg"
-                  alt="24/7 Support"
-                  width={64}
-                  height={64}
-                  className="inline-block  mb-6"
-                />
-                <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-medium leading-normal">
-                  24/7 Support
-                </h3>
-                <p className="text-base leading-relaxed">
-                  Get dedicated support from our restaurant technology experts to ensure smooth operations and maximum ROI.
-                </p>
+                <div className="flex items-start gap-4 flex-row-reverse">
+                  <Image
+                    src="/images/services/fund.svg"
+                    alt="24/7 Support"
+                    width={64}
+                    height={64}
+                    className="flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <h3 className="mb-2.5 relative after:absolute after:-left-[49px] after:w-0.5 after:h-full after:bg-primary after:opacity-0 group-hover:after:opacity-100 after:duration-500 after:transition-opacity text-xl md:text-2xl font-bold leading-normal">
+                      24/7 Support
+                    </h3>
+                    <p className="text-base leading-relaxed">
+                      Get dedicated support from our restaurant technology experts to ensure smooth operations and maximum ROI.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
