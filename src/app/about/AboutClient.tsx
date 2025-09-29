@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import FooterSection from '@/components/organisms/FooterSection';
 import TestimonialsSlider from '@/components/organisms/TestimonialsSlider';
 import { useAOS } from '@/hooks/useAOS';
+import { Clock, Shield, TrendingUp } from 'lucide-react';
 
 const AboutClient: React.FC = () => {
   const { refreshAOS } = useAOS();
@@ -28,22 +29,22 @@ const AboutClient: React.FC = () => {
       data-aos-duration={300}
       data-aos-once="true"
     >
-      <p className="section-tagline">About Us</p>
+      <p className="section-tagline">About MenuMitra</p>
       <h1 className="max-lg:mb-4 mb-8">
-        We're revolutionizing restaurant management with AI-powered digital solutions
+        Managing a restaurant should be as effortless as serving a great meal
       </h1>
       <p className="max-lg:mb-6 mb-11">
-        MenuMitra is a comprehensive restaurant management platform that helps restaurants streamline their operations, enhance customer experience, and boost revenue through intelligent digital solutions.
+        At MenuMitra, we built a smart, all-in-one POS and order management system designed for restaurants, cafés, bakeries, food courts, and cloud kitchens. From QR-based menus and scan-to-order to billing, inventory, staff, vendor, and report management—MenuMitra simplifies the entire workflow, so owners can focus on what truly matters: delighting their customers.
       </p>
     </div>
   </div>
 </section>
 
-<section className="bg-white max-md:py-20 pt-150 pb-150 relative ">
+<section className="bg-white max-md:py-20 relative ">
   <div className="container relative">
     <div className="text-center max-w-[550px] mx-auto mb-16">
-      <p className="section-tagline">Our Mission</p>
-      <h2>Transforming the food service industry through innovation</h2>
+      <p className="section-tagline">Our Journey</p>
+      <h2>From disconnected tools to seamless restaurant management</h2>
     </div>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
       <div className="max-lg:order-2">
@@ -65,10 +66,10 @@ const AboutClient: React.FC = () => {
       <div className="max-lg:order-1 lg:-mt-15">
         <p className="section-tagline">Our Vision</p>
         <h2 className="max-lg:mb-4 mb-8">
-          Creating a seamless digital ecosystem for restaurants worldwide
+          Building the future of dining technology in India
         </h2>
         <p className="max-lg:mb-6 mb-11">
-          We envision a future where every restaurant can operate efficiently with cutting-edge technology, providing exceptional customer experiences while maximizing profitability through intelligent automation and data-driven insights.
+          We're not just building software—we're building the future of dining technology in India. With real-time analytics, cloud-first infrastructure, and 24/7 support, MenuMitra is committed to empowering every restaurant, big or small, to run smarter, faster, and more profitably. Because when restaurants grow, communities thrive. And MenuMitra is here to be their trusted partner in that journey.
         </p>
         <ul className="max-lg:mb-6 mb-14 flex max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10 ">
           <li className="relative flex items-center gap-x-2 ">
@@ -84,7 +85,7 @@ const AboutClient: React.FC = () => {
               <path d="M12 16v.01" />
               <path d="M16 12h1" />
             </svg>
-            <span className="font-jakarta_sans font-medium">Digital Innovation</span>
+            <span className="font-jakarta_sans font-medium">All-in-One POS</span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
             <svg ref={undefined} xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chart-column w-10 h-10 text-paragraph" aria-hidden="true">
@@ -93,7 +94,7 @@ const AboutClient: React.FC = () => {
               <path d="M13 17V5" />
               <path d="M8 17v-3" />
             </svg>
-            <span className="font-jakarta_sans font-medium">Data-Driven Growth</span>
+            <span className="font-jakarta_sans font-medium">Real-time Analytics</span>
           </li>
           <li className="relative flex items-center gap-x-2 ">
             <svg ref={undefined} xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-package w-10 h-10 text-paragraph" aria-hidden="true">
@@ -102,59 +103,58 @@ const AboutClient: React.FC = () => {
               <polyline points="3.29 7 12 12 20.71 7" />
               <path d="m7.5 4.27 9 5.15" />
             </svg>
-            <span className="font-jakarta_sans font-medium">Comprehensive Solutions</span>
+            <span className="font-jakarta_sans font-medium">24/7 Support</span>
           </li>
         </ul>
-        <a href="/contact" className="btn-outline">Get Started Today</a>
+        <a href="/contact" className="btn-outline">Explore MenuMitra →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section className="bg-white max-md:py-20 pt-150 pb-150 relative ">
+<section className="bg-white max-md:py-20 py-50 relative ">
   <div className="container relative">
     <div className="text-center max-w-[550px] mx-auto mb-16">
-      <p className="section-tagline">Our Team</p>
-      <h2>Meet the experts behind MenuMitra's success</h2>
+      <p className="section-tagline">Our Journey</p>
+      <h2>MenuMitra started with a simple observation: restaurants spend too much time juggling disconnected tools</h2>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-once="true">
-        <div className="w-20 h-20 bg-primary-200 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-          </svg>
+    <div className="text-center max-w-4xl mx-auto">
+      <p className="text-lg text-gray-600 mb-8">
+        We set out to change that by creating a seamless platform where every piece—POS, Owner App, Customer App, and Captain/Waiter App—works in perfect sync.
+      </p>
+      <p className="text-lg text-gray-600 mb-8">
+        Today, MenuMitra powers hundreds of food businesses across India, helping them save time, reduce errors, boost sales, and deliver better dining experiences.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-once="true">
+          <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Clock className="w-10 h-10 text-blue-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-center mb-2">Save Time</h3>
+          <p className="text-paragraph text-center text-sm">
+            Streamlined operations with integrated tools
+          </p>
         </div>
-        <h3 className="text-xl font-semibold text-center mb-2">Rajesh Kumar</h3>
-        <p className="text-paragraph-light text-center mb-4">CEO & Founder</p>
-        <p className="text-paragraph text-center text-sm">
-          Visionary leader with 15+ years in restaurant technology, passionate about transforming the food service industry.
-        </p>
-      </div>
-      
-      <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-delay={100} data-aos-once="true">
-        <div className="w-20 h-20 bg-primary-200 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-          </svg>
+        
+        <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-delay={100} data-aos-once="true">
+          <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Shield className="w-10 h-10 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-center mb-2">Reduce Errors</h3>
+          <p className="text-paragraph text-center text-sm">
+            Automated processes minimize mistakes
+          </p>
         </div>
-        <h3 className="text-xl font-semibold text-center mb-2">Priya Sharma</h3>
-        <p className="text-paragraph-light text-center mb-4">CTO</p>
-        <p className="text-paragraph text-center text-sm">
-          Technology expert specializing in AI and machine learning solutions for the hospitality industry.
-        </p>
-      </div>
-      
-      <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-delay={200} data-aos-once="true">
-        <div className="w-20 h-20 bg-primary-200 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-          </svg>
+        
+        <div className="bg-white rounded-medium p-8 shadow-nav" data-aos="fade-up" data-aos-offset={200} data-aos-duration={1000} data-aos-delay={200} data-aos-once="true">
+          <div className="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <TrendingUp className="w-10 h-10 text-orange-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-center mb-2">Boost Sales</h3>
+          <p className="text-paragraph text-center text-sm">
+            Data-driven insights increase revenue
+          </p>
         </div>
-        <h3 className="text-xl font-semibold text-center mb-2">Amit Patel</h3>
-        <p className="text-paragraph-light text-center mb-4">Head of Product</p>
-        <p className="text-paragraph text-center text-sm">
-          Product strategist focused on creating intuitive user experiences that drive restaurant success.
-        </p>
       </div>
     </div>
   </div>
