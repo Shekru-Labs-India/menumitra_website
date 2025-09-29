@@ -47,7 +47,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
       <div className="container">
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center gap-2">
           <div className="col-span-6 lg:col-span-3 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg text-left">Navigations</h3>
+            <h3 className="mb-8 font-bold text-lg text-left">Navigations</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
                 <Link 
@@ -92,7 +92,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             </ul>
           </div>
           <div className="col-span-6 lg:col-span-3 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg text-left">Features</h3>
+            <h3 className="mb-8 font-bold text-lg text-left">Features</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
                 <Link 
@@ -177,7 +177,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             </ul>
           </div>
           <div className="col-span-6 lg:col-span-3 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg text-left">AddOns</h3>
+            <h3 className="mb-8 font-bold text-lg text-left">AddOns</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
                 <Link 
@@ -222,7 +222,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
             </ul>
           </div>
           <div className="col-span-6 lg:col-span-2 max-lg:text-center">
-            <h3 className="mb-8 font-medium text-lg text-left">Outlet Type</h3>
+            <h3 className="mb-8 font-bold text-lg text-left">Outlet Type</h3>
             <ul className="[&>*:not(:last-child)]:mb-3 text-left">
               <li>
                 <Link 
