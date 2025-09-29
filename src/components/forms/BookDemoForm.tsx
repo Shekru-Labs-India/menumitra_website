@@ -50,7 +50,7 @@ const defaultFields: FormField[] = [
     name: 'name',
     label: 'Full name',
     type: 'text',
-    placeholder: 'Full Name',
+    placeholder: 'Enter your full name',
     required: true,
     colSpan: 'half'
   },
@@ -58,7 +58,7 @@ const defaultFields: FormField[] = [
     name: 'mobile',
     label: 'Mobile Number',
     type: 'tel',
-    placeholder: 'Mobile Number',
+    placeholder: 'Enter your mobile number',
     required: true,
     colSpan: 'half'
   },
@@ -66,7 +66,7 @@ const defaultFields: FormField[] = [
     name: 'outlet_name',
     label: 'Outlet Name',
     type: 'text',
-    placeholder: 'Outlet Name',
+    placeholder: 'Enter your outlet name',
     required: true,
     colSpan: 'half'
   },
@@ -74,7 +74,7 @@ const defaultFields: FormField[] = [
     name: 'outlet_type',
     label: 'Outlet Type',
     type: 'select',
-    placeholder: 'Outlet Type',
+    placeholder: 'Select your outlet type',
     required: true,
     colSpan: 'half',
     options: [
@@ -91,7 +91,7 @@ const defaultFields: FormField[] = [
     name: 'city',
     label: 'City',
     type: 'text',
-    placeholder: 'City',
+    placeholder: 'Enter your city name',
     required: true,
     colSpan: 'half'
   },
@@ -99,7 +99,7 @@ const defaultFields: FormField[] = [
     name: 'email',
     label: 'Your Email',
     type: 'email',
-    placeholder: 'Email Address',
+    placeholder: 'Enter your email address',
     required: true,
     colSpan: 'half'
   }
@@ -209,7 +209,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
     
     return (
       <div key={field.name} className={colSpanClass}>
-        <label htmlFor={field.name} className="block text-sm font-medium font-jakarta_sans text-paragraph mb-2">
+        <label htmlFor={field.name} className="block text-sm font-medium font-jakarta_sans text-paragraph mb-2 text-left">
           {field.required && <span className="text-red-500">*</span>} {field.label}
         </label>
         
@@ -273,7 +273,7 @@ const BookDemoForm: React.FC<BookDemoFormProps> = ({
           )}
           
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-12 max-md:gap-y-10 md:gap-x-12 md:gap-8">
+            <div className="grid grid-cols-12 max-md:gap-y-5 md:gap-x-12 md:gap-8">
               {fields.map(renderField)}
               
               <div className="mx-auto col-span-full text-center">
