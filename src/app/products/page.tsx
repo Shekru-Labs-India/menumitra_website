@@ -6,6 +6,7 @@ import { Download, Smartphone, Monitor, Calendar, ExternalLink, Globe } from 'lu
 import SectionDivider from '@/components/atoms/SectionDivider';
 import { website } from '@/config/contact';
 import { useAOS } from '@/hooks/useAOS';
+
 const ProductsPage: React.FC = () => {
   const { refreshAOS } = useAOS();
   
