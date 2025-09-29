@@ -232,7 +232,7 @@ const Header: React.FC = () => {
               height={40} 
               className="w-auto h-auto"
             />
-            <span className="text-2xl font-bold text-gray-900">MenuMitra</span>
+            <span className="text-2xl font-bold text-gray-900 md:hidden">MenuMitra</span>
           </Link>
         </div>
 
@@ -296,7 +296,7 @@ const Header: React.FC = () => {
 
           {/* Request Demo Button - Desktop */}
           <li className="max-lg:hidden">
-            <Link href="/book-demo" className="btn btn-navbar btn-sm font-bold">
+            <Link href="/book-demo" className="btn btn-navbar btn-sm font-bold text-nowrap">
               Book a Demo
             </Link>
           </li>
