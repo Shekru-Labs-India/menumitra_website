@@ -62,12 +62,12 @@ const HeroSection: React.FC = () => {
             <p className="mb-4 md:mb-6 lg:mb-8 font-medium uppercase text-base md:text-lg lg:text-xl">Join 15,000+ Restaurants Using MenuMitra</p>
             <h1 className="mb-8 md:mb-10 lg:mb-12">
               <SplitText 
-                text="MenuMitra: Boost Sales" 
+                text="Boost Sales" 
                 delay={0.2} 
                 duration={0.8} 
                 className="block" 
                 fontWeight="font-black"
-                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                fontSize="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                 textColor="text-primary"
                 letterSpacing="tracking-tight"
                 lineHeight="leading-tight"
@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
                 duration={0.8} 
                 className="block" 
                 fontWeight="font-black"
-                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                fontSize="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                 textColor="text-gray-900"
                 letterSpacing="tracking-tight"
                 lineHeight="leading-tight"
@@ -89,7 +89,7 @@ const HeroSection: React.FC = () => {
                 duration={0.8} 
                 className="block" 
                 fontWeight="font-black"
-                fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                fontSize="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                 textColor="text-primary"
                 letterSpacing="tracking-tight"
                 lineHeight="leading-tight"
