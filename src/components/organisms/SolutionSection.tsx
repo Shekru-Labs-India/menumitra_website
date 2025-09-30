@@ -19,11 +19,6 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
               alt="vision image"
               className=""
             />
-            <img
-              src="images/solution/solution-dark.png"
-              alt="vision image"
-              className="hidden"
-            />
             <div
               className="absolute left-10 -top-[130px] lg:-top-[185px] lg:left-15 right-auto bottom-auto w-[250px] h-[150px] lg:w-[280px] lg:h-[180px] xl:w-[320px] xl:h-[230px]"
               data-aos="fade-left"
@@ -35,11 +30,6 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
                 src="images/solution/solution-shape1.png"
                 alt="vision image"
                 className="  w-full"
-              />
-              <img
-                src="images/solution/solution-shape1-dark.png"
-                alt="vision image"
-                className="hidden w-full"
               />
             </div>
             <div
@@ -55,11 +45,6 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
                 alt="vision image"
                 className="  w-full"
               />
-              <img
-                src="images/solution/solution-shape2-dark.png"
-                alt="vision image"
-                className="hidden w-full"
-              />
             </div>
             <div
               className="absolute left-[175px] -bottom-[70px] lg:-bottom-[86px] lg:left-[200px] right-auto top-auto w-[150px] lg:w-[170px] aspect-video"
@@ -73,11 +58,6 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ className = '' }) => 
                 src="images/solution/solution-shape3.png"
                 alt="vision image"
                 className="  w-full"
-              />
-              <img
-                src="images/solution/solution-shape3-dark.png"
-                alt="vision image"
-                className="hidden w-full"
               />
             </div>
           </div>

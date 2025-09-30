@@ -67,13 +67,6 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
               height={400}
               className="w-[260px] xl:w-[310px] "
             />
-            <Image 
-              src="/images/vision/vision-image-dark.png" 
-              alt="vision image" 
-              width={310} 
-              height={400}
-              className="w-[260px] xl:w-[310px] hidden"
-            />
             
             {/* Floating image elements */}
             <div className="absolute -top-25 left-40 md:-top-12 xl:-top-[150px] xl:left-[290px] w-[200px] md:w-[200px] xl:w-[310px]">
