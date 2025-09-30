@@ -32,7 +32,7 @@ const InventoryPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/inventory-management.png"
           alt="MenuMitra Smart Inventory Management - Real-Time Inventory Tracking with monitor stock levels and get alerts when items are running low"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

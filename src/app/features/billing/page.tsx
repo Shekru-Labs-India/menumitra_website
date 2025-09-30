@@ -34,7 +34,7 @@ const BillingPage: React.FC = () => {
       {/* Feature Image */}
        <div className="bg- rounded-medium p-2.5 shadow-nav">
    <img
-     src="/images/service-single1.png"
+     src="/images/billing-management.png"
      alt="MenuMitra Restaurant Billing Dashboard - Complete billing control from order to payment with real-time table management"
      className="w-[900px] h-auto object-cover rounded mx-auto block"
      loading="lazy"

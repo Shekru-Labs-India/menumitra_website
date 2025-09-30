@@ -32,7 +32,7 @@ const OnlineOrderPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/online-order-management.png"
           alt="MenuMitra Online Order Management - Seamless Order Processing with handle all order types from one unified platform"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

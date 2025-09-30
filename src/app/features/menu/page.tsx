@@ -32,7 +32,7 @@ const MenuPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/menu-management.png"
           alt="MenuMitra Digital Menu Management - Dynamic Menu Builder with create and customize menus with drag-and-drop simplicity"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
