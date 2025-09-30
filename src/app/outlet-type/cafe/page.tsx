@@ -32,7 +32,7 @@ const CafePage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/cafe-management.png"
           alt="MenuMitra Cafe Management - Cafe-Focused Solutions with specialized tools for coffee shops and cafe operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
