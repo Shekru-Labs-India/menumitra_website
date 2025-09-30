@@ -32,7 +32,7 @@ const CustomerFeedbackPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/customer-feedback.png"
           alt="MenuMitra Customer Feedback Management - Feedback Analytics Dashboard with comprehensive insights into customer satisfaction"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

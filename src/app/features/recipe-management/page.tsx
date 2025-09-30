@@ -32,7 +32,7 @@ const RecipeManagementPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/recipe-management.png"
           alt="MenuMitra Recipe Management - Digital Recipe Library with centralized repository for all your restaurant recipes"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

@@ -32,7 +32,7 @@ const CustomerManagementPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/customer-management.png"
           alt="MenuMitra Customer Management - Customer Relationship Hub with centralized platform for all customer interactions"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

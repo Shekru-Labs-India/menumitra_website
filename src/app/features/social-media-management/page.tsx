@@ -32,7 +32,7 @@ const SocialMediaManagementPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/social-media-management.png"
           alt="MenuMitra Social Media Management - Multi-Platform Management with unified platform for all your social media channels"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

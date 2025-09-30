@@ -32,7 +32,7 @@ const StaffManagementPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/staff-management.png"
           alt="MenuMitra Staff Management - Workforce Optimization with comprehensive platform for all staff management needs"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

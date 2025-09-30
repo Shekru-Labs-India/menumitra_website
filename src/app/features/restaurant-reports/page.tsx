@@ -32,7 +32,7 @@ const RestaurantReportsPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/restaurant-reports.png"
           alt="MenuMitra Restaurant Reports & Analytics - Advanced Analytics Dashboard with real-time insights and performance metrics"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
