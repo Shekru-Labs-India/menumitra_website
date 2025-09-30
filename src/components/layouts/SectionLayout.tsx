@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import BookDemoForm from '@/components/forms/BookDemoForm';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Store as Storefront, Utensils, Truck, Pizza, Coffee, Hamburger, CircleDot as Bread, Cloud, Building } from 'lucide-react';
 
 interface SectionLayoutProps {
   children?: ReactNode;
@@ -29,6 +29,21 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
   const router = useRouter();
   const pathname = usePathname();
   const [activeItem, setActiveItem] = useState(defaultActiveItem);
+
+  const outletTypeIconMap: Record<string, React.ReactNode> = {
+    'Restaurant': <Storefront className="w-4 h-4" />,
+    'Fine Dine': <Utensils className="w-4 h-4" />,
+    'Food Courts': <Storefront className="w-4 h-4" />,
+    'Food Truck': <Truck className="w-4 h-4" />,
+    'Pizzeria': <Pizza className="w-4 h-4" />,
+    'Cafe': <Coffee className="w-4 h-4" />,
+    'QSR': <Hamburger className="w-4 h-4" />,
+    'Bakeries': <Bread className="w-4 h-4" />,
+    'Bar & Pub': <Coffee className="w-4 h-4" />,
+    'Catering': <Utensils className="w-4 h-4" />,
+    'Cloud Kitchens': <Cloud className="w-4 h-4" />,
+    'Large Chain': <Building className="w-4 h-4" />,
+  };
 
   const handleItemClick = (item: string) => {
     const route = routeMappings[item];
@@ -62,7 +77,10 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
                         onClick={() => handleItemClick(item)}
                         className="flex items-center justify-between py-3 font-medium relative before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 w-full text-left"
                       >
-                        {item}
+                        <span className="flex items-center gap-2">
+                          {sidebarTitle === 'Outlet Types' && outletTypeIconMap[item]}
+                          <span>{item}</span>
+                        </span>
                         <ChevronRight className={`w-4 h-4 ${activeItem === item ? 'block' : 'hidden'}`} />
                       </button>
                     </li>

@@ -81,29 +81,33 @@ export const useSectionConfig = (sectionType: 'features' | 'addons' | 'outlet-ty
         sidebarTitle: 'Outlet Types',
         sidebarItems: [
           'Restaurant',
-          'Cafe',
-          'Fast Food',
-          'Fine Dining',
+          'Fine Dine',
+          'Food Courts',
           'Food Truck',
-          'Cloud Kitchen',
-          'Bakery',
+          'Pizzeria',
+          'Cafe',
+          'QSR',
+          'Bakeries',
           'Bar & Pub',
-          'Food Court',
-          'Catering'
+          'Catering',
+          'Cloud Kitchens',
+          'Large Chain'
         ],
         defaultActiveItem: 'Restaurant',
         backgroundImage: 'bg-service-bg',
         routeMappings: {
           'Restaurant': '/outlet-type/restaurant',
-          'Cafe': '/outlet-type/cafe',
-          'Fast Food': '/outlet-type/qsr',
-          'Fine Dining': '/outlet-type/fine-dine',
+          'Fine Dine': '/outlet-type/fine-dine',
+          'Food Courts': '/outlet-type/food-courts',
           'Food Truck': '/outlet-type/food-truck',
-          'Cloud Kitchen': '/outlet-type/cloud-kitchens',
-          'Bakery': '/outlet-type/bakeries',
+          'Pizzeria': '/outlet-type/pizzeria',
+          'Cafe': '/outlet-type/cafe',
+          'QSR': '/outlet-type/qsr',
+          'Bakeries': '/outlet-type/bakeries',
           'Bar & Pub': '/outlet-type/bar-pub',
-          'Food Court': '/outlet-type/food-courts',
-          'Catering': '/outlet-type/catering'
+          'Catering': '/outlet-type/catering',
+          'Cloud Kitchens': '/outlet-type/cloud-kitchens',
+          'Large Chain': '/outlet-type/large-chain'
         }
       }
     };
