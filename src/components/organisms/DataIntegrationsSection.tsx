@@ -61,7 +61,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
           
           <div className="relative max-md:mt-150">
             <Image 
-              src="/images/vision/vision-image.png" 
+              src="/images/vision/vision-image1.png" 
               alt="vision image" 
               width={310} 
               height={400}
