@@ -693,8 +693,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
-            <p className="max-lg:mb-10">@ {currentYear} MenuMitra. All Rights Reserved</p>
-            <ul className="lg:ml-auto flex items-center gap-15 max-lg:justify-center">
+            <p className="max-lg:mb-10 max-lg:order-2">@ {currentYear} MenuMitra. All Rights Reserved</p>
+            <ul className="lg:ml-auto flex items-center gap-15 max-lg:justify-center max-lg:order-1">
               <li>
                 <a href="/privacy-and-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Privacy Policy

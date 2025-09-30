@@ -82,21 +82,11 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                     alt="hotel logo"
                     width={100}
                     height={40}
-                    className="inline-block  mb-6"
-                  />
-                  <Image
-                    src={testimonial.hotelLogoDark}
-                    alt="hotel logo"
-                    width={100}
-                    height={40}
-                    className="hidden mb-6"
+                    className="inline-block mb-6"
                   />
                   <blockquote className="text-paragraph italic mb-5 leading-[1.75]">
-                    "{testimonial.quote}"
+                    &ldquo;{testimonial.quote}&rdquo;
                   </blockquote>
-                  {/* <div className="mb-7">
-                    {renderStars(testimonial.rating)}
-                  </div> */}
 
                   <div className="pt-7 flex items-center border-t border-dashed border-gray-100">
                     <div className="mr-4 w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">

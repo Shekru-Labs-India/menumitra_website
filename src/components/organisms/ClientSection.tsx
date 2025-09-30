@@ -62,7 +62,7 @@ const ClientSection: React.FC = () => {
           className=" max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           data-aos="fade-up"
           data-aos-offset={200}
-          data-aos-duration={1000}
+          data-aos-duration={400}
           data-aos-once="true"
         />
         <img
@@ -71,14 +71,14 @@ const ClientSection: React.FC = () => {
           className="hidden  max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           data-aos="fade-up"
           data-aos-offset={200}
-          data-aos-duration={1000}
+          data-aos-duration={400}
           data-aos-once="true"
         />
         <div
           className="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px] "
           data-aos="fade-right"
           data-aos-offset={200}
-          data-aos-duration={1000}
+          data-aos-duration={400}
           data-aos-once="true"
         >
           <img
