@@ -32,7 +32,7 @@ const SmartMobileAppPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/smart-mobile-app.png"
           alt="MenuMitra Smart Mobile App - Mobile Business Management with complete restaurant management in your pocket"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

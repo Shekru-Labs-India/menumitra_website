@@ -32,7 +32,7 @@ const WaiterAppPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/waiter-app.png"
           alt="MenuMitra Waiter App - Service Excellence Tools with intuitive interface designed for restaurant waitstaff"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

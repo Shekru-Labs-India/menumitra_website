@@ -32,7 +32,7 @@ const PointOfSalePage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/point-of-sale.png"
           alt="MenuMitra Point of Sale System - Complete POS Solution with all-in-one point of sale system for restaurants"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

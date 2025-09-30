@@ -32,7 +32,7 @@ const CustomerDisplaySystemPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/customer-display-system.png"
           alt="MenuMitra Customer Display System - Interactive Customer Displays with engaging digital displays for enhanced customer experience"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

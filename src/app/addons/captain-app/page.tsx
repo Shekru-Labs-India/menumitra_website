@@ -33,7 +33,7 @@ const CaptainAppPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/captain-app.png"
           alt="MenuMitra Captain App - Mobile-First Design optimized for mobile devices with intuitive touch controls"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
