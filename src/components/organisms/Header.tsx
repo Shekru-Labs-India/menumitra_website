@@ -232,7 +232,7 @@ const Header: React.FC = () => {
               height={40} 
               className="w-auto h-auto"
             />
-            <span className="text-2xl font-bold text-gray-900 md:hidden">MenuMitra</span>
+            <span className="text-2xl font-bold text-gray-900">MenuMitra</span>
           </Link>
         </div>
 
