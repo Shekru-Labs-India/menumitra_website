@@ -32,11 +32,11 @@ const FoodCourtsPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/food-court-management.png"
           alt="MenuMitra Food Court Management - Multi-Vendor Coordination with centralized management for food court operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
-        />
+        />  
       </div>
 
       <h3 className="text-2xl font-semibold mt-12 mb-6">Food Court Management Features</h3>

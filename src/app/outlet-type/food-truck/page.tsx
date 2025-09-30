@@ -32,7 +32,7 @@ const FoodTruckPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/food-truck-management.png"
           alt="MenuMitra Food Truck Management - Mobile Food Operations with specialized management for food truck and mobile operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
