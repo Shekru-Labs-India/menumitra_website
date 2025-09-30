@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import BookDemoForm from '@/components/forms/BookDemoForm';
-import { ChevronRight, Store as Storefront, Utensils, Truck, Pizza, Coffee, Hamburger, CircleDot as Bread, Cloud, Building, Smartphone, Users, Monitor, CreditCard as CashRegister, Coins, Users as TwoPerson, Cog } from 'lucide-react';
+import { ChevronRight, Store as Storefront, Utensils, Truck, Pizza, Coffee, Hamburger, CircleDot as Bread, Cloud, Building, Smartphone, Users, Monitor, CreditCard as CashRegister, Coins, Users as TwoPerson, Cog, CreditCard, Package, Menu as MenuIcon, ShoppingCart, BarChart3, Star, QrCode, Store, FileText, Share2, Settings, UserCheck, Link as LinkIcon } from 'lucide-react';
 
 interface SectionLayoutProps {
   children?: ReactNode;
@@ -58,6 +58,23 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
     'Hotel Management': <Building className="w-4 h-4" />,
   };
 
+  const featuresIconMap: Record<string, React.ReactNode> = {
+    'Billing': <CreditCard className="w-4 h-4" />,
+    'Inventory': <Package className="w-4 h-4" />,
+    'Menu': <MenuIcon className="w-4 h-4" />,
+    'Online Order': <ShoppingCart className="w-4 h-4" />,
+    'Restaurant Reports': <BarChart3 className="w-4 h-4" />,
+    'Customer Management': <Users className="w-4 h-4" />,
+    'Customer Feedback': <Star className="w-4 h-4" />,
+    'Scan & Order': <QrCode className="w-4 h-4" />,
+    'Store Management': <Store className="w-4 h-4" />,
+    'Recipe Management': <FileText className="w-4 h-4" />,
+    'Social Media Management': <Share2 className="w-4 h-4" />,
+    'Utility Management': <Settings className="w-4 h-4" />,
+    'Staff Management': <UserCheck className="w-4 h-4" />,
+    'Chain Management': <LinkIcon className="w-4 h-4" />,
+  };
+
   const handleItemClick = (item: string) => {
     const route = routeMappings[item];
     if (route && route !== pathname) {
@@ -93,6 +110,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
                         <span className="flex items-center gap-2">
                           {sidebarTitle === 'Outlet Types' && outletTypeIconMap[item]}
                           {sidebarTitle === 'AddOns' && addonsIconMap[item]}
+                          {sidebarTitle === 'Features' && featuresIconMap[item]}
                           <span>{item}</span>
                         </span>
                         <ChevronRight className={`w-4 h-4 ${activeItem === item ? 'block' : 'hidden'}`} />
