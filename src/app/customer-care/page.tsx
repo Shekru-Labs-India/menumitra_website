@@ -109,10 +109,10 @@ const CustomerCarePage: React.FC = () => {
                     <h3 className="mb-0">Live Chat</h3>
                   </div>
                   <p className="mb-4">Chat with our support team</p>
-                  <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors">
+                  <button className="btn btn-navbar btn-sm font-bold text-nowrap">
                     Start Chat
                   </button>
-                  <p className="text-sm text-gray-600 mt-2">Mon-Fri: 9 AM - 6 PM</p>
+                  <p className="text-sm text-gray-600 mt-5">Mon-Fri: 9 AM - 6 PM</p>
                 </div>
               </div>
             </div>
