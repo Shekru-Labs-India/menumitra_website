@@ -77,29 +77,15 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
                 height={200}
                 className="w-full "
               />
-              <Image 
-                src="/images/vision/vision-image-dark-1.png" 
-                alt="vision image shape" 
-                width={310} 
-                height={200}
-                className="w-full hidden"
-              />
             </div>
             
             <div className="absolute bottom-5 left-20 md:bottom-0 xl:bottom-8 md:left-[100px] xl:left-150 w-[280px] md:w-[200px] xl:w-[350px]">
               <Image 
-                src="/images/vision/vision-image-2.png" 
+                src="/images/vision/vision-image-22.png" 
                 alt="vision image shape" 
                 width={350} 
                 height={300}
                 className="w-full h-full "
-              />
-              <Image 
-                src="/images/vision/vision-image-dark-2.png" 
-                alt="vision image shape" 
-                width={350} 
-                height={300}
-                className="w-full h-full hidden"
               />
             </div>
           </div>
