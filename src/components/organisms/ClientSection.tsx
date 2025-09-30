@@ -57,7 +57,7 @@ const ClientSection: React.FC = () => {
     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-center">
       <div className="relative flex max-md:justify-center justify-end items-center">
         <img
-          src="images/crypto/aboutCrypto.png"
+          src="images/crypto/aboutCrypto1.png"
           alt="MenuMitra platform shape"
           className=" max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           data-aos="fade-up"
