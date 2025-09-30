@@ -82,7 +82,7 @@ const ClientSection: React.FC = () => {
           data-aos-once="true"
         >
           <img
-            src="images/crypto/aboutCrypto-shape.png"
+            src="images/crypto/aboutCrypto-shape-MM.png"
             alt="MenuMitra platform shape"
             className=""
           />
