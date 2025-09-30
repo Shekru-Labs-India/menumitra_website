@@ -57,7 +57,7 @@ const ClientSection: React.FC = () => {
     <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10 1xl:gap-x-24 items-center">
       <div className="relative flex max-md:justify-center justify-end items-center">
         <img
-          src="images/crypto/aboutCrypto1.png"
+          src="images/crypto/aboutCrypto12.png"
           alt="MenuMitra platform shape"
           className=" max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
           data-aos="fade-up"
@@ -65,17 +65,8 @@ const ClientSection: React.FC = () => {
           data-aos-duration={400}
           data-aos-once="true"
         />
-        <img
-          src="images/crypto/aboutCrypto-dark.png"
-          alt="MenuMitra platform shape"
-          className="hidden  max-w-[250px] lg:max-w-[320px] xl:max-w-[420px]"
-          data-aos="fade-up"
-          data-aos-offset={200}
-          data-aos-duration={400}
-          data-aos-once="true"
-        />
         <div
-          className="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px] "
+          className="absolute left-0 right-auto bottom-8 top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px] drop-shadow-xl"
           data-aos="fade-right"
           data-aos-offset={200}
           data-aos-duration={400}
@@ -85,11 +76,6 @@ const ClientSection: React.FC = () => {
             src="images/crypto/aboutCrypto-shape-MM.png"
             alt="MenuMitra platform shape"
             className=""
-          />
-          <img
-            src="images/crypto/aboutCrypto-shape-dark.png"
-            alt="MenuMitra platform shape"
-            className="hidden "
           />
         </div>
       </div>
@@ -201,7 +187,7 @@ const ClientSection: React.FC = () => {
           <div className={`${activeTab === 'tab3' ? 'tab-items-active' : 'hidden'}`}>
             <p className="max-md:mb-6 mb-8">
               Track sales performance, popular items, customer preferences, and revenue insights 
-              with comprehensive analytics. Make data-driven decisions to boost your restaurant's 
+              with comprehensive analytics. Make data-driven decisions to boost your restaurant&rsquo;s 
               profitability and optimize operations.
             </p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
