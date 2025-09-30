@@ -71,7 +71,7 @@ const DataIntegrationsSection: React.FC<DataIntegrationsSectionProps> = ({
             {/* Floating image elements */}
             <div className="absolute -top-25 left-40 md:-top-12 xl:-top-[150px] xl:left-[290px] w-[200px] md:w-[200px] xl:w-[310px]">
               <Image 
-                src="/images/vision/vision-image-1.png" 
+                src="/images/vision/vision-image-12.png" 
                 alt="vision image shape" 
                 width={310} 
                 height={200}
