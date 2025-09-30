@@ -32,7 +32,7 @@ const ChainManagementPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/chain-management.png"
           alt="MenuMitra Chain Management - Multi-Location Control with centralized management for all your chain locations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

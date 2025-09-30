@@ -32,7 +32,7 @@ const KitchenDisplaySystemPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/menu-management.png"
           alt="MenuMitra Kitchen Display System - Smart Kitchen Display with real-time order management and kitchen coordination"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
