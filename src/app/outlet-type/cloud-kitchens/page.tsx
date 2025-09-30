@@ -32,7 +32,7 @@ const CloudKitchensPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/cloud-kitchens-management.png"
           alt="MenuMitra Cloud Kitchen Management - Multi-Brand Operations with specialized management for cloud kitchen and delivery operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

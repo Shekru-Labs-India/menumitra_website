@@ -32,7 +32,7 @@ const BarPubPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/bar-pub-management.png"
           alt="MenuMitra Bar & Pub Management - Bar Operations Excellence with specialized management for bar and pub operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

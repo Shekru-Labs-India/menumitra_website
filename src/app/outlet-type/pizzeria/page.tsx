@@ -32,7 +32,7 @@ const PizzeriaPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/pizzeria-management.png"
           alt="MenuMitra Pizzeria Management - Pizza Operations Excellence with specialized management for pizzeria operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

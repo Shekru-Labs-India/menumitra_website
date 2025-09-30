@@ -32,7 +32,7 @@ const FineDinePage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/fine-dine-management.png"
           alt="MenuMitra Fine Dining Management - Premium Dining Experience with sophisticated management for fine dining establishments"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"

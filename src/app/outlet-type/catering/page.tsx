@@ -32,7 +32,7 @@ const CateringPage: React.FC = () => {
       {/* Feature Image */}
       <div className="bg-white rounded-medium p-2.5 shadow-nav">
         <img
-          src="/images/service-single1.png"
+          src="/images/catering-management.png"
           alt="MenuMitra Catering Management - Event Catering Excellence with specialized management for catering and event operations"
           className="w-[900px] h-auto object-cover rounded mx-auto block"
           loading="lazy"
