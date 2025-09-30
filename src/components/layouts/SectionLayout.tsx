@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import FooterSection from '@/components/organisms/FooterSection';
 import SectionDivider from '@/components/atoms/SectionDivider';
 import BookDemoForm from '@/components/forms/BookDemoForm';
-import { ChevronRight, Store as Storefront, Utensils, Truck, Pizza, Coffee, Hamburger, CircleDot as Bread, Cloud, Building } from 'lucide-react';
+import { ChevronRight, Store as Storefront, Utensils, Truck, Pizza, Coffee, Hamburger, CircleDot as Bread, Cloud, Building, Smartphone, Users, Monitor, CreditCard as CashRegister, Coins, Users as TwoPerson, Cog } from 'lucide-react';
 
 interface SectionLayoutProps {
   children?: ReactNode;
@@ -45,6 +45,19 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
     'Large Chain': <Building className="w-4 h-4" />,
   };
 
+  const addonsIconMap: Record<string, React.ReactNode> = {
+    'Captain App': <Smartphone className="w-4 h-4" />,
+    'Waiter App': <Users className="w-4 h-4" />,
+    'Kitchen Display System': <Monitor className="w-4 h-4" />,
+    'Customer Display System': <Monitor className="w-4 h-4" />,
+    'Point of Sale': <CashRegister className="w-4 h-4" />,
+    'Smart Mobile App': <Smartphone className="w-4 h-4" />,
+    'Money Management': <Coins className="w-4 h-4" />,
+    'Customer App': <TwoPerson className="w-4 h-4" />,
+    'Customised Solution': <Cog className="w-4 h-4" />,
+    'Hotel Management': <Building className="w-4 h-4" />,
+  };
+
   const handleItemClick = (item: string) => {
     const route = routeMappings[item];
     if (route && route !== pathname) {
@@ -79,6 +92,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({
                       >
                         <span className="flex items-center gap-2">
                           {sidebarTitle === 'Outlet Types' && outletTypeIconMap[item]}
+                          {sidebarTitle === 'AddOns' && addonsIconMap[item]}
                           <span>{item}</span>
                         </span>
                         <ChevronRight className={`w-4 h-4 ${activeItem === item ? 'block' : 'hidden'}`} />
