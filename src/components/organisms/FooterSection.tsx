@@ -681,9 +681,8 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                   
       <hr />
         <div className="py-10 max-lg:text-center">
-          <div className="flex max-lg:flex-col lg:items-center">
-            <p className="max-lg:mb-10 !max-lg:mb-10 max-lg:order-2">@ {currentYear} MenuMitra. All Rights Reserved</p>
-            <ul className="max-lg:grid max-lg:grid-cols-2 max-lg:gap-x-6 max-lg:gap-y-3 max-lg:place-items-start max-lg:w-full lg:ml-auto lg:flex lg:items-center lg:gap-15 max-lg:order-1">
+          <div className="flex flex-col lg:items-center">
+            <ul className="max-lg:grid max-lg:grid-cols-2 max-lg:gap-x-6 max-lg:gap-y-3 max-lg:place-items-start max-lg:w-full lg:flex lg:items-center lg:gap-15">
               <li>
                 <a href="/privacy-and-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Privacy Policy
@@ -715,6 +714,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 </a>
               </li>
             </ul>
+            <p className="mt-6">@ {currentYear} MenuMitra. All Rights Reserved</p>
           </div>
         </div>
       </div>
