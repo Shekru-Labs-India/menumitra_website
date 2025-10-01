@@ -704,8 +704,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 </a>
               </li>
               <li>
-                <a href="/cancellation-refund-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 text-gray-custom">
-                  Cancellation & Refund Policy
+                <a href="/cancellation-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 text-gray-custom">
+                  Cancellation Policy
+                </a>
+              </li>
+              <li>
+                <a href="/refund-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 text-gray-custom">
+                  Refund Policy
                 </a>
               </li>
               <li>
