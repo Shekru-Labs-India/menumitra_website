@@ -714,7 +714,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 </a>
               </li>
             </ul>
-            <p className="mt-6">@ {currentYear} MenuMitra. All Rights Reserved</p>
+            <p className="mt-6 text-gray-600">@ {currentYear} MenuMitra. All Rights Reserved</p>
           </div>
         </div>
       </div>
