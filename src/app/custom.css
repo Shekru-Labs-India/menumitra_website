@@ -1,3 +1,5 @@
+
+
 /** Tailwind Red Color Text and Other Red Colored Classes */
 
 /* Text Colors */
@@ -289,4 +291,23 @@
 
 .dark .bg-primary-200 {
   background-color: #FFC04D !important; /* Lighter orange for dark mode */
+}
+
+/* =========================================== */
+/* CUSTOM GRAY COLOR - #B2BEB5 */
+/* =========================================== */
+
+/* Text Color */
+.text-gray-custom {
+  color: #B2BEB5 !important;
+}
+
+/* Background Color */
+.bg-gray-custom {
+  background-color: #B2BEB5 !important;
+}
+
+/* Border Color */
+.border-gray-custom {
+  border-color: #B2BEB5 !important;
 }
