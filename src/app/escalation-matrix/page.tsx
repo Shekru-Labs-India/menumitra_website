@@ -116,8 +116,8 @@ export default function EscalationMatrixPage() {
                     <td className="border border-gray-300 p-4 text-gray-800">2 Hours</td>
                     <td className="border border-gray-300 p-4 text-gray-800">First contact, common issues.</td>
                     <td className="border border-gray-300 p-4 text-gray-800">
-                      <a href="mailto:support@menumitra.com" className="text-primary-600 hover:text-primary-800">
-                        support@menumitra.com
+                      <a href="mailto:menumitra.info@gmail.com" className="text-primary-600 hover:text-primary-800">
+                        menumitra.info@gmail.com
                       </a>
                     </td>
                   </tr>
@@ -128,8 +128,8 @@ export default function EscalationMatrixPage() {
                     <td className="border border-gray-300 p-4 text-gray-800">4 Hours</td>
                     <td className="border border-gray-300 p-4 text-gray-800">If not resolved by the L1 within TAT.</td>
                     <td className="border border-gray-300 p-4 text-gray-800">
-                      <a href="mailto:escalation.gm@menumitra.com" className="text-primary-600 hover:text-primary-800">
-                        escalation.gm@menumitra.com
+                      <a href="mailto:menumitra.info@gmail.com" className="text-primary-600 hover:text-primary-800">
+                        menumitra.info@gmail.com
                       </a>
                     </td>
                   </tr>
@@ -140,8 +140,8 @@ export default function EscalationMatrixPage() {
                     <td className="border border-gray-300 p-4 text-gray-800">6 Hours</td>
                     <td className="border border-gray-300 p-4 text-gray-800">If not resolved by L1 / L2 within time.</td>
                     <td className="border border-gray-300 p-4 text-gray-800">
-                      <a href="mailto:escalation.vp@menumitra.com" className="text-primary-600 hover:text-primary-800">
-                        escalation.vp@menumitra.com
+                      <a href="mailto:menumitra.info@gmail.com" className="text-primary-600 hover:text-primary-800">
+                        menumitra.info@gmail.com
                       </a>
                     </td>
                   </tr>

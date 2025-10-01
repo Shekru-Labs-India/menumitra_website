@@ -694,6 +694,11 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 </a>
               </li>
               <li>
+                <a href="/compliance" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                  Compliance
+                </a>
+              </li>
+              <li>
                 <a href="/cookie-policy" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Cookie Policy
                 </a>

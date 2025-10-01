@@ -91,11 +91,6 @@ export default function CompliancePage() {
               </h1>
     </div>
             
-            {/* Effective Date */}
-            <p className="text-sm text-gray-600 mb-6">
-              <strong>Effective Date:</strong> {effectiveDate}<br />
-              <strong>Last Updated:</strong> {lastUpdatedDate}
-            </p>
             
     <div className="singlePage">
               <div className="text-center py-16">
