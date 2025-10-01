@@ -17,7 +17,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Left Section - Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 max-md:mx-auto max-md:w-fit">
             <Image 
               src="/images/mm/mm.png" 
               alt="MenuMitra logo" 
@@ -29,8 +29,8 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
           </div>
 
           {/* Center Section - Contact Information */}
-          <div className="hidden md:flex items-center gap-8">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4 md:gap-8">
+            <div className="hidden md:flex items-center gap-2">
               <Phone className="w-4 h-4 text-gray-600" />
               <a 
                 href={getPhoneLink()} 
@@ -39,7 +39,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
                 {phone}
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <Mail className="w-4 h-4 text-gray-600" />
               <a 
                 href={getEmailLink()} 
@@ -50,7 +50,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
             </div>
 <div className="flex items-center gap-2">
             {/* Social Media Icons */}
-            <ul className="flex items-center max-lg:justify-center social-link gap-4">
+            <ul className="flex items-center max-lg:justify-center social-link gap-3 md:gap-4 max-md:hidden">
               <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
               <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
               <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
@@ -60,8 +60,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
           </div>
 
           {/* Right Section - Social Icons and CTA */}
-          <div className="flex items-center gap-4">
-
+          <div className="flex items-center gap-4 max-md:hidden">
             {/* Book a Demo Button */}
             <Link 
               href="/book-demo" 
@@ -74,7 +73,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
 
         {/* Mobile Contact Info */}
         <div className="md:hidden mt-3 pt-3 border-t border-gray-100">
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-6 mb-3">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-gray-600" />
               <a 
@@ -93,6 +92,21 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
                 {email}
               </a>
             </div>
+          </div>
+          {/* Mobile Social Icons and Book Button Row */}
+          <div className="flex items-center justify-center gap-4">
+            <ul className="flex items-center gap-3">
+              <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
+              <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
+              <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
+              <SocialIcon platform="instagram" href={`https://www.instagram.com/${social.instagram}/`} target="_blank" />
+            </ul>
+            <Link 
+              href="/book-demo" 
+              className="btn btn-nav btn-sm whitespace-nowrap font-bold"
+            >
+              Book a Demo
+            </Link>
           </div>
         </div>
       </div>
