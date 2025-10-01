@@ -47,7 +47,7 @@ const MobileDeviceOverlay: React.FC<MobileDeviceOverlayProps> = ({
       {/* Phone device overlay - positioned first */}
       <div className={`absolute ${getPositionClasses()} bottom-2.5 ${getSizeClasses()} lg:aspect-video z-10 ${className}`}>
         <Image 
-          src="/images/payment/payment-hero-device.png" 
+          src="/images/payment/payment-hero-device1.png" 
           alt="MenuMitra mobile app interface" 
           width={285} 
           height={160} 
