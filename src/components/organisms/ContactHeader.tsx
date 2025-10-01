@@ -95,7 +95,7 @@ const ContactHeader: React.FC<ContactHeaderProps> = ({ className = '' }) => {
           </div>
           {/* Mobile Social Icons and Book Button Row */}
           <div className="flex items-center justify-center gap-4">
-            <ul className="flex items-center gap-3">
+            <ul className="flex items-center gap-3 social-link">
               <SocialIcon platform="google" href="https://www.google.com/search?q=MenuMitra" target="_blank" />
               <SocialIcon platform="facebook" href="https://www.facebook.com/share/x5wymXr6w7W49vaQ/?mibextid=qi2Omg" target="_blank" />
               <SocialIcon platform="youtube" href={`https://www.youtube.com/${social.youtube}`} target="_blank" />
