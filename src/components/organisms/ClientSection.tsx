@@ -90,7 +90,7 @@ const ClientSection: React.FC = () => {
               <li className={`group tab flex-1 basis-0 ${activeTab === 'tab1' ? 'tab-active' : ''}`}>
                 <span 
                   onClick={() => handleTabClick('tab1')}
-                  className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
+                  className={`block text-center w-full font-medium py-2 px-3 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab1' 
                       ? 'bg-paragraph text-white border-paragraph' 
                       : ''
@@ -102,7 +102,7 @@ const ClientSection: React.FC = () => {
               <li className={`group tab flex-1 basis-0 ${activeTab === 'tab2' ? 'tab-active' : ''}`}>
                 <span 
                   onClick={() => handleTabClick('tab2')}
-                  className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
+                  className={`block text-center w-full font-medium py-2 px-3 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab2' 
                       ? 'bg-paragraph text-white border-paragraph' 
                       : ''
@@ -114,7 +114,7 @@ const ClientSection: React.FC = () => {
               <li className={`group tab flex-1 basis-0 ${activeTab === 'tab3' ? 'tab-active' : ''}`}>
                 <span 
                   onClick={() => handleTabClick('tab3')}
-                  className={`block text-center w-full font-medium py-2 px-5 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
+                  className={`block text-center w-full font-medium py-2 px-3 rounded-[60px] border border-borderColour-dark hover:bg-paragraph hover:text-white duration-500 hover:duration-500 transition-colors leading-[22px] cursor-pointer ${
                     activeTab === 'tab3' 
                       ? 'bg-paragraph text-white border-paragraph' 
                       : ''
