@@ -19,7 +19,7 @@ const StickersSection: React.FC<StickersSectionProps> = ({ className = '' }) => 
   return (
     <div className={`text-center mt-8 ${className}`}>
       <p className="text-xl md:text-lg lg:text-[22px] font-bold">
-        We&apos;re the best, we told you already!
+        We&apos;re the best, as we&apos;ve mentioned before!
       </p>
       <div className="flex flex-wrap justify-center gap-4 lg:gap-6 mt-4">
         {stickers.map(({ src, alt, preferredWidth }) => (
