@@ -4,11 +4,9 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import SocialIcon from '@/components/atoms/SocialIcon';
 import ContactHeader from './ContactHeader';
+import StickersSection from './StickersSection';
 import { 
-  Phone, 
-  Mail,
   CreditCard, 
   Package, 
   Menu as MenuIcon, 
@@ -46,7 +44,7 @@ import {
   Briefcase,
   Headphones
 } from 'lucide-react';
-import { email, phone, getEmailLink, getPhoneLink, social } from '@/config/contact';
+ 
 
 interface FooterSectionProps {
   className?: string;
@@ -84,6 +82,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
       <ContactHeader />
       
       <div className="container">
+
         <div className="grid grid-cols-12 mb-20 max-lg:gap-y-10 max-lg:text-center gap-2">
           <div className="col-span-6 lg:col-span-3 max-lg:text-center">
             <h3 className="mb-8 font-bold text-lg text-left">Navigations</h3>
@@ -690,7 +689,12 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           </div>
         </div>
         <hr />
+
+        
+        {/* Recognition Stickers */}
+        <StickersSection className="mb-10" />
                   
+      <hr />
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
             <p className="max-lg:mb-10 !max-lg:mb-10 max-lg:order-2">@ {currentYear} MenuMitra. All Rights Reserved</p>
