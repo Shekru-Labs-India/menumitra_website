@@ -63,91 +63,103 @@ export default function EscalationMatrixPage() {
 
   return (
     <>
-      <section className="relative pt-[160px] max-md:pt-150 overflow-hidden">
-        <div className="absolute left-0 right-0 -top-[800px] bg-core-gradient bg-no-repeat bg-center opacity-70 w-full h-full bg-[length:600px_1000px] md:hidden" />
-  <div
-    className="container relative !max-w-[800px]"
-    data-aos="fade-up"
-    data-aos-offset={200}
-    data-aos-duration={1000}
-    data-aos-once="true"
-  >
-    <div className="absolute left-1/2 top-20 -translate-x-1/2 -translate-y-1/2 flex -z-10 max-md:hidden">
-      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 blur-[145px]" />
-      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/25 -ml-[170px] blur-[145px]" />
-      <div className="w-[442px] h-[442px] rounded-full bg-primary-200/20 -ml-[170px] blur-[145px]" />
-    </div>
           
-          <main className="prose prose-gray max-w-4xl mx-auto px-6 py-12 leading-relaxed">
+      {/* Main Content */}
+      <section className="relative pt-[160px] pb-[160px] max-md:pt-150 overflow-hidden">
+        
+      <div className="container mx-auto text-center py-20">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-dark">
+            Grievance Escalation Matrix
+          </h1>
+    </div>
+        <div className="container mx-auto max-w-6xl px-6">
             {/* JSON-LD Structured Data */}
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
             />
             
-            <div className="singlePage pb-10">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-center">
-        Escalation Matrix
-              </h1>
-    </div>
-            
-            {/* Effective Date */}
-            <p className="text-sm text-gray-600 mb-6">
-              <strong>Effective Date:</strong> {effectiveDate}<br />
-              <strong>Last Updated:</strong> {lastUpdatedDate}
+          {/* Introduction */}
+          <div className="mb-12">
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              This Escalation Matrix provides clear contact information and escalation procedures for MenuMitra customers to ensure timely resolution of support requests, technical issues, and service concerns.
             </p>
+            <p className="text-gray-800 mb-4 leading-relaxed">
+              For any grievances or issues related to our services, please follow the escalation matrix below. We are committed to resolving all customer concerns in a timely and efficient manner.
+            </p>
+            <p className="text-gray-800 mb-6 leading-relaxed">
+              All official communication should be directed through the channels mentioned in this matrix. Please ensure you provide detailed information about your issue to help us assist you better.
+            </p>
+          </div>
+
+          {/* Escalation Matrix Table */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-800 mb-6">Escalation Matrix :</h2>
             
-    <div className="singlePage">
-              <p className="mb-4">
-                This Escalation Matrix provides clear contact information and escalation procedures for MenuMitra customers to ensure timely resolution of support requests, technical issues, and service concerns.
-              </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300 bg-white">
+                <thead>
+                  <tr className="bg-gray-900 text-white">
+                    <th className="border border-gray-00 p-4 text-left font-semibold text-white">Escalation Level</th>
+                    <th className="border border-gray-300 p-4 text-left font-semibold text-white">Team Responsible</th>
+                    <th className="border border-gray-300 p-4 text-left font-semibold text-white">Time to Respond</th>
+                    <th className="border border-gray-300 p-4 text-left font-semibold text-white">Time to Resolve</th>
+                    <th className="border border-gray-300 p-4 text-left font-semibold text-white">Escalation Criteria</th>
+                    <th className="border border-gray-300 p-4 text-left font-semibold text-white">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 p-4 text-gray-800">L1 (Basic Support)</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">Support Agents</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">1 Hour</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">2 Hours</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">First contact, common issues.</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">
+                      <a href="mailto:support@menumitra.com" className="text-primary-600 hover:text-primary-800">
+                        support@menumitra.com
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-4 text-gray-800">L2 (Escalation Sr. Manager)</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">Senior Manager</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">2 Hours</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">4 Hours</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">If not resolved by the L1 within TAT.</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">
+                      <a href="mailto:escalation.gm@menumitra.com" className="text-primary-600 hover:text-primary-800">
+                        escalation.gm@menumitra.com
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-4 text-gray-800">L3 (VP)</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">VP</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">4 Hours</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">6 Hours</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">If not resolved by L1 / L2 within time.</td>
+                    <td className="border border-gray-300 p-4 text-gray-800">
+                      <a href="mailto:escalation.vp@menumitra.com" className="text-primary-600 hover:text-primary-800">
+                        escalation.vp@menumitra.com
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-              <section id="contact-information" className="mt-10 mb-6 scroll-mt-24">
-                <h2 className="text-2xl font-semibold mt-12 mb-4">Contact Information</h2>
-                <p className="mb-4">
-                  For general inquiries, support requests, and technical assistance, please contact us through the following channels:
-                </p>
-                <ul className="mb-4">
-                  <li><strong>Email:</strong> <a href="mailto:{email}" className="text-primary-600 hover:text-primary-800">{email}</a></li>
-                  <li><strong>Phone:</strong> <a href="tel:+919317818283" className="text-primary-600 hover:text-primary-800">+91 93178 18283</a></li>
-                  <li><strong>Website:</strong> <a href="{website.base}" className="text-primary-600 hover:text-primary-800">menumitra.com</a></li>
-                </ul>
-              </section>
-
-              <section id="escalation-procedures" className="mt-10 mb-6 scroll-mt-24">
-                <h2 className="text-2xl font-semibold mt-12 mb-4">Escalation Procedures</h2>
-                <p className="mb-4">
-                  If your issue is not resolved within the expected timeframe or requires immediate attention, please follow the escalation procedures outlined below.
-                </p>
-              </section>
-
-              <section id="response-times" className="mt-10 mb-6 scroll-mt-24">
-                <h2 className="text-2xl font-semibold mt-12 mb-4">Response Times</h2>
-                <p className="mb-4">
-                  We are committed to providing timely responses to all customer inquiries. Our standard response times are as follows:
-                </p>
-                <ul className="mb-4">
-                  <li><strong>General Inquiries:</strong> Within 24 hours</li>
-                  <li><strong>Technical Support:</strong> Within 4-8 hours</li>
-                  <li><strong>Critical Issues:</strong> Within 2 hours</li>
-                  <li><strong>Emergency Support:</strong> Immediate response</li>
-                </ul>
-              </section>
-
-              <section id="escalation-levels" className="mt-10 mb-6 scroll-mt-24">
-                <h2 className="text-2xl font-semibold mt-12 mb-4">Escalation Levels</h2>
-                <p className="mb-4">
-                  If you need to escalate your concern, please follow these levels:
-                </p>
-                <ul className="mb-4">
-                  <li><strong>Level 1:</strong> Initial contact through standard support channels</li>
-                  <li><strong>Level 2:</strong> Escalation to senior support team</li>
-                  <li><strong>Level 3:</strong> Management escalation for critical issues</li>
-                  <li><strong>Level 4:</strong> Executive escalation for unresolved matters</li>
-                </ul>
-              </section>
+          {/* Important Information */}
+          <div>
+            <h2 className="text-xl font-semibold text-gray-800 mb-6">Important information :</h2>
+            <ul className="list-disc list-inside text-gray-800 space-y-2">
+              <li>Tasks are defined as any issue, query, or request raised by the customer that requires resolution or response from MenuMitra.</li>
+              <li>Escalation will be triggered if the issue is not resolved within the specified time to resolve (TTR) mentioned in the matrix above.</li>
+              <li>Time to respond (TTR) is calculated from the time the issue is logged in our system until the first response is provided to the customer.</li>
+              <li>Time to resolve (TTR) is the total time taken to completely resolve the customer&apos;s issue or provide a satisfactory solution.</li>
+            </ul>
     </div>
-          </main>
   </div>
 </section>
 
