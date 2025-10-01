@@ -675,21 +675,6 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
           />
         </div> */}
 <hr />
-
-        {/* Cards Image Section */}
-        <div className="py-4 max-lg:text-center">
-          <div className="flex justify-center">
-            <Image
-              src="/images/footer-cards.png"
-              alt="Payment Cards and Methods"
-              width={400}
-              height={60}
-              className="w-auto h-auto object-contain rounded-xl shadow-lg p-3 border hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
-            />
-          </div>
-        </div>
-        <hr />
-
         
         {/* Recognition Stickers */}
         <StickersSection className="mb-10" />
