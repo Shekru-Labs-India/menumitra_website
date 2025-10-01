@@ -720,6 +720,11 @@ const FooterSection: React.FC<FooterSectionProps> = ({ className = '' }) => {
                 </a>
               </li>
               <li>
+                <a href="/escalation-matrix" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
+                  Escalation Matrix
+                </a>
+              </li>
+              <li>
                 <a href="/request-data-removal" className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100">
                   Request Data Removal
                 </a>
